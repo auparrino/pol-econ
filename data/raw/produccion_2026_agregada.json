@@ -1,0 +1,412 @@
+[
+  {
+    "provincia": "Neuquén",
+    "sub_tipo_recurso": "SHALE",
+    "cantidad_pozos": "3087",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 2248057.54819733,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "20",
+    "total_petroleo_m3": 2911168.3026744
+  },
+  {
+    "provincia": "Chubut",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "21071",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 180992.961233,
+    "cuenca": "GOLFO SAN JORGE",
+    "cantidad_empresas": "12",
+    "total_petroleo_m3": 588574.347405999
+  },
+  {
+    "provincia": "Santa Cruz",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "19295",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 80827.0021930001,
+    "cuenca": "GOLFO SAN JORGE",
+    "cantidad_empresas": "11",
+    "total_petroleo_m3": 268704.398731999
+  },
+  {
+    "provincia": "Mendoza",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "3941",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 29941.495387898,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "12",
+    "total_petroleo_m3": 179373.554160125
+  },
+  {
+    "provincia": "Neuquén",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "11809",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 279731.274765492,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "26",
+    "total_petroleo_m3": 90316.6147398914
+  },
+  {
+    "provincia": "Rio Negro",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "4101",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 40378.7637291531,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "10",
+    "total_petroleo_m3": 73368.221464423
+  },
+  {
+    "provincia": "Mendoza",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "2959",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 2904.474119,
+    "cuenca": "CUYANA",
+    "cantidad_empresas": "5",
+    "total_petroleo_m3": 66309.38193
+  },
+  {
+    "provincia": "La Pampa",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "1904",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 14003.073135,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "3",
+    "total_petroleo_m3": 52049.484439
+  },
+  {
+    "provincia": "Rio Negro",
+    "sub_tipo_recurso": "SHALE",
+    "cantidad_pozos": "8",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 2202.9878,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 41890.124
+  },
+  {
+    "provincia": "Estado Nacional",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "63",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 543991.274,
+    "cuenca": "AUSTRAL",
+    "cantidad_empresas": "2",
+    "total_petroleo_m3": 21256.497
+  },
+  {
+    "provincia": "Tierra del Fuego",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "1224",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 109568.375443,
+    "cuenca": "AUSTRAL",
+    "cantidad_empresas": "4",
+    "total_petroleo_m3": 14870.29245
+  },
+  {
+    "provincia": "Santa Cruz",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "1535",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 54408.388446,
+    "cuenca": "AUSTRAL",
+    "cantidad_empresas": "7",
+    "total_petroleo_m3": 11184.518805
+  },
+  {
+    "provincia": "Salta",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "755",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 83981.712561,
+    "cuenca": "NOROESTE",
+    "cantidad_empresas": "6",
+    "total_petroleo_m3": 9356.1031898
+  },
+  {
+    "provincia": "Neuquén",
+    "sub_tipo_recurso": "TIGHT",
+    "cantidad_pozos": "1022",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 296814.670555,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "9",
+    "total_petroleo_m3": 8591.83904
+  },
+  {
+    "provincia": "Rio Negro",
+    "sub_tipo_recurso": "TIGHT",
+    "cantidad_pozos": "225",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 33370.16427043,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "4",
+    "total_petroleo_m3": 5824.023140807
+  },
+  {
+    "provincia": "Formosa",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "52",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 552.98,
+    "cuenca": "NOROESTE",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 4255.97
+  },
+  {
+    "provincia": "Santa Cruz",
+    "sub_tipo_recurso": "TIGHT",
+    "cantidad_pozos": "7",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 5906.92313,
+    "cuenca": "GOLFO SAN JORGE",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 2317.8743
+  },
+  {
+    "provincia": "Santa Cruz",
+    "sub_tipo_recurso": "TIGHT",
+    "cantidad_pozos": "206",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 60056.371502,
+    "cuenca": "AUSTRAL",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 2018.542742
+  },
+  {
+    "provincia": "Mendoza",
+    "sub_tipo_recurso": "SHALE",
+    "cantidad_pozos": "15",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 2293.17116,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "4",
+    "total_petroleo_m3": 1798.66022
+  },
+  {
+    "provincia": "Jujuy",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "32",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 269.941,
+    "cuenca": "NOROESTE",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 847.515
+  },
+  {
+    "provincia": "Santa Cruz",
+    "sub_tipo_recurso": "SHALE",
+    "cantidad_pozos": "4",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 2611.632813,
+    "cuenca": "GOLFO SAN JORGE",
+    "cantidad_empresas": "2",
+    "total_petroleo_m3": 465.789632
+  },
+  {
+    "provincia": "Mendoza",
+    "sub_tipo_recurso": "TIGHT",
+    "cantidad_pozos": "13",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 1030.41252,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "3",
+    "total_petroleo_m3": 332.18946
+  },
+  {
+    "provincia": "Neuquén",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "2",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 4998.709,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 296.588395
+  },
+  {
+    "provincia": "Chubut",
+    "sub_tipo_recurso": "TIGHT",
+    "cantidad_pozos": "1",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 37.79594,
+    "cuenca": "GOLFO SAN JORGE",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 75.11903
+  },
+  {
+    "provincia": "Santa Cruz",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "2",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "AUSTRAL",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 49.70525
+  },
+  {
+    "provincia": "Chubut",
+    "sub_tipo_recurso": "SHALE",
+    "cantidad_pozos": "3",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 316.1338,
+    "cuenca": "GOLFO SAN JORGE",
+    "cantidad_empresas": "3",
+    "total_petroleo_m3": 0.629984
+  },
+  {
+    "provincia": "Neuquén",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "4",
+    "tipo_de_recurso": "NO DISCRIMINADO",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "3",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Chubut",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "1",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "CAÑADON ASFALTO",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Chubut",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "8",
+    "tipo_de_recurso": "SIN RESERVORIO",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "GOLFO SAN JORGE",
+    "cantidad_empresas": "2",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Chubut",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "2",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "ÑIRIHUAU",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Estado Nacional",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "1",
+    "tipo_de_recurso": "SIN RESERVORIO",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "AUSTRAL",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Jujuy",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "11",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "NORESTE",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Jujuy",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "3",
+    "tipo_de_recurso": "SIN RESERVORIO",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "NOROESTE",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "La Pampa",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "46",
+    "tipo_de_recurso": "SIN RESERVORIO",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Mendoza",
+    "sub_tipo_recurso": "TIGHT",
+    "cantidad_pozos": "1",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Mendoza",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "145",
+    "tipo_de_recurso": "SIN RESERVORIO",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "3",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Chubut",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "3",
+    "tipo_de_recurso": "CONVENCIONAL",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Neuquén",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "91",
+    "tipo_de_recurso": "SIN RESERVORIO",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "13",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Rio Negro",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "62",
+    "tipo_de_recurso": "SIN RESERVORIO",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "NEUQUINA",
+    "cantidad_empresas": "4",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Santa Cruz",
+    "sub_tipo_recurso": "SHALE",
+    "cantidad_pozos": "1",
+    "tipo_de_recurso": "NO CONVENCIONAL",
+    "total_gas_miles_m3": 0.0,
+    "cuenca": "AUSTRAL",
+    "cantidad_empresas": "1",
+    "total_petroleo_m3": 0.0
+  },
+  {
+    "provincia": "Santa Cruz",
+    "sub_tipo_recurso": "",
+    "cantidad_pozos": "40",
+    "tipo_de_recurso": "SIN RESERVORIO",
+    "total_gas_miles_m3": 1163.916,
+    "cuenca": "AUSTRAL",
+    "cantidad_empresas": "2",
+    "total_petroleo_m3": 0.0
+  }
+]

@@ -1,0 +1,4911 @@
+[
+  {
+    "provincia": "Buenos Aires",
+    "vab_total": 193076.2,
+    "sector_dominante": "Industria",
+    "share_dominante_pct": 29.45,
+    "productos_principales": "Industria manufacturera, agroindustria, petroquímica, automotriz, sector financiero",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 16.09,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 8.22,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 6.24,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 6.09,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 5.93,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Communications",
+        "pct": 5.45,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Transport",
+        "pct": 4.99,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 4.61,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Other",
+        "pct": 3.91,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Public Education",
+        "pct": 3.77,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Construction",
+        "pct": 3.45,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 2.73,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Private Health",
+        "pct": 2.02,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 1.93,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 1.77,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 1.65,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 1.56,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.47,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.15,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 1.14,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Apparel",
+        "pct": 1.12,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Private Education",
+        "pct": 1.09,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Paper",
+        "pct": 0.94,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 0.93,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.87,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.85,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.79,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.79,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Public Health",
+        "pct": 0.73,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.69,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.64,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.57,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.55,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.55,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Electrical Machinery",
+        "pct": 0.48,
+        "color": "#c7d2fe"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.47,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Fishing",
+        "pct": 0.37,
+        "color": "#6ee7b7"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.37,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.29,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.25,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.24,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.24,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Medical Instruments",
+        "pct": 0.23,
+        "color": "#f0abfc"
+      },
+      {
+        "en": "Repair & Maintenance",
+        "pct": 0.21,
+        "color": "#e0f2fe"
+      },
+      {
+        "en": "Electronics",
+        "pct": 0.17,
+        "color": "#e0e7ff"
+      },
+      {
+        "en": "Tobacco",
+        "pct": 0.15,
+        "color": "#d9f99d"
+      }
+    ],
+    "alimentos_bebidas_pct": 6.24,
+    "agropecuario_ampliado_pct": 12.56
+  },
+  {
+    "provincia": "CABA",
+    "vab_total": 119523.9,
+    "sector_dominante": "Inmobiliario y Otros Servicios",
+    "share_dominante_pct": 28.97,
+    "productos_principales": "Servicios financieros, tecnología, comercio, turismo, administración pública nacional",
+    "sectores": [
+      {
+        "en": "Other",
+        "pct": 17.93,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Commerce",
+        "pct": 13.68,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 7.39,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Communications",
+        "pct": 6.9,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 6.25,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 5.19,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Private Health",
+        "pct": 4.6,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Construction",
+        "pct": 3.52,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Transport",
+        "pct": 3.04,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Insurance",
+        "pct": 2.68,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 2.63,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 2.52,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Associations",
+        "pct": 2.02,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Public Education",
+        "pct": 1.86,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.84,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.8,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 1.66,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Private Education",
+        "pct": 1.56,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Publishing",
+        "pct": 1.22,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.22,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1.16,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.95,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.94,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.79,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.69,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.63,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Oil & Gas",
+        "pct": 0.6,
+        "color": "#f59e0b"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.39,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 0.39,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.39,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Paper",
+        "pct": 0.35,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 0.32,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.3,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.29,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.28,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.25,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Repair & Maintenance",
+        "pct": 0.22,
+        "color": "#e0f2fe"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 0.21,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.2,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Electronics",
+        "pct": 0.2,
+        "color": "#e0e7ff"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.18,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 0.12,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Office Machinery",
+        "pct": 0.12,
+        "color": "#a5b4fc"
+      },
+      {
+        "en": "Electrical Machinery",
+        "pct": 0.12,
+        "color": "#c7d2fe"
+      },
+      {
+        "en": "Medical Instruments",
+        "pct": 0.12,
+        "color": "#f0abfc"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.11,
+        "color": "#fcd34d"
+      }
+    ],
+    "alimentos_bebidas_pct": 2.52,
+    "agropecuario_ampliado_pct": 2.66
+  },
+  {
+    "provincia": "Catamarca",
+    "vab_total": 4091.2,
+    "sector_dominante": "Servicios Sociales",
+    "share_dominante_pct": 14.73,
+    "productos_principales": "Minería (litio, cobre – Bajo de la Alumbrera), olivicultura, vitivinicultura, nogal",
+    "sectores": [
+      {
+        "en": "Public Administration",
+        "pct": 13.39,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Commerce",
+        "pct": 13.04,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 9.43,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Construction",
+        "pct": 9.08,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Public Education",
+        "pct": 7.15,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Communications",
+        "pct": 7.13,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Other",
+        "pct": 5.34,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 4.81,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 4.02,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Public Health",
+        "pct": 3.7,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Private Health",
+        "pct": 3.22,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 2.59,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 2.38,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Transport",
+        "pct": 2.27,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 1.11,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Textiles",
+        "pct": 1.03,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.03,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.96,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.77,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.74,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.72,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.68,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.66,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.64,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.59,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 0.49,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.48,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.47,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 0.36,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.29,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.25,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.25,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.24,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.18,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.16,
+        "color": "#fde68a"
+      }
+    ],
+    "alimentos_bebidas_pct": 2.59,
+    "agropecuario_ampliado_pct": 6.61
+  },
+  {
+    "provincia": "Chaco",
+    "vab_total": 9606.3,
+    "sector_dominante": "Inmobiliario y Otros Servicios",
+    "share_dominante_pct": 20.42,
+    "productos_principales": "Algodón, soja, ganadería, forestación, industria textil",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 18.35,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Other",
+        "pct": 13.04,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 9.12,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 9.02,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Public Education",
+        "pct": 6.04,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Transport",
+        "pct": 4.78,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 4.65,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Communications",
+        "pct": 4.57,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Construction",
+        "pct": 4.18,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Forestry",
+        "pct": 3.94,
+        "color": "#86efac"
+      },
+      {
+        "en": "Public Health",
+        "pct": 3.04,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Private Health",
+        "pct": 2.54,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 1.85,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 1.83,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1.69,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 1.18,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Textiles",
+        "pct": 1.07,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.06,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.02,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.95,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.87,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 0.81,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.73,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.63,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.36,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.35,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.34,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.28,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.25,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.21,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.21,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.18,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.15,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.14,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 0.1,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.1,
+        "color": "#818cf8"
+      }
+    ],
+    "alimentos_bebidas_pct": 1.83,
+    "agropecuario_ampliado_pct": 14.86
+  },
+  {
+    "provincia": "Chubut",
+    "vab_total": 11292.6,
+    "sector_dominante": "Minería e Hidrocarburos",
+    "share_dominante_pct": 27.24,
+    "productos_principales": "Petróleo (Golfo San Jorge), pesca (langostino), aluminio (ALUAR), lana, turismo",
+    "sectores": [
+      {
+        "en": "Oil & Gas",
+        "pct": 26.85,
+        "color": "#f59e0b"
+      },
+      {
+        "en": "Commerce",
+        "pct": 8.72,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 7.61,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 7.29,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 6.09,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Fishing",
+        "pct": 5.76,
+        "color": "#6ee7b7"
+      },
+      {
+        "en": "Transport",
+        "pct": 4.68,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Construction",
+        "pct": 4.06,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 3.85,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Public Education",
+        "pct": 3.47,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Other",
+        "pct": 2.89,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Communications",
+        "pct": 2.81,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 2.5,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 1.68,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Private Health",
+        "pct": 1.6,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 1.1,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.05,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 0.97,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.69,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.64,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.63,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.53,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.51,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.5,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.49,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.41,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.39,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.34,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.27,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.25,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Repair & Maintenance",
+        "pct": 0.23,
+        "color": "#e0f2fe"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.21,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.19,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.16,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 0.12,
+        "color": "#fde68a"
+      }
+    ],
+    "alimentos_bebidas_pct": 3.85,
+    "agropecuario_ampliado_pct": 10.71
+  },
+  {
+    "provincia": "Corrientes",
+    "vab_total": 7868.3,
+    "sector_dominante": "Comercio",
+    "share_dominante_pct": 25.88,
+    "productos_principales": "Forestación (pino, eucalipto), arroz, yerba mate, ganadería, citricultura",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 25.88,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 8.52,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Other",
+        "pct": 7.85,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 6.9,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Public Education",
+        "pct": 6.74,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 5.97,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Communications",
+        "pct": 4.09,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 3.56,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Construction",
+        "pct": 3.24,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Transport",
+        "pct": 3.22,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 3.07,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Public Health",
+        "pct": 2.58,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Private Health",
+        "pct": 2.22,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.98,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.91,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 1.72,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Forestry",
+        "pct": 1.29,
+        "color": "#86efac"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.1,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 1,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.99,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.99,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.85,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.84,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.58,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.42,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.37,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.37,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.33,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.19,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.16,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.15,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.14,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.13,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Tobacco",
+        "pct": 0.11,
+        "color": "#d9f99d"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.11,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.1,
+        "color": "#e9d5ff"
+      }
+    ],
+    "alimentos_bebidas_pct": 3.07,
+    "agropecuario_ampliado_pct": 8.01
+  },
+  {
+    "provincia": "Córdoba",
+    "vab_total": 47892.3,
+    "sector_dominante": "Comercio",
+    "share_dominante_pct": 21.84,
+    "productos_principales": "Automotriz, maquinaria agrícola, soja, maní, industria alimenticia, tecnología",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 21.84,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 12.7,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 6.79,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 6.29,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Other",
+        "pct": 5.27,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 5.09,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Transport",
+        "pct": 4.12,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Construction",
+        "pct": 3.65,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Private Health",
+        "pct": 3.33,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Communications",
+        "pct": 3.31,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Public Education",
+        "pct": 3.04,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 2.61,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 2.51,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1.69,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Private Education",
+        "pct": 1.62,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 1.4,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.37,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.34,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.2,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 1.03,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.84,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.83,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.74,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.68,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.65,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.55,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.48,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.39,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Paper",
+        "pct": 0.39,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.34,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 0.3,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.28,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.25,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Repair & Maintenance",
+        "pct": 0.25,
+        "color": "#e0f2fe"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.24,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Electrical Machinery",
+        "pct": 0.23,
+        "color": "#c7d2fe"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.22,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.16,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.16,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.16,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Medical Instruments",
+        "pct": 0.16,
+        "color": "#f0abfc"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.16,
+        "color": "#bae6fd"
+      }
+    ],
+    "alimentos_bebidas_pct": 6.79,
+    "agropecuario_ampliado_pct": 19.58
+  },
+  {
+    "provincia": "Entre Ríos",
+    "vab_total": 16133.9,
+    "sector_dominante": "Comercio",
+    "share_dominante_pct": 24.36,
+    "productos_principales": "Avicultura, citricultura, arroz, soja, forestación, termas/turismo",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 24.36,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 14.13,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 8.55,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 7.65,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 6.07,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Public Education",
+        "pct": 4.45,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Communications",
+        "pct": 4.3,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Other",
+        "pct": 3.25,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Transport",
+        "pct": 2.74,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Construction",
+        "pct": 2.62,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Public Health",
+        "pct": 2.27,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Private Health",
+        "pct": 2.12,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.74,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 1.52,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1.37,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.19,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Private Education",
+        "pct": 1.17,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 1.11,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Insurance",
+        "pct": 1.09,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.96,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 0.94,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.65,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.63,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Paper",
+        "pct": 0.58,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 0.55,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.45,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.45,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Forestry",
+        "pct": 0.39,
+        "color": "#86efac"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.38,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.28,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.25,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 0.22,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.21,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.2,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.19,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Repair & Maintenance",
+        "pct": 0.16,
+        "color": "#e0f2fe"
+      },
+      {
+        "en": "Fishing",
+        "pct": 0.14,
+        "color": "#6ee7b7"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.14,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.12,
+        "color": "#d1d5db"
+      }
+    ],
+    "alimentos_bebidas_pct": 8.55,
+    "agropecuario_ampliado_pct": 23.21
+  },
+  {
+    "provincia": "Formosa",
+    "vab_total": 3796.4,
+    "sector_dominante": "Agropecuario",
+    "share_dominante_pct": 19.25,
+    "productos_principales": "Ganadería, algodón, arroz, forestación, banana",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 16.83,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Forestry",
+        "pct": 12.74,
+        "color": "#86efac"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 10.27,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Construction",
+        "pct": 9.05,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Public Education",
+        "pct": 8.37,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Communications",
+        "pct": 7.96,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 5.41,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Public Health",
+        "pct": 4.86,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 3.48,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Other",
+        "pct": 3.05,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Transport",
+        "pct": 2.87,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 2.84,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Private Health",
+        "pct": 1.95,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1.51,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.24,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.95,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.93,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.8,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.73,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.56,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 0.53,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.49,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Oil & Gas",
+        "pct": 0.39,
+        "color": "#f59e0b"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.35,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.29,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Fishing",
+        "pct": 0.2,
+        "color": "#6ee7b7"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.17,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.15,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.14,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.14,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.14,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.12,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.1,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.1,
+        "color": "#d8b4fe"
+      }
+    ],
+    "alimentos_bebidas_pct": 3.48,
+    "agropecuario_ampliado_pct": 19.25
+  },
+  {
+    "provincia": "Jujuy",
+    "vab_total": 6832,
+    "sector_dominante": "Transporte y Comunicaciones",
+    "share_dominante_pct": 14.78,
+    "productos_principales": "Litio (Cauchari-Olaroz), tabaco, azúcar, minería, turismo (Quebrada de Humahuaca)",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 12,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 11.66,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Communications",
+        "pct": 11.63,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 9.17,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Other",
+        "pct": 7.56,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Construction",
+        "pct": 5.03,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 4.79,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 4.63,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Public Education",
+        "pct": 4.62,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Paper",
+        "pct": 3.38,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Transport",
+        "pct": 3.15,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 2.91,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 2.65,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Public Health",
+        "pct": 2.2,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Forestry",
+        "pct": 1.88,
+        "color": "#86efac"
+      },
+      {
+        "en": "Private Health",
+        "pct": 1.77,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.65,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.03,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 0.91,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.77,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.74,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Tobacco",
+        "pct": 0.63,
+        "color": "#d9f99d"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.62,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.61,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 0.49,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.48,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.4,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.34,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.3,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.28,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.25,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.24,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.2,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.19,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.18,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.17,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.14,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.1,
+        "color": "#818cf8"
+      }
+    ],
+    "alimentos_bebidas_pct": 2.65,
+    "agropecuario_ampliado_pct": 9.16
+  },
+  {
+    "provincia": "La Pampa",
+    "vab_total": 6122.8,
+    "sector_dominante": "Comercio",
+    "share_dominante_pct": 27.57,
+    "productos_principales": "Ganadería bovina, trigo, girasol, sal, petróleo (Medanito)",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 27.57,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 16.14,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Oil & Gas",
+        "pct": 7.41,
+        "color": "#f59e0b"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 7.17,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Other",
+        "pct": 5.99,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 5.23,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Public Education",
+        "pct": 4.02,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Construction",
+        "pct": 3.65,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Transport",
+        "pct": 2.99,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 2.64,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Private Health",
+        "pct": 2.55,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Communications",
+        "pct": 1.76,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.72,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.45,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 0.91,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 0.74,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.64,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.63,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.63,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.62,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.55,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.55,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.54,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.46,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.44,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.35,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.34,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.3,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.28,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.25,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.21,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 0.18,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.18,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.16,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 0.16,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.15,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Electrical Machinery",
+        "pct": 0.14,
+        "color": "#c7d2fe"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.13,
+        "color": "#d1d5db"
+      }
+    ],
+    "alimentos_bebidas_pct": 2.64,
+    "agropecuario_ampliado_pct": 18.78
+  },
+  {
+    "provincia": "La Rioja",
+    "vab_total": 3455.5,
+    "sector_dominante": "Industria",
+    "share_dominante_pct": 18.25,
+    "productos_principales": "Olivicultura, vitivinicultura, minería (oro – Famatina), industria liviana",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 15.39,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 10.64,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Public Education",
+        "pct": 8.32,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 6.59,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Other",
+        "pct": 6.41,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 5.79,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Construction",
+        "pct": 5.37,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Paper",
+        "pct": 4.85,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 4.68,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 4.57,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Transport",
+        "pct": 4.49,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Textiles",
+        "pct": 2.3,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Communications",
+        "pct": 2.26,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Private Health",
+        "pct": 1.93,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.77,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.77,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Insurance",
+        "pct": 1.63,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 1.47,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1.35,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 1.11,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.88,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.72,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.64,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.55,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.55,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.46,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.4,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.36,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.34,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.33,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Medical Instruments",
+        "pct": 0.3,
+        "color": "#f0abfc"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.28,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.26,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.21,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Office Machinery",
+        "pct": 0.21,
+        "color": "#a5b4fc"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.21,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 0.17,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.12,
+        "color": "#dbeafe"
+      }
+    ],
+    "alimentos_bebidas_pct": 6.59,
+    "agropecuario_ampliado_pct": 11.16
+  },
+  {
+    "provincia": "Mendoza",
+    "vab_total": 19617.1,
+    "sector_dominante": "Agropecuario",
+    "share_dominante_pct": 17.01,
+    "productos_principales": "Vitivinicultura, petróleo, fruticultura, industria alimenticia, turismo",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 15.45,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 11.68,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Oil & Gas",
+        "pct": 7.37,
+        "color": "#f59e0b"
+      },
+      {
+        "en": "Other",
+        "pct": 6.37,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 5.98,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Communications",
+        "pct": 5.76,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 5.33,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 4.77,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Transport",
+        "pct": 4.07,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Public Education",
+        "pct": 3.81,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Construction",
+        "pct": 3.34,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Private Health",
+        "pct": 2.85,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 2.68,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.77,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 1.5,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 1.46,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1.33,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Private Education",
+        "pct": 1.23,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 1.14,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.07,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.95,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.92,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.82,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.81,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.77,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.77,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.71,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.7,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.68,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.52,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.42,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 0.39,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.37,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.37,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.36,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.23,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Repair & Maintenance",
+        "pct": 0.23,
+        "color": "#e0f2fe"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.22,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Paper",
+        "pct": 0.18,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.17,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Electrical Machinery",
+        "pct": 0.16,
+        "color": "#c7d2fe"
+      }
+    ],
+    "alimentos_bebidas_pct": 11.68,
+    "agropecuario_ampliado_pct": 17.01
+  },
+  {
+    "provincia": "Misiones",
+    "vab_total": 7912.9,
+    "sector_dominante": "Industria",
+    "share_dominante_pct": 18.53,
+    "productos_principales": "Yerba mate, té, tabaco, forestación (celulosa), turismo (Cataratas)",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 13.62,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 7.9,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Paper",
+        "pct": 7.73,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Public Education",
+        "pct": 7.22,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 6.83,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 6.24,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Communications",
+        "pct": 5.55,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 4.62,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Construction",
+        "pct": 4.54,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 4.22,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Transport",
+        "pct": 3.48,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Private Education",
+        "pct": 3.4,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Other",
+        "pct": 3.23,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Public Health",
+        "pct": 2.84,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 2.68,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Private Health",
+        "pct": 2.58,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Hotels",
+        "pct": 1.73,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.41,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.26,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Forestry",
+        "pct": 1.23,
+        "color": "#86efac"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.91,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.9,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.69,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.69,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.68,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.51,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.45,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.43,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Tobacco",
+        "pct": 0.29,
+        "color": "#d9f99d"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.27,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.26,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.25,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Repair & Maintenance",
+        "pct": 0.25,
+        "color": "#e0f2fe"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.25,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.22,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.19,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.1,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.1,
+        "color": "#a5f3fc"
+      }
+    ],
+    "alimentos_bebidas_pct": 4.62,
+    "agropecuario_ampliado_pct": 10.07
+  },
+  {
+    "provincia": "Neuquén",
+    "vab_total": 23045.2,
+    "sector_dominante": "Minería e Hidrocarburos",
+    "share_dominante_pct": 52.86,
+    "productos_principales": "Hidrocarburos (Vaca Muerta), fruticultura (pera, manzana), turismo, energía",
+    "sectores": [
+      {
+        "en": "Oil & Gas",
+        "pct": 52.64,
+        "color": "#f59e0b"
+      },
+      {
+        "en": "Commerce",
+        "pct": 6.7,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 6.02,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Construction",
+        "pct": 5.47,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Public Education",
+        "pct": 3.94,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Other",
+        "pct": 3.75,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 3.12,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Transport",
+        "pct": 2,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1.97,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Private Health",
+        "pct": 1.53,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 1.48,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Communications",
+        "pct": 1.4,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.06,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.97,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 0.83,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.56,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.55,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.53,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 0.51,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 0.41,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.41,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.41,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.39,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 0.33,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.32,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.31,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.29,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.25,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.24,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.24,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Fishing",
+        "pct": 0.22,
+        "color": "#6ee7b7"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.22,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.18,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.16,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.15,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Repair & Maintenance",
+        "pct": 0.12,
+        "color": "#e0f2fe"
+      }
+    ],
+    "alimentos_bebidas_pct": 0.51,
+    "agropecuario_ampliado_pct": 1.06
+  },
+  {
+    "provincia": "Río Negro",
+    "vab_total": 8497.8,
+    "sector_dominante": "Inmobiliario y Otros Servicios",
+    "share_dominante_pct": 17.71,
+    "productos_principales": "Fruticultura (pera, manzana – Alto Valle), turismo (Bariloche), petróleo, pesca",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 15.92,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 9.73,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Oil & Gas",
+        "pct": 7.85,
+        "color": "#f59e0b"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 7.79,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Public Education",
+        "pct": 5.76,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 5.44,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Other",
+        "pct": 5.1,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 4.89,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Transport",
+        "pct": 4.46,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Communications",
+        "pct": 3.99,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 3.98,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Private Health",
+        "pct": 3.62,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Construction",
+        "pct": 3.18,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 2.22,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Public Health",
+        "pct": 2.05,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Insurance",
+        "pct": 1.7,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Hotels",
+        "pct": 1.51,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.42,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 1.4,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.37,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.72,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.69,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Fishing",
+        "pct": 0.67,
+        "color": "#6ee7b7"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.63,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.6,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.32,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.28,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.28,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 0.27,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.27,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Paper",
+        "pct": 0.26,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.25,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.23,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.22,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.13,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.12,
+        "color": "#d1d5db"
+      }
+    ],
+    "alimentos_bebidas_pct": 3.98,
+    "agropecuario_ampliado_pct": 10.09
+  },
+  {
+    "provincia": "Salta",
+    "vab_total": 11613.9,
+    "sector_dominante": "Agropecuario",
+    "share_dominante_pct": 18.74,
+    "productos_principales": "Soja, tabaco, vitivinicultura, hidrocarburos, litio, poroto, turismo",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 16.18,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 12.15,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 8.6,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Construction",
+        "pct": 5.99,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Public Education",
+        "pct": 5.65,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Other",
+        "pct": 5.1,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 4.94,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Communications",
+        "pct": 4.72,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 4.2,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Transport",
+        "pct": 3.48,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 2.89,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 2.74,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Private Health",
+        "pct": 2.54,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Forestry",
+        "pct": 2.39,
+        "color": "#86efac"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.8,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Oil & Gas",
+        "pct": 1.72,
+        "color": "#f59e0b"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.63,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 1.58,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 1.22,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Private Education",
+        "pct": 1.17,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 1.16,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.97,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.79,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.74,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Tobacco",
+        "pct": 0.68,
+        "color": "#d9f99d"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.68,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.66,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.47,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.46,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.41,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.35,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.35,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.26,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.19,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.17,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Medical Instruments",
+        "pct": 0.16,
+        "color": "#f0abfc"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.15,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.13,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Electrical Machinery",
+        "pct": 0.1,
+        "color": "#c7d2fe"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.1,
+        "color": "#fde68a"
+      }
+    ],
+    "alimentos_bebidas_pct": 4.2,
+    "agropecuario_ampliado_pct": 18.74
+  },
+  {
+    "provincia": "San Juan",
+    "vab_total": 7740.5,
+    "sector_dominante": "Industria",
+    "share_dominante_pct": 16.63,
+    "productos_principales": "Minería (oro – Veladero, Lama), vitivinicultura, olivicultura, horticultura",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 13.35,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 9.42,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Construction",
+        "pct": 8.05,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Other",
+        "pct": 7.33,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 7.24,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 7.23,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Public Education",
+        "pct": 5.38,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 5.13,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 4.17,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Communications",
+        "pct": 3.52,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Private Health",
+        "pct": 3.24,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Public Health",
+        "pct": 3.13,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Transport",
+        "pct": 2.65,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 2.21,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Private Education",
+        "pct": 2.1,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 2,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.74,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.42,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1.21,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 1,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.96,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.78,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.73,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.68,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.65,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.61,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.54,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.48,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.42,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.39,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.36,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Paper",
+        "pct": 0.33,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.31,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.26,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.21,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 0.17,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.15,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Electrical Machinery",
+        "pct": 0.11,
+        "color": "#c7d2fe"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.1,
+        "color": "#bbf7d0"
+      }
+    ],
+    "alimentos_bebidas_pct": 7.24,
+    "agropecuario_ampliado_pct": 11.42
+  },
+  {
+    "provincia": "San Luis",
+    "vab_total": 6074.7,
+    "sector_dominante": "Industria",
+    "share_dominante_pct": 36.2,
+    "productos_principales": "Industria manufacturera (régimen promoción), minería, ganadería, turismo",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 12.34,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 9.29,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 6.93,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 6.15,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 5.64,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 4.98,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Public Education",
+        "pct": 4.81,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Paper",
+        "pct": 4.62,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Construction",
+        "pct": 3.7,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 3.37,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Transport",
+        "pct": 3.33,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Communications",
+        "pct": 3.16,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Private Health",
+        "pct": 2.98,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 2.97,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Other",
+        "pct": 2.42,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 2.3,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Public Health",
+        "pct": 2.02,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 1.88,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.82,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.79,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 1.53,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 1.38,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.15,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 1.12,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 1.05,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.94,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.87,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 0.76,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.7,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.66,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.64,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.48,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.43,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.38,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.25,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.21,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.2,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Electrical Machinery",
+        "pct": 0.14,
+        "color": "#c7d2fe"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.13,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Electronics",
+        "pct": 0.11,
+        "color": "#e0e7ff"
+      }
+    ],
+    "alimentos_bebidas_pct": 9.29,
+    "agropecuario_ampliado_pct": 15.44
+  },
+  {
+    "provincia": "Santa Cruz",
+    "vab_total": 8409.2,
+    "sector_dominante": "Minería e Hidrocarburos",
+    "share_dominante_pct": 38.48,
+    "productos_principales": "Petróleo (Golfo San Jorge), minería (oro – Cerro Vanguardia), pesca, lana, gas",
+    "sectores": [
+      {
+        "en": "Oil & Gas",
+        "pct": 24.39,
+        "color": "#f59e0b"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 14.1,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 9.16,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Fishing",
+        "pct": 7.35,
+        "color": "#6ee7b7"
+      },
+      {
+        "en": "Construction",
+        "pct": 7.23,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Commerce",
+        "pct": 6.17,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 5.27,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Public Education",
+        "pct": 3.54,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Other",
+        "pct": 3,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Transport",
+        "pct": 2.88,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Communications",
+        "pct": 2.79,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Private Health",
+        "pct": 1.96,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.91,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 1.85,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 1.43,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.12,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.98,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 0.85,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.57,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.49,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.42,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.32,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.27,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.27,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.24,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.22,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 0.19,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.19,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.15,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.14,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.14,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.1,
+        "color": "#dbeafe"
+      }
+    ],
+    "alimentos_bebidas_pct": 1.85,
+    "agropecuario_ampliado_pct": 10.06
+  },
+  {
+    "provincia": "Santa Fe",
+    "vab_total": 46447.6,
+    "sector_dominante": "Agropecuario",
+    "share_dominante_pct": 20.53,
+    "productos_principales": "Agroindustria (soja, maíz), industria siderúrgica, automotriz, lácteos, maquinaria",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 17.47,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 11.44,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 8.96,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 6.1,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 4.74,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Other",
+        "pct": 4.72,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Transport",
+        "pct": 4.42,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 3.89,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Communications",
+        "pct": 3.8,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Public Education",
+        "pct": 3.77,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 3.71,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Construction",
+        "pct": 3.07,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Private Health",
+        "pct": 2.51,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Insurance",
+        "pct": 1.94,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 1.64,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Associations",
+        "pct": 1.6,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.57,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 1.33,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 1.13,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 1.09,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.01,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.95,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 0.91,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 0.87,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.74,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.63,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Paper",
+        "pct": 0.61,
+        "color": "#bfdbfe"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.58,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.56,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.55,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.39,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Repair & Maintenance",
+        "pct": 0.34,
+        "color": "#e0f2fe"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.33,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.33,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.28,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.27,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Medical Instruments",
+        "pct": 0.19,
+        "color": "#f0abfc"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.17,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Electronics",
+        "pct": 0.16,
+        "color": "#e0e7ff"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.16,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.15,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Office Machinery",
+        "pct": 0.13,
+        "color": "#a5b4fc"
+      },
+      {
+        "en": "Electrical Machinery",
+        "pct": 0.13,
+        "color": "#c7d2fe"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.13,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Recycling",
+        "pct": 0.12,
+        "color": "#d1fae5"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.11,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Other Transport Equip.",
+        "pct": 0.1,
+        "color": "#7c3aed"
+      }
+    ],
+    "alimentos_bebidas_pct": 8.96,
+    "agropecuario_ampliado_pct": 20.53
+  },
+  {
+    "provincia": "Santiago del Estero",
+    "vab_total": 9499.5,
+    "sector_dominante": "Comercio",
+    "share_dominante_pct": 30.96,
+    "productos_principales": "Soja, algodón, ganadería, forestación, sorgo",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 30.96,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 24.52,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 5.44,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Construction",
+        "pct": 4.54,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Transport",
+        "pct": 4.11,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 3.84,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Other",
+        "pct": 2.92,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 2.81,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Public Education",
+        "pct": 2.7,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Communications",
+        "pct": 2.52,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 2.19,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Forestry",
+        "pct": 1.85,
+        "color": "#86efac"
+      },
+      {
+        "en": "Private Health",
+        "pct": 1.64,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.3,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.28,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.07,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.94,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 0.93,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.52,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.49,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.38,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.37,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.36,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.35,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.33,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.3,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.18,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.17,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.17,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.13,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.13,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.12,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.1,
+        "color": "#d1d5db"
+      }
+    ],
+    "alimentos_bebidas_pct": 2.19,
+    "agropecuario_ampliado_pct": 28.56
+  },
+  {
+    "provincia": "Tierra del Fuego",
+    "vab_total": 5577.5,
+    "sector_dominante": "Industria",
+    "share_dominante_pct": 27.72,
+    "productos_principales": "Industria electrónica (régimen promoción), pesca, gas, turismo (Ushuaia)",
+    "sectores": [
+      {
+        "en": "Electronics",
+        "pct": 20.58,
+        "color": "#e0e7ff"
+      },
+      {
+        "en": "Commerce",
+        "pct": 16.67,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Transport",
+        "pct": 7.91,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 6.36,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Oil & Gas",
+        "pct": 5.6,
+        "color": "#f59e0b"
+      },
+      {
+        "en": "Public Education",
+        "pct": 5.24,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Private Education",
+        "pct": 3.99,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 3.76,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Other",
+        "pct": 3.17,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Construction",
+        "pct": 2.84,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 2.7,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 2.5,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Communications",
+        "pct": 2.4,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Fishing",
+        "pct": 2.04,
+        "color": "#6ee7b7"
+      },
+      {
+        "en": "Public Health",
+        "pct": 1.94,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Hotels",
+        "pct": 1.55,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Private Health",
+        "pct": 1.16,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 0.96,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Textiles",
+        "pct": 0.88,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 0.82,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Metal Mining",
+        "pct": 0.79,
+        "color": "#fcd34d"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.59,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 0.57,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.56,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.45,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.42,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.42,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 0.39,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 0.38,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.36,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.27,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 0.25,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.25,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 0.22,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.21,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.2,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.19,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.12,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Medical Instruments",
+        "pct": 0.11,
+        "color": "#f0abfc"
+      }
+    ],
+    "alimentos_bebidas_pct": 0.22,
+    "agropecuario_ampliado_pct": 2.51
+  },
+  {
+    "provincia": "Tucumán",
+    "vab_total": 11621.8,
+    "sector_dominante": "Comercio",
+    "share_dominante_pct": 18.04,
+    "productos_principales": "Azúcar (caña), limón, soja, automotriz, industria alimenticia, biotecnología",
+    "sectores": [
+      {
+        "en": "Commerce",
+        "pct": 18.04,
+        "color": "#22d3ee"
+      },
+      {
+        "en": "Public Administration",
+        "pct": 10.3,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Food & Beverages",
+        "pct": 7.73,
+        "color": "#a3e635"
+      },
+      {
+        "en": "Other",
+        "pct": 7.54,
+        "color": "#9ca3af"
+      },
+      {
+        "en": "Agriculture",
+        "pct": 7.07,
+        "color": "#4ade80"
+      },
+      {
+        "en": "Real Estate",
+        "pct": 6.46,
+        "color": "#38bdf8"
+      },
+      {
+        "en": "Public Education",
+        "pct": 6.1,
+        "color": "#a78bfa"
+      },
+      {
+        "en": "Transport",
+        "pct": 5.37,
+        "color": "#67e8f9"
+      },
+      {
+        "en": "Communications",
+        "pct": 4.3,
+        "color": "#7dd3fc"
+      },
+      {
+        "en": "Private Health",
+        "pct": 4.07,
+        "color": "#7c3aed"
+      },
+      {
+        "en": "Construction",
+        "pct": 2.85,
+        "color": "#fb923c"
+      },
+      {
+        "en": "Public Health",
+        "pct": 2.7,
+        "color": "#6d28d9"
+      },
+      {
+        "en": "Power Generation",
+        "pct": 2.5,
+        "color": "#fef08a"
+      },
+      {
+        "en": "Financial Services",
+        "pct": 1.57,
+        "color": "#fbbf24"
+      },
+      {
+        "en": "Culture & Sports",
+        "pct": 1.21,
+        "color": "#fda4af"
+      },
+      {
+        "en": "Textiles",
+        "pct": 1.15,
+        "color": "#c084fc"
+      },
+      {
+        "en": "Restaurants/Bars",
+        "pct": 1.15,
+        "color": "#fca5a5"
+      },
+      {
+        "en": "Forestry",
+        "pct": 0.97,
+        "color": "#86efac"
+      },
+      {
+        "en": "Insurance",
+        "pct": 0.82,
+        "color": "#fef3c7"
+      },
+      {
+        "en": "Domestic Services",
+        "pct": 0.82,
+        "color": "#f1f5f9"
+      },
+      {
+        "en": "Rubber & Plastics",
+        "pct": 0.61,
+        "color": "#99f6e4"
+      },
+      {
+        "en": "Gas Distribution",
+        "pct": 0.6,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Furniture/Other Mfg",
+        "pct": 0.52,
+        "color": "#8b5cf6"
+      },
+      {
+        "en": "Associations",
+        "pct": 0.47,
+        "color": "#e2e8f0"
+      },
+      {
+        "en": "Non-metallic Minerals",
+        "pct": 0.44,
+        "color": "#e5e7eb"
+      },
+      {
+        "en": "Leather/Footwear",
+        "pct": 0.42,
+        "color": "#e9d5ff"
+      },
+      {
+        "en": "Publishing",
+        "pct": 0.38,
+        "color": "#dbeafe"
+      },
+      {
+        "en": "Private Education",
+        "pct": 0.38,
+        "color": "#c4b5fd"
+      },
+      {
+        "en": "Fabricated Metals",
+        "pct": 0.36,
+        "color": "#cbd5e1"
+      },
+      {
+        "en": "Machinery & Equipment",
+        "pct": 0.31,
+        "color": "#818cf8"
+      },
+      {
+        "en": "Motor Vehicles",
+        "pct": 0.28,
+        "color": "#6366f1"
+      },
+      {
+        "en": "Apparel",
+        "pct": 0.27,
+        "color": "#d8b4fe"
+      },
+      {
+        "en": "Hotels",
+        "pct": 0.26,
+        "color": "#f9a8d4"
+      },
+      {
+        "en": "Chemicals",
+        "pct": 0.24,
+        "color": "#a5f3fc"
+      },
+      {
+        "en": "Basic Metals",
+        "pct": 0.22,
+        "color": "#94a3b8"
+      },
+      {
+        "en": "Waste Management",
+        "pct": 0.22,
+        "color": "#d1d5db"
+      },
+      {
+        "en": "Petroleum Refining",
+        "pct": 0.2,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Water Supply",
+        "pct": 0.2,
+        "color": "#bae6fd"
+      },
+      {
+        "en": "Electronics",
+        "pct": 0.17,
+        "color": "#e0e7ff"
+      },
+      {
+        "en": "Repair & Maintenance",
+        "pct": 0.15,
+        "color": "#e0f2fe"
+      },
+      {
+        "en": "Wood Products",
+        "pct": 0.14,
+        "color": "#bbf7d0"
+      },
+      {
+        "en": "Fin. Auxiliary Svcs",
+        "pct": 0.14,
+        "color": "#fde68a"
+      },
+      {
+        "en": "Paper",
+        "pct": 0.13,
+        "color": "#bfdbfe"
+      }
+    ],
+    "alimentos_bebidas_pct": 7.73,
+    "agropecuario_ampliado_pct": 15.77
+  }
+]
