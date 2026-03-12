@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Project-specific
+.claude/
+raw_data/
+data/raw/
+portfolio_shots/
+portfolio-politicdash.pdf
+create_portfolio.py
