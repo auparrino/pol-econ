@@ -288,10 +288,10 @@ export const politicalContext = [
     "alineacion_milei": "media",
     "legislatura_composicion": "Unicameral (40): of. 53%, op. 47%",
     "elecciones_2025_resultado": "Oct-2025: renovaron Diputados nacionales; Renovador mantuvo representación histórica",
-    "rigi_adhesion_provincial": "en proceso — proyecto en legislatura",
+    "rigi_adhesion_provincial": "sí — aprobada ago-2025",
     "tracking_legislativo": "Partido provincial muy estable; economía misionera en turismo (Cataratas del Iguazú), yerba mate, forestal; Passalacqua ex-gobernador que retornó al cargo",
     "riesgo_cambio_politico": "bajo",
-    "confianza": "[estimado]"
+    "confianza": "[confirmado]"
   },
   {
     "provincia": "Neuquén",
