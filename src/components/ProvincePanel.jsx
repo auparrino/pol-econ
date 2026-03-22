@@ -348,7 +348,7 @@ function LegislatorCard({ leg }) {
             {leg.term && <span className="text-[#003049]/50 ml-1">({leg.term})</span>}
           </p>
         </div>
-        <div className="text-right shrink-0" title="% of key votes matching the LLA ruling bloc's position (≥90% bloc consensus)">
+        <div className="text-right shrink-0" title="% of all congressional votes aligned with the LLA ruling bloc (source: comovoto.dev.ar)">
           <p className="text-[7px] text-[#003049]/60 mb-0.5">Gov. align</p>
           <AlignmentBar value={computedAlla} />
         </div>
@@ -442,10 +442,10 @@ function LegislatorsSection({ province, congress }) {
     <>
       {avgAlign != null && (
         <Section title="Overall Legislative Alignment"
-          tooltip="Measures how often each legislator votes the same way as ≥90% of the LLA ruling bloc on key congressional votes (Budget, Tax Innocence, Labor Reform, Juvenile Penal, Mercosur-EU, Glacier Law). Primary source: comovoto.dev.ar; fallback: computed from congressional vote records."
+          tooltip="Measures how often each legislator votes the same way as the LLA ruling bloc across all congressional votes (147+ Diputados, 154+ Senado since Dec 2023). Source: comovoto.dev.ar (updated weekly from votaciones.hcdn.gob.ar and senado.gob.ar)."
         >
           <p className="text-[8px] text-[#003049]/50 mb-1.5 leading-tight">
-            % of votes matching the LLA ruling bloc's ≥90% consensus position on key bills. Source: comovoto.dev.ar
+            % of all congressional votes aligned with the LLA ruling bloc. Source: comovoto.dev.ar
           </p>
           <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10">
             <div className="flex items-center justify-between mb-1">
