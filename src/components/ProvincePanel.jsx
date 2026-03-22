@@ -33,6 +33,39 @@ for (const leg of votacionesRaw) {
   }
 }
 
+// Pre-compute ruling bloc (LLA) majority position per topic per chamber.
+// For each topic, the "oficialista position" is the vote cast by >=90% of
+// present LLA legislators. A legislator's "Gov. align" % = how often they
+// voted the same way as the LLA bloc position.
+const OFICIALISMO_BLOCS = ['la libertad avanza'];
+const SENATE_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
+const DEPUTY_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
+
+function computeBlocPosition(chamber, topics) {
+  const positions = {};
+  const llaLegs = votacionesRaw.filter(
+    l => l.c === chamber && OFICIALISMO_BLOCS.includes(l.b?.toLowerCase())
+  );
+  for (const topic of topics) {
+    const voteCounts = {};
+    let totalPresent = 0;
+    for (const l of llaLegs) {
+      const v = l.v?.[topic];
+      if (v) { voteCounts[v] = (voteCounts[v] || 0) + 1; totalPresent++; }
+    }
+    if (totalPresent === 0) { positions[topic] = null; continue; }
+    // Find the vote cast by >=90% of present bloc members
+    for (const [vote, count] of Object.entries(voteCounts)) {
+      if (count / totalPresent >= 0.9) { positions[topic] = vote; break; }
+    }
+    if (!positions[topic]) positions[topic] = null; // no clear >=90% majority
+  }
+  return positions;
+}
+
+const senateBlocPos = computeBlocPosition('S', SENATE_TOPICS);
+const deputyBlocPos = computeBlocPosition('D', DEPUTY_TOPICS);
+
 function InfoTooltip({ text }) {
   const [rect, setRect] = useState(null);
 
@@ -292,20 +325,20 @@ function LegislatorCard({ leg }) {
   const votes = voteRecord?.v || {};
 
   // Topics for this chamber
-  const chamberTopics = leg.c === 'senadores'
-    ? ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv']
-    : ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
+  const chamberTopics = leg.c === 'senadores' ? SENATE_TOPICS : DEPUTY_TOPICS;
+  const blocPos = leg.c === 'senadores' ? senateBlocPos : deputyBlocPos;
 
   const hasAnyVote = chamberTopics.some(t => votes[t]);
 
-  // Compute alla from vote data if missing from comovoto
+  // Compute alla: % of votes matching the ruling bloc's >=90% position
   const computedAlla = (() => {
     if (leg.alla != null) return leg.alla;
     if (!votes || Object.keys(votes).length === 0) return null;
-    const withVotes = chamberTopics.filter(t => votes[t]);
-    if (!withVotes.length) return null;
-    const aVotes = withVotes.filter(t => votes[t] === 'A').length;
-    return Math.round((aVotes / withVotes.length) * 100);
+    // Only count topics where both legislator voted AND bloc had a clear position
+    const comparable = chamberTopics.filter(t => votes[t] && blocPos[t]);
+    if (!comparable.length) return null;
+    const aligned = comparable.filter(t => votes[t] === blocPos[t]).length;
+    return Math.round((aligned / comparable.length) * 100);
   })();
 
   return (
@@ -319,7 +352,7 @@ function LegislatorCard({ leg }) {
             {leg.term && <span className="text-[#003049]/50 ml-1">({leg.term})</span>}
           </p>
         </div>
-        <div className="text-right shrink-0">
+        <div className="text-right shrink-0" title="% of key votes matching the LLA ruling bloc's position (≥90% bloc consensus)">
           <p className="text-[7px] text-[#003049]/60 mb-0.5">Gov. align</p>
           <AlignmentBar value={computedAlla} />
         </div>
@@ -412,7 +445,9 @@ function LegislatorsSection({ province, congress }) {
   return (
     <>
       {avgAlign != null && (
-        <Section title="Overall Legislative Alignment">
+        <Section title="Overall Legislative Alignment"
+          tooltip="Measures how often each legislator votes the same way as ≥90% of the LLA ruling bloc on key congressional votes (Budget, Tax Innocence, Labor Reform, Juvenile Penal, Mercosur-EU, Glacier Law). Primary source: comovoto.dev.ar; fallback: computed from congressional vote records."
+        >
           <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10">
             <div className="flex items-center justify-between mb-1">
               <span className="text-[9px] text-[#003049]/60">Province avg. ({allWithAlign.length} legislators)</span>
@@ -484,12 +519,14 @@ function EconomicSection({ province }) {
 
   if (!data) return null;
 
-  const sectorEntries = Array.isArray(data.sectores) ? data.sectores.slice(0, 10) : [];
+  const sectorEntries = Array.isArray(data.sectores)
+    ? data.sectores.filter(s => s.en !== 'Public Administration').slice(0, 10)
+    : [];
 
   return (
     <Section
       title="Provincial Economy (VAB 2023)"
-      tooltip="Valor Agregado Bruto by sector. Source: INDEC Estimaciones Provinciales del PBG (2023, latest available). Methodology: indirect estimation using provincial production indicators applied to national sector accounts (SCNA base 2004). Public administration is a legitimate VAB sector — in provinces like Formosa it dominates because the state is the primary employer."
+      tooltip="Valor Agregado Bruto (VAB) by sector. VAB reflects the productive activity of establishments located in each province, calculated by summing each local sector's value added (production approach). It covers output of resident units with an economic interest center in the territory. While GDP is national, provincial VAB (PBG) decentralizes this measurement for regional analysis. Source: INDEC Estimaciones Provinciales del PBG (2023)."
     >
       <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10 space-y-1">
         <div className="flex justify-between items-center mb-2">

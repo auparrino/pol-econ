@@ -44,6 +44,8 @@ body {
 }
 
 .leaflet-container { background: var(--color-cream) !important; font-family: var(--font-display) !important; }
+.leaflet-container path:focus { outline: none; }
+.leaflet-container svg:focus { outline: none; }
 .leaflet-popup-content-wrapper { background: var(--color-cream) !important; color: var(--color-navy) !important; border-radius: 6px !important; border: 1px solid rgba(0,48,73,0.15) !important; box-shadow: 0 4px 16px rgba(0,48,73,0.2) !important; }
 .leaflet-popup-tip { background: var(--color-cream) !important; }
 .leaflet-popup-content { font-family: var(--font-display) !important; font-size: 12px !important; margin: 8px 12px !important; }

@@ -81,7 +81,7 @@ function FlagEmoji({ children, size = 14 }) {
 // Curated energy sector stats (sources: SE Argentina, IAPG, CAMMESA, ENARGAS 2024)
 const YAC_STATS = {
   total: 879,
-  produccion_mboe_d: 1050, // mboe/d total country 2024
+  produccion_mboe_d: 717, // kb/d crude oil production 2024 (EIA)
   operadores: [
     { name: 'YPF', pct: 38, tipo: 'estatal', pais: '🇦🇷' },
     { name: 'PAE', pct: 21, tipo: 'privada', pais: '🇦🇷🇬🇧' },
@@ -102,22 +102,22 @@ const YAC_STATS = {
 
 const REF_STATS = {
   total: 15,
-  capacidad_kbd: 730, // kb/d total refinación 2024
+  capacidad_kbd: 630, // kb/d nameplate refining capacity 2024 (EIA ~580-665 range)
   operadores: [
-    { name: 'YPF', plantas: 4, pct: 57, tipo: 'estatal', pais: '🇦🇷' },
-    { name: 'AXION Energy', plantas: 1, pct: 18, tipo: 'privada', pais: '🇦🇷🇬🇧' },
-    { name: 'Pampa/San Carlos', plantas: 2, pct: 10, tipo: 'privada', pais: '🇦🇷' },
-    { name: 'OIL/Trafigura', plantas: 2, pct: 7, tipo: 'privada', pais: '🇨🇭' },
-    { name: 'Otras', plantas: 6, pct: 8, tipo: 'mix', pais: '🌐' },
+    { name: 'YPF', plantas: 4, pct: 50, tipo: 'estatal', pais: '🇦🇷' },
+    { name: 'Raizen/Shell', plantas: 1, pct: 16, tipo: 'privada', pais: '🇧🇷🇳🇱' },
+    { name: 'PAE/Axion', plantas: 1, pct: 15, tipo: 'privada', pais: '🇦🇷🇬🇧' },
+    { name: 'Trafigura/Puma', plantas: 1, pct: 7, tipo: 'privada', pais: '🇨🇭' },
+    { name: 'Otras', plantas: 7, pct: 12, tipo: 'mix', pais: '🌐' },
   ],
 };
 
 const CEN_STATS = {
-  total: 75,
-  capacidad_gw: 43.2, // GW instalados 2024
+  total: 78,
+  capacidad_gw: 43.4, // GW instalados end-2024 (CAMMESA)
   por_tipo: [
-    { tipo: 'Thermal', gw: 23.0, pct: 53, color: '#F97316' },
-    { tipo: 'Hydro', gw: 11.6, pct: 27, color: '#3B82F6' },
+    { tipo: 'Thermal', gw: 25.5, pct: 59, color: '#F97316' },
+    { tipo: 'Hydro', gw: 10.1, pct: 23, color: '#3B82F6' },
     { tipo: 'Renewable', gw: 6.8, pct: 16, color: '#22C55E' },
     { tipo: 'Nuclear', gw: 1.8, pct: 4, color: '#A855F7' },  // Atucha I (362) + Atucha II (745) + Embalse (656) = 1763 MW
   ],
@@ -436,7 +436,7 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
               <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#10B981' }}>{yacCount}</span>
               <div className="text-[11px] text-[#003049]/60">
                 <div>concession areas</div>
-                {!yacIsFiltered && <div>{YAC_STATS.produccion_mboe_d.toLocaleString('en-US')} kboe/d</div>}
+                {!yacIsFiltered && <div>{YAC_STATS.produccion_mboe_d.toLocaleString('en-US')} kb/d crude</div>}
               </div>
             </div>
           </div>
@@ -452,6 +452,8 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
                     <p className="text-[10px] text-[#003049]/60 leading-none mt-0.5">{op.short}</p>
                   </div>
                 ))
+              ) : yacIsFiltered ? (
+                <p className="text-[10px] text-[#003049]/40 italic">none in province</p>
               ) : (
                 YAC_STATS.operadores.slice(0, 6).map(op => (
                   <div key={op.name} className="text-center">
@@ -477,6 +479,8 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
                     </div>
                   );
                 })
+              ) : yacIsFiltered ? (
+                <p className="text-[10px] text-[#003049]/40 italic">—</p>
               ) : (
                 YAC_STATS.capital.map(c => (
                   <div key={c.pais} className="flex items-center gap-1.5">
