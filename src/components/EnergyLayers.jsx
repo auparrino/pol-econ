@@ -60,19 +60,31 @@ function YacimientosLayer() {
     <GeoJSON
       data={data}
       pane="energyPane"
-      style={() => ({
-        fillColor: '#10B981',
-        fillOpacity: 0.18,
-        weight: 0.7,
-        color: '#10B981',
-        opacity: 0.45,
-      })}
+      style={(feature) => {
+        const oil = feature.properties?.oil_bpd || 0;
+        // Intensity based on production
+        const intensity = oil > 50000 ? 0.45 : oil > 10000 ? 0.35 : oil > 1000 ? 0.25 : 0.15;
+        return {
+          fillColor: '#10B981',
+          fillOpacity: intensity,
+          weight: oil > 10000 ? 1.2 : 0.7,
+          color: '#10B981',
+          opacity: 0.45,
+        };
+      }}
       onEachFeature={(feature, layer) => {
         const p = feature.properties || {};
+        const oilKbd = p.oil_bpd ? (p.oil_bpd / 1000).toFixed(1) : null;
+        const gasStr = p.gas_mm3d ? (p.gas_mm3d / 1000).toFixed(1) : null; // Mm³/d → MMm³/d
+        const prodLine = (oilKbd || gasStr)
+          ? `<div style="margin-top:2px;color:#10B981;font-weight:600">${oilKbd ? oilKbd + ' kb/d oil' : ''}${oilKbd && gasStr ? ' · ' : ''}${gasStr ? gasStr + ' MMm³/d gas' : ''}</div>`
+          : '<div style="margin-top:2px;color:#94A3B8;font-size:10px">No production data</div>';
+        const cuencaLine = p.cuenca ? `<div style="color:#94A3B8;font-size:10px">${p.cuenca} · ${p.provincia || ''}</div>` : '';
         layer.bindTooltip(
           `<div class="font-display text-xs">
             <strong>${p.nombre || 'S/N'}</strong><br/>
             <span style="color:#94A3B8">${p.empresa || ''}</span>
+            ${cuencaLine}${prodLine}
           </div>`,
           { sticky: true, className: 'province-tooltip' }
         );

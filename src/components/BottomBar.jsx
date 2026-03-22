@@ -78,18 +78,38 @@ function FlagEmoji({ children, size = 14 }) {
   );
 }
 
-// Curated energy sector stats (sources: SE Argentina, IAPG, CAMMESA, ENARGAS 2024)
+// Curated energy sector stats (sources: SE Argentina, IAPG, CAMMESA, ENARGAS, EIA 2025)
 const YAC_STATS = {
   total: 879,
-  produccion_kbd: 717, // kb/d crude oil production 2024 (EIA)
+  produccion_kbd: 787,       // avg 2025 crude oil (kb/d) — record 844 in Nov '25
+  produccion_gas_mmm3d: 140, // avg 2025 natural gas (MMm³/d)
+  vaca_muerta: {
+    oil_pct: 68,             // % of national oil from VM (Nov '25)
+    gas_pct: 65,             // % of national gas from VM
+    growth_yoy: 30,          // % YoY oil growth
+    breakeven: '36–45',      // $/bbl breakeven range
+    reserves_oil_bbbl: 16,   // EIA recoverable shale oil (Bbbl)
+    reserves_gas_tcf: 308,   // EIA recoverable shale gas (Tcf)
+  },
+  exports: {
+    oil_kbd: 180,            // crude oil exports H1 2025 avg (kb/d)
+    gas_mmm3d: 10,           // pipeline gas exports (Chile, Uruguay, Brazil)
+    surplus_bln: 7.8,        // energy trade surplus 2025 full year (USD bn) — largest in 35y
+  },
+  basin_pct: [
+    { name: 'Neuquina', pct: 70, color: '#10B981' },
+    { name: 'G.San Jorge', pct: 18, color: '#3B82F6' },
+    { name: 'Austral', pct: 7, color: '#F97316' },
+    { name: 'Others', pct: 5, color: '#6B7280' },
+  ],
   operadores: [
-    { name: 'YPF', pct: 38, tipo: 'estatal', pais: '🇦🇷' },
-    { name: 'PAE', pct: 21, tipo: 'privada', pais: '🇦🇷🇬🇧' },
+    { name: 'YPF', pct: 47, tipo: 'estatal', pais: '🇦🇷' },  // Nov '25: 397k b/d of 844k total
+    { name: 'PAE', pct: 18, tipo: 'privada', pais: '🇦🇷🇬🇧' },
     { name: 'Vista', pct: 9, tipo: 'privada', pais: '🇦🇷' },
     { name: 'Tecpetrol', pct: 8, tipo: 'privada', pais: '🇦🇷' },
     { name: 'TotalEnergies', pct: 5, tipo: 'privada', pais: '🇫🇷' },
     { name: 'Sinopec', pct: 4, tipo: 'privada', pais: '🇨🇳' },
-    { name: 'Otros', pct: 15, tipo: 'mix', pais: '🌐' },
+    { name: 'Otros', pct: 9, tipo: 'mix', pais: '🌐' },
   ],
   capital: [
     { pais: '🇦🇷 Argentina', pct: 71 },
@@ -436,10 +456,59 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
               <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#10B981' }}>{yacCount}</span>
               <div className="text-[11px] text-[#003049]/60">
                 <div>concession areas</div>
-                {!yacIsFiltered && <div>{YAC_STATS.produccion_kbd.toLocaleString('en-US')} kb/d crude</div>}
+                {!yacIsFiltered && (
+                  <>
+                    <div>{YAC_STATS.produccion_kbd.toLocaleString('en-US')} kb/d oil</div>
+                    <div>{YAC_STATS.produccion_gas_mmm3d} MMm³/d gas</div>
+                  </>
+                )}
               </div>
             </div>
           </div>
+          {!yacIsFiltered && (
+            <>
+              <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+              <div>
+                <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">Vaca Muerta</p>
+                <div className="flex gap-3">
+                  <div className="text-center">
+                    <p className="text-[17px] font-bold font-mono text-[#003049]">{YAC_STATS.vaca_muerta.oil_pct}%</p>
+                    <p className="text-[9px] text-[#003049]/50 leading-none">of oil</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-[17px] font-bold font-mono text-[#003049]">{YAC_STATS.vaca_muerta.gas_pct}%</p>
+                    <p className="text-[9px] text-[#003049]/50 leading-none">of gas</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-[14px] font-bold font-mono" style={{ color: '#10B981' }}>+{YAC_STATS.vaca_muerta.growth_yoy}%</p>
+                    <p className="text-[9px] text-[#003049]/50 leading-none">YoY oil</p>
+                  </div>
+                </div>
+                <div className="flex gap-2 mt-1.5">
+                  <span className="text-[8px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">${YAC_STATS.vaca_muerta.breakeven}/bbl</span>
+                  <span className="text-[8px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">{YAC_STATS.vaca_muerta.reserves_oil_bbbl}Bbbl + {YAC_STATS.vaca_muerta.reserves_gas_tcf}Tcf</span>
+                </div>
+              </div>
+              <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+              <div>
+                <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">By basin</p>
+                <div className="flex flex-col gap-0.5">
+                  {YAC_STATS.basin_pct.map(b => (
+                    <div key={b.name} className="flex items-center gap-1.5">
+                      <div className="h-[6px] rounded-full shrink-0" style={{ width: Math.max(b.pct * 0.7, 4), background: b.color }} />
+                      <span className="text-[9px] text-[#003049]/60">{b.name}</span>
+                      <span className="text-[9px] font-mono font-bold text-[#003049]">{b.pct}%</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex flex-wrap gap-1.5 mt-1.5">
+                  <span className="text-[8px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">{YAC_STATS.exports.oil_kbd}k b/d exp.</span>
+                  <span className="text-[8px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">{YAC_STATS.exports.gas_mmm3d} MMm³/d gas</span>
+                  <span className="text-[8px] font-bold bg-[#10B981]/10 rounded px-1 py-0.5" style={{ color: '#10B981' }}>+${YAC_STATS.exports.surplus_bln}B surplus</span>
+                </div>
+              </div>
+            </>
+          )}
           <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
           <div>
             <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">Top operators</p>
