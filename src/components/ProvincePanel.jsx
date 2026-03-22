@@ -232,10 +232,6 @@ function SocioSection({ province }) {
     if (dn === 'caba' || dn?.includes('ciudad')) return false;
     return dn === provName || dn?.includes(provName) || provName?.includes(dn);
   });
-  const topSectors = Array.isArray(vabEntry?.sectores)
-    ? vabEntry.sectores.slice(0, 3).map(s => s.en).join(', ')
-    : null;
-
   if (!data) return null;
 
   const povertyColor = data.pobreza > 50 ? '#C1121F' : data.pobreza > 40 ? '#e67e22' : data.pobreza > 30 ? '#f39c12' : '#27ae60';
@@ -448,6 +444,9 @@ function LegislatorsSection({ province, congress }) {
         <Section title="Overall Legislative Alignment"
           tooltip="Measures how often each legislator votes the same way as ≥90% of the LLA ruling bloc on key congressional votes (Budget, Tax Innocence, Labor Reform, Juvenile Penal, Mercosur-EU, Glacier Law). Primary source: comovoto.dev.ar; fallback: computed from congressional vote records."
         >
+          <p className="text-[8px] text-[#003049]/50 mb-1.5 leading-tight">
+            % of votes matching the LLA ruling bloc's ≥90% consensus position on key bills. Source: comovoto.dev.ar
+          </p>
           <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10">
             <div className="flex items-center justify-between mb-1">
               <span className="text-[9px] text-[#003049]/60">Province avg. ({allWithAlign.length} legislators)</span>

@@ -81,7 +81,7 @@ function FlagEmoji({ children, size = 14 }) {
 // Curated energy sector stats (sources: SE Argentina, IAPG, CAMMESA, ENARGAS 2024)
 const YAC_STATS = {
   total: 879,
-  produccion_mboe_d: 717, // kb/d crude oil production 2024 (EIA)
+  produccion_kbd: 717, // kb/d crude oil production 2024 (EIA)
   operadores: [
     { name: 'YPF', pct: 38, tipo: 'estatal', pais: '🇦🇷' },
     { name: 'PAE', pct: 21, tipo: 'privada', pais: '🇦🇷🇬🇧' },
@@ -116,9 +116,9 @@ const CEN_STATS = {
   total: 78,
   capacidad_gw: 43.4, // GW instalados end-2024 (CAMMESA)
   por_tipo: [
-    { tipo: 'Thermal', gw: 25.5, pct: 59, color: '#F97316' },
+    { tipo: 'Thermal', gw: 25.5, pct: 58, color: '#F97316' },
     { tipo: 'Hydro', gw: 10.1, pct: 23, color: '#3B82F6' },
-    { tipo: 'Renewable', gw: 6.8, pct: 16, color: '#22C55E' },
+    { tipo: 'Renewable', gw: 6.8, pct: 15, color: '#22C55E' },
     { tipo: 'Nuclear', gw: 1.8, pct: 4, color: '#A855F7' },  // Atucha I (362) + Atucha II (745) + Embalse (656) = 1763 MW
   ],
   operadores: [
@@ -436,7 +436,7 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
               <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#10B981' }}>{yacCount}</span>
               <div className="text-[11px] text-[#003049]/60">
                 <div>concession areas</div>
-                {!yacIsFiltered && <div>{YAC_STATS.produccion_mboe_d.toLocaleString('en-US')} kb/d crude</div>}
+                {!yacIsFiltered && <div>{YAC_STATS.produccion_kbd.toLocaleString('en-US')} kb/d crude</div>}
               </div>
             </div>
           </div>
@@ -508,7 +508,7 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
               </span>
               <div className="text-[11px] text-[#003049]/60">
                 <div>{refIsFiltered ? `of ${REF_STATS.total} total` : 'active plants'}</div>
-                <div>{REF_STATS.capacidad_kbd} kb/d cap.</div>
+                {!refIsFiltered && <div>{REF_STATS.capacidad_kbd} kb/d cap.</div>}
               </div>
             </div>
           </div>
