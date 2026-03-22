@@ -298,20 +298,24 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
   const yacIsFiltered = selectedProvince && yacFeatures.length > 0;
   const yacCount = yacIsFiltered ? filteredYac.length : YAC_STATS.total;
 
-  // Province-specific operator + capital stats (computed from filteredYac when province selected)
+  // Province-specific operator + capital + production stats
   const yacProvStats = yacIsFiltered && filteredYac.length > 0 ? (() => {
     const byEmp = {};
     const byCountry = {};
+    let totalOilBpd = 0;
+    let totalGasMm3d = 0;
     for (const f of filteredYac) {
       const empresa = f.properties?.empresa || 'Otros';
       const { short, pais } = normalizeOp(empresa);
       if (!byEmp[short]) byEmp[short] = { short, pais, count: 0 };
       byEmp[short].count++;
       byCountry[pais] = (byCountry[pais] || 0) + 1;
+      totalOilBpd += f.properties?.oil_bpd || 0;
+      totalGasMm3d += f.properties?.gas_mm3d || 0;
     }
     const ops = Object.values(byEmp).sort((a, b) => b.count - a.count).slice(0, 6);
     const capital = Object.entries(byCountry).sort((a, b) => b[1] - a[1]).slice(0, 5);
-    return { ops, capital, total: filteredYac.length };
+    return { ops, capital, total: filteredYac.length, oil_kbd: totalOilBpd / 1000, gas_mmm3d: totalGasMm3d / 1000 };
   })() : null;
 
   // Filtered refinerias
@@ -456,12 +460,17 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
               <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#10B981' }}>{yacCount}</span>
               <div className="text-[11px] text-[#003049]/60">
                 <div>concession areas</div>
-                {!yacIsFiltered && (
+                {!yacIsFiltered ? (
                   <>
                     <div>{YAC_STATS.produccion_kbd.toLocaleString('en-US')} kb/d oil</div>
                     <div>{YAC_STATS.produccion_gas_mmm3d} MMm³/d gas</div>
                   </>
-                )}
+                ) : yacProvStats && (yacProvStats.oil_kbd > 0 || yacProvStats.gas_mmm3d > 0) ? (
+                  <>
+                    {yacProvStats.oil_kbd > 0 && <div>{yacProvStats.oil_kbd.toFixed(1)} kb/d oil</div>}
+                    {yacProvStats.gas_mmm3d > 0 && <div>{yacProvStats.gas_mmm3d.toFixed(1)} MMm³/d gas</div>}
+                  </>
+                ) : null}
               </div>
             </div>
           </div>
