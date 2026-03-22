@@ -60,6 +60,7 @@ export default function App() {
         overlays={overlays}
         energyLayers={energyLayers}
         selectedProvince={selectedProvince}
+        governors={governors}
         onHeightChange={setBottomBarH}
       />
     </div>

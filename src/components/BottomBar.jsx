@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { senateBlocs, deputyBlocs, SENATE_TOTAL, DEPUTY_TOTAL } from '../data/congressBlocs';
 import { miningProjects } from '../data/miningProjects';
 import { renovablesProjects } from '../data/renovablesProjects';
+import { politicalContext } from '../data/politicalContext';
 
 const MINERAL_COLORS_BAR = {
   'Litio':     '#00d4ff',
@@ -814,6 +815,81 @@ function CongressPanel({ congress }) {
   );
 }
 
+function ProvincialCabinetPanel({ selectedProvince, governors }) {
+  const pn = selectedProvince?.toLowerCase();
+  const gov = governors?.find(g => g.provincia?.toLowerCase() === pn)
+    || governors?.find(g => {
+      const gp = g.provincia?.toLowerCase();
+      if (!gp || !pn) return false;
+      if (pn.includes('ciudad') !== gp.includes('ciudad')) return false;
+      return gp.includes(pn) || pn.includes(gp);
+    });
+  const pol = (() => {
+    const exact = politicalContext.find(p => p.provincia?.toLowerCase() === pn);
+    if (exact) return exact;
+    return politicalContext.find(p => {
+      const q = p.provincia?.toLowerCase();
+      if (!q) return false;
+      if (pn.includes('ciudad') !== q.includes('ciudad')) return false;
+      return q.includes(pn) || pn.includes(q);
+    });
+  })();
+
+  if (!gov) return <p className="text-[10px] text-[#003049]/40 italic">No data for {selectedProvince}</p>;
+
+  const alignColor = (() => {
+    const a = gov.alineamiento_nacion?.toLowerCase() || '';
+    if (a.includes('oficialismo')) return '#7d3c98';
+    if (a.includes('aliado')) return '#17a589';
+    if (a.includes('negociador')) return '#d4a800';
+    if (a.includes('oposición dura')) return '#780000';
+    if (a.includes('oposición') || a.includes('oposicion')) return '#C1121F';
+    return '#669BBC';
+  })();
+
+  const cards = [
+    { role: 'Governor', name: gov.gobernador, party: gov.partido, tier: 'exec', accentColor: alignColor },
+    { role: 'Vice Governor', name: gov.vicegobernador, party: gov.coalicion || '', tier: 'exec', accentColor: alignColor },
+    { role: 'Term', name: `${gov.inicio_mandato} → ${gov.fin_mandato}`, party: `Next: ${gov.proxima_eleccion}`, tier: 'info' },
+    { role: 'Alignment', name: gov.alineamiento_nacion || '—', party: '', tier: 'info' },
+  ];
+
+  if (pol) {
+    if (pol.legislatura_composicion) cards.push({ role: 'Legislature', name: pol.legislatura_composicion, party: '', tier: 'info' });
+    if (pol.rigi_adhesion_provincial) cards.push({ role: 'RIGI', name: pol.rigi_adhesion_provincial, party: '', tier: 'info' });
+    if (pol.posicion_mineria) cards.push({ role: 'Mining stance', name: pol.posicion_mineria?.slice(0, 80), party: '', tier: 'sec' });
+    if (pol.riesgo_cambio_politico) cards.push({ role: 'Political risk', name: pol.riesgo_cambio_politico, party: '', tier: 'sec' });
+  }
+
+  const getBg = (tier) => {
+    if (tier === 'exec') return `${alignColor}11`;
+    if (tier === 'sec') return 'rgba(243,156,18,0.07)';
+    return 'rgba(0,48,73,0.04)';
+  };
+  const getBorder = (tier) => {
+    if (tier === 'exec') return `${alignColor}55`;
+    if (tier === 'sec') return 'rgba(243,156,18,0.25)';
+    return 'rgba(0,48,73,0.10)';
+  };
+
+  return (
+    <div className="flex flex-wrap gap-1 content-start h-full overflow-hidden pt-0.5">
+      <p className="w-full text-[8px] text-[#003049]/50 uppercase tracking-widest mb-0.5">Provincial Executive · {selectedProvince}</p>
+      {cards.map((p, i) => (
+        <div
+          key={i}
+          className="flex-1 min-w-[100px] rounded px-2 py-1 border"
+          style={{ background: getBg(p.tier), borderColor: getBorder(p.tier) }}
+        >
+          <p className="text-[7px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
+          <p className="text-[10px] font-bold text-[#003049] leading-tight truncate">{p.name}</p>
+          {p.party && <p className="text-[8px] leading-tight truncate" style={{ color: p.accentColor || '#669BBC' }}>{p.party}</p>}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function CabinetPanel() {
   const allCards = [
     { role: 'Presidente',      name: 'Javier Milei',            party: 'LLA',     tier: 'exec',  accentColor: '#8e44ad' },
@@ -872,7 +948,7 @@ function CabinetPanel() {
   );
 }
 
-export default function BottomBar({ panelWidth = 320, congress, overlays, energyLayers, selectedProvince, onHeightChange }) {
+export default function BottomBar({ panelWidth = 320, congress, overlays, energyLayers, selectedProvince, governors, onHeightChange }) {
   const hasOverlay = overlays?.mining || energyLayers?.length > 0;
 
   const BASE_TABS = [
@@ -922,7 +998,10 @@ export default function BottomBar({ panelWidth = 320, congress, overlays, energy
       <div className="px-3 py-1.5 flex-1 overflow-hidden min-h-0">
         {activeTab === 'overlay' && <OverlayPanel overlays={overlays} energyLayers={energyLayers} selectedProvince={selectedProvince} />}
         {activeTab === 'congress' && <CongressPanel congress={congress} />}
-        {activeTab === 'cabinet' && <CabinetPanel />}
+        {activeTab === 'cabinet' && (selectedProvince
+          ? <ProvincialCabinetPanel selectedProvince={selectedProvince} governors={governors} />
+          : <CabinetPanel />
+        )}
       </div>
     </div>
   );

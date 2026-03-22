@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
-import { miningProjects } from '../data/miningProjects';
-import { projectDetails } from '../data/projectDetails';
 import { politicalContext } from '../data/politicalContext';
 import { sociodemographic } from '../data/sociodemographic';
 import { officialSenators } from '../data/officialSenators';
@@ -589,17 +587,6 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
     });
   })();
 
-  // Find mining data for this province
-  const provMining = miningProjects.filter(p =>
-    p.provincia?.toLowerCase().includes(province.toLowerCase())
-    || province.toLowerCase().includes(p.provincia?.toLowerCase())
-  );
-
-  const provDetails = projectDetails.filter(p =>
-    p.provincia?.toLowerCase().includes(province.toLowerCase())
-    || province.toLowerCase().includes(p.provincia?.toLowerCase())
-  );
-
   const polContext = (() => {
     const s = province.toLowerCase();
     const exact = politicalContext.find(p => p.provincia?.toLowerCase() === s);
@@ -611,10 +598,6 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
       return q.includes(s) || s.includes(q);
     });
   })();
-
-  const miningCount = provMining.length;
-  const productionProjects = provMining.filter(p => p.etapa === 'produccion');
-  const auProjects = provMining.filter(p => p.capital_australiano === 'true');
 
   return (
     <aside
@@ -717,71 +700,6 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
           </Section>
         )}
 
-        {/* Mining */}
-        {miningCount > 0 && (
-          <Section title={`Mining (${miningCount} projects)`}>
-            <div className="grid grid-cols-3 gap-2 mb-2">
-              <div className="bg-[#003049]/6 rounded p-2 text-center border border-[#003049]/10">
-                <div className="text-[14px] font-bold font-mono text-[#003049]">{miningCount}</div>
-                <div className="text-[7px] text-[#003049]/60 uppercase tracking-wider">Total</div>
-              </div>
-              <div className="bg-[#003049]/6 rounded p-2 text-center border border-[#003049]/10">
-                <div className="text-[14px] font-bold font-mono text-success">{productionProjects.length}</div>
-                <div className="text-[7px] text-[#003049]/60 uppercase tracking-wider">Production</div>
-              </div>
-              <div className="bg-[#003049]/6 rounded p-2 text-center border border-[#003049]/10">
-                <div className="text-[14px] font-bold font-mono text-warning">{auProjects.length}</div>
-                <div className="text-[7px] text-[#003049]/60 uppercase tracking-wider">AU Cap.</div>
-              </div>
-            </div>
-
-            {/* Top projects */}
-            {provDetails.length > 0 && (
-              <div className="space-y-1.5">
-                {provDetails.slice(0, 5).map((proj, i) => (
-                  <div key={i} className="bg-[#003049]/4 rounded p-2 border-l-2 border-steel/50">
-                    <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-bold text-[#003049]">{proj.proyecto}</span>
-                      <span className="text-[8px] font-mono text-steel">{proj.mineral}</span>
-                    </div>
-                    <p className="text-[9px] text-[#003049]/60 mt-0.5">{proj.empresa}</p>
-                    <p className="text-[9px] text-[#003049]/60">{proj.etapa_detallada}</p>
-                    {proj.capex_total_usd_m && (
-                      <p className="text-[9px] text-warning mt-0.5">
-                        CAPEX: US${proj.capex_total_usd_m}M
-                      </p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {/* Minerals breakdown */}
-            <div className="mt-2">
-              <p className="text-[8px] text-[#003049]/60 uppercase tracking-wider mb-1">
-                Minerals
-              </p>
-              <div className="flex flex-wrap gap-1">
-                {Object.entries(
-                  provMining.reduce((acc, p) => {
-                    acc[p.mineral_principal] = (acc[p.mineral_principal] || 0) + 1;
-                    return acc;
-                  }, {})
-                )
-                  .sort((a, b) => b[1] - a[1])
-                  .slice(0, 8)
-                  .map(([mineral, count]) => (
-                    <span
-                      key={mineral}
-                      className="text-[8px] bg-[#003049]/10 px-1.5 py-0.5 rounded border border-[#003049]/12 text-[#003049]/60"
-                    >
-                      {mineral} ({count})
-                    </span>
-                  ))}
-              </div>
-            </div>
-          </Section>
-        )}
       </div>
     </aside>
   );
