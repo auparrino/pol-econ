@@ -277,7 +277,7 @@ function SocioSection({ province }) {
 function AlignmentBar({ value }) {
   if (value == null) return <span className="text-[8px] text-[#003049]/60 italic">S/D</span>;
   const pct = Math.min(value, 100);
-  const color = pct >= 75 ? '#8e44ad' : pct >= 50 ? '#3498db' : pct >= 25 ? '#f39c12' : '#C1121F';
+  const color = pct >= 75 ? '#7d3c98' : pct >= 50 ? '#17a589' : pct >= 25 ? '#d4a800' : '#780000';
   return (
     <div className="flex items-center gap-1">
       <div className="w-[40px] h-[4px] bg-[#003049]/10 rounded-full overflow-hidden">
@@ -451,13 +451,13 @@ function LegislatorsSection({ province, congress }) {
             <div className="flex items-center justify-between mb-1">
               <span className="text-[9px] text-[#003049]/60">Province avg. ({allWithAlign.length} legislators)</span>
               <span className="text-[12px] font-bold font-mono" style={{
-                color: avgAlign >= 75 ? '#8e44ad' : avgAlign >= 50 ? '#3498db' : avgAlign >= 25 ? '#f39c12' : '#C1121F'
+                color: avgAlign >= 75 ? '#7d3c98' : avgAlign >= 50 ? '#17a589' : avgAlign >= 25 ? '#d4a800' : '#780000'
               }}>{avgAlign.toFixed(1)}%</span>
             </div>
             <div className="w-full h-[6px] bg-[#003049]/10 rounded-full overflow-hidden">
               <div className="h-full rounded-full" style={{
                 width: `${Math.min(avgAlign, 100)}%`,
-                backgroundColor: avgAlign >= 75 ? '#8e44ad' : avgAlign >= 50 ? '#3498db' : avgAlign >= 25 ? '#f39c12' : '#C1121F',
+                backgroundColor: avgAlign >= 75 ? '#7d3c98' : avgAlign >= 50 ? '#17a589' : avgAlign >= 25 ? '#d4a800' : '#780000',
               }} />
             </div>
           </div>
