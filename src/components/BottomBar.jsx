@@ -812,6 +812,37 @@ function VoteDots({ name, chamber }) {
   );
 }
 
+function parseLegBars(str) {
+  if (!str) return null;
+  const isBi = /bicameral/i.test(str);
+  if (!isBi) {
+    const of = str.match(/of\.\s*([\d.]+)/)?.[1];
+    const op = str.match(/op\.\s*([\d.]+)/)?.[1];
+    if (of && op) return [{ label: null, of: parseFloat(of), op: parseFloat(op) }];
+  } else {
+    const res = [];
+    const dOf = str.match(/Dip\..*?of\.\s*([\d.]+)/)?.[1];
+    const dOp = str.match(/Dip\..*?op\.\s*([\d.]+)/)?.[1];
+    const sOf = str.match(/Sen\..*?of\.\s*([\d.]+)/)?.[1];
+    const sOp = str.match(/Sen\..*?op\.\s*([\d.]+)/)?.[1];
+    if (dOf && dOp) res.push({ label: 'Dip.', of: parseFloat(dOf), op: parseFloat(dOp) });
+    if (sOf && sOp) res.push({ label: 'Sen.', of: parseFloat(sOf), op: parseFloat(sOp) });
+    if (res.length) return res;
+  }
+  return null;
+}
+
+function blocColor(bloc) {
+  const b = (bloc || '').toLowerCase();
+  if (b.includes('libertad avanza')) return '#7d3c98';
+  if (b.includes('unión por la patria') || b.includes('union por la patria') || b.includes('justicialista') || b.includes('frente de todos')) return '#1a6fa3';
+  if (b.includes('ucr') || b.includes('unión cívica') || b.includes('radical')) return '#c0392b';
+  if (b.includes('pro') || b.includes('adelante')) return '#d4a800';
+  if (b.includes('fit') || b.includes('izquierda')) return '#e74c3c';
+  if (b.includes('innovación') || b.includes('hacemos') || b.includes('federal') || b.includes('coalición') || b.includes('encuentro')) return '#17a589';
+  return '#7f8c8d';
+}
+
 function ProvincialCongressPanel({ selectedProvince, congress }) {
   const pol = matchProvince(politicalContext, selectedProvince);
   const pn = selectedProvince?.toLowerCase();
@@ -841,48 +872,63 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
   const senators = officialProvSens.map(official => {
     const lastName = official.n?.toUpperCase().split(',')[0]?.trim();
     const match = comovotoSens.find(cv => cv.n?.toUpperCase().split(',')[0]?.trim() === lastName);
-    return { n: official.n, b: official.b, alla: match?.alla ?? null, c: 'senadores', term: `${official.desde}–${official.hasta}` };
+    return { n: official.n, b: official.b, alla: match?.alla ?? null, c: 'senadores' };
   }).sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
 
   // Deputies from comovoto
   const deputies = comovotoLegs.filter(l => l.c === 'diputados').sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
 
-  const blocColor = (bloc) => {
-    const b = (bloc || '').toLowerCase();
-    if (b.includes('libertad avanza')) return '#7d3c98';
-    if (b.includes('unión por la patria') || b.includes('union por la patria') || b.includes('justicialista') || b.includes('frente de todos')) return '#1a6fa3';
-    if (b.includes('ucr') || b.includes('unión cívica') || b.includes('radical')) return '#c0392b';
-    if (b.includes('pro') || b.includes('adelante')) return '#d4a800';
-    if (b.includes('fit') || b.includes('izquierda')) return '#e74c3c';
-    if (b.includes('innovación') || b.includes('hacemos') || b.includes('federal')) return '#17a589';
-    return '#7f8c8d';
-  };
-
   const LegRow = ({ l }) => {
-    const alignColor = l.alla != null
-      ? (l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#780000')
+    const alla = l.alla;
+    const alignColor = alla != null
+      ? (alla >= 75 ? '#7d3c98' : alla >= 50 ? '#17a589' : alla >= 25 ? '#d4a800' : '#780000')
       : null;
-    const partyColor = blocColor(l.b);
     return (
       <div className="flex items-center gap-1.5 py-0.5">
-        <span className="text-[11px] font-semibold text-[#003049] min-w-[120px] truncate">{l.n}</span>
-        <span className="text-[10px] truncate max-w-[100px]" style={{ color: partyColor }}>{l.b}</span>
+        <span className="text-[11px] font-semibold text-[#003049] min-w-[130px] truncate">{l.n}</span>
+        <span className="text-[10px] truncate max-w-[110px]" style={{ color: blocColor(l.b) }}>{l.b}</span>
         <VoteDots name={l.n} chamber={l.c} />
-        {alignColor && <span className="text-[10px] font-mono font-bold w-[36px] text-right shrink-0" style={{ color: alignColor }}>{l.alla}%</span>}
+        <span className="text-[10px] font-mono font-bold w-[38px] text-right shrink-0" style={{ color: alignColor || '#003049' }}>
+          {alla != null ? `${alla}%` : 'S/D'}
+        </span>
       </div>
     );
   };
 
+  // Legislature bars
+  const legBars = parseLegBars(pol?.legislatura_composicion);
+
   return (
     <div className="flex gap-4 h-full items-start overflow-x-auto overflow-y-hidden pt-0.5">
-      {/* Provincial legislature */}
+      {/* Provincial legislature with of/op bars */}
       {pol?.legislatura_composicion && (
-        <div className="shrink-0 max-w-[200px]">
+        <div className="shrink-0 min-w-[170px]">
           <p className="text-[10px] uppercase tracking-widest text-[#003049]/60 mb-1">Prov. Legislature</p>
-          <p className="text-[11px] text-[#003049] leading-relaxed">{pol.legislatura_composicion}</p>
+          {legBars ? (
+            <div className="space-y-1.5">
+              {legBars.map(({ label, of, op }, i) => (
+                <div key={i}>
+                  <div className="flex justify-between text-[9px] mb-0.5">
+                    {label && <span className="text-[#003049]/50">{label}</span>}
+                    <span className="ml-auto">
+                      <span style={{ color: '#7d3c98' }}>of. {of}%</span>
+                      <span className="text-[#003049]/40 mx-1">·</span>
+                      <span style={{ color: '#C1121F' }}>op. {op}%</span>
+                    </span>
+                  </div>
+                  <div className="flex h-[6px] rounded-full overflow-hidden bg-[#003049]/10">
+                    <div style={{ width: `${of}%`, backgroundColor: '#7d3c98', opacity: 0.75 }} />
+                    <div style={{ width: `${op}%`, backgroundColor: '#C1121F', opacity: 0.75 }} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="text-[10px] text-[#003049] leading-relaxed">{pol.legislatura_composicion}</p>
+          )}
         </div>
       )}
-      {pol?.legislatura_composicion && <div className="w-px h-16 bg-[#003049]/10 shrink-0" />}
+      {pol?.legislatura_composicion && <div className="w-px self-stretch bg-[#003049]/10 shrink-0" />}
       {/* National senators (3 per province) */}
       <div className="shrink-0">
         <p className="text-[10px] uppercase tracking-widest text-[#003049]/60 mb-1">Senators ({senators.length})</p>
@@ -892,9 +938,9 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
           )) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
         </div>
       </div>
-      <div className="w-px h-16 bg-[#003049]/10 shrink-0" />
-      {/* National deputies */}
-      <div className="shrink-0">
+      <div className="w-px self-stretch bg-[#003049]/10 shrink-0" />
+      {/* National deputies — compact scrollable */}
+      <div className="shrink-0 min-w-[200px]">
         <p className="text-[10px] uppercase tracking-widest text-[#003049]/60 mb-1">Deputies ({deputies.length})</p>
         <div className="space-y-0.5 max-h-[105px] overflow-y-auto pr-1">
           {deputies.length > 0 ? deputies.map((l, i) => (

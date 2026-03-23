@@ -97,8 +97,8 @@ function InfoTooltip({ text }) {
 
 function Section({ title, children, tooltip }) {
   return (
-    <div className="mb-3">
-      <h3 className="text-[10px] font-bold tracking-[1.5px] uppercase text-steel mb-1.5 border-b border-[#003049]/12 pb-1 flex items-center">
+    <div className="mb-4">
+      <h3 className="text-[10px] font-bold tracking-[1.5px] uppercase text-steel mb-2 border-b border-[#003049]/12 pb-1 flex items-center">
         {title}
         {tooltip && <InfoTooltip text={tooltip} />}
       </h3>
@@ -110,7 +110,7 @@ function Section({ title, children, tooltip }) {
 function DataRow({ label, value, color, info }) {
   if (!value && value !== 0) return null;
   return (
-    <div className="flex justify-between items-start py-0.5 text-[12px]">
+    <div className="flex justify-between items-start py-1 text-[12px]">
       <span className="text-[#003049]/60 min-w-[90px] shrink-0 flex items-center">
         {label}
         {info && <InfoTooltip text={info} />}
@@ -626,11 +626,11 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
         </div>
       </div>
 
-      <div className="p-3">
+      <div className="p-4">
         {gov ? (
           <>
             {/* Governor summary */}
-            <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10 mb-3">
+            <div className="bg-[#003049]/6 rounded-md p-3 border border-[#003049]/10 mb-4">
               <div className="flex items-center justify-between">
                 <div>
                   <span className="text-[13px] font-bold text-[#003049]">{gov.gobernador}</span>
