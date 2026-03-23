@@ -1103,10 +1103,10 @@ function ProvincialCabinetPanel({ selectedProvince, governors }) {
         <>
           <div className="w-full h-px bg-[#003049]/8 my-0.5" />
           {ministers.map((m, i) => (
-            <div key={`min-${i}`} className="flex-1 min-w-[100px] rounded px-2 py-1.5 border"
+            <div key={`min-${i}`} className="flex-1 min-w-[80px] rounded px-1.5 py-1 border"
               style={{ background: getBg(m.tier), borderColor: getBorder(m.tier) }}>
-              <p className="text-[13px] uppercase tracking-widest text-[#003049]/50 leading-tight">{m.role}</p>
-              <p className="text-[16px] font-bold text-[#003049] leading-snug truncate">{m.name}</p>
+              <p className="text-[10px] uppercase tracking-wider text-[#003049]/50 leading-tight truncate">{m.role}</p>
+              <p className="text-[13px] font-bold text-[#003049] leading-snug truncate">{m.name}</p>
             </div>
           ))}
         </>
@@ -1193,7 +1193,7 @@ export default function BottomBar({ panelWidth = 320, congress, overlays, energy
     else if (activeTab === 'overlay') setActiveTab('congress');
   }, [hasOverlay]); // eslint-disable-line
 
-  const barH = activeTab === 'cabinet' ? 200 : activeTab === 'congress' ? 155 : 150;
+  const barH = activeTab === 'cabinet' ? 250 : activeTab === 'congress' ? 155 : 150;
 
   useEffect(() => { onHeightChange?.(barH); }, [barH]); // eslint-disable-line
 
