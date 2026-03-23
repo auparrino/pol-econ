@@ -1102,13 +1102,15 @@ function ProvincialCabinetPanel({ selectedProvince, governors }) {
       {ministers.length > 0 && (
         <>
           <div className="w-full h-px bg-[#003049]/8 my-0.5" />
-          {ministers.map((m, i) => (
-            <div key={`min-${i}`} className="flex-1 min-w-[80px] rounded px-1.5 py-1 border"
-              style={{ background: getBg(m.tier), borderColor: getBorder(m.tier) }}>
-              <p className="text-[10px] uppercase tracking-wider text-[#003049]/50 leading-tight truncate">{m.role}</p>
-              <p className="text-[13px] font-bold text-[#003049] leading-snug truncate">{m.name}</p>
-            </div>
-          ))}
+          <div className="w-full grid gap-1" style={{ gridTemplateColumns: `repeat(${Math.min(ministers.length, 7)}, 1fr)` }}>
+            {ministers.map((m, i) => (
+              <div key={`min-${i}`} className="rounded px-1.5 py-1 border"
+                style={{ background: getBg(m.tier), borderColor: getBorder(m.tier) }}>
+                <p className="text-[9px] uppercase tracking-wider text-[#003049]/50 leading-tight truncate">{m.role}</p>
+                <p className="text-[12px] font-bold text-[#003049] leading-snug truncate" title={m.name}>{m.name}</p>
+              </div>
+            ))}
+          </div>
         </>
       )}
     </div>
