@@ -287,7 +287,7 @@ export default function ArgentinaMap({
   const geoRef = useRef(null);
 
   useEffect(() => {
-    fetch('/argentina-provinces.geojson')
+    fetch(`${import.meta.env.BASE_URL}argentina-provinces.geojson`)
       .then(r => r.json())
       .then(setGeoData)
       .catch(console.error);
@@ -304,6 +304,7 @@ export default function ArgentinaMap({
       });
 
     switch (choroplethMode) {
+      case 'none': return '#d6cfc0';
       case 'partido': return getPartyColor(gov);
       case 'alineamiento': return getAlignmentColor(gov);
       case 'poblacion': return getPopulationColor(gov);
