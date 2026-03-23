@@ -389,12 +389,12 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
       {hasMining && (
         <>
           <div>
-            <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">
+            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">
               Mining projects{isFiltered ? <span className="ml-1 text-[#7d3c98]">· {selectedProvince}</span> : ''}
             </p>
             <div className="flex items-baseline gap-2">
               <span className="text-[30px] font-bold font-mono text-[#003049] leading-none">{stats.total}</span>
-              <div className="text-[11px] text-[#003049]/60">
+              <div className="text-[16px] text-[#003049]/60">
                 <div>{isFiltered ? `of ${miningStatsAll.total} total` : 'SIACAM metalliferous'}</div>
                 <div>{stats.produccion} in production</div>
               </div>
@@ -402,26 +402,26 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
           </div>
           <div className="w-px h-10 bg-[#003049]/10 shrink-0 self-center" />
           <div>
-            <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">By mineral</p>
+            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">By mineral</p>
             <div className="flex gap-3">
               {stats.byMineral.map(([mineral, count]) => (
                 <div key={mineral} className="text-center">
-                  <p className="text-[17px] font-bold font-mono leading-none"
+                  <p className="text-[22px] font-bold font-mono leading-none"
                      style={{ color: MINERAL_COLORS_BAR[mineral] || '#003049' }}>{count}</p>
-                  <p className="text-[9px] text-[#003049]/60 mt-0.5">{mineral.length > 7 ? mineral.slice(0, 7) + '.' : mineral}</p>
+                  <p className="text-[14px] text-[#003049]/60 mt-0.5">{mineral.length > 7 ? mineral.slice(0, 7) + '.' : mineral}</p>
                 </div>
               ))}
             </div>
           </div>
           <div className="w-px h-10 bg-[#003049]/10 shrink-0 self-center" />
           <div>
-            <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">Stage</p>
+            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Stage</p>
             <div className="flex flex-col gap-0.5">
               {stats.byEstado.map(([est, count]) => (
                 <div key={est} className="flex items-center gap-1.5">
                   <div className="h-1.5 rounded-full shrink-0"
                        style={{ width: Math.max(4, Math.round(count / stats.total * 55)), background: '#003049', opacity: 0.25 + (count / stats.total) * 0.7 }} />
-                  <span className="text-[9px] text-[#003049]/60 leading-none">
+                  <span className="text-[14px] text-[#003049]/60 leading-none">
                     {est.length > 16 ? est.slice(0, 16) + '.' : est}
                     <span className="font-mono text-[#003049] ml-1">{count}</span>
                   </span>
@@ -433,14 +433,14 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
             <>
               <div className="w-px h-10 bg-[#003049]/10 shrink-0 self-center" />
               <div>
-                <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">Capital origin</p>
+                <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Capital origin</p>
                 <div className="flex gap-3">
                   {stats.byPais.map(([country, count]) => (
                     <div key={country} className="flex items-center gap-1">
                       <FlagEmoji size={14}>{COUNTRY_FLAGS[country] || '🌐'}</FlagEmoji>
                       <div>
-                        <p className="text-[15px] font-bold font-mono text-[#003049] leading-none">{count}</p>
-                        <p className="text-[9px] text-[#003049]/60 leading-none mt-0.5">
+                        <p className="text-[20px] font-bold font-mono text-[#003049] leading-none">{count}</p>
+                        <p className="text-[14px] text-[#003049]/60 leading-none mt-0.5">
                           {country.length > 8 ? country.slice(0, 8) + '.' : country}
                         </p>
                       </div>
@@ -457,12 +457,12 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
         <>
           {hasMining && <div className="w-px h-10 bg-[#003049]/10 shrink-0" />}
           <div>
-            <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">
+            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">
               HC Fields{selectedProvince ? <span className="ml-1 text-[#7d3c98]">· {selectedProvince}</span> : ''}
             </p>
             <div className="flex items-baseline gap-2">
               <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#10B981' }}>{yacCount}</span>
-              <div className="text-[11px] text-[#003049]/60">
+              <div className="text-[16px] text-[#003049]/60">
                 <div>concession areas</div>
                 {!yacIsFiltered ? (
                   <>
@@ -482,66 +482,66 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
             <>
               <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
               <div>
-                <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">Vaca Muerta</p>
+                <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Vaca Muerta</p>
                 <div className="flex gap-3">
                   <div className="text-center">
-                    <p className="text-[17px] font-bold font-mono text-[#003049]">{YAC_STATS.vaca_muerta.oil_pct}%</p>
-                    <p className="text-[9px] text-[#003049]/50 leading-none">of oil</p>
+                    <p className="text-[22px] font-bold font-mono text-[#003049]">{YAC_STATS.vaca_muerta.oil_pct}%</p>
+                    <p className="text-[14px] text-[#003049]/50 leading-none">of oil</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-[17px] font-bold font-mono text-[#003049]">{YAC_STATS.vaca_muerta.gas_pct}%</p>
-                    <p className="text-[9px] text-[#003049]/50 leading-none">of gas</p>
+                    <p className="text-[22px] font-bold font-mono text-[#003049]">{YAC_STATS.vaca_muerta.gas_pct}%</p>
+                    <p className="text-[14px] text-[#003049]/50 leading-none">of gas</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-[14px] font-bold font-mono" style={{ color: '#10B981' }}>+{YAC_STATS.vaca_muerta.growth_yoy}%</p>
-                    <p className="text-[9px] text-[#003049]/50 leading-none">YoY oil</p>
+                    <p className="text-[19px] font-bold font-mono" style={{ color: '#10B981' }}>+{YAC_STATS.vaca_muerta.growth_yoy}%</p>
+                    <p className="text-[14px] text-[#003049]/50 leading-none">YoY oil</p>
                   </div>
                 </div>
                 <div className="flex gap-2 mt-1.5">
-                  <span className="text-[8px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">${YAC_STATS.vaca_muerta.breakeven}/bbl</span>
-                  <span className="text-[8px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">{YAC_STATS.vaca_muerta.reserves_oil_bbbl}Bbbl + {YAC_STATS.vaca_muerta.reserves_gas_tcf}Tcf</span>
+                  <span className="text-[13px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">${YAC_STATS.vaca_muerta.breakeven}/bbl</span>
+                  <span className="text-[13px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">{YAC_STATS.vaca_muerta.reserves_oil_bbbl}Bbbl + {YAC_STATS.vaca_muerta.reserves_gas_tcf}Tcf</span>
                 </div>
               </div>
               <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
               <div>
-                <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">By basin</p>
+                <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">By basin</p>
                 <div className="flex flex-col gap-0.5">
                   {YAC_STATS.basin_pct.map(b => (
                     <div key={b.name} className="flex items-center gap-1.5">
                       <div className="h-[6px] rounded-full shrink-0" style={{ width: Math.max(b.pct * 0.7, 4), background: b.color }} />
-                      <span className="text-[9px] text-[#003049]/60">{b.name}</span>
-                      <span className="text-[9px] font-mono font-bold text-[#003049]">{b.pct}%</span>
+                      <span className="text-[14px] text-[#003049]/60">{b.name}</span>
+                      <span className="text-[14px] font-mono font-bold text-[#003049]">{b.pct}%</span>
                     </div>
                   ))}
                 </div>
                 <div className="flex flex-wrap gap-1.5 mt-1.5">
-                  <span className="text-[8px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">{YAC_STATS.exports.oil_kbd}k b/d exp.</span>
-                  <span className="text-[8px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">{YAC_STATS.exports.gas_mmm3d} MMm³/d gas</span>
-                  <span className="text-[8px] font-bold bg-[#10B981]/10 rounded px-1 py-0.5" style={{ color: '#10B981' }}>+${YAC_STATS.exports.surplus_bln}B surplus</span>
+                  <span className="text-[13px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">{YAC_STATS.exports.oil_kbd}k b/d exp.</span>
+                  <span className="text-[13px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">{YAC_STATS.exports.gas_mmm3d} MMm³/d gas</span>
+                  <span className="text-[13px] font-bold bg-[#10B981]/10 rounded px-1 py-0.5" style={{ color: '#10B981' }}>+${YAC_STATS.exports.surplus_bln}B surplus</span>
                 </div>
               </div>
             </>
           )}
           <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
           <div>
-            <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">Top operators</p>
+            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Top operators</p>
             <div className="flex gap-2">
               {yacProvStats ? (
                 yacProvStats.ops.map(op => (
                   <div key={op.short} className="text-center">
-                    <p className="text-[17px] font-bold font-mono text-[#003049]">{op.count}</p>
-                    <p className="text-[11px] text-[#003049]/60 leading-none"><FlagEmoji size={13}>{op.pais}</FlagEmoji></p>
-                    <p className="text-[10px] text-[#003049]/60 leading-none mt-0.5">{op.short}</p>
+                    <p className="text-[22px] font-bold font-mono text-[#003049]">{op.count}</p>
+                    <p className="text-[16px] text-[#003049]/60 leading-none"><FlagEmoji size={13}>{op.pais}</FlagEmoji></p>
+                    <p className="text-[15px] text-[#003049]/60 leading-none mt-0.5">{op.short}</p>
                   </div>
                 ))
               ) : yacIsFiltered ? (
-                <p className="text-[10px] text-[#003049]/40 italic">none in province</p>
+                <p className="text-[15px] text-[#003049]/40 italic">none in province</p>
               ) : (
                 YAC_STATS.operadores.slice(0, 6).map(op => (
                   <div key={op.name} className="text-center">
-                    <p className="text-[17px] font-bold font-mono text-[#003049]">{op.pct}%</p>
-                    <p className="text-[11px] text-[#003049]/60 leading-none"><FlagEmoji size={13}>{op.pais}</FlagEmoji></p>
-                    <p className="text-[10px] text-[#003049]/60 leading-none mt-0.5">{op.name.length > 7 ? op.name.slice(0, 7) + '.' : op.name}</p>
+                    <p className="text-[22px] font-bold font-mono text-[#003049]">{op.pct}%</p>
+                    <p className="text-[16px] text-[#003049]/60 leading-none"><FlagEmoji size={13}>{op.pais}</FlagEmoji></p>
+                    <p className="text-[15px] text-[#003049]/60 leading-none mt-0.5">{op.name.length > 7 ? op.name.slice(0, 7) + '.' : op.name}</p>
                   </div>
                 ))
               )}
@@ -549,7 +549,7 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
           </div>
           <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
           <div>
-            <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">Capital</p>
+            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Capital</p>
             <div className="flex flex-col gap-1">
               {yacProvStats ? (
                 yacProvStats.capital.map(([pais, count]) => {
@@ -557,17 +557,17 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
                   return (
                     <div key={pais} className="flex items-center gap-1.5">
                       <div className="h-2 rounded-full shrink-0" style={{ width: Math.round(count / maxCount * 56), background: '#10B981', opacity: 0.5 + (count / maxCount) * 0.5 }} />
-                      <span className="text-[10px] text-[#003049]/60"><FlagEmoji size={12}>{pais}</FlagEmoji> {count}</span>
+                      <span className="text-[15px] text-[#003049]/60"><FlagEmoji size={12}>{pais}</FlagEmoji> {count}</span>
                     </div>
                   );
                 })
               ) : yacIsFiltered ? (
-                <p className="text-[10px] text-[#003049]/40 italic">—</p>
+                <p className="text-[15px] text-[#003049]/40 italic">—</p>
               ) : (
                 YAC_STATS.capital.map(c => (
                   <div key={c.pais} className="flex items-center gap-1.5">
                     <div className="h-2 rounded-full shrink-0" style={{ width: c.pct * 0.8, background: '#10B981', opacity: 0.6 + c.pct * 0.004 }} />
-                    <span className="text-[10px] text-[#003049]/60"><FlagEmoji size={12}>{c.pais}</FlagEmoji> {c.pct}%</span>
+                    <span className="text-[15px] text-[#003049]/60"><FlagEmoji size={12}>{c.pais}</FlagEmoji> {c.pct}%</span>
                   </div>
                 ))
               )}
@@ -581,14 +581,14 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
         <>
           <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
           <div>
-            <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">
+            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">
               Refineries{refIsFiltered ? <span className="ml-1 text-[#7d3c98]">· {selectedProvince}</span> : ''}
             </p>
             <div className="flex items-baseline gap-2">
               <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#F97316' }}>
                 {refIsFiltered ? filteredRef.length : REF_STATS.total}
               </span>
-              <div className="text-[11px] text-[#003049]/60">
+              <div className="text-[16px] text-[#003049]/60">
                 <div>{refIsFiltered ? `of ${REF_STATS.total} total` : 'active plants'}</div>
                 {!refIsFiltered && <div>{REF_STATS.capacidad_kbd} kb/d cap.</div>}
               </div>
@@ -598,16 +598,16 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
             <>
               <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
               <div>
-                <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">Refining operators</p>
+                <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Refining operators</p>
                 <div className="flex gap-2">
                   {REF_STATS.operadores.map(op => (
                     <div key={op.name} className="text-center">
-                      <p className="text-[17px] font-bold font-mono text-[#003049]">{op.pct}%</p>
-                      <p className="text-[11px] text-[#003049]/60 leading-none"><FlagEmoji size={13}>{op.pais}</FlagEmoji></p>
-                      <p className="text-[9px] leading-none mt-0.5" style={{ color: op.tipo === 'estatal' ? '#A855F7' : '#F97316' }}>
+                      <p className="text-[22px] font-bold font-mono text-[#003049]">{op.pct}%</p>
+                      <p className="text-[16px] text-[#003049]/60 leading-none"><FlagEmoji size={13}>{op.pais}</FlagEmoji></p>
+                      <p className="text-[14px] leading-none mt-0.5" style={{ color: op.tipo === 'estatal' ? '#A855F7' : '#F97316' }}>
                         {op.tipo === 'estatal' ? '▲pub' : '●priv'}
                       </p>
-                      <p className="text-[10px] text-[#003049]/60 leading-none">{op.name.length > 7 ? op.name.slice(0, 7) + '.' : op.name}</p>
+                      <p className="text-[15px] text-[#003049]/60 leading-none">{op.name.length > 7 ? op.name.slice(0, 7) + '.' : op.name}</p>
                     </div>
                   ))}
                 </div>
@@ -618,14 +618,14 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
             <>
               <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
               <div>
-                <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">In province</p>
+                <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">In province</p>
                 <div className="flex flex-col gap-0.5">
                   {filteredRef.slice(0, 5).map((f, i) => {
                     const p = f.properties || {};
                     const name = p.nombre || p.razon_social || 'Refinería';
                     const op = p.empresa || p.razon_social || '';
                     return (
-                      <div key={i} className="text-[10px] text-[#003049] leading-tight">
+                      <div key={i} className="text-[15px] text-[#003049] leading-tight">
                         <span className="font-semibold">{name.length > 18 ? name.slice(0, 18) + '.' : name}</span>
                         {op && op !== name && <span className="text-[#003049]/60 ml-1">{op.length > 12 ? op.slice(0, 12) + '.' : op}</span>}
                       </div>
@@ -642,14 +642,14 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
         <>
           <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
           <div>
-            <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">
+            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">
               Power Plants{cenIsFiltered ? <span className="ml-1 text-[#7d3c98]">· {selectedProvince}</span> : ''}
             </p>
             <div className="flex items-baseline gap-2">
               <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#A855F7' }}>
                 {cenIsFiltered ? (cenStats ? cenStats.count : 0) : CEN_STATS.total}
               </span>
-              <div className="text-[11px] text-[#003049]/60">
+              <div className="text-[16px] text-[#003049]/60">
                 <div>{cenIsFiltered ? `of ${cenFeatures.length} in CAMMESA` : 'major plants'}</div>
                 <div>
                   {cenIsFiltered
@@ -661,27 +661,27 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
           </div>
           <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
           <div>
-            <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">By type</p>
+            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">By type</p>
             <div className="flex gap-2">
               {cenIsFiltered ? (
                 cenStats && cenStats.sorted.length > 0 ? (
                   cenStats.sorted.map(([tec, val]) => (
                     <div key={tec} className="text-center">
-                      <p className="text-[14px] font-bold font-mono leading-none" style={{ color: CENTRAL_COLORS_BAR[tec] || CENTRAL_COLORS_BAR.default }}>
+                      <p className="text-[19px] font-bold font-mono leading-none" style={{ color: CENTRAL_COLORS_BAR[tec] || CENTRAL_COLORS_BAR.default }}>
                         {cenStats.hasMW ? `${(val / 1000).toFixed(1)}GW` : val}
                       </p>
-                      <p className="text-[10px] text-[#003049]/60 leading-none">{CENTRAL_LABELS_BAR[tec] || tec}</p>
+                      <p className="text-[15px] text-[#003049]/60 leading-none">{CENTRAL_LABELS_BAR[tec] || tec}</p>
                     </div>
                   ))
                 ) : (
-                  <p className="text-[10px] text-[#003049]/40 italic">none in CAMMESA data</p>
+                  <p className="text-[15px] text-[#003049]/40 italic">none in CAMMESA data</p>
                 )
               ) : (
                 CEN_STATS.por_tipo.map(t => (
                   <div key={t.tipo} className="text-center">
-                    <p className="text-[14px] font-bold font-mono leading-none" style={{ color: t.color }}>{t.gw}GW</p>
-                    <p className="text-[10px] text-[#003049]/60 leading-none mt-0.5">{t.pct}%</p>
-                    <p className="text-[10px] text-[#003049]/60 leading-none">{t.tipo}</p>
+                    <p className="text-[19px] font-bold font-mono leading-none" style={{ color: t.color }}>{t.gw}GW</p>
+                    <p className="text-[15px] text-[#003049]/60 leading-none mt-0.5">{t.pct}%</p>
+                    <p className="text-[15px] text-[#003049]/60 leading-none">{t.tipo}</p>
                   </div>
                 ))
               )}
@@ -691,12 +691,12 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
             <>
               <div className="w-px h-10 bg-[#003049]/10 shrink-0 self-center" />
               <div>
-                <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">Renew. pipeline</p>
+                <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Renew. pipeline</p>
                 <div className="flex items-baseline gap-2">
                   <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#22C55E' }}>
                     {renovStats.count}
                   </span>
-                  <div className="text-[11px] text-[#003049]/60">
+                  <div className="text-[16px] text-[#003049]/60">
                     <div>projects</div>
                     <div>{renovStats.totalMW >= 100 ? `${(renovStats.totalMW / 1000).toFixed(1)} GW` : `${renovStats.totalMW} MW`}</div>
                   </div>
@@ -704,15 +704,15 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
               </div>
               <div className="w-px h-10 bg-[#003049]/10 shrink-0 self-center" />
               <div>
-                <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">By source</p>
+                <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">By source</p>
                 <div className="flex gap-2">
                   {renovStats.sorted.map(([tec, mw]) => (
                     <div key={tec} className="text-center">
-                      <p className="text-[14px] font-bold font-mono leading-none"
+                      <p className="text-[19px] font-bold font-mono leading-none"
                          style={{ color: CENTRAL_COLORS_BAR[tec] || CENTRAL_COLORS_BAR.default }}>
                         {mw >= 100 ? `${(mw / 1000).toFixed(1)}GW` : `${Math.round(mw)}MW`}
                       </p>
-                      <p className="text-[10px] text-[#003049]/60 leading-none">{(CENTRAL_LABELS_BAR[tec] || tec).slice(0, 6)}</p>
+                      <p className="text-[15px] text-[#003049]/60 leading-none">{(CENTRAL_LABELS_BAR[tec] || tec).slice(0, 6)}</p>
                     </div>
                   ))}
                 </div>
@@ -723,16 +723,16 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
             <>
               <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
               <div>
-                <p className="text-[11px] uppercase tracking-widest text-[#003049]/60 mb-1">Main operators</p>
+                <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Main operators</p>
                 <div className="flex gap-2">
                   {CEN_STATS.operadores.slice(0, 5).map(op => (
                     <div key={op.name} className="text-center">
-                      <p className="text-[17px] font-bold font-mono text-[#003049]">{op.gw}GW</p>
-                      <p className="text-[11px] text-[#003049]/60 leading-none"><FlagEmoji size={13}>{op.pais}</FlagEmoji></p>
-                      <p className="text-[9px] leading-none mt-0.5" style={{ color: op.tipo === 'estatal' ? '#A855F7' : '#F97316' }}>
+                      <p className="text-[22px] font-bold font-mono text-[#003049]">{op.gw}GW</p>
+                      <p className="text-[16px] text-[#003049]/60 leading-none"><FlagEmoji size={13}>{op.pais}</FlagEmoji></p>
+                      <p className="text-[14px] leading-none mt-0.5" style={{ color: op.tipo === 'estatal' ? '#A855F7' : '#F97316' }}>
                         {op.tipo === 'estatal' ? '▲pub' : '●priv'}
                       </p>
-                      <p className="text-[10px] text-[#003049]/60 leading-none">{op.name.length > 8 ? op.name.slice(0, 8) + '.' : op.name}</p>
+                      <p className="text-[15px] text-[#003049]/60 leading-none">{op.name.length > 8 ? op.name.slice(0, 8) + '.' : op.name}</p>
                     </div>
                   ))}
                 </div>
@@ -748,7 +748,7 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
 function BlocBar({ blocs, total, label, scale = 1.5 }) {
   return (
     <div>
-      <p className="text-[8px] uppercase tracking-widest text-[#003049]/60 mb-1">
+      <p className="text-[13px] uppercase tracking-widest text-[#003049]/60 mb-1">
         {label} ({total})
       </p>
       <div className="flex gap-0.5">
@@ -764,7 +764,7 @@ function BlocBar({ blocs, total, label, scale = 1.5 }) {
               }}
             />
             <span className="text-[7px] text-[#003049]/60">{bloc.label}</span>
-            <span className="text-[8px] font-mono text-[#003049]">{bloc.seats}</span>
+            <span className="text-[13px] font-mono text-[#003049]">{bloc.seats}</span>
           </div>
         ))}
       </div>
@@ -885,10 +885,10 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
       : null;
     return (
       <div className="flex items-center gap-1.5 py-0.5">
-        <span className="text-[11px] font-semibold text-[#003049] min-w-[130px] truncate">{l.n}</span>
-        <span className="text-[10px] truncate max-w-[110px]" style={{ color: blocColor(l.b) }}>{l.b}</span>
+        <span className="text-[16px] font-semibold text-[#003049] min-w-[130px] truncate">{l.n}</span>
+        <span className="text-[15px] truncate max-w-[110px]" style={{ color: blocColor(l.b) }}>{l.b}</span>
         <VoteDots name={l.n} chamber={l.c} />
-        <span className="text-[10px] font-mono font-bold w-[38px] text-right shrink-0" style={{ color: alignColor || '#003049' }}>
+        <span className="text-[15px] font-mono font-bold w-[38px] text-right shrink-0" style={{ color: alignColor || '#003049' }}>
           {alla != null ? `${alla}%` : 'S/D'}
         </span>
       </div>
@@ -903,12 +903,12 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
       {/* Provincial legislature with of/op bars */}
       {pol?.legislatura_composicion && (
         <div className="shrink-0 min-w-[170px]">
-          <p className="text-[10px] uppercase tracking-widest text-[#003049]/60 mb-1">Prov. Legislature</p>
+          <p className="text-[15px] uppercase tracking-widest text-[#003049]/60 mb-1">Prov. Legislature</p>
           {legBars ? (
             <div className="space-y-1.5">
               {legBars.map(({ label, of, op }, i) => (
                 <div key={i}>
-                  <div className="flex justify-between text-[9px] mb-0.5">
+                  <div className="flex justify-between text-[14px] mb-0.5">
                     {label && <span className="text-[#003049]/50">{label}</span>}
                     <span className="ml-auto">
                       <span style={{ color: '#7d3c98' }}>of. {of}%</span>
@@ -924,24 +924,24 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
               ))}
             </div>
           ) : (
-            <p className="text-[10px] text-[#003049] leading-relaxed">{pol.legislatura_composicion}</p>
+            <p className="text-[15px] text-[#003049] leading-relaxed">{pol.legislatura_composicion}</p>
           )}
         </div>
       )}
       {pol?.legislatura_composicion && <div className="w-px self-stretch bg-[#003049]/10 shrink-0" />}
       {/* National senators (3 per province) */}
       <div className="shrink-0">
-        <p className="text-[10px] uppercase tracking-widest text-[#003049]/60 mb-1">Senators ({senators.length})</p>
+        <p className="text-[15px] uppercase tracking-widest text-[#003049]/60 mb-1">Senators ({senators.length})</p>
         <div className="space-y-0.5">
           {senators.length > 0 ? senators.map((l, i) => (
             <LegRow key={i} l={l} />
-          )) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
+          )) : <p className="text-[16px] text-[#003049]/40 italic">No data</p>}
         </div>
       </div>
       <div className="w-px self-stretch bg-[#003049]/10 shrink-0" />
       {/* National deputies — bloc summary + compact grid */}
       <div className="shrink-0 min-w-[300px]">
-        <p className="text-[10px] uppercase tracking-widest text-[#003049]/60 mb-1">Deputies ({deputies.length})</p>
+        <p className="text-[15px] uppercase tracking-widest text-[#003049]/60 mb-1">Deputies ({deputies.length})</p>
         {deputies.length > 0 ? (
           <>
             {/* Bloc summary bar */}
@@ -955,8 +955,8 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
               return (
                 <div className="flex gap-2 mb-1.5 flex-wrap">
                   {sorted.map(([b, count]) => (
-                    <span key={b} className="text-[10px] font-bold" style={{ color: blocColor(b) }}>
-                      {count} <span className="font-normal text-[9px]">{b.length > 18 ? b.slice(0, 18) + '.' : b}</span>
+                    <span key={b} className="text-[15px] font-bold" style={{ color: blocColor(b) }}>
+                      {count} <span className="font-normal text-[14px]">{b.length > 18 ? b.slice(0, 18) + '.' : b}</span>
                     </span>
                   ))}
                 </div>
@@ -966,16 +966,16 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
             <div className="grid grid-cols-2 gap-x-3 gap-y-0 max-h-[80px] overflow-y-auto pr-1">
               {deputies.map((l, i) => (
                 <div key={i} className="flex items-center gap-1 py-px">
-                  <span className="text-[10px] font-semibold text-[#003049] truncate max-w-[110px]">{l.n?.split(',')[0]}</span>
+                  <span className="text-[15px] font-semibold text-[#003049] truncate max-w-[110px]">{l.n?.split(',')[0]}</span>
                   <VoteDots name={l.n} chamber={l.c} />
-                  <span className="text-[9px] font-mono shrink-0" style={{
+                  <span className="text-[14px] font-mono shrink-0" style={{
                     color: l.alla != null ? (l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#780000') : '#003049'
                   }}>{l.alla != null ? `${l.alla}%` : ''}</span>
                 </div>
               ))}
             </div>
           </>
-        ) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
+        ) : <p className="text-[16px] text-[#003049]/40 italic">No data</p>}
       </div>
     </div>
   );
@@ -1005,18 +1005,18 @@ function CongressPanel({ congress }) {
         ]},
       ].map((col) => (
         <div key={col.title} className="min-w-[160px]">
-          <p className="text-[9px] uppercase tracking-widest text-[#003049]/60 mb-0.5">{col.title}</p>
+          <p className="text-[14px] uppercase tracking-widest text-[#003049]/60 mb-0.5">{col.title}</p>
           <div className="space-y-0.5">
             {col.votes.map((v, i) => (
               <div key={i} className="flex items-center gap-1">
                 <span className={`text-[6px] font-bold w-[7px] shrink-0 ${v.r === 'A' ? 'text-success' : 'text-crimson'}`}>
                   {v.r === 'A' ? '✓' : '✗'}
                 </span>
-                <span className="text-[8px] text-[#003049] font-semibold w-[54px] truncate">{v.name}</span>
+                <span className="text-[13px] text-[#003049] font-semibold w-[54px] truncate">{v.name}</span>
                 <span className="text-[7px] text-[#003049]/60 w-[20px]">{v.ch}</span>
-                <span className="text-[8px] font-mono text-success">{v.a}</span>
-                <span className="text-[9px] text-[#003049]/60">/</span>
-                <span className="text-[8px] font-mono text-crimson">{v.n}</span>
+                <span className="text-[13px] font-mono text-success">{v.a}</span>
+                <span className="text-[14px] text-[#003049]/60">/</span>
+                <span className="text-[13px] font-mono text-crimson">{v.n}</span>
                 {v.note && <span className="text-[6px] text-warning ml-0.5">{v.note}</span>}
               </div>
             ))}
@@ -1087,13 +1087,13 @@ function ProvincialCabinetPanel({ selectedProvince, governors }) {
 
   return (
     <div className="flex flex-wrap gap-1 content-start h-full overflow-hidden pt-0.5">
-      <p className="w-full text-[9px] text-[#003049]/50 uppercase tracking-widest mb-0.5">Provincial Executive · {selectedProvince}</p>
+      <p className="w-full text-[14px] text-[#003049]/50 uppercase tracking-widest mb-0.5">Provincial Executive · {selectedProvince}</p>
       {infoCards.map((p, i) => (
         <div key={`info-${i}`} className="flex-1 min-w-[100px] rounded px-2 py-1.5 border"
           style={{ background: getBg(p.tier), borderColor: getBorder(p.tier) }}>
-          <p className="text-[8px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
-          <p className="text-[11px] font-bold text-[#003049] leading-snug truncate">{p.name}</p>
-          {p.detail && <p className="text-[9px] leading-tight truncate" style={{ color: p.color || '#669BBC' }}>{p.detail}</p>}
+          <p className="text-[13px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
+          <p className="text-[16px] font-bold text-[#003049] leading-snug truncate">{p.name}</p>
+          {p.detail && <p className="text-[14px] leading-tight truncate" style={{ color: p.color || '#669BBC' }}>{p.detail}</p>}
         </div>
       ))}
       {ministers.length > 0 && (
@@ -1102,8 +1102,8 @@ function ProvincialCabinetPanel({ selectedProvince, governors }) {
           {ministers.map((m, i) => (
             <div key={`min-${i}`} className="flex-1 min-w-[100px] rounded px-2 py-1.5 border"
               style={{ background: getBg(m.tier), borderColor: getBorder(m.tier) }}>
-              <p className="text-[8px] uppercase tracking-widest text-[#003049]/50 leading-tight">{m.role}</p>
-              <p className="text-[11px] font-bold text-[#003049] leading-snug truncate">{m.name}</p>
+              <p className="text-[13px] uppercase tracking-widest text-[#003049]/50 leading-tight">{m.role}</p>
+              <p className="text-[16px] font-bold text-[#003049] leading-snug truncate">{m.name}</p>
             </div>
           ))}
         </>
@@ -1160,9 +1160,9 @@ function CabinetPanel() {
           style={{ background: getBg(p.tier), borderColor: getBorder(p.tier) }}
         >
           <p className="text-[7px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
-          <p className="text-[10px] font-bold text-[#003049] leading-tight truncate">{p.name}</p>
+          <p className="text-[15px] font-bold text-[#003049] leading-tight truncate">{p.name}</p>
           {p.party && (
-            <p className="text-[8px] leading-tight" style={{ color: getPartyColor(p.party) }}>{p.party}</p>
+            <p className="text-[13px] leading-tight" style={{ color: getPartyColor(p.party) }}>{p.party}</p>
           )}
         </div>
       ))}
@@ -1205,7 +1205,7 @@ export default function BottomBar({ panelWidth = 320, congress, overlays, energy
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`text-[9px] px-2.5 py-1 rounded-t font-semibold uppercase tracking-wider transition-all ${
+            className={`text-[14px] px-2.5 py-1 rounded-t font-semibold uppercase tracking-wider transition-all ${
               activeTab === tab.id ? 'border border-b-transparent -mb-px' : ''
             }`}
             style={activeTab === tab.id
