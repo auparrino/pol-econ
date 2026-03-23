@@ -98,7 +98,7 @@ function InfoTooltip({ text }) {
 function Section({ title, children, tooltip }) {
   return (
     <div className="mb-4">
-      <h3 className="text-[10px] font-bold tracking-[1.5px] uppercase text-steel mb-2 border-b border-[#003049]/12 pb-1 flex items-center">
+      <h3 className="text-[11px] font-bold tracking-[1.5px] uppercase text-steel mb-2 border-b border-[#003049]/12 pb-1 flex items-center">
         {title}
         {tooltip && <InfoTooltip text={tooltip} />}
       </h3>
@@ -110,12 +110,12 @@ function Section({ title, children, tooltip }) {
 function DataRow({ label, value, color, info }) {
   if (!value && value !== 0) return null;
   return (
-    <div className="flex justify-between items-start py-1 text-[12px]">
-      <span className="text-[#003049]/60 min-w-[90px] shrink-0 flex items-center">
+    <div className="flex justify-between items-start py-1 text-[13px]">
+      <span className="text-[#003049]/60 min-w-[100px] shrink-0 flex items-center">
         {label}
         {info && <InfoTooltip text={info} />}
       </span>
-      <span className={`text-right ${color || 'text-[#003049]'} text-[11px] max-w-[180px] break-words`}>
+      <span className={`text-right ${color || 'text-[#003049]'} text-[12px] max-w-[180px] break-words`}>
         {value}
       </span>
     </div>

@@ -939,14 +939,43 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
         </div>
       </div>
       <div className="w-px self-stretch bg-[#003049]/10 shrink-0" />
-      {/* National deputies — compact scrollable */}
-      <div className="shrink-0 min-w-[200px]">
+      {/* National deputies — bloc summary + compact grid */}
+      <div className="shrink-0 min-w-[300px]">
         <p className="text-[10px] uppercase tracking-widest text-[#003049]/60 mb-1">Deputies ({deputies.length})</p>
-        <div className="space-y-0.5 max-h-[105px] overflow-y-auto pr-1">
-          {deputies.length > 0 ? deputies.map((l, i) => (
-            <LegRow key={i} l={l} />
-          )) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
-        </div>
+        {deputies.length > 0 ? (
+          <>
+            {/* Bloc summary bar */}
+            {(() => {
+              const byBloc = {};
+              for (const d of deputies) {
+                const b = d.b || 'Otros';
+                byBloc[b] = (byBloc[b] || 0) + 1;
+              }
+              const sorted = Object.entries(byBloc).sort((a, b) => b[1] - a[1]);
+              return (
+                <div className="flex gap-2 mb-1.5 flex-wrap">
+                  {sorted.map(([b, count]) => (
+                    <span key={b} className="text-[10px] font-bold" style={{ color: blocColor(b) }}>
+                      {count} <span className="font-normal text-[9px]">{b.length > 18 ? b.slice(0, 18) + '.' : b}</span>
+                    </span>
+                  ))}
+                </div>
+              );
+            })()}
+            {/* Compact 2-column grid */}
+            <div className="grid grid-cols-2 gap-x-3 gap-y-0 max-h-[80px] overflow-y-auto pr-1">
+              {deputies.map((l, i) => (
+                <div key={i} className="flex items-center gap-1 py-px">
+                  <span className="text-[10px] font-semibold text-[#003049] truncate max-w-[110px]">{l.n?.split(',')[0]}</span>
+                  <VoteDots name={l.n} chamber={l.c} />
+                  <span className="text-[9px] font-mono shrink-0" style={{
+                    color: l.alla != null ? (l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#780000') : '#003049'
+                  }}>{l.alla != null ? `${l.alla}%` : ''}</span>
+                </div>
+              ))}
+            </div>
+          </>
+        ) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
       </div>
     </div>
   );
