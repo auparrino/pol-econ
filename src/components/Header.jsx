@@ -57,7 +57,7 @@ export default function Header() {
         <div className="w-px h-7 bg-steel-dim/30 ml-2" />
       </div>
 
-      <div className="flex items-center gap-1 divide-x divide-steel-dim/20">
+      <div className="flex items-center gap-2 divide-x divide-steel-dim/20">
         <MacroChip
           label="USD Oficial"
           value={macro.dolarOficial?.venta}

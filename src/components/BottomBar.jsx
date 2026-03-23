@@ -1089,7 +1089,7 @@ function ProvincialCabinetPanel({ selectedProvince, governors }) {
   };
 
   return (
-    <div className="flex flex-wrap gap-1 content-start h-full overflow-hidden pt-0.5">
+    <div className="flex flex-wrap gap-1 content-start h-full overflow-y-auto pt-0.5">
       <p className="w-full text-[14px] text-[#003049]/50 uppercase tracking-widest mb-0.5">Provincial Executive · {selectedProvince}</p>
       {infoCards.map((p, i) => (
         <div key={`info-${i}`} className="flex-1 min-w-[100px] rounded px-2 py-1.5 border"
@@ -1155,7 +1155,7 @@ function CabinetPanel() {
   };
 
   return (
-    <div className="flex flex-wrap gap-1 content-start h-full overflow-hidden pt-0.5">
+    <div className="flex flex-wrap gap-1 content-start h-full overflow-y-auto pt-0.5">
       {allCards.map((p, i) => (
         <div
           key={i}
@@ -1193,8 +1193,7 @@ export default function BottomBar({ panelWidth = 320, congress, overlays, energy
     else if (activeTab === 'overlay') setActiveTab('congress');
   }, [hasOverlay]); // eslint-disable-line
 
-  const expandedTabs = ['congress', 'cabinet'];
-  const barH = expandedTabs.includes(activeTab) ? 155 : 150;
+  const barH = activeTab === 'cabinet' ? 200 : activeTab === 'congress' ? 155 : 150;
 
   useEffect(() => { onHeightChange?.(barH); }, [barH]); // eslint-disable-line
 
@@ -1220,7 +1219,7 @@ export default function BottomBar({ panelWidth = 320, congress, overlays, energy
         ))}
       </div>
 
-      <div className="px-3 py-1.5 flex-1 overflow-hidden min-h-0">
+      <div className="px-3 py-1.5 flex-1 overflow-y-auto min-h-0">
         {activeTab === 'overlay' && <OverlayPanel overlays={overlays} energyLayers={energyLayers} selectedProvince={selectedProvince} />}
         {activeTab === 'congress' && (selectedProvince
           ? <ProvincialCongressPanel selectedProvince={selectedProvince} congress={congress} />
