@@ -631,19 +631,13 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
           <>
             {/* Governor summary */}
             <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10 mb-3">
-              <div className="flex items-center justify-between mb-1">
+              <div className="flex items-center justify-between">
                 <div>
                   <span className="text-[13px] font-bold text-[#003049]">{gov.gobernador}</span>
                   <span className="text-[11px] text-steel ml-1.5">{gov.partido}</span>
                 </div>
                 <AlignmentBadge alignment={gov.alineamiento_nacion} />
               </div>
-              {polContext?.legislatura_composicion && (
-                <div className="pt-1.5 border-t border-[#003049]/10">
-                  <span className="text-[9px] text-[#003049]/60">Legislature</span>
-                  <LegislaturaBars composicion={polContext.legislatura_composicion} />
-                </div>
-              )}
             </div>
 
             {/* Demographics */}
