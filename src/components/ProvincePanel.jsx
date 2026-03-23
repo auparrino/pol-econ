@@ -98,7 +98,7 @@ function InfoTooltip({ text }) {
 function Section({ title, children, tooltip }) {
   return (
     <div className="mb-4">
-      <h3 className="text-[13px] font-bold tracking-[1.5px] uppercase text-steel mb-2 border-b border-[#003049]/12 pb-1 flex items-center">
+      <h3 className="text-[15px] font-bold tracking-[1.5px] uppercase text-steel mb-2 border-b border-[#003049]/12 pb-1 flex items-center">
         {title}
         {tooltip && <InfoTooltip text={tooltip} />}
       </h3>
@@ -110,12 +110,12 @@ function Section({ title, children, tooltip }) {
 function DataRow({ label, value, color, info }) {
   if (!value && value !== 0) return null;
   return (
-    <div className="flex justify-between items-start py-1 text-[15px]">
+    <div className="flex justify-between items-start py-1 text-[17px]">
       <span className="text-[#003049]/60 min-w-[100px] shrink-0 flex items-center">
         {label}
         {info && <InfoTooltip text={info} />}
       </span>
-      <span className={`text-right ${color || 'text-[#003049]'} text-[14px] max-w-[180px] break-words`}>
+      <span className={`text-right ${color || 'text-[#003049]'} text-[16px] max-w-[180px] break-words`}>
         {value}
       </span>
     </div>
@@ -133,7 +133,7 @@ function AlignmentBadge({ alignment }) {
   else { bg = 'bg-steel/20'; text = 'text-steel'; }
 
   return (
-    <span className={`inline-block text-[10px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider ${bg} ${text}`}>
+    <span className={`inline-block text-[12px] font-bold px-2 py-0.5 rounded uppercase tracking-wider ${bg} ${text}`}>
       {alignment || 'S/D'}
     </span>
   );
@@ -169,12 +169,12 @@ function parseLegComp(str) {
 
 function LegislaturaBars({ composicion }) {
   const parsed = parseLegComp(composicion);
-  if (!parsed) return <span className="text-[12px] text-[#003049]">{composicion}</span>;
+  if (!parsed) return <span className="text-[14px] text-[#003049]">{composicion}</span>;
   return (
     <div className="space-y-1.5 mt-1">
       {parsed.map(({ label, of, op }, i) => (
         <div key={i}>
-          <div className="flex justify-between text-[11px] mb-0.5">
+          <div className="flex justify-between text-[13px] mb-0.5">
             {label && <span className="text-[#003049]/50">{label}</span>}
             <span className="ml-auto">
               <span style={{ color: '#7d3c98' }}>of. {of}%</span>
@@ -196,11 +196,11 @@ function HBar({ value, max, color = '#669BBC', label, info }) {
   const pct = Math.min((value / max) * 100, 100);
   return (
     <div className="flex items-center gap-2 py-0.5">
-      <span className="text-[12px] text-[#003049]/60 min-w-[70px] shrink-0 flex items-center gap-0.5">{label}{info && <InfoTooltip text={info} />}</span>
-      <div className="flex-1 h-[7px] bg-[#003049]/10 rounded-full overflow-hidden">
+      <span className="text-[14px] text-[#003049]/60 min-w-[80px] shrink-0 flex items-center gap-0.5">{label}{info && <InfoTooltip text={info} />}</span>
+      <div className="flex-1 h-[8px] bg-[#003049]/10 rounded-full overflow-hidden">
         <div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: color }} />
       </div>
-      <span className="text-[12px] font-mono text-[#003049]/60 min-w-[32px] text-right">{value}%</span>
+      <span className="text-[14px] font-mono text-[#003049]/60 min-w-[34px] text-right">{value}%</span>
     </div>
   );
 }
@@ -273,15 +273,15 @@ function SocioSection({ province }) {
 }
 
 function AlignmentBar({ value }) {
-  if (value == null) return <span className="text-[10px] text-[#003049]/60 italic">S/D</span>;
+  if (value == null) return <span className="text-[12px] text-[#003049]/60 italic">S/D</span>;
   const pct = Math.min(value, 100);
   const color = pct >= 75 ? '#7d3c98' : pct >= 50 ? '#17a589' : pct >= 25 ? '#d4a800' : '#780000';
   return (
     <div className="flex items-center gap-1">
-      <div className="w-[44px] h-[5px] bg-[#003049]/10 rounded-full overflow-hidden">
+      <div className="w-[48px] h-[6px] bg-[#003049]/10 rounded-full overflow-hidden">
         <div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: color }} />
       </div>
-      <span className="text-[10px] font-mono min-w-[30px] text-right" style={{ color }}>{pct.toFixed(0)}%</span>
+      <span className="text-[12px] font-mono min-w-[32px] text-right" style={{ color }}>{pct.toFixed(0)}%</span>
     </div>
   );
 }
@@ -292,14 +292,14 @@ const VOTE_LABEL = { A: 'A', N: 'N', ABS: '~' };
 function VoteDot({ topic, vote }) {
   if (!vote) return (
     <span title={VOTE_TOPICS[topic]?.label || topic}
-      className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm text-[9px] font-bold bg-[#003049]/6 text-[#003049]/60">
+      className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-sm text-[10px] font-bold bg-[#003049]/6 text-[#003049]/60">
       –
     </span>
   );
   return (
     <span
       title={`${VOTE_TOPICS[topic]?.label || topic}: ${vote === 'A' ? 'Affirmative' : vote === 'N' ? 'Negative' : 'Abstention'}`}
-      className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm text-[9px] font-bold"
+      className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-sm text-[10px] font-bold"
       style={{ backgroundColor: `${VOTE_COLOR[vote]}22`, color: VOTE_COLOR[vote], border: `1px solid ${VOTE_COLOR[vote]}55` }}
     >
       {VOTE_LABEL[vote]}
@@ -340,14 +340,14 @@ function LegislatorCard({ leg }) {
       <div className="flex items-center gap-2">
         <div className="w-1.5 h-1.5 rounded-full shrink-0 mt-0.5" style={{ backgroundColor: coColor }} />
         <div className="flex-1 min-w-0">
-          <p className="text-[12px] text-[#003049] truncate">{leg.n}</p>
-          <p className="text-[10px] text-[#003049]/60 truncate">
+          <p className="text-[14px] text-[#003049] truncate">{leg.n}</p>
+          <p className="text-[12px] text-[#003049]/60 truncate">
             {leg.b}
             {leg.term && <span className="text-[#003049]/50 ml-1">({leg.term})</span>}
           </p>
         </div>
         <div className="text-right shrink-0" title="% of all congressional votes aligned with the LLA ruling bloc (source: comovoto.dev.ar)">
-          <p className="text-[9px] text-[#003049]/60 mb-0.5">Gov. align</p>
+          <p className="text-[11px] text-[#003049]/60 mb-0.5">Gov. align</p>
           <AlignmentBar value={computedAlla} />
         </div>
       </div>
@@ -356,7 +356,7 @@ function LegislatorCard({ leg }) {
           {chamberTopics.map(t => (
             <VoteDot key={t} topic={t} vote={votes[t]} />
           ))}
-          <span className="text-[9px] text-[#003049]/60 ml-1">since Dec '25</span>
+          <span className="text-[11px] text-[#003049]/60 ml-1">since Dec '25</span>
         </div>
       )}
     </div>
@@ -399,14 +399,14 @@ function LegislatorsSection({ province, congress }) {
     return sp === provName || sp?.includes(provName) || provName?.includes(sp);
   });
 
+  // Normalize accented characters for matching
+  const norm = s => s?.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().trim() || '';
+
   // Merge: for each official senator, find matching comovoto entry
   const senators = officialProvSenators.map(official => {
-    const nameKey = official.n?.toUpperCase().replace(/\s+/g, ' ');
+    const officialLast = norm(official.n?.split(',')[0]);
     const match = comovotoSenators.find(cv => {
-      const cvKey = cv.n?.toUpperCase().replace(/\s+/g, ' ');
-      // Match by last name (first part before comma)
-      const officialLast = nameKey.split(',')[0]?.trim();
-      const cvLast = cvKey.split(',')[0]?.trim();
+      const cvLast = norm(cv.n?.split(',')[0]);
       return officialLast === cvLast;
     });
     return {
@@ -442,13 +442,13 @@ function LegislatorsSection({ province, congress }) {
         <Section title="Overall Legislative Alignment"
           tooltip="Measures how often each legislator votes the same way as the LLA ruling bloc across all congressional votes (147+ Diputados, 154+ Senado since Dec 2023). Source: comovoto.dev.ar (updated weekly from votaciones.hcdn.gob.ar and senado.gob.ar)."
         >
-          <p className="text-[10px] text-[#003049]/50 mb-1.5 leading-tight">
+          <p className="text-[12px] text-[#003049]/50 mb-1.5 leading-tight">
             % of all congressional votes aligned with the LLA ruling bloc. Source: comovoto.dev.ar
           </p>
           <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10">
             <div className="flex items-center justify-between mb-1">
-              <span className="text-[11px] text-[#003049]/60">Province avg. ({allWithAlign.length} legislators)</span>
-              <span className="text-[14px] font-bold font-mono" style={{
+              <span className="text-[13px] text-[#003049]/60">Province avg. ({allWithAlign.length} legislators)</span>
+              <span className="text-[16px] font-bold font-mono" style={{
                 color: avgAlign >= 75 ? '#7d3c98' : avgAlign >= 50 ? '#17a589' : avgAlign >= 25 ? '#d4a800' : '#780000'
               }}>{avgAlign.toFixed(1)}%</span>
             </div>
@@ -477,7 +477,7 @@ function LegislatorsSection({ province, congress }) {
               <LegislatorCard key={i} leg={leg} />
             ))}
             {deputies.length < expectedDeps && (
-              <p className="text-[10px] text-[#003049]/60 italic mt-1">
+              <p className="text-[12px] text-[#003049]/60 italic mt-1">
                 {expectedDeps - deputies.length} seats without data in comovoto
               </p>
             )}
@@ -493,11 +493,11 @@ function SectorBar({ label, pct, color = '#3b82f6' }) {
   if (pct == null) return null;
   return (
     <div className="flex items-center gap-1.5 py-0.5">
-      <span className="text-[11px] text-[#003049]/60 w-[110px] shrink-0 truncate">{label}</span>
-      <div className="flex-1 h-[6px] bg-[#003049]/10 rounded-full overflow-hidden">
+      <span className="text-[13px] text-[#003049]/60 w-[115px] shrink-0 truncate">{label}</span>
+      <div className="flex-1 h-[7px] bg-[#003049]/10 rounded-full overflow-hidden">
         <div className="h-full rounded-full" style={{ width: `${Math.min(pct, 100)}%`, backgroundColor: color }} />
       </div>
-      <span className="text-[11px] font-mono text-[#003049]/60 w-[30px] text-right">{pct.toFixed(1)}%</span>
+      <span className="text-[13px] font-mono text-[#003049]/60 w-[34px] text-right">{pct.toFixed(1)}%</span>
     </div>
   );
 }
@@ -528,19 +528,19 @@ function EconomicSection({ province }) {
       <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10 space-y-1">
         <div className="flex justify-between items-center mb-2">
           <div>
-            <p className="text-[11px] text-[#003049]/60">Leading sector</p>
-            <p className="text-[13px] font-bold text-[#003049]">{sectorEntries[0]?.en ?? '—'}</p>
-            <p className="text-[11px] text-[#003049]/50">{sectorEntries[0]?.pct}% of prov. VAB</p>
+            <p className="text-[13px] text-[#003049]/60">Leading sector</p>
+            <p className="text-[15px] font-bold text-[#003049]">{sectorEntries[0]?.en ?? '—'}</p>
+            <p className="text-[13px] text-[#003049]/50">{sectorEntries[0]?.pct}% of prov. VAB</p>
           </div>
           <div className="text-right">
-            <p className="text-[11px] text-[#003049]/60">National GDP share</p>
-            <p className="text-[15px] font-bold font-mono text-warning">
+            <p className="text-[13px] text-[#003049]/60">National GDP share</p>
+            <p className="text-[17px] font-bold font-mono text-warning">
               {((data.vab_total / nationalVabTotal) * 100).toFixed(1)}%
             </p>
           </div>
         </div>
         {data.productos_principales && (
-          <p className="text-[11px] text-[#003049]/70 italic border-t border-[#003049]/10 pt-1.5 mb-1.5 leading-relaxed">
+          <p className="text-[13px] text-[#003049]/70 italic border-t border-[#003049]/10 pt-1.5 mb-1.5 leading-relaxed">
             {data.productos_principales}
           </p>
         )}
@@ -608,11 +608,11 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
       <div className="sticky top-0 bg-[#FDF0D5] border-b border-[#003049]/12 p-3 z-10">
         <div className="flex items-start justify-between">
           <div>
-            <h2 className="text-[16px] font-black text-[#003049] tracking-tight">
+            <h2 className="text-[18px] font-black text-[#003049] tracking-tight">
               {province}
             </h2>
             {gov && (
-              <p className="text-[12px] text-steel mt-0.5">
+              <p className="text-[14px] text-steel mt-0.5">
                 {gov.region} · {gov.superficie_km2?.toLocaleString('es-AR')} km²
               </p>
             )}
@@ -633,8 +633,8 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
             <div className="bg-[#003049]/6 rounded-md p-3 border border-[#003049]/10 mb-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <span className="text-[14px] font-bold text-[#003049]">{gov.gobernador}</span>
-                  <p className="text-[12px] text-steel mt-0.5">{gov.partido}</p>
+                  <span className="text-[16px] font-bold text-[#003049]">{gov.gobernador}</span>
+                  <p className="text-[14px] text-steel mt-0.5">{gov.partido}</p>
                 </div>
                 <AlignmentBadge alignment={gov.alineamiento_nacion} />
               </div>
@@ -659,6 +659,9 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
                 </div>
               </Section>
             )}
+
+            {/* Legislators */}
+            <LegislatorsSection province={province} congress={congress} />
 
             {/* Economic structure (VAB) */}
             <EconomicSection province={province} />

@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
+import { officialSenators } from '../data/officialSenators';
 
 const CACHE_KEY = 'politicdash_congress';
 const CACHE_TTL = 6 * 60 * 60 * 1000; // 6 hours
@@ -26,6 +27,19 @@ const COALITION_ORDER = ['LLA', 'JxC', 'UCR', 'PJ', 'OTROS'];
 const SENATE_SEATS = 72; // 3 per province/district (24 districts)
 const DEPUTY_SEATS = 257;
 
+// Normalize accented characters for matching
+function normalizeStr(s) {
+  return s?.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().trim() || '';
+}
+
+// Build a set of official senator last names per province for disambiguation
+const officialSenatorKeys = new Set();
+for (const s of officialSenators) {
+  const last = normalizeStr(s.n?.split(',')[0]);
+  const prov = normalizeStr(s.p);
+  if (last && prov) officialSenatorKeys.add(`${last}|${prov}`);
+}
+
 function getMaxYt(leg) {
   if (!leg.by_co) return 0;
   return Math.max(...Object.values(leg.by_co).map(e => e.yt || 0));
@@ -35,8 +49,20 @@ function filterCurrent(legislators) {
   // Use yt >= 2025 as the broad pool (includes recently sworn legislators)
   const pool = legislators.filter(leg => leg.by_co && getMaxYt(leg) >= 2025);
 
+  // Comovoto uses "diputados+senadores" for legislators who served in both chambers.
+  // Use officialSenators list to determine if they're currently a senator or deputy.
+  const normalized = pool.map(l => {
+    if (l.c === 'diputados+senadores') {
+      const last = normalizeStr(l.n?.split(',')[0]);
+      const prov = normalizeStr(l.p);
+      const isSenator = officialSenatorKeys.has(`${last}|${prov}`);
+      return { ...l, c: isSenator ? 'senadores' : 'diputados' };
+    }
+    return l;
+  });
+
   // Senators: cap at 3 per province, keeping those with highest yt (most current)
-  const senPool = pool.filter(l => l.c === 'senadores');
+  const senPool = normalized.filter(l => l.c === 'senadores');
   const senByProv = {};
   for (const s of senPool) {
     const prov = s.p || 'Desconocido';
@@ -49,8 +75,8 @@ function filterCurrent(legislators) {
     senators.push(...list.slice(0, 3));
   }
 
-  // Deputies: prefer yt >= 2026, then fill from yt=2025 up to constitutional max
-  const dipPool = pool.filter(l => l.c === 'diputados');
+  // Deputies
+  const dipPool = normalized.filter(l => l.c === 'diputados');
   dipPool.sort((a, b) => getMaxYt(b) - getMaxYt(a));
   const deputies = dipPool.slice(0, DEPUTY_SEATS);
 
