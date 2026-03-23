@@ -32,11 +32,18 @@ function normalizeStr(s) {
   return s?.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().trim() || '';
 }
 
+// Normalize province names (CABA ↔ Ciudad de Buenos Aires)
+function normalizeProv(p) {
+  const n = normalizeStr(p);
+  if (n === 'CABA' || n === 'CIUDAD DE BUENOS AIRES' || n === 'CIUDAD AUTONOMA DE BUENOS AIRES') return 'CABA';
+  return n;
+}
+
 // Build a set of official senator last names per province for disambiguation
 const officialSenatorKeys = new Set();
 for (const s of officialSenators) {
   const last = normalizeStr(s.n?.split(',')[0]);
-  const prov = normalizeStr(s.p);
+  const prov = normalizeProv(s.p);
   if (last && prov) officialSenatorKeys.add(`${last}|${prov}`);
 }
 
@@ -54,7 +61,7 @@ function filterCurrent(legislators) {
   const normalized = pool.map(l => {
     if (l.c === 'diputados+senadores') {
       const last = normalizeStr(l.n?.split(',')[0]);
-      const prov = normalizeStr(l.p);
+      const prov = normalizeProv(l.p);
       const isSenator = officialSenatorKeys.has(`${last}|${prov}`);
       return { ...l, c: isSenator ? 'senadores' : 'diputados' };
     }

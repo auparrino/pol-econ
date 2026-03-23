@@ -851,14 +851,16 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
   // Get comovoto legislators for this province
   const comovotoLegs = (() => {
     if (!congress?.byProvince) return [];
+    // Collect all matching province entries (CABA may appear as both "CABA" and "Ciudad de Buenos Aires")
+    const result = [];
     for (const [key, legs] of Object.entries(congress.byProvince)) {
       const kl = key.toLowerCase();
-      if (kl === pn) return legs;
-      if (isCABA && (kl === 'caba' || kl.includes('ciudad'))) return legs;
+      if (kl === pn) { result.push(...legs); continue; }
+      if (isCABA && (kl === 'caba' || kl.includes('ciudad'))) { result.push(...legs); continue; }
       if (!isCABA && (kl === 'caba' || kl.includes('ciudad'))) continue;
-      if (kl.includes(pn) || pn.includes(kl)) return legs;
+      if (kl.includes(pn) || pn.includes(kl)) { result.push(...legs); continue; }
     }
-    return [];
+    return result;
   })();
 
   // Senators: merge officialSenators (3 per province) with comovoto alignment
@@ -869,9 +871,10 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
     if (sp === 'ciudad de buenos aires') return false;
     return sp === pn || sp?.includes(pn) || pn?.includes(sp);
   });
+  const normalizeN = (s) => s?.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().trim() || '';
   const senators = officialProvSens.map(official => {
-    const lastName = official.n?.toUpperCase().split(',')[0]?.trim();
-    const match = comovotoSens.find(cv => cv.n?.toUpperCase().split(',')[0]?.trim() === lastName);
+    const lastName = normalizeN(official.n?.split(',')[0]);
+    const match = comovotoSens.find(cv => normalizeN(cv.n?.split(',')[0]) === lastName);
     return { n: official.n, b: official.b, alla: match?.alla ?? null, c: 'senadores' };
   }).sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
 
@@ -889,7 +892,7 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
         <span className="text-[15px] truncate max-w-[110px]" style={{ color: blocColor(l.b) }}>{l.b}</span>
         <VoteDots name={l.n} chamber={l.c} />
         <span className="text-[15px] font-mono font-bold w-[38px] text-right shrink-0" style={{ color: alignColor || '#003049' }}>
-          {alla != null ? `${alla}%` : 'S/D'}
+          {alla != null ? `${alla}%` : '—'}
         </span>
       </div>
     );
