@@ -383,7 +383,7 @@ function OverlayPanel({ overlays, energyLayers, selectedProvince }) {
   const isFiltered = hasMining && selectedProvince && filteredProjects.length < miningProjects.length;
 
   return (
-    <div className="flex flex-wrap gap-x-5 gap-y-1 content-center h-full">
+    <div className="flex flex-wrap gap-x-3 gap-y-1 content-center h-full overflow-x-auto overflow-y-hidden">
       {hasMining && (
         <>
           <div>
@@ -790,45 +790,60 @@ function ProvincialCongressPanel({ selectedProvince, congress }) {
   const senators = provLegs.filter(l => l.c === 'senadores');
   const deputies = provLegs.filter(l => l.c === 'diputados');
 
+  const LegRow = ({ l }) => {
+    const alignColor = l.alla != null
+      ? (l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#780000')
+      : null;
+    // Vote dots from by_co if available
+    const votes = l.v || {};
+    const topics = l.c === 'senadores'
+      ? ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv']
+      : ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
+    const LABELS = { presupuesto_2026: 'B', inocencia_fiscal: 'I', modernizacion_laboral: 'L', regimen_penal_juv: 'P', mercosur_ue: 'M', ley_glaciares: 'G' };
+    const VOTE_COLORS = { AFIRMATIVO: '#27ae60', NEGATIVO: '#C1121F', ABSTENCION: '#f39c12', AUSENTE: '#003049' };
+    return (
+      <div className="flex items-center gap-1.5 py-px">
+        <span className="text-[10px] font-semibold text-[#003049] w-[130px] truncate">{l.n}</span>
+        <span className="text-[9px] text-steel truncate max-w-[90px]">{l.b}</span>
+        <div className="flex gap-px ml-auto shrink-0">
+          {topics.map(t => {
+            const v = votes[t];
+            if (!v) return <span key={t} className="w-[11px] h-[11px] rounded-sm bg-[#003049]/8 flex items-center justify-center text-[6px] text-[#003049]/30">{LABELS[t]}</span>;
+            return <span key={t} className="w-[11px] h-[11px] rounded-sm flex items-center justify-center text-[6px] font-bold text-white" style={{ backgroundColor: VOTE_COLORS[v] || '#669BBC' }}>{LABELS[t]}</span>;
+          })}
+        </div>
+        {alignColor && <span className="text-[9px] font-mono font-bold w-[32px] text-right shrink-0" style={{ color: alignColor }}>{l.alla}%</span>}
+      </div>
+    );
+  };
+
   return (
     <div className="flex gap-4 h-full items-start overflow-hidden pt-0.5">
       {/* Provincial legislature */}
       {pol?.legislatura_composicion && (
         <div className="shrink-0">
-          <p className="text-[9px] uppercase tracking-widest text-[#003049]/60 mb-1">Provincial Legislature</p>
-          <p className="text-[9px] text-[#003049] leading-relaxed max-w-[180px]">{pol.legislatura_composicion}</p>
+          <p className="text-[10px] uppercase tracking-widest text-[#003049]/60 mb-1">Prov. Legislature</p>
+          <p className="text-[10px] text-[#003049] leading-relaxed max-w-[180px]">{pol.legislatura_composicion}</p>
         </div>
       )}
       {pol?.legislatura_composicion && <div className="w-px h-10 bg-[#003049]/10 shrink-0" />}
       {/* National senators */}
-      <div className="shrink-0">
-        <p className="text-[9px] uppercase tracking-widest text-[#003049]/60 mb-1">Senators ({senators.length})</p>
-        <div className="space-y-0.5 max-h-[90px] overflow-y-auto">
+      <div className="shrink-0 min-w-[280px]">
+        <p className="text-[10px] uppercase tracking-widest text-[#003049]/60 mb-1">Senators ({senators.length})</p>
+        <div className="space-y-px max-h-[100px] overflow-y-auto">
           {senators.length > 0 ? senators.map((l, i) => (
-            <div key={i} className="flex items-center gap-1">
-              <span className="text-[9px] font-semibold text-[#003049] w-[120px] truncate">{l.n}</span>
-              <span className="text-[8px] text-steel truncate max-w-[80px]">{l.b}</span>
-              {l.alla != null && <span className="text-[8px] font-mono ml-auto" style={{
-                color: l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#780000'
-              }}>{l.alla}%</span>}
-            </div>
-          )) : <p className="text-[8px] text-[#003049]/40 italic">No data</p>}
+            <LegRow key={i} l={l} />
+          )) : <p className="text-[10px] text-[#003049]/40 italic">No data</p>}
         </div>
       </div>
       <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
       {/* National deputies */}
-      <div className="shrink-0">
-        <p className="text-[9px] uppercase tracking-widest text-[#003049]/60 mb-1">Deputies ({deputies.length})</p>
-        <div className="space-y-0.5 max-h-[90px] overflow-y-auto">
+      <div className="shrink-0 min-w-[280px]">
+        <p className="text-[10px] uppercase tracking-widest text-[#003049]/60 mb-1">Deputies ({deputies.length})</p>
+        <div className="space-y-px max-h-[100px] overflow-y-auto">
           {deputies.length > 0 ? deputies.map((l, i) => (
-            <div key={i} className="flex items-center gap-1">
-              <span className="text-[9px] font-semibold text-[#003049] w-[120px] truncate">{l.n}</span>
-              <span className="text-[8px] text-steel truncate max-w-[80px]">{l.b}</span>
-              {l.alla != null && <span className="text-[8px] font-mono ml-auto" style={{
-                color: l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#780000'
-              }}>{l.alla}%</span>}
-            </div>
-          )) : <p className="text-[8px] text-[#003049]/40 italic">No data</p>}
+            <LegRow key={i} l={l} />
+          )) : <p className="text-[10px] text-[#003049]/40 italic">No data</p>}
         </div>
       </div>
     </div>
@@ -941,23 +956,23 @@ function ProvincialCabinetPanel({ selectedProvince, governors }) {
 
   return (
     <div className="flex flex-wrap gap-1 content-start h-full overflow-hidden pt-0.5">
-      <p className="w-full text-[8px] text-[#003049]/50 uppercase tracking-widest mb-0.5">Provincial Executive · {selectedProvince}</p>
+      <p className="w-full text-[9px] text-[#003049]/50 uppercase tracking-widest mb-0.5">Provincial Executive · {selectedProvince}</p>
       {infoCards.map((p, i) => (
-        <div key={`info-${i}`} className="flex-1 min-w-[95px] rounded px-2 py-1 border"
+        <div key={`info-${i}`} className="flex-1 min-w-[100px] rounded px-2 py-1.5 border"
           style={{ background: getBg(p.tier), borderColor: getBorder(p.tier) }}>
-          <p className="text-[7px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
-          <p className="text-[10px] font-bold text-[#003049] leading-tight truncate">{p.name}</p>
-          {p.detail && <p className="text-[8px] leading-tight truncate" style={{ color: p.color || '#669BBC' }}>{p.detail}</p>}
+          <p className="text-[8px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
+          <p className="text-[11px] font-bold text-[#003049] leading-snug truncate">{p.name}</p>
+          {p.detail && <p className="text-[9px] leading-tight truncate" style={{ color: p.color || '#669BBC' }}>{p.detail}</p>}
         </div>
       ))}
       {ministers.length > 0 && (
         <>
           <div className="w-full h-px bg-[#003049]/8 my-0.5" />
           {ministers.map((m, i) => (
-            <div key={`min-${i}`} className="flex-1 min-w-[95px] rounded px-2 py-1 border"
+            <div key={`min-${i}`} className="flex-1 min-w-[100px] rounded px-2 py-1.5 border"
               style={{ background: getBg(m.tier), borderColor: getBorder(m.tier) }}>
-              <p className="text-[7px] uppercase tracking-widest text-[#003049]/50 leading-tight">{m.role}</p>
-              <p className="text-[10px] font-bold text-[#003049] leading-tight truncate">{m.name}</p>
+              <p className="text-[8px] uppercase tracking-widest text-[#003049]/50 leading-tight">{m.role}</p>
+              <p className="text-[11px] font-bold text-[#003049] leading-snug truncate">{m.name}</p>
             </div>
           ))}
         </>
