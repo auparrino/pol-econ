@@ -660,9 +660,6 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
               </Section>
             )}
 
-            {/* Legislators */}
-            <LegislatorsSection province={province} congress={congress} />
-
             {/* Economic structure (VAB) */}
             <EconomicSection province={province} />
           </>
