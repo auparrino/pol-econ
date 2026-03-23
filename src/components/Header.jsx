@@ -3,14 +3,14 @@ import { commodityPrices } from '../data/commodityPrices';
 
 // delta: { pct: number, dir: 'up'|'down'|'flat' } | null
 function DeltaBadge({ delta }) {
-  if (!delta) return <span className="block h-[9px]" />;
+  if (!delta) return <span className="block h-[14px]" />;
   const { pct, dir } = delta;
   const abs = Math.abs(pct).toFixed(1);
   const arrow = dir === 'up' ? '▲' : dir === 'down' ? '▼' : '·';
   const color = dir === 'up' ? '#4ade80' : dir === 'down' ? '#f87171' : '#8899aa';
   return (
     <span
-      className="block text-[7px] font-mono leading-[9px] h-[9px]"
+      className="block text-[12px] font-mono leading-[14px] h-[14px]"
       style={{ color }}
     >
       {arrow} {abs}%
@@ -21,10 +21,10 @@ function DeltaBadge({ delta }) {
 function MacroChip({ label, value, prefix = '', suffix = '', color = 'text-cream', delta }) {
   return (
     <div className="flex flex-col items-center px-3 min-w-[70px]">
-      <span className="text-[8px] font-semibold tracking-[1.5px] uppercase text-steel-dim leading-[10px]">
+      <span className="text-[13px] font-semibold tracking-[1.5px] uppercase text-steel-dim leading-[15px]">
         {label}
       </span>
-      <span className={`font-mono text-[13px] font-bold leading-tight ${color}`}>
+      <span className={`font-mono text-[18px] font-bold leading-tight ${color}`}>
         {value != null
           ? `${prefix}${typeof value === 'number' ? value.toLocaleString('es-AR') : value}${suffix}`
           : '—'}
@@ -47,10 +47,10 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-[1000] h-[64px] bg-navy border-b border-steel-dim/30 flex items-center justify-between px-4">
       <div className="flex items-center gap-3">
         <div>
-          <h1 className="text-[15px] font-black tracking-tight">
+          <h1 className="text-[20px] font-black tracking-tight">
             <span className="text-crimson">ARGENTINA</span>
           </h1>
-          <p className="text-[8px] font-medium tracking-[2px] uppercase text-steel -mt-0.5">
+          <p className="text-[13px] font-medium tracking-[2px] uppercase text-steel -mt-0.5">
             Political-Economic Dashboard
           </p>
         </div>

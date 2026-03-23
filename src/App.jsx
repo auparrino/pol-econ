@@ -32,7 +32,7 @@ export default function App() {
       />
 
       <div
-        className="fixed top-[64px] left-[200px] transition-all duration-300"
+        className="fixed top-[64px] left-[220px] transition-all duration-300"
         style={{ right: panelWidth, bottom: bottomBarH }}
       >
         <ArgentinaMap

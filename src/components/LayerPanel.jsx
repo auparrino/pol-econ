@@ -1,6 +1,7 @@
 import { ENERGY_LAYER_CONFIGS } from './EnergyLayers';
 
 const CHOROPLETH_MODES = [
+  { id: 'none', label: 'None' },
   { id: 'partido', label: 'Gov. Party' },
   { id: 'alineamiento', label: 'Alignment' },
   { id: 'pobreza', label: 'Poverty' },
@@ -33,17 +34,17 @@ export default function LayerPanel({
   };
 
   return (
-    <aside className="fixed top-[64px] left-0 w-[200px] bottom-0 border-r z-[999] flex flex-col overflow-y-auto"
+    <aside className="fixed top-[64px] left-0 w-[220px] bottom-0 border-r z-[999] flex flex-col overflow-y-auto"
       style={{ background: '#FDF0D5', borderColor: 'rgba(0,48,73,0.12)' }}>
       <div className="p-3">
-        <h2 className="text-[9px] font-bold tracking-[2px] uppercase mb-3"
+        <h2 className="text-[19px] font-bold tracking-[2px] uppercase mb-3"
           style={{ color: 'rgba(0,48,73,0.70)' }}>
           Layers
         </h2>
 
         {/* Choropleth modes */}
         <div className="mb-4">
-          <p className="text-[8px] font-semibold tracking-[1.5px] uppercase mb-2"
+          <p className="text-[18px] font-semibold tracking-[1.5px] uppercase mb-2"
             style={{ color: 'rgba(0,48,73,0.60)' }}>
             Color by
           </p>
@@ -52,7 +53,7 @@ export default function LayerPanel({
               <button
                 key={mode.id}
                 onClick={() => setChoroplethMode(mode.id)}
-                className={`text-left text-[11px] px-2.5 py-1.5 rounded transition-all border ${
+                className={`text-left text-[21px] px-2.5 py-1.5 rounded transition-all border ${
                   choroplethMode === mode.id
                     ? 'bg-crimson/15 border-crimson/40 font-semibold'
                     : 'border-transparent'
@@ -72,7 +73,7 @@ export default function LayerPanel({
 
         {/* Overlays */}
         <div className="mb-3">
-          <p className="text-[8px] font-semibold tracking-[1.5px] uppercase mb-2"
+          <p className="text-[18px] font-semibold tracking-[1.5px] uppercase mb-2"
             style={{ color: 'rgba(0,48,73,0.60)' }}>
             Overlays
           </p>
@@ -80,7 +81,7 @@ export default function LayerPanel({
             {OVERLAY_LAYERS.map(layer => (
               <label
                 key={layer.id}
-                className="flex items-center gap-1.5 text-[10px] cursor-pointer px-2 py-1 rounded transition-all"
+                className="flex items-center gap-1.5 text-[20px] cursor-pointer px-2 py-1 rounded transition-all"
                 style={{
                   color: overlays[layer.id] ? '#003049' : 'rgba(0,48,73,0.70)',
                   backgroundColor: overlays[layer.id] ? 'rgba(0,48,73,0.08)' : '',
@@ -92,7 +93,7 @@ export default function LayerPanel({
                   onChange={() => toggleOverlay(layer.id)}
                   className="accent-crimson w-3 h-3"
                 />
-                <span className="text-[11px] mr-0.5">{layer.icon}</span>
+                <span className="text-[21px] mr-0.5">{layer.icon}</span>
                 <span className="flex-1">{layer.label}</span>
                 <span className="w-2 h-2 rounded-full" style={{ backgroundColor: layer.color }} />
               </label>
@@ -100,7 +101,7 @@ export default function LayerPanel({
             {ENERGY_LAYER_CONFIGS.map(layer => (
               <label
                 key={layer.id}
-                className="flex items-center gap-1.5 text-[10px] cursor-pointer px-2 py-1 rounded transition-all"
+                className="flex items-center gap-1.5 text-[20px] cursor-pointer px-2 py-1 rounded transition-all"
                 style={{
                   color: energyLayers.includes(layer.id) ? '#003049' : 'rgba(0,48,73,0.70)',
                   backgroundColor: energyLayers.includes(layer.id) ? 'rgba(0,48,73,0.08)' : '',
@@ -112,7 +113,7 @@ export default function LayerPanel({
                   onChange={() => toggleEnergy(layer.id)}
                   className="accent-crimson w-3 h-3"
                 />
-                <span className="text-[11px] mr-0.5">{layer.icon}</span>
+                <span className="text-[21px] mr-0.5">{layer.icon}</span>
                 <span className="flex-1">{layer.label}</span>
                 <span className="w-2 h-2 rounded-full" style={{ backgroundColor: layer.color }} />
               </label>
@@ -122,7 +123,7 @@ export default function LayerPanel({
       </div>
 
       <div className="mt-auto p-3 border-t" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
-        <p className="text-[8px] leading-relaxed" style={{ color: 'rgba(0,48,73,0.38)' }}>
+        <p className="text-[18px] leading-relaxed" style={{ color: 'rgba(0,48,73,0.38)' }}>
           INDEC · BCRA · SIACAM · IGN
           <br />
           Fundar · comovoto.dev.ar
