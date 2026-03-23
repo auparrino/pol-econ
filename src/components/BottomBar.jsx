@@ -770,6 +770,71 @@ function BlocBar({ blocs, total, label, scale = 1.5 }) {
   );
 }
 
+function ProvincialCongressPanel({ selectedProvince, congress }) {
+  const pol = matchProvince(politicalContext, selectedProvince);
+
+  // Get legislators from congress.byProvince lookup
+  const provLegs = (() => {
+    if (!congress?.byProvince || !selectedProvince) return [];
+    const pn = selectedProvince.toLowerCase();
+    // Try exact match first, then fuzzy
+    for (const [key, legs] of Object.entries(congress.byProvince)) {
+      const kl = key.toLowerCase();
+      if (kl === pn) return legs;
+      if (pn.includes('ciudad') && (kl === 'caba' || kl.includes('ciudad'))) return legs;
+      if (kl.includes(pn) || pn.includes(kl)) return legs;
+    }
+    return [];
+  })();
+
+  const senators = provLegs.filter(l => l.c === 'senadores');
+  const deputies = provLegs.filter(l => l.c === 'diputados');
+
+  return (
+    <div className="flex gap-4 h-full items-start overflow-hidden pt-0.5">
+      {/* Provincial legislature */}
+      {pol?.legislatura_composicion && (
+        <div className="shrink-0">
+          <p className="text-[9px] uppercase tracking-widest text-[#003049]/60 mb-1">Provincial Legislature</p>
+          <p className="text-[9px] text-[#003049] leading-relaxed max-w-[180px]">{pol.legislatura_composicion}</p>
+        </div>
+      )}
+      {pol?.legislatura_composicion && <div className="w-px h-10 bg-[#003049]/10 shrink-0" />}
+      {/* National senators */}
+      <div className="shrink-0">
+        <p className="text-[9px] uppercase tracking-widest text-[#003049]/60 mb-1">Senators ({senators.length})</p>
+        <div className="space-y-0.5 max-h-[90px] overflow-y-auto">
+          {senators.length > 0 ? senators.map((l, i) => (
+            <div key={i} className="flex items-center gap-1">
+              <span className="text-[9px] font-semibold text-[#003049] w-[120px] truncate">{l.n}</span>
+              <span className="text-[8px] text-steel truncate max-w-[80px]">{l.b}</span>
+              {l.alla != null && <span className="text-[8px] font-mono ml-auto" style={{
+                color: l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#780000'
+              }}>{l.alla}%</span>}
+            </div>
+          )) : <p className="text-[8px] text-[#003049]/40 italic">No data</p>}
+        </div>
+      </div>
+      <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+      {/* National deputies */}
+      <div className="shrink-0">
+        <p className="text-[9px] uppercase tracking-widest text-[#003049]/60 mb-1">Deputies ({deputies.length})</p>
+        <div className="space-y-0.5 max-h-[90px] overflow-y-auto">
+          {deputies.length > 0 ? deputies.map((l, i) => (
+            <div key={i} className="flex items-center gap-1">
+              <span className="text-[9px] font-semibold text-[#003049] w-[120px] truncate">{l.n}</span>
+              <span className="text-[8px] text-steel truncate max-w-[80px]">{l.b}</span>
+              {l.alla != null && <span className="text-[8px] font-mono ml-auto" style={{
+                color: l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#780000'
+              }}>{l.alla}%</span>}
+            </div>
+          )) : <p className="text-[8px] text-[#003049]/40 italic">No data</p>}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function CongressPanel({ congress }) {
   return (
     <div className="flex gap-5 h-full items-center">
@@ -816,66 +881,87 @@ function CongressPanel({ congress }) {
   );
 }
 
-function ProvincialCabinetPanel({ selectedProvince, governors }) {
-  const pn = selectedProvince?.toLowerCase();
-  // Find gabinete data
-  const gabData = gabinetesProvinciales.find(g => {
-    const gp = g.provincia?.toLowerCase();
-    if (!gp || !pn) return false;
-    if (gp === pn) return true;
-    if (pn.includes('ciudad') && gp.includes('ciudad')) return true;
-    if (pn.includes('ciudad') !== gp.includes('ciudad')) return false;
-    return gp.includes(pn) || pn.includes(gp);
-  });
-
-  const gov = governors?.find(g => g.provincia?.toLowerCase() === pn)
-    || governors?.find(g => {
+function matchProvince(list, pn) {
+  if (!pn) return null;
+  const s = pn.toLowerCase();
+  return list.find(g => g.provincia?.toLowerCase() === s)
+    || list.find(g => {
       const gp = g.provincia?.toLowerCase();
-      if (!gp || !pn) return false;
-      if (pn.includes('ciudad') !== gp.includes('ciudad')) return false;
-      return gp.includes(pn) || pn.includes(gp);
+      if (!gp) return false;
+      if (s.includes('ciudad') !== gp.includes('ciudad')) return false;
+      return gp.includes(s) || s.includes(gp);
     });
+}
 
-  const alignColor = (() => {
-    const a = gov?.alineamiento_nacion?.toLowerCase() || '';
-    if (a.includes('oficialismo')) return '#7d3c98';
-    if (a.includes('aliado')) return '#17a589';
-    if (a.includes('negociador')) return '#d4a800';
-    if (a.includes('oposición dura')) return '#780000';
-    if (a.includes('oposición') || a.includes('oposicion')) return '#C1121F';
-    return '#669BBC';
-  })();
+function getAlignColor(alignment) {
+  const a = (alignment || '').toLowerCase();
+  if (a.includes('oficialismo')) return '#7d3c98';
+  if (a.includes('aliado')) return '#17a589';
+  if (a.includes('negociador')) return '#d4a800';
+  if (a.includes('oposición dura') || a.includes('oposicion dura')) return '#780000';
+  if (a.includes('oposición') || a.includes('oposicion')) return '#C1121F';
+  return '#669BBC';
+}
 
-  const cards = gabData?.gabinete || [
-    { role: 'Gobernador', name: gov?.gobernador || '—', tier: 'exec' },
-  ];
+function ProvincialCabinetPanel({ selectedProvince, governors }) {
+  const gov = matchProvince(governors || [], selectedProvince);
+  const pol = matchProvince(politicalContext, selectedProvince);
+  const gabData = matchProvince(gabinetesProvinciales, selectedProvince);
+  const alignColor = getAlignColor(gov?.alineamiento_nacion);
+
+  // Governor political info cards
+  const infoCards = [];
+  if (gov) {
+    const startY = gov.inicio_mandato?.slice(0, 4);
+    const endY = gov.fin_mandato?.slice(0, 4);
+    infoCards.push({ role: 'Governor', name: gov.gobernador, detail: gov.partido, tier: 'exec', color: alignColor });
+    infoCards.push({ role: 'Vice', name: gov.vicegobernador || '—', detail: gov.coalicion || '', tier: 'exec', color: alignColor });
+    infoCards.push({ role: 'Term', name: `${startY} → ${endY}`, detail: `Next: ${gov.proxima_eleccion}`, tier: 'info' });
+    infoCards.push({ role: 'Alignment', name: gov.alineamiento_nacion || '—', detail: '', tier: 'info' });
+  }
+  if (pol?.posicion_mineria) {
+    infoCards.push({ role: 'Mining stance', name: pol.posicion_mineria.slice(0, 70), detail: '', tier: 'sec' });
+  }
+
+  // Minister cards from gabinete (skip exec tier, already shown above)
+  const ministers = (gabData?.gabinete || []).filter(m => m.tier !== 'exec');
 
   const getBg = (tier) => {
     if (tier === 'exec') return `${alignColor}11`;
-    if (tier === 'key')  return 'rgba(0,48,73,0.07)';
-    if (tier === 'sec')  return 'rgba(243,156,18,0.07)';
+    if (tier === 'key') return 'rgba(0,48,73,0.07)';
+    if (tier === 'sec') return 'rgba(243,156,18,0.07)';
     return 'rgba(0,48,73,0.03)';
   };
   const getBorder = (tier) => {
     if (tier === 'exec') return `${alignColor}55`;
-    if (tier === 'key')  return 'rgba(0,48,73,0.22)';
-    if (tier === 'sec')  return 'rgba(243,156,18,0.25)';
+    if (tier === 'key') return 'rgba(0,48,73,0.22)';
+    if (tier === 'sec') return 'rgba(243,156,18,0.25)';
     return 'rgba(0,48,73,0.10)';
   };
 
   return (
     <div className="flex flex-wrap gap-1 content-start h-full overflow-hidden pt-0.5">
-      <p className="w-full text-[8px] text-[#003049]/50 uppercase tracking-widest mb-0.5">Provincial Cabinet · {selectedProvince}</p>
-      {cards.map((p, i) => (
-        <div
-          key={i}
-          className="flex-1 min-w-[100px] rounded px-2 py-1 border"
-          style={{ background: getBg(p.tier), borderColor: getBorder(p.tier) }}
-        >
+      <p className="w-full text-[8px] text-[#003049]/50 uppercase tracking-widest mb-0.5">Provincial Executive · {selectedProvince}</p>
+      {infoCards.map((p, i) => (
+        <div key={`info-${i}`} className="flex-1 min-w-[95px] rounded px-2 py-1 border"
+          style={{ background: getBg(p.tier), borderColor: getBorder(p.tier) }}>
           <p className="text-[7px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
           <p className="text-[10px] font-bold text-[#003049] leading-tight truncate">{p.name}</p>
+          {p.detail && <p className="text-[8px] leading-tight truncate" style={{ color: p.color || '#669BBC' }}>{p.detail}</p>}
         </div>
       ))}
+      {ministers.length > 0 && (
+        <>
+          <div className="w-full h-px bg-[#003049]/8 my-0.5" />
+          {ministers.map((m, i) => (
+            <div key={`min-${i}`} className="flex-1 min-w-[95px] rounded px-2 py-1 border"
+              style={{ background: getBg(m.tier), borderColor: getBorder(m.tier) }}>
+              <p className="text-[7px] uppercase tracking-widest text-[#003049]/50 leading-tight">{m.role}</p>
+              <p className="text-[10px] font-bold text-[#003049] leading-tight truncate">{m.name}</p>
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 }
@@ -987,7 +1073,10 @@ export default function BottomBar({ panelWidth = 320, congress, overlays, energy
 
       <div className="px-3 py-1.5 flex-1 overflow-hidden min-h-0">
         {activeTab === 'overlay' && <OverlayPanel overlays={overlays} energyLayers={energyLayers} selectedProvince={selectedProvince} />}
-        {activeTab === 'congress' && <CongressPanel congress={congress} />}
+        {activeTab === 'congress' && (selectedProvince
+          ? <ProvincialCongressPanel selectedProvince={selectedProvince} congress={congress} />
+          : <CongressPanel congress={congress} />
+        )}
         {activeTab === 'cabinet' && (selectedProvince
           ? <ProvincialCabinetPanel selectedProvince={selectedProvince} governors={governors} />
           : <CabinetPanel />

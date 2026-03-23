@@ -627,58 +627,23 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
       </div>
 
       <div className="p-3">
-        {/* Governor */}
         {gov ? (
           <>
-            <Section title="Governor">
-              <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10">
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-[13px] font-bold text-[#003049]">{gov.gobernador}</span>
-                  <AlignmentBadge alignment={gov.alineamiento_nacion} />
+            {/* Governor summary line */}
+            <div className="bg-[#003049]/6 rounded-md p-2 border border-[#003049]/10 mb-3">
+              <div className="flex items-center justify-between">
+                <div>
+                  <span className="text-[12px] font-bold text-[#003049]">{gov.gobernador}</span>
+                  <span className="text-[10px] text-steel ml-1.5">{gov.partido}</span>
                 </div>
-                <p className="text-[10px] text-steel mb-1.5">{gov.partido}</p>
-                {gov.coalicion && (
-                  <p className="text-[9px] text-[#003049]/60">{gov.coalicion}</p>
-                )}
-                <div className="mt-2 pt-2 border-t border-[#003049]/10">
-                  <DataRow label="Vice" value={gov.vicegobernador} />
-                  <DataRow label="Term" value={`${gov.inicio_mandato} → ${gov.fin_mandato}`} />
-                  <DataRow label="Next election" value={gov.proxima_eleccion} />
-                </div>
+                <AlignmentBadge alignment={gov.alineamiento_nacion} />
               </div>
-            </Section>
-
-            {/* Political Context — always rendered */}
-            <Section title="Political Context">
-              <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10">
-                <DataRow label="Alignment" value={gov.alineamiento_nacion} />
-                {polContext ? (
-                  <>
-                    {polContext.legislatura_composicion && (
-                      <div className="py-0.5">
-                        <span className="text-[9px] text-[#003049]/60">Legislature</span>
-                        <LegislaturaBars composicion={polContext.legislatura_composicion} />
-                      </div>
-                    )}
-                    <DataRow label="RIGI" value={polContext.rigi_adhesion_provincial} />
-                    {polContext.posicion_mineria && (
-                      <DataRow label="Mining" value={polContext.posicion_mineria} />
-                    )}
-                  </>
-                ) : null}
-              </div>
-            </Section>
+            </div>
 
             {/* Demographics */}
             <Section title="Demographics">
-              <DataRow
-                label="Population"
-                value={gov.poblacion_censo_2022?.toLocaleString('es-AR')}
-              />
-              <DataRow
-                label="Density"
-                value={gov.densidad ? `${gov.densidad} hab/km²` : null}
-              />
+              <DataRow label="Population" value={gov.poblacion_censo_2022?.toLocaleString('es-AR')} />
+              <DataRow label="Density" value={gov.densidad ? `${gov.densidad} hab/km²` : null} />
               <DataRow label="Area" value={`${gov.superficie_km2?.toLocaleString('es-AR')} km²`} />
               <DataRow label="Region" value={gov.region} />
             </Section>
@@ -686,20 +651,23 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
             {/* Socioeconomic */}
             <SocioSection province={province} />
 
+            {/* RIGI */}
+            {polContext?.rigi_adhesion_provincial && (
+              <Section title="RIGI">
+                <div className="bg-[#003049]/6 rounded-md p-2 border border-[#003049]/10">
+                  <DataRow label="Status" value={polContext.rigi_adhesion_provincial} />
+                </div>
+              </Section>
+            )}
+
             {/* Economic structure (VAB) */}
             <EconomicSection province={province} />
-
-            {/* National Legislators */}
-            <LegislatorsSection province={province} congress={congress} />
           </>
         ) : (
-          <Section title="Governor">
-            <p className="text-[10px] text-[#003049]/60 italic">
-              Data not yet loaded for this province.
-            </p>
-          </Section>
+          <p className="text-[10px] text-[#003049]/60 italic">
+            Data not yet loaded for this province.
+          </p>
         )}
-
       </div>
     </aside>
   );
