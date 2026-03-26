@@ -30,3 +30,6 @@ data/raw/
 portfolio_shots/
 portfolio-politicdash.pdf
 create_portfolio.py
+
+# Local Netlify folder
+.netlify

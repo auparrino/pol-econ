@@ -59,6 +59,8 @@ export default function LayerPanel({
               <button
                 key={mode.id}
                 onClick={() => setChoroplethMode(mode.id)}
+                aria-label={`Color by ${mode.label}`}
+                aria-pressed={choroplethMode === mode.id}
                 className={`text-left text-[17px] px-2.5 py-1.5 rounded transition-all border ${
                   choroplethMode === mode.id
                     ? 'bg-crimson/15 border-crimson/40 font-semibold'
@@ -138,7 +140,7 @@ export default function LayerPanel({
           <br />
           datos.energia.gob.ar
           <br />
-          <span style={{ color: 'rgba(0,48,73,0.25)' }}>Updated: Mar 2026</span>
+          <span style={{ color: 'rgba(0,48,73,0.50)' }}>Updated: Mar 2026</span>
         </p>
       </div>
     </aside>

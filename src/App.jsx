@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import Header from './components/Header';
 import LayerPanel from './components/LayerPanel';
 import ArgentinaMap from './components/ArgentinaMap';
-import ProvincePanel from './components/ProvincePanel';
-import BottomBar from './components/BottomBar';
 import Legend from './components/Legend';
+import ErrorBoundary from './components/ErrorBoundary';
+import LoadingSpinner from './components/LoadingSpinner';
 import { governors } from './data/governors';
 import useCongressData from './hooks/useCongressData';
+
+const ProvincePanel = lazy(() => import('./components/ProvincePanel'));
+const BottomBar = lazy(() => import('./components/BottomBar'));
 
 export default function App() {
   const [choroplethMode, setChoroplethMode] = useState('partido');
@@ -35,34 +38,44 @@ export default function App() {
         className="fixed top-[64px] left-[220px] transition-all duration-300"
         style={{ right: panelWidth, bottom: bottomBarH }}
       >
-        <ArgentinaMap
-          governors={governors}
-          choroplethMode={choroplethMode}
-          overlays={overlays}
-          energyLayers={energyLayers}
-          selectedProvince={selectedProvince}
-          onProvinceSelect={setSelectedProvince}
-        />
+        <ErrorBoundary>
+          <ArgentinaMap
+            governors={governors}
+            choroplethMode={choroplethMode}
+            overlays={overlays}
+            energyLayers={energyLayers}
+            selectedProvince={selectedProvince}
+            onProvinceSelect={setSelectedProvince}
+          />
+        </ErrorBoundary>
         <Legend choroplethMode={choroplethMode} showMining={overlays.mining} />
       </div>
 
-      <ProvincePanel
-        province={selectedProvince}
-        governors={governors}
-        congress={congress}
-        onClose={() => setSelectedProvince(null)}
-        width={panelWidth}
-      />
+      <ErrorBoundary>
+        <Suspense fallback={<LoadingSpinner />}>
+          <ProvincePanel
+            province={selectedProvince}
+            governors={governors}
+            congress={congress}
+            onClose={() => setSelectedProvince(null)}
+            width={panelWidth}
+          />
+        </Suspense>
+      </ErrorBoundary>
 
-      <BottomBar
-        panelWidth={panelWidth}
-        congress={congress}
-        overlays={overlays}
-        energyLayers={energyLayers}
-        selectedProvince={selectedProvince}
-        governors={governors}
-        onHeightChange={setBottomBarH}
-      />
+      <ErrorBoundary>
+        <Suspense fallback={null}>
+          <BottomBar
+            panelWidth={panelWidth}
+            congress={congress}
+            overlays={overlays}
+            energyLayers={energyLayers}
+            selectedProvince={selectedProvince}
+            governors={governors}
+            onHeightChange={setBottomBarH}
+          />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 }

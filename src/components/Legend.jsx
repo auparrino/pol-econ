@@ -132,9 +132,15 @@ function LegendBox({ title, items, useCircles = false }) {
 
 export default function Legend({ choroplethMode, showMining = false, showEnergy = false }) {
   const legend = LEGENDS[choroplethMode];
+  const hasContent = legend || showMining || showEnergy;
 
   return (
-    <div className="absolute bottom-3 left-3 z-[500] flex flex-col gap-2">
+    <div
+      className="absolute bottom-3 left-3 z-[500] flex flex-col gap-2 transition-opacity duration-300"
+      style={{ opacity: hasContent ? 1 : 0, pointerEvents: hasContent ? 'auto' : 'none' }}
+      role="complementary"
+      aria-label="Map legend"
+    >
       {legend && <LegendBox title={legend.title} items={legend.items} />}
       {showMining && <LegendBox title={MINERAL_LEGEND.title} items={MINERAL_LEGEND.items} useCircles />}
       {showEnergy && <LegendBox title={ENERGY_LEGEND.title} items={ENERGY_LEGEND.items} useCircles />}
