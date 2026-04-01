@@ -1,8 +1,86 @@
 import { memo } from 'react';
 import { politicalContext } from '../../data/politicalContext';
 import { officialSenators } from '../../data/officialSenators';
+import votacionesRaw from '../../data/votaciones.json';
 import VoteDots from '../shared/VoteDots';
 import { matchProvince, blocColor } from '../shared/helpers';
+
+// Convert votaciones.json (object or array) to array
+const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
+
+// Topics per chamber (must match scrape-votes.mjs output)
+const OFICIALISMO_BLOCS = ['la libertad avanza'];
+const SENATE_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
+const DEPUTY_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
+
+// Pre-compute LLA bloc majority position per topic
+function computeBlocPosition(chamber, topics) {
+  const positions = {};
+  const llaLegs = votacionesList.filter(
+    l => l.c === chamber && OFICIALISMO_BLOCS.includes(l.b?.toLowerCase())
+  );
+  for (const topic of topics) {
+    const voteCounts = {};
+    let totalPresent = 0;
+    for (const l of llaLegs) {
+      const v = l.v?.[topic];
+      if (v) { voteCounts[v] = (voteCounts[v] || 0) + 1; totalPresent++; }
+    }
+    if (totalPresent === 0) { positions[topic] = null; continue; }
+    for (const [vote, count] of Object.entries(voteCounts)) {
+      if (count / totalPresent >= 0.9) { positions[topic] = vote; break; }
+    }
+    if (!positions[topic]) positions[topic] = null;
+  }
+  return positions;
+}
+
+const senateBlocPos = computeBlocPosition('S', SENATE_TOPICS);
+const deputyBlocPos = computeBlocPosition('D', DEPUTY_TOPICS);
+
+// Build lookup: normalized last name -> votaciones records
+const votacionesByName = {};
+for (const leg of votacionesList) {
+  const key = leg.n?.split(',')[0]?.trim().toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  if (key) {
+    if (!votacionesByName[key]) votacionesByName[key] = [];
+    votacionesByName[key].push(leg);
+  }
+}
+
+/**
+ * Compute alignment % from our votaciones.json data.
+ * Returns the % of votes matching the LLA bloc's >=90% consensus position.
+ */
+function computeAlla(name, chamber) {
+  const lastName = name?.split(',')[0]?.trim().toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  if (!lastName) return null;
+  const records = votacionesByName[lastName];
+  if (!records || records.length === 0) return null;
+
+  // Find matching record (prefer same chamber)
+  const rec = records.find(r => r.c === chamber) || records[0];
+  const votes = rec?.v;
+  if (!votes || Object.keys(votes).length === 0) return null;
+
+  const isSenator = chamber === 'S' || chamber === 'senadores';
+  const topics = isSenator ? SENATE_TOPICS : DEPUTY_TOPICS;
+  const blocPos = isSenator ? senateBlocPos : deputyBlocPos;
+
+  let matches = 0;
+  let comparable = 0;
+  for (const topic of topics) {
+    const myVote = votes[topic];
+    const blocVote = blocPos[topic];
+    if (myVote && blocVote) {
+      comparable++;
+      if (myVote === blocVote) matches++;
+    }
+  }
+
+  if (comparable === 0) return null;
+  return Math.round((matches / comparable) * 100);
+}
 
 function parseLegBars(str) {
   if (!str) return null;
@@ -53,10 +131,15 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
   const senators = officialProvSens.map(official => {
     const lastName = normalizeN(official.n?.split(',')[0]);
     const match = comovotoSens.find(cv => normalizeN(cv.n?.split(',')[0]) === lastName);
-    return { n: official.n, b: official.b, alla: match?.alla ?? null, c: 'senadores' };
+    // Use our votaciones.json alla, not comovoto's
+    const alla = computeAlla(official.n, 'S');
+    return { n: official.n, b: official.b, alla, c: 'senadores' };
   }).sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
 
-  const deputies = comovotoLegs.filter(l => l.c === 'diputados').sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
+  const deputies = comovotoLegs.filter(l => l.c === 'diputados').map(l => ({
+    ...l,
+    alla: computeAlla(l.n, 'D') // Override comovoto alla with our calculation
+  })).sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
 
   const LegRow = ({ l }) => {
     const alla = l.alla;
