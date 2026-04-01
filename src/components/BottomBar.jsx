@@ -68,7 +68,7 @@ export default function BottomBar({ congress, overlays, energyLayers, selectedPr
       </div>
 
       {/* Panel content */}
-      <div id={`panel-${activeTab}`} role="tabpanel" className="px-3 py-2 flex-1 overflow-y-auto overflow-x-hidden min-h-0">
+      <div id={`panel-${activeTab}`} role="tabpanel" className="flex-1 overflow-y-auto overflow-x-hidden min-h-0" style={{ padding: '12px 16px' }}>
         <Suspense fallback={<PanelFallback />}>
           {activeTab === 'overlay' && <OverlayPanel overlays={overlays} energyLayers={energyLayers} selectedProvince={selectedProvince} />}
           {activeTab === 'congress' && (selectedProvince

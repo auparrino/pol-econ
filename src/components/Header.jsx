@@ -40,9 +40,23 @@ export default function Header() {
   const macro = useMacroData();
   const cmp = macro.comparisons;
 
+  const chips = (
+    <>
+      <MacroChip label="Oficial" value={macro.dolarOficial?.venta} prefix="$" delta={cmp?.dolarOficial?.d1} />
+      <MacroChip label="Blue" value={macro.dolarBlue?.venta} prefix="$" delta={cmp?.dolarBlue?.d1} />
+      <MacroChip label="MEP" value={macro.dolarMEP?.venta} prefix="$" delta={cmp?.dolarMEP?.d1} />
+      <MacroChip label="Dep30d" value={macro.tasaPolitica != null ? macro.tasaPolitica.toFixed(1) : null} suffix="%" delta={cmp?.tasaPolitica?.d1} />
+      <MacroChip label="RPaís" value={macro.riesgoPais} delta={cmp?.riesgoPais?.d1} />
+      <span className="w-px h-5 shrink-0" style={{ background: 'rgba(0,48,73,0.15)' }} />
+      <MacroChip label="Au" value={latestCommodities.oro} prefix="$" />
+      <MacroChip label="Cu" value={latestCommodities.cobre?.toLocaleString('en-US')} prefix="$" />
+      <MacroChip label="Li" value={latestCommodities.litio ? latestCommodities.litio.toLocaleString('en-US') : null} prefix="$" />
+    </>
+  );
+
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-[1000] flex items-center gap-3 overflow-x-auto"
+      className="fixed top-0 left-0 right-0 z-[1000] flex items-center gap-3 overflow-x-auto scrollbar-thin"
       style={{ background: '#FFF8EB', borderBottom: '1px solid #d4c4a0', height: 56, padding: '0 16px' }}
     >
       <div className="shrink-0">
@@ -55,15 +69,7 @@ export default function Header() {
       </div>
 
       <div className="flex items-center gap-4 flex-1 justify-center flex-wrap">
-        <MacroChip label="Oficial" value={macro.dolarOficial?.venta} prefix="$" delta={cmp?.dolarOficial?.d1} />
-        <MacroChip label="Blue" value={macro.dolarBlue?.venta} prefix="$" delta={cmp?.dolarBlue?.d1} />
-        <MacroChip label="MEP" value={macro.dolarMEP?.venta} prefix="$" delta={cmp?.dolarMEP?.d1} />
-        <MacroChip label="Dep30d" value={macro.tasaPolitica != null ? macro.tasaPolitica.toFixed(1) : null} suffix="%" delta={cmp?.tasaPolitica?.d1} />
-        <MacroChip label="RPaís" value={macro.riesgoPais} delta={cmp?.riesgoPais?.d1} />
-        <span className="w-px h-5 shrink-0" style={{ background: 'rgba(0,48,73,0.15)' }} />
-        <MacroChip label="Au" value={latestCommodities.oro} prefix="$" />
-        <MacroChip label="Cu" value={latestCommodities.cobre?.toLocaleString('en-US')} prefix="$" />
-        <MacroChip label="Li" value={latestCommodities.litio ? latestCommodities.litio.toLocaleString('en-US') : null} prefix="$" />
+        {chips}
       </div>
     </header>
   );

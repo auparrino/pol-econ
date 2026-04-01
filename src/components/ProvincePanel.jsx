@@ -608,7 +608,7 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
       style={mobile ? { background: '#FFF8EB' } : { width, bottom: 100, background: '#FFF8EB', borderColor: '#d4c4a0' }}
     >
       {/* Header */}
-      <div className="sticky top-0 border-b p-3 z-10" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.10)' }}>
+      <div className="sticky top-0 border-b z-10" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.10)', padding: '12px 16px' }}>
         <div className="flex items-start justify-between">
           <div>
             <h2 className="text-[18px] font-black text-[#003049] tracking-tight">
@@ -629,7 +629,7 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
         </div>
       </div>
 
-      <div className="p-4">
+      <div style={{ padding: '16px 18px' }}>
         {gov ? (
           <>
             {/* Governor summary */}
