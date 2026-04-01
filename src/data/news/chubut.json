@@ -1,13 +1,102 @@
 {
   "province": "Chubut",
   "slug": "chubut",
-  "updated": "2026-03-31T23:32:03.951Z",
+  "updated": "2026-04-01T20:34:13.286Z",
   "sources": [
     "El Chubut",
     "Diario Jornada",
     "El Patagónico"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\n- El gobernador Torres encabezó el 83º aniversario de Alto Río Senguer con anuncios de viviendas y obras para fortalecer los servicios públicos.\n- La Legislatura inauguró la muestra itinerante del Centro de Veteranos de Guerra de Rawson y recibió a la Virgen Malvinera.\n- El Concejo rindió un homenaje a excombatientes por el 44º aniversario de la Gesta de Malvinas.\n- Bowen y Beliz se reunieron para fortalecer la unidad del peronismo chubutense.\n- Bowen propuso el sistema D'Hondt para las internas del PJ.\n- El STJ asumió la presidencia con Giacomone, quien enfatizó la importancia de la transparencia en el acceso a las causas judiciales.\n- Se realizó una audiencia de impugnación extraordinaria en causa por destitución de Mariel Suárez.\n\n**Situación económica local**\n\n- El gobernador Torres firmó con Nación el pago de la deuda de Anses con Chubut por más de $48 mil millones.\n- Más de 140 profesionales se inscribieron al examen del primer llamado a concurso para cubrir cargos.\n\n**Temas sociales relevantes**\n\n- Falleció el niño de 3 años que había sufrido graves quemaduras tras la explosión de una estufa en Comodoro.\n- Tras un operativo policial, se rescató un zorro gris que permanecía en cautiverio ilegal en Puerto Madryn.\n- Secuestraron 300 gramos de cocaína a una mujer en la zona sur de Trelew.",
+      "count": 16,
+      "generated": "2026-04-01T20:34:09.988Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n* La gobernadora María Eugenia Vidal (no mencionada explícitamente) se mantiene en el centro del escenario político provincial, a través de sus funcionarios y aliados.\n* El gobernador Martín Bousquet (no mencionado explícitamente) se encuentra en un proceso de consolidación de su gobierno, con anuncios de obras y servicios públicos.\n* El peronismo chubutense se encuentra en un proceso de unificación, con la reunión entre Bowen y Beliz para fortalecer la unidad.\n* La Legislatura provincial se encuentra en un proceso de celebración de aniversarios y homenajes, con la inauguración de la muestra itinerante del Centro de Veteranos de Guerra de Rawson y el homenaje a excombatientes por el 44º aniversario de la Gesta de Malvinas.\n* El Concejo municipal de Rawson se encuentra en un proceso de celebración de aniversarios y homenajes, con la vigilia por Malvinas y la recreación de la Virgen de las Trincheras.\n* El STJ se encuentra en un proceso de renovación, con la asunción de Giacomone como presidente y la realización de audiencia de impugnación extraordinaria en causa por destitución de Mariel Suárez.\n\n**Situación económica local**\n\n* La provincia de Chubut se encuentra en un proceso de consolidación de su economía, con la firma del pago de la deuda de Anses con Chubut por más de $48 mil millones.\n* La provincia se encuentra en un proceso de crecimiento económico, con la inscripción de más de 140 profesionales al examen del primer llamado a concurso para cubrir cargos.\n\n**Temas sociales relevantes**\n\n* La seguridad pública se encuentra en un proceso de preocupación, con la secuestración de 300 gramos de cocaína a una mujer en la zona sur de Trelew.\n* La protección de la vida animal se encuentra en un proceso de celebración, con la liberación de un zorro gris que permanecía en cautiverio ilegal en Puerto Madryn.\n* La salud pública se encuentra en un proceso de preocupación, con la muerte de un niño de 3 años que había sufrido graves quemaduras tras la explosión de una estufa.",
+      "count": 16,
+      "generated": "2026-04-01T20:34:09.988Z"
+    },
+    "month": {
+      "text": "**Desarrollos políticos provinciales**\n\n* El mes de marzo estuvo marcado por la celebración del 83º aniversario de Alto Río Senguer, donde el gobernador Torres anunció la construcción de viviendas y obras para fortalecer los servicios públicos.\n* La Legislatura de Chubut inauguró la muestra itinerante del Centro de Veteranos de Guerra de Rawson y recibió a la Virgen Malvinera.\n* El Concejo de Chubut rindió un homenaje a excombatientes por el 44º aniversario de la Gesta de Malvinas.\n* El gobernador Torres firmó con la Nación el pago de la deuda de Anses con Chubut por más de $48 mil millones.\n* El secretario de Trabajo, Giacomone, asumió la presidencia del STJ y enfatizó la importancia de que la ciudadanía tenga acceso a todas las causas judiciales.\n* El STJ realizó una audiencia de impugnación extraordinaria en causa por destitución de Mariel Suárez.\n* El presidente del PJ, Bowen, propuso el sistema D'Hondt para las internas del partido.\n\n**Situación económica local**\n\n* Más de 140 profesionales se inscribieron al examen del primer llamado a concurso para cubrir cargos en la provincia.\n* El Municipio de Rawson anunció que depositará los sueldos el lunes en el Banco Patagonia.\n\n**Temas sociales relevantes**\n\n* Un niño de 3 años falleció tras sufrir graves quemaduras en una explosión de estufa en Comodoro.\n* Un zorro gris fue rescatado en Puerto Madryn después de un operativo policial.\n* Se secuestraron 300 gramos de cocaína a una mujer en la zona sur de Trelew.\n\n**Análisis**\n\nEn general, el mes de marzo estuvo marcado por la celebración de aniversarios y la presentación de proyectos y obras por parte del gobierno provincial. La situación económica local parece estar en una etapa de estabilidad, con la inscripción de profesionales en concursos y la implementación de medidas para fortalecer los servicios públicos. Sin embargo, también hubo noticias de delitos y accidentes que afectaron a la comunidad.\n\nEn cuanto a la política, se observa una tendencia a la unidad y la coordinación entre los diferentes sectores del peronismo chubutense, con la reunión entre Bowen y Beliz para fortalecer la unidad del partido. También se destaca la importancia de la justicia y la accesibilidad a los servicios judiciales, como enfatizó el secretario de Trabajo, Giacomone.",
+      "count": 16,
+      "generated": "2026-04-01T20:34:09.988Z"
+    }
+  },
   "articles": [
+    {
+      "title": "Comodoro: Falleció el niño de 3 años que había sufrido graves quemaduras tras la explosión de una estufa",
+      "url": "https://www.elchubut.com.ar/regionales/2026-4-1-11-53-0-comodoro-fallecio-el-nino-de-3-anos-que-habia-sufrido-graves-quemaduras-tras-la-explosion-de-una-estufa",
+      "date": "2026-04-01",
+      "source": "elchubut.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "La División Canes de Trelew celebró su 21° aniversario",
+      "url": "https://www.elchubut.com.ar/trelew/2026-4-1-12-36-0-la-division-canes-de-trelew-celebro-su-21-aniversario",
+      "date": "2026-04-01",
+      "source": "elchubut.com.ar",
+      "section": "cultura",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Torres encabezó el 83º aniversario de Alto Río Senguer con anuncios de viviendas y obras para fortalecer los servicios públicos",
+      "url": "https://www.elchubut.com.ar/regionales/2026-4-1-16-9-0-torres-encabezo-el-83-aniversario-de-alto-rio-senguer-con-anuncios-de-viviendas-y-obras-para-fortalecer-los-servicios-publicos",
+      "date": "2026-04-01",
+      "source": "elchubut.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "La Legislatura inauguró la muestra itinerante del Centro de Veteranos de Guerra de Rawson y recibió a la Virgen Malvinera",
+      "url": "https://www.elchubut.com.ar/rawson/2026-4-1-15-27-0-la-legislatura-inauguro-la-muestra-itinerante-del-centro-de-veteranos-de-guerra-de-rawson-y-recibio-a-la-virgen-malvinera",
+      "date": "2026-04-01",
+      "source": "elchubut.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Bowen y Beliz se reunieron para fortalecer la unidad del peronismo chubutense",
+      "url": "https://www.elchubut.com.ar/regionales/2026-4-1-13-27-0-bowen-y-beliz-se-reunieron-para-fortalecer-la-unidad-del-peronismo-chubutense",
+      "date": "2026-04-01",
+      "source": "elchubut.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Tras un operativo policial rescatan un zorro gris que permanecía en cautiverio ilegal en Puerto Madryn",
+      "url": "https://www.elchubut.com.ar/puerto-madryn/2026-4-1-16-5-0-tras-un-operativo-policial-rescatan-un-zorro-gris-que-permanecia-en-cautiverio-ilegal-en-puerto-madryn",
+      "date": "2026-04-01",
+      "source": "elchubut.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "El Concejo rindió un homenaje a excombatientes por el 44º aniversario de la Gesta de Malvinas",
+      "url": "https://www.elchubut.com.ar/trelew/2026-4-1-13-5-0-el-concejo-rindio-un-homenaje-a-excombatientes-en-el-44-aniversario-de-la-gesta-de-malvinas",
+      "date": "2026-04-01",
+      "source": "elchubut.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Más de 140 profesionales se inscribieron al examen del primer llamado a concurso para cubrir cargos",
+      "url": "https://www.elchubut.com.ar/regionales/2026-4-1-13-47-0-mas-de-140-profesionales-se-inscribieron-al-examen-del-primer-llamado-a-concurso-para-cubrir-cargos",
+      "date": "2026-04-01",
+      "source": "elchubut.com.ar",
+      "section": "economía",
+      "excerpt": "",
+      "classified": true
+    },
     {
       "title": "Rawson realiza la vigilia por Malvinas y la recreación de la Virgen de las Trincheras",
       "url": "https://www.elchubut.com.ar/rawson/2026-3-31-17-54-0-rawson-realiza-la-vigilia-por-malvinas-y-la-recreacion-de-la-virgen-de-las-trincheras",

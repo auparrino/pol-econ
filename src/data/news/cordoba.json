@@ -1,13 +1,291 @@
 {
   "province": "Córdoba",
   "slug": "cordoba",
-  "updated": "2026-03-31T23:32:26.119Z",
+  "updated": "2026-04-01T20:34:38.384Z",
   "sources": [
     "Cba24n",
     "Hoy Día Córdoba",
     "La Voz (Google News)"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\n* Carlos Lezcano juró como fiscal General de la Provincia, sucediendo a Juan Manuel Delgado.\n* La Provincia financiará viviendas con apoyo para personas con discapacidad, con un fondo de $4.500 millones.\n* La Defensoría del Pueblo de Córdoba participó del primer plenario nacional de ADPRA.\n* La Provincia entregó móviles y equipamiento a 21 Guardias Locales del interior.\n\n**Situación económica local**\n\n* Aumento de tarifas en Córdoba: Ersep autorizó un incremento del 8% en el agua.\n* Amplían los medios de pago para el transporte interurbano.\n* Se lanzó \"digitalers\": becas gratuitas en programación y tecnología para jóvenes.\n* Epec, 73 años: cómo Córdoba construyó su sistema eléctrico.\n\n**Temas sociales relevantes**\n\n* La UEPC confirmó un paro por 72 horas para la semana que viene.\n* Docentes cordobeses combinan más de un trabajo para sostener sus ingresos.\n* Buscan a un hombre de 38 años desaparecido en Cosquín.\n* Protesta en el Polo Sanitario: trabajadores de la salud exigieron la apertura de paritarias.\n* Móvil Odontológico Municipal, con atención gratuita: el cronograma de abril.\n* La Municipalidad difundió el esquema de servicios para jueves y viernes.\n* Por cambios en el transporte, niños y docentes viven una travesía de ida y vuelta a la escuela en camino a Villa Posse.",
+      "count": 39,
+      "generated": "2026-04-01T20:34:34.171Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n* El fiscal General de la Provincia, Carlos Lezcano, juró su cargo el 1 de abril.\n* La Provincia financiará viviendas con apoyo para personas con discapacidad, con un fondo de $4.500 millones.\n* La Defensoría del Pueblo de Córdoba participó del primer plenario nacional de ADPRA.\n* La Provincia entregó móviles y equipamiento a 21 Guardias Locales del interior.\n* La Asamblea Provincial resolutiva de delegadas y delegados departamentales rechazó la tercera propuesta salarial de la Provincia.\n\n**Situación económica local**\n\n* La Ersep autorizó un incremento del 8% en las tarifas de agua en Córdoba.\n* La Empresa Provincial de Energía de Córdoba (Epec) celebró su 73 aniversario.\n* Se lanzó \"digitalers\", becas gratuitas en programación y tecnología para jóvenes.\n* Se ampliaron los medios de pago para el transporte interurbano.\n\n**Temas sociales relevantes**\n\n* La UEPC confirmó un paro de 72 horas para la próxima semana.\n* Los docentes cordobeses combinan más de un trabajo para sostener sus ingresos.\n* Se busca a un hombre de 38 años desaparecido en Cosquín.\n* Un naranjita fue detenido en Alberdi y ya son 160 en lo que va del año.\n* La Municipalidad de Córdoba confirmó el esquema de servicios de cara al finde extra largo.\n* Se protestó en el Polo Sanitario: trabajadores de la salud exigieron la apertura de paritarias.\n* Se lanzó el Móvil Odontológico Municipal, con atención gratuita.\n* Se busca a un hombre de 38 años desaparecido en Cosquín.\n* Un naranjita fue detenido en Alberdi y ya son 160 en lo que va del año.\n* Se desbarataron criaderos ilegales y se rescataron más de 30 perros.\n\n**Seguridad**\n\n* Se desarticularon una banda delictiva en Córdoba, con 27 detenidos y más de 300 allanamientos.\n* Se intentó sobornar a la Policía Caminera y terminó detenido en la Ruta 9.\n* Se rompió el vidrio de una camioneta y se robó más de $80 millones.\n\n**Cultura**\n\n* Se inauguró el Festival de Arte Contemporáneo de Unquillo (FACU).\n* Kailani ofreció una entrevista y un concierto íntimo en \"Teclas\" de Canal 10.\n* Se confirmaron las fechas del Rally Cordobés.\n* Se inauguró la exposición \"Semana Santa en Córdoba\".\n* Se presentó el show de Ricky Martin en el Estadio Mario Alberto Kempes.\n* Se presentó el show de Cardellino en el Teatro del Libertador.\n\n**Situación de la salud**\n\n* Se protestó en el Polo Sanitario: trabajadores de la salud exigieron la apertura de paritarias.\n* Se lanzó el Móvil Odontológico Municipal, con atención gratuita.\n\n**Situación de la educación**\n\n* La UEPC confirmó un paro de 72 horas para la próxima semana.\n* Los docentes cordobeses combinan más de un trabajo para sostener sus ingresos.\n* Se busca a un hombre de 38 años desaparecido en Cosquín.\n* Un naranjita fue detenido en Alberdi y ya son 160 en lo que va del año.\n* Se desbarataron criaderos ilegales y se rescataron más de 30 perros.\n\n**Situación de la seguridad**\n\n* Se desarticularon una banda delictiva en Córdoba, con 27 detenidos y más de 300 allanamientos.\n* Se intentó sobornar a la Policía Caminera y terminó detenido en la Ruta 9.\n* Se rompió el vidrio de una camioneta y se robó más de $80 millones.\n\n**Situación de la economía**\n\n* La Ersep autorizó un incremento del 8% en las tarifas de agua en Córdoba.\n* La Empresa Provincial de Energía de Córdoba (Epec) celebró su 73 aniversario.\n* Se lanzó \"digitalers\", becas gratuitas en programación y tecnología para jóvenes.\n* Se ampliaron los medios de pago para el transporte interurbano.\n\n**Tendencias y patrones",
+      "count": 39,
+      "generated": "2026-04-01T20:34:34.171Z"
+    },
+    "month": {
+      "text": "**Análisis de la evolución del mes en la provincia de Córdoba**\n\n**Desarrollos políticos provinciales**\n\n* El mes de marzo y abril se caracterizaron por la toma de posesión de Carlos Lezcano como Fiscal General de la Provincia, sucediendo a Juan Manuel Delgado.\n* La Unión de Educadores de la Provincia de Córdoba (UEPC) rechazó la tercera propuesta salarial del gobierno provincial y anunció un paro de 72 horas para la semana que viene.\n* La Defensoría del Pueblo de Córdoba participó del primer plenario nacional de ADPRA y expuso sobre el impacto de las tarifas energéticas.\n\n**Situación económica local**\n\n* La Empresa Provincial de Energía de Córdoba (Epec) celebró su 73 aniversario, sintetizando un proceso histórico marcado por crisis del modelo privado, intervenciones estatales y transformaciones en la gestión de la energía.\n* La Lotería de Córdoba firmó un acuerdo de colaboración con TECNOINT para incorporar la comercialización de la tarjeta TIN en su red de agentes.\n* Se lanzó \"digitalers\", una convocatoria de becas gratuitas en programación y tecnología para jóvenes.\n\n**Temas sociales relevantes**\n\n* La UEPC cumplió con el paro y el gremio docente rechazó la tercera propuesta salarial del gobierno provincial.\n* La Unión de Trabajadores de la Salud (UTS) realizó una manifestación en el Polo Sanitario para exigir la apertura de paritarias.\n* La Municipalidad de Córdoba confirmó el esquema de servicios para el finde extra largo, con modificaciones en las prestaciones.\n* Se desbarataron criaderos ilegales y se rescataron perros en Villa Unión y Cosquín.\n* La policía detuvo a un hombre de 38 años desaparecido en Cosquín.\n* Un hombre fue condenado a 22 años de prisión por delitos contra la integridad sexual a menores.\n\n**Cambios y tendencias**\n\n* La provincia de Córdoba se enfoca en la seguridad, con operativos para desarticular bandas delictivas y proteger a la población.\n* La situación económica local se caracteriza por la búsqueda de soluciones para la crisis energética y la implementación de programas de capacitación y empleo.\n* Los temas sociales relevantes se centran en la educación, la salud y la seguridad, con una mayor presencia de gremios y organizaciones en la toma de decisiones.\n\nEn general, el mes de marzo y abril se caracterizaron por la toma de decisiones en la provincia de Córdoba, con un enfoque en la seguridad, la economía y los temas sociales. La provincia se enfoca en la implementación de programas y políticas para mejorar la calidad de vida de sus habitantes.",
+      "count": 41,
+      "generated": "2026-04-01T20:34:34.171Z"
+    }
+  },
   "articles": [
+    {
+      "title": "Córdoba: Carlos Lezcano juró como fiscal General de la Provincia",
+      "url": "https://www.cba24n.com.ar/cordoba/cordoba--carlos-lezcano-juro-como-fiscal-general-de-la-provincia_a69cd76956270583482ac84f1",
+      "date": "2026-04-01",
+      "source": "cba24n.com.ar",
+      "section": "política",
+      "excerpt": "El acto se realizó al mediodía en Tribunales 1. Es el sucesor de Juan Manuel Delgado.",
+      "classified": true
+    },
+    {
+      "title": "Desarticularon una banda delictiva en Córdoba: 27 detenidos y más de 300 allanamientos",
+      "url": "https://www.cba24n.com.ar/cordoba/desarticularon-una-banda-delictiva-en-cordoba--27-detenidos-y-mas-de-300-allanamientos_a69cd75ae6270583482ac79e5",
+      "date": "2026-04-01",
+      "source": "cba24n.com.ar",
+      "section": "seguridad",
+      "excerpt": "Los procedimientos se realizaron en distintos barrios de la Capital. Secuestro de armas, vehículos y elementos vinculados a graves delitos.",
+      "classified": true
+    },
+    {
+      "title": "Aumento de tarifas en Córdoba: Ersep autorizó un incremento del 8% en el agua",
+      "url": "https://www.cba24n.com.ar/cordoba/aumento-de-tarifas-en-cordoba--ersep-autorizo-un-incremento-del-8--en-el-agua_a69cd70716270583482abf166",
+      "date": "2026-04-01",
+      "source": "cba24n.com.ar",
+      "section": "economía",
+      "excerpt": "El organismo provincial hizo lugar al pedido de la empresa Aguas Cordobesas en base al período octubre 2025-enero 2026.",
+      "classified": true
+    },
+    {
+      "title": "La UEPC confirmó un paro por 72 horas para la semana que viene",
+      "url": "https://www.cba24n.com.ar/cordoba/la-uepc-confirmo-un-paro-por-72-horas-para-la-semana-que-viene_a69cd6e516270583482abdc5b",
+      "date": "2026-04-01",
+      "source": "cba24n.com.ar",
+      "section": "sociedad",
+      "excerpt": "El gremio lo definió en la Asamblea General durante la tarde de este miércoles. Solicitan un aumento del 25%.",
+      "classified": true
+    },
+    {
+      "title": "El arte contemporáneo y la Semana Santa se dan la mano en Unquillo",
+      "url": "https://www.cba24n.com.ar/espectaculos/el-arte-contemporaneo-y-la-semana-santa-se-dan-la-mano-en-unquillo_a69cd396f6270583482a94dff",
+      "date": "2026-04-01",
+      "source": "cba24n.com.ar",
+      "section": "cultura",
+      "excerpt": "Ya comenzó el FACU, Festival de Arte Contemporáneo de Unquillo. El Museo Guido Buffo participa en el evento.",
+      "classified": true
+    },
+    {
+      "title": "Kailani en \"Teclas\" de Canal 10: música, improvisación y folclore desde Traslasierra",
+      "url": "https://www.cba24n.com.ar/espectaculos/kailani-en--teclas--de-canal-10--musica--improvisacion-y-folclore-desde-traslasierra_a69cc2a1d62705834829c9e2c",
+      "date": "2026-04-01",
+      "source": "cba24n.com.ar",
+      "section": "cultura",
+      "excerpt": "La artista ofrece una entrevista y un concierto íntimo en una nueva emisión del programa, este viernes a las 20:00 por Canal 10",
+      "classified": true
+    },
+    {
+      "title": "Córdoba: desbarataron un criadero en Villa Unión y rescataron a 32 perros",
+      "url": "https://www.cba24n.com.ar/cordoba/cordoba--desbarataron-un-criadero-en-villa-union-y-rescataron-a-32-perros_a69cd45f06270583482a9d76a",
+      "date": "2026-04-01",
+      "source": "cba24n.com.ar",
+      "section": "sociedad",
+      "excerpt": "Los agentes realizaron el operativo para investigar un caso de maltrato animal. Una asociación protectora recibió a los canes.",
+      "classified": true
+    },
+    {
+      "title": "Rally Cordobés con fechas confirmadas: dónde y cuándo se corre la próxima cita",
+      "url": "https://www.cba24n.com.ar/deportes/rally-cordobes-con-fechas-confirmadas--donde-y-cuando-se-corre-la-proxima-cita_a69cd2a9e6270583482a8c4bc",
+      "date": "2026-04-01",
+      "source": "cba24n.com.ar",
+      "section": "cultura",
+      "excerpt": "La organización oficializó las sedes para la temporada 2026. Los pilotos recorrerán los caminos históricos del Campeonato Mundial de Rally.",
+      "classified": true
+    },
+    {
+      "title": "Tragedia vial en Córdoba: dos hombres fallecieron en un choque frontal",
+      "url": "https://www.cba24n.com.ar/cordoba/tragedia-vial-en-cordoba--dos-hombres-fallecieron-en-un-choque-frontal_a69cd228e6270583482a86dfe",
+      "date": "2026-04-01",
+      "source": "cba24n.com.ar",
+      "section": "sociedad",
+      "excerpt": "El accidente ocurrió durante la madrugada de este miércoles. Los médicos del servicio de emergencias constataron el fallecimiento de las dos personas en el lugar.",
+      "classified": true
+    },
+    {
+      "title": "Trabajadores estatales se movilizaron en Córdoba",
+      "url": "https://www.cba24n.com.ar/cordoba/trabajadores-estatales-se-movilizaron-en-cordoba_a69cd2f6f6270583482a904f6",
+      "date": "2026-04-01",
+      "source": "cba24n.com.ar",
+      "section": "sociedad",
+      "excerpt": "Los gremios aportantes a la Caja de Jubilaciones organizaron una nueva caravana para atravesar toda la ciudad denunciando confiscación de salarios y contra los descuentos a sus haberes.",
+      "classified": true
+    },
+    {
+      "title": "La Uepc lanzó un paro de 72 horas para la próxima semana",
+      "url": "https://hoydia.com.ar/politica/cordoba/la-uepc-lanzo-un-paro-de-72-horas-para-la-proxima-semana/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "sociedad",
+      "excerpt": "El gremio docente rechazó la tercera propuesta salarial del gobierno provincial por amplia mayoría y no dictarán clases del miércoles 8 al viernes 10.",
+      "classified": true
+    },
+    {
+      "title": "Braian Igarzabal, el nadador cordobés que sueña con el Mundial en Portugal y necesita apoyo para viajar",
+      "url": "https://hoydia.com.ar/deportes/natacion-adaptada-braian-igarzabal-mundial/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "cultura",
+      "excerpt": "Con 26 años y una vida dedicada a la natación, Braian Igarzabal fue seleccionado para integrar la Selección Nacional de Nadadores con Síndrome de Down. Su objetivo: el Mundial de Portugal en noviembre.",
+      "classified": true
+    },
+    {
+      "title": "La Provincia financiará viviendas con apoyo para personas con discapacidad",
+      "url": "https://hoydia.com.ar/sociedad/derecho-a-decidir-propia-vida-provincia-viviendas-personas-discapacidad/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "política",
+      "excerpt": "La iniciativa busca promover la vida independiente con asistencia personalizada. Se financia con un fondo de $4.500 millones y comenzará como experiencia piloto en distintos puntos de la provincia.",
+      "classified": true
+    },
+    {
+      "title": "Cayeron los rompe vidrieras: 27 detenidos y más de 300 allanamientos en Córdoba",
+      "url": "https://hoydia.com.ar/sucesos/golpe-al-delito-en-cordoba-27-detenidos-y-mas-de-300-allanamientos/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "seguridad",
+      "excerpt": "El megaoperativo se desplegó en distintos barrios y permitió desarticular una banda vinculada a robos en la zona norte. Se secuestraron armas, vehículos y numerosos elementos clave para las causas.",
+      "classified": true
+    },
+    {
+      "title": "Epec, 73 años: cómo Córdoba construyó su sistema eléctrico",
+      "url": "https://hoydia.com.ar/hoy-cordoba/epec-celebra-73-anos-energia-para-el-desarrollo-de-cordoba/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "economía",
+      "excerpt": "A 73 años de su creación, la Empresa Provincial de Energía de Córdoba sintetiza un proceso histórico marcado por crisis del modelo privado, intervención estatal y una fuerte impronta sindical que definió el perfil público del servicio eléctrico en Córdoba.",
+      "classified": true
+    },
+    {
+      "title": "Semana Santa: Córdoba ya registra un promedio de reservas del 70%",
+      "url": "https://hoydia.com.ar/turismo/semana-santa-cordoba-ya-registra-un-promedio-de-reservas-del-70/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "cultura",
+      "excerpt": "Habrá numerosos festivales, ferias, espectáculos, propuestas religiosas, encuentros gastronómicos, visitas guiadas y actividades al aire libre para disfrutar en familia.",
+      "classified": true
+    },
+    {
+      "title": "Desbaratan criadero ilegal y rescatan más de 30 perros",
+      "url": "https://hoydia.com.ar/sucesos/desbaratan-criadero-ilegal-y-rescatan-mas-de-30-perros/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "sociedad",
+      "excerpt": "El operativo se realizó tras una denuncia por maltrato animal. Los animales fueron trasladados a una asociación para su recuperación.",
+      "classified": true
+    },
+    {
+      "title": "Talleres de Educación Vial 2026: preinscripciones abiertas para colegios secundarios",
+      "url": "https://hoydia.com.ar/hoy-cordoba/talleres-de-educacion-vial-2026-preinscripciones-abiertas-para-colegios-secundarios/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "sociedad",
+      "excerpt": "Está orientada para estudiantes de quinto y sexto año de los colegios de la capital, con la finalidad de promover una cultura de responsabilidad, autocuidado y respeto en la vía pública",
+      "classified": true
+    },
+    {
+      "title": "Docentes cordobeses combinan más de un trabajo para sostener sus ingresos",
+      "url": "https://hoydia.com.ar/sociedad/pluriempleo-docente-ingresos/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "sociedad",
+      "excerpt": "Entre la enseñanza y tareas informales como delivery o ventas, educadores relatan cómo los salarios no alcanzan y los costos crecientes los obligan a diversificar ingresos.",
+      "classified": true
+    },
+    {
+      "title": "Buscan a un hombre de 38 años desaparecido en Cosquín",
+      "url": "https://hoydia.com.ar/sucesos/buscan-a-un-hombre-de-38-anos-desaparecido-en-cosquin/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "sociedad",
+      "excerpt": "Se trata de Emanuel Ezequiel Cejas, quien fue visto por última vez a comienzos de marzo.",
+      "classified": true
+    },
+    {
+      "title": "Condenaron a 22 años de prisión a un hombre por delitos contra la integridad sexual a menores",
+      "url": "https://hoydia.com.ar/sucesos/condenaron-a-22-anos-de-prision-por-delitos-contra-la-integridad-sexual-a-menores/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "justicia",
+      "excerpt": "El tribunal de Bell Ville halló culpable a un hombre por abusos cometidos durante años contra tres niños.",
+      "classified": true
+    },
+    {
+      "title": "Intentó sobornar a la Policía Caminera y terminó detenido en la Ruta 9",
+      "url": "https://hoydia.com.ar/sucesos/intento-sobornar-a-la-policia-caminera-y-termino-detenido-en-la-ruta-9/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "seguridad",
+      "excerpt": "El hecho ocurrió en un control a la altura de Sinsacate. El conductor ofreció dinero tras detectarse irregularidades en su camioneta.",
+      "classified": true
+    },
+    {
+      "title": "Amplían los medios de pago para el transporte interurbano",
+      "url": "https://hoydia.com.ar/hoy-cordoba/amplian-los-medios-de-pago-para-el-transporte-interurbano/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "economía",
+      "excerpt": "Junto a la Lotería de Córdoba se firmó un acuerdo de colaboración con TECNOINT para incorporar la comercialización de la tarjeta TIN en su red de agencias oficiales en toda la provincia.",
+      "classified": true
+    },
+    {
+      "title": "Comienzo de clases. La UEPC cumplió con el paro y Llaryora dijo que \"hay voluntad\"",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcDBGaUU0TWNRQ3dkMFFneUk0cFFpYXRkOFNWRDlRVDVZbmViSFVCQ2R5OVFLUExrLVowTzBvUzBET3VpNGpEU0FTUFJsQjEzMnlta3FtSDJTUEtsTXJRU3NSVHFyLWdhZUVnMlJJV2sxcXlURy1yLTA3aXNaS3AtaUtuRXdvZTlwQWc?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-02",
+      "source": "La Voz del Interior",
+      "section": "sociedad",
+      "excerpt": "Comienzo de clases. La UEPC cumplió con el paro y Llaryora dijo que \"hay voluntad\" La Voz del Interior",
+      "classified": true
+    },
+    {
+      "title": "Cobran empleados y jubilados de la Provincia de Córdoba: el calendario completo",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNnltZzVfS1BkMGlKRGFzNUZsMDg3RjljTTNDbnREWktaY0dnTmZueFp4a2tGNDA1OEVjNFBVVFptUG04ME9Eelp6a1BleXlhZS1RSVUycUhuOWlDV25KbHk4X2QxU3doRjVyZUUxdVVPZ2wtdE5uTEpaRUkyZ1lsYzAwakxyN0F5MDB0OHh3eFJvTVF6QndiS1JFak5PamZvdDVFRUozTGZaXzlHTTFyMk1pM051cGQ3TkdF0gHPAUFVX3lxTE5KZjBuN1FsM3pTaVBVTWctNE8yRFNrNTFWamg4MVUtVnc1UElaS2k2bDJaV3MtVFE3cXpwRVVrSTd4SGpObU1TQkpCUnlwclJHSlprTUtQOElPRDF6dU04UXhaZkt3cUg0YmxCU2xhZFl6VEVOVENfTE0xV3NMUEdaeC1LcGdQSk81U0VMbmNtaThzaHp1TS1MNHZzVVhXRjdxSnlSY3NlYlZ2d2MxVmF5UmFxVUNtOTJxQzg4VGZiLUhoV1ZsUXFOTGVteDVxbw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-25",
+      "source": "eldoce.tv",
+      "section": "economía",
+      "excerpt": "Cobran empleados y jubilados de la Provincia de Córdoba: el calendario completo eldoce.tv",
+      "classified": true
+    },
+    {
+      "title": "Cinco localidades de Córdoba fueron afectadas por la tormenta: la Provincia brinda asistencia",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTEV6ODVlczJRdWxvd3hYUVFTcHBSVmUzSnVWRlA2SFJfaFpCdHlReTM5ci1NV0RFVzB6ZW1tZjRkV0lDNkx0UjMzaDNyYndwS1hYWGtVZDRadE55TkRFSlR4a0EtOXE5WXNYOVRDTTlvUDl3clJxTWI1aXFocFVTelRCeEJmM0ppb01NUXBfZ1A0Ml92em44TlE0Q2R6aEJRRXVHckFSV25Wd1ZkSjNraTd4YmhwaVIxc2pkNkI4c1E1OWgwcGprd0sxQWNyRjdLYXFjTTRzaU5fOU13SzQ1U3k1V0xoZXZ5?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-19",
+      "source": "Cba24n",
+      "section": "sociedad",
+      "excerpt": "Cinco localidades de Córdoba fueron afectadas por la tormenta: la Provincia brinda asistencia Cba24n",
+      "classified": true
+    },
+    {
+      "title": "Córdoba en el espejo de la reforma laboral: cuánto pesan la economía informal y las app en la provincia",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQ0tlLS12ZTVXMmI4OEJHc1FTeG5WanFNYl8taUFWd19EeWJCQ25sMmE1VGNZUkVVZzRLVGxBVHZINlUtODFHVERPRlh5dUNKN1kwYmZ3S1luR1ZTalJZMmN6dmMwQ1kzN0FjYkJSS3ZaUkQ4MjZQQkNQTGREMzJaSUhHb3FTeEdmcU02TzdOSVNwbTdvcEg3aG0tM3p1RXhZUzFtdTZRUlZvaGJSQnRyOVBBYVhPZjRhRXJDWk9laW43WEIyWW9peHdzcDRiZmphd0Jr0gHYAUFVX3lxTE5INDJFRHRUR2NmOFFZV3d3QmtuclNfX1lmbHUwZmZ5MFpnc1RmcmljS1ZXMzZfUTVncW5kb0RuZGxHNGVTTzN3OFoxOW1KZXJ2Q2Z2RVhSbU10eHVMekpiejlMMERkMDBlcjU5eFY1OGZzZ0ozLWlBVXRZWE1iZnhEOTBZeVI5LVZpV29BMmVFcU1nd0g0Nnl6NzExMnQ5SzFDU2U3cDNIbWt3X01QYUw4X1V5S2pjeWhlVDBTanF0LWowdE51NVdTYnBDUGt3UXhKWnBiNUJ1OA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-18",
+      "source": "Letra P",
+      "section": "economía",
+      "excerpt": "Córdoba en el espejo de la reforma laboral: cuánto pesan la economía informal y las app en la provincia Letra P",
+      "classified": true
+    },
+    {
+      "title": "Las provincias perdieron 500 mil millones de coparticipación: Córdoba y Santa Fe las más perjudicadas",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNVm5oV3EzOFZydXFZbDNqTnQ0UUUzYmM1RWZhdWdDeVZzbXB6UEtReUpFT0RFWEFUc3Q0Y1dEamdnNXJBbldQeTFaQmk1aC1BRWFaeUh6ZGZWQXg5ei1XakZyUGRObTNkU0JLeEU5d0o5eE56UkVfLVJ5QzR2Y3dlOEx3SXk2akRnZ0h6YVpVOGpCa3dER1BfSXk5UWhSLUxReXB6OC14S0U2Ylo2LXNHeGRRVFc1THhqbWRBZVJ1dzhjSjREZzZFMldGR2diUjNiaE81RU5IMXNzdzRLXzdPdm1B0gHeAUFVX3lxTE9rVEs2eGhrcTdyZHFaT3lJcUdBcE9kVDg4NExEYUxwQ2hVTjl6NnBJM1c0bnY1UUVxUWROSWVVXzFBOWVaWldqMlBOWjRKSmtUWTBxX3dNZnRGTHRYSE52Y1lrRDdrZG9vdG1Wa0dQS01qTVlrMEFYdnRoRnNtal9DenZudFAtREZTaENRUlZFc0hjaURUVUtJU0E1eThoOVlBY3VNYnVNcDVQNGtuWkdtcmFNU0JJT0s5eWZVNFNIckIwT3ZCbnhVb2xrUnBHVzVaNF9mNTVnUUZ0aXlrUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-04",
+      "source": "lapoliticaonline.com",
+      "section": "economía",
+      "excerpt": "Las provincias perdieron 500 mil millones de coparticipación: Córdoba y Santa Fe las más perjudicadas lapoliticaonline.com",
+      "classified": true
+    },
+    {
+      "title": "Lo que pasa entre nosotros cuando los adultos no están mirando",
+      "url": "https://hoydia.com.ar/sociedad/cuando-los-adultos-no-estan-mirando/",
+      "date": "2026-04-01",
+      "source": "hoydia.com.ar",
+      "section": "sociedad",
+      "excerpt": "CD es una adolescente cordobesa de 15 años y aceptó nuestro desafío de escribir una columna que nos ayude a entender a nosotros los adultos, cómo se siente su generación.",
+      "classified": true
+    },
     {
       "title": "Docentes rechazarán la tercera propuesta salarial de la Provincia",
       "url": "https://www.cba24n.com.ar/cordoba/docentes-rechazaran-la-tercera-propuesta-salarial-de-la-provincia_a69cc54c362705834829ed424",
@@ -150,33 +428,6 @@
       "source": "puntoapunto.com.ar",
       "section": "economía",
       "excerpt": "¿La tenías? Un informe revela qué sector de la economía de Córdoba es el principal tomador de créditos puntoapunto.com.ar",
-      "classified": true
-    },
-    {
-      "title": "Comienzo de clases. La UEPC cumplió con el paro y Llaryora dijo que \"hay voluntad\"",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcDBGaUU0TWNRQ3dkMFFneUk0cFFpYXRkOFNWRDlRVDVZbmViSFVCQ2R5OVFLUExrLVowTzBvUzBET3VpNGpEU0FTUFJsQjEzMnlta3FtSDJTUEtsTXJRU3NSVHFyLWdhZUVnMlJJV2sxcXlURy1yLTA3aXNaS3AtaUtuRXdvZTlwQWc?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-02",
-      "source": "La Voz del Interior",
-      "section": "sociedad",
-      "excerpt": "Comienzo de clases. La UEPC cumplió con el paro y Llaryora dijo que \"hay voluntad\" La Voz del Interior",
-      "classified": true
-    },
-    {
-      "title": "Córdoba en el espejo de la reforma laboral: cuánto pesan la economía informal y las app en la provincia",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQ0tlLS12ZTVXMmI4OEJHc1FTeG5WanFNYl8taUFWd19EeWJCQ25sMmE1VGNZUkVVZzRLVGxBVHZINlUtODFHVERPRlh5dUNKN1kwYmZ3S1luR1ZTalJZMmN6dmMwQ1kzN0FjYkJSS3ZaUkQ4MjZQQkNQTGREMzJaSUhHb3FTeEdmcU02TzdOSVNwbTdvcEg3aG0tM3p1RXhZUzFtdTZRUlZvaGJSQnRyOVBBYVhPZjRhRXJDWk9laW43WEIyWW9peHdzcDRiZmphd0Jr0gHYAUFVX3lxTE5INDJFRHRUR2NmOFFZV3d3QmtuclNfX1lmbHUwZmZ5MFpnc1RmcmljS1ZXMzZfUTVncW5kb0RuZGxHNGVTTzN3OFoxOW1KZXJ2Q2Z2RVhSbU10eHVMekpiejlMMERkMDBlcjU5eFY1OGZzZ0ozLWlBVXRZWE1iZnhEOTBZeVI5LVZpV29BMmVFcU1nd0g0Nnl6NzExMnQ5SzFDU2U3cDNIbWt3X01QYUw4X1V5S2pjeWhlVDBTanF0LWowdE51NVdTYnBDUGt3UXhKWnBiNUJ1OA?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-02-18",
-      "source": "Letra P",
-      "section": "economía",
-      "excerpt": "Córdoba en el espejo de la reforma laboral: cuánto pesan la economía informal y las app en la provincia Letra P",
-      "classified": true
-    },
-    {
-      "title": "Las provincias perdieron 500 mil millones de coparticipación: Córdoba y Santa Fe las más perjudicadas",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNVm5oV3EzOFZydXFZbDNqTnQ0UUUzYmM1RWZhdWdDeVZzbXB6UEtReUpFT0RFWEFUc3Q0Y1dEamdnNXJBbldQeTFaQmk1aC1BRWFaeUh6ZGZWQXg5ei1XakZyUGRObTNkU0JLeEU5d0o5eE56UkVfLVJ5QzR2Y3dlOEx3SXk2akRnZ0h6YVpVOGpCa3dER1BfSXk5UWhSLUxReXB6OC14S0U2Ylo2LXNHeGRRVFc1THhqbWRBZVJ1dzhjSjREZzZFMldGR2diUjNiaE81RU5IMXNzdzRLXzdPdm1B0gHeAUFVX3lxTE9rVEs2eGhrcTdyZHFaT3lJcUdBcE9kVDg4NExEYUxwQ2hVTjl6NnBJM1c0bnY1UUVxUWROSWVVXzFBOWVaWldqMlBOWjRKSmtUWTBxX3dNZnRGTHRYSE52Y1lrRDdrZG9vdG1Wa0dQS01qTVlrMEFYdnRoRnNtal9DenZudFAtREZTaENRUlZFc0hjaURUVUtJU0E1eThoOVlBY3VNYnVNcDVQNGtuWkdtcmFNU0JJT0s5eWZVNFNIckIwT3ZCbnhVb2xrUnBHVzVaNF9mNTVnUUZ0aXlrUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-02-04",
-      "source": "La Política Online",
-      "section": "economía",
-      "excerpt": "Las provincias perdieron 500 mil millones de coparticipación: Córdoba y Santa Fe las más perjudicadas La Política Online",
       "classified": true
     }
   ]

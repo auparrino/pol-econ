@@ -1,17 +1,79 @@
 {
   "province": "Buenos Aires",
   "slug": "buenos-aires",
-  "updated": "2026-03-31T23:30:20.255Z",
+  "updated": "2026-04-01T20:32:27.676Z",
   "sources": [
     "El Día",
     "0221",
     "Info Platense"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\n* Se produjo una rebelión interna en el Frente Grande bonaerense contra Mario Secco.\n* El gobernador Axel Kicillof activó la Rendición de Cuentas 2025, lo que generó un debate clave en el Concejo platense.\n* Los radicales respaldaron a Miguel Fernández y llamaron a la moderación.\n\n**Situación económica local**\n\n* El ajuste por el gasoil ya impacta en el AMBA, lo que llevó a que los micros reduzcan su frecuencia.\n* El boleto de transporte en La Plata roza los $1.000 y la crisis de pasajeros ya impacta en el sistema.\n* Las cuotas de los colegios privados en la Provincia de Buenos Aires subieron.\n\n**Temas sociales relevantes**\n\n* La pobreza en el Gran La Plata sigue siendo alarmante, a pesar de la baja nacional.\n* La unificación de horarios para la recolección de residuos en nueve delegaciones de La Plata se implementó.\n* La UNLP definió decanos, con cambios en la Facultad de Medicina y continuidad en la Facultad de Económicas.",
+      "count": 12,
+      "generated": "2026-04-01T20:32:24.516Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n* La semana pasada se produjo una rebelión interna en el Frente Grande bonaerense contra Mario Secco.\n* El gobernador Axel Kicillof activó la Rendición de Cuentas 2025 y se abrió un debate clave en el Concejo platense.\n* Los radicales respaldaron masivamente a Miguel Fernández y llamaron a la moderación.\n\n**Situación económica local**\n\n* El ajuste por el gasoil ya impacta en el AMBA y anticipa un transporte más saturado.\n* Las cuotas de los colegios privados subieron en la Provincia de Buenos Aires.\n* El boleto de transporte en La Plata roza los $1.000 y la crisis de pasajeros ya impacta en el sistema.\n\n**Temas sociales relevantes**\n\n* La pobreza en el Gran La Plata sigue siendo alarmante, a pesar de la baja nacional.\n* La unificación de horarios para la recolección de residuos en nueve delegaciones se implementó en La Plata.\n* La UNLP definió decanos, incluyendo un cambio de signo político en la Facultad de Medicina.\n\n**Tendencias y patrones**\n\n* La semana pasada se centró en la política provincial, con debates y rebeliones internas en el Frente Grande y en el Concejo platense.\n* La situación económica local se vio afectada por el ajuste por el gasoil y la subida de cuotas de colegios privados.\n* Los temas sociales relevantes se centraron en la pobreza y la gestión de residuos en La Plata.",
+      "count": 12,
+      "generated": "2026-04-01T20:32:24.516Z"
+    },
+    "month": {
+      "text": "**Análisis de la evolución de la provincia de Buenos Aires en el último mes**\n\n**Desarrollos políticos provinciales**\n\n* La provincia de Buenos Aires experimentó un mes de gran actividad política, con varios eventos destacados.\n* La rebelión interna contra Mario Secco en el Frente Grande bonaerense (noticia 1) sugiere una posible crisis en la coalición política.\n* La activación de la Rendición de Cuentas 2025 por parte de Alak (noticia 5) abrió un debate clave en el Concejo platense, lo que podría tener implicaciones en la política provincial.\n* El respaldo masivo de los radicales a Miguel Fernández (noticia 12) indica una posible alianza política en la provincia.\n\n**Situación económica local**\n\n* La crisis de pasajeros en el transporte público de La Plata (noticias 4 y 8) ya impacta en el sistema, lo que podría llevar a una mayor saturación en el futuro.\n* El boleto de transporte en La Plata roza los $1.000 (noticia 8), lo que puede afectar a los usuarios.\n* Las cuotas de los colegios privados en la provincia subieron (noticia 11), lo que podría afectar a las familias que dependen de estos servicios.\n\n**Temas sociales relevantes**\n\n* La pobreza en el Gran La Plata sigue siendo un problema alarmante (noticia 6), pese a la baja nacional.\n* La unificación de horarios para la recolección de residuos en nueve delegaciones de La Plata (noticia 7) podría mejorar la gestión de los desechos.\n* La polémica por la sala \"Pino Solanas\" en el Cine Select (noticia 9) reabrió el debate sobre quién define los nombres en La Plata.\n\n**Cambios y tendencias**\n\n* La crisis política en el Frente Grande bonaerense podría tener implicaciones en la política provincial.\n* La activación de la Rendición de Cuentas 2025 podría llevar a un debate más intenso en el Concejo platense.\n* La crisis de pasajeros en el transporte público de La Plata podría llevar a una mayor saturación en el futuro.\n* La pobreza en el Gran La Plata sigue siendo un problema alarmante.\n* La unificación de horarios para la recolección de residuos podría mejorar la gestión de los desechos.\n\nEn general, el último mes en la provincia de Buenos Aires estuvo marcado por una gran actividad política, una crisis económica en el transporte público y problemas sociales como la pobreza y la gestión de los desechos.",
+      "count": 12,
+      "generated": "2026-04-01T20:32:24.516Z"
+    }
+  },
   "articles": [
+    {
+      "title": "Rebelión interna contra Mario Secco en el Frente Grande bonaerense",
+      "url": "https://www.infoplatense.com.ar/rebelion-interna-contra-mario-secco-en-el-frente-grande-bonaerense/",
+      "date": "2026-04-01",
+      "source": "infoplatense.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Feriados en La Plata: qué servicios funcionan y cuáles se frenan entre el jueves y el viernes",
+      "url": "https://www.infoplatense.com.ar/feriados-en-la-plata-que-servicios-funcionan-y-cuales-se-frenan-entre-el-jueves-y-el-viernes/",
+      "date": "2026-04-01",
+      "source": "infoplatense.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "La Plata suma proyectos en el Concejo: turismo digital, perfil universitario y más control con cámaras privadas",
+      "url": "https://www.infoplatense.com.ar/la-plata-suma-proyectos-en-el-concejo-turismo-digital-perfil-universitario-y-mas-control-con-camaras-privadas/",
+      "date": "2026-04-01",
+      "source": "infoplatense.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Micros con menos frecuencia: el ajuste por el gasoil ya impacta en el AMBA y anticipa un transporte más saturado",
+      "url": "https://www.infoplatense.com.ar/micros-con-menos-frecuencia-el-ajuste-por-el-gasoil-ya-impacta-en-el-amba-y-anticipa-un-transporte-mas-saturado/",
+      "date": "2026-04-01",
+      "source": "infoplatense.com.ar",
+      "section": "economía",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Alak activó la Rendición de Cuentas 2025 y se abre un debate clave en el Concejo platense",
+      "url": "https://www.infoplatense.com.ar/alak-activo-la-rendicion-de-cuentas-2025-y-se-abre-un-debate-clave-en-el-concejo-platense/",
+      "date": "2026-04-01",
+      "source": "infoplatense.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
     {
       "title": "Pobreza en el Gran La Plata: pese a la baja nacional, los índices siguen alarmantes",
       "url": "https://www.infoplatense.com.ar/pobreza-en-el-gran-la-plata-pese-a-la-baja-nacional-los-indices-siguen-alarmantes/",
-      "date": "2026-03-31",
+      "date": "2026-04-01",
       "source": "infoplatense.com.ar",
       "section": "sociedad",
       "excerpt": "",
@@ -20,7 +82,7 @@
     {
       "title": "Residuos en La Plata: unificación de horarios en nueve delegaciones",
       "url": "https://www.infoplatense.com.ar/residuos-en-la-plata-unificacion-de-horarios-en-nueve-delegaciones/",
-      "date": "2026-03-31",
+      "date": "2026-04-01",
       "source": "infoplatense.com.ar",
       "section": "sociedad",
       "excerpt": "",
@@ -29,7 +91,7 @@
     {
       "title": "Transporte en La Plata: el boleto roza los $1.000 y la crisis de pasajeros ya impacta en el sistema",
       "url": "https://www.infoplatense.com.ar/transporte-en-la-plata-el-boleto-roza-los-1-000-y-la-crisis-de-pasajeros-ya-impacta-en-el-sistema/",
-      "date": "2026-03-31",
+      "date": "2026-04-01",
       "source": "infoplatense.com.ar",
       "section": "economía",
       "excerpt": "",
@@ -38,7 +100,7 @@
     {
       "title": "Cine Select: la polémica por la sala “Pino Solanas” reabre el debate sobre quién define los nombres en La Plata",
       "url": "https://www.infoplatense.com.ar/cine-select-la-polemica-por-la-sala-pino-solanas-reabre-el-debate-sobre-quien-define-los-nombres-en-la-plata/",
-      "date": "2026-03-31",
+      "date": "2026-04-01",
       "source": "infoplatense.com.ar",
       "section": "cultura",
       "excerpt": "",

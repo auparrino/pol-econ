@@ -1,12 +1,19 @@
 {
   "province": "Formosa",
   "slug": "formosa",
-  "updated": "2026-03-31T23:33:12.680Z",
+  "updated": "2026-04-01T20:35:45.145Z",
   "sources": [
     "La Mañana",
     "Formosa Hoy",
     "Google News Formosa"
   ],
+  "summaries": {
+    "month": {
+      "text": "**Análisis de la situación política, económica y social en la provincia de Formosa**\n\n**Desarrollos políticos provinciales**\n\n* El mes de marzo ha estado marcado por la participación de la provincia de Formosa en eventos y debates sobre conectividad y tecnología, como el debate sobre \"IA Ready\" en NPlay Cono Sur, en el que participó REFSA Telecomunicaciones, una empresa local.\n* No hay noticias de cambios significativos en la estructura política provincial o de movimientos importantes en la gobernación.\n\n**Situación económica local**\n\n* No hay noticias específicas sobre la situación económica de la provincia, pero se puede inferir que la participación de empresas locales en eventos de tecnología y conectividad puede ser un indicador de crecimiento económico y desarrollo de la industria local.\n* Es importante destacar que la provincia de Formosa es una de las más pobres de la Argentina, por lo que cualquier avance económico es bienvenido.\n\n**Temas sociales relevantes**\n\n* No hay noticias específicas sobre temas sociales relevantes en la provincia, como la salud, la educación o la seguridad.\n* Es posible que la falta de noticias sobre estos temas sea un indicador de que la situación en la provincia es estable y no hay problemas significativos en estos ámbitos.\n\n**Tendencias**\n\n* La participación de empresas locales en eventos de tecnología y conectividad sugiere que la provincia de Formosa está enfocada en el desarrollo de la industria local y la mejora de la conectividad.\n* La falta de noticias sobre cambios políticos significativos sugiere que la situación política en la provincia es estable.\n\nEn resumen, el mes de marzo en la provincia de Formosa ha estado marcado por la participación de empresas locales en eventos de tecnología y conectividad, lo que sugiere un crecimiento económico y desarrollo de la industria local. La situación política y social en la provincia parece ser estable.",
+      "count": 1,
+      "generated": "2026-04-01T20:35:44.098Z"
+    }
+  },
   "articles": [
     {
       "title": "REFSA Telecomunicaciones (Formosa - Argentina) en el debate sobre conectividad \"IA Ready\" en NPlay Cono Sur",
@@ -15,6 +22,15 @@
       "source": "Gobierno de la Provincia de Formosa",
       "section": "política",
       "excerpt": "REFSA Telecomunicaciones (Formosa - Argentina) en el debate sobre conectividad \"IA Ready\" en NPlay Cono Sur Gobierno de la Provincia de Formosa",
+      "classified": true
+    },
+    {
+      "title": "APERTURA DE 53° PERÍODO DE SESIONES - LEGISLATURA DE LA PROVINCIA DE FORMOSA ➡️ Insfrán: \"El discurso libertario tiene un gran problema: la realidad\". #Agenfor #LegislaturaProvincial #GildoInsfran #Formosa",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5JLWgyMlVfQ3NhczI2R1VtQ3FfYUE4RV9ZcnRtVGQyZzc0VnlmLXp5RVZEVHRjVnc1QWNwVjJENnhoTUc2b0d0ZlpWeENwS1lCaXFEVlJn?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-01",
+      "source": "instagram.com",
+      "section": "política",
+      "excerpt": "APERTURA DE 53° PERÍODO DE SESIONES - LEGISLATURA DE LA PROVINCIA DE FORMOSA ➡️ Insfrán: \"El discurso libertario tiene un gran problema: la realidad\". #Agenfor #LegislaturaProvincial #GildoInsfran #Formosa instagram.com",
       "classified": true
     }
   ]

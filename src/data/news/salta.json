@@ -1,13 +1,300 @@
 {
   "province": "Salta",
   "slug": "salta",
-  "updated": "2026-03-31T23:34:46.759Z",
+  "updated": "2026-04-01T20:37:54.094Z",
   "sources": [
     "El Tribuno Salta",
     "Informate Salta",
     "Google News Salta"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\n* El subsecretario de Seguridad de Metán renunció sorpresivamente debido a \"razones particulares, familiares y de salud\".\n* El Gobierno de Salta avanza en el fortalecimiento de relaciones con la Unión Europea.\n* Se definió la Comisión Bicameral que avalará al Fondo de Reparación, con amplia mayoría oficialista y escasa participación norteña.\n* El intendente de Salta, Mangione, prefiere un centro de agudos en Güemes en lugar de otro hospital en la ciudad.\n* Se prorrogó la apertura de sobres para la concesión de la Terminal de Ómnibus de Salta.\n\n**Situación económica local**\n\n* El Ente Regulador impulsa proyectos para limitar cargos en las facturas de servicios.\n* Se propone atar las tasas municipales a la inflación.\n* El agua en Salta sube cerca de un 5% por mes y seguirá en alza.\n* Flybondi deja varados a pasajeros en Salta y crece la bronca por cancelaciones y reprogramaciones.\n* Un camión que salió de Salta rumbo a Chile llevaba más de 3,8 toneladas de hojas de coca ocultas en azúcar.\n\n**Temas sociales relevantes**\n\n* El Hospital San Vicente de Paul niega fallas y asegura que las cirugías funcionan con normalidad.\n* Se registraron 413 casos de chikungunya en Salta, con un aumento de la preocupación por la expansión en el norte.\n* Se incendió una reconocida pizzería en plena peatonal de Salta.\n* Un grupo de 37 profesores de la Escuela de Música de la Provincia denunció precarización y sueldos adeudados.\n* La Fiscalía pidió informes a Telegram y X para identificar a los responsables del ciberataque que afectó a organismos clave de Salta.\n* Se encontró a un obrero muerto en el interior de una casa en construcción en el barrio 25 de Mayo.",
+      "count": 52,
+      "generated": "2026-04-01T20:37:49.860Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n* La Comisión Bicameral que avalará al Fondo de Reparación se definió con amplia mayoría oficialista y escasa participación norteña (noticia 15).\n* El Gobierno de Salta avanza en el fortalecimiento de relaciones con la Unión Europea (noticia 29).\n* El subsecretario de Seguridad de Metán renunció sorpresivamente por \"razones particulares, familiares y de salud\" (noticia 4).\n* Mangione prefiere un centro de agudos en Güemes en lugar de otro hospital en Salta (noticia 18).\n* Se prorrogó la apertura de sobres para la concesión de la Terminal de Ómnibus de Salta (noticia 19).\n\n**Situación económica local**\n\n* El cobre en Salta recibirá un impulso con la asociación entre IFC y First Quantum en el proyecto minero Taca Taca (noticia 1).\n* El agua en Salta sube cerca de un 5% por mes y seguirá en alza (noticia 16).\n* Se proponen atar las tasas municipales a la inflación (noticia 17).\n* El Ente Regulador impulsa proyectos para limitar cargos en las facturas de servicios (noticia 30).\n* Flybondi deja varados a pasajeros en Salta y crece la bronca por cancelaciones y reprogramaciones (noticia 12).\n* Un camión que salió de Salta rumbo a Chile llevaba más de 3,8 toneladas de hojas de coca ocultas en azúcar (noticia 13).\n\n**Temas sociales relevantes**\n\n* Se registraron 413 casos de chikungunya en Salta, con un aumento de la preocupación por la expansión en el norte (noticia 11).\n* El Hospital San Vicente de Paul negó fallas y aseguró que las cirugías funcionan con normalidad (noticia 2).\n* Se suspendieron cirugías programadas en el hospital de Orán por fallas críticas en equipos de anestesia (noticia 14).\n* Se registró un femicidio en El Tipal, con un mensaje de \"perdón, no aguantaba más\" del imputado (noticia 5).\n* Se incendió una reconocida pizzería en plena peatonal, causando temor en la comunidad (noticia 22).\n* Se denunció un ciberataque masivo en Salud de Salta, con una filtración antigua del programa Sumar (noticia 35).\n* Se pidió informes a Telegram y X para identificar a los responsables del ciberataque (noticia 36).\n* Se encontró a un obrero muerto en el interior de una casa en construcción en el barrio 25 de Mayo (noticia 40).\n\n**Tendencias y patrones**\n\n* La semana estuvo marcada por la preocupación por la situación económica local, con aumentos en el precio del agua y la propuesta de atar las tasas municipales a la inflación.\n* Se destacó la importancia de la seguridad y la prevención, con la denuncia de un ciberataque masivo en Salud de Salta y la preocupación por la expansión de la chikungunya en el norte.\n* La semana también estuvo marcada por la denuncia de un femicidio en El Tipal y la preocupación por la seguridad en la comunidad.\n* Se destacó la importancia de la cooperación internacional, con el avance en el fortalecimiento de relaciones con la Unión Europea.\n* La semana estuvo marcada por la preocupación por la situación en los hospitales, con la suspensión de cirugías programadas en el hospital de Orán y la negativa del Hospital San Vicente de Paul a fallas.",
+      "count": 52,
+      "generated": "2026-04-01T20:37:49.860Z"
+    },
+    "month": {
+      "text": "**Análisis de la evolución del mes en la provincia de Salta**\n\n**Desarrollos políticos provinciales**\n\n* La provincia de Salta ha visto un aumento en la actividad política en el mes de marzo y abril, con varios anuncios y decisiones importantes.\n* El gobierno provincial ha avanzado en el fortalecimiento de relaciones con la Unión Europea, lo que podría generar oportunidades para la provincia.\n* La Comisión Bicameral que evaluará al Fondo de Reparación Histórica se ha definido y comenzó a analizar los informes de la auditoría.\n* El subsecretario de Seguridad de Metán renunció sorpresivamente, lo que podría generar incertidumbre en la seguridad pública de la provincia.\n\n**Situación económica local**\n\n* La economía de la provincia de Salta ha visto un aumento en la actividad económica en el mes de marzo y abril, con varios proyectos y acuerdos importantes.\n* El acuerdo entre IFC y First Quantum para desarrollar el proyecto minero Taca Taca podría generar empleo y crecimiento económico local.\n* El Ente Regulador impulsa proyectos para limitar cargos en las facturas de servicios, lo que podría ayudar a reducir la carga económica para los ciudadanos.\n* El precio del agua en Salta ha subido cerca de un 5% por mes y seguirá en alza, lo que podría afectar a los consumidores.\n\n**Temas sociales relevantes**\n\n* La provincia de Salta ha visto un aumento en la preocupación por la salud pública, con el avance del virus de la chikungunya y la necesidad de reforzar medidas domiciliarias.\n* El femicidio de Mercedes Kvedaras ha generado conmoción en la sociedad, y el juicio por el crimen ha comenzado.\n* La seguridad pública ha sido un tema importante en el mes de marzo y abril, con varios incidentes y accidentes.\n* La educación ha sido otro tema relevante, con la denuncia de docentes de la Escuela de Música de la Provincia por la falta de pago de salarios y la precarización laboral.\n\n**Cambios y tendencias**\n\n* La provincia de Salta ha visto un aumento en la actividad económica y política en el mes de marzo y abril.\n* La seguridad pública ha sido un tema importante, con varios incidentes y accidentes.\n* La salud pública ha sido un tema relevante, con el avance del virus de la chikungunya y la necesidad de reforzar medidas domiciliarias.\n* La educación ha sido otro tema importante, con la denuncia de docentes de la Escuela de Música de la Provincia por la falta de pago de salarios y la precarización laboral.\n\n**Conclusión**\n\nEn resumen, el mes de marzo y abril ha sido un período de cambios y tendencias en la provincia de Salta. La economía ha visto un aumento en la actividad, la política ha sido un tema importante, y la seguridad pública y la salud pública han sido temas relevantes. La educación ha sido otro tema importante, con la denuncia de docentes de la Escuela de Música de la Provincia por la falta de pago de salarios y la precarización laboral. Es importante seguir monitoreando la situación y ver cómo evoluciona en el futuro.",
+      "count": 52,
+      "generated": "2026-04-01T20:37:49.860Z"
+    }
+  },
   "articles": [
+    {
+      "title": "Impulso al cobre en Salta: IFC y First Quantum se asocian por Taca Taca",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-17-28-0-impulso-al-cobre-en-salta-ifc-y-first-quantum-se-asocian-por-taca-taca",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "economía",
+      "excerpt": "El acuerdo busca financiar el desarrollo sostenible del proyecto minero, con foco en generación de empleo, crecimiento económico local y estándares ambientales en la región.",
+      "classified": true
+    },
+    {
+      "title": "El Hospital San Vicente de Paul niega fallas y asegura que las cirugías funcionan con normalidad",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-16-43-0-el-hospital-san-vicente-de-paul-niega-fallas-y-asegura-que-las-cirugias-funcionan-con-normalidad",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "sociedad",
+      "excerpt": "Desde la gerencia del Hospital San Vicente de Paul negaron que hayan existido fallas que comprometieran la seguridad de los pacientes y llevaron tranquilidad a la comunidad. Afirmaron que el servicio quirúrgico funciona con normalidad y que el mantenimiento de equipos ya estaba programado.",
+      "classified": true
+    },
+    {
+      "title": "En Metán renunció sorpresivamente el subsecretario de Seguridad",
+      "url": "https://www.eltribuno.com/municipios/2026-4-1-13-5-0-en-metan-renuncio-sorpresivamente-el-subsecretario-de-seguridad",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "política",
+      "excerpt": "El abogado Federico Delgado dijo que lo motivan “razones particulares, familiares y de salud”.",
+      "classified": true
+    },
+    {
+      "title": "Motoqueros salteños organizan la \"Vuelta a los Valles\" y juntan donaciones para una escuela de Cachi",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-12-32-0-motoqueros-saltenos-organizan-la-vuelta-a-los-valles-y-juntan-donaciones-para-una-escuela-de-cachi",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "cultura",
+      "excerpt": "La caravana partirá este viernes desde Plaza España, donde los organizadores recibirán colaboraciones desde las 9 hasta las 10.30. Luego, cerca de las 11, más de 100 motos emprenderán el viaje.",
+      "classified": true
+    },
+    {
+      "title": "Femicidio en El Tipal. \"Perdón, no aguantaba más\": El mensaje de Figueroa tras el crimen",
+      "url": "https://www.eltribuno.com/policiales/2026-4-1-12-16-0-perdon-no-aguantaba-mas-el-mensaje-de-figueroa-tras-el-crimen-y-la-mecanica-del-femicidio",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "sociedad",
+      "excerpt": "La fiscalía y la querella expusieron la investigación y el requerimiento de juicio. Se detallaron los audios enviados por el imputado, cómo ocurrió el crimen de Mercedes Kvedaras y los principales elementos de prueba.",
+      "classified": true
+    },
+    {
+      "title": "Salta refuerza los controles viales: en marzo secuestraron 433 vehículos y labraron casi 4 mil actas",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-12-12-0-salta-refuerza-los-controles-viales-en-marzo-secuestraron-433-vehiculos-y-labraron-casi-4-mil-actas",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "política",
+      "excerpt": "Los operativos se desplegaron en distintos puntos estratégicos de la ciudad y continuarán de manera sorpresiva. La mayoría de las infracciones estuvieron vinculadas a alcoholemia positiva y falta de documentación.",
+      "classified": true
+    },
+    {
+      "title": "Jornada de extensión comunitaria 2026: un espacio para hablar de salud, prevención y vida cotidiana",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-11-40-0-jornada-de-extension-comunitaria-2026-un-espacio-para-hablar-de-salud-prevencion-y-vida-cotidiana",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "sociedad",
+      "excerpt": "La actividad se realizará el 8 de abril en Salta capital, será gratuita y contará con especialistas que abordarán problemáticas actuales como salud mental, redes sociales, vacunación y bienestar integral.",
+      "classified": true
+    },
+    {
+      "title": "Femicidio en El Tipal. El infierno que vivió Mercedes Kvedaras antes del femicidio",
+      "url": "https://www.eltribuno.com/policiales/2026-4-1-11-17-0-el-infierno-que-vivio-mercedes-kvedaras-antes-del-femicidio",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "sociedad",
+      "excerpt": "Mensajes, testimonios y reconstrucciones del entorno expusieron una trama de violencia sostenida, miedo y control en los meses previos al crimen ocurrido en El Tipal.",
+      "classified": true
+    },
+    {
+      "title": "Avanza la obra que transformará el acceso al cerro San Bernardo",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-10-55-0-avanza-la-obra-que-transformara-el-acceso-al-cerro-san-bernardo",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "infraestructura",
+      "excerpt": "Los trabajos se concentran en uno de los puntos más transitados de la ciudad y buscan reorganizar la circulación en una zona clave para el turismo y la vida cotidiana, con intervención directa sobre avenida Asunción y el sector del Portezuelo.",
+      "classified": true
+    },
+    {
+      "title": "Un refugio de sabor y ahorro: el Mercado San Miguel con ofertas para armar la mesa de Pascuas",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-10-12-0-un-refugio-de-sabor-y-ahorro-el-mercado-san-miguel-con-ofertas-para-armar-la-mesa-de-pascuas",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "cultura",
+      "excerpt": "Un relevamiento mostró valores concretos en pescados, verduras, huevos y dulces regionales, con alternativas accesibles pese al aumento de la demanda por Pascuas.",
+      "classified": true
+    },
+    {
+      "title": "Chikungunya en Salta: ya son 413 los casos confirmados y crece la preocupación por la expansión en el norte",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-9-11-0-chikungunya-en-salta-ya-son-413-los-casos-confirmados-y-crece-la-preocupacion-por-la-expansion-en-el-norte",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "sociedad",
+      "excerpt": "El avance del virus en distintas localidades encendió alertas sanitarias y puso el foco en la necesidad de reforzar medidas domiciliarias. El mapa epidemiológico muestra concentración en zonas fronterizas, pero con presencia creciente en otros puntos de la provincia.",
+      "classified": true
+    },
+    {
+      "title": "Otra vez Flybondi deja varados a pasajeros en Salta y crece la bronca por cancelaciones y reprogramaciones",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-8-38-0-otra-vez-flybondi-deja-varados-a-pasajeros-en-salta-y-crece-la-bronca-por-cancelaciones-y-reprogramaciones",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "economía",
+      "excerpt": "Viajeros denunciaron falta de respuestas, gastos imprevistos de hasta 900 mil pesos y demoras reiteradas. Algunos vuelos fueron modificados hasta tres veces y hay quienes pasaron la noche en el aeropuerto sin soluciones claras.",
+      "classified": true
+    },
+    {
+      "title": "El dulce engaño: un camión que salió de Salta rumbo a Chile llevaba más de 3,8 toneladas de hojas de coca ocultas en azúcar",
+      "url": "https://www.eltribuno.com/policiales/2026-4-1-7-49-0-el-dulce-engano-un-camion-que-salio-de-salta-rumbo-a-chile-llevaba-mas-de-3-8-toneladas-de-hojas-de-coca-ocultas-en-azucar",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "economía",
+      "excerpt": "El hallazgo se produjo en un control sobre la Ruta Nacional 9, en Tucumán. La carga presentaba irregularidades detectadas mediante escáner y derivó en el secuestro del vegetal y la imputación del transportista por infracción al Código Aduanero.",
+      "classified": true
+    },
+    {
+      "title": "Quirófanos en pausa: el hospital de Orán suspendió cirugías programadas por fallas críticas en equipos de anestesia",
+      "url": "https://www.eltribuno.com/municipios/2026-4-1-6-52-0-quirofanos-en-pausa-el-hospital-de-oran-suspendio-cirugias-programadas-por-fallas-criticas-en-equipos-de-anestesia",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "sociedad",
+      "excerpt": "El servicio quirúrgico del Hospital San Vicente de Paul quedó limitado a intervenciones de urgencia tras detectarse problemas técnicos que impiden garantizar el monitoreo seguro de los pacientes.",
+      "classified": true
+    },
+    {
+      "title": "Se definió la Comisión Bicameral que avaluará al Fondo de Reparación",
+      "url": "https://www.eltribuno.com/salta/2026-3-31-23-12-0-se-definio-la-comision-bicameral-que-avaluara-al-fondo-de-reparacion",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "política",
+      "excerpt": "Con amplia mayoría oficialista y escasa participación norteña, analizará el escandaloso desmanejo expuesto en el informe de la Auditoría que ya tiene estado parlamentario.",
+      "classified": true
+    },
+    {
+      "title": "El agua en Salta sube cerca de un 5% por mes y seguirá en alza",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-0-0-0-el-agua-en-salta-sube-cerca-de-un-5-por-mes-y-seguira-en-alza",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "economía",
+      "excerpt": "El aumento combina el ajuste por IPC con un adicional del 2,54%. El esquema fue oficializado por resolución en el Boletín Oficial.",
+      "classified": true
+    },
+    {
+      "title": "Proponen atar las tasas municipales a la inflación",
+      "url": "https://www.eltribuno.com/salta/2026-4-1-0-0-0-proponen-atar-las-tasas-municipales-a-la-inflacion",
+      "date": "2026-04-01",
+      "source": "eltribuno.com",
+      "section": "economía",
+      "excerpt": "El Ente Regulador quiere que las subas expresadas en la boleta de la luz no superen al IPC. Puja con los intendentes.",
+      "classified": true
+    },
+    {
+      "title": "¿Otro hospital en Salta? Mangione prefiere un centro de agudos en Güemes",
+      "url": "https://informatesalta.com.ar/sin-vueltas/-otro-hospital-en-salta--mangione-prefiere-un-centro-de-agudos-en-guemes_a69cd45ee0041d9a6476914b4",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Prorrogan la apertura de sobres para la concesión de la Terminal de Ómnibus de Salta",
+      "url": "https://informatesalta.com.ar/municipal/prorrogan-la-apertura-de-sobres-para-la-concesion-de-la-terminal-de-omnibus-de-salta_a69cd67df0041d9a6476ce54f",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Robos en Embarcación: Atacaron otro comercio y buscan al autor",
+      "url": "https://informatesalta.com.ar/policiales/robos-en-embarcacion--atacaron-otro-comercio-y-buscan-al-autor_a69cd1be40041d9a64763429d",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "“Un infierno de años”, así reconstruyeron el femicidio de Mercedes Kvedaras",
+      "url": "https://informatesalta.com.ar/justicia/-un-infierno-de-anos---asi-reconstruyeron-el-femicidio-de-mercedes-kvedaras_a69cd455e0041d9a647690858",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Temor en plena peatonal: se incendió una reconocida pizzería",
+      "url": "https://informatesalta.com.ar/policiales/temor-en-plena-peatonal--se-incendio-una-reconocida-pizzeria_a69cd62a60041d9a6476c446c",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Salta registra 413 casos de chikungunya: Salvador Mazza, el más afectado",
+      "url": "https://informatesalta.com.ar/salud/salta-registra-413-casos-de-chikungunya--salvador-mazza--el-mas-afectado_a69cd3b690041d9a64767be30",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Salteños viven la Semana Malvinera: “Es importante para el que no conoce”",
+      "url": "https://informatesalta.com.ar/lup-94-7-salta/saltenos-viven-la-semana-malvinera---es-importante-para-el-que-no-conoce-_a69cd37790041d9a6476727bd",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "cultura",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Cafayate Fantasy: ¿Qué daños pueden haberse causado al sitio protegido?",
+      "url": "https://informatesalta.com.ar/sociedad/cafayate-fantasy---que-danos-pueden-haberse-causado-al-sitio-protegido-_a69cd2da40041d9a647659b0b",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "cultura",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "“Perdón, no aguantaba más”, el mensaje que envió Figueroa tras el femicidio",
+      "url": "https://informatesalta.com.ar/justicia/-perdon--no-aguantaba-mas---el-mensaje-que-envio-figueroa-tras-el-femicidio_a69cd3ec70041d9a647682f63",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "El Carril tendrá una escultura gigante del papa Francisco",
+      "url": "https://informatesalta.com.ar/sociedad/el-carril-tendra-una-escultura-gigante-del-papa-francisco_a69cd113a0041d9a64761c4d0",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "cultura",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "McDonald’s cumple 25 años en Salta: Habrá shows, premios y más",
+      "url": "https://informatesalta.com.ar/sociedad/mcdonald-s-cumple-25-anos-en-salta--habra-shows--premios-y-mas_a69cd33490041d9a647667234",
+      "date": "2026-04-01",
+      "source": "informatesalta.com.ar",
+      "section": "cultura",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno de Salta avanza en el fortalecimiento de relaciones con la Unión Europea",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNm9rMHhBaGVwTF9NNS1XVzNTejFOYXVSU3JPaWtrTXpTallKUEtxXzZXWWw2RjF0MFo3WEV1UGxZZDVZV0IyRFdtdl81ZmZOa2M5WWZNOXVnRXhreGpQSmJVcC00M1dmVWw2RG4yZ19memI1YjNxYklTRTM1Q2F2WUF6cEZvQVpfNGF5c1NWVHVmNm84RWdTY0NHWEdZWDhqamQ1ZG1ZTnU4T09TdmZoSlJVb2xBa1lZcFhidw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "HolaSalta Noticias",
+      "section": "política",
+      "excerpt": "El Gobierno de Salta avanza en el fortalecimiento de relaciones con la Unión Europea HolaSalta Noticias",
+      "classified": true
+    },
+    {
+      "title": "Sáenz lanzó el Hospital Público Digital SAFESA que garantizará atención médica de alta complejidad en toda la provincia",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRzZEZmNOM2dqUHZzcEdQd3JOWmEyRkxYZGhwTGpCYmtXOTR2Y05iV1J1MEg1VUFySmh4Vk9oaUg2bkJvejdxZ3VvcDVIbWIwY0xoOTdmZmFwUndrSW81LXR2YkNPWktvWVBYd0l1ZW5vbzYzR3JEYmFvSjhCRk9VSjREVkk4QTFYbmNsMlhaUFZoNWxHRW5HUXktRGdxcHQ0UU4zZU5FR3lDMWhEVkpiUUdVSlRzanlqVjJZaVVORWFKSXotSEE4dGN3U29lTGtSLWZ3WGdlaEtycFQxQ0Vuakx2RTNaeXlNUEhZMzEyeC1pTE1xbHJrb0M4WQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-07",
+      "source": "salta.gob.ar",
+      "section": "política",
+      "excerpt": "Sáenz lanzó el Hospital Público Digital SAFESA que garantizará atención médica de alta complejidad en toda la provincia salta.gob.ar",
+      "classified": true
+    },
     {
       "title": "El Ente Regulador impulsa proyectos para limitar cargos en las facturas de servicios",
       "url": "https://www.eltribuno.com/salta/2026-3-31-19-11-0-el-ente-regulador-impulsa-proyectos-para-limitar-cargos-en-las-facturas-de-servicios",
@@ -213,15 +500,6 @@
       "source": "informatesalta.com.ar",
       "section": "sociedad",
       "excerpt": "",
-      "classified": true
-    },
-    {
-      "title": "Sáenz lanzó el Hospital Público Digital SAFESA que garantizará atención médica de alta complejidad en toda la provincia",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRzZEZmNOM2dqUHZzcEdQd3JOWmEyRkxYZGhwTGpCYmtXOTR2Y05iV1J1MEg1VUFySmh4Vk9oaUg2bkJvejdxZ3VvcDVIbWIwY0xoOTdmZmFwUndrSW81LXR2YkNPWktvWVBYd0l1ZW5vbzYzR3JEYmFvSjhCRk9VSjREVkk4QTFYbmNsMlhaUFZoNWxHRW5HUXktRGdxcHQ0UU4zZU5FR3lDMWhEVkpiUUdVSlRzanlqVjJZaVVORWFKSXotSEE4dGN3U29lTGtSLWZ3WGdlaEtycFQxQ0Vuakx2RTNaeXlNUEhZMzEyeC1pTE1xbHJrb0M4WQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-02-07",
-      "source": "Gobierno de la Provincia de Salta, Argentina",
-      "section": "economía",
-      "excerpt": "Sáenz lanzó el Hospital Público Digital SAFESA que garantizará atención médica de alta complejidad en toda la provincia Gobierno de la Provincia de Salta, Argentina",
       "classified": true
     }
   ]

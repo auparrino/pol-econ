@@ -1,13 +1,336 @@
 {
   "province": "Ciudad de Buenos Aires",
   "slug": "caba",
-  "updated": "2026-03-31T23:31:25.814Z",
+  "updated": "2026-04-01T20:33:24.631Z",
   "sources": [
     "BAE Negocios",
     "Cronista",
     "Google News CABA"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\n* La Legislatura porteña comenzó a constituir sus comisiones (artículo 14).\n* La Legislatura porteña impulsa una declaración de pesar por la muerte de Daniel Buira, fundador de La Chilinga en el barrio de Saavedra (artículo 26).\n* Jorge Macri le reclamó a Kicillof una deuda de 27.000 millones por asistir a personas en situación de calle (artículos 23, 24 y 25).\n* Jorge Macri quería cobrarle la atención a personas en situación de calle a la PBA y un ministro salió al cruce (artículo 21).\n* Jorge Macri le exigió a Kicillof pagar la atención de bonaerenses que estén en situación de calle en la Ciudad (artículo 22).\n\n**Situación económica local**\n\n* Aumentan colectivos, subte y peajes desde abril: cuáles son las nuevas tarifas en CABA y Provincia (artículo 27).\n* Empresas de colectivos del AMBA reducirán frecuencias desde este miércoles por la suba del gasoil (artículo 31).\n* Aumentan un 6,5% las cuotas de los colegios bonaerenses (artículo 35).\n* Anuncian rebaja de retenciones a automotores \"en días o semanas\" (artículo 36).\n\n**Temas sociales relevantes**\n\n* Abril empezó con un aumento en el boleto de colectivos en el AMBA, subte y peajes (artículo 3).\n* Tarjeta Alimentar: cuáles son los montos que cobrarán las familias en abril (artículo 4).\n* SUBE gratis para personas con discapacidad: cambio en el transporte público (artículo 7).\n* Salud simplifica el acceso al buscador nacional de profesionales de salud: cómo funciona (artículo 8).\n* Bono de $40.000 para fuerzas federales: quiénes lo cobran y cuándo se paga (artículo 9).\n* Anses activa una ayuda de $357.800 para personas sin trabajo: cómo acceder (artículo 10).\n* Egresaron 212 nuevos agentes de tránsito en la Ciudad de Buenos Aires (artículo 20).\n* Caen los índices de pobreza pero crece la indigencia en la calle: la Ciudad denuncia falta de infraestructura en la Provincia y reclama fondos millonarios (artículo 25).\n* Ciudad de Buenos Aires lanzó becas para personas con discapacidad (artículo 38).\n* Desarticulan una red de estafadores gitanos en la Ciudad de Buenos Aires (artículo 40).",
+      "count": 45,
+      "generated": "2026-04-01T20:33:20.820Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n- La Legislatura porteña comenzó a constituir sus comisiones (artículo 14).\n- La Legislatura porteña impulsa una declaración de pesar por la muerte de Daniel Buira, fundador de La Chilinga en el barrio de Saavedra (artículo 26).\n- El gobierno porteño le reclama al Ministro de Economía Pablo López una deuda millonaria por asistencia social (artículo 17).\n- El gobierno porteño de Jorge Macri licita los medios públicos de la Ciudad el 20 de abril (artículo 18).\n- Jorge Macri reclamó a Kicillof una deuda de 27.000 millones por asistir a personas en situación de calle (artículos 23, 24).\n- Jorge Macri le exigió a Kicillof pagar la atención de bonaerenses que estén en situación de calle en la Ciudad (artículo 22).\n- Jorge Macri quiso cobrarle la atención a personas en situación de calle a la PBA y un ministro salió al cruce (artículo 21).\n- Las denuncias contra Manuel Adorni complican su candidatura a jefe de Gobierno porteño (artículo 32).\n- Lilia Lemoine asumió al frente de Juicio Político y La Libertad Avanza recuperó una comisión clave (artículo 36).\n- Mayra Mendoza a Caputo: \"Dedique su tiempo a resolver la crisis y no a culpar a los municipios\" (artículo 38).\n\n**Situación económica local**\n\n- Aumentan colectivos, subte y peajes desde abril: cuáles son las nuevas tarifas en CABA y Provincia (artículo 27).\n- Aumentan un 6,5% las cuotas de los colegios bonaerenses (artículo 39).\n- Anuncian rebaja de retenciones a automotores \"en días o semanas\" (artículo 40).\n- Aumentan un 6,5% las cuotas de los colegios bonaerenses (artículo 39).\n- Empresas de colectivos del AMBA reducirán frecuencias desde este miércoles por la suba del gasoil (artículo 35).\n- Aumento en dólares: cuánto subieron los departamentos en CABA en el último año (artículo 12).\n\n**Temas sociales relevantes**\n\n- Abril empezó con un aumento en el boleto de colectivos en el AMBA, subte y peajes (artículo 3).\n- Tarjeta Alimentar: cuáles son los montos que cobrarán las familias en abril (artículo 4).\n- SUBE gratis para personas con discapacidad: cambio en el transporte público (artículo 7).\n- Salud simplifica el acceso al buscador nacional de profesionales de salud: cómo funciona (artículo 8).\n- Bono de $40.000 para fuerzas federales: quiénes lo cobran y cuándo se paga (artículo 9).\n- Anses activa una ayuda de $357.800 para personas sin trabajo: cómo acceder (artículo 10).\n- Egresaron 212 nuevos agentes de tránsito en la Ciudad de Buenos Aires (artículo 20).\n- Caen los índices de pobreza pero crece la indigencia en la calle: la Ciudad denuncia falta de infraestructura en la Provincia y reclama fondos millonarios (artículo 25).\n- El gobierno porteño quiere cerrar la mitad de los cursos de un secundario de reingreso para jóvenes que (artículo 29).\n- El GCBA obliga a geolocalizarse desde los dispositivos personales a los empleados (artículo 31).\n- Jubilados con DNI 0 a 9: cómo quedan distribuidos los pagos en abril (artículo 33).\n- Agostina Páez pagó casi 18.500 dólares e inició los trámites para regresar a la Argentina (artículo 37).\n- El gobierno porteño creará un parque de 6 mil metros cuadrados en un predio ferroviario de Villa Urquiza que estaba ocupado (artículo 15).\n- Adiós al efectivo: la Ciudad de Buenos Aires eliminará las cabinas de peaje de cobro manual (artículo 16).\n- Primer encuentro anual de la Red de Prestadores de Servicios Jurídicos Gratuitos de la Ciudad de Buenos Aires (artículo 13).",
+      "count": 51,
+      "generated": "2026-04-01T20:33:20.820Z"
+    },
+    "month": {
+      "text": "**Análisis de la evolución del mes en la provincia de Ciudad de Buenos Aires**\n\n**Desarrollos políticos provinciales**\n\n* La Legislatura porteña comenzó a constituir sus comisiones, lo que indica un avance en la organización y el funcionamiento del poder legislativo.\n* El gobierno porteño de Jorge Macri reclamó a la Provincia de Buenos Aires (PBA) una deuda millonaria por asistencia social a personas en situación de calle.\n* El gobierno porteño invitó formalmente al Papa León XIV a visitar la ciudad de Buenos Aires, lo que podría generar un evento importante para la ciudad.\n* Las denuncias contra Manuel Adorni complican su candidatura a jefe de Gobierno porteño, lo que podría afectar la política local.\n\n**Situación económica local**\n\n* Aumentaron los colectivos, subtes y peajes en la Ciudad de Buenos Aires a partir del 1 de abril, lo que podría afectar a los usuarios.\n* Empresas de colectivos del AMBA redujeron frecuencias desde este miércoles por la suba del gasoil, lo que podría afectar a los usuarios.\n* Aumentaron un 6,5% las cuotas de los colegios bonaerenses, lo que podría afectar a los padres de familia.\n* Anuncian rebaja de retenciones a automotores \"en días o semanas\", lo que podría generar una mejora en la situación económica.\n\n**Temas sociales relevantes**\n\n* La Ciudad de Buenos Aires denunció falta de infraestructura en la Provincia y reclamó fondos millonarios para abordar la situación de indigencia en la calle.\n* Caen los índices de pobreza pero crece la indigencia en la calle, lo que podría generar una mayor atención a la situación social.\n* El gobierno porteño quiere cerrar la mitad de los cursos de un secundario de reingreso para jóvenes que, lo que podría afectar a los jóvenes que buscan educación y capacitación.\n* El GCBA obliga a geolocalizarse desde los dispositivos personales a los empleados, lo que podría generar una mayor vigilancia y control en el lugar de trabajo.\n\n**Tendencias y cambios**\n\n* La política local se vuelve más compleja con la llegada de nuevos actores y la disputa por el poder.\n* La situación económica local se vuelve más desafiante con la suba de precios y la reducción de frecuencias de los colectivos.\n* La atención a la situación social se vuelve más importante con la denuncia de falta de infraestructura en la Provincia y la creciente indigencia en la calle.\n* La tecnología se vuelve más importante en la gestión pública con la obligación de geolocalizarse desde los dispositivos personales a los empleados.",
+      "count": 52,
+      "generated": "2026-04-01T20:33:20.820Z"
+    }
+  },
   "articles": [
+    {
+      "title": "El Gobierno subasta tres terrenos en Palermo por casi USD 15 millones",
+      "url": "https://www.baenegocios.com/negocios/el-gobierno-subasta-tres-terrenos-en-palermo-por-casi-usd-15-millones-5492/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "política",
+      "excerpt": "Playas Ferroviarias de Buenos Aires rematará tres lotes sobre Juan B. Justo y Cabrera. El paquete suma 2936 m² y parte de una base de USD 14,9 millones.",
+      "classified": true
+    },
+    {
+      "title": "La FAM homenajeó a los veteranos de Malvinas y reafirmó el reclamo de soberanía",
+      "url": "https://www.baenegocios.com/politica/la-fam-homenajeo-a-los-veteranos-de-malvinas-y-reafirmo-el-reclamo-de-soberania-3432/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "política",
+      "excerpt": "La Federación Argentina de Municipios difundió un mensaje por el 2 de abril, destacó la memoria colectiva y confirmó la presencia de una delegación en Río Grande.",
+      "classified": true
+    },
+    {
+      "title": "Abril empezó con un aumento en el boleto de colectivos en el AMBA, subte y peajes",
+      "url": "https://www.baenegocios.com/economia/abril-empezo-con-un-aumento-en-el-boleto-de-colectivos-en-el-amba-subte-y-peajes/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "sociedad",
+      "excerpt": "Para quienes transiten el AMBA, ya sea en auto o en transporte público representará un nuevo gasto diario en el bolsillo",
+      "classified": true
+    },
+    {
+      "title": "Tarjeta Alimentar: cuáles son los montos que cobrarán las familias en abril",
+      "url": "https://www.baenegocios.com/economia/tarjeta-alimentar-cuales-son-los-montos-que-cobraran-las-familias-en-abril/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "sociedad",
+      "excerpt": "El beneficio alimentario continúa vigente durante abril y se mantiene como un refuerzo clave para los ingresos familiares de las beneficiarias de la AUH",
+      "classified": true
+    },
+    {
+      "title": "La \"Ley Cazzu\" reabre el debate sobre los padres que no pagan alimentos",
+      "url": "https://www.baenegocios.com/politica/la-ley-cazzu-reabre-el-debate-sobre-los-padres-que-no-pagan-alimentos/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "política",
+      "excerpt": "El proyecto propone habilitar una intervención judicial rápida cuando un progenitor no paga cuota alimentaria o se ausenta del vínculo con sus hijos",
+      "classified": true
+    },
+    {
+      "title": "Alerta por tormentas en el AMBA antes del feriado: cuándo mejora el tiempo",
+      "url": "https://www.baenegocios.com/sociedad/alerta-naranja-amba-en-la-previa-del-fin-de-semana-xl-865/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "sociedad",
+      "excerpt": "El Servicio Meteorológico Nacional emitió alerta amarilla por tormentas en el AMBA. Las lluvias se extenderán hasta el jueves y el cambio de aire llegará el sábado.",
+      "classified": true
+    },
+    {
+      "title": "SUBE gratis para personas con discapacidad: cambio en el transporte público",
+      "url": "https://www.baenegocios.com/sociedad/sube-gratis-para-personas-con-discapacidad-cambio-en-el-transporte-publico/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "sociedad",
+      "excerpt": "La presentación del CUD en el transporte queda atrás con una nueva medida del Gobierno para simplificar el acceso a los viajes sin costo. Cómo funciona",
+      "classified": true
+    },
+    {
+      "title": "Salud simplifica el acceso al buscador nacional de profesionales de salud: cómo funciona",
+      "url": "https://www.baenegocios.com/politica/salud-simplifica-el-acceso-al-buscador-nacional-de-profesionales-de-salud-como-funciona/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "sociedad",
+      "excerpt": "El Ministerio de Salud optimizó el buscador nacional de profesionales y ahora permite consultar matrícula, especialidades y posibles sanciones de más de 1,2 millones de registros en todo el país",
+      "classified": true
+    },
+    {
+      "title": "Bono de $40.000 para fuerzas federales: quiénes lo cobran y cuándo se paga",
+      "url": "https://www.baenegocios.com/economia/bono-de-40-000-para-fuerzas-federales-quienes-lo-cobran-y-cuando-se-paga/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "sociedad",
+      "excerpt": "El Gobierno oficializó el pago mediante el Decreto 216/2026. La suma se abonará en abril y habrá adicionales según el grado del personal",
+      "classified": true
+    },
+    {
+      "title": "Anses activa una ayuda de $357.800 para personas sin trabajo: cómo acceder",
+      "url": "https://www.baenegocios.com/economia/anses-activa-una-ayuda-de-357-800-para-personas-sin-trabajo-como-acceder/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "sociedad",
+      "excerpt": "La prestación para desempleados ya se puede solicitar en abril de 2026 y Anses confirmó cuáles son los requisitos para acceder al monto máximo",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno creó un registro de beneficiarios de planes sociales",
+      "url": "https://www.baenegocios.com/edicionimpresa/el-gobierno-creo-un-registro-de-beneficiarios-de-planes-sociales-010426-015n02/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "política",
+      "excerpt": "El Gobierno oficializó un registro que unifica los datos de beneficiarios para mejorar el control, evitar superposiciones y ordenar la información de la ayuda estatal",
+      "classified": true
+    },
+    {
+      "title": "Aumento en dólares: cuánto subieron los departamentos en CABA en el último año",
+      "url": "https://www.baenegocios.com/negocios/aumento-en-dolares-cuanto-subieron-los-departamentos-en-caba-en-el-ultimo-ano-6184/",
+      "date": "2026-04-01",
+      "source": "baenegocios.com",
+      "section": "economía",
+      "excerpt": "Un informe reveló importantes incrementos en el mercado inmobiliario de la Ciudad de Buenos Aires. Esta tendencia se observa desde 2023",
+      "classified": true
+    },
+    {
+      "title": "Primer encuentro anual de la Red de Prestadores de Servicios Jurídicos Gratuitos de la Ciudad de Buenos Aires",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNTVJXSEtrYTYxMVRhZUxfUlM3dnFzZUZsUjVtcTNFR0c1cUlZWGNzNkxrY256Smd4QU45bkw1aUdvV3kyckhwQzNmZG1QbTJCN3lrNTVzQW0wUHB0VWxiNVZldUVTU1ZJNjZjalJpWExHOXlEVEowc3VKdlFFRm5ZY0ZyaGdGRmcteGtyOHVVb0JVdlhMbGtvQWwtazRXamNlcjZyUTRGemI2OXVVYUFuTzJZTEk4eTJEdXNBenM2dEVTQm5PemFvNTRyb3RYWEFEQ1NmeEZ5NnVQNHljNVE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "Defensoría del Pueblo CABA",
+      "section": "sociedad",
+      "excerpt": "Primer encuentro anual de la Red de Prestadores de Servicios Jurídicos Gratuitos de la Ciudad de Buenos Aires Defensoría del Pueblo CABA",
+      "classified": true
+    },
+    {
+      "title": "La Legislatura porteña comenzó a constituir sus comisiones",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUlRSZ2xiWmhVNjZ3LXZTdjNqRmE4cnkzLWZjRlJweURHTFJLdVpSX3VQZmhiQkpfUnI2UEY5bUpGVEJmQjZEZlBPaTRiZzZ5WEpZNGx4UUJ1MFloSmRzcmFITTFLWThiM2JFcnRXWEVNN203RFlyYkFnYnF2LTZqTXZiRk1XUm5YcGNmRktjSENJb3c0QVZwVFREamxZWkwxdFE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "Parlamentario",
+      "section": "política",
+      "excerpt": "La Legislatura porteña comenzó a constituir sus comisiones Parlamentario",
+      "classified": true
+    },
+    {
+      "title": "El gobierno porteño creará un parque de 6 mil metros cuadrados en un predio ferroviario de Villa Urquiza que estaba ocupado",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQMk96bEpOMG9jSGY1NWFNVUtpWEEzLXZJNG9nWHBlUnlkVnhqMjJGQkRxeGF2Wi1hUFlDaUhNLXdkOUdPc3FJRzJfMEhsalM1VmJyc1JBenJUeVZqWkFhUEZ6YmUzNzd1MTNYblpkNE0zRURySXlrakNoVnJZenJ2bXV5R3JBZEhGRVJOVlVYOWpCc3Zib241Q2dxbXdJRGtRNnNGMlo1VW83RlV2ZzBUWExYYWRiV2xfN2hiR25sczYycmphSXlKYURaZFNjM00yTmZ0aHcxRkYtX0F4dHRCdnVXYldYb1hadGoyS3kxQTgtWlJMeF84TUxCYUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "Infobae",
+      "section": "sociedad",
+      "excerpt": "El gobierno porteño creará un parque de 6 mil metros cuadrados en un predio ferroviario de Villa Urquiza que estaba ocupado Infobae",
+      "classified": true
+    },
+    {
+      "title": "Adiós al efectivo: la Ciudad de Buenos Aires eliminará las cabinas de peaje de cobro manual",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQb3lxcFRPazhkcDNad19CNnVTTmxTUU9rTE5GTFdHRTZGaHZla0V0Q1RObzVQYXItcTI4S1F6cWFGZFFXVHRsVkJYUWliX2lDNlBKVU81YjA3dGlVWjdtMG5KdHZwbkhKS1Z2enFXR29qS1VhMHI2eG1FOVJXQ0stZ2F0TEhYX3paNlBpNGtySWNFUzA5NHRIa0syYlFvNnQwajhkYnhyS29lYXFBYXp2RmZ0dGtuS2hhSFpTU0ZIR1FfM0pYY2lTSm44TDVxMEVyVE9V?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "La Nación",
+      "section": "sociedad",
+      "excerpt": "Adiós al efectivo: la Ciudad de Buenos Aires eliminará las cabinas de peaje de cobro manual La Nación",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno porteño le reclama al Ministro de Economía Pablo López una deuda millonaria por asistencia social",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOUUpfVms0RGtYSk1oRzJ4Skg2RHFFMlpsN09kbEJRWnc5R1VuWjEtS2RtNlB4TUtucVRaVFZsTTlNUTlzbG94d1JjN1JUYW1RQ2lwb21IZmxoSkRIVDdYMlBFSllmYzc1T2gtdG13Z1pOdkFHQ2c1akxtbkxic3Flc0pFUFVjakx5cXZZbWlNZFpaWGZ1VHVVRnBweVkweG5GdE9iak9HSDcydTlkUXpQTUVhXzh4N0tUNDc2bnJCU3VMQ3RJVW1FWHJ0MFE5dllnWGNNbjhwR0pZRHJBSXZkSkFKUzFDZ0Jr?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "Radio Mitre",
+      "section": "política",
+      "excerpt": "El Gobierno porteño le reclama al Ministro de Economía Pablo López una deuda millonaria por asistencia social Radio Mitre",
+      "classified": true
+    },
+    {
+      "title": "El gobierno porteño de Jorge Macri licita los medios públicos de la Ciudad el 20 de abril",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUmdUbHdEbFJzVDlKRFRjRk1rU29BSVpLVUg0QXhvZVNHNkM2MDQtREZEMjFXd0xHeXpEVWhEVUlCWUNoS2dIa3JEV1J0ZmpOdTlhQ2I1aDJibHllUVh1U2VPR0pOZkJDOUExLWlILTNlbzJiQm54X3NuNFVraVBuaG9SNGZxRWFhQ25idmkwZ3pvOVZFeFRhR2dXaGRNR2pCaVpfNVNoXzJsWHgtNDNPcVBxMloza1pK?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "clarin.com",
+      "section": "política",
+      "excerpt": "El gobierno porteño de Jorge Macri licita los medios públicos de la Ciudad el 20 de abril clarin.com",
+      "classified": true
+    },
+    {
+      "title": "Disputa CABA-PBA: Jorge Macri reclama deuda millonaria por personas en situación de calle",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNazR5ZWtfZHJvbVBJZ1lxTGhick54Z3hENExjU0VWREI2V0VXQmd0Q3ZRYURuNU9CNnQtbUl5LTdrUS1tWTZDcEIzR2VYS0F6cnN4czhTdmV2U1ZhZnhaTGdqSnBPMTRRTnJlUVpuTzNOY0NxQnNoWDN2RjZuZHF4bndwWTdPRmZweW9uajlXdW5JX3ZBTy1ISzRsakU1dDFEdVlNbk02cWVCUnA2MjRqVF9wVE5yX29feUExTA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "La Tecla",
+      "section": "política",
+      "excerpt": "Disputa CABA-PBA: Jorge Macri reclama deuda millonaria por personas en situación de calle La Tecla",
+      "classified": true
+    },
+    {
+      "title": "Egresaron 212 nuevos agentes de tránsito en la Ciudad de Buenos Aires",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVUJMU083b2Y3QTZNWVI4dEpvaWJpQ215Xy1DT25xdVRCajZlVFVXbG5vSXhTWlByYzgzZ2xEZTlqQWZtVm5ERHdfVFNaak1vdXhBUVd6R1ctVUhaQU12MEtyblhFWDAzLTVBdnBvSFhQOVdEZll2cUVVNWhHYUZMYnVIMmJBVmpnd0NzbW9yZDZmX240MWg4Qmw5UzcxY1UtdlE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "puraciudad.com.ar",
+      "section": "sociedad",
+      "excerpt": "Egresaron 212 nuevos agentes de tránsito en la Ciudad de Buenos Aires puraciudad.com.ar",
+      "classified": true
+    },
+    {
+      "title": "Jorge Macri quiso cobrarle la atención a personas en situación de calle a la PBA y un ministro salió al cruce",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxONS1QaTBkMWhQZWxQRXk2V0VOV1o5Y09fdEJDdWZQVEVWT2NPc0hPWlFwRGNNLThkZ2xpNFlqMmVQYU96MDRNU2V2VTJDa3Z2bjN6UlpsOGFuSjA3SzQzdWZwaUlEOXFVcEVSbnlKRjQ3cHZSNkFaZjdNMFVEMk1WWUh5VEtFV3RpanZlaTBfQlMyUU1jYVhrVlZySGhscVZiWDhRYkRaOUhna19DcDJOdWcxX2Z3YkhMWG9qYks2WkEtVml0TWljLWROYk5hWXczRUtURmVZOW9VTmtoOWhYT1ZQWENyeTZ4bGRiRF9TVUcwd0lRa19GVU9TMkhvUdIBjAJBVV95cUxQSW5rY19Vb09tb2ZWUzhmWkVRZWtpTG9Zd3g0X0ZGMy1aVnRPaWozdXpXcVd5UlNZZWdwNVdGQzU5UENfMWs2MWlzakc2Wjg3QWR2ZzhaZUtrbzdRTzZRLUZvTmZxaE80MEJ4SDFQalRyMzhkYm1jRDlUeERncjRvNXVZUzNqc1RUTjAzdHJ0U3J5LVNVZnFjTUs4dG1MTV92Z0YwSHdUMjBYaFVUcHNTaXJ2NHV0d0N2aXMxOVFVSjZ5LW4xN1N6ZzFUbk1Fa2U3XzFESGtGTkozTjB1WlFMX2t1bXhvQzg0TlppcWswVGVpQzJWWjFCM0xFaEVvNV9WR25lNGZwbzA1X3R2?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "Diagonales",
+      "section": "política",
+      "excerpt": "Jorge Macri quiso cobrarle la atención a personas en situación de calle a la PBA y un ministro salió al cruce Diagonales",
+      "classified": true
+    },
+    {
+      "title": "Jorge Macri le exigió a Kicillof pagar la atención de bonaerenses que estén en situación de calle en la Ciudad",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNbDdFRnNlMElkb0lzaDRnVmttQ3BkTUREVzMzaDBXbnJQTlZuaWN0dEVYb2o2X0lKektNYlljZ1N5bXVTdXNYUDRXQ092TGp6SWJZZmU1bmpVaVFyX0VjU09tV1IxVU5Cbjl0NmNjQXNwZC1SNXg1SFdYRUdUZTk2YVpKVXM2MzR1VGNTenQxTVVaV20wVHJ3dHh3azV0T2xJZURnUXhDRTVyMm4xMTRKQ213LXNjMGY1d2xJX3pycDY3TnZOa0xVYm9VR2xqWEtYM1hvS0FGNGkySi1GRTZRVlFCQ3QySlVzSnlPYlpWb3JaZWpEcEd2bkhobmRadkQ3LVNYSlRDSdIBlgJBVV95cUxOM21kNy1qOTVEeWxuWHZ1YXM4X0c0RHVIUTJEa0FyaWowRGs0YlpVczFyWVFNa0RZN2dEWERneTBrTzZqclZJM0tIWWg1UkoxcjBmdzVWVjJ2LXJDbHd4cG43YzlFZF9lZnFERWlqYVRmRWNPUDlpZS1ZZEdwYkhGOE9XcVotLTAyZnRLZXVoalZwd3FXVG13d2FieG9rZ1VmNW80aG5XMVRWaFNUNUR5WmM4TlgyUk16dXFZby1qTDRXZGhTN2M2SDNSNlc3MU9IWURvdjBidDVqbmRVWlBvQkxKbnpnbHpRQmVoZW05ekxpUmJwN2NUS21SMFJkd3V6ZGo0UmtkRERweF9zUnYtMG54LURRZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "Agencia Noticias Argentinas",
+      "section": "política",
+      "excerpt": "Jorge Macri le exigió a Kicillof pagar la atención de bonaerenses que estén en situación de calle en la Ciudad Agencia Noticias Argentinas",
+      "classified": true
+    },
+    {
+      "title": "Jorge Macri le exigió a Kicillof el pago de $27.000 millones por la asistencia de bonaerenses sin techo en CABA",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOX3FkQ2p4bHVvajVIdnpMQmNjeHVjQmRaSDVQV29Nc0ZtMm5od3ZvRHY5eGZ5aldmemg3VFZJS1ZHOEluZHlUV2xXbHMzT0tNbGROZldCcXhCUnI1c3BfWGE0QUlXcHBXZHRyMHEwU09feC1NaWRnc3FGaDdVejRLVDVtb2NaS19FZXNKY2RYUkFscVhfUndTLVMyLXU1ZFlPMWF0VW9QQzRld1o3Qm50cHJUVUFTVnZPVWcyenJlVHVSQ1FCNld3UmZVQTlINFpkTkNwS3dPM01aVTlCZzZQVTJtQktnWWo4bXfSAYQCQVVfeXFMTXBfSXdJSTNSUzZQbU5abkpLQ2Fzc1RNV2ttOWMzTEVaWHd2ejdSNGNxRGUtMGJ4ZXVuOWxIalgxS0FXTERDQUtrNHFFVDJpSFJnenVIMGU2SHNVNU9LcUdWRzE2bHJjMW5kdWxqN2s1dWhUcWVjV0xNMHltTDJSTE5WMHUtMHliWUtJdFdPQl9DZXNoWjYtdzFGOHkyN2F4N25xMS1PLUJUbmFhRjdZcG1NVFplSDFwbnNObktLR3dwbWRXRzZyeVdEZ1kxTGRlemlLVlVQTHpQWEZXRmtvdTY0SEpmeDg5RWlQc1JrYjlOSW8xVXF1MTBLQl9TOE11M3FldGI?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "Infobae",
+      "section": "política",
+      "excerpt": "Jorge Macri le exigió a Kicillof el pago de $27.000 millones por la asistencia de bonaerenses sin techo en CABA Infobae",
+      "classified": true
+    },
+    {
+      "title": "Jorge Macri reclamó a Kicillof una deuda de 27.000 millones por asistir a personas en situación de calle",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcnc4OUg1cFhnZmpEUkxlVURkd0gzRDhCTkUyY1JxdllFMHFwUXoxbXNxMVRIUElXdEpDRks1am43NHdhWDRFLVlCTHB0NnFmVUtrVWsyclBhV2czYUZIM2lYU3pnaHNfdHhKeHY4cUF2amVNaDY5dmdCaElraDNySEYxNGc0VV9YTVdTcFZoUzA0bkZVcmF2RkJTY0xOclUtaVRPVFZkYWNmM0RfQ0pIZzB4TFR0aVlWWkd6X3pIbkYxSzJSU0FmbDZLTzFGaTFEUDQw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "El Eco",
+      "section": "política",
+      "excerpt": "Jorge Macri reclamó a Kicillof una deuda de 27.000 millones por asistir a personas en situación de calle El Eco",
+      "classified": true
+    },
+    {
+      "title": "Caen los índices de pobreza pero crece la indigencia en la calle: la Ciudad denuncia falta de infraestructura en la Provincia y reclama fondos millonarios",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQeDJJRE1DVE9lSTNtakxZVm9ZbzMyYXhYNGpJTnJucXljWEpsRnVfWU5QaVlINkhEQlhTdUh6TmJwMTZPbENGTTlHY2FTaWRSWnc4UWdNRExVWmVfWnFWX2tfclZjdDRrbUFVM1V5dGxzN0l0OWR5bUV2NndfM3BHSkdBelYtWGxCSnZqQ29mdDc3MkxFeDk0MFhUanp1c3lnMy1jQmlXdmEyVDkzWktTMlFhajFZM0NPUG1qWlFodFkwLTNlT0hsRXg4TVZkcGVMZ2tmYWhHMlhFLTN2VG1mX21FRVp0NXFzWmFfV1dnMF9DQkJQa1NHM2RtUlFRQ0dlQlQ0WDVVaXRIN1lvV3B0Ty04ak9LU1R5UE1udW1MeThPeFo10gG_AkFVX3lxTE90amFISXdCTk0tTzRaNkEyQmZFOEh0TDBQTkxCNTNIcl9mdEl1M2RsYkE4QUJ5WWVQZ3ZMZW5VcGl5SkpkX09wV2RzTHlnb0lpMzZPbndWTldSbWY0cnp3UW1RNXpJS3JDU0loamNYTnpRaWNidEZCYzV0NHF3M1NwNldLSTVDclc0ZkhrQUFWVklNaklLZ2pqODZ6RE8zQVdBR3ZlWVI3U1JQWl9WNVJqaVZaMkZQc2RDdFhuYjFkcnN3OWY1aGZtdUFReEs2VExqYVJETzRlemI1bjctTWJlbWlrMFU2SVBZWXYydW5hMkFBRnp6RC1NZUYycThrMERCd1pXal9la3N5QUlBQ3NXcWpweWI0WVB6NnJhR2lSbUQ3eEVSNk5OUlhzbUpqaXdLZHNRQWNCdVBhQ3NnQ00?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "Infobae",
+      "section": "sociedad",
+      "excerpt": "Caen los índices de pobreza pero crece la indigencia en la calle: la Ciudad denuncia falta de infraestructura en la Provincia y reclama fondos millonarios Infobae",
+      "classified": true
+    },
+    {
+      "title": "La Legislatura porteña impulsa una declaración de pesar por la muerte de Daniel Buira, fundador de La Chilinga en el barrio de Saavedra",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPU2o1OFZuMWhUQXNIVncxWHhzWFhwaGFmMEE3eDdSY21RR3BIci1aYzhmb3UtRnNqclFIRkgtVHBENkhTUDg3Z1NyWWNjZ0hoUG9NU0g5b18xR2RUOVpIM2dtMkptQXpIa2EtLWlnZ0szd3lQWVFRTjVZRlNrMmdmZjFQeXY0aGhtR0NzaGpRbmJ4VzNVQlBXYm01WE1NUmpLNTM2bEthVjRaMlMxT3dkZk1OZWxxYnhGS0JDMmw5MW1zUFpEb1BYNXV4Zm12UXI4cWRPNXBXMEhtcF8yMDY5VS1GVDlVWE1zMllxZA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "saavedraonline.com.ar",
+      "section": "política",
+      "excerpt": "La Legislatura porteña impulsa una declaración de pesar por la muerte de Daniel Buira, fundador de La Chilinga en el barrio de Saavedra saavedraonline.com.ar",
+      "classified": true
+    },
+    {
+      "title": "Aumentan colectivos, subte y peajes desde abril: cuáles son las nuevas tarifas en CABA y Provincia",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORTI2eHFXX1FZYkNNZVpGaFRzRTA5S2k3TzNXNGRJYWtlcFdIbm9jMEtDQ0U2TVFsc3pSeXdIMjNtTGhOUndUa3FwRUs0b1dFVXphUlZWOXZibXVNbUZib1NLTVhxaDBYTzFWRHJWaXpWdTBNREtJR0h2WUxLOG14T1c0NjJ4dDQ5YWhPZ1RPMzlXWFdWbGJVWWx6SDBUa2I3cWx6UGMxbW9mbjJpcWZOOG5nRzdTSk1sUktsLURXQkhISkJEdFh3RHJQZno1RTlr0gHQAUFVX3lxTE5FMjZ4cVdfUVliQ01lWkZoVHNFMDlLaTdPM1c0ZElha2VwV0hub2MwS0NDRTZNUWxzelJ5d0gyM21MaE5Sd1RrcXBFSzRvV0VVemFSVlY5dmJtdU1tRmJvU0tNWHFoMFhPMVZEclZpelZ1ME1ES0lHSHZZTEs4bXhPVzQ2Mnh0NDlhaE9nVE8zOVdYV1ZsYlVZbHpIMFRrYjdxbHpQYzFtb2ZuMmlxZk44bmdHN1NKTWxSS2wtRFdCSEhKQkR0WHdEclBmejVFOWs?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "zonanortehoy.com",
+      "section": "economía",
+      "excerpt": "Aumentan colectivos, subte y peajes desde abril: cuáles son las nuevas tarifas en CABA y Provincia zonanortehoy.com",
+      "classified": true
+    },
+    {
+      "title": "Legislatura porteña: se constituyeron las Comisiones de Salud, Espacio Público, Turismo y Deportes",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOLXp3QjRzXzRBV1ZBNUllS2JGYS1yTV9LNTVuU2VZV1BlWGFCZGdacXY1ZnlNVnU4anJBV2VTdEpyLXppa1NsVXZ3bHpGT0pPSFFKdThkQnZUbWRDNy1BNXY0NjVuV0tkMDdfU3M3MGh4Ul9VR19KWFhyNEJyQm1VX25RV2FaYVRTWXlDM1JjREgzOUVuQjM1dHhtcnZPUVY2eWdyRWJrUVQ4NjItLWwxRzl3SjExdUE4cjQxaEFRejFLU3EzN3VaOGo5OHlDQdIBzAFBVV95cUxNbXp3akVwSF9uSWxhMWZfUnBvclNJN05KY0t6YlVSbXViOEJCbkkzQ092dkxwa1lwQUl0WmJDblNIS2xJXzZUUng4aWNuNWFPS045Vm92Q3p4Z3NhRWdUdld5T2N5TFpySnhMd2tJbHlDY2JaM3diTjJHN2Q1SG80aGdLUVJPOV9IenJXZlFkdXc1dER5aF9kNmRQckJVYk5Eei1MbEh5dkl5QkFHRVQ5dUlKMW9VdEpjY1VwcGFIYVNWcFVrRWg1bUp2NmI?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "Cronos Noticias",
+      "section": "política",
+      "excerpt": "Legislatura porteña: se constituyeron las Comisiones de Salud, Espacio Público, Turismo y Deportes Cronos Noticias",
+      "classified": true
+    },
+    {
+      "title": "El gobierno porteño quiere cerrar la mitad de los cursos de un secundario de reingreso para jóvenes que",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOaG9KWTNHYnJVbTAwS2hqRDBudU5CamhnTFFzSDE2OUJubll6NlVQZWxIT3RKYVBCeS1QTXNCMDVZWU9FYS0tZFJHOUQyZVQ0ZTFLUk5wd1F1NkFCSkhYX0NhVEZCdHEtYTgyQ0lKQ3RPQ2dpanl3VWQ4ajBlRHZYREFKakRpbnVpa1BOek56ek1lcWVsbGhEY2lIZUJndmh0STRoeGZnb0E2NmVCSnRTaWVvQ1R4WFJ6OEMwQzhva3B4SGZJd01IeHUtUlh5RnUyTTJrN3VwbkI3TTF3eG1yV2NQRTlESG1Eenc4RlZ6RXR2WUFFVXc5TW9lR1NoMEVv0gGGAkFVX3lxTFB4RjhrZjhya19DUF9sQWJTUVAwMEN0WlA4Qy1nOVVZcjRSQWMzdGZBME80Q0VaQUFrTzBiWFFwcnpwcTlnaVN6Z2lvNV9kbTdDMkpadVhSZGtvVnpTUGFVMVBaZXpTdG9XR3dEa0d5SDZzQzVuRlZlcXYyM1lUMUs5N01GR1J6R0pWVDc5bjM2TUp0RXQtREpGSnkweHh6dURQOUdtNmFFeXkzWG5pMWROSlRmbzdZenNENnZBMFRlNG1OTEpRV1hibTZxdDdXVHozZUJVQ3hzdTlTOTltTDJvMWdUMGt3c09VX3BtdDZkX1VGQU9PMFBqazZhajBjNGlESkRiM3c?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "Tiempo Argentino",
+      "section": "sociedad",
+      "excerpt": "El gobierno porteño quiere cerrar la mitad de los cursos de un secundario de reingreso para jóvenes que Tiempo Argentino",
+      "classified": true
+    },
+    {
+      "title": "¿Cuánto aumentarán los colectivos, subtes y peajes en la Ciudad de Buenos Aires a partir del 1 de abril?",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQV2w2Z3R0WDNKTTk5bDNRWWhMRXUyYkFnQVNVM1hPNXJlNkVYZ0o2SHhrTENia3V3b1c3bThJaThvSlB5NGJwVWNxaGFLZnRndnlmSnJLeE1PQnIxQ0tGbjhRSU1LX3RtNlBVX29TbTlqU2lETEZmRnFmM0tlckZoLUdRVVlYX2FXZld5TWJ6WjZMVmdodk1ndERvV2p3YWRYTEtrSjY4LWtud1pKNWVPSXd5VVg0S1BXU2hmUW1CNWNOY2FRaC1uMklDWVRPT0hQSFpER242ZWdYSlIzbmV1WHRlRWJvUGR3amNZMHBn?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "tycsports.com",
+      "section": "economía",
+      "excerpt": "¿Cuánto aumentarán los colectivos, subtes y peajes en la Ciudad de Buenos Aires a partir del 1 de abril? tycsports.com",
+      "classified": true
+    },
+    {
+      "title": "El GCBA obliga a geolocalizarse desde los dispositivos personales a los empleados.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQT2tNSEU2YVpDUWhpTUd2MDhRaU5qY1JZLXRNYVNSc1VheEQ3WU1lTGVfVWE1NzhXOWYxZFM2TzI4a20yNm13TWNQMU11VUxkM1d4SGVzd1d1aS1xY3FJVkVnMUc2eGpfWkxILWVyQXhWX04wdGhOMnpNU28wZXE2eDNrRzVtX0RJcW9BQVNpdHc1Z3RoQWFrUFdhX091S0NEN241aDZVYjNjMlJkZUxzRmJ3?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-29",
+      "source": "ATE Capital",
+      "section": "sociedad",
+      "excerpt": "El GCBA obliga a geolocalizarse desde los dispositivos personales a los empleados. ATE Capital",
+      "classified": true
+    },
+    {
+      "title": "Las denuncias contra Manuel Adorni complican su candidatura a jefe de Gobierno porteño",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQb1RXR1l0VTZiWDJ0Wlp5UlZoRTJkNmVzMTk2ODhFbHhZZ1plNkpNYS1HenJHU0FCUWJONExmaGxLeVlXaVItV3ZDOUl0M1JrZXY3V1lUVkZzeW5TN1Y1YVZGenlGZzdSSzVPUWp4eVJNNm9Objh2LXRFYmdYR2JwUDFGRlVCTEdDVzhSSFlBWXVCR2hHTmw1TTAzOWtUTE42a25SVkgyM3ExdEFVemgwRENDS3FFbFR4TldlbVNOQ0Izbkdv?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-29",
+      "source": "Página|12",
+      "section": "política",
+      "excerpt": "Las denuncias contra Manuel Adorni complican su candidatura a jefe de Gobierno porteño Página|12",
+      "classified": true
+    },
+    {
+      "title": "Jubilados con DNI 0 a 9: cómo quedan distribuidos los pagos en abril",
+      "url": "https://www.baenegocios.com/economia/jubilados-con-dni-0-a-9-como-quedan-distribuidos-los-pagos-en-abril-6754/",
+      "date": "2026-03-28",
+      "source": "baenegocios.com",
+      "section": "sociedad",
+      "excerpt": "Anses definió el cronograma de pagos de abril para jubilados y pensionados, con fechas escalonadas según la terminación del DNI",
+      "classified": true
+    },
+    {
+      "title": "El gobierno porteño invitó formalmente al Papa León XIV a visitar la ciudad de Buenos Aires",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQ0h6SnRHNkFGZjZaV3dpR3h4TkVzV050OXd1SUhQU1BXQ21nalBKYVQzT3JMREVJa2doYXZKY1c1X1R1ako2bTF3eDNjN2NCdjB4eHVmZC1EaG1UQzdUcnlpanYtU1UtTWZvcFRNT3dFZmZGSnAyazk5c0p1bm9mRVpJei02U0RFVDZNRmxtVklaNlk1Rm8zOE5XOUhUTHlyWmVES3dndmpaT0N1SDRqam9CVnpvT1RkX0JMY0l2MEJQM0FFWUtZSXV6bWdvc2piaWfSAewBQVVfeXFMTW5QLUxvcVBiVmJNX3Jad0hHLVlCU0kxM3oxRGhhYkhKVlkzWERYQ0QycC00a1JEaVk4TGJuVlBCQWxGVGVzUlZoTVZaaWdtQVZmOHg0S2F5cW1RbU04REsxMlhBZHNyNEhET3F1U1dPRVNYYnd1ejdfUDdOUy0tTlJkaGxsckF1UzRyVkh1a1RLbkFtX1N6cElSV1lKaGtXaDFMS3BxSlVtOUFkakw1TEF2U2VyYXhkYzEzVVFHb2M4dHhHYUhKX05HcFdJNFR3aGFjSmREajhBdlp2a0hpYWZWWDh4Rmlic0dYZ0k?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-27",
+      "source": "Infobae",
+      "section": "política",
+      "excerpt": "El gobierno porteño invitó formalmente al Papa León XIV a visitar la ciudad de Buenos Aires Infobae",
+      "classified": true
+    },
     {
       "title": "Empresas de colectivos del AMBA reducirán frecuencias desde este miércoles por la suba del gasoil",
       "url": "https://www.baenegocios.com/sociedad/empresas-de-colectivos-del-amba-reduciran-frecuencias-desde-este-miercoles-por-la-suba-del-gasoil-3226/",
@@ -72,30 +395,12 @@
       "classified": true
     },
     {
-      "title": "El gobierno porteño quiere cerrar la mitad de los cursos de un secundario de reingreso para jóvenes que",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOaG9KWTNHYnJVbTAwS2hqRDBudU5CamhnTFFzSDE2OUJubll6NlVQZWxIT3RKYVBCeS1QTXNCMDVZWU9FYS0tZFJHOUQyZVQ0ZTFLUk5wd1F1NkFCSkhYX0NhVEZCdHEtYTgyQ0lKQ3RPQ2dpanl3VWQ4ajBlRHZYREFKakRpbnVpa1BOek56ek1lcWVsbGhEY2lIZUJndmh0STRoeGZnb0E2NmVCSnRTaWVvQ1R4WFJ6OEMwQzhva3B4SGZJd01IeHUtUlh5RnUyTTJrN3VwbkI3TTF3eG1yV2NQRTlESG1Eenc4RlZ6RXR2WUFFVXc5TW9lR1NoMEVv0gGGAkFVX3lxTFB4RjhrZjhya19DUF9sQWJTUVAwMEN0WlA4Qy1nOVVZcjRSQWMzdGZBME80Q0VaQUFrTzBiWFFwcnpwcTlnaVN6Z2lvNV9kbTdDMkpadVhSZGtvVnpTUGFVMVBaZXpTdG9XR3dEa0d5SDZzQzVuRlZlcXYyM1lUMUs5N01GR1J6R0pWVDc5bjM2TUp0RXQtREpGSnkweHh6dURQOUdtNmFFeXkzWG5pMWROSlRmbzdZenNENnZBMFRlNG1OTEpRV1hibTZxdDdXVHozZUJVQ3hzdTlTOTltTDJvMWdUMGt3c09VX3BtdDZkX1VGQU9PMFBqazZhajBjNGlESkRiM3c?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-31",
-      "source": "Tiempo Argentino",
-      "section": "sociedad",
-      "excerpt": "El gobierno porteño quiere cerrar la mitad de los cursos de un secundario de reingreso para jóvenes que Tiempo Argentino",
-      "classified": true
-    },
-    {
       "title": "Ciudad de Buenos Aires lanzó becas para personas con discapacidad",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRmFOOTlRZ2NzcTNUUjV3REUzU3A1dmlQTmFfaTRZdHp5dVB6czh5UU8zSnJuMVdVUU1sZVdFdnF0Nm5ZT21XM1VBRUtYSC1GZUdZU3pkcF9hTzU3NlhYVHM1ZnpCelVHbEJkVGtzSlhRRnlRT0ZSWUFZcmtoNXJTTlFXRndYNDVBdUJ1aWt3cUVZY0hqSEZoQm9MZF9pOTZaOHZ1aQ?oc=5&hl=en-US&gl=US&ceid=US:en",
       "date": "2026-03-31",
       "source": "EconoBlog",
       "section": "sociedad",
       "excerpt": "Ciudad de Buenos Aires lanzó becas para personas con discapacidad EconoBlog",
-      "classified": true
-    },
-    {
-      "title": "¿Cuánto aumentarán los colectivos, subtes y peajes en la Ciudad de Buenos Aires a partir del 1 de abril?",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQV2w2Z3R0WDNKTTk5bDNRWWhMRXUyYkFnQVNVM1hPNXJlNkVYZ0o2SHhrTENia3V3b1c3bThJaThvSlB5NGJwVWNxaGFLZnRndnlmSnJLeE1PQnIxQ0tGbjhRSU1LX3RtNlBVX29TbTlqU2lETEZmRnFmM0tlckZoLUdRVVlYX2FXZld5TWJ6WjZMVmdodk1ndERvV2p3YWRYTEtrSjY4LWtud1pKNWVPSXd5VVg0S1BXU2hmUW1CNWNOY2FRaC1uMklDWVRPT0hQSFpER242ZWdYSlIzbmV1WHRlRWJvUGR3amNZMHBn?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-31",
-      "source": "tycsports.com",
-      "section": "economía",
-      "excerpt": "¿Cuánto aumentarán los colectivos, subtes y peajes en la Ciudad de Buenos Aires a partir del 1 de abril? tycsports.com",
       "classified": true
     },
     {
@@ -168,15 +473,6 @@
       "source": "diariolavanguardia",
       "section": "política",
       "excerpt": "La Ciudad de Buenos Aires anunció la creación de un Distrito de Inteligencia Artificial diariolavanguardia",
-      "classified": true
-    },
-    {
-      "title": "Las denuncias contra Manuel Adorni complican su candidatura a jefe de Gobierno porteño",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQb1RXR1l0VTZiWDJ0Wlp5UlZoRTJkNmVzMTk2ODhFbHhZZ1plNkpNYS1HenJHU0FCUWJONExmaGxLeVlXaVItV3ZDOUl0M1JrZXY3V1lUVkZzeW5TN1Y1YVZGenlGZzdSSzVPUWp4eVJNNm9Objh2LXRFYmdYR2JwUDFGRlVCTEdDVzhSSFlBWXVCR2hHTmw1TTAzOWtUTE42a25SVkgyM3ExdEFVemgwRENDS3FFbFR4TldlbVNOQ0Izbkdv?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-29",
-      "source": "Página|12",
-      "section": "política",
-      "excerpt": "Las denuncias contra Manuel Adorni complican su candidatura a jefe de Gobierno porteño Página|12",
       "classified": true
     },
     {

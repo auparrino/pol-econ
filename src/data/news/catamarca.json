@@ -1,38 +1,59 @@
 {
   "province": "Catamarca",
   "slug": "catamarca",
-  "updated": "2026-03-31T23:31:45.669Z",
+  "updated": "2026-04-01T20:33:48.601Z",
   "sources": [
     "Google News Catamarca",
     "El Esquiú",
     "Diario C"
   ],
+  "summaries": {
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n* No hay noticias relevantes sobre la política provincial en la última semana.\n\n**Situación económica local**\n\n* La provincia de Catamarca se consolida como nuevo polo del litio en Argentina, según un artículo de iProfesional. Esto sugiere un crecimiento económico y un aumento en la inversión en la región.\n* NGEx iniciará la perforación en Catamarca, lo que podría generar empleos y estimular la economía local, según un artículo de Rumbo Minero.\n\n**Temas sociales relevantes**\n\n* No hay noticias relevantes sobre temas sociales en la última semana.\n\n**Tendencias y patrones**\n\n* La semana pasada se destacó la importancia de la economía provincial, con noticias sobre la consolidación de Catamarca como polo del litio y la iniciación de perforaciones por parte de NGEx.\n* Esto sugiere que la provincia está experimentando un crecimiento económico y una mayor inversión en la región, lo que podría tener un impacto positivo en la situación económica local y en la creación de empleos.",
+      "count": 2,
+      "generated": "2026-04-01T20:33:46.674Z"
+    },
+    "month": {
+      "text": "**Análisis de la evolución de la provincia de Catamarca en el último mes**\n\n**Desarrollos políticos provinciales**\n\nNo se reportan cambios significativos en la política provincial en el último mes. Sin embargo, la noticia de la perforación de NGEx en Catamarca sugiere que la provincia sigue siendo un destino atractivo para la inversión extranjera, lo que podría tener implicaciones políticas en el futuro.\n\n**Situación económica local**\n\nLa provincia de Catamarca se consolida como un nuevo polo del litio en Argentina, según la noticia de iProfesional. Esto sugiere que la economía de la provincia está experimentando un crecimiento significativo gracias a la explotación de recursos naturales. La noticia de NGEx sobre la perforación en Catamarca también respalda esta tendencia.\n\n**Temas sociales relevantes**\n\nLa seguridad es un tema relevante en la provincia de Catamarca, según la noticia de Argentina.gob.ar sobre la detención de 4 kilos de marihuana ocultos en el baño de un ómnibus. Sin embargo, también hay noticias positivas, como la organización de la Copa Robótica Argentina 2026, lo que sugiere que la provincia está comprometida con la educación y el desarrollo tecnológico.\n\n**Tendencias**\n\nEn general, la provincia de Catamarca parece estar experimentando un crecimiento económico significativo gracias a la explotación de recursos naturales, como el litio. La inversión extranjera también sigue siendo un tema relevante en la provincia. Sin embargo, la seguridad sigue siendo un tema de preocupación en la provincia.\n\n**Cambios**\n\nNo se reportan cambios significativos en la política provincial en el último mes. Sin embargo, la situación económica y social de la provincia parece estar experimentando cambios positivos.",
+      "count": 4,
+      "generated": "2026-04-01T20:33:46.674Z"
+    }
+  },
   "articles": [
     {
       "title": "Argentina: NGEx iniciará perforación en Catamarca",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdGRCVURJWGZpMnYzWktVZ3NvZm1yLWIzOTFqVWRPdHphYzJyZkswWE00WERTaFk5enRlcndmVDdScDQtdHBkM3B0QWJOVVdqLVFNYzF0ajJHcVNnaV9YSnBZbjk0V0tmMVdRbVB6a2gwOEJqZDJSbTNEcE10YVFERUlzRGZjU0JnbUdsYmRjeEw?oc=5&hl=en-US&gl=US&ceid=US:en",
       "date": "2026-03-30",
-      "source": "rumbominero.com",
+      "source": "Rumbo Minero",
       "section": "economía",
-      "excerpt": "Argentina: NGEx iniciará perforación en Catamarca rumbominero.com",
+      "excerpt": "Argentina: NGEx iniciará perforación en Catamarca Rumbo Minero",
       "classified": true
     },
     {
-      "title": "Te presentamos la Copa Robótica Argentina 2026 - Ministerio de Educación - Gobierno de Catamarca",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQa1ZUMkpNTUJhTHozVDVBcHBPUkZYa3NqMHo4TFg3S0pVeDVYZEZJNzVRVEtWQXBFRGlvOHVjNG4tWjlEMlQ1RENsV3ZHMG1rWDluMXUxYmdtdl8xQlRwLXFlMi1ha3Nfd01ZWWJacUhSMlYxcVJpc3Y4ZmlhZTFQUXN2bHVOYTdOMDAxdk9Jd2tpcVFiWVZMWWMxLTBCQTJFS0E?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-16",
-      "source": "Inicio",
+      "title": "La provincia argentina que se consolida como nuevo polo del LITIO",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSEFkQnlRbnF2UnBEeS00X0JiT3RYQklhSWpqd3YxemlaZ2poanA1OWxBeHlkellnQXZ0TmRZSFhnMWFaYjhudjJIVGtlNEF3NFFtQUZnTDdXQmpUWFcyeGxNdUZ2SXhTYXA5Rm1XYjdIeVZDYWFVRGZrMms0OE5wR3hXS0U0VVpWSGtaX29MNUhQY3V4QVNIN3RmRkZfWVExeGdGM3puM3JlMWJ4Y1HSAbMBQVVfeXFMT1dZZnFfSHBzZVVITUZpX2tmQTZHQ2pxbHBKMVczcWRMU1JUeFVwRmR5aFlwUXdvNUVTQzRUSXF0TklnVTNES1picUhjV21CeHJNZU82ZXh0NGFBYUdYZE9sd29UamNucTJpWHFUUVktNDFVeVA4Vl9kdlRNSmtlUUg0Z2dKcHBKeE9MWk4wNGR6MDBsWmx5X21vaTQ3am9SSWVEb0lSZHd1Nm43RXc0WW11QUk?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-26",
+      "source": "iProfesional",
+      "section": "economía",
+      "excerpt": "La provincia argentina que se consolida como nuevo polo del LITIO iProfesional",
+      "classified": true
+    },
+    {
+      "title": "Catamarca: Descubrieron 4 kilos de marihuana ocultos en el baño de un ómnibus",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOaDhlYWNTUTFCV3Q1d2FvMVFYVEhvcF9rSkZCeDY2N2hFWmNOUW4ya0hYYS0xMDd2WnZKUHVFRnN6MmNNdW1jWm90eVhwUENUdWptMXRDUVoxOXBDSnhUMDBkR0s1ZldQNmZhaDZNRjRjLVZHNVJ3bWJhR1E1NXVBbk5ERWdqVmtsdEZvakVUZHJYYTdpc1FnUUdxc1FkNi1HLXBNM0JjRTRxLUZyT3NWejRQQkY?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-09",
+      "source": "Argentina.gob.ar",
       "section": "sociedad",
-      "excerpt": "Te presentamos la Copa Robótica Argentina 2026 Ministerio de Educación - Gobierno de Catamarca - Inicio",
+      "excerpt": "Catamarca: Descubrieron 4 kilos de marihuana ocultos en el baño de un ómnibus Argentina.gob.ar",
       "classified": true
     },
     {
       "title": "Gobierno y Glencore Argentina avanzan en la reactivación de Alumbrera",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONmNfeU1aU3BBRTN3Vm5aZGtuYklTYkdfTVFpWU51M0dGTl9NNmdGZlJubFpXM2ZYQ1czWlIxWVUxWXhSSzVCOWdmMzVKWTVqd0xEMDFKRENBYWt3cFJnbHRHRUdUVDRuUG01VlJyZy1TVm9WMFZMS1lTNjQwempoaGlsOTdTN3ZVMWxoLUFMejBXYW5xOVUyWW9ZTQ?oc=5&hl=en-US&gl=US&ceid=US:en",
       "date": "2026-02-12",
-      "source": "Catamarca Radio y Televisión",
+      "source": "catamarcartv.com",
       "section": "economía",
-      "excerpt": "Gobierno y Glencore Argentina avanzan en la reactivación de Alumbrera Catamarca Radio y Televisión",
+      "excerpt": "Gobierno y Glencore Argentina avanzan en la reactivación de Alumbrera catamarcartv.com",
       "classified": true
     },
     {
@@ -42,6 +63,15 @@
       "source": "Gobierno de Catamarca",
       "section": "cultura",
       "excerpt": "Catamarca cerró con balance positivo su participación en FITUR 2026 Gobierno de Catamarca",
+      "classified": true
+    },
+    {
+      "title": "Te presentamos la Copa Robótica Argentina 2026 - Ministerio de Educación - Gobierno de Catamarca",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQa1ZUMkpNTUJhTHozVDVBcHBPUkZYa3NqMHo4TFg3S0pVeDVYZEZJNzVRVEtWQXBFRGlvOHVjNG4tWjlEMlQ1RENsV3ZHMG1rWDluMXUxYmdtdl8xQlRwLXFlMi1ha3Nfd01ZWWJacUhSMlYxcVJpc3Y4ZmlhZTFQUXN2bHVOYTdOMDAxdk9Jd2tpcVFiWVZMWWMxLTBCQTJFS0E?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-16",
+      "source": "Inicio",
+      "section": "sociedad",
+      "excerpt": "Te presentamos la Copa Robótica Argentina 2026 Ministerio de Educación - Gobierno de Catamarca - Inicio",
       "classified": true
     }
   ]

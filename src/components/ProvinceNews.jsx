@@ -1,42 +1,60 @@
 import { useState } from 'react';
 import useNewsSummary from '../hooks/useNewsSummary';
 
-function renderMarkdown(text) {
-  const lines = text.split('\n');
-  const elements = [];
-  let i = 0;
-  while (i < lines.length) {
-    const line = lines[i];
-    if (!line.trim()) { elements.push(<br key={i} />); i++; continue; }
-    if (line.startsWith('## ')) {
-      elements.push(<p key={i} className="font-bold text-[12px] uppercase tracking-wide text-[#003049]/60 mt-2 mb-0.5">{line.slice(3)}</p>);
-    } else if (line.startsWith('# ')) {
-      elements.push(<p key={i} className="font-bold text-[13px] text-[#003049] mt-2 mb-0.5">{line.slice(2)}</p>);
-    } else if (line.startsWith('**') && line.endsWith('**') && line.length > 4) {
-      elements.push(<p key={i} className="font-semibold text-[12px] uppercase tracking-wide text-[#003049]/60 mt-2 mb-0.5">{line.slice(2, -2)}</p>);
-    } else if (line.startsWith('- ') || line.startsWith('* ')) {
-      const content = line.slice(2);
-      elements.push(
-        <div key={i} className="flex gap-1.5 items-start">
-          <span className="mt-[5px] shrink-0 w-1 h-1 rounded-full bg-[#003049]/40" />
-          <span>{formatInline(content)}</span>
-        </div>
-      );
-    } else {
-      elements.push(<p key={i}>{formatInline(line)}</p>);
-    }
-    i++;
-  }
-  return elements;
-}
-
 function formatInline(text) {
+  // Handle **bold** inline
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
   return parts.map((part, i) =>
     part.startsWith('**') && part.endsWith('**')
       ? <strong key={i}>{part.slice(2, -2)}</strong>
       : part
   );
+}
+
+function renderMarkdown(text) {
+  const lines = text.split('\n');
+  const elements = [];
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Empty line → small spacer
+    if (!line.trim()) { elements.push(<div key={i} className="h-1" />); i++; continue; }
+
+    // ## Header
+    if (line.startsWith('## ')) {
+      elements.push(<p key={i} className="font-bold text-[12px] uppercase tracking-wide text-[#003049]/60 mt-2 mb-0.5">{line.slice(3)}</p>);
+      i++; continue;
+    }
+    // # Header
+    if (line.startsWith('# ')) {
+      elements.push(<p key={i} className="font-bold text-[13px] text-[#003049] mt-2 mb-0.5">{line.slice(2)}</p>);
+      i++; continue;
+    }
+
+    // **Bold line** that is a standalone section header (only bold, nothing else)
+    if (/^\*\*[^*]+\*\*:?$/.test(line.trim())) {
+      elements.push(<p key={i} className="font-semibold text-[12px] uppercase tracking-wide text-[#003049]/60 mt-2 mb-0.5">{line.trim().replace(/^\*\*|\*\*:?$/g, '')}</p>);
+      i++; continue;
+    }
+
+    // Bullet point (- or *)
+    if (/^[\-\*]\s/.test(line)) {
+      const content = line.replace(/^[\-\*]\s+/, '');
+      elements.push(
+        <div key={i} className="flex gap-1.5 items-start">
+          <span className="mt-[6px] shrink-0 w-1 h-1 rounded-full bg-[#003049]/40" />
+          <span className="flex-1">{formatInline(content)}</span>
+        </div>
+      );
+      i++; continue;
+    }
+
+    // Regular paragraph
+    elements.push(<p key={i}>{formatInline(line)}</p>);
+    i++;
+  }
+  return elements;
 }
 
 const TIMEFRAMES = [
@@ -84,9 +102,7 @@ export default function ProvinceNews({ province }) {
       {loading && (
         <div className="flex items-center gap-2 py-3">
           <div className="w-4 h-4 border-2 border-[#003049]/20 border-t-[#003049]/60 rounded-full animate-spin" />
-          <span className="text-[13px] text-[#003049]/60">
-            Generating summary from {articleCount} articles...
-          </span>
+          <span className="text-[13px] text-[#003049]/60">Loading summary...</span>
         </div>
       )}
 

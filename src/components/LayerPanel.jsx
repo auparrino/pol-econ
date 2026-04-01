@@ -39,6 +39,7 @@ export default function LayerPanel({
   setOverlays,
   energyLayers,
   setEnergyLayers,
+  mobile = false,
 }) {
   const toggleOverlay = (id) => {
     setOverlays(prev => ({ ...prev, [id]: !prev[id] }));
@@ -52,8 +53,8 @@ export default function LayerPanel({
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-[999] flex flex-col items-center justify-center gap-1.5 px-4 py-2"
-      style={{
+      className={mobile ? 'flex flex-col items-center justify-center gap-1.5 px-4 py-2' : 'fixed bottom-0 left-0 right-0 z-[999] flex flex-col items-center justify-center gap-1.5 px-4 py-2'}
+      style={mobile ? { background: '#FFF8EB' } : {
         height: 100,
         background: '#FFF8EB',
         borderTop: '1px solid #d4c4a0',

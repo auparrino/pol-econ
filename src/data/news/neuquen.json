@@ -1,13 +1,66 @@
 {
   "province": "Neuquén",
   "slug": "neuquen",
-  "updated": "2026-03-31T23:34:26.560Z",
+  "updated": "2026-04-01T20:37:19.247Z",
   "sources": [
     "LM Neuquén",
     "Río Negro (Neuquén)",
     "Mejor Informado"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\n* La Justicia suspendió la aplicación de la reforma laboral en el sector docente, lo que genera un nuevo revés para la implementación de la reforma.\n* El Gobierno provincial apelará el fallo en contra del financiamiento universitario y impulsará una ley alternativa en el Congreso.\n* Una diputada libertaria aseguró que se reunió con el embajador de un país que se disolvió hace más de 30 años, aunque no se menciona qué país se trata.\n\n**Situación económica local**\n\n* La caída del consumo es una preocupación para el sector comercial, según se desprende de la reunión entre el ministro Caputo y supermercados.\n* Los alquileres en Neuquén y el Alto Valle pueden costar entre $25.000 y $100.000 en un monoambiente, y entre $150.000 y $500.000 en una casa.\n\n**Temas sociales relevantes**\n\n* El Chango Cravero fue operado con éxito en Cipolletti, aunque no se proporcionan detalles adicionales sobre su estado de salud.\n* Allanamientos en Neuquén por robo calificado dejaron tres personas detenidas y armas secuestradas.",
+      "count": 8,
+      "generated": "2026-04-01T20:37:15.923Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n- La provincia de Neuquén conmemoró el Día del Veterano de Malvinas con una vigilia y un acto central en Viedma (noticia 1).\n- La Justicia suspendió la aplicación de la reforma laboral en el sector docente, lo que podría generar un nuevo revés para el gobierno (noticia 2).\n- Una diputada libertaria afirmó haberse reunido con el embajador de un país que se disolvió hace más de 30 años, lo que generó especulaciones sobre la posible relación con la provincia (noticia 4).\n- El gobierno apelará el fallo en contra del financiamiento universitario y impulsará una ley alternativa en el Congreso (noticia 6).\n\n**Situación económica local**\n\n- Los alquileres en Neuquén y el Alto Valle pueden variar desde un monoambiente hasta una casa, con precios que pueden ser un desafío para los habitantes (noticia 7).\n- El consumo en la provincia se ha visto afectado por la caída en la demanda y la presión de tasas municipales, lo que preocupó al superintendente de Comercio, Caputo (noticia 8).\n\n**Temas sociales relevantes**\n\n- El Chango Cravero, un simio que se convirtió en un símbolo de la provincia, fue operado con éxito en Cipolletti (noticia 3).\n- Allanamientos en Neuquén por robo calificado dejaron tres personas detenidas y armas secuestradas (noticia 5).\n\n**Tendencias y patrones**\n\n- La semana estuvo marcada por la política, con noticias sobre la reforma laboral, el financiamiento universitario y la relación con otros países.\n- La situación económica en la provincia se vio afectada por la caída en la demanda y la presión de tasas municipales.\n- Los temas sociales relevantes incluyeron la salud de un simio y la lucha contra la delincuencia.",
+      "count": 8,
+      "generated": "2026-04-01T20:37:15.923Z"
+    },
+    "month": {
+      "text": "**Análisis de las noticias de la provincia de Neuquén del último mes**\n\n**Desarrollos políticos provinciales**\n\n* El Día del Veterano de Malvinas fue conmemorado en Viedma con una vigilia y acto central, destacando la importancia de la memoria histórica en la provincia.\n* La Justicia suspendió la aplicación de la reforma laboral en el sector docente, lo que podría generar tensiones entre el gobierno y los sindicatos.\n* Una diputada libertaria afirmó haberse reunido con el embajador de un país que se disolvió hace más de 30 años, lo que podría ser un intento de establecer relaciones diplomáticas o un gesto de solidaridad.\n* El gobierno anunció que apelará el fallo en contra del financiamiento universitario y impulsará una ley alternativa en el Congreso.\n\n**Situación económica local**\n\n* La caída del consumo y la presión de tasas municipales preocupan a los supermercados, lo que podría afectar la economía local.\n* Los alquileres en Neuquén y el Alto Valle pueden costar entre $25.000 y $80.000, dependiendo del tamaño y la ubicación de la propiedad.\n\n**Temas sociales relevantes**\n\n* El Chango Cravero, un simio que se convirtió en un símbolo de la provincia, fue operado con éxito en Cipolletti.\n* Allanamientos en Neuquén por robo calificado dejaron tres personas detenidas y armas secuestradas, lo que destaca la importancia de la seguridad en la provincia.\n\n**Tendencias y cambios**\n\n* La provincia de Neuquén sigue enfrentando desafíos en términos de seguridad y economía, lo que podría afectar la calidad de vida de sus habitantes.\n* La política provincial sigue siendo un tema de interés, con debates sobre la reforma laboral, el financiamiento universitario y la relación con otros países.\n* La economía local sigue siendo vulnerable a la caída del consumo y la presión de tasas municipales, lo que podría afectar la estabilidad de la provincia.",
+      "count": 8,
+      "generated": "2026-04-01T20:37:15.923Z"
+    }
+  },
   "articles": [
+    {
+      "title": "Viedma conmemora el Día del Veterano de Malvinas con vigilia y acto central este 2 de abril",
+      "url": "https://www.rionegro.com.ar/sociedad/viedma-conmemora-el-dia-del-veterano-de-malvinas-con-vigilia-y-acto-central-este-2-de-abril-4523801/",
+      "date": "2026-04-01",
+      "source": "rionegro.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Nuevo revés judicial contra la reforma laboral: la Justicia suspendió su aplicación al sector docente",
+      "url": "https://www.rionegro.com.ar/politica/nuevo-reves-judicial-contra-la-reforma-laboral-la-justicia-suspendio-su-aplicacion-al-sector-docente-4523723/",
+      "date": "2026-04-01",
+      "source": "rionegro.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "El Chango Cravero fue operado con éxito en Cipolletti: los detalles",
+      "url": "https://www.rionegro.com.ar/deportes/futbol/el-chango-cravero-fue-operado-con-exito-en-cipolletti-los-detalles-4523733/",
+      "date": "2026-04-01",
+      "source": "rionegro.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Una diputada libertaria aseguró que se reunió con el embajador de un país que se disolvió hace más de 30 años",
+      "url": "https://www.rionegro.com.ar/politica/una-diputada-libertaria-aseguro-que-se-reunio-con-el-embajador-de-un-pais-que-se-disolvio-hace-mas-de-30-anos-4523629/",
+      "date": "2026-04-01",
+      "source": "rionegro.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
     {
       "title": "Allanamientos en Neuquén por robo calificado dejan tres demorados y armas secuestradas",
       "url": "https://www.rionegro.com.ar/policiales/allanamientos-en-neuquen-por-robo-calificado-dejan-tres-demorados-y-armas-secuestradas-4522345/",

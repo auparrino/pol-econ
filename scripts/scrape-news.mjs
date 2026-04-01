@@ -382,6 +382,99 @@ async function classifyArticles(province, articles) {
 }
 
 // ─────────────────────────────────────────────────────
+// AI Summary Generation (pre-computed for static site)
+// ─────────────────────────────────────────────────────
+
+const SUMMARY_FOCUS = {
+  today: 'Enfocate en las noticias más recientes y urgentes. Sé breve y directo.',
+  week: 'Identificá tendencias y patrones de la semana. Agrupá por tema.',
+  month: 'Hacé un análisis más amplio de la evolución del mes. Destacá cambios y tendencias.',
+};
+
+const SUMMARY_LABELS = {
+  today: 'hoy',
+  week: 'la última semana',
+  month: 'el último mes',
+};
+
+async function generateSummary(province, articles, timeframe) {
+  if (!CEREBRAS_KEY || articles.length === 0) return null;
+
+  const articleText = articles
+    .slice(0, 40)
+    .map((a, i) => `${i + 1}. [${a.date}] [${a.section}] ${a.title}${a.excerpt ? `\n   ${a.excerpt.slice(0, 150)}` : ''}`)
+    .join('\n');
+
+  const prompt = `Sos un analista político argentino. Resumí las siguientes noticias de la provincia de ${province} de ${SUMMARY_LABELS[timeframe]}.
+
+${SUMMARY_FOCUS[timeframe]}
+
+Enfocate en:
+- Desarrollos políticos provinciales
+- Situación económica local
+- Temas sociales relevantes
+
+Respondé en español. Sé conciso pero informativo. Organizá por temas si hay varios. No inventes información que no esté en las noticias.
+
+NOTICIAS (${articles.length} artículos):
+
+${articleText}`;
+
+  try {
+    const resp = await fetch(CEREBRAS_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${CEREBRAS_KEY}`,
+      },
+      body: JSON.stringify({
+        model: CEREBRAS_MODEL,
+        messages: [
+          { role: 'system', content: 'Sos un analista político argentino especializado en política provincial. Respondés siempre en español.' },
+          { role: 'user', content: prompt },
+        ],
+        temperature: 0.3,
+        max_completion_tokens: 1024,
+      }),
+      signal: AbortSignal.timeout(30000),
+    });
+
+    if (!resp.ok) return null;
+
+    const data = await resp.json();
+    return data.choices?.[0]?.message?.content || null;
+  } catch {
+    return null;
+  }
+}
+
+async function generateSummaries(provinceName, allArticles) {
+  if (!CEREBRAS_KEY) return {};
+
+  const now = new Date();
+  const ranges = {
+    today: format(subDays(now, 1), 'yyyy-MM-dd'),
+    week: format(subDays(now, 7), 'yyyy-MM-dd'),
+    month: format(subDays(now, 30), 'yyyy-MM-dd'),
+  };
+
+  const summaries = {};
+  for (const [tf, cutoff] of Object.entries(ranges)) {
+    const filtered = allArticles.filter(a => a.date >= cutoff);
+    if (filtered.length === 0) continue;
+
+    const summary = await generateSummary(provinceName, filtered, tf);
+    if (summary) {
+      summaries[tf] = { text: summary, count: filtered.length, generated: now.toISOString() };
+      console.log(`  📝 Summary [${tf}]: ${filtered.length} articles`);
+    }
+    await sleep(500);
+  }
+
+  return summaries;
+}
+
+// ─────────────────────────────────────────────────────
 
 function deduplicateArticles(articles) {
   const seen = new Map();
@@ -486,11 +579,18 @@ async function main() {
     const cutoff = format(subDays(new Date(), MAX_AGE_DAYS), 'yyyy-MM-dd');
     const final = merged.filter(a => a.date >= cutoff);
 
+    // Generate AI summaries for each timeframe
+    let summaries = {};
+    if (!skipClassify && final.length > 0) {
+      summaries = await generateSummaries(province.name, final);
+    }
+
     const output = {
       province: province.name,
       slug: province.slug,
       updated: new Date().toISOString(),
       sources: province.sources.map(s => s.name || s.domain),
+      summaries,
       articles: final,
     };
 

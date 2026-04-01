@@ -1,13 +1,210 @@
 {
   "province": "San Luis",
   "slug": "san-luis",
-  "updated": "2026-03-31T23:35:09.665Z",
+  "updated": "2026-04-01T20:38:29.978Z",
   "sources": [
     "El Diario de la República",
     "San Luis Info",
     "Agencia San Luis"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\n* El gobernador Claudio Poggi lanzó su discurso en la apertura del período legislativo, destacando avances educativos y culturales en la provincia.\n* El gobernador anunció una reforma constitucional para \"apuntalar la institucionalidad en los tres poderes del Estado\".\n* El gobernador Poggi destacó la importancia de la educación y el acceso al conocimiento como herramientas para la inclusión social.\n\n**Situación económica local**\n\n* El ministerio de Desarrollo Productivo continuó fortaleciendo la promoción rural con acciones concretas de asistencia sanitaria destinadas a pequeños productores.\n* El Boleto Educativo Interurbano (BEI) ha sido un apoyo incondicional para las familias que viajan diariamente desde el interior a la provincia.\n* El programa IDEA alcanzó una cifra récord de iniciativas que reflejan el interés de la provincia en el desarrollo económico.\n\n**Temas sociales relevantes**\n\n* La provincia confirmó el primer caso de dengue de la temporada, y la Salud activó bloqueo de foco, control vectorial y medidas de prevención.\n* El ministerio de Educación fortaleció el vínculo pedagógico con directivos de la Región I, y se inició un nuevo ciclo de capacitación docente en cooperativismo escolar.\n* La provincia inauguró su nueva Oficina de Informes Turísticos en Villa del Carmen, consolidando la oferta de la región y fortaleciendo la economía local.",
+      "count": 42,
+      "generated": "2026-04-01T20:38:26.286Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n* El gobernador Claudio Poggi presentó su discurso en la apertura del 39° período legislativo, destacando avances educativos y culturales.\n* Se anunció la reforma constitucional para \"apuntalar la institucionalidad en los tres poderes del Estado\".\n* El gobernador Poggi destacó la importancia de la educación y el acceso al conocimiento como la verdadera inclusión social.\n* Se informó sobre la presentación del libro \"Malvinas, El Legado\" en la Feria Internacional del Libro.\n\n**Situación económica local**\n\n* Se presentaron más de 220 proyectos en la tercera edición del programa IDEA.\n* El ministerio de Desarrollo Productivo continúa fortaleciendo la promoción rural con acciones concretas de asistencia sanitaria.\n* Se informó sobre la construcción de 24 viviendas en Villa de la Quebrada, Nogolí y San Pablo.\n* El Boleto Educativo Interurbano (BEI) se destaca como un apoyo incondicional para el esfuerzo de las familias.\n\n**Temas sociales relevantes**\n\n* Se confirmó el primer caso de dengue de la temporada en la provincia.\n* Se informó sobre la capacitación docente en cooperativismo escolar.\n* El ministerio de Educación fortaleció el vínculo pedagógico con directivos de la Región I.\n* Se inauguró la nueva Oficina de Informes Turísticos en Villa del Carmen.\n\n**Tendencias y patrones**\n\n* La educación es un tema central en la política provincial, con énfasis en la inclusión social y el acceso al conocimiento.\n* La economía local se está fortaleciendo con la presentación de proyectos y la construcción de infraestructura.\n* La seguridad es un tema importante, con la fortalecimiento de la Policía con equipamiento tecnológico.\n* La cultura y el turismo son también temas relevantes, con la presentación de eventos y la inauguración de infraestructura.",
+      "count": 42,
+      "generated": "2026-04-01T20:38:26.286Z"
+    },
+    "month": {
+      "text": "**Análisis de la evolución política, económica y social en la provincia de San Luis durante el último mes**\n\n**Desarrollos políticos provinciales**\n\n* El gobernador Claudio Poggi presentó su mensaje ante la Asamblea Legislativa, destacando la importancia de la educación y la reforma constitucional para fortalecer la institucionalidad en los tres poderes del Estado.\n* Se anunció la creación de un operativo especial de bienvenida por Semana Santa, con presencia en rutas y puntos de acceso a la provincia.\n* El gobierno lanzó un dispositivo de recepción en los principales accesos a la provincia, con el objetivo de mejorar la seguridad y la atención a los visitantes.\n\n**Situación económica local**\n\n* Se presentaron más de 220 proyectos en la tercera edición del programa IDEA, lo que refleja el interés de la provincia en fomentar la innovación y el emprendimiento.\n* El Boleto Educativo Interurbano (BEI) ha sido un apoyo incondicional para las familias que viajan diariamente desde el interior a la capital provincial.\n* El gobierno continúa fortaleciendo la promoción rural con acciones concretas de asistencia sanitaria destinadas a pequeños productores.\n\n**Temas sociales relevantes**\n\n* Se confirmó el primer caso de dengue de la temporada en la provincia, lo que llevó a la activación de bloqueo de foco, control vectorial y otras medidas de prevención.\n* El ministerio de Educación fortaleció el vínculo pedagógico con directivos de la Región I, con el objetivo de mejorar la calidad de la educación en la provincia.\n* Se inauguró un nuevo ciclo de capacitación docente en cooperativismo escolar, dirigido a los docentes de la Región Educativa IV.\n\n**Cambios y tendencias**\n\n* La educación ha sido un eje central en la política del gobierno, con un enfoque en la reforma constitucional, la creación de nuevos programas y la mejora de la infraestructura educativa.\n* La provincia ha mostrado un interés creciente en fomentar la innovación y el emprendimiento, con la presentación de más de 220 proyectos en el programa IDEA.\n* La seguridad y la atención a los visitantes han sido un tema importante en la política del gobierno, con la creación de un operativo especial de bienvenida por Semana Santa.\n\nEn general, la provincia de San Luis ha mostrado un enfoque en la educación, la innovación y la seguridad, lo que refleja un interés en mejorar la calidad de vida de sus ciudadanos y fomentar el desarrollo económico y social.",
+      "count": 42,
+      "generated": "2026-04-01T20:38:26.286Z"
+    }
+  },
   "articles": [
+    {
+      "title": "El Gobierno lanza un operativo especial de bienvenida por Semana Santa",
+      "url": "https://agenciasanluis.com/2026/04/01/1153311-el-gobierno-lanza-un-operativo-especial-de-bienvenida-por-semana-santa/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "política",
+      "excerpt": "El ministerio de Turismo y Cultura pondrá en marcha un dispositivo de recepción en los principales accesos a la provincia. Con presencia en rutas, puntos turísticos y oficinas abiertas en todo el territorio, se acompañará a quienes elijan San Luis durante el fin de semana largo.",
+      "classified": true
+    },
+    {
+      "title": "“Es la primera vez que San Luis, por méritos propios, será sede nacional de la Feria de Ciencias”",
+      "url": "https://agenciasanluis.com/2026/04/01/1153274-es-la-primera-vez-que-san-luis-por-meritos-propios-sera-sede-nacional-de-la-feria-de-ciencias/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "cultura",
+      "excerpt": "En la apertura del período legislativo, el gobernador Claudio Poggi repasó avances educativos vinculados a ciencia, deporte y cultura, con fuerte participación estudiantil en los Juegos Intercolegiales Deportivos y Culturales.",
+      "classified": true
+    },
+    {
+      "title": "Poggi anunció que ‘Malvinas, El Legado’ será presentado en la Feria Internacional del Libro",
+      "url": "https://agenciasanluis.com/2026/04/01/1153112-poggi-anuncio-que-malvinas-el-legado-sera-presentado-en-la-feria-internacional-del-libro/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "cultura",
+      "excerpt": "En vísperas del Día del Veterano y de los Caídos en la Guerra de las Malvinas, el Gobernador dijo que el libro con testimonios de héroes y de familiares será mostrado en San Luis el 7 de abril y el 9 de mayo, en el mega evento cultural de Buenos Aires.",
+      "classified": true
+    },
+    {
+      "title": "Año de la Educación: proyectos de vinculación con el resto de los ministerios y secretarías",
+      "url": "https://agenciasanluis.com/2026/04/01/1153131-ano-de-la-educacion-proyectos-de-vinculacion-con-el-resto-de-los-ministerios-y-secretarias/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "política",
+      "excerpt": "Durante la apertura de sesiones, el gobernador Poggi enumeró diversas iniciativas que surgen de distintas carteras gubernamentales con el fin de generar espacios de capacitación y asesoramiento complementarios para alumnos de toda la provincia. Este miércoles, en la apertura del 39° período de sesiones ordinarias en la Legislatura, el gobernador Claudio Poggi hizo foco en […]",
+      "classified": true
+    },
+    {
+      "title": "Una reforma constitucional para “apuntalar la institucionalidad en los tres poderes del Estado”",
+      "url": "https://agenciasanluis.com/2026/04/01/1153186-una-reforma-constitucional-para-apuntalar-la-institucionalidad-en-los-tres-poderes-del-estado/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "política",
+      "excerpt": "Así lo manifestó el gobernador Claudio Poggi durante su discurso en la Apertura de Sesiones Ordinarias 2026, en el cual expresó el proyecto de reforma del Poder Ejecutivo, Legislativo, Judicial y la fijación de capitales alternas.",
+      "classified": true
+    },
+    {
+      "title": "Discurso completo del Gobernador en la Legislatura provincial",
+      "url": "https://agenciasanluis.com/2026/04/01/1153110-discurso-completo-del-gobernador-en-la-legislatura-provincial/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "política",
+      "excerpt": "El gobernador de San Luis, Claudio Poggi, presentó el estado de la Administración Provincial ante la Asamblea Legislativa y dejó inaugurado el 39° período bicameral de sesiones ordinarias. En su discurso, destacó como ejes centrales la educación, la reforma constitucional y el desarrollo de los planes maestros de Agua y Energía.",
+      "classified": true
+    },
+    {
+      "title": "El Gobernador detalló las políticas educativas y anunció la pretensión de una reforma constitucional",
+      "url": "https://agenciasanluis.com/2026/04/01/1152991-el-gobernador-detallo-las-politicas-educativas-y-anuncio-la-pretension-de-una-reforma-constitucional/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "política",
+      "excerpt": "Claudio Poggi dejó inaugurado el 39° período bicameral de la Legislatura con un discurso que abarcó con amplitud sus políticas educativas. También expuso su propuesta sobre una reforma de la Constitución provincial e impulsó los planes maestros de Agua y Energía.",
+      "classified": true
+    },
+    {
+      "title": "Educación: nuevo diseño curricular, primera infancia y lectura, ejes del discurso de Poggi",
+      "url": "https://agenciasanluis.com/2026/04/01/1153120-educacion-nuevo-diseno-curricular-primera-infancia-y-lectura-ejes-del-discurso-de-poggi/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "El Gobernador repasó avances y programas en todos los niveles educativos, con foco en la alfabetización, extensión horaria y nuevas herramientas pedagógicas.",
+      "classified": true
+    },
+    {
+      "title": "Planes Maestros: agua y energía para el San Luis del futuro",
+      "url": "https://agenciasanluis.com/2026/04/01/1153087-planes-maestros-agua-y-energia-para-el-san-luis-del-futuro/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "economía",
+      "excerpt": "En el el trigésimo noveno período bicameral de sesiones ordinarias, el gobernador Claudio Poggi hizo alusión al Plan Maestro del Agua 2025–2035 y al Plan Maestro de Energía 2025-2035.",
+      "classified": true
+    },
+    {
+      "title": "Un abanico de políticas que abren puertas a los jóvenes: Beca al Mérito, BUS y Estampillas Escolares",
+      "url": "https://agenciasanluis.com/2026/04/01/1152984-un-abanico-de-politicas-que-abren-puertas-a-los-jovenes-beca-al-merito-bus-y-estampillas-escolares/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "En sus palabras en la Legislatura, el gobernador Claudio Poggi también hizo mención a la vinculación de la escuela Secundaria con el nivel Superior, el programa Generación Z y formación financiera, las cooperativas escolares, las asociaciones cooperadoras y el programa Inicio al Desarrollo Económico (IDEA).",
+      "classified": true
+    },
+    {
+      "title": "Nutrición escolar, infraestructura y cercanía con la ruralidad, otros ejes de la política educativa",
+      "url": "https://agenciasanluis.com/2026/04/01/1152954-nutricion-escolar-infraestructura-y-cercania-con-la-ruralidad-otros-ejes-de-la-politica-educativa/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "El gobernador Claudio Poggi hizo mención en su mensaje en la Legislatura a los 190 días de clase, el PANE, el programa 'Nutrí tu Escuela' y las mejoras edilicias. También se refirió a las escuelas rurales, el Consejo Estudiantil Provincial y la vinculación entre los niveles Secundario y Superior.",
+      "classified": true
+    },
+    {
+      "title": "“Con el reconocimiento del doble cargo se curó una herida de años”",
+      "url": "https://agenciasanluis.com/2026/04/01/1152987-con-el-reconocimiento-del-doble-cargo-se-curo-una-herida-de-anos/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "política",
+      "excerpt": "Durante el 39° período bicameral de sesiones ordinarias, el Gobernador habló sobre el reconocimiento del doble cargo docente, el Profesorado en Educación Especial y el Sistema Integrado de Gestión Educativa. También abordó el programa de Habilidades Socioemocionales y la formación en Prevención de Consumos Problemáticos.",
+      "classified": true
+    },
+    {
+      "title": "El gobernador Poggi destacó los beneficios del Boleto Educativo y del plan TuBi",
+      "url": "https://agenciasanluis.com/2026/04/01/1152957-el-gobernador-poggi-destaco-los-beneficios-del-boleto-educativo-y-del-plan-tubi/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "El Mandatario abordó los pormenores y requisitos de esta política pública, al tiempo que resaltó que el plan TUBI produce hábitos saludables y moviliza la economía.",
+      "classified": true
+    },
+    {
+      "title": "Más herramientas para los docentes: computadoras, congresos y reconocimiento al mérito",
+      "url": "https://agenciasanluis.com/2026/04/01/1153025-mas-herramientas-para-los-docentes-computadoras-congresos-y-reconocimiento-al-merito/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "El gobernador Claudio Poggi destacó que la Provincia está llevando a cabo una serie de políticas para fortalecer la formación de sus docentes. Entre ellas aparecen la entrega de computadoras, la realización del Congreso Internacional de Educación, los concursos para cargos directivos y el Premio al Mérito Docente.",
+      "classified": true
+    },
+    {
+      "title": "“En estos dos años de gestión ya se crearon 133 nuevas salas de 3 años”",
+      "url": "https://agenciasanluis.com/2026/04/01/1153022-en-estos-dos-anos-de-gestion-ya-se-crearon-133-nuevas-salas-de-3-anos/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "El Gobernador destacó una política educativa que tiene objetivos muy claros desde diciembre de 2023: es lograr que los niños tengan escolarización a partir de los 3 años, para lo que se necesitaban crear muchas salas nuevas, ya que el porcentaje en San Luis era muy bajo.",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno continuará con su impulso al aprendizaje de matemáticas a través de ‘Queremos Resolver’",
+      "url": "https://agenciasanluis.com/2026/04/01/1153017-el-gobierno-continuara-con-su-impulso-al-aprendizaje-de-matematicas-a-traves-de-queremos-resolver/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "Luego de presentar los alentadores datos del programa de comprensión Lectora ‘Queremos Aprender’, dado que los resultados de los diagnósticos nacionales mostraban también mucha fragilidad en matemáticas, el Gobierno provincial puso en marcha el año pasado otro programa educativo, en este caso para fortalecer esta rama clave del conocimiento, denominado ‘Queremos Resolver’.",
+      "classified": true
+    },
+    {
+      "title": "“La comprensión lectora temprana permite sentar las bases de aprendizajes de calidad”",
+      "url": "https://agenciasanluis.com/2026/04/01/1153009-la-comprension-lectora-temprana-permite-sentar-las-bases-de-aprendizajes-de-calidad/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "Uno de los inconvenientes básicos que tiene la educación en la Argentina es la falta de comprensión lectora de los chicos, algo a lo que por supuesto San Luis no es inmune. Por eso rápidamente la actual gestión provincial puso en marcha un programa para comenzar a solucionarlo.",
+      "classified": true
+    },
+    {
+      "title": "“La verdadera inclusión social es la educación y el acceso al conocimiento”",
+      "url": "https://agenciasanluis.com/2026/04/01/1152997-la-verdadera-inclusion-social-es-la-educacion-y-el-acceso-al-conocimiento/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "El núcleo del discurso del gobernador Claudio Poggi giró en torno a la educación, a la que colocó en el centro de sus políticas públicas desde el mismo momento en el que asumió.",
+      "classified": true
+    },
+    {
+      "title": "“Incorporamos en la agenda educativa a la inteligencia artificial como aliada del docente”",
+      "url": "https://agenciasanluis.com/2026/04/01/1152996-incorporamos-en-la-agenda-educativa-a-la-inteligencia-artificial-como-aliada-del-docente/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "La formación docente representó desde el inicio de la actual gestión una herramienta clave para el desarrollo educativo de los alumnos. Pero ante la evolución constante de la tecnología, esa formación debía ‘aggiornarse’ a los nuevos tiempos, sobre todo a los que dicta la inteligencia artificial (IA), que debe adaptarse a las metodologías utilizadas en las aulas.",
+      "classified": true
+    },
+    {
+      "title": "Claudio Poggi brindará este miércoles su mensaje ante la Asamblea Legislativa",
+      "url": "https://agenciasanluis.com/2026/04/01/1152137-claudio-poggi-brindara-este-miercoles-su-mensaje-ante-la-asamblea-legislativa/",
+      "date": "2026-04-01",
+      "source": "agenciasanluis.com",
+      "section": "política",
+      "excerpt": "El Gobernador de San Luis dará cuenta del estado de la Administración Provincial ante la Asamblea Legislativa y dejará formalmente inaugurado el trigésimo noveno periodo bicameral de sesiones ordinarias. El mensaje se transmite en vivo por San Luis + y Agencia San Luis.",
+      "classified": true
+    },
     {
       "title": "San Luis confirmó el primer caso de dengue de la temporada",
       "url": "https://agenciasanluis.com/2026/03/31/1152895-san-luis-confirmo-el-primer-caso-de-dengue-de-la-temporada/",
@@ -18,12 +215,12 @@
       "classified": true
     },
     {
-      "title": "Más de 220 proyectos se presentaron en la tercera edición del programa IDEA",
-      "url": "https://agenciasanluis.com/2026/03/31/1152883-mas-de-220-proyectos-se-presentaron-en-la-tercera-edicion-del-programa-idea/",
+      "title": "Ya está disponible la segunda parte de la temporada 2 de ‘Rodeados de Libros’",
+      "url": "https://agenciasanluis.com/2026/03/31/1152882-ya-esta-disponible-la-segunda-parte-de-la-temporada-2-de-rodeados-de-libros/",
       "date": "2026-03-31",
       "source": "agenciasanluis.com",
-      "section": "economía",
-      "excerpt": "El pasado 27 de marzo finalizó la inscripción para la tercera edición del programa. El mismo, alcanzó una cifra récord de iniciativas que reflejan el compromiso, la creatividad y el potencial de las nuevas generaciones. Este crecimiento posiciona a IDEA como un espacio estratégico para el fortalecimiento de la economía del conocimiento en la provincia.",
+      "section": "cultura",
+      "excerpt": "La propuesta literaria de ‘Lectores’ busca conectar al público con nuevos títulos y autores. En esta entrega participan la docente Ana Britos, el dramaturgo Gabriel Landoni, el poeta y gestor cultural Darío Oliva y el escritor y realizador Alberto Tricarico, docente de la ULP.",
       "classified": true
     },
     {
@@ -33,6 +230,15 @@
       "source": "agenciasanluis.com",
       "section": "cultura",
       "excerpt": "La producción, realizada íntegramente con herramientas de IA, propone recuperar la figura de un protagonista del federalismo argentino.",
+      "classified": true
+    },
+    {
+      "title": "Más de 220 proyectos se presentaron en la tercera edición del programa IDEA",
+      "url": "https://agenciasanluis.com/2026/03/31/1152883-mas-de-220-proyectos-se-presentaron-en-la-tercera-edicion-del-programa-idea/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "economía",
+      "excerpt": "El pasado 27 de marzo finalizó la inscripción para la tercera edición del programa. El mismo, alcanzó una cifra récord de iniciativas que reflejan el compromiso, la creatividad y el potencial de las nuevas generaciones. Este crecimiento posiciona a IDEA como un espacio estratégico para el fortalecimiento de la economía del conocimiento en la provincia.",
       "classified": true
     },
     {

@@ -1,17 +1,88 @@
 {
   "province": "San Juan",
   "slug": "san-juan",
-  "updated": "2026-03-31T23:35:01.885Z",
+  "updated": "2026-04-01T20:38:17.643Z",
   "sources": [
     "Google News San Juan",
     "Diario de Cuyo",
     "Tiempo de San Juan"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\n* El gobernador de San Juan, Sergio Uñac, anunció una \"segunda revolución minera\" con inversiones históricas para la provincia. (Fuente: Telesol Diario)\n* Uñac también presentó una ley para reformar el Código Electoral, con el objetivo de terminar con un \"sistema retrógrado\". (Fuente: El Zonda)\n* La provincia de San Juan se convirtió en un ejemplo para otras provincias con la implementación de una ley impulsada por las cámaras locales y un convenio con la cartera de Educación. (Fuente: SI San Juan)\n\n**Situación económica local**\n\n* El dólar oficial arrancó abril con un alza, pero el dólar blue en San Juan cayó $20. (Fuente: El Zonda)\n* La industria vitivinícola de San Juan atraviesa un mal momento, según declaraciones del titular de la empresa Peñaflor. (Fuente: El Zonda)\n* El boom de la ropa en fardos llegó a San Juan, generando gran tensión en comercios por ventas sin control. (Fuente: El Zonda)\n* El comercio sanjuanino se encuentra en crisis debido a la importación de ropa sin control, según declaraciones de Caputo y Adorni. (Fuente: El Zonda)\n\n**Temas sociales relevantes**\n\n* Se detuvo a un sujeto por el abuso sexual y el embarazo de una niña de 12 años. (Fuente: El Zonda)\n* La niña violada y embarazada recibirá apoyo de la justicia, según declaraciones de la Fiscalía. (Fuente: El Zonda)\n* Un progenitor se opone a la ILE (Intervención Legal de la Educación) para la niña violada y embarazada. (Fuente: El Zonda)",
+      "count": 15,
+      "generated": "2026-04-01T20:38:14.377Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n* El gobernador de San Juan, Sergio Uñac, anunció una \"segunda revolución minera\" y proyecta inversiones históricas para la provincia (Noticia 3).\n* Uñac también destacó la importancia del deporte como política pública, enfatizando la inclusión, desarrollo y proyección de la provincia (Noticia 1).\n* El gobernador presentó tres leyes importantes para este año, incluyendo la Reforma del Código Electoral, con el objetivo de modernizar el sistema electoral (Noticia 5).\n* San Juan se destaca como ejemplo en la implementación de una ley impulsada por las cámaras locales y convenio con Educación (Noticia 9).\n\n**Situación económica local**\n\n* La minería sanjuanina se enfoca en el cobre, con una nueva etapa que incluye inversiones históricas (Noticias 2 y 3).\n* El dólar oficial arrancó abril con un alza, pero el dólar blue en San Juan cayó $20 (Noticia 4).\n* El boom de la ropa en fardos llegó a San Juan, generando tensión en comercios por ventas sin control (Noticia 10).\n* El comercio sanjuanino salió al cruce de Caputo y Adorni por la ropa importada, con el titular \"El mostrador agoniza\" (Noticia 11).\n* Peñaflor, dueño de una empresa vinícola, salió a desmentir que atraviese una crisis, en medio del mal momento que vive la industria (Noticia 12).\n\n**Temas sociales relevantes**\n\n* La crisis hídrica en San Juan es un tema de preocupación, con científicos pidiendo asegurar caudal ecológico, mejor planificación y cambios en la ley (Noticia 6).\n* Una niña de 12 años fue violada y embarazada, lo que llevó a la detención de un sospechoso y la imposición de tres meses de prisión preventiva (Noticias 13 y 14).\n* Un sujeto fue detenido por el abuso sexual y el embarazo de la niña, y se abrió un debate sobre qué pasa si un progenitor se opone a la ILE (Noticia 15).",
+      "count": 15,
+      "generated": "2026-04-01T20:38:14.377Z"
+    },
+    "month": {
+      "text": "**Análisis de la evolución del mes en la provincia de San Juan**\n\n**Desarrollos políticos provinciales**\n\n* El gobernador de San Juan, Sergio Uñac, ha destacado la importancia del deporte como política pública, enfatizando la inclusión, desarrollo y proyección de la provincia en este ámbito.\n* El gobernador también ha anunciado una \"segunda revolución minera\" en la provincia, con inversiones históricas en la minería de cobre.\n* Uñac ha presentado una serie de leyes para este año, incluyendo la Reforma del Código Electoral, con el objetivo de modernizar el sistema electoral y terminar con un \"sistema retrógrado\".\n* La provincia de San Juan ha sido destacada como ejemplo en la implementación de una ley que vincula a las cámaras locales con la Educación, lo que ha generado un convenio entre ambas instituciones.\n\n**Situación económica local**\n\n* La minería sigue siendo un sector clave en la economía de San Juan, con el gobernador anunciando una \"segunda revolución minera\" y proyectando inversiones históricas en la minería de cobre.\n* El dólar oficial ha experimentado un alza en abril, pero el dólar blue en San Juan ha caído $20.\n* La industria vitivinícola está pasando por un mal momento, lo que ha llevado a la desmentida de la crisis por parte del titular de la empresa Peñaflor.\n* El comercio sanjuanino ha experimentado un boom en la venta de ropa en fardos, lo que ha generado tensión en los comercios por las ventas sin control.\n\n**Temas sociales relevantes**\n\n* La provincia de San Juan ha sido afectada por una crisis hídrica, lo que ha llevado a científicos a pedir la aseguración del caudal ecológico, una mejor planificación y cambios en la ley.\n* Un caso de abuso sexual y embarazo de una niña de 12 años ha generado conmoción en la provincia, lo que ha llevado a la detención de un sujeto y a la imposición de tres meses de prisión preventiva.\n* La provincia ha sido sede de un encuentro que vincula a las mujeres con la industria minera, con el objetivo de promover la igualdad de género en este sector.\n\n**Cambios y tendencias**\n\n* La minería sigue siendo un sector clave en la economía de San Juan, con el gobernador anunciando una \"segunda revolución minera\" y proyectando inversiones históricas en la minería de cobre.\n* La provincia ha experimentado un crecimiento en la venta de ropa en fardos, lo que ha generado tensión en los comercios por las ventas sin control.\n* La crisis hídrica sigue siendo un tema relevante en la provincia, lo que ha llevado a científicos a pedir la aseguración del caudal ecológico, una mejor planificación y cambios en la ley.\n\nEn general, el mes de abril en la provincia de San Juan ha estado marcado por la importancia de la minería, la crisis hídrica y la necesidad de promover la igualdad de género en la industria minera. La provincia ha experimentado un crecimiento en la venta de ropa en fardos, lo que ha generado tensión en los comercios por las ventas sin control.",
+      "count": 17,
+      "generated": "2026-04-01T20:38:14.377Z"
+    }
+  },
   "articles": [
+    {
+      "title": "El deporte como política pública: inclusión, desarrollo y proyección en San Juan",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSFYteUNjWHQ1eHgtbTZ0SzJBWFpOS0w5bUoyRFMtRTJUSWxNdjhlNFhWdm1jSk5IeFItN1hoUExSZlk3YjBZMzVSaXI0cjI1YWhOQmVZX05ROEwxSGNHbklQTHRaR2hIT2c4elJtYkVaM2dvV0hMTmx5c3llaFpfM3oyYmJjOUJOWlNFMjhKd0I0b3lsdTVCZDR2OHhhZzR4eFJPaTEtTkFicGQtY3VDUl94NXd6UDdOZ0lhS3ZJdjdwdTRyZnlEN1ExTFl5X1lLd1HSAdIBQVVfeXFMUEhWLXlDY1h0NXh4LW02dEsyQVhaTktMOW1KMkRTLUUyVElsTXY4ZTRYVnZtY0pOSHhSLTdYaFBMUmZZN2IwWTM1UmlyNHIyNWFoTkJlWV9OUThMMUhjR25JUEx0WkdoSE9nOHpSbWJFWjNnb1dITE5seXN5ZWhaXzN6MmJiYzlCTlpTRTI4SndCNG95bHU1QmQ0djh4YWc0eHhST2kxLU5BYnBkLWN1Q1JfeDV3elA3TmdJYUt2SXY3cHU0cmZ5RDdRMUxZeV9ZS3dR?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "SI San Juan",
+      "section": "política",
+      "excerpt": "El deporte como política pública: inclusión, desarrollo y proyección en San Juan SI San Juan",
+      "classified": true
+    },
+    {
+      "title": "Orrego trazó una nueva etapa para la minería sanjuanina con foco en el cobre",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWWdpbXpNd0RBZ1B0YmhMMVpCbER4UFVTNDUwT1hKUkRRUV93cF90Uk5HLXBuZl8yUjMtc2dGTjU1V1dtUXBmUnhSa0lkMmRSaG9JUDZ1Zno4Wl9xcm9zTVUwMFhlRHo1aEtNMnMwaGpmamFCU1I3N1FMMTR3TTFHWG1lZGRIUlVmejBrbllmcEdrSEhPdWFKT3NELUFkUGlqLWRLR2s1MGJ4WUR3Q0VTRjJYQXRTNlhKVmc?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "El Zonda",
+      "section": "economía",
+      "excerpt": "Orrego trazó una nueva etapa para la minería sanjuanina con foco en el cobre El Zonda",
+      "classified": true
+    },
+    {
+      "title": "Orrego anunció una \"segunda revolución minera\" y proyecta inversiones históricas para San Juan",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQ0NQbjBmMFp2WVZfNmFLS0Y5SVFEcVNuZTh3anpmemRWYkJOQl9PWVFuNmhKNWVvc3NEY2RDaDBWVktGRVNtVEtOV3Q2QjZqeGFZcWhDQjVmcEJidnp6UFV3UWxEem04Rko4Ui1UYm15akNiWHl1SGxacGdjODVKTElSbkthUjJRSUlheWtPbEd2Z2NrcXB3RElNSVlTbV9ZLXVuQnpjTDdNWW5mMHBNR3hSRUhlZFZ3bjBNNVFmWUxkU0tyTm5zNw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "Telesol Diario",
+      "section": "economía",
+      "excerpt": "Orrego anunció una \"segunda revolución minera\" y proyecta inversiones históricas para San Juan Telesol Diario",
+      "classified": true
+    },
+    {
+      "title": "El dólar oficial arrancó abril con un alza, pero el dólar blue en San Juan cayó $20",
+      "url": "https://www.diariodecuyo.com.ar/economia/el-dolar-oficial-arranco-abril-un-alza-pero-el-dolar-blue-san-juan-cayo-20-n6569677",
+      "date": "2026-04-01",
+      "source": "diariodecuyo.com.ar",
+      "section": "economía",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Las 3 leyes más fuertes para este año: sobre la Reforma del Código Electoral, Orrego dijo que busca terminar con un \"sistema retrógrado\"",
+      "url": "https://www.diariodecuyo.com.ar/politica/las-3-leyes-mas-fuertes-este-ano-la-reforma-del-codigo-electoral-orrego-dijo-que-busca-terminar-un-sistema-retrogrado-n6569632",
+      "date": "2026-04-01",
+      "source": "diariodecuyo.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Crisis hídrica: científicos pidieron asegurar caudal ecológico, mejor planificación y cambios en la ley",
+      "url": "https://www.diariodecuyo.com.ar/economia/crisis-hidrica-cientificos-pidieron-asegurar-caudal-ecologico-mejor-planificacion-y-cambios-la-ley-n6569581",
+      "date": "2026-04-01",
+      "source": "diariodecuyo.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
     {
       "title": "Glencore inauguró un espacio de arte que celebra la identidad cultural de San Juan y Catamarca",
       "url": "https://www.diariodecuyo.com.ar/cuyo-minero/glencore-inauguro-un-espacio-arte-que-celebra-la-identidad-cultural-san-juan-y-catamarca-n6569249",
-      "date": "2026-03-31",
+      "date": "2026-04-01",
       "source": "diariodecuyo.com.ar",
       "section": "cultura",
       "excerpt": "",
@@ -20,10 +91,46 @@
     {
       "title": "\"Misión de Mujeres, sostenerse sin romperse\", un encuentro que vincula a las mujeres con la industria minera",
       "url": "https://www.diariodecuyo.com.ar/cuyo-minero/mision-mujeres-sostenerse-romperse-un-encuentro-que-vincula-las-mujeres-la-industria-minera-n6569103",
-      "date": "2026-03-31",
+      "date": "2026-04-01",
       "source": "diariodecuyo.com.ar",
       "section": "cultura",
       "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "San Juan como ejemplo, una ley impulsada por las cámaras locales y convenio con Educación, lo que dejó el evento de la Coviar",
+      "url": "https://www.diariodecuyo.com.ar/suplemento-verde/san-juan-como-ejemplo-una-ley-impulsada-las-camaras-locales-y-convenio-educacion-lo-que-dejo-el-evento-la-coviar-n6567728",
+      "date": "2026-04-01",
+      "source": "diariodecuyo.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "El boom de la ropa en fardos llegó a San Juan: gran tensión en comercios por ventas sin control",
+      "url": "https://www.tiempodesanjuan.com/economia/el-boom-la-ropa-fardos-llego-san-juan-gran-tension-comercios-ventas-control-n426826",
+      "date": "2026-04-01",
+      "source": "tiempodesanjuan.com",
+      "section": "economía",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "El comercio sanjuanino salió al cruce de Caputo y Adorni por la ropa importada: \"El mostrador agoniza\"",
+      "url": "https://www.tiempodesanjuan.com/economia/el-comercio-sanjuanino-salio-al-cruce-caputo-y-adorni-la-ropa-importada-el-mostrador-agoniza-n422451",
+      "date": "2026-04-01",
+      "source": "tiempodesanjuan.com",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Estas son las vías oficiales para acceder al Boleto Escolar y Docente Gratuito",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPck0zNHRkdzAwVHVSTVNmNk9UVnNBMktlUGRHbTQ5UGJzX0dpU2dXa0V4Q0xjbEd5bVpkbXNFWE1xYTgzVGlkbW4tZ28tYnZhdWpTY3JnZ1dvYkV6NGNJQWVRQVliYTMyeEx1QWY4VWNvLTdPMXQtcENkbE4yS3k3dkVwU1dENXFqSXFXS1ZER0otcm9hZE1HaWRTdlNIWktreUstRkVOT3ljeVVkMHNBSDVDWmEyNVE4cEtPUkJHdUItWkxTaGtpdtIBzgFBVV95cUxOaWExUmQ2cXRYeGF4Vk5wT01YbnZsYXVkdGRsdW9fVmlwRC1JQXU1T3FVbjFnVzJ1cjNjcF9ua2hweUNtY2pkN0NzNl92VGFVVlFlYUJKMXJmYVdjWUtlSmhwSzVPUmM0bFpzeFpPM0MtaGYzQmwxdFdMX2hOenk5OXBHYVFXUjVzNzJfbnRUN003bklsa29zUjQ1WHp4TENtOUI5d2hSa1h2b0NSdUpNSEJpU3BEaGFaSFZuVWRyQWpSSXI0elRIUXFzR0ktZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-25",
+      "source": "SI San Juan",
+      "section": "sociedad",
+      "excerpt": "Estas son las vías oficiales para acceder al Boleto Escolar y Docente Gratuito SI San Juan",
       "classified": true
     },
     {
@@ -32,15 +139,6 @@
       "date": "2026-03-31",
       "source": "diariodecuyo.com.ar",
       "section": "economía",
-      "excerpt": "",
-      "classified": true
-    },
-    {
-      "title": "San Juan como ejemplo, una ley impulsada por las cámaras locales y convenio con Educación, lo que dejó el evento de la Coviar",
-      "url": "https://www.diariodecuyo.com.ar/suplemento-verde/san-juan-como-ejemplo-una-ley-impulsada-las-camaras-locales-y-convenio-educacion-lo-que-dejo-el-evento-la-coviar-n6567728",
-      "date": "2026-03-31",
-      "source": "diariodecuyo.com.ar",
-      "section": "política",
       "excerpt": "",
       "classified": true
     },

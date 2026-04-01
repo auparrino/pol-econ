@@ -1,29 +1,55 @@
 {
   "province": "Mendoza",
   "slug": "mendoza",
-  "updated": "2026-03-31T23:34:08.162Z",
+  "updated": "2026-04-01T20:36:52.258Z",
   "sources": [
     "Unidiversidad",
     "Mendoza Opina",
     "Google News Mendoza"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\nNo hay noticias recientes sobre desarrollos políticos en la provincia de Mendoza.\n\n**Situación económica local**\n\n* El Producto Bruto de Mendoza creció un punto menos que el de Argentina en 2025 (fuente: Los Andes).\n* Un equipo del Conicet desarrolló un dispositivo de uso doméstico que remueve micro y nanoplásticos del agua (fuente: Los Andes).\n\n**Temas sociales relevantes**\n\nNo hay noticias recientes sobre temas sociales relevantes en la provincia de Mendoza.",
+      "count": 4,
+      "generated": "2026-04-01T20:36:49.161Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n* No hay noticias relevantes sobre política provincial en la última semana.\n\n**Situación económica local**\n\n* El Producto Bruto de Mendoza creció un punto menos que el de Argentina en 2025 (fuente: Los Andes).\n* Un equipo del Conicet desarrolló un dispositivo de uso doméstico que remueve micro y nanoplásticos del agua, con el objetivo de funcionar como complemento de filtros purificadores de agua de red (fuente: Los Andes).\n\n**Temas sociales relevantes**\n\n* La Cátedra Matilda se enfoca en desafiar la invisibilización de las ingenieras en las ciencias duras (fuente: general).\n* El sistema de contención aluvional en el Gran Mendoza fue cuestionado después de las tormentas de verano, lo que plantea dudas sobre si la provincia está preparada para contener tormentas intensas (fuente: Los Andes).\n* Un documental aborda la problemática del suicidio adolescente y destaca la importancia de hablar y escuchar para prevenirlo (fuente: Unidiversidad y Señal U).\n* Las instituciones resisten miles de ciberataques diarios, lo que plantea desafíos para la ciberseguridad (fuente: Los Andes).\n\n**Tendencias y patrones**\n\n* La economía de Mendoza sigue creciendo, aunque a un ritmo ligeramente menor que el de Argentina.\n* La provincia sigue enfrentando desafíos en términos de ciberseguridad y preparación para tormentas intensas.\n* La sociedad mendocina sigue priorizando la importancia de la educación y la prevención de problemas sociales, como el suicidio adolescente.",
+      "count": 6,
+      "generated": "2026-04-01T20:36:49.161Z"
+    },
+    "month": {
+      "text": "**Análisis de las noticias de la provincia de Mendoza**\n\n**Desarrollos políticos provinciales**\n\n* El gobierno de Mendoza promociona la provincia ante inversores internacionales en Estados Unidos (noticia 10), lo que sugiere un esfuerzo por atraer inversión extranjera y promover el desarrollo económico de la provincia.\n* Un equipo científico mendocino busca responder dónde están las personas desaparecidas 50 años después del golpe de Estado (noticia 6), lo que muestra un compromiso con la memoria histórica y la búsqueda de la verdad.\n* A 50 años de la última dictadura, se presentan cifras del terror de Estado en Mendoza (noticia 7), lo que destaca la importancia de recordar y aprender de la historia para evitar repeticiones.\n\n**Situación económica local**\n\n* Mendoza creció un punto menos que Argentina en 2025, según el Producto Bruto (noticia 13), lo que sugiere que la provincia sigue creciendo, pero a un ritmo ligeramente más lento que el país en su conjunto.\n* La minería es un sector que atrae la atención de inversores internacionales (noticia 11), lo que podría ser un indicador de crecimiento económico en el futuro.\n* Un equipo del Conicet desarrolla un dispositivo de uso doméstico que remueve micro y nanoplásticos del agua (noticia 2), lo que sugiere un enfoque en la innovación y la sostenibilidad.\n\n**Temas sociales relevantes**\n\n* Se habla de la importancia de hablar y escuchar para prevenir el suicidio adolescente (noticia 5), lo que destaca la necesidad de abordar la salud mental y la prevención de la violencia.\n* El aumento de casos de sífilis es un tema de preocupación (noticia 9), lo que sugiere la necesidad de implementar políticas de salud pública efectivas.\n* La escuela que viene: menos alumnos por docente y el desafío de alcanzar la calidad sin recortes (noticia 12), lo que muestra la necesidad de adaptarse a los cambios demográficos y garantizar la calidad de la educación.\n\n**Cambios y tendencias**\n\n* La provincia de Mendoza sigue creciendo, pero a un ritmo ligeramente más lento que el país en su conjunto.\n* La minería es un sector que atrae la atención de inversores internacionales.\n* La innovación y la sostenibilidad son temas que se están abordando en la provincia.\n* La salud mental y la prevención de la violencia son temas de preocupación que requieren atención.\n* La educación es un sector que debe adaptarse a los cambios demográficos y garantizar la calidad de la educación.",
+      "count": 13,
+      "generated": "2026-04-01T20:36:49.161Z"
+    }
+  },
   "articles": [
+    {
+      "title": "¿Hay mujeres en las ciencias duras? La Cátedra Matilda desafía la invisibilización de las ingenieras",
+      "url": "https://www.unidiversidad.com.ar/hay-mujeres-en-la-ciencia-la-catedra-matilda-desafia-la-invisibilizacion-de-las-ingenieras",
+      "date": "2026-04-01",
+      "source": "unidiversidad.com.ar",
+      "section": "general",
+      "excerpt": "El Efecto Matilda nombra el sesgo que consiste en ignorar, silenciar o atribuir a hombres los hallazgos realizados —también o solo— por científicas. La Cátedra Matilda es una iniciativa de distintas facultades latinoamericanas para visibilizar a las ingenieras, cuidar su profesionalización y fomentar las vocaciones científicas.",
+      "classified": true
+    },
+    {
+      "title": "Un equipo del Conicet desarrolla un dispositivo de uso doméstico que remueve micro y nanoplásticos del agua",
+      "url": "https://www.unidiversidad.com.ar/un-equipo-del-conicet-desarrolla-un-dispositivo-de-uso-domestico-que-remueve-micro-y-nanoplasticos-del-agua",
+      "date": "2026-04-01",
+      "source": "unidiversidad.com.ar",
+      "section": "economía",
+      "excerpt": "Uno de los objetivos es que pueda funcionar como complemento de filtros purificadores de agua de red. Por este proyecto, la investigadora Carla di Luca fue reconocida con la Distinción Franco-Argentina en Innovación 2025 en la categoría Senior.",
+      "classified": true
+    },
     {
       "title": "Como un castillo de arena: las instituciones resisten miles de ciberataques diarios",
       "url": "https://www.unidiversidad.com.ar/como-un-castillo-de-arena-las-instituciones-resisten-miles-de-ciberataques-diarios",
       "date": "2026-03-31",
       "source": "unidiversidad.com.ar",
       "section": "general",
-      "excerpt": "\"Viene la ola, lo derriba y uno vuelve a levantarlo\". Bajo esa lógica, expertos analizan por qué la ciberseguridad se volvió una batalla diaria para el sector público y privado. Entre el eslabón débil, que son los usuarios, y la sofisticación de los ataques, cómo se protegen en un escenario de riesgo constante.",
-      "classified": true
-    },
-    {
-      "title": "Producto Bruto: Mendoza creció un punto menos que Argentina en 2025",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSWpGdFJzQTJNeHNacjNyYXJpT250N1Y3VkMwVi1fSWRqamxyMlBsTVlXem1rNk1oNVFCclU0MTVWdVNHNlNxYnBFcS0wQVFidDFXdHFIaW45RWQ0Q05GQlZhZFpmM1hiRENvemdfRnI3Q2JmWkFCYmhiMnFJalVobEx1bEdOQjB1NGlhamJBcmRITG80VDhKcnBncHo4aXVnWEY1TTF6V2k5LVItLXc?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-31",
-      "source": "Los Andes",
-      "section": "economía",
-      "excerpt": "Producto Bruto: Mendoza creció un punto menos que Argentina en 2025 Los Andes",
+      "excerpt": "\"Viene la ola, lo derriba y uno vuelve a levantarlo\". Con esa lógica, expertos analizan por qué la ciberseguridad se volvió una batalla diaria para los sectores público y privado. Entre el eslabón débil, que son los usuarios, y la sofisticación de los ataques, cómo se protegen en un escenario de riesgo constante.",
       "classified": true
     },
     {
@@ -33,6 +59,15 @@
       "source": "unidiversidad.com.ar",
       "section": "sociedad",
       "excerpt": "Las lluvias del 30 de enero, 20 de febrero y 7 de marzo reabrieron un debate recurrente: si la provincia está preparada para contener tormentas intensas. Especialistas coincidieron en que los eventos estuvieron dentro de lo esperable para el verano, aunque dejaron daños en sectores del escudo que protege a la zona metropolitana de aluviones. Faltan obras clave.",
+      "classified": true
+    },
+    {
+      "title": "Fijar dato: hablar y escuchar previene el suicidio adolescente",
+      "url": "https://www.unidiversidad.com.ar/fijar-dato-hablar-y-escuchar-previene-el-suicidio-adolescente",
+      "date": "2026-03-26",
+      "source": "unidiversidad.com.ar",
+      "section": "sociedad",
+      "excerpt": "Un documental de Unidiversidad y Señal U aborda una problemática que, lejos de disminuir, ha cobrado relevancia mundial, nacional y provincial. Lo muestran las estadísticas. Con las voces de especialistas y de un grupo de adolescentes, se acerca información clara y precisa sobre las causas, las primeras señales de alarma y a dónde acudir ante una emergencia.",
       "classified": true
     },
     {
@@ -49,8 +84,17 @@
       "url": "https://www.unidiversidad.com.ar/a-50-anos-de-la-ultima-dictadura-cifras-del-terror-de-estado-en-mendoza",
       "date": "2026-03-20",
       "source": "unidiversidad.com.ar",
-      "section": "sociedad",
+      "section": "política",
       "excerpt": "Los números trágicos que dejó el golpe de Estado en la provincia sirven para entender la magnitud del plan sistemático que ordenaron las Juntas Militares. Las cifras son datos abiertos, por lo que los procesos por la memoria, la verdad y la justicia siguen en curso.",
+      "classified": true
+    },
+    {
+      "title": "Aumento de casos de sífilis: “Tendría que haber una política que incentive a los médicos a testear”",
+      "url": "https://www.unidiversidad.com.ar/aumento-de-casos-de-sifilis-tendria-que-haber-una-politica-que-incentive-a-los-medicos-a-testear",
+      "date": "2026-03-19",
+      "source": "unidiversidad.com.ar",
+      "section": "sociedad",
+      "excerpt": "Así lo aseguró la inmunóloga Betina Angel, a cargo del servicio de asesoría y testeo de la UNCUYO. Analizó las causas del incremento de sífilis, que en Mendoza fue del 38 % en un año. El preservativo como única barrera segura, y el testeo gratuito, voluntario y confidencial.",
       "classified": true
     },
     {
@@ -63,21 +107,39 @@
       "classified": true
     },
     {
+      "title": "El Gobierno de Mendoza promociona la provincia ante inversores internacionales en Estados Unidos",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeFFzenhRMFFiVWJ6NC1UX3hpTjRTd0dNYlA4TjgxNWpyOUt3ZzQtQkxpU1BKakxmOGh1bjJyX2kyY3hvNFB3OWc4dDB0SHdlN2l3OG1KYm9hNUpja1ZtV0lYdU1rQUdsdEVJRUF1anRTak40bWlTUVc5QTlZVWlZR25wMFZtUHozdmhtRkRWNTZOYUhhU0FhcjRsdnpTeVZZS0JLRnlLS29KTkd0NlpTNktUZjdPdml0MXBnU0FkS3BwellpY1V1Wk1ubTdZRmvSAdQBQVVfeXFMUFBEczdRd3dPZDFhUWtDVERSdG9oWjVkUm5RVkJWakJaQ2tyaTVXUllXZU8waEhOaHBaTFZrTXJfYy10RW9aMWdLRHlaNUNVSWNleU1ZUG5Wbks3dGZoRXhMMEUxVGcxREZBVHBHSTBGeTVrRk1uOU5Ld0xPTi1SaGVQM01BU3VZM3REUXBXV0xWZTRTSzJxLUR1bUwxNjJuc3BQNDd1UGh4TGxHR3B1YnA5bE1DYmp3d2M0Z3BZNThtbUxVYmVPRDhZMnZTVmNJSzlJSjE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-10",
+      "source": "Sitio Andino",
+      "section": "política",
+      "excerpt": "El Gobierno de Mendoza promociona la provincia ante inversores internacionales en Estados Unidos Sitio Andino",
+      "classified": true
+    },
+    {
+      "title": "Minería: Mendoza en el ojo de los inversores para avanzar en tareas de exploración",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVzdVcEU1Z2w1QkVhUDczTDNJX1lxZ3NadHlNaTZjLXk4cVluRnhkQ2VPcFdybUc2VW5ta2RCUms5WWRtM2tXWW52MXBOT2tMem8wMXVoYUpYSVNDY3pka1dPQkQ0Z1lGU0VpWV9FSlhDU21zSnhiWnZCYlpoMEwwRHRxdWpFQ2MzbXZVMHVjZzA1eHM5Wm5HbW9sNHZnUGw2QkcxWUx4WFZ1bjVBR3IwY1UwONIBuAFBVV95cUxNM1RhRldqUjNJeV83ZnhyZDNuYVUyd01RSlpQQjJ1NGZqXy1wUGFiZTVZRDl1blJsd2p5S2lNa1NydU50c08zeXNvVHEzaDc1TGRYREtsb0ZvY1VEQlJRUEJDTWNfazRNemVpVUtjakhhQnJlV2dlYjN6bE03TWZwNkJDakpYOVdzSUY5QndDLUE0cG5xclNYSEE3dUxEV3pseWExY01DWTQzUHdEUUU3VGxoN2NYeXBa?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-10",
+      "source": "Sitio Andino",
+      "section": "economía",
+      "excerpt": "Minería: Mendoza en el ojo de los inversores para avanzar en tareas de exploración Sitio Andino",
+      "classified": true
+    },
+    {
+      "title": "La escuela que viene: menos alumnos por docente y el desafío de alcanzar la calidad sin recortes",
+      "url": "https://www.unidiversidad.com.ar/la-escuela-que-viene-menos-alumnos-por-docente-y-el-desafio-de-alcanzar-la-calidad-sin-recortes",
+      "date": "2026-03-03",
+      "source": "unidiversidad.com.ar",
+      "section": "sociedad",
+      "excerpt": "La caída sostenida de la tasa de natalidad genera cambios en el sistema educativo. Para 2030, según el observatorio Argentinos por la Educación, se proyecta un 27 % menos de alumnos y alumnas en primaria. ¿Qué piensan en la DGE y qué analizan en la Facultad de Educación de la UNCUYO ante un cambio tan profundo?",
+      "classified": true
+    },
+    {
       "title": "Mendoza lanza Forma Tec con 3.000 cupos para especialización en tecnologías digitales",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNm9YZDkxRWdDMTN5NTNZMENmajJYWGVVV1FBbmlVUUxtMFllQW9MVzNVTHl6VTRNenFrdmtKYjlUWnRwMmVEZlNKYVF6ZEpfbmhXUS1IWjN2UWMzcThwNzh1OWRIbFFGLUNwR2hGZW1JVThJY21mWGVfendhRk1EVnE1Q2cwRVJoclp1YVNrRkNyTUk3TTBwekdBX2dWTzU4RVNhWE45UTJIVkxwSkZldGE1NjdEenc?oc=5&hl=en-US&gl=US&ceid=US:en",
       "date": "2026-02-25",
       "source": "PRENSA GOBIERNO DE MENDOZA",
       "section": "política",
       "excerpt": "Mendoza lanza Forma Tec con 3.000 cupos para especialización en tecnologías digitales PRENSA GOBIERNO DE MENDOZA",
-      "classified": true
-    },
-    {
-      "title": "El Gobierno de Mendoza llamará a concursos para cargos en la Administración Pública",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTFNiZ0F5bDBrb0gwRTZveHZ1WDlOMll5WjFEdlgtRHpxcnpPTGsxQW5zbC1jX1pxSkVOTmdvQ29jVFVZREV4eVE1cU01cEJKU3g2NUVFOWRpbEJXUVc2TkxCSi12RzJKS3VOVTBGUWg4U3Q5U2hFVi1kZzQzaUt0Z2Z3Z3RKTDU0dEhFT1BOM1NUdml3V3YxU1FCdU5DbWFBd05JZThMbENyNXNHS1E?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-02-24",
-      "source": "PRENSA GOBIERNO DE MENDOZA",
-      "section": "política",
-      "excerpt": "El Gobierno de Mendoza llamará a concursos para cargos en la Administración Pública PRENSA GOBIERNO DE MENDOZA",
       "classified": true
     },
     {
@@ -96,6 +158,33 @@
       "source": "unidiversidad.com.ar",
       "section": "economía",
       "excerpt": "La socióloga mendocina Bárbara Altschuler analizó el proceso de reconfiguración vitivinícola. Dijo que existe un abismo entre la imagen que se vende al mundo y la realidad del sector. La supremacía de una zona en detrimento del Este y la pérdida material y simbólica que sufrió el trabajo rural.",
+      "classified": true
+    },
+    {
+      "title": "La provincia de Mendoza se suma a la World Origins Alliance y se posiciona entre las grandes regiones vitivinícolas",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxONk1OdEJkZDJsTGw0RlFSTkhmMnp0am90QjREdnZCT1R4TDNwT2FEN3dBcEY4RUwzU1gwUEVHdDZWZkRtUkpqelRtTl96Z0k3YmJxRHVTMFVFR3UzRS1lSklySzhpQkRvbnhNLWtjXzNyemN3SUg5RWdzOUZ1VGZTek1TY0FDbW1aX29ja3BwRWpfZEVyOU1XZ0N6SXdWWnBOM1U1TFM1dFJQdnVGRHRuSy1xZ2FLWWxLUnBjeE4xMEdHYldOdF9sNFpFajBZVER0c3dKQzY5YkN1M3lMMFU0NDB0blh6Z1Vf0gHuAUFVX3lxTE1HMUszUTVoYXZSbWdVRzhhdVU3d3UzZGVaTFR1RWp4YVFHbTc5QVdDSFc2eXZsbHBDME5naFJVR1RnY0lOTEh3aE5lcGZoZFhwdjFpNGt3VUMtUkVoeWgwNjZCN0VQTUdNX1VzRklaMW5aT3lzanU5cmQxMDNxdTdPQ3o1bmh1TDlZSDAtLXFrOC1JZ2w4cUJjS0tNdURndGd2WFBHbWZNSExjbDNhQUxKUGRIYXJLWXVWYWtuMVVfRkF3WXFtNlFFM2JybkxJcGZjdG1hSU56bEMzRS1MRFQ1c3pXQ1VRWENxUmRXZ0E?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-09",
+      "source": "Sitio Andino",
+      "section": "economía",
+      "excerpt": "La provincia de Mendoza se suma a la World Origins Alliance y se posiciona entre las grandes regiones vitivinícolas Sitio Andino",
+      "classified": true
+    },
+    {
+      "title": "Producto Bruto: Mendoza creció un punto menos que Argentina en 2025",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSWpGdFJzQTJNeHNacjNyYXJpT250N1Y3VkMwVi1fSWRqamxyMlBsTVlXem1rNk1oNVFCclU0MTVWdVNHNlNxYnBFcS0wQVFidDFXdHFIaW45RWQ0Q05GQlZhZFpmM1hiRENvemdfRnI3Q2JmWkFCYmhiMnFJalVobEx1bEdOQjB1NGlhamJBcmRITG80VDhKcnBncHo4aXVnWEY1TTF6V2k5LVItLXc?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "Los Andes",
+      "section": "economía",
+      "excerpt": "Producto Bruto: Mendoza creció un punto menos que Argentina en 2025 Los Andes",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno de Mendoza llamará a concursos para cargos en la Administración Pública",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTFNiZ0F5bDBrb0gwRTZveHZ1WDlOMll5WjFEdlgtRHpxcnpPTGsxQW5zbC1jX1pxSkVOTmdvQ29jVFVZREV4eVE1cU01cEJKU3g2NUVFOWRpbEJXUVc2TkxCSi12RzJKS3VOVTBGUWg4U3Q5U2hFVi1kZzQzaUt0Z2Z3Z3RKTDU0dEhFT1BOM1NUdml3V3YxU1FCdU5DbWFBd05JZThMbENyNXNHS1E?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-24",
+      "source": "PRENSA GOBIERNO DE MENDOZA",
+      "section": "política",
+      "excerpt": "El Gobierno de Mendoza llamará a concursos para cargos en la Administración Pública PRENSA GOBIERNO DE MENDOZA",
       "classified": true
     },
     {

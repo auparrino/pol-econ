@@ -1,13 +1,309 @@
 {
   "province": "Santa Cruz",
   "slug": "santa-cruz",
-  "updated": "2026-03-31T23:35:18.112Z",
+  "updated": "2026-04-01T20:38:43.033Z",
   "sources": [
     "Tiempo Sur",
     "La Opinión Austral",
     "OPI Santa Cruz"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\n* El intendente de Caleta Olivia, Pablo Carrizo, solicitó la renuncia de todo su gabinete para realizar una \"revisión integral de su equipo de gobierno\".\n* El Frente Sindical marchará a Casa de Gobierno este miércoles para reclamar la convocatoria a paritarias salariales.\n* El gobernador Claudio Vidal anunció que se pagará los haberes del mes de marzo el 2 de abril.\n* La Asociación de Trabajadores del Estado (ATE) convocó a un nuevo paro de 48 horas en reclamo del llamado a paritarias salariales.\n* El gobierno provincial articuló estrategias para potenciar la matriz energética y productiva.\n\n**Situación económica local**\n\n* El sindicato de petroleros exigió inversiones, reclamó cronogramas y advirtió con un paro general.\n* El presidente de la Federación Económica de Santa Cruz se refirió a la crítica situación que viven las pymes y el sector comercial y advirtió demoras en la cadena de pagos.\n* El gobierno provincial articuló un Acuerdo de Precios para Semana Santa con pescaderías de la capital santacruceña.\n* Comodoro Rivadavia será sede de las Jornadas \"Construyendo el Nodo Industrial Patagonia Austral\".\n\n**Temas sociales relevantes**\n\n* Río Gallegos registró un 23,6% de pobreza, según el Instituto Nacional de Estadística y Censos (INDEC).\n* El Colegio Médico cortó las prestaciones a la Caja de Servicios Sociales.\n* Se extendieron los resguardos docentes hasta el 30 de abril.\n* Trabajadores municipales de El Chaltén alcanzaron un acuerdo salarial.\n* ADOSAC anunció un paro provincial y exigió la apertura de paritarias salariales.\n* El intendente acompañó la inauguración de la Muestra estática de Malvinas en honor a la causa Malvinas.",
+      "count": 50,
+      "generated": "2026-04-01T20:38:38.945Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n* El gobernador Claudio Vidal anunció el pago salarial para el 2 de abril y destacó la obra pública en servicio de los vecinos de Santa Cruz.\n* El intendente de Caleta Olivia, Pablo Carrizo, solicitó la renuncia de todo su gabinete para realizar una \"revisión integral de su equipo de gobierno\".\n* La Asociación de Trabajadores del Estado (ATE) convocó a un nuevo paro de 48 horas en reclamo del llamado a paritarias salariales.\n* El Frente Sindical marchó a Casa de Gobierno este miércoles en reclamo de mejoras salariales y laborales.\n* El gobierno de la provincia sacó una comunicación en la cual resalta la supervisión del Ministerio de Energía y Minería sobre la industria minera.\n* El senador Carambia se refirió al complejo escenario que atraviesa la provincia y consideró que la Emergencia Económica debió ser planteada al inicio de la gestión.\n\n**Situación económica local**\n\n* El sindicato de petroleros exigió inversiones, reclamó cronogramas y advirtió con un paro general debido a la falta de compromisos asumidos por las nuevas operadoras.\n* El presidente de la Federación Económica de Santa Cruz se refirió a la crítica situación que viven las pymes y el sector comercial y advirtió demoras en la cadena de pagos.\n* La provincia articuló estrategias para potenciar la matriz energética y productiva en consonancia con los ejes de gestión impulsados por el gobernador Claudio Vidal.\n* El gobierno provincial articuló con pescaderías de la capital santacruceña un Acuerdo de Precios para Semana Santa.\n* Comodoro Rivadavia será sede de las Jornadas \"Construyendo el Nodo Industrial Patagonia Austral\" para debatir estrategias de desarrollo productivo, científico y tecnológico.\n\n**Temas sociales relevantes**\n\n* El Municipio de Río Gallegos analiza mejoras en el transporte y seguridad con estudiantes.\n* Se realizó la primera Sesión Ordinaria del Consejo Provincial de Educación, encabezada por el ministro de Educación.\n* El Colegio Médico cortó las prestaciones a la Caja de Servicios Sociales.\n* El CPB Stella Maris celebró las pascuas con los niños del Jardín Maternal.\n* Río Gallegos registró un 23,6% de pobreza según el Instituto Nacional de Estadística y Censos (INDEC).\n* El Centro de Promoción Laboral entregó obsequios a más de 80 niños.\n* Se extendieron los resguardos docentes hasta el 30 de abril.\n* Trabajadores municipales de El Chaltén alcanzaron acuerdo salarial.\n* ADOSAC anunció un paro provincial y exigió la apertura de paritarias salariales.\n* Veterano de Malvinas reclamó retirar una bandera inglesa en Santa Cruz.\n* El intendente acompañó la inauguración de la Muestra estática de Malvinas.\n\n**Tendencias y patrones de la semana**\n\n* La semana estuvo marcada por la tensión en la relación entre el gobierno provincial y los sindicatos, con reclamos salariales y laborales en aumento.\n* La situación económica local sigue siendo crítica, con demoras en la cadena de pagos y una falta de inversión en la industria minera.\n* La provincia sigue trabajando en la promoción del turismo y la industria local, con eventos y actividades en Río Gallegos y Comodoro Rivadavia.\n* La memoria y la historia de la provincia siguen siendo un tema relevante, con actividades y eventos en conmemoración del Día del Veterano y de los Caídos en la Guerra de Malvinas.",
+      "count": 50,
+      "generated": "2026-04-01T20:38:38.945Z"
+    },
+    "month": {
+      "text": "**Análisis de la evolución política, económica y social en la provincia de Santa Cruz**\n\n**Desarrollos políticos provinciales**\n\n* El gobernador Claudio Vidal ha mantenido un discurso pragmático y de resistencia ante la crisis económica, pero ha sido criticado por su memoria selectiva y culpa sindical.\n* El intendente de Caleta Olivia, Pablo Carrizo, solicitó la renuncia de todo su gabinete para realizar una \"revisión integral\" de su equipo de gobierno.\n* La Asociación de Trabajadores del Estado (ATE) convocó a un nuevo paro de 48 horas en reclamo del llamado a paritarias salariales.\n* El gobierno provincial anunció el pago salarial para el 2 de abril, pero la ATE y otros sindicatos continúan con medidas de fuerza.\n\n**Situación económica local**\n\n* La provincia enfrenta una crisis económica grave, con una situación de emergencia económica declarada.\n* El sindicato de petroleros exigió inversiones, reclamó cronogramas y advirtió con un paro general.\n* La Federación Económica de Santa Cruz se refirió a la crítica situación que viven las pymes y el sector comercial, con demoras en la cadena de pagos.\n* El gobierno provincial articuló estrategias para potenciar la matriz energética y productiva, pero la situación económica sigue siendo incierta.\n\n**Temas sociales relevantes**\n\n* La pobreza en la provincia es un problema grave, con un 23,6% de pobreza en Río Gallegos.\n* La seguridad es un tema preocupante, con un aumento en la delincuencia y la violencia.\n* La salud es otro tema importante, con la Caja de Servicios Sociales enfrentando problemas con el Colegio Médico.\n* La educación es un tema clave, con la extensión de los resguardos docentes hasta el 30 de abril.\n\n**Cambios y tendencias**\n\n* La situación política en la provincia es incierta, con un gobierno en crisis y sindicatos en lucha.\n* La economía provincial sigue siendo un tema grave, con una crisis que afecta a la mayoría de la población.\n* La seguridad y la salud son temas importantes que requieren atención inmediata.\n* La educación es un tema clave que requiere inversión y atención.\n\nEn resumen, la provincia de Santa Cruz enfrenta una crisis económica grave, con problemas de seguridad, salud y educación. La situación política es incierta, con un gobierno en crisis y sindicatos en lucha. Es fundamental que el gobierno y los actores sociales trabajen juntos para encontrar soluciones a estos problemas y mejorar la calidad de vida de la población.",
+      "count": 50,
+      "generated": "2026-04-01T20:38:38.945Z"
+    }
+  },
   "articles": [
+    {
+      "title": "Municipio de Río Gallegos analiza mejoras en el transporte y seguridad con estudiantes",
+      "url": "https://www.tiemposur.com.ar/info-general/municipio-de-rio-gallegos-analiza-mejoras-en-el-transporte-y-seguridad-con-estudiantes",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "sociedad",
+      "excerpt": "Durante la reunión, quienes asisten al IPES, en su mayoría mujeres, plantearon la necesidad de revisar el recorrido actual del colectivo y avanzar en una ampliación de los horarios, en función de que cursan en turno noche y enfrentan temor en el trayecto hacia las paradas más cercanas, como consecuencia de la falta de luminaria de SPSE en la ciudad.",
+      "classified": true
+    },
+    {
+      "title": "Petroleros exigió inversiones, reclamó cronogramas y advirtió con un paro general",
+      "url": "https://www.tiemposur.com.ar/politica/petroleros-exigio-inversiones-reclamo-cronogramas-y-advirtio-con-un-paro-general",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "economía",
+      "excerpt": "El sindicato que conduce Rafael Güenchenen aseguró que se agotó el margen de espera para que las nuevas operadoras activen los compromisos asumidos en Santa Cruz. Aunque se confirmaron algunos movimientos de equipos, el gremio sostuvo que la actividad sigue siendo insuficiente frente a inversiones comprometidas por más de 1.259 millones de dólares y no descartó avanzar con medidas de fuerza.",
+      "classified": true
+    },
+    {
+      "title": "Agustoni: “el guanaco es de los más naturales que podemos consumir actualmente”",
+      "url": "https://www.tiemposur.com.ar/info-general/agustoni-el-guanaco-es-de-los-mas-naturales-que-podemos-consumir-actualmente",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "cultura",
+      "excerpt": "El próximo viernes 10 de abril, Río Gallegos será sede de la Primera Jornada “Carne de Guanaco: nueva identidad gastronómica de la Patagonia”. En el marco del evento, el cardiólogo Oscar Agustoni brindará una charla sobre alimentación y salud, destacando las propiedades de esta carne magra, su carácter natural y su rol en la dieta humana, en línea con la tradición alimentaria de los primeros pobladores de la región.",
+      "classified": true
+    },
+    {
+      "title": "“La soberanía es la capacidad de un pueblo para defender su propio destino”",
+      "url": "https://www.tiemposur.com.ar/info-general/la-soberania-es-la-capacidad-de-un-pueblo-para-defender-su-propio-destino",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "política",
+      "excerpt": "Río Grande fue escenario del primer foro federal por la soberanía y la causa Malvinas. Impulsado por Provincia Grande, el encuentro reunió a dirigentes de todo el país para debatir el presente de Malvinas, la soberanía marítima y el rol estratégico de Tierra del Fuego en la proyección bicontinental de la Argentina.",
+      "classified": true
+    },
+    {
+      "title": "Se realizó la primera Sesión Ordinaria del Consejo Provincial de Educación",
+      "url": "https://www.tiemposur.com.ar/info-general/se-realizo-la-primera-sesion-ordinaria-del-consejo-provincial-de-educacion",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "sociedad",
+      "excerpt": "El viernes 27 de marzo se llevó adelante la primera Sesión Ordinaria N° 806 del Consejo Provincial de Educación correspondiente al ciclo 2026, encabezada por la presidenta del organismo, Iris Rasgido.",
+      "classified": true
+    },
+    {
+      "title": "Carambia: “Hay que atacar el déficit y atacar a las mineras, ahí tienen la plata”",
+      "url": "https://www.tiemposur.com.ar/politica/carambia-hay-que-atacar-el-deficit-y-atacar-a-las-mineras-ahi-tienen-la-plata",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "política",
+      "excerpt": "El senador se refirió al complejo escenario que atraviesa la provincia, consideró que la Emergencia Económica debió ser planteada al inicio de la gestión, y apuntó a la actividad minera para generar recursos y reducir el déficit.",
+      "classified": true
+    },
+    {
+      "title": "Los atraparon con armas largas y una garra de puma en el Bosque Petrificado y ahora deberán pagar 1,6 millones",
+      "url": "https://www.tiemposur.com.ar/policiales/los-atraparon-con-armas-largas-y-una-garra-de-puma-en-el-bosque-petrificado-y-ahora-deberan-pagar-1-6-millones",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "sociedad",
+      "excerpt": "Cuatro hombres fueron imputados por portación ilegal de armas de fuego dentro del Parque Nacional Bosques Petrificados de Jaramillo. En un acuerdo judicial, deberán pagar de manera solidaria 1,6 millones de pesos que serán destinados a la colocación de cartelería dentro del área protegida.",
+      "classified": true
+    },
+    {
+      "title": "El Centro de Promoción Laboral entregó obsequios a más de 80 niños",
+      "url": "https://www.tiemposur.com.ar/info-general/el-centro-de-promocion-laboral-entrego-obsequios-a-mas-de-80-ninos",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "sociedad",
+      "excerpt": "La iniciativa alcanzó a niños de los CPB San Martín y Los Grillitos. De esta manera, el Municipio continúa impulsando políticas públicas orientadas a la inclusión, el acompañamiento en las primeras infancias y el fortalecimiento de los espacios comunitarios en distintos sectores de la ciudad.",
+      "classified": true
+    },
+    {
+      "title": "Alarma en una escuela por un alumno que llevó una pistola de CO2 y apuntó a sus compañeros",
+      "url": "https://www.tiemposur.com.ar/policiales/alarma-en-una-escuela-por-un-alumno-que-llevo-una-pistola-de-co2-y-apunto-a-sus-companeros",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "sociedad",
+      "excerpt": "El episodio ocurrió en la Escuela Primaria Nº 40 de Pico Truncado, durante una clase de Educación Física, donde un alumno de séptimo grado ingresó con una pistola de aire comprimido de CO2, la exhibió y simuló apuntar a otros estudiantes, lo que generó preocupación entre las familias, que ahora reclaman medidas urgentes de seguridad.",
+      "classified": true
+    },
+    {
+      "title": "El intendente participó del acto en homenaje a los soldados caídos en Malvinas",
+      "url": "https://www.tiemposur.com.ar/politica/el-intendente-participo-del-acto-en-homenaje-a-los-soldados-caidos-en-malvinas",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "política",
+      "excerpt": "La comunidad se reunió en la zona norte de la ciudad para reafirmar el compromiso con la memoria colectiva y acompañar a los veteranos y sus familias, en una jornada de profundo sentimiento patriótico que recordó el conflicto por las Islas Malvinas y a quienes dieron su vida por la patria.",
+      "classified": true
+    },
+    {
+      "title": "Camión con carga para una minera de Santa Cruz chocó y volcó sobre la Ruta 3",
+      "url": "https://www.tiemposur.com.ar/policiales/camion-con-carga-para-una-minera-de-santa-cruz-choco-y-volco-sobre-la-ruta-3",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "economía",
+      "excerpt": "Un camión que transportaba miles de bochas de acero con destino a una minera de la provincia de Santa Cruz chocó casi de frente con un Toyota Corolla sobre la Ruta Nacional 3, a más de 40 kilómetros al sur de Trelew, y luego volcó, en un hecho que dejó al chofer ileso y a la conductora del automóvil con lesiones leves.",
+      "classified": true
+    },
+    {
+      "title": "El CPB Stella Maris celebró las pascuas con los niños del Jardín Maternal",
+      "url": "https://www.tiemposur.com.ar/info-general/el-cpb-stella-maris-celebro-las-pascuas-con-los-ninos-del-jardin-maternal",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "sociedad",
+      "excerpt": "Niños de 1 y 2 años, participaron de una propuesta lúdica y recreativa que promovió el encuentro, la creatividad y el acercamiento a tradiciones culturales.",
+      "classified": true
+    },
+    {
+      "title": "La Ruta Patagonia Azul tiene nueva cartelería turística en todo el corredor costero",
+      "url": "https://www.tiemposur.com.ar/info-general/la-ruta-patagonia-azul-tiene-nueva-carteleria-turistica-en-todo-el-corredor-costero",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "cultura",
+      "excerpt": "Con el objetivo de fortalecer la difusión de los atractivos regionales, se colocaron 20 carteles de promoción turística en puntos estratégicos del litoral atlántico patagónico, abarcando más de 400 kilómetros de recorrido costero.",
+      "classified": true
+    },
+    {
+      "title": "El Municipio depositó los sueldos",
+      "url": "https://www.tiemposur.com.ar/politica/el-municipio-deposito-los-sueldos",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "política",
+      "excerpt": "El intendente Othar Macharashvili, aseguró el pago de los haberes municipales antes del feriado largo, reforzando su compromiso con los trabajadores y la previsibilidad financiera de la ciudad.",
+      "classified": true
+    },
+    {
+      "title": "Carlos Contreras: “Malvinas es todo el año”",
+      "url": "https://www.tiemposur.com.ar/info-general/carlos-contreras-malvinas-es-todo-el-ano",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "política",
+      "excerpt": "El referente de la oficina Malvinas del Municipio de Río Gallegos invitó a sumarse a las actividades previstas en el marco del 2 de abril para acompañar a los veteranos.",
+      "classified": true
+    },
+    {
+      "title": "Paulo Lunzevich: “Todas las pescaderías de Río Gallegos están adheridas al acuerdo”",
+      "url": "https://www.tiemposur.com.ar/info-general/paulo-lunzevich-todas-las-pescaderias-de-rio-gallegos-estan-adheridas-al-acuerdo",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "política",
+      "excerpt": "El secretario de Estado de Comercio e Industria dio detalles del acuerdo alcanzado con las pescaderías de la ciudad para ofrecer precios accesibles durante Semana Santa. Habrá un cupo de 250 kilos por pescadería, disponible a partir de mañana.",
+      "classified": true
+    },
+    {
+      "title": "La caravana por Malvinas recorrió sitios históricos y simbólicos",
+      "url": "https://www.tiemposur.com.ar/info-general/la-caravana-por-malvinas-recorrio-sitios-historicos-y-simbolicos",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "sociedad",
+      "excerpt": "Veteranos de guerra, familiares y vecinos participaron de la tradicional caravana por Malvinas en Río Gallegos, recorriendo distintos monumentos y sitios históricos en la previa de la vigilia del 2 de abril, con el objetivo de mantener viva la memoria y el reconocimiento a los héroes de 1982.",
+      "classified": true
+    },
+    {
+      "title": "Guillermo Polke: “Hay demoras en la cadena de pagos”",
+      "url": "https://www.tiemposur.com.ar/info-general/guillermo-polke-hay-demoras-en-la-cadena-de-pagos",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "economía",
+      "excerpt": "El presidente de la Federación Económica de Santa Cruz se refirió a la crítica situación que viven las pymes y el sector comercial y advirtió demoras en el pago a proveedores del Estado. “Es una situación preocupante, principalmente porque se corta la prestación del servicio o la provisión de insumos y esto genera un problema”, advirtió.",
+      "classified": true
+    },
+    {
+      "title": "TiempoSur celebra sus 29 años de historia junto a vos",
+      "url": "https://www.tiemposur.com.ar/info-general/tiemposur-celebra-sus-29-anos-de-historia-junto-a-vos",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "cultura",
+      "excerpt": "El diario conmemora este miércoles 1 de abril un nuevo aniversario, consolidado como referente informativo en Santa Cruz y la Patagonia sur argentina y chilena con una fuerte apuesta a la innovación y los formatos digitales.",
+      "classified": true
+    },
+    {
+      "title": "Buscan a tres sujetos que encerraron y robaron a una abuela",
+      "url": "https://www.tiemposur.com.ar/policiales/buscan-a-tres-sujetos-que-encerraron-y-robaron-a-una-abuela",
+      "date": "2026-04-01",
+      "source": "tiemposur.com.ar",
+      "section": "sociedad",
+      "excerpt": "En la jornada de ayer, el personal de la Comisaría Primera intervino en un hecho de robo en la casa de una mujer de 78 años. Los sujetos la obligaron que le transfiriera $200.00 y el celular para luego huir del lugar. La policía busca a los sospechosos.",
+      "classified": true
+    },
+    {
+      "title": "Demasiado obvio: en pleno debate de la Ley de Glaciares, Santa Cruz exalta nuevas instancias de fiscalización ambiental que en la práctica, están en duda",
+      "url": "https://www.opisantacruz.com.ar/2026/04/01/demasiado-obvio-en-pleno-debate-de-la-ley-de-glaciares-santa-cruz-exalta-nuevas-instancias-de-fiscalizacion-ambiental-que-en-la-practica-estan-en-duda/",
+      "date": "2026-04-01",
+      "source": "opisantacruz.com.ar",
+      "section": "política",
+      "excerpt": "(Por: Rubén Lasagno) – El gobierno de la provincia sacó una comunicación en la cual resalta lo siguiente “El Ministerio de Energía y Minería supervisó el cumplimiento de la normativa vigente y los requerimientos ambientales del proyecto Cerro Negro, operado por Newmont y ubicado en cercanías de la ciudad de Perito Moreno, en línea con […] La entrada Demasiado obvio: en pleno debate de la Ley de Glaciares, Santa Cruz exalta nuevas instancias de fiscalización ambiental que en la práctica, están en",
+      "classified": true
+    },
+    {
+      "title": "Río Gallegos registró un 23,6% de pobreza",
+      "url": "https://www.opisantacruz.com.ar/2026/04/01/rio-gallegos-registro-un-236-de-pobreza/",
+      "date": "2026-04-01",
+      "source": "opisantacruz.com.ar",
+      "section": "sociedad",
+      "excerpt": "El Instituto Nacional de Estadística y Censos (INDEC) oficializó los números sociales del segundo semestre de 2025. La medición nacional arrojó un 28,2% de personas bajo la línea de pobreza, mientras que en Río Gallegos el índice alcanzó al 23,6% de la población. Los registros oficiales del Ministerio de Economía revelan la situación estructural del […] La entrada Río Gallegos registró un 23,6% de pobreza se publicó primero en OPI Santa Cruz.",
+      "classified": true
+    },
+    {
+      "title": "Sepa por qué los legisladores declaran dinero en efectivo (pesos y dólares) cuya existencia es incomprobable y puede jugar como justificación de enriquecimiento futuro",
+      "url": "https://www.opisantacruz.com.ar/2026/04/01/sepa-por-que-los-legisladores-declaran-dinero-en-efectivo-pesos-y-dolares-cuya-existencia-es-incomprobable-y-puede-jugar-como-justificacion-de-enriquecimiento-futuro/",
+      "date": "2026-04-01",
+      "source": "opisantacruz.com.ar",
+      "section": "política",
+      "excerpt": "(Por: Rubén Lasagno) – El disparador de este informe fue la investigación que estamos realizando sobre el patrimonio declarado de los legisladores (nacionales y provinciales) de Santa Cruz, donde encontramos de todo. Desde personas muy ahorrativas como el diputado nacional de la LLA Jairo Guzman, pasando por un beneficiado por “herencias” como José Luis Garrido […] La entrada Sepa por qué los legisladores declaran dinero en efectivo (pesos y dólares) cuya existencia es incomprobable y puede juga",
+      "classified": true
+    },
+    {
+      "title": "El Colegio Médico cortó las prestaciones a la Caja de Servicios Sociales",
+      "url": "https://www.opisantacruz.com.ar/2026/04/01/el-colegio-medico-corto-las-prestaciones-a-la-caja-de-servicios-sociales/",
+      "date": "2026-04-01",
+      "source": "opisantacruz.com.ar",
+      "section": "sociedad",
+      "excerpt": "Tal como consta en la comunicación enviada a la Caja de Servicios Sociales por parte del Colegio Médico, firmado por su presidente el Dr Horacio Córdoba, la institución médica resolvió cortar las prestaciones a la Obra Social por falta de pago. La nota indica que los servicios de diciembre 2025 aún no fueron pagados al […] La entrada El Colegio Médico cortó las prestaciones a la Caja de Servicios Sociales se publicó primero en OPI Santa Cruz.",
+      "classified": true
+    },
+    {
+      "title": "Se extendieron los resguardos docentes hasta el 30 de abril",
+      "url": "https://www.opisantacruz.com.ar/2026/04/01/se-extendieron-los-resguardos-docentes-hasta-el-30-de-abril/",
+      "date": "2026-04-01",
+      "source": "opisantacruz.com.ar",
+      "section": "sociedad",
+      "excerpt": "El Consejo Provincial de Educación (CPE) informó este martes en la subcomisión laboral que se resolvió extender el resguardo de los puestos de trabajo docentes hasta el 30 de abril. La decisión marca una “diferencia a nivel nacional” indicaron desde el organismo provincial y recordaron que se efectuaron resguardos durante todo el año 2024 y […] La entrada Se extendieron los resguardos docentes hasta el 30 de abril se publicó primero en OPI Santa Cruz.",
+      "classified": true
+    },
+    {
+      "title": "Trabajadores municipales de El Chaltén alcanzaron acuerdo salarial",
+      "url": "https://www.opisantacruz.com.ar/2026/03/31/trabajadores-municipales-de-el-chalten-alcanzaron-acuerdo-salarial/",
+      "date": "2026-03-31",
+      "source": "opisantacruz.com.ar",
+      "section": "sociedad",
+      "excerpt": "El municipio de El Chaltén junto a la Asociación de Trabajadores del Estado (ATE) alcanzaron un acuerdo salarial que implicará incrementos mensuales y bonos hasta el mes de julio de 2026. En una a mesa paritaria encabezada por el intendente Néstor Ticó y representantes de ATE se cerró una pauta salarial que implica un incremento […] La entrada Trabajadores municipales de El Chaltén alcanzaron acuerdo salarial se publicó primero en OPI Santa Cruz.",
+      "classified": true
+    },
+    {
+      "title": "Intendente de Caleta Olivia pidió la renuncia de todo su gabinete",
+      "url": "https://www.opisantacruz.com.ar/2026/03/31/intendente-de-caleta-olivia-pidio-la-renuncia-de-todo-su-gabinete/",
+      "date": "2026-03-31",
+      "source": "opisantacruz.com.ar",
+      "section": "política",
+      "excerpt": "El intendente de Caleta Olivia, Pablo Carrizo solicitó la renuncia de todo su gabinete para realizar una “revisión integral de su equipo de gobierno” y se evaluará el desempeño de todos los funcionarios de la gestión de gobierno. Así lo comunicó a su gabinete y fuentes de la comuna indicaron que la medida busca “reconfigurar […] La entrada Intendente de Caleta Olivia pidió la renuncia de todo su gabinete se publicó primero en OPI Santa Cruz.",
+      "classified": true
+    },
+    {
+      "title": "El Frente Sindical marcha a Casa de Gobierno este miércoles",
+      "url": "https://www.opisantacruz.com.ar/2026/03/31/el-frente-sindical-marcha-a-casa-de-gobierno-este-miercoles/",
+      "date": "2026-03-31",
+      "source": "opisantacruz.com.ar",
+      "section": "política",
+      "excerpt": "La mesa gremial que nuclea a trabajadores estatales, docentes, viales y de la sanidad ratificó la continuidad de las medidas de fuerza tras las declaraciones del Gobernador Claudio Vidal. El mandatario provincial supeditó la apertura de la negociación salarial a la aprobación de la Ley de Emergencia Económica, postura que los referentes sindicales calificaron como […] La entrada El Frente Sindical marcha a Casa de Gobierno este miércoles se publicó primero en OPI Santa Cruz.",
+      "classified": true
+    },
+    {
+      "title": "La retórica “to quoque” del gobernador Vidal en su discurso pragmático fundado en la “resistencia” pero con memoria selectiva y culpa sindical",
+      "url": "https://www.opisantacruz.com.ar/2026/03/31/la-retorica-to-quoque-del-gobernador-vidal-en-su-discurso-pragmatico/",
+      "date": "2026-03-31",
+      "source": "opisantacruz.com.ar",
+      "section": "política",
+      "excerpt": "(Por: Rubén Lasagno) – Luego del discurso del gobernador Claudio Vidal, donde abordó varios temas de interés público, decidimos analizar el contenido, especialmente en dos ítems de singular vigencia. Lo que tenés que saber: La Ministra de Gobierno se muestra desesperada, oculta mitad de la verdad y reconoce que empezaron la casa por el techo […] La entrada La retórica “to quoque” del gobernador Vidal en su discurso pragmático fundado en la “resistencia” pero con memoria selectiva y culpa sindica",
+      "classified": true
+    },
+    {
+      "title": "Gobierno anunció el pago salarial para el 2 de abril",
+      "url": "https://www.opisantacruz.com.ar/2026/03/31/gobierno-anuncio-el-pago-salarial-para-el-2-de-abril/",
+      "date": "2026-03-31",
+      "source": "opisantacruz.com.ar",
+      "section": "política",
+      "excerpt": "El gobernador de Santa Cruz, Claudio Vidal anunció este lunes en conferencia de prensa que se pagará los haberes del mes de marzo el 2 de abril “a la totalidad de los trabajadores activos”. En contacto con la prensa en Casa de Gobierno, Vidal sostuvo que “pese a las dificultades financieras es importante anunciar el […] La entrada Gobierno anunció el pago salarial para el 2 de abril se publicó primero en OPI Santa Cruz.",
+      "classified": true
+    },
+    {
+      "title": "ATE convocó a nuevo paro de 48 horas",
+      "url": "https://www.opisantacruz.com.ar/2026/03/31/ate-convoco-a-nuevo-paro-de-48-horas/",
+      "date": "2026-03-31",
+      "source": "opisantacruz.com.ar",
+      "section": "política",
+      "excerpt": "La Asociación de Trabajadores del Estado (ATE) informó que realizará un nuevo paro de 48 horas esta semana en reclamo del llamado a paritarias salariales y mejoras laborales. Tras cumplir una medida de fuerza durante los días jueves y viernes pasado, el principal gremio de los estatales públicos de Santa Cruz anunció que este martes […] La entrada ATE convocó a nuevo paro de 48 horas se publicó primero en OPI Santa Cruz.",
+      "classified": true
+    },
     {
       "title": "Veterano de Malvinas reclamó retirar una bandera inglesa en Santa Cruz",
       "url": "https://www.tiemposur.com.ar/info-general/veterano-de-malvinas-reclamo-retirar-una-bandera-inglesa-en-santa-cruz",
@@ -177,60 +473,6 @@
       "source": "tiemposur.com.ar",
       "section": "sociedad",
       "excerpt": "El presidente del Centro de Estudiantes del IPSA advirtió que la provincia modificó el régimen de correlatividades “de un día para el otro” afectando la cursada y retrasando el egreso de decenas de alumnos.",
-      "classified": true
-    },
-    {
-      "title": "Trabajadores municipales de El Chaltén alcanzaron acuerdo salarial",
-      "url": "https://www.opisantacruz.com.ar/2026/03/31/trabajadores-municipales-de-el-chalten-alcanzaron-acuerdo-salarial/",
-      "date": "2026-03-31",
-      "source": "opisantacruz.com.ar",
-      "section": "sociedad",
-      "excerpt": "El municipio de El Chaltén junto a la Asociación de Trabajadores del Estado (ATE) alcanzaron un acuerdo salarial que implicará incrementos mensuales y bonos hasta el mes de julio de 2026. En una a mesa paritaria encabezada por el intendente Néstor Ticó y representantes de ATE se cerró una pauta salarial que implica un incremento […] La entrada Trabajadores municipales de El Chaltén alcanzaron acuerdo salarial se publicó primero en OPI Santa Cruz.",
-      "classified": true
-    },
-    {
-      "title": "Intendente de Caleta Olivia pidió la renuncia de todo su gabinete",
-      "url": "https://www.opisantacruz.com.ar/2026/03/31/intendente-de-caleta-olivia-pidio-la-renuncia-de-todo-su-gabinete/",
-      "date": "2026-03-31",
-      "source": "opisantacruz.com.ar",
-      "section": "política",
-      "excerpt": "El intendente de Caleta Olivia, Pablo Carrizo solicitó la renuncia de todo su gabinete para realizar una “revisión integral de su equipo de gobierno” y se evaluará el desempeño de todos los funcionarios de la gestión de gobierno. Así lo comunicó a su gabinete y fuentes de la comuna indicaron que la medida busca “reconfigurar […] La entrada Intendente de Caleta Olivia pidió la renuncia de todo su gabinete se publicó primero en OPI Santa Cruz.",
-      "classified": true
-    },
-    {
-      "title": "El Frente Sindical marcha a Casa de Gobierno este miércoles",
-      "url": "https://www.opisantacruz.com.ar/2026/03/31/el-frente-sindical-marcha-a-casa-de-gobierno-este-miercoles/",
-      "date": "2026-03-31",
-      "source": "opisantacruz.com.ar",
-      "section": "política",
-      "excerpt": "La mesa gremial que nuclea a trabajadores estatales, docentes, viales y de la sanidad ratificó la continuidad de las medidas de fuerza tras las declaraciones del Gobernador Claudio Vidal. El mandatario provincial supeditó la apertura de la negociación salarial a la aprobación de la Ley de Emergencia Económica, postura que los referentes sindicales calificaron como […] La entrada El Frente Sindical marcha a Casa de Gobierno este miércoles se publicó primero en OPI Santa Cruz.",
-      "classified": true
-    },
-    {
-      "title": "La retórica “to quoque” del gobernador Vidal en su discurso pragmático fundado en la “resistencia” pero con memoria selectiva y culpa sindical",
-      "url": "https://www.opisantacruz.com.ar/2026/03/31/la-retorica-to-quoque-del-gobernador-vidal-en-su-discurso-pragmatico/",
-      "date": "2026-03-31",
-      "source": "opisantacruz.com.ar",
-      "section": "política",
-      "excerpt": "(Por: Rubén Lasagno) – Luego del discurso del gobernador Claudio Vidal, donde abordó varios temas de interés público, decidimos analizar el contenido, especialmente en dos ítems de singular vigencia. Lo que tenés que saber: La Ministra de Gobierno se muestra desesperada, oculta mitad de la verdad y reconoce que empezaron la casa por el techo […] La entrada La retórica “to quoque” del gobernador Vidal en su discurso pragmático fundado en la “resistencia” pero con memoria selectiva y culpa sindica",
-      "classified": true
-    },
-    {
-      "title": "Gobierno anunció el pago salarial para el 2 de abril",
-      "url": "https://www.opisantacruz.com.ar/2026/03/31/gobierno-anuncio-el-pago-salarial-para-el-2-de-abril/",
-      "date": "2026-03-31",
-      "source": "opisantacruz.com.ar",
-      "section": "política",
-      "excerpt": "El gobernador de Santa Cruz, Claudio Vidal anunció este lunes en conferencia de prensa que se pagará los haberes del mes de marzo el 2 de abril “a la totalidad de los trabajadores activos”. En contacto con la prensa en Casa de Gobierno, Vidal sostuvo que “pese a las dificultades financieras es importante anunciar el […] La entrada Gobierno anunció el pago salarial para el 2 de abril se publicó primero en OPI Santa Cruz.",
-      "classified": true
-    },
-    {
-      "title": "ATE convocó a nuevo paro de 48 horas",
-      "url": "https://www.opisantacruz.com.ar/2026/03/31/ate-convoco-a-nuevo-paro-de-48-horas/",
-      "date": "2026-03-31",
-      "source": "opisantacruz.com.ar",
-      "section": "política",
-      "excerpt": "La Asociación de Trabajadores del Estado (ATE) informó que realizará un nuevo paro de 48 horas esta semana en reclamo del llamado a paritarias salariales y mejoras laborales. Tras cumplir una medida de fuerza durante los días jueves y viernes pasado, el principal gremio de los estatales públicos de Santa Cruz anunció que este martes […] La entrada ATE convocó a nuevo paro de 48 horas se publicó primero en OPI Santa Cruz.",
       "classified": true
     }
   ]

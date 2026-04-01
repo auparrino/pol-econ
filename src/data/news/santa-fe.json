@@ -1,13 +1,48 @@
 {
   "province": "Santa Fe",
   "slug": "santa-fe",
-  "updated": "2026-03-31T23:35:54.488Z",
+  "updated": "2026-04-01T20:39:22.307Z",
   "sources": [
     "Google News Santa Fe",
     "El Litoral SF",
     "La Capital"
   ],
+  "summaries": {
+    "today": {
+      "text": "**Desarrollos políticos provinciales**\n\n* La polémica sobre la pesificación de la deuda de la provincia de Santa Fe sigue sin resolver. Se espera que la situación se vuelva más crítica si se elige un gobierno endeudador.\n\n**Situación económica local**\n\n* La producción y el empleo en la provincia de Santa Fe están en caída. Se advierte sobre la gravedad de la situación económica.\n* A pesar de esto, la provincia concretó la conexión del Gasoducto Metropolitano, lo que podría generar empleo y estimular la economía.\n\n**Temas sociales relevantes**\n\n* La causa judicial contra un chico de 15 años que mató a un compañero en una escuela de San Cristóbal sigue en curso.",
+      "count": 4,
+      "generated": "2026-04-01T20:39:19.012Z"
+    },
+    "week": {
+      "text": "**Desarrollos políticos provinciales**\n\n* La provincia de Santa Fe concretó la conexión del Gasoducto Metropolitano, considerada una decisión estratégica por el gobernador Puccini.\n* Se realizó una nueva subasta de bienes incautados al delito, con más de 2.000 personas inscritas para participar del remate público.\n* El ministro de Gobierno, Pullaro, expresó que Rosario está volviendo a ser lo que era para la Argentina, destacando la importancia de la provincia en el país.\n\n**Situación económica local**\n\n* Se advirtió sobre la caída de la producción y del empleo en la provincia de Santa Fe.\n* El sueldo docente en Santa Fe cayó ocho puestos en el ranking nacional, según denunció SADOP.\n* Se informó sobre la conexión del Gasoducto Metropolitano, que se considera una inversión importante para la provincia.\n\n**Temas sociales relevantes**\n\n* Un alumno de 15 años mató a un compañero y herió a varios estudiantes en una escuela de Santa Fe.\n* La provincia intervino sobre el agresor y desplegó un operativo interministerial de asistencia tras el ataque en una escuela.\n* Los docentes aseguraron que el tirador de Santa Fe era un buen alumno y no tenía problemas de conducta.\n* Se informó sobre la subasta de bienes incautados al delito, que incluyó autos de alta gama, motos y hasta un avión.\n\n**Tendencias y patrones**\n\n* La semana se centró en la situación económica y social de la provincia de Santa Fe, con noticias sobre la caída de la producción y del empleo, el sueldo docente y la subasta de bienes incautados al delito.\n* También se destacaron los desarrollos políticos, como la conexión del Gasoducto Metropolitano y la intervención de la provincia sobre el agresor en el ataque en una escuela.\n* La seguridad y la protección de la comunidad fueron temas recurrentes en la semana, con noticias sobre el ataque en una escuela y la intervención de la provincia.",
+      "count": 13,
+      "generated": "2026-04-01T20:39:19.012Z"
+    },
+    "month": {
+      "text": "**Análisis de la evolución del mes en la provincia de Santa Fe**\n\n**Desarrollos políticos provinciales**\n\n* La provincia de Santa Fe ha estado en el centro de la atención política en los últimos días, especialmente después del tiroteo en una escuela de San Cristóbal, que dejó un muerto y varios heridos.\n* El gobernador de Santa Fe, Omar Perotti, ha destacado la importancia de la seguridad y la prevención del delito en la provincia, y ha anunciado medidas para mejorar la seguridad en las escuelas.\n* La subasta de bienes incautados al delito ha sido otro tema destacado, con más de 2.000 personas inscritas para participar del remate público organizado por la Provincia.\n\n**Situación económica local**\n\n* La producción y el empleo en la provincia de Santa Fe han caído en los últimos meses, según advierten expertos económicos.\n* La provincia ha presentado una herramienta inédita para que pequeñas y medianas empresas accedan a créditos con tasas más bajas, lo que podría ayudar a mejorar la situación económica local.\n* Sin embargo, el sueldo docente en Santa Fe ha caído ocho puestos en el ranking nacional, según denunció SADOP.\n\n**Temas sociales relevantes**\n\n* El tiroteo en una escuela de San Cristóbal ha sido un tema de gran preocupación en la provincia, y ha llevado a la intervención del gobierno provincial para mejorar la seguridad en las escuelas.\n* La provincia ha impuesto una agenda vinculada a Memoria, Cultura, Educación y Deporte para conmemorar los 50 años del Golpe.\n* La educación digital ha sido otro tema destacado, con la provincia presentando una herramienta para mejorar la educación digital en la provincia.\n\n**Cambios y tendencias**\n\n* La provincia de Santa Fe ha estado en el centro de la atención política y económica en los últimos días, con un enfoque en la seguridad, la prevención del delito y la situación económica local.\n* La provincia ha presentado varias iniciativas para mejorar la situación económica local, como la herramienta para que pequeñas y medianas empresas accedan a créditos con tasas más bajas.\n* Sin embargo, la situación económica local sigue siendo un tema de preocupación, con la caída de la producción y el empleo en la provincia.\n\n**Tendencias futuras**\n\n* Es probable que la seguridad y la prevención del delito sigan siendo temas destacados en la provincia de Santa Fe en los próximos meses.\n* La provincia puede seguir presentando iniciativas para mejorar la situación económica local, como la creación de herramientas para que pequeñas y medianas empresas accedan a créditos con tasas más bajas.\n* La educación digital y la cultura pueden seguir siendo temas destacados en la provincia, con la implementación de programas y herramientas para mejorar la educación digital y la cultura en la provincia.",
+      "count": 17,
+      "generated": "2026-04-01T20:39:19.012Z"
+    }
+  },
   "articles": [
+    {
+      "title": "Advierten sobre la caída de la producción y del empleo en la provincia de Santa Fe",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPekZMRGlkeUV2V3VDSW4zY25GbzAteVJ0MzVhaExPcHA3bUVKMTdSY093cTAzblA4N1o5Rl9qaGlBREdXZ3hpUGlaRnoteTFXX1dLSjlsUHQtRGJiSm1qNUxWOHJ3c3hEZGlaYko2U1BXQ2lIanVjUnJOODZQZ3F4MzR0QnZvYldZUlFyeFpULXViaGxxaDVvSTJ3QlNKdFZQdTN3LTRFbkVCdkZMY1pmdThVNUtLOG5jWDRma3JGYWp3a3V3VHRXYzZnUm5BNXZmNFRhVFZiMGxVT19zbzdJWUhYaFFXY0XSAewBQVVfeXFMTldmZVEySlRhTUVaVU1SNEZEUzduXzNnLUEzdTN5NEhKdFZEWTd6aDZKQXhYVVd1OUpETlZ4eFNNWV90amZCSVVhenA0N0hCTkxCblNPaURrM1RyaU9ZSDUtaEgwOER1OUp3amtocEdXNVo5R2N0Z19QdUVNaE1zcnpMdl9KT09fcnNaUTZURmlZeHpuLWNWOUN1b0hVdHkzeThvR1NNcV9rSVF5a0ZvZDBoVmlKZG1LNENxbmpTVzU1d1ZVTGh0b0JaM3VIN3ZJSmdrRzdnTF9jbHRzdjlaNVEtT3VZdV9LcFA5RGE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "El Litoral",
+      "section": "economía",
+      "excerpt": "Advierten sobre la caída de la producción y del empleo en la provincia de Santa Fe El Litoral",
+      "classified": true
+    },
+    {
+      "title": "Cómo sigue la causa judicial contra el chico de 15 años que mató a un compañero en una escuela de San Cristóbal, Santa Fe",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNb1UwS0hQdGY2TmRDTG9ZTVpyR1VUZVhqcVJzbVRlSFROUjlCcDJ1c0p0WmdHcGxraXMtY1d2VWV1QVNPOWd5OHg0bmg5cXh3MTN3bFRWQVVLbW9fVmI2WWh1RHl0V0J1cVJFc2N6LThtMFFHQ05KTXVjV0xMdHZnMkx5UkRpb3JWQlFTZE8xOUYxaXhJcGdnSHJTN0UxLXA5RmJyR090WmxOS3NXcjltTDhoaGxsSnM2MVFYcnE3VVMwb0F5VkRCSzN4QjBnLWNLRGU5WDhiRHprcUhHUGNWaHMybS13OXFGLUtxbVhB?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-04-01",
+      "source": "chequeado.com",
+      "section": "sociedad",
+      "excerpt": "Cómo sigue la causa judicial contra el chico de 15 años que mató a un compañero en una escuela de San Cristóbal, Santa Fe chequeado.com",
+      "classified": true
+    },
     {
       "title": "Cuando Santa Fe tenga un gobierno endeudador, no dirán nada pero habrá señales: sobre la inerte polémica de la pesificación de la deuda de Santa Fe.",
       "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNRVBuWDlGUlA1T251NU9UMUFEV0lwMWNoZjl4Z3Rhd2dfUFNRLWpJMEtjc2ZTVmR3LUYwelBzdWM5RzVEOFQ0cTIwcFB5UGdIbFZ4MElFbnduNnJqQklEQ29lemU3a0xxUHpWaHhTQ0ZVVUU2Tmx5bnZXTW56Z1B1ZGhwOV9FSm9ocjhWOHVLeGVxaktIRHI0T241ZmVQMkdvalc3aDZvUGhJaGVtNWF3YUhoOEtUTDZtX2xIWWhjb2VWVUdWMXA2UWl4X2M3b2xhcE5DWDBFczViUVFUNDhjUV9iZ01mNS1Ub1M5TzlIcm1tZ0Z5YjF2QzdPbEJ3RTd0bFlj?oc=5&hl=en-US&gl=US&ceid=US:en",
@@ -21,9 +56,27 @@
       "title": "Provincia concretó la conexión del Gasoducto Metropolitano: \"No parar la obra pública es una decisión estratégica\", dijo Puccini",
       "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQVlQ5a3pVWWxfeUN2WUpXRlBzOGQ4MGlEUTVzT21UMFpwUWNVVkdiZWxOamxENkJqbHJneXJUSWpFd2kzTnNPUTRyRElQX1pCT1FtTWFEY0F6S3ZSV1R4U3ZRbUpCWjFvUmpLVDlON1llVnNoNGRiaU5HRWRyUGV4WEp0dkxZMENzVk0xX1hMWjk1SHB2cUlaRko5Wk1oZVZnUUt4T3owRW5lWnpwY0ZoaTUwbFJER0M5bVg0cWpyYVpFTUtYdmcwdjhMa2UwU3o1S2VjWGE0VmlfcUE5MWwxdF9MTUJaTXlpMmlLWFlhRnc0QlhQS1BWUUl5cW5pS0Jqb3JmbdIBhAJBVV95cUxQVlQ5a3pVWWxfeUN2WUpXRlBzOGQ4MGlEUTVzT21UMFpwUWNVVkdiZWxOamxENkJqbHJneXJUSWpFd2kzTnNPUTRyRElQX1pCT1FtTWFEY0F6S3ZSV1R4U3ZRbUpCWjFvUmpLVDlON1llVnNoNGRiaU5HRWRyUGV4WEp0dkxZMENzVk0xX1hMWjk1SHB2cUlaRko5Wk1oZVZnUUt4T3owRW5lWnpwY0ZoaTUwbFJER0M5bVg0cWpyYVpFTUtYdmcwdjhMa2UwU3o1S2VjWGE0VmlfcUE5MWwxdF9MTUJaTXlpMmlLWFlhRnc0QlhQS1BWUUl5cW5pS0Jqb3JmbQ?oc=5&hl=en-US&gl=US&ceid=US:en",
       "date": "2026-03-31",
-      "source": "Aire de Santa Fe",
+      "source": "airedesantafe.com.ar",
       "section": "economía",
-      "excerpt": "Provincia concretó la conexión del Gasoducto Metropolitano: \"No parar la obra pública es una decisión estratégica\", dijo Puccini Aire de Santa Fe",
+      "excerpt": "Provincia concretó la conexión del Gasoducto Metropolitano: \"No parar la obra pública es una decisión estratégica\", dijo Puccini airedesantafe.com.ar",
+      "classified": true
+    },
+    {
+      "title": "Nueva subasta de bienes incautados al delito: más de 2.000 personas ya se inscribieron para participar del remate público organizado por la Provincia",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kRVJOaW4tLW1rYXJwWEhoUUNoWjdHd0xnZHAyd3ExM2R4UHh3WW8tUUJYNmxUdTYwaHZDSXljMmt1dFhRYkRhYzJtZHlHZWFNTVdRM3ZfekhEY1IxTlVoag?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-30",
+      "source": "Gobierno de Santa Fe",
+      "section": "política",
+      "excerpt": "Nueva subasta de bienes incautados al delito: más de 2.000 personas ya se inscribieron para participar del remate público organizado por la Provincia Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "Las claves del tiroteo en una escuela de Santa Fe: un alumno de 15 años mató a un compañero y hay al menos 8 heridos",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPaFYtaVJZY0V1cHVUZ1FZMmpkX3JSMEd3T3BNbUNqYk4zNk5HcDlWLXM2UmJfbWxYR3BGTlhQSkxPcTdUQXVSanRBamdmdDU1MFg0ZndwaklNaFV1TjNoakdCeUxuaDkzLUliQnJLVnBrTnVSOXpVOGxUQlllU1hQZ2xVdjh6WlNIcHZnVEtJamxzdlZSQWJLSHZGMGZxa3QweG1XOHJ1TmVEeGFhS1I0alZYUVdwUHIwSVQ4ZjJVYjNFTGVpd1NOa1pTVlJWYUhGS3JKU0tNa0RUZkJRZFp4VVRXTzE2bEk?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-30",
+      "source": "chequeado.com",
+      "section": "sociedad",
+      "excerpt": "Las claves del tiroteo en una escuela de Santa Fe: un alumno de 15 años mató a un compañero y hay al menos 8 heridos chequeado.com",
       "classified": true
     },
     {
@@ -33,6 +86,105 @@
       "source": "Gobierno de Santa Fe",
       "section": "sociedad",
       "excerpt": "San Cristóbal: la Provincia interviene sobre el agresor y despliega un operativo interministerial de asistencia tras el ataque en una escuela Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "Pullaro: “Rosario está volviendo a ser lo que era para la Argentina”",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oT00wQkFKWEQ0Nm14RnZTekRfMmxyeUl1cElZM2d0ZmVFaFBYQWRzTDFNTFYtYmdEd2ZRNVh5SW5xdXdPSjdYdUxCR0F2UVRKLUFCMS1xX3NFV0dGd1BQRw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-26",
+      "source": "Gobierno de Santa Fe",
+      "section": "política",
+      "excerpt": "Pullaro: “Rosario está volviendo a ser lo que era para la Argentina” Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "A 50 años del Golpe, Provincia impulsa una agenda vinculada a Memoria, Cultura, Educación y Deporte",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aLUhDazZRZ3FrZnAzY2dkT2NnSW0tZUVycV9wYmhfNjNmanVkQWFYbndZamxIOGFUQmJfMlotNVpJaklSZUpHZi13STdoTFRRUURxU1oydXdqTkgtSXdpNw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-14",
+      "source": "Gobierno de Santa Fe",
+      "section": "cultura",
+      "excerpt": "A 50 años del Golpe, Provincia impulsa una agenda vinculada a Memoria, Cultura, Educación y Deporte Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "“Hoy la provincia de Santa Fe se pone a la vanguardia en materia de educación digital”",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE54cGlsaDAtMjQyVzlwTV94RUNfSXBNay1zMWRCeXNJdHpaMkNTcGk1UlJ2SjN2RGhaNjNveS02U3VnSTVoM2VwRElCZ0hXWnlZbE9MVkhpb1B1LWJsUWMzdg?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-11",
+      "source": "Gobierno de Santa Fe",
+      "section": "sociedad",
+      "excerpt": "“Hoy la provincia de Santa Fe se pone a la vanguardia en materia de educación digital” Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "Provincia presentó una herramienta inédita para que pequeñas y medianas empresas accedan a créditos con tasas más bajas",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kcHdfak1reWRGMzRRbmE3Mm01eGVsQ1NRdWdXY3o1YnMxOGlwdUtiZmxjYlk3cFZPOVNWeklxbjc0VmhuWF8yMnV2MEN2OFRtTjh5ZEFhRGw1OS03b1N4ZA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-03",
+      "source": "Gobierno de Santa Fe",
+      "section": "economía",
+      "excerpt": "Provincia presentó una herramienta inédita para que pequeñas y medianas empresas accedan a créditos con tasas más bajas Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "Pullaro: “Pasamos de ser la provincia con mayores índices de violencia, a ser una de las más seguras de la Argentina”",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3WG11d2Z6YnRNWFNFTTZURWllVml4VHpjMTIzY2xyQXJkekpTQ3Ffb1BSMy1FcHhaYmZnbGl2Ny05NDRqcGMyRnY0Z21qaExXNEhxaks3bm0ycUhxbjF2aA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-02",
+      "source": "Gobierno de Santa Fe",
+      "section": "sociedad",
+      "excerpt": "Pullaro: “Pasamos de ser la provincia con mayores índices de violencia, a ser una de las más seguras de la Argentina” Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "\"Orientador Laboral\": Provincia desarrolló un asistente virtual para ayudar a encontrar trabajo",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE83cThMdUdFTVJHajBqbm5NSmIwWkNYaVVpODF2ZlhqdDA3TjdFNnVVcU11Vm5QMlhnQjNHczFJN05tanRaWEpUN2VJaV8ybXpyTG85MzZtWmlzaHlCUllUMg?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-01",
+      "source": "Gobierno de Santa Fe",
+      "section": "economía",
+      "excerpt": "\"Orientador Laboral\": Provincia desarrolló un asistente virtual para ayudar a encontrar trabajo Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "Santa Fe tendrá uno de los mejores sueldos docentes del país",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5kbWZfdE9MR1NJSndZd0syZmJSdmQ1MjFBcHBMc19XV2RVYm4ySldIeDlRSzRJTzA0bUxPQmdjZjlBTS12dW4xTUF3cTNEb1dzOEwyUHViNC1RMW01aU9STw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-22",
+      "source": "Gobierno de Santa Fe",
+      "section": "sociedad",
+      "excerpt": "Santa Fe tendrá uno de los mejores sueldos docentes del país Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "Báscolo: “La oferta de Provincia es compensar 3 % por diciembre, aumento de 12,5 % hasta junio con piso de 170 mil para los sueldos más bajos”",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5BZDhjTmN2Ums1cG9faDJ1bUpKOThiX3RfZy1OckNxQTZwU3ZzWEloanRkQ0hZMy1UczZMRWtyR0NpNkR1cnZBLUVqY3Y1UjY0V1phR3JBUVVYV0pIUFB4UA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-18",
+      "source": "Gobierno de Santa Fe",
+      "section": "política",
+      "excerpt": "Báscolo: “La oferta de Provincia es compensar 3 % por diciembre, aumento de 12,5 % hasta junio con piso de 170 mil para los sueldos más bajos” Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "Conflicto con la policía en Santa Fe: claves para entender el tema",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZlJwbGtQOTJ6b0dZOWtIWkZHOVZnNzlOODFEV2lHVFI2QkdQclJ2bUdEc1hyLS1VT2lYUnA4U3d0eWJ4eDhSZ0M3U2RwTFZKMUI3TFBnS3Y3Rm9zSzZ0RXoxYmtxVUVlY3pMQXZxSmEyMnhWdHk4MFBQYXpDb21HTkhjNDEzMm5FdDh2NFRUbXRHd0tnakVKSnQ1X1EwSk92VWdlV055YjhMQ19nbVRNWWUtTmhKcUZu?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-12",
+      "source": "chequeado.com",
+      "section": "sociedad",
+      "excerpt": "Conflicto con la policía en Santa Fe: claves para entender el tema chequeado.com",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno Provincial dio inicio a la paritaria con los gremios de la salud",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1zUDZlMG5waW5nbnhOTlVhWU0zUTJ4Zl91Y3NkUVVsbW1lemdndnhHSUNpZGs1WVl6eW5UQm42WUtNazM5YmFBbFd0MURfX1U3a01KRDlPWnloOWR5Ri1ERg?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-12",
+      "source": "Gobierno de Santa Fe",
+      "section": "política",
+      "excerpt": "El Gobierno Provincial dio inicio a la paritaria con los gremios de la salud Gobierno de Santa Fe",
+      "classified": true
+    },
+    {
+      "title": "Provincia argentina de Santa Fe retorna al mercado internacional de deuda después de ocho años",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE83S21XN3B4X194RG83elpuWmJzZl9fa1NqUE9TZWFfdy1lbEpndDZrQ1RrZDR0QnZ4ZmhlMEM1MklSQlk2c1h6RWtteXF5U0FzWUNfYW5kc1Z6NEFHTl96Q05RYkNYY2JRRTRPYURBdjRSR0MxRXVr?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-03",
+      "source": "LexLatin",
+      "section": "economía",
+      "excerpt": "Provincia argentina de Santa Fe retorna al mercado internacional de deuda después de ocho años LexLatin",
       "classified": true
     },
     {
@@ -78,78 +230,6 @@
       "source": "Infobae",
       "section": "sociedad",
       "excerpt": "Un estudiante mata de varios disparos a un compañero en un colegio de la provincia argentina de Santa Fe Infobae",
-      "classified": true
-    },
-    {
-      "title": "Pullaro: “Rosario está volviendo a ser lo que era para la Argentina”",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oT00wQkFKWEQ0Nm14RnZTekRfMmxyeUl1cElZM2d0ZmVFaFBYQWRzTDFNTFYtYmdEd2ZRNVh5SW5xdXdPSjdYdUxCR0F2UVRKLUFCMS1xX3NFV0dGd1BQRw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-26",
-      "source": "Gobierno de Santa Fe",
-      "section": "política",
-      "excerpt": "Pullaro: “Rosario está volviendo a ser lo que era para la Argentina” Gobierno de Santa Fe",
-      "classified": true
-    },
-    {
-      "title": "A 50 años del Golpe, Provincia impulsa una agenda vinculada a Memoria, Cultura, Educación y Deporte",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aLUhDazZRZ3FrZnAzY2dkT2NnSW0tZUVycV9wYmhfNjNmanVkQWFYbndZamxIOGFUQmJfMlotNVpJaklSZUpHZi13STdoTFRRUURxU1oydXdqTkgtSXdpNw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-14",
-      "source": "Gobierno de Santa Fe",
-      "section": "cultura",
-      "excerpt": "A 50 años del Golpe, Provincia impulsa una agenda vinculada a Memoria, Cultura, Educación y Deporte Gobierno de Santa Fe",
-      "classified": true
-    },
-    {
-      "title": "Provincia presentó una herramienta inédita para que pequeñas y medianas empresas accedan a créditos con tasas más bajas",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kcHdfak1reWRGMzRRbmE3Mm01eGVsQ1NRdWdXY3o1YnMxOGlwdUtiZmxjYlk3cFZPOVNWeklxbjc0VmhuWF8yMnV2MEN2OFRtTjh5ZEFhRGw1OS03b1N4ZA?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-03",
-      "source": "Gobierno de Santa Fe",
-      "section": "economía",
-      "excerpt": "Provincia presentó una herramienta inédita para que pequeñas y medianas empresas accedan a créditos con tasas más bajas Gobierno de Santa Fe",
-      "classified": true
-    },
-    {
-      "title": "Pullaro: “Pasamos de ser la provincia con mayores índices de violencia, a ser una de las más seguras de la Argentina”",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3WG11d2Z6YnRNWFNFTTZURWllVml4VHpjMTIzY2xyQXJkekpTQ3Ffb1BSMy1FcHhaYmZnbGl2Ny05NDRqcGMyRnY0Z21qaExXNEhxaks3bm0ycUhxbjF2aA?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-02",
-      "source": "Gobierno de Santa Fe",
-      "section": "política",
-      "excerpt": "Pullaro: “Pasamos de ser la provincia con mayores índices de violencia, a ser una de las más seguras de la Argentina” Gobierno de Santa Fe",
-      "classified": true
-    },
-    {
-      "title": "\"Orientador Laboral\": Provincia desarrolló un asistente virtual para ayudar a encontrar trabajo",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE83cThMdUdFTVJHajBqbm5NSmIwWkNYaVVpODF2ZlhqdDA3TjdFNnVVcU11Vm5QMlhnQjNHczFJN05tanRaWEpUN2VJaV8ybXpyTG85MzZtWmlzaHlCUllUMg?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-03-01",
-      "source": "Gobierno de Santa Fe",
-      "section": "economía",
-      "excerpt": "\"Orientador Laboral\": Provincia desarrolló un asistente virtual para ayudar a encontrar trabajo Gobierno de Santa Fe",
-      "classified": true
-    },
-    {
-      "title": "Báscolo: “La oferta de Provincia es compensar 3 % por diciembre, aumento de 12,5 % hasta junio con piso de 170 mil para los sueldos más bajos”",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5BZDhjTmN2Ums1cG9faDJ1bUpKOThiX3RfZy1OckNxQTZwU3ZzWEloanRkQ0hZMy1UczZMRWtyR0NpNkR1cnZBLUVqY3Y1UjY0V1phR3JBUVVYV0pIUFB4UA?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-02-18",
-      "source": "Gobierno de Santa Fe",
-      "section": "política",
-      "excerpt": "Báscolo: “La oferta de Provincia es compensar 3 % por diciembre, aumento de 12,5 % hasta junio con piso de 170 mil para los sueldos más bajos” Gobierno de Santa Fe",
-      "classified": true
-    },
-    {
-      "title": "El Gobierno Provincial dio inicio a la paritaria con los gremios de la salud",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1zUDZlMG5waW5nbnhOTlVhWU0zUTJ4Zl91Y3NkUVVsbW1lemdndnhHSUNpZGs1WVl6eW5UQm42WUtNazM5YmFBbFd0MURfX1U3a01KRDlPWnloOWR5Ri1ERg?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-02-12",
-      "source": "Gobierno de Santa Fe",
-      "section": "política",
-      "excerpt": "El Gobierno Provincial dio inicio a la paritaria con los gremios de la salud Gobierno de Santa Fe",
-      "classified": true
-    },
-    {
-      "title": "Conflicto con la policía en Santa Fe: claves para entender el tema",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZlJwbGtQOTJ6b0dZOWtIWkZHOVZnNzlOODFEV2lHVFI2QkdQclJ2bUdEc1hyLS1VT2lYUnA4U3d0eWJ4eDhSZ0M3U2RwTFZKMUI3TFBnS3Y3Rm9zSzZ0RXoxYmtxVUVlY3pMQXZxSmEyMnhWdHk4MFBQYXpDb21HTkhjNDEzMm5FdDh2NFRUbXRHd0tnakVKSnQ1X1EwSk92VWdlV055YjhMQ19nbVRNWWUtTmhKcUZu?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "date": "2026-02-12",
-      "source": "Chequeado",
-      "section": "sociedad",
-      "excerpt": "Conflicto con la policía en Santa Fe: claves para entender el tema Chequeado",
       "classified": true
     },
     {

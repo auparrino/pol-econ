@@ -556,8 +556,9 @@ function EconomicSection({ province }) {
   );
 }
 
-export default function ProvincePanel({ province, governors, congress, onClose, width = 320 }) {
+export default function ProvincePanel({ province, governors, congress, onClose, width = 320, mobile = false }) {
   if (!province) {
+    if (mobile) return null;
     return (
       <aside
         className="fixed top-[56px] right-0 border-l z-[999] flex items-center justify-center p-6 transition-all duration-300"
@@ -603,8 +604,8 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
 
   return (
     <aside
-      className="fixed top-[56px] right-0 border-l z-[999] overflow-y-auto overflow-x-hidden transition-all duration-300"
-      style={{ width, bottom: 100, background: '#FFF8EB', borderColor: '#d4c4a0' }}
+      className={mobile ? 'overflow-y-auto overflow-x-hidden' : 'fixed top-[56px] right-0 border-l z-[999] overflow-y-auto overflow-x-hidden transition-all duration-300'}
+      style={mobile ? { background: '#FFF8EB' } : { width, bottom: 100, background: '#FFF8EB', borderColor: '#d4c4a0' }}
     >
       {/* Header */}
       <div className="sticky top-0 border-b p-3 z-10" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.10)' }}>

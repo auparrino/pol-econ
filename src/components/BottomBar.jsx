@@ -19,7 +19,7 @@ const BASE_TABS = [
   { id: 'news', label: 'News' },
 ];
 
-export default function BottomBar({ congress, overlays, energyLayers, selectedProvince, governors }) {
+export default function BottomBar({ congress, overlays, energyLayers, selectedProvince, governors, mobile = false }) {
   const hasOverlay = overlays?.mining || energyLayers?.length > 0;
 
   const tabs = hasOverlay
@@ -35,8 +35,8 @@ export default function BottomBar({ congress, overlays, energyLayers, selectedPr
 
   return (
     <aside
-      className="fixed left-0 z-[999] flex flex-col"
-      style={{
+      className={mobile ? 'flex flex-col' : 'fixed left-0 z-[999] flex flex-col'}
+      style={mobile ? { background: '#FFF8EB' } : {
         top: 56,
         bottom: 100,
         width: 340,
