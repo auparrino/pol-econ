@@ -6,9 +6,10 @@ const DIP_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_labor
 const VOTE_COLOR_BB = { A: '#27ae60', N: '#C1121F', ABS: '#64748b' };
 const VOTE_LBL = { A: 'A', N: 'N', ABS: '~' };
 
+const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
 const votesByName = (() => {
   const map = {};
-  for (const l of votacionesRaw) {
+  for (const l of votacionesList) {
     const key = l.n?.split(',')[0]?.trim().toUpperCase();
     if (key && l.v) {
       if (!map[key]) map[key] = [];

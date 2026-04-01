@@ -23,8 +23,9 @@ const VOTE_TOPICS = {
 };
 
 // Build lookup: "APELLIDO" -> legislator record
+const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
 const votacionesByName = {};
-for (const leg of votacionesRaw) {
+for (const leg of votacionesList) {
   const key = leg.n?.split(',')[0]?.trim().toUpperCase();
   if (key) {
     if (!votacionesByName[key]) votacionesByName[key] = [];
@@ -42,7 +43,7 @@ const DEPUTY_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_la
 
 function computeBlocPosition(chamber, topics) {
   const positions = {};
-  const llaLegs = votacionesRaw.filter(
+  const llaLegs = votacionesList.filter(
     l => l.c === chamber && OFICIALISMO_BLOCS.includes(l.b?.toLowerCase())
   );
   for (const topic of topics) {
