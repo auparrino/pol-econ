@@ -1,36 +1,33 @@
 import { useMacroData } from '../hooks/useMacroData';
 import { commodityPrices } from '../data/commodityPrices';
 
-// delta: { pct: number, dir: 'up'|'down'|'flat' } | null
 function DeltaBadge({ delta }) {
-  if (!delta) return <span className="block h-[14px]" />;
+  if (!delta) return null;
   const { pct, dir } = delta;
   const abs = Math.abs(pct).toFixed(1);
   const arrow = dir === 'up' ? '▲' : dir === 'down' ? '▼' : '·';
-  const color = dir === 'up' ? '#4ade80' : dir === 'down' ? '#f87171' : '#8899aa';
+  const color = dir === 'up' ? '#27ae60' : dir === 'down' ? '#C1121F' : '#8899aa';
   return (
-    <span
-      className="block text-[12px] font-mono leading-[14px] h-[14px]"
-      style={{ color }}
-    >
-      {arrow} {abs}%
+    <span className="text-[11px] font-mono ml-0.5" style={{ color }}>
+      {arrow}{abs}%
     </span>
   );
 }
 
-function MacroChip({ label, value, prefix = '', suffix = '', color = 'text-cream', delta }) {
+function MacroChip({ label, value, prefix = '', suffix = '', delta }) {
   return (
-    <div className="flex flex-col items-center px-3 min-w-[70px]">
-      <span className="text-[13px] font-semibold tracking-[1.5px] uppercase text-steel-dim leading-[15px]">
-        {label}
-      </span>
-      <span className={`font-mono text-[18px] font-bold leading-tight ${color}`}>
+    <span
+      className="inline-flex items-center gap-2 rounded-full text-[15px] border whitespace-nowrap"
+      style={{ background: 'rgba(0,48,73,0.08)', borderColor: 'rgba(0,48,73,0.18)', color: '#003049', padding: '8px 20px' }}
+    >
+      <span className="font-medium opacity-50 text-[12px] uppercase tracking-wide">{label}</span>
+      <span className="font-semibold font-mono">
         {value != null
           ? `${prefix}${typeof value === 'number' ? value.toLocaleString('es-AR') : value}${suffix}`
           : '—'}
       </span>
       <DeltaBadge delta={delta} />
-    </div>
+    </span>
   );
 }
 
@@ -44,73 +41,29 @@ export default function Header() {
   const cmp = macro.comparisons;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-[1000] h-[64px] bg-navy border-b border-steel-dim/30 flex items-center justify-between px-4">
-      <div className="flex items-center gap-3">
-        <div>
-          <h1 className="text-[20px] font-black tracking-tight">
-            <span className="text-crimson">ARGENTINA</span>
-          </h1>
-          <p className="text-[13px] font-medium tracking-[2px] uppercase text-steel -mt-0.5">
-            Political-Economic Dashboard
-          </p>
-        </div>
-        <div className="w-px h-7 bg-steel-dim/30 ml-2" />
+    <header
+      className="fixed top-0 left-0 right-0 z-[1000] flex items-center gap-3 overflow-x-auto"
+      style={{ background: '#FFF8EB', borderBottom: '1px solid #d4c4a0', height: 56, padding: '0 16px' }}
+    >
+      <div className="shrink-0">
+        <h1 className="text-[16px] font-extrabold tracking-tight text-navy leading-tight">
+          ARGENTINA
+        </h1>
+        <p className="text-[9px] font-medium tracking-[1.5px] uppercase text-steel -mt-0.5">
+          Political Dashboard
+        </p>
       </div>
 
-      <div className="flex items-center gap-2 divide-x divide-steel-dim/20">
-        <MacroChip
-          label="USD Oficial"
-          value={macro.dolarOficial?.venta}
-          prefix="$"
-          color="text-cream"
-          delta={cmp?.dolarOficial?.d1}
-        />
-        <MacroChip
-          label="USD Blue"
-          value={macro.dolarBlue?.venta}
-          prefix="$"
-          color="text-steel-light"
-          delta={cmp?.dolarBlue?.d1}
-        />
-        <MacroChip
-          label="USD MEP"
-          value={macro.dolarMEP?.venta}
-          prefix="$"
-          color="text-steel"
-          delta={cmp?.dolarMEP?.d1}
-        />
-        <MacroChip
-          label="Dep.30d"
-          value={macro.tasaPolitica != null ? macro.tasaPolitica.toFixed(1) : null}
-          suffix="%"
-          color="text-warning"
-          delta={cmp?.tasaPolitica?.d1}
-        />
-        <MacroChip
-          label="R.País"
-          value={macro.riesgoPais}
-          color="text-crimson"
-          delta={cmp?.riesgoPais?.d1}
-        />
-        <div className="w-px h-7 bg-steel-dim/30" />
-        <MacroChip
-          label="Gold (oz)"
-          value={latestCommodities.oro}
-          prefix="$"
-          color="text-warning"
-        />
-        <MacroChip
-          label="Copper (t)"
-          value={latestCommodities.cobre?.toLocaleString('en-US')}
-          prefix="$"
-          color="text-[#b87333]"
-        />
-        <MacroChip
-          label="Li (t)"
-          value={latestCommodities.litio ? latestCommodities.litio.toLocaleString('en-US') : null}
-          prefix="$"
-          color="text-[#00d4ff]"
-        />
+      <div className="flex items-center gap-4 flex-1 justify-center flex-wrap">
+        <MacroChip label="Oficial" value={macro.dolarOficial?.venta} prefix="$" delta={cmp?.dolarOficial?.d1} />
+        <MacroChip label="Blue" value={macro.dolarBlue?.venta} prefix="$" delta={cmp?.dolarBlue?.d1} />
+        <MacroChip label="MEP" value={macro.dolarMEP?.venta} prefix="$" delta={cmp?.dolarMEP?.d1} />
+        <MacroChip label="Dep30d" value={macro.tasaPolitica != null ? macro.tasaPolitica.toFixed(1) : null} suffix="%" delta={cmp?.tasaPolitica?.d1} />
+        <MacroChip label="RPaís" value={macro.riesgoPais} delta={cmp?.riesgoPais?.d1} />
+        <span className="w-px h-5 shrink-0" style={{ background: 'rgba(0,48,73,0.15)' }} />
+        <MacroChip label="Au" value={latestCommodities.oro} prefix="$" />
+        <MacroChip label="Cu" value={latestCommodities.cobre?.toLocaleString('en-US')} prefix="$" />
+        <MacroChip label="Li" value={latestCommodities.litio ? latestCommodities.litio.toLocaleString('en-US') : null} prefix="$" />
       </div>
     </header>
   );

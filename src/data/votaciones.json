@@ -1,1 +1,4480 @@
-[{"n":"BANFI, KARINA","b":"Adelante Buenos Aires","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FERRARO, MAXIMILIANO","b":"Coalicion Civica","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"FRADE, MONICA","b":"Coalicion Civica","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"PAGANO, MARCELA MARINA","b":"Coherencia","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N"}},{"n":"DE LA SOTA, NATALIA","b":"Defendamos Cordoba","p":"Córdoba","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"AVILA, FERNANDA","b":"Elijo Catamarca","p":"Catamarca","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"MONGUILLOT, FERNANDO","b":"Elijo Catamarca","p":"Catamarca","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"NOBLEGA, SEBASTIAN","b":"Elijo Catamarca","p":"Catamarca","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"MASSOT, NICOLAS","b":"Encuentro Federal","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"PICHETTO, MIGUEL ANGEL","b":"Encuentro Federal","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"BREGMAN, MYRIAM","b":"Frente De Izquierda Y De Trabajadores Unidad","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"DEL CAÑO, NICOLAS","b":"Frente De Izquierda Y De Trabajadores Unidad","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"DEL PLA, ROMINA","b":"Frente De Izquierda Y De Trabajadores Unidad","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"PITROLA, NESTOR","b":"Frente De Izquierda Y De Trabajadores Unidad","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"FERNANDEZ, ELIA MARINA","b":"Independencia","p":"Tucumán","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MEDINA, GLADYS","b":"Independencia","p":"Tucumán","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"NOGUERA, JAVIER","b":"Independencia","p":"Tucumán","c":"D","v":{"regimen_penal_juv":"A","mercosur_ue":"A"}},{"n":"ARRUA, ALBERTO","b":"Innovacion Federal","p":"Misiones","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BIELLA, BERNARDO","b":"Innovacion Federal","p":"Salta","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"HERRERA, OSCAR","b":"Innovacion Federal","p":"Misiones","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"OUTES, PABLO","b":"Innovacion Federal","p":"Salta","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"RUIZ, YAMILA","b":"Innovacion Federal","p":"Misiones","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"VANCSIK, DANIEL","b":"Innovacion Federal","p":"Misiones","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"VEGA, YOLANDA","b":"Innovacion Federal","p":"Salta","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"AJMECHET, SABRINA","b":"La Libertad Avanza","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"ALMENA, CARLOS ALBERTO","b":"La Libertad Avanza","p":"San Luis","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"ALMIRON, LISANDRO","b":"La Libertad Avanza","p":"Corrientes","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"ANDREUSSI, BARBARA","b":"La Libertad Avanza","p":"Jujuy","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"ANSALONI, PABLO","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"ARABIA, DAMIAN","b":"La Libertad Avanza","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"AVICO, BELEN","b":"La Libertad Avanza","p":"Córdoba","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BASUALDO, ATILIO","b":"La Libertad Avanza","p":"Formosa","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BECERRA, MONICA","b":"La Libertad Avanza","p":"San Luis","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BENEDIT, BELTRAN","b":"La Libertad Avanza","p":"Entre Ríos","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BENEGAS LYNCH, BERTIE","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BONACCI, ROCIO","b":"La Libertad Avanza","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BONGIOVANNI, ALEJANDRO","b":"La Libertad Avanza","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BORNORONI, GABRIEL","b":"La Libertad Avanza","p":"Córdoba","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BRIZUELA, ADRIAN","b":"La Libertad Avanza","p":"Catamarca","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BRUNO, ELIANA","b":"La Libertad Avanza","p":"Salta","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"CAMPERO, MARIANO","b":"La Libertad Avanza","p":"Tucumán","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"CARRANCIO, ALEJANDRO","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"CASTELNUOVO, GISELLE","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"CHICONI, ABEL","b":"La Libertad Avanza","p":"San Juan","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"CORREA LLANO, FACUNDO","b":"La Libertad Avanza","p":"Mendoza","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"DIEZ, ROMINA","b":"La Libertad Avanza","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"EMMA, NICOLAS","b":"La Libertad Avanza","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FARGOSI, ALEJANDRO","b":"La Libertad Avanza","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FERREYRA, ALIDA","b":"La Libertad Avanza","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FIGLIUOLO, SERGIO","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FLORES, MARIA GABRIELA","b":"La Libertad Avanza","p":"Salta","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FRIAS, MAIRA","b":"La Libertad Avanza","p":"Chubut","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GALLARDO, MARIA VIRGINIA","b":"La Libertad Avanza","p":"Corrientes","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GARCIA, ALVARO","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GARCIA, CARLOS","b":"La Libertad Avanza","p":"Chaco","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GIUDICI, SILVANA","b":"La Libertad Avanza","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GOITIA, ROSARIO","b":"La Libertad Avanza","p":"Chaco","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GONZALES, ALFREDO","b":"La Libertad Avanza","p":"Jujuy","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GONZALEZ ESTEVARENA, MARIA LUISA","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GRUBER, MAURA","b":"La Libertad Avanza","p":"Misiones","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GUZMAN, JAIRO","b":"La Libertad Avanza","p":"Santa Cruz","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"HARTFIELD, DIEGO","b":"La Libertad Avanza","p":"Misiones","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"HOLZMAN, PATRICIA","b":"La Libertad Avanza","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"HUESEN, GERARDO","b":"La Libertad Avanza","p":"Tucumán","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"HUMENUK, GLADYS","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"IBAÑEZ, MARIA CECILIA","b":"La Libertad Avanza","p":"Córdoba","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"LAUMANN, ANDRES ARIEL","b":"La Libertad Avanza","p":"Entre Ríos","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"LEMOINE, LILIA","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"LEONE, ANDRES","b":"La Libertad Avanza","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"LLANO, MERCEDES","b":"La Libertad Avanza","p":"Mendoza","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"LLUCH, ENRIQUE","b":"La Libertad Avanza","p":"Córdoba","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"LONGO, JOHANNA SABRINA","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MACYSZYN, LORENA","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MARTINEZ, ALVARO","b":"La Libertad Avanza","p":"Mendoza","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MAYORAZ, NICOLAS","b":"La Libertad Avanza","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MENEM, MARTIN","b":"La Libertad Avanza","p":"La Rioja","c":"D","v":{}},{"n":"METRAL ASENSIO, JULIETA","b":"La Libertad Avanza","p":"Mendoza","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MOLINUEVO, SOLEDAD","b":"La Libertad Avanza","p":"Tucumán","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MONDACA, SOLEDAD","b":"La Libertad Avanza","p":"Neuquén","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MONTENEGRO, GUILLERMO","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MONTENEGRO, JUAN PABLO","b":"La Libertad Avanza","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MORCHIO, FRANCISCO","b":"La Libertad Avanza","p":"Entre Ríos","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MORENO OVALLE, JULIO","b":"La Libertad Avanza","p":"Salta","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MUÑOZ, GABRIELA LUCIANA","b":"La Libertad Avanza","p":"Neuquén","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"NIVEYRO, MIRIAM","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"OJEDA, JOAQUIN","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PAREJA, SEBASTIAN","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PATIÑO BRIZUELA, MARCOS","b":"La Libertad Avanza","p":"Córdoba","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PAULI, SANTIAGO","b":"La Libertad Avanza","p":"Tierra del Fuego","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PELLEGRINI, AGUSTIN","b":"La Libertad Avanza","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PELLI, FEDERICO AGUSTIN","b":"La Libertad Avanza","p":"Tucumán","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PELUC, JOSE","b":"La Libertad Avanza","p":"San Juan","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PETRI, LUIS","b":"La Libertad Avanza","p":"Mendoza","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PETROVICH, MARIA LORENA","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PICAT, LUIS ALBINO","b":"La Libertad Avanza","p":"Córdoba","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PONCE, MARIA CELESTE","b":"La Libertad Avanza","p":"Córdoba","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"QUINTAR, MANUEL","b":"La Libertad Avanza","p":"Jujuy","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"RAVERA, VALENTINA","b":"La Libertad Avanza","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"RAVIER, ADRIAN","b":"La Libertad Avanza","p":"La Pampa","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"RAZZINI, VERONICA","b":"La Libertad Avanza","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"REICHARDT, KAREN","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"RIESCO, GASTON","b":"La Libertad Avanza","p":"Neuquén","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"ROCA, GONZALO","b":"La Libertad Avanza","p":"Córdoba","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"RODRIGUEZ MACHADO, LAURA ELENA","b":"La Libertad Avanza","p":"Córdoba","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"RODRIGUEZ, MIGUEL","b":"La Libertad Avanza","p":"Tierra del Fuego","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"SANTILLAN JUAREZ BRAHIM, JULIANA","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"SANTURIO, SANTIAGO","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"SOLDANO, LAURA","b":"La Libertad Avanza","p":"Córdoba","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"TOMASSONI, YAMILE","b":"La Libertad Avanza","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"TORRES, RUBEN DARIO","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"TORTORIELLO, ANIBAL","b":"La Libertad Avanza","p":"Rio Negro","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"TOURNIER, JOSE FEDERICO","b":"La Libertad Avanza","p":"Corrientes","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"TREFFINGER, CESAR","b":"La Libertad Avanza","p":"Chubut","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"URIEN, HERNAN","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"VASQUEZ, PATRICIA","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"VERA, ANDREA FERNANDA","b":"La Libertad Avanza","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"VILLAVERDE, LORENA","b":"La Libertad Avanza","p":"Rio Negro","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"VISCONTI, GINO","b":"La Libertad Avanza","p":"La Rioja","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"ZAPATA, CARLOS RAUL","b":"La Libertad Avanza","p":"Salta","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"MAUREIRA, KARINA","b":"La Neuquinidad","p":"Neuquén","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FALCONE, EDUARDO","b":"Mid - Movimiento De Integracion Y Desarrollo","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"ZAGO, OSCAR","b":"Mid - Movimiento De Integracion Y Desarrollo","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"ALVAREZ, CLAUDIO","b":"Pais Federal","p":"San Luis","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"GONZALEZ, GERARDO GUSTAVO","b":"Pais Federal","p":"Formosa","c":"D","v":{"regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GARRIDO, JOSE LUIS","b":"Por Santa Cruz","p":"Santa Cruz","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FERNANDEZ, JORGE","b":"Primero San Luis","p":"San Luis","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"A","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"ARDOHAIN, MARTIN","b":"Pro","p":"La Pampa","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BIANCHETTI, EMMANUEL","b":"Pro","p":"Misiones","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"DE ANDREIS, FERNANDO","b":"Pro","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"DE SENSI, MARIA FLORENCIA","b":"Pro","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FERNANDEZ MOLERO, DAIANA","b":"Pro","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A"}},{"n":"FINOCCHIARO, ALEJANDRO","b":"Pro","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FREGONESE, ALICIA","b":"Pro","p":"Entre Ríos","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GIAMPIERI, ANTONELA","b":"Pro","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GONZALEZ, ALVARO","b":"Pro","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"RITONDO, CRISTIAN A.","b":"Pro","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"SANCHEZ WRBA, JAVIER","b":"Pro","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"YEZA, MARTIN","b":"Pro","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"JAIME QUIROGA, CARLOS GUSTAVO","b":"Produccion Y Trabajo","p":"San Juan","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PICON MARTINEZ, NANCY VIVIANA","b":"Produccion Y Trabajo","p":"San Juan","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"ARRIETA, LOURDES MICAELA","b":"Provincias Unidas","p":"Mendoza","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"AVILA, JORGE ANTONIO","b":"Provincias Unidas","p":"Chubut","c":"D","v":{"presupuesto_2026":"ABS","regimen_penal_juv":"ABS","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"BASUALDO, CAROLINA","b":"Provincias Unidas","p":"Córdoba","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"BRUGGE, JUAN FERNANDO","b":"Provincias Unidas","p":"Córdoba","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"CAPOZZI, SERGIO EDUARDO","b":"Provincias Unidas","p":"Rio Negro","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"COLETTA, MARIELA","b":"Provincias Unidas","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"FARIAS, PABLO","b":"Provincias Unidas","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"GARCIA ARESCA, IGNACIO","b":"Provincias Unidas","p":"Córdoba","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A"}},{"n":"GUTIERREZ, CARLOS","b":"Provincias Unidas","p":"Córdoba","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"JULIANO, PABLO","b":"Provincias Unidas","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"LOUSTEAU, MARTIN","b":"Provincias Unidas","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"NUÑEZ, JOSE","b":"Provincias Unidas","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"PAULON, ESTEBAN","b":"Provincias Unidas","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"RIZZOTTI, JORGE","b":"Provincias Unidas","p":"Jujuy","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","modernizacion_laboral":"A"}},{"n":"SCAGLIA, GISELA","b":"Provincias Unidas","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"SCHIARETTI, JUAN","b":"Provincias Unidas","p":"Córdoba","c":"D","v":{"regimen_penal_juv":"A","mercosur_ue":"A"}},{"n":"TORRES, ALEJANDRA","b":"Provincias Unidas","p":"Córdoba","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"ABS","regimen_penal_juv":"A","mercosur_ue":"A"}},{"n":"ZIGARAN, MARIA INES","b":"Provincias Unidas","p":"Jujuy","c":"D","v":{"presupuesto_2026":"ABS","inocencia_fiscal":"N","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"AGUERO, GUILLERMO CESAR","b":"Ucr - Union Civica Radical","p":"Chaco","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"CIPOLINI, GERARDO","b":"Ucr - Union Civica Radical","p":"Chaco","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"GONZALEZ, DIOGENES IGNACIO","b":"Ucr - Union Civica Radical","p":"Corrientes","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"NIERI, LISANDRO","b":"Ucr - Union Civica Radical","p":"Mendoza","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"SCHNEIDER, DARIO","b":"Ucr - Union Civica Radical","p":"Entre Ríos","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"VERASAY, PAMELA FERNANDA","b":"Ucr - Union Civica Radical","p":"Mendoza","c":"D","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","regimen_penal_juv":"A","mercosur_ue":"A","modernizacion_laboral":"A"}},{"n":"AGUIRRE, HILDA","b":"Union Por La Patria","p":"La Rioja","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"ALI, ERNESTO \"PIPI\"","b":"Union Por La Patria","p":"San Luis","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"ANDINO, CRISTIAN","b":"Union Por La Patria","p":"San Juan","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"ANDRADE, JAVIER","b":"Union Por La Patria","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"ARAUJO HERNANDEZ, JORGE NERI","b":"Union Por La Patria","p":"Tierra del Fuego","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"AVEIRO, MARTIN","b":"Union Por La Patria","p":"Mendoza","c":"D","v":{"regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"BARBUR, MARCELO","b":"Union Por La Patria","p":"Santiago del Estero","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"BASTERRA, LUIS EUGENIO","b":"Union Por La Patria","p":"Formosa","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"BORDET, GUSTAVO","b":"Union Por La Patria","p":"Entre Ríos","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"BORGATTA, ALEJANDRINA","b":"Union Por La Patria","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"CAFIERO, SANTIAGO","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"CAMPITELLI, CELIA","b":"Union Por La Patria","p":"Santiago del Estero","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"CAMPO, JULIETA MARISOL","b":"Union Por La Patria","p":"Chaco","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"CAMPORA, LUCIA","b":"Union Por La Patria","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"CARIGNANO, FLORENCIA","b":"Union Por La Patria","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"CASAS, SERGIO GUILLERMO","b":"Union Por La Patria","p":"La Rioja","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A"}},{"n":"CASTAGNETO, CARLOS DANIEL","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"CHICA, JORGE","b":"Union Por La Patria","p":"San Juan","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"CISNEROS, CARLOS","b":"Union Por La Patria","p":"Tucumán","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N"}},{"n":"DAIVES, RICARDO","b":"Union Por La Patria","p":"Santiago del Estero","c":"D","v":{"regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"DE LA ROSA, MARIA GRACIELA","b":"Union Por La Patria","p":"Formosa","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"DIAZ, FERNANDA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"DOLCE, SERGIO","b":"Union Por La Patria","p":"Chaco","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"ESTEVEZ, GABRIELA BEATRIZ","b":"Union Por La Patria","p":"Córdoba","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"FELIX, EMIR","b":"Union Por La Patria","p":"Mendoza","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"FERRAN, ABELARDO","b":"Union Por La Patria","p":"La Pampa","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"FREITES, ANDREA","b":"Union Por La Patria","p":"Tierra del Fuego","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"GALMARINI, SEBASTIAN","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"GARCIA, MARIA TERESA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"GIULIANO, DIEGO A.","b":"Union Por La Patria","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"GLINSKI, JOSE","b":"Union Por La Patria","p":"Chubut","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"GOMEZ, JOSE","b":"Union Por La Patria","p":"Santiago del Estero","c":"D","v":{"regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"GRABOIS, JUAN","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"GUTIERREZ, RAMIRO","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"HADAD, RAUL","b":"Union Por La Patria","p":"Corrientes","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"ABS","modernizacion_laboral":"N"}},{"n":"HAGMAN, ITAI","b":"Union Por La Patria","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"IANNI, ANA MARIA","b":"Union Por La Patria","p":"Santa Cruz","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"KIRCHNER, MAXIMO CARLOS","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"LANESAN SANCHO, MOIRA","b":"Union Por La Patria","p":"Santa Cruz","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"LEIVA, ALDO","b":"Union Por La Patria","p":"Chaco","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"LOPEZ PASQUALI, CECILIA","b":"Union Por La Patria","p":"Santiago del Estero","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"LOPEZ, JIMENA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"LUQUE, JUAN PABLO","b":"Union Por La Patria","p":"Chubut","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"MANGO, MARCELO","b":"Union Por La Patria","p":"Rio Negro","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"MANRIQUE, MARIO","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","modernizacion_laboral":"N"}},{"n":"MARCLAY, MARIANELA","b":"Union Por La Patria","p":"Entre Ríos","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"MARIN, VARINIA LIS","b":"Union Por La Patria","p":"La Pampa","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"MARINO, JUAN","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"MARTINEZ, GERMAN PEDRO","b":"Union Por La Patria","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"MICHEL, GUILLERMO","b":"Union Por La Patria","p":"Entre Ríos","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"MIÑO, FERNANDA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"MOLINA, JUAN CARLOS","b":"Union Por La Patria","p":"Santa Cruz","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"MOLLE, MATIAS","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"MONZON, ROXANA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N"}},{"n":"MOREAU, CECILIA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"MOYANO, HUGO ANTONIO","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"MUKDISE, JORGE","b":"Union Por La Patria","p":"Santiago del Estero","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"NEDER, ESTELA MARY","b":"Union Por La Patria","p":"Santiago del Estero","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"OLMOS, KELLY","b":"Union Por La Patria","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"OSUNA, BLANCA INES","b":"Union Por La Patria","p":"Entre Ríos","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"PALAZZO, SERGIO OMAR","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"PALLADINO, CLAUDIA MARIA","b":"Union Por La Patria","p":"Catamarca","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"PAROLA, MARIA GRACIELA","b":"Union Por La Patria","p":"Formosa","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"PEDRALI, GABRIELA","b":"Union Por La Patria","p":"La Rioja","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"PENACCA, PAULA ANDREA","b":"Union Por La Patria","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"PIETRAGALLA CORTI, HORACIO","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"POKOIK, LORENA","b":"Union Por La Patria","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"POTENZA, LUCIANA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"PROPATO, AGUSTINA LUCRECIA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"RAUSCHENBERGER, ARIEL","b":"Union Por La Patria","p":"La Pampa","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"ROBERTO, SANTIAGO LUIS","b":"Union Por La Patria","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"ROSSI, AGUSTIN OSCAR","b":"Union Por La Patria","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"SALZMANN, MARINA DOROTEA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"SAND, NANCY","b":"Union Por La Patria","p":"Corrientes","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"ABS","modernizacion_laboral":"N"}},{"n":"SELVA, SABRINA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"SERQUIS, ADRIANA CRISTINA","b":"Union Por La Patria","p":"Rio Negro","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"SILEY, VANESA RAQUEL","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"SNOPEK, GUILLERMO","b":"Union Por La Patria","p":"Jujuy","c":"D","v":{"presupuesto_2026":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"STRADA, JULIA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"ABS","modernizacion_laboral":"N"}},{"n":"TAIANA, JORGE","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"TAILHADE, RODOLFO","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"TEPP, CAREN","b":"Union Por La Patria","p":"Santa Fe","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"TITA, PAULO AGUSTIN","b":"Union Por La Patria","p":"Tierra del Fuego","c":"D","v":{"regimen_penal_juv":"N","mercosur_ue":"A"}},{"n":"TODERO, PABLO","b":"Union Por La Patria","p":"Neuquén","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"TOLOSA PAZ, VICTORIA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"TROTTA, NICOLAS ALFREDO","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"VALDES, EDUARDO FELIX","b":"Union Por La Patria","p":"C.A.B.A.","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"VELAZQUEZ, M. ELENA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","modernizacion_laboral":"N"}},{"n":"VOLNOVICH, LUANA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"YASKY, HUGO","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"YEDLIN, PABLO RAUL","b":"Union Por La Patria","p":"Tucumán","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"A","modernizacion_laboral":"N"}},{"n":"ZARACHO, NATALIA","b":"Union Por La Patria","p":"Buenos Aires","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"N","modernizacion_laboral":"N"}},{"n":"ZULLI, CHRISTIAN ALEJANDRO","b":"Union Por La Patria","p":"Corrientes","c":"D","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","regimen_penal_juv":"N","mercosur_ue":"ABS","modernizacion_laboral":"N"}},{"n":"ANDRADA, GUILLERMO EDUARDO","b":"CONVICCIÓN FEDERAL","p":"Catamarca","c":"S","v":{"presupuesto_2026":"A","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"N"}},{"n":"MENDOZA, SANDRA MARIELA","b":"CONVICCIÓN FEDERAL","p":"Tucumán","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"MOISES, MARÍA CAROLINA","b":"CONVICCIÓN FEDERAL","p":"Jujuy","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"N"}},{"n":"TERENZI, EDITH ELIZABETH","b":"DESPIERTA CHUBUT","p":"Chubut","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"A"}},{"n":"MORENO, ELIA ESTHER DEL CARMEN","b":"FRENTE CÍVICO POR SANTIAGO","p":"Santiago del Estero","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"ZAMORA, GERARDO","b":"FRENTE CÍVICO POR SANTIAGO","p":"Santiago del Estero","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"CRISTINA, ANDREA MARCELA","b":"FRENTE PRO","p":"Chubut","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"A"}},{"n":"GOERLING LARA, ENRIQUE MARTÍN","b":"FRENTE PRO","p":"Misiones","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"HUALA, MARÍA VICTORIA","b":"FRENTE PRO","p":"La Pampa","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"A"}},{"n":"ARCE, CARLOS OMAR","b":"FRENTE RENOVADOR DE LA CONCORDIA SOCIAL","p":"Misiones","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"ROJAS DECUT, SONIA ELIZABETH","b":"FRENTE RENOVADOR DE LA CONCORDIA SOCIAL","p":"Misiones","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"AVILA, BEATRIZ LUISA","b":"INDEPENDENCIA","p":"Tucumán","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"REJAL, JESÚS FERNANDO","b":"JUSTICIA SOCIAL FEDERAL","p":"La Rioja","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"SALINO, FERNANDO ALDO","b":"JUSTICIA SOCIAL FEDERAL","p":"San Luis","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"BAHL, ADÁN HUMBERTO","b":"JUSTICIALISTA","p":"Entre Ríos","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"BENSUSÁN, DANIEL PABLO","b":"JUSTICIALISTA","p":"La Pampa","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"CAPITANICH, JORGE MILTON","b":"JUSTICIALISTA","p":"Chaco","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"CORPACCI, LUCÍA BENIGNA","b":"JUSTICIALISTA","p":"Catamarca","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"N"}},{"n":"DE PEDRO, EDUARDO ENRIQUE","b":"JUSTICIALISTA","p":"Buenos Aires","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"N","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"DI TULLIO, JULIANA","b":"JUSTICIALISTA","p":"Buenos Aires","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"N","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"FERNÁNDEZ SAGASTI, ANABEL","b":"JUSTICIALISTA","p":"Mendoza","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"GIMÉNEZ NAVARRO, MARÍA CELESTE","b":"JUSTICIALISTA","p":"San Juan","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"GONZÁLEZ, MARÍA TERESA MARGARITA","b":"JUSTICIALISTA","p":"Formosa","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"KIRCHNER, ALICIA MARGARITA ANTONIA","b":"JUSTICIALISTA","p":"Santa Cruz","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"LEWANDOWSKI, MARCELO NÉSTOR","b":"JUSTICIALISTA","p":"Santa Fe","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"LINARES, CARLOS ALBERTO","b":"JUSTICIALISTA","p":"Chubut","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"LÓPEZ, CÁNDIDA CRISTINA","b":"JUSTICIALISTA","p":"Tierra Del Fuego, Antártida E Islas Del Atlántico Sur","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"N","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"LÓPEZ, MARÍA FLORENCIA","b":"JUSTICIALISTA","p":"La Rioja","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"MANZUR, JUAN LUIS","b":"JUSTICIALISTA","p":"Tucumán","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"MARKS, ANA INÉS","b":"JUSTICIALISTA","p":"Río Negro","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"MAYANS, JOSÉ MIGUEL ÁNGEL","b":"JUSTICIALISTA","p":"Formosa","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"NEDER, JOSÉ EMILIO","b":"JUSTICIALISTA","p":"Santiago del Estero","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"RECALDE, MARIANO","b":"JUSTICIALISTA","p":"Ciudad Autónoma De Buenos Aires","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"SORIA, MARTIN IGNACIO","b":"JUSTICIALISTA","p":"Río Negro","c":"S","v":{"presupuesto_2026":"N","inocencia_fiscal":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"N"}},{"n":"UÑAC, SERGIO MAURICIO","b":"JUSTICIALISTA","p":"San Juan","c":"S","v":{"presupuesto_2026":"N","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"N"}},{"n":"ABDALA, BARTOLOMÉ ESTEBAN","b":"LA LIBERTAD AVANZA","p":"San Luis","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"ALMEIDA, ROMINA MARÍA","b":"LA LIBERTAD AVANZA","p":"Entre Ríos","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"ALVAREZ RIVERO, CARMEN","b":"LA LIBERTAD AVANZA","p":"Córdoba","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"ARRASCAETA, IVANNA MARCELA","b":"LA LIBERTAD AVANZA","p":"San Luis","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"ATAUCHE, EZEQUIEL","b":"LA LIBERTAD AVANZA","p":"Jujuy","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"BEDIA, VILMA FACUNDA","b":"LA LIBERTAD AVANZA","p":"Jujuy","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"BENEGAS LYNCH, JOAQUÍN ALBERTO","b":"LA LIBERTAD AVANZA","p":"Entre Ríos","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"BULLRICH, PATRICIA","b":"LA LIBERTAD AVANZA","p":"Ciudad Autónoma De Buenos Aires","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"CERVI, MARIO PABLO","b":"LA LIBERTAD AVANZA","p":"Neuquén","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"COTO, AGUSTÍN PEDRO","b":"LA LIBERTAD AVANZA","p":"Tierra Del Fuego, Antártida E Islas Del Atlántico Sur","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"FULLONE, ENZO PAOLO","b":"LA LIBERTAD AVANZA","p":"Río Negro","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"GODOY, JUAN CRUZ","b":"LA LIBERTAD AVANZA","p":"Chaco","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"GUZMÁN CORAITA, GONZALO","b":"LA LIBERTAD AVANZA","p":"Salta","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"JUEZ, LUIS ALFREDO","b":"LA LIBERTAD AVANZA","p":"Córdoba","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"MONTE DE OCA, MARÍA BELÉN","b":"LA LIBERTAD AVANZA","p":"Tierra Del Fuego, Antártida E Islas Del Atlántico Sur","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"MONTEVERDE, AGUSTÍN ANÍBAL","b":"LA LIBERTAD AVANZA","p":"Ciudad Autónoma De Buenos Aires","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"MÁRQUEZ, NADIA JUDITH","b":"LA LIBERTAD AVANZA","p":"Neuquén","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"OLIVERA LUCERO, BRUNO ANTONIO","b":"LA LIBERTAD AVANZA","p":"San Juan","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"OROZCO, MARÍA EMILIA","b":"LA LIBERTAD AVANZA","p":"Salta","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"PAGOTTO, JUAN CARLOS","b":"LA LIBERTAD AVANZA","p":"La Rioja","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"PAOLTRONI, FRANCISCO MANUEL","b":"LA LIBERTAD AVANZA","p":"Formosa","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"CORROZA, JULIETA","b":"LA NEUQUINIDAD","p":"Neuquén","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","regimen_penal_juv":"A"}},{"n":"CARAMBIA, JOSÉ MARÍA","b":"MOVERE POR SANTA CRUZ","p":"Santa Cruz","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"A"}},{"n":"GADANO, NATALIA ELENA","b":"MOVERE POR SANTA CRUZ","p":"Santa Cruz","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"N","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"A"}},{"n":"ROYÓN, FLAVIA GABRIELA","b":"PRIMERO LOS SALTEÑOS","p":"Salta","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"ESPÍNOLA, CARLOS MAURICIO","b":"PROVINCIAS UNIDAS","p":"Corrientes","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"VIGO, ALEJANDRA MARÍA","b":"PROVINCIAS UNIDAS","p":"Córdoba","c":"S","v":{"modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"N"}},{"n":"ABAD, MAXIMILIANO","b":"UCR - UNIÓN CÍVICA RADICAL","p":"Buenos Aires","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"A"}},{"n":"FAMA, FLAVIO SERGIO","b":"UCR - UNIÓN CÍVICA RADICAL","p":"Catamarca","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"GALARETTO, EDUARDO HORACIO","b":"UCR - UNIÓN CÍVICA RADICAL","p":"Santa Fe","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"JURI, MARIANA","b":"UCR - UNIÓN CÍVICA RADICAL","p":"Mendoza","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"KRONEBERGER, DANIEL RICARDO","b":"UCR - UNIÓN CÍVICA RADICAL","p":"La Pampa","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"N","regimen_penal_juv":"A"}},{"n":"LOSADA, CAROLINA","b":"UCR - UNIÓN CÍVICA RADICAL","p":"Santa Fe","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"SCHNEIDER, SILVANA LORENA","b":"UCR - UNIÓN CÍVICA RADICAL","p":"Chaco","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"SUÁREZ, RODOLFO ALEJANDRO","b":"UCR - UNIÓN CÍVICA RADICAL","p":"Mendoza","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"VALENZUELA, MERCEDES GABRIELA","b":"UCR - UNIÓN CÍVICA RADICAL","p":"Corrientes","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}},{"n":"VISCHI, EDUARDO ALEJANDRO","b":"UCR - UNIÓN CÍVICA RADICAL","p":"Corrientes","c":"S","v":{"presupuesto_2026":"A","inocencia_fiscal":"A","modernizacion_laboral":"A","mercosur_ue":"A","ley_glaciares":"A","regimen_penal_juv":"A"}}]
+{
+  "0": {
+    "n": "AGUERO, GUILLERMO CESAR",
+    "b": "Ucr - Union Civica Radical",
+    "p": "Chaco",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "1": {
+    "n": "AGUIRRE, HILDA",
+    "b": "Union Por La Patria",
+    "p": "La Rioja",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "2": {
+    "n": "AJMECHET, SABRINA",
+    "b": "La Libertad Avanza",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "3": {
+    "n": "ALI, ERNESTO &quot;PIPI&quot;",
+    "b": "Union Por La Patria",
+    "p": "San Luis",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "4": {
+    "n": "ALMENA, CARLOS ALBERTO",
+    "b": "La Libertad Avanza",
+    "p": "San Luis",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "5": {
+    "n": "ALMIRON, LISANDRO",
+    "b": "La Libertad Avanza",
+    "p": "Corrientes",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "6": {
+    "n": "ALVAREZ, CLAUDIO",
+    "b": "Pais Federal",
+    "p": "San Luis",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "7": {
+    "n": "ANDINO, CRISTIAN",
+    "b": "Union Por La Patria",
+    "p": "San Juan",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "8": {
+    "n": "ANDRADE, JAVIER",
+    "b": "Union Por La Patria",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "9": {
+    "n": "ANDREUSSI, BARBARA",
+    "b": "La Libertad Avanza",
+    "p": "Jujuy",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "10": {
+    "n": "ANSALONI, PABLO",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "11": {
+    "n": "ARABIA, DAMIAN",
+    "b": "La Libertad Avanza",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "12": {
+    "n": "ARAUJO HERNANDEZ, JORGE NERI",
+    "b": "Union Por La Patria",
+    "p": "Tierra del Fuego",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "13": {
+    "n": "ARDOHAIN, MARTIN",
+    "b": "Pro",
+    "p": "La Pampa",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "14": {
+    "n": "ARRIETA, LOURDES MICAELA",
+    "b": "Provincias Unidas",
+    "p": "Mendoza",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "15": {
+    "n": "ARRUA, ALBERTO",
+    "b": "Innovacion Federal",
+    "p": "Misiones",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "16": {
+    "n": "AVEIRO, MARTIN",
+    "b": "Union Por La Patria",
+    "p": "Mendoza",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "U",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "17": {
+    "n": "AVICO, BELEN",
+    "b": "La Libertad Avanza",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "18": {
+    "n": "AVILA, FERNANDA",
+    "b": "Elijo Catamarca",
+    "p": "Catamarca",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "19": {
+    "n": "AVILA, JORGE ANTONIO",
+    "b": "Provincias Unidas",
+    "p": "Chubut",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "20": {
+    "n": "BANFI, KARINA",
+    "b": "Adelante Buenos Aires",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "21": {
+    "n": "BARBUR, MARCELO",
+    "b": "Union Por La Patria",
+    "p": "Santiago del Estero",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "22": {
+    "n": "BASTERRA, LUIS EUGENIO",
+    "b": "Union Por La Patria",
+    "p": "Formosa",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "23": {
+    "n": "BASUALDO, ATILIO",
+    "b": "La Libertad Avanza",
+    "p": "Formosa",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "24": {
+    "n": "BASUALDO, CAROLINA",
+    "b": "Provincias Unidas",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "25": {
+    "n": "BECERRA, MONICA",
+    "b": "La Libertad Avanza",
+    "p": "San Luis",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "26": {
+    "n": "BENEDIT, BELTRAN",
+    "b": "La Libertad Avanza",
+    "p": "Entre Ríos",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "27": {
+    "n": "BENEGAS LYNCH, BERTIE",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "28": {
+    "n": "BIANCHETTI, EMMANUEL",
+    "b": "Pro",
+    "p": "Misiones",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "29": {
+    "n": "BIELLA, BERNARDO",
+    "b": "Innovacion Federal",
+    "p": "Salta",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "30": {
+    "n": "BONACCI, ROCIO",
+    "b": "La Libertad Avanza",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "31": {
+    "n": "BONGIOVANNI, ALEJANDRO",
+    "b": "La Libertad Avanza",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "32": {
+    "n": "BORDET, GUSTAVO",
+    "b": "Union Por La Patria",
+    "p": "Entre Ríos",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "33": {
+    "n": "BORGATTA, ALEJANDRINA",
+    "b": "Union Por La Patria",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "34": {
+    "n": "BORNORONI, GABRIEL",
+    "b": "La Libertad Avanza",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "35": {
+    "n": "BREGMAN, MYRIAM",
+    "b": "Frente De Izquierda Y De Trabajadores Unidad",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "36": {
+    "n": "BRIZUELA, ADRIAN",
+    "b": "La Libertad Avanza",
+    "p": "Catamarca",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "37": {
+    "n": "BRUGGE, JUAN FERNANDO",
+    "b": "Provincias Unidas",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "38": {
+    "n": "BRUNO, ELIANA",
+    "b": "La Libertad Avanza",
+    "p": "Salta",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "39": {
+    "n": "CAFIERO, SANTIAGO",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "40": {
+    "n": "CAMPERO, MARIANO",
+    "b": "La Libertad Avanza",
+    "p": "Tucumán",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "41": {
+    "n": "CAMPITELLI, CELIA",
+    "b": "Union Por La Patria",
+    "p": "Santiago del Estero",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "42": {
+    "n": "CAMPO, JULIETA MARISOL",
+    "b": "Union Por La Patria",
+    "p": "Chaco",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "43": {
+    "n": "CAMPORA, LUCIA",
+    "b": "Union Por La Patria",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "44": {
+    "n": "CAPOZZI, SERGIO EDUARDO",
+    "b": "Provincias Unidas",
+    "p": "Rio Negro",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "45": {
+    "n": "CARIGNANO, FLORENCIA",
+    "b": "Union Por La Patria",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "46": {
+    "n": "CARRANCIO, ALEJANDRO",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "47": {
+    "n": "CASAS, SERGIO GUILLERMO",
+    "b": "Union Por La Patria",
+    "p": "La Rioja",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "U"
+    }
+  },
+  "48": {
+    "n": "CASTAGNETO, CARLOS DANIEL",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "49": {
+    "n": "CASTELNUOVO, GISELLE",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "50": {
+    "n": "CHICA, JORGE",
+    "b": "Union Por La Patria",
+    "p": "San Juan",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "51": {
+    "n": "CHICONI, ABEL",
+    "b": "La Libertad Avanza",
+    "p": "San Juan",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "52": {
+    "n": "CIPOLINI, GERARDO",
+    "b": "Ucr - Union Civica Radical",
+    "p": "Chaco",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "53": {
+    "n": "CISNEROS, CARLOS",
+    "b": "Union Por La Patria",
+    "p": "Tucumán",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "U",
+      "mercosur_ue": "U",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "54": {
+    "n": "COLETTA, MARIELA",
+    "b": "Provincias Unidas",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "55": {
+    "n": "CORREA LLANO, FACUNDO",
+    "b": "La Libertad Avanza",
+    "p": "Mendoza",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "56": {
+    "n": "DAIVES, RICARDO",
+    "b": "Union Por La Patria",
+    "p": "Santiago del Estero",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "U",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "57": {
+    "n": "DE ANDREIS, FERNANDO",
+    "b": "Pro",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "58": {
+    "n": "DE LA ROSA, MARIA GRACIELA",
+    "b": "Union Por La Patria",
+    "p": "Formosa",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "59": {
+    "n": "DE LA SOTA, NATALIA",
+    "b": "Defendamos Cordoba",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "60": {
+    "n": "DE SENSI, MARIA FLORENCIA",
+    "b": "Pro",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "61": {
+    "n": "DEL CAÑO, NICOLAS",
+    "b": "Frente De Izquierda Y De Trabajadores Unidad",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "62": {
+    "n": "DEL PLA, ROMINA",
+    "b": "Frente De Izquierda Y De Trabajadores Unidad",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "63": {
+    "n": "DIAZ, FERNANDA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "64": {
+    "n": "DIEZ, ROMINA",
+    "b": "La Libertad Avanza",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "65": {
+    "n": "DOLCE, SERGIO",
+    "b": "Union Por La Patria",
+    "p": "Chaco",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "66": {
+    "n": "EMMA, NICOLAS",
+    "b": "La Libertad Avanza",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "67": {
+    "n": "ESTEVEZ, GABRIELA BEATRIZ",
+    "b": "Union Por La Patria",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "68": {
+    "n": "FALCONE, EDUARDO",
+    "b": "Mid - Movimiento De Integracion Y Desarrollo",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "69": {
+    "n": "FARGOSI, ALEJANDRO",
+    "b": "La Libertad Avanza",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "70": {
+    "n": "FARIAS, PABLO",
+    "b": "Provincias Unidas",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "71": {
+    "n": "FELIX, EMIR",
+    "b": "Union Por La Patria",
+    "p": "Mendoza",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "72": {
+    "n": "FERNANDEZ, ELIA MARINA",
+    "b": "Independencia",
+    "p": "Tucumán",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "73": {
+    "n": "FERNANDEZ, JORGE",
+    "b": "Primero San Luis",
+    "p": "San Luis",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "X",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "74": {
+    "n": "FERNANDEZ MOLERO, DAIANA",
+    "b": "Pro",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "U",
+      "mercosur_ue": "U",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "75": {
+    "n": "FERRAN, ABELARDO",
+    "b": "Union Por La Patria",
+    "p": "La Pampa",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "76": {
+    "n": "FERRARO, MAXIMILIANO",
+    "b": "Coalicion Civica",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "77": {
+    "n": "FERREYRA, ALIDA",
+    "b": "La Libertad Avanza",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "78": {
+    "n": "FIGLIUOLO, SERGIO",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "79": {
+    "n": "FINOCCHIARO, ALEJANDRO",
+    "b": "Pro",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "80": {
+    "n": "FLORES, MARIA GABRIELA",
+    "b": "La Libertad Avanza",
+    "p": "Salta",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "81": {
+    "n": "FRADE, MONICA",
+    "b": "Coalicion Civica",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "U",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "82": {
+    "n": "FREGONESE, ALICIA",
+    "b": "Pro",
+    "p": "Entre Ríos",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "83": {
+    "n": "FREITES, ANDREA",
+    "b": "Union Por La Patria",
+    "p": "Tierra del Fuego",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "84": {
+    "n": "FRIAS, MAIRA",
+    "b": "La Libertad Avanza",
+    "p": "Chubut",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "85": {
+    "n": "GALLARDO, MARIA VIRGINIA",
+    "b": "La Libertad Avanza",
+    "p": "Corrientes",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "86": {
+    "n": "GALMARINI, SEBASTIAN",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "87": {
+    "n": "GARCIA, MARIA TERESA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "88": {
+    "n": "GARCIA, ALVARO",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "89": {
+    "n": "GARCIA, CARLOS",
+    "b": "La Libertad Avanza",
+    "p": "Chaco",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "90": {
+    "n": "GARCIA ARESCA, IGNACIO",
+    "b": "Provincias Unidas",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "U"
+    }
+  },
+  "91": {
+    "n": "GARRIDO, JOSE LUIS",
+    "b": "Por Santa Cruz",
+    "p": "Santa Cruz",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "92": {
+    "n": "GIAMPIERI, ANTONELA",
+    "b": "Pro",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "93": {
+    "n": "GIUDICI, SILVANA",
+    "b": "La Libertad Avanza",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "94": {
+    "n": "GIULIANO, DIEGO A.",
+    "b": "Union Por La Patria",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "95": {
+    "n": "GLINSKI, JOSE",
+    "b": "Union Por La Patria",
+    "p": "Chubut",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "96": {
+    "n": "GOITIA, ROSARIO",
+    "b": "La Libertad Avanza",
+    "p": "Chaco",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "97": {
+    "n": "GOMEZ, JOSE",
+    "b": "Union Por La Patria",
+    "p": "Santiago del Estero",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "U",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "98": {
+    "n": "GONZALES, ALFREDO",
+    "b": "La Libertad Avanza",
+    "p": "Jujuy",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "99": {
+    "n": "GONZALEZ, DIOGENES IGNACIO",
+    "b": "Ucr - Union Civica Radical",
+    "p": "Corrientes",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "100": {
+    "n": "GONZALEZ, GERARDO GUSTAVO",
+    "b": "Pais Federal",
+    "p": "Formosa",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "U",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "101": {
+    "n": "GONZALEZ, ALVARO",
+    "b": "Pro",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "102": {
+    "n": "GONZALEZ ESTEVARENA, MARIA LUISA",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "103": {
+    "n": "GRABOIS, JUAN",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "104": {
+    "n": "GRUBER, MAURA",
+    "b": "La Libertad Avanza",
+    "p": "Misiones",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "105": {
+    "n": "GUTIERREZ, CARLOS",
+    "b": "Provincias Unidas",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "106": {
+    "n": "GUTIERREZ, RAMIRO",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "107": {
+    "n": "GUZMAN, JAIRO",
+    "b": "La Libertad Avanza",
+    "p": "Santa Cruz",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "108": {
+    "n": "HADAD, RAUL",
+    "b": "Union Por La Patria",
+    "p": "Corrientes",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "X",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "109": {
+    "n": "HAGMAN, ITAI",
+    "b": "Union Por La Patria",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "110": {
+    "n": "HARTFIELD, DIEGO",
+    "b": "La Libertad Avanza",
+    "p": "Misiones",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "111": {
+    "n": "HERRERA, OSCAR",
+    "b": "Innovacion Federal",
+    "p": "Misiones",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "112": {
+    "n": "HOLZMAN, PATRICIA",
+    "b": "La Libertad Avanza",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "113": {
+    "n": "HUESEN, GERARDO",
+    "b": "La Libertad Avanza",
+    "p": "Tucumán",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "114": {
+    "n": "HUMENUK, GLADYS",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "115": {
+    "n": "IANNI, ANA MARIA",
+    "b": "Union Por La Patria",
+    "p": "Santa Cruz",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "116": {
+    "n": "IBAÑEZ, MARIA CECILIA",
+    "b": "La Libertad Avanza",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "117": {
+    "n": "JAIME QUIROGA, CARLOS GUSTAVO",
+    "b": "Produccion Y Trabajo",
+    "p": "San Juan",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "118": {
+    "n": "JULIANO, PABLO",
+    "b": "Provincias Unidas",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "119": {
+    "n": "KIRCHNER, MAXIMO CARLOS",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "120": {
+    "n": "LANESAN SANCHO, MOIRA",
+    "b": "Union Por La Patria",
+    "p": "Santa Cruz",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "121": {
+    "n": "LAUMANN, ANDRES ARIEL",
+    "b": "La Libertad Avanza",
+    "p": "Entre Ríos",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "122": {
+    "n": "LEIVA, ALDO",
+    "b": "Union Por La Patria",
+    "p": "Chaco",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "123": {
+    "n": "LEMOINE, LILIA",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "124": {
+    "n": "LEONE, ANDRES",
+    "b": "La Libertad Avanza",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "125": {
+    "n": "LLANO, MERCEDES",
+    "b": "La Libertad Avanza",
+    "p": "Mendoza",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "126": {
+    "n": "LLUCH, ENRIQUE",
+    "b": "La Libertad Avanza",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "127": {
+    "n": "LONGO, JOHANNA SABRINA",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "128": {
+    "n": "LOPEZ, JIMENA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "129": {
+    "n": "LOPEZ PASQUALI, CECILIA",
+    "b": "Union Por La Patria",
+    "p": "Santiago del Estero",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "130": {
+    "n": "LOUSTEAU, MARTIN",
+    "b": "Provincias Unidas",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "131": {
+    "n": "LUQUE, JUAN PABLO",
+    "b": "Union Por La Patria",
+    "p": "Chubut",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "132": {
+    "n": "MACYSZYN, LORENA",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "133": {
+    "n": "MANGO, MARCELO",
+    "b": "Union Por La Patria",
+    "p": "Rio Negro",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "134": {
+    "n": "MANRIQUE, MARIO",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "U",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "135": {
+    "n": "MARCLAY, MARIANELA",
+    "b": "Union Por La Patria",
+    "p": "Entre Ríos",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "136": {
+    "n": "MARIN, VARINIA LIS",
+    "b": "Union Por La Patria",
+    "p": "La Pampa",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "137": {
+    "n": "MARINO, JUAN",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "138": {
+    "n": "MARTINEZ, ALVARO",
+    "b": "La Libertad Avanza",
+    "p": "Mendoza",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "139": {
+    "n": "MARTINEZ, GERMAN PEDRO",
+    "b": "Union Por La Patria",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "140": {
+    "n": "MASSOT, NICOLAS",
+    "b": "Encuentro Federal",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "U",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "141": {
+    "n": "MAUREIRA, KARINA",
+    "b": "La Neuquinidad",
+    "p": "Neuquén",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "142": {
+    "n": "MAYORAZ, NICOLAS",
+    "b": "La Libertad Avanza",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "143": {
+    "n": "MEDINA, GLADYS",
+    "b": "Independencia",
+    "p": "Tucumán",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "144": {
+    "n": "METRAL ASENSIO, JULIETA",
+    "b": "La Libertad Avanza",
+    "p": "Mendoza",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "145": {
+    "n": "MICHEL, GUILLERMO",
+    "b": "Union Por La Patria",
+    "p": "Entre Ríos",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "146": {
+    "n": "MIÑO, FERNANDA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "147": {
+    "n": "MOLINA, JUAN CARLOS",
+    "b": "Union Por La Patria",
+    "p": "Santa Cruz",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "148": {
+    "n": "MOLINUEVO, SOLEDAD",
+    "b": "La Libertad Avanza",
+    "p": "Tucumán",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "149": {
+    "n": "MOLLE, MATIAS",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "150": {
+    "n": "MONDACA, SOLEDAD",
+    "b": "La Libertad Avanza",
+    "p": "Neuquén",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "151": {
+    "n": "MONGUILLOT, FERNANDO",
+    "b": "Elijo Catamarca",
+    "p": "Catamarca",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "152": {
+    "n": "MONTENEGRO, GUILLERMO",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "153": {
+    "n": "MONTENEGRO, JUAN PABLO",
+    "b": "La Libertad Avanza",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "154": {
+    "n": "MONZON, ROXANA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "U",
+      "mercosur_ue": "U",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "155": {
+    "n": "MORCHIO, FRANCISCO",
+    "b": "La Libertad Avanza",
+    "p": "Entre Ríos",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "156": {
+    "n": "MOREAU, CECILIA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "157": {
+    "n": "MORENO OVALLE, JULIO",
+    "b": "La Libertad Avanza",
+    "p": "Salta",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "158": {
+    "n": "MOYANO, HUGO ANTONIO",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "159": {
+    "n": "MUKDISE, JORGE",
+    "b": "Union Por La Patria",
+    "p": "Santiago del Estero",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "160": {
+    "n": "MUÑOZ, GABRIELA LUCIANA",
+    "b": "La Libertad Avanza",
+    "p": "Neuquén",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "161": {
+    "n": "NEDER, ESTELA MARY",
+    "b": "Union Por La Patria",
+    "p": "Santiago del Estero",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "162": {
+    "n": "NIERI, LISANDRO",
+    "b": "Ucr - Union Civica Radical",
+    "p": "Mendoza",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "163": {
+    "n": "NIVEYRO, MIRIAM",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "164": {
+    "n": "NOBLEGA, SEBASTIAN",
+    "b": "Elijo Catamarca",
+    "p": "Catamarca",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "165": {
+    "n": "NOGUERA, JAVIER",
+    "b": "Independencia",
+    "p": "Tucumán",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "U",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "U"
+    }
+  },
+  "166": {
+    "n": "NUÑEZ, JOSE",
+    "b": "Provincias Unidas",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "167": {
+    "n": "OJEDA, JOAQUIN",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "168": {
+    "n": "OLMOS, KELLY",
+    "b": "Union Por La Patria",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "169": {
+    "n": "OSUNA, BLANCA INES",
+    "b": "Union Por La Patria",
+    "p": "Entre Ríos",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "170": {
+    "n": "OUTES, PABLO",
+    "b": "Innovacion Federal",
+    "p": "Salta",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "171": {
+    "n": "PAGANO, MARCELA MARINA",
+    "b": "Pais Federal",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "U",
+      "mercosur_ue": "U",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "172": {
+    "n": "PALAZZO, SERGIO OMAR",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "173": {
+    "n": "PALLADINO, CLAUDIA MARIA",
+    "b": "Union Por La Patria",
+    "p": "Catamarca",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "174": {
+    "n": "PAREJA, SEBASTIAN",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "175": {
+    "n": "PAROLA, MARIA GRACIELA",
+    "b": "Union Por La Patria",
+    "p": "Formosa",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "176": {
+    "n": "PATIÑO BRIZUELA, MARCOS",
+    "b": "La Libertad Avanza",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "177": {
+    "n": "PAULI, SANTIAGO",
+    "b": "La Libertad Avanza",
+    "p": "Tierra del Fuego",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "178": {
+    "n": "PAULON, ESTEBAN",
+    "b": "Provincias Unidas",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "179": {
+    "n": "PEDRALI, GABRIELA",
+    "b": "Union Por La Patria",
+    "p": "La Rioja",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "180": {
+    "n": "PELLEGRINI, AGUSTIN",
+    "b": "La Libertad Avanza",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "181": {
+    "n": "PELLI, FEDERICO AGUSTIN",
+    "b": "La Libertad Avanza",
+    "p": "Tucumán",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "182": {
+    "n": "PELUC, JOSE",
+    "b": "La Libertad Avanza",
+    "p": "San Juan",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "183": {
+    "n": "PENACCA, PAULA ANDREA",
+    "b": "Union Por La Patria",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "184": {
+    "n": "PETRI, LUIS",
+    "b": "La Libertad Avanza",
+    "p": "Mendoza",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "185": {
+    "n": "PETROVICH, MARIA LORENA",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "186": {
+    "n": "PICAT, LUIS ALBINO",
+    "b": "La Libertad Avanza",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "187": {
+    "n": "PICHETTO, MIGUEL ANGEL",
+    "b": "Encuentro Federal",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "188": {
+    "n": "PICON MARTINEZ, NANCY VIVIANA",
+    "b": "Produccion Y Trabajo",
+    "p": "San Juan",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "189": {
+    "n": "PIETRAGALLA CORTI, HORACIO",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "190": {
+    "n": "PITROLA, NESTOR",
+    "b": "Frente De Izquierda Y De Trabajadores Unidad",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "191": {
+    "n": "POKOIK, LORENA",
+    "b": "Union Por La Patria",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "192": {
+    "n": "PONCE, MARIA CELESTE",
+    "b": "La Libertad Avanza",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "193": {
+    "n": "POTENZA, LUCIANA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "194": {
+    "n": "PROPATO, AGUSTINA LUCRECIA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "195": {
+    "n": "QUINTAR, MANUEL",
+    "b": "La Libertad Avanza",
+    "p": "Jujuy",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "196": {
+    "n": "RAUSCHENBERGER, ARIEL",
+    "b": "Union Por La Patria",
+    "p": "La Pampa",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "197": {
+    "n": "RAVERA, VALENTINA",
+    "b": "La Libertad Avanza",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "198": {
+    "n": "RAVIER, ADRIAN",
+    "b": "La Libertad Avanza",
+    "p": "La Pampa",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "199": {
+    "n": "RAZZINI, VERONICA",
+    "b": "La Libertad Avanza",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "200": {
+    "n": "REICHARDT, KAREN",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "201": {
+    "n": "RIESCO, GASTON",
+    "b": "La Libertad Avanza",
+    "p": "Neuquén",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "202": {
+    "n": "RITONDO, CRISTIAN A.",
+    "b": "Pro",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "203": {
+    "n": "RIZZOTTI, JORGE",
+    "b": "Provincias Unidas",
+    "p": "Jujuy",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "U",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "204": {
+    "n": "ROBERTO, SANTIAGO LUIS",
+    "b": "Union Por La Patria",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "205": {
+    "n": "ROCA, GONZALO",
+    "b": "La Libertad Avanza",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "206": {
+    "n": "RODRIGUEZ, MIGUEL",
+    "b": "La Libertad Avanza",
+    "p": "Tierra del Fuego",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "207": {
+    "n": "RODRIGUEZ MACHADO, LAURA ELENA",
+    "b": "La Libertad Avanza",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "208": {
+    "n": "ROSSI, AGUSTIN OSCAR",
+    "b": "Union Por La Patria",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "209": {
+    "n": "RUIZ, YAMILA",
+    "b": "Innovacion Federal",
+    "p": "Misiones",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "210": {
+    "n": "SALZMANN, MARINA DOROTEA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "211": {
+    "n": "SANCHEZ WRBA, JAVIER",
+    "b": "Pro",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "212": {
+    "n": "SAND, NANCY",
+    "b": "Union Por La Patria",
+    "p": "Corrientes",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "X",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "213": {
+    "n": "SANTILLAN JUAREZ BRAHIM, JULIANA",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "214": {
+    "n": "SANTURIO, SANTIAGO",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "215": {
+    "n": "SCAGLIA, GISELA",
+    "b": "Provincias Unidas",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "216": {
+    "n": "SCHNEIDER, DARIO",
+    "b": "Ucr - Union Civica Radical",
+    "p": "Entre Ríos",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "217": {
+    "n": "SELVA, SABRINA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "218": {
+    "n": "SERQUIS, ADRIANA CRISTINA",
+    "b": "Union Por La Patria",
+    "p": "Rio Negro",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "219": {
+    "n": "SILEY, VANESA RAQUEL",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "220": {
+    "n": "SNOPEK, GUILLERMO",
+    "b": "Union Por La Patria",
+    "p": "Jujuy",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "221": {
+    "n": "SOLDANO, LAURA",
+    "b": "La Libertad Avanza",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "222": {
+    "n": "STRADA, JULIA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "X",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "223": {
+    "n": "TAIANA, JORGE",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "224": {
+    "n": "TAILHADE, RODOLFO",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "U",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "225": {
+    "n": "TEPP, CAREN",
+    "b": "Union Por La Patria",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "226": {
+    "n": "TITA, PAULO AGUSTIN",
+    "b": "Union Por La Patria",
+    "p": "Tierra del Fuego",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "U",
+      "inocencia_fiscal": "U",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "U"
+    }
+  },
+  "227": {
+    "n": "TODERO, PABLO",
+    "b": "Union Por La Patria",
+    "p": "Neuquén",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "228": {
+    "n": "TOLOSA PAZ, VICTORIA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "229": {
+    "n": "TOMASSONI, YAMILE",
+    "b": "La Libertad Avanza",
+    "p": "Santa Fe",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "230": {
+    "n": "TORRES, RUBEN DARIO",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "231": {
+    "n": "TORRES, ALEJANDRA",
+    "b": "Provincias Unidas",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "X",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "U"
+    }
+  },
+  "232": {
+    "n": "TORTORIELLO, ANIBAL",
+    "b": "La Libertad Avanza",
+    "p": "Rio Negro",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "233": {
+    "n": "TOURNIER, JOSE FEDERICO",
+    "b": "La Libertad Avanza",
+    "p": "Corrientes",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "234": {
+    "n": "TREFFINGER, CESAR",
+    "b": "La Libertad Avanza",
+    "p": "Chubut",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "235": {
+    "n": "TROTTA, NICOLAS ALFREDO",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "236": {
+    "n": "URIEN, HERNAN",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "237": {
+    "n": "VALDES, EDUARDO FELIX",
+    "b": "Union Por La Patria",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "238": {
+    "n": "VANCSIK, DANIEL",
+    "b": "Innovacion Federal",
+    "p": "Misiones",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "239": {
+    "n": "VASQUEZ, PATRICIA",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "240": {
+    "n": "VEGA, YOLANDA",
+    "b": "Innovacion Federal",
+    "p": "Salta",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "241": {
+    "n": "VELAZQUEZ, M. ELENA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "U",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "242": {
+    "n": "VERA, ANDREA FERNANDA",
+    "b": "La Libertad Avanza",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "243": {
+    "n": "VERASAY, PAMELA FERNANDA",
+    "b": "Ucr - Union Civica Radical",
+    "p": "Mendoza",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "244": {
+    "n": "VILLAVERDE, LORENA",
+    "b": "La Libertad Avanza",
+    "p": "Rio Negro",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "245": {
+    "n": "VISCONTI, GINO",
+    "b": "La Libertad Avanza",
+    "p": "La Rioja",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "246": {
+    "n": "VOLNOVICH, LUANA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "247": {
+    "n": "YASKY, HUGO",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "248": {
+    "n": "YEDLIN, PABLO RAUL",
+    "b": "Union Por La Patria",
+    "p": "Tucumán",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "249": {
+    "n": "YEZA, MARTIN",
+    "b": "Pro",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "250": {
+    "n": "ZAGO, OSCAR",
+    "b": "Mid - Movimiento De Integracion Y Desarrollo",
+    "p": "C.A.B.A.",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "251": {
+    "n": "ZAPATA, CARLOS RAUL",
+    "b": "La Libertad Avanza",
+    "p": "Salta",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "A"
+    }
+  },
+  "252": {
+    "n": "ZARACHO, NATALIA",
+    "b": "Union Por La Patria",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "N",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "253": {
+    "n": "ZIGARAN, MARIA INES",
+    "b": "Provincias Unidas",
+    "p": "Jujuy",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "U",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "254": {
+    "n": "ZULLI, CHRISTIAN ALEJANDRO",
+    "b": "Union Por La Patria",
+    "p": "Corrientes",
+    "c": "D",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "regimen_penal_juv": "N",
+      "mercosur_ue": "X",
+      "modernizacion_laboral": "N"
+    }
+  },
+  "255": {
+    "n": "SCHIARETTI, JUAN",
+    "b": "Provincias Unidas",
+    "p": "Córdoba",
+    "c": "D",
+    "v": {
+      "regimen_penal_juv": "A",
+      "mercosur_ue": "A",
+      "modernizacion_laboral": "U"
+    }
+  },
+  "256": {
+    "n": "MENDOZA, SANDRA MARIELA",
+    "b": "CONVICCIÓN FEDERAL",
+    "p": "TUCUMÁN",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "257": {
+    "n": "MOISES, MARÍA CAROLINA",
+    "b": "CONVICCIÓN FEDERAL",
+    "p": "JUJUY",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "258": {
+    "n": "ANDRADA, GUILLERMO EDUARDO",
+    "b": "CONVICCIÓN FEDERAL",
+    "p": "CATAMARCA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "U",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "259": {
+    "n": "TERENZI, EDITH ELIZABETH",
+    "b": "DESPIERTA CHUBUT",
+    "p": "CHUBUT",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "260": {
+    "n": "ZAMORA, GERARDO",
+    "b": "FRENTE CÍVICO POR SANTIAGO",
+    "p": "SANTIAGO DEL ESTERO",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "261": {
+    "n": "MORENO, ELIA ESTHER DEL CARMEN",
+    "b": "FRENTE CÍVICO POR SANTIAGO",
+    "p": "SANTIAGO DEL ESTERO",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "262": {
+    "n": "GOERLING LARA, ENRIQUE MARTÍN",
+    "b": "FRENTE PRO",
+    "p": "MISIONES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "263": {
+    "n": "HUALA, MARÍA VICTORIA",
+    "b": "FRENTE PRO",
+    "p": "LA PAMPA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "264": {
+    "n": "CRISTINA, ANDREA MARCELA",
+    "b": "FRENTE PRO",
+    "p": "CHUBUT",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "265": {
+    "n": "ARCE, CARLOS OMAR",
+    "b": "FRENTE RENOVADOR DE LA CONCORDIA SOCIAL",
+    "p": "MISIONES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "266": {
+    "n": "ROJAS DECUT, SONIA ELIZABETH",
+    "b": "FRENTE RENOVADOR DE LA CONCORDIA SOCIAL",
+    "p": "MISIONES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "267": {
+    "n": "AVILA, BEATRIZ LUISA",
+    "b": "INDEPENDENCIA",
+    "p": "TUCUMÁN",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "U",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "268": {
+    "n": "REJAL, JESÚS FERNANDO",
+    "b": "JUSTICIA SOCIAL FEDERAL",
+    "p": "LA RIOJA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "269": {
+    "n": "SALINO, FERNANDO ALDO",
+    "b": "JUSTICIA SOCIAL FEDERAL",
+    "p": "SAN LUIS",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "270": {
+    "n": "MANZUR, JUAN LUIS",
+    "b": "JUSTICIALISTA",
+    "p": "TUCUMÁN",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "271": {
+    "n": "BAHL, ADÁN HUMBERTO",
+    "b": "JUSTICIALISTA",
+    "p": "ENTRE RÍOS",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "272": {
+    "n": "LEWANDOWSKI, MARCELO NÉSTOR",
+    "b": "JUSTICIALISTA",
+    "p": "SANTA FE",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "273": {
+    "n": "RECALDE, MARIANO",
+    "b": "JUSTICIALISTA",
+    "p": "CIUDAD AUTÓNOMA DE BUENOS AIRES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "274": {
+    "n": "BENSUSÁN, DANIEL PABLO",
+    "b": "JUSTICIALISTA",
+    "p": "LA PAMPA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "275": {
+    "n": "MAYANS, JOSÉ MIGUEL ÁNGEL",
+    "b": "JUSTICIALISTA",
+    "p": "FORMOSA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "276": {
+    "n": "GONZÁLEZ, MARÍA TERESA MARGARITA",
+    "b": "JUSTICIALISTA",
+    "p": "FORMOSA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "277": {
+    "n": "CAPITANICH, JORGE MILTON",
+    "b": "JUSTICIALISTA",
+    "p": "CHACO",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "278": {
+    "n": "UÑAC, SERGIO MAURICIO",
+    "b": "JUSTICIALISTA",
+    "p": "SAN JUAN",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "U",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "279": {
+    "n": "GIMÉNEZ NAVARRO, MARÍA CELESTE",
+    "b": "JUSTICIALISTA",
+    "p": "SAN JUAN",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "280": {
+    "n": "LÓPEZ, MARÍA FLORENCIA",
+    "b": "JUSTICIALISTA",
+    "p": "LA RIOJA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "281": {
+    "n": "KIRCHNER, ALICIA MARGARITA ANTONIA",
+    "b": "JUSTICIALISTA",
+    "p": "SANTA CRUZ",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "282": {
+    "n": "LINARES, CARLOS ALBERTO",
+    "b": "JUSTICIALISTA",
+    "p": "CHUBUT",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "283": {
+    "n": "SORIA, MARTIN IGNACIO",
+    "b": "JUSTICIALISTA",
+    "p": "RÍO NEGRO",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "284": {
+    "n": "MARKS, ANA INÉS",
+    "b": "JUSTICIALISTA",
+    "p": "RÍO NEGRO",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "285": {
+    "n": "LÓPEZ, CÁNDIDA CRISTINA",
+    "b": "JUSTICIALISTA",
+    "p": "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "N",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "286": {
+    "n": "CORPACCI, LUCÍA BENIGNA",
+    "b": "JUSTICIALISTA",
+    "p": "CATAMARCA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "287": {
+    "n": "DI TULLIO, JULIANA",
+    "b": "JUSTICIALISTA",
+    "p": "BUENOS AIRES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "N",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "288": {
+    "n": "DE PEDRO, EDUARDO ENRIQUE",
+    "b": "JUSTICIALISTA",
+    "p": "BUENOS AIRES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "N",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "289": {
+    "n": "NEDER, JOSÉ EMILIO",
+    "b": "JUSTICIALISTA",
+    "p": "SANTIAGO DEL ESTERO",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "290": {
+    "n": "FERNÁNDEZ SAGASTI, ANABEL",
+    "b": "JUSTICIALISTA",
+    "p": "MENDOZA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "N",
+      "inocencia_fiscal": "N",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "N",
+      "modernizacion_laboral_dip": "N"
+    }
+  },
+  "291": {
+    "n": "JUEZ, LUIS ALFREDO",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "CÓRDOBA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "292": {
+    "n": "ALVAREZ RIVERO, CARMEN",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "CÓRDOBA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "293": {
+    "n": "ATAUCHE, EZEQUIEL",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "JUJUY",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "294": {
+    "n": "BEDIA, VILMA FACUNDA",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "JUJUY",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "295": {
+    "n": "BENEGAS LYNCH, JOAQUÍN ALBERTO",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "ENTRE RÍOS",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "296": {
+    "n": "ALMEIDA, ROMINA MARÍA",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "ENTRE RÍOS",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "297": {
+    "n": "BULLRICH, PATRICIA",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "CIUDAD AUTÓNOMA DE BUENOS AIRES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "298": {
+    "n": "MONTEVERDE, AGUSTÍN ANÍBAL",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "CIUDAD AUTÓNOMA DE BUENOS AIRES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "299": {
+    "n": "GUZMÁN CORAITA, GONZALO",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "SALTA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "300": {
+    "n": "OROZCO, MARÍA EMILIA",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "SALTA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "301": {
+    "n": "PAOLTRONI, FRANCISCO MANUEL",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "FORMOSA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "302": {
+    "n": "GODOY, JUAN CRUZ",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "CHACO",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "303": {
+    "n": "OLIVERA LUCERO, BRUNO ANTONIO",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "SAN JUAN",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "304": {
+    "n": "PAGOTTO, JUAN CARLOS",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "LA RIOJA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "305": {
+    "n": "FULLONE, ENZO PAOLO",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "RÍO NEGRO",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "306": {
+    "n": "MÁRQUEZ, NADIA JUDITH",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "NEUQUÉN",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "307": {
+    "n": "CERVI, MARIO PABLO",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "NEUQUÉN",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "308": {
+    "n": "COTO, AGUSTÍN PEDRO",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "309": {
+    "n": "MONTE DE OCA, MARÍA BELÉN",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "310": {
+    "n": "ABDALA, BARTOLOMÉ ESTEBAN",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "SAN LUIS",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "311": {
+    "n": "ARRASCAETA, IVANNA MARCELA",
+    "b": "LA LIBERTAD AVANZA",
+    "p": "SAN LUIS",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "312": {
+    "n": "CORROZA, JULIETA",
+    "b": "LA NEUQUINIDAD",
+    "p": "NEUQUÉN",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "X",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "313": {
+    "n": "CARAMBIA, JOSÉ MARÍA",
+    "b": "MOVERE POR SANTA CRUZ",
+    "p": "SANTA CRUZ",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "X"
+    }
+  },
+  "314": {
+    "n": "GADANO, NATALIA ELENA",
+    "b": "MOVERE POR SANTA CRUZ",
+    "p": "SANTA CRUZ",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "N",
+      "pliego_iglesias": "N",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "X"
+    }
+  },
+  "315": {
+    "n": "ROYON, FLAVIA GABRIELA",
+    "b": "PRIMERO LOS SALTEÑOS",
+    "p": "SALTA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "X",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "316": {
+    "n": "VIGO, ALEJANDRA MARÍA",
+    "b": "PROVINCIAS UNIDAS",
+    "p": "CÓRDOBA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "X",
+      "inocencia_fiscal": "U",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "U",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "X",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "317": {
+    "n": "ESPÍNOLA, CARLOS MAURICIO",
+    "b": "PROVINCIAS UNIDAS",
+    "p": "CORRIENTES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "318": {
+    "n": "GALARETTO, EDUARDO HORACIO",
+    "b": "UCR - UNIÓN CÍVICA RADICAL",
+    "p": "SANTA FE",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "319": {
+    "n": "LOSADA, CAROLINA",
+    "b": "UCR - UNIÓN CÍVICA RADICAL",
+    "p": "SANTA FE",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "320": {
+    "n": "VISCHI, EDUARDO ALEJANDRO",
+    "b": "UCR - UNIÓN CÍVICA RADICAL",
+    "p": "CORRIENTES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "321": {
+    "n": "VALENZUELA, MERCEDES GABRIELA",
+    "b": "UCR - UNIÓN CÍVICA RADICAL",
+    "p": "CORRIENTES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "322": {
+    "n": "KRONEBERGER, DANIEL RICARDO",
+    "b": "UCR - UNIÓN CÍVICA RADICAL",
+    "p": "LA PAMPA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "323": {
+    "n": "SCHNEIDER, SILVANA LORENA",
+    "b": "UCR - UNIÓN CÍVICA RADICAL",
+    "p": "CHACO",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "324": {
+    "n": "FAMA, FLAVIO SERGIO",
+    "b": "UCR - UNIÓN CÍVICA RADICAL",
+    "p": "CATAMARCA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "325": {
+    "n": "ABAD, MAXIMILIANO",
+    "b": "UCR - UNIÓN CÍVICA RADICAL",
+    "p": "BUENOS AIRES",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "N",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "326": {
+    "n": "JURI, MARIANA",
+    "b": "UCR - UNIÓN CÍVICA RADICAL",
+    "p": "MENDOZA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  },
+  "327": {
+    "n": "SUÁREZ, RODOLFO ALEJANDRO",
+    "b": "UCR - UNIÓN CÍVICA RADICAL",
+    "p": "MENDOZA",
+    "c": "S",
+    "v": {
+      "presupuesto_2026": "A",
+      "inocencia_fiscal": "A",
+      "modernizacion_laboral": "A",
+      "pliego_iglesias": "A",
+      "mercosur_ue": "A",
+      "ley_glaciares": "A",
+      "regimen_penal_juv": "A",
+      "modernizacion_laboral_dip": "A"
+    }
+  }
+}

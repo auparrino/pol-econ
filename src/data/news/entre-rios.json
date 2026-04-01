@@ -1,0 +1,138 @@
+{
+  "province": "Entre Ríos",
+  "slug": "entre-rios",
+  "updated": "2026-03-31T23:32:58.516Z",
+  "sources": [
+    "El Diario ER",
+    "Google News Entre Ríos",
+    "El Once"
+  ],
+  "articles": [
+    {
+      "title": "COFEIN en Paraná: intendentes advirtieron preocupación y reclamaron una distribución equitativa de los recursos de Nación",
+      "url": "https://www.eldiario.com.ar/2026/03/31/cofein-en-parana-intendentes-advirtieron-preocupacion-y-reclamaron-una-distribucion-equitativa-de-los-recursos-de-nacion/",
+      "date": "2026-03-31",
+      "source": "eldiario.com.ar",
+      "section": "política",
+      "excerpt": "La capital entrerriana fue sede del II encuentro del COFEIN, donde jefes comunales de todo el país expresaron su preocupación por la caída de recursos y su impacto en la gestión de los gobiernos locales. El conclave encabezado por la intendenta de Paraná, Rosario Romero, concluyó con una declaración conjunta que advierte sobre un escenario […]",
+      "classified": true
+    },
+    {
+      "title": "Entre Ríos participó de un nuevo encuentro del Cofesa centrado en fortalecer la respuesta ante enfermedades respiratorias",
+      "url": "https://www.eldiario.com.ar/2026/03/31/entre-rios-participo-de-un-nuevo-encuentro-del-cofesa-centrado-en-fortalecer-la-respuesta-ante-enfermedades-respiratorias/",
+      "date": "2026-03-31",
+      "source": "eldiario.com.ar",
+      "section": "sociedad",
+      "excerpt": "El ministro de Salud de Entre Ríos, Daniel Blanzaco, participó de una nueva reunión del Consejo Federal de Salud (Cofesa), en la que se definieron acciones clave para fortalecer el sistema sanitario en todo el país, con eje en la prevención, la gestión y la preparación ante la temporada invernal. El encuentro fue encabezado por […]",
+      "classified": true
+    },
+    {
+      "title": "Paraná es sede del encuentro del Consejo Federal de Intendentes de Capitales Provinciales",
+      "url": "https://www.eldiario.com.ar/2026/03/31/parana-es-sede-del-encuentro-del-consejo-federal-de-intendentes-de-capitales-provinciales/",
+      "date": "2026-03-31",
+      "source": "eldiario.com.ar",
+      "section": "política",
+      "excerpt": "El encuentro se realiza este martes en la Sala Mayo. Reune a los jefes comunales de todo el país para fortalecer una agenda común y consolidar una mirada federal sobre el desarrollo de las ciudades. En un contexto que demanda mayor articulación y protagonismo de los gobiernos locales, intendentes e intendentas de capitales provinciales se […]",
+      "classified": true
+    },
+    {
+      "title": "¿Fin del calor extremo? Anuncian alerta amarilla por tormentas para siete departamentos en Entre Ríos",
+      "url": "https://www.elonce.com/sociedad/anuncian-alerta-por-tormentas-para-siete-departamentos-de-entre-rios-cuando-llegaria.htm",
+      "date": "2026-03-31",
+      "source": "elonce.com",
+      "section": "general",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Explicaron cómo impacta el nuevo esquema nacional de subsidios en la factura de luz en Entre Ríos",
+      "url": "https://www.elonce.com/sociedad/como-impacta-esquema-de-subsidios-en-factura-de-luz-en-entre-rios.htm",
+      "date": "2026-03-31",
+      "source": "elonce.com",
+      "section": "economía",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "El gobernador y empresarios coincidieron en impulsar reformas y cadenas estratégicas de valor",
+      "url": "https://www.elonce.com/economia/el-gobernador-y-empresarios-coincidieron-en-impulsar-reformas-y-cadenas-estrategicas-de-valor.htm",
+      "date": "2026-03-31",
+      "source": "elonce.com",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Cesantearon a médico del hospital San Martín tras ser acusado de presuntos abusos a pacientes",
+      "url": "https://www.elonce.com/sociedad/cesantearon-a-medico-del-hospital-san-martin-tras-ser-acusado-de-presuntos-abusos-a-pacientes.htm",
+      "date": "2026-03-31",
+      "source": "elonce.com",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Murió la mujer que había sufrido quemaduras en un dramático episodio en Crespo",
+      "url": "https://www.elonce.com/policiales/murio-la-mujer-que-habia-sufrido-quemaduras-en-un-dramatico-episodio-en-crespo.htm",
+      "date": "2026-03-31",
+      "source": "elonce.com",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Consejo Federal de Intendentes en Paraná: reclamaron más recursos y cambios en la coparticipación",
+      "url": "https://www.elonce.com/politica/intendentes-en-parana-reclaman-recursos-y-cambios-en-coparticipacion.htm",
+      "date": "2026-03-31",
+      "source": "elonce.com",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno provincial aclara el alcance de ORI y ratifica su enfoque complementario en salud mental",
+      "url": "https://www.eldiario.com.ar/2026/03/30/el-gobierno-provincial-aclara-el-alcance-de-ori-y-ratifica-su-enfoque-complementario-en-salud-mental/",
+      "date": "2026-03-30",
+      "source": "eldiario.com.ar",
+      "section": "política",
+      "excerpt": "Frente a las repercusiones generadas tras la presentación de ORI, el Gobierno de Entre Ríos considera oportuno realizar una serie de aclaraciones respecto a su finalidad, alcance y lugar dentro de la estrategia integral de salud mental que se lleva adelante en la provincia. ORI es una herramienta desarrollada de manera conjunta por el Ministerio […]",
+      "classified": true
+    },
+    {
+      "title": "Conmoción en toda la provincia: en San Cristóbal, un alumno entró armado a su escuela, mató a un compañero y hay otros heridos",
+      "url": "https://www.eldiario.com.ar/2026/03/30/conmocion-en-toda-la-provincia-en-san-cristobal-un-alumno-entro-armado-a-su-escuela-mato-a-un-companero-y-hay-otros-heridos/",
+      "date": "2026-03-30",
+      "source": "eldiario.com.ar",
+      "section": "sociedad",
+      "excerpt": "Un adolescente abrió fuego esta mañana durante el izamiento de la bandera e hirió de muerte a un compañero. El agresor tendría 15 años y el fallecido, 13. Otros ocho alumnos resultaron heridos y son atendidos en distintos hospitales, uno de ellos de mayor gravedad. Fue en la ciudad cabecera de su departamento, a poco […]",
+      "classified": true
+    },
+    {
+      "title": "Provincia de Entre Ríos regresa con emisión de bonos a los mercados internacionales después de nueve años",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQY0l4LXREd2VWQmllay1XN1NUbFRTN0pkZGhmNkxxRGNqamVpVE0tNWZrQ1ZYMU9vRml6Rk14dTBMY2xCWXY3NUllbFJQZk03LV82dzc2eGQwaWlfZFY2TEVHaFNabUtwOGJBU2xxN0xaSEx2TFdEZ2FFSEgtS09MWHlzZGpfdXNRY2swdm1UTjJGTkk?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-24",
+      "source": "LexLatin",
+      "section": "economía",
+      "excerpt": "Provincia de Entre Ríos regresa con emisión de bonos a los mercados internacionales después de nueve años LexLatin",
+      "classified": true
+    },
+    {
+      "title": "¡Este miércoles será feriado en la provincia de Entre Ríos!",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOFUxeUp6VUUySEwyT0UwRGNvanN3X3Y1bWc3R2RQUnFIMkU1NG5yMVZ5VWhaWkxpRWJhUFBZOTl6UGhSU20zZFRtSVQzaG0zVFJ2Nlc3Q3NrT2p1dGhDYWNHTGQ3cnNTNjhlYmdwNF93YnItYTU2Z00zXzdWVFp5MUxvNVk5SmdlZjhjYzFaT0x2Z21DWUZwMHota0tYRjFlbWlOUw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-03",
+      "source": "Municipalidad de Gualeguaychú",
+      "section": "general",
+      "excerpt": "¡Este miércoles será feriado en la provincia de Entre Ríos! Municipalidad de Gualeguaychú",
+      "classified": true
+    },
+    {
+      "title": "La provincia centraliza la consulta de recibos de sueldo en la plataforma Mi Entre Ríos",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBFQXFvdjdBREVoNHRzZVNKMVNQUUltYW9zVWdqRmNEN2daQk9CTDhhblhoOTBMX2VCbWl2RTFmd3pBdmRvWFhnb0I3YjRxbi1TVExoOTJEcWN6UQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-02",
+      "source": "Gobierno de Entre Ríos",
+      "section": "economía",
+      "excerpt": "La provincia centraliza la consulta de recibos de sueldo en la plataforma Mi Entre Ríos Gobierno de Entre Ríos",
+      "classified": true
+    }
+  ]
+}

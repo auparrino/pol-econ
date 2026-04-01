@@ -1,0 +1,75 @@
+{
+  "province": "Buenos Aires",
+  "slug": "buenos-aires",
+  "updated": "2026-03-31T23:30:20.255Z",
+  "sources": [
+    "El Día",
+    "0221",
+    "Info Platense"
+  ],
+  "articles": [
+    {
+      "title": "Pobreza en el Gran La Plata: pese a la baja nacional, los índices siguen alarmantes",
+      "url": "https://www.infoplatense.com.ar/pobreza-en-el-gran-la-plata-pese-a-la-baja-nacional-los-indices-siguen-alarmantes/",
+      "date": "2026-03-31",
+      "source": "infoplatense.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Residuos en La Plata: unificación de horarios en nueve delegaciones",
+      "url": "https://www.infoplatense.com.ar/residuos-en-la-plata-unificacion-de-horarios-en-nueve-delegaciones/",
+      "date": "2026-03-31",
+      "source": "infoplatense.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Transporte en La Plata: el boleto roza los $1.000 y la crisis de pasajeros ya impacta en el sistema",
+      "url": "https://www.infoplatense.com.ar/transporte-en-la-plata-el-boleto-roza-los-1-000-y-la-crisis-de-pasajeros-ya-impacta-en-el-sistema/",
+      "date": "2026-03-31",
+      "source": "infoplatense.com.ar",
+      "section": "economía",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Cine Select: la polémica por la sala “Pino Solanas” reabre el debate sobre quién define los nombres en La Plata",
+      "url": "https://www.infoplatense.com.ar/cine-select-la-polemica-por-la-sala-pino-solanas-reabre-el-debate-sobre-quien-define-los-nombres-en-la-plata/",
+      "date": "2026-03-31",
+      "source": "infoplatense.com.ar",
+      "section": "cultura",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "La UNLP definió decanos: Medicina cambia de signo político tras la interna y Económicas mantiene su rumbo",
+      "url": "https://www.infoplatense.com.ar/la-unlp-definio-decanos-medicina-cambia-de-signo-politico-tras-la-interna-y-economicas-mantiene-su-rumbo/",
+      "date": "2026-03-31",
+      "source": "infoplatense.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Suben las cuotas de los colegios privados en la Provincia de Buenos Aires",
+      "url": "https://www.infoplatense.com.ar/suben-las-cuotas-de-los-colegios-privados-en-la-provincia-de-buenos-aires/",
+      "date": "2026-03-31",
+      "source": "infoplatense.com.ar",
+      "section": "economía",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Radicales respaldaron masivamente a Miguel Fernández y llamaron a la moderación",
+      "url": "https://www.infoplatense.com.ar/radicales-respaldaron-masivamente-a-miguel-fernandez-y-llamaron-a-la-moderacion/",
+      "date": "2026-03-31",
+      "source": "infoplatense.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    }
+  ]
+}

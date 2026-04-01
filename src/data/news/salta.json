@@ -1,0 +1,228 @@
+{
+  "province": "Salta",
+  "slug": "salta",
+  "updated": "2026-03-31T23:34:46.759Z",
+  "sources": [
+    "El Tribuno Salta",
+    "Informate Salta",
+    "Google News Salta"
+  ],
+  "articles": [
+    {
+      "title": "El Ente Regulador impulsa proyectos para limitar cargos en las facturas de servicios",
+      "url": "https://www.eltribuno.com/salta/2026-3-31-19-11-0-el-ente-regulador-impulsa-proyectos-para-limitar-cargos-en-las-facturas-de-servicios",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "economía",
+      "excerpt": "Las iniciativas fueron presentadas ante diputados provinciales y buscan ordenar el sistema energético y poner un tope a tasas que impactan en las boletas.",
+      "classified": true
+    },
+    {
+      "title": "La Municipalidad busca recuperar gastos y acciona contra responsables de siniestros",
+      "url": "https://www.eltribuno.com/salta/2026-3-31-18-28-0-la-municipalidad-busca-recuperar-gastos-y-acciona-contra-responsables-de-siniestros",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "justicia",
+      "excerpt": "Desde la Secretaría de Tránsito y Seguridad Vial aseguran que ya se realizaron acciones legales con éxito en al menos ocho reclamos judiciales.",
+      "classified": true
+    },
+    {
+      "title": "En dos días, el Sub-13 salteño convirtió 21 goles en Mundialito de España",
+      "url": "https://www.eltribuno.com/deportes/2026-3-31-18-0-0-en-dos-dias-el-sub-13-salteno-convirtio-21-goles-en-mundialito-de-espana",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "cultura",
+      "excerpt": "En el certamen que se disputa en Costa Dorada, Salta brilló ante México en el Mundialito y lo goleó 8 a 0. Mañana se define la fase de grupo.",
+      "classified": true
+    },
+    {
+      "title": "VIDEO. Docentes de la Escuela de Música de la Provincia denuncian precarización y sueldos adeudados; piden respuestas",
+      "url": "https://www.eltribuno.com/salta/2026-3-31-16-54-0-video-docentes-de-la-escuela-de-musica-de-la-provincia-denuncian-precarizacion-y-sueldos-adeudados-piden-respuestas",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "sociedad",
+      "excerpt": "Un grupo de 37 profesores inició acciones legales contra el Estado provincial por la falta de pago de salarios, inestabilidad laboral y presuntas irregularidades institucionales. Aseguran que trabajan durante meses sin cobrar, sin obra social ni cobertura, mientras crece la incertidumbre en una institución clave de formación artística y cultural en Salta.",
+      "classified": true
+    },
+    {
+      "title": "Femicidio de El Tipal: mañana arranca el juicio por el femicidio de Mercedes Kvedaras",
+      "url": "https://www.eltribuno.com/policiales/2026-3-31-16-19-0-femicidio-de-el-tipal-manana-arranca-el-juicio-por-el-femicidio-de-mercedes-kvedaras",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "justicia",
+      "excerpt": "El proceso, que se extenderá hasta el 4 de mayo, comenzará con la lectura de una acusación de más de 200 fojas y los primeros testimonios de familiares, en una causa que investiga el crimen ocurrido en El Tipal y por el que el imputado enfrenta prisión perpetua.",
+      "classified": true
+    },
+    {
+      "title": "Tras el ciberataque masivo, Salud de Salta asegura que no hubo nuevas vulneraciones",
+      "url": "https://www.eltribuno.com/salta/2026-3-31-15-45-0-tras-el-ciberataque-masivo-salud-de-salta-asegura-que-no-hubo-nuevas-vulneraciones",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "sociedad",
+      "excerpt": "Confirmaron que la información que circula corresponde a una filtración antigua del programa Sumar.",
+      "classified": true
+    },
+    {
+      "title": "Ciberataque en Salta: la Fiscalía pidió informes a Telegram y X para identificar a los responsables",
+      "url": "https://www.eltribuno.com/salta/2026-3-31-15-5-0-ciberataque-en-salta-la-fiscalia-pidio-informes-a-telegram-y-x-para-identificar-a-los-responsables",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "justicia",
+      "excerpt": "Tras el hackeo que afectó a organismos clave como Seguridad, Salud y la Policía de Salta, la fiscalía avanzó con medidas para rastrear a los autores. Investigan a una banda internacional vinculada al grupo Chronus.",
+      "classified": true
+    },
+    {
+      "title": "Grave ciberataque nacional: el Ministerio de Salud y la Policía de Salta, entre los afectados",
+      "url": "https://www.eltribuno.com/salta/2026-3-31-14-51-0-grave-ciberataque-masivo-el-ministerio-de-seguridad-salud-y-la-policia-de-salta-fueron-hackeados",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "justicia",
+      "excerpt": "Aunque se detectó una afectación en servidores de la Policía de Salta, desde el Ministerio de Seguridad aseguraron que no se alteró el funcionamiento de los sistemas y que ya intervienen organismos especializados tras la denuncia por ciberdelito.",
+      "classified": true
+    },
+    {
+      "title": "Fondo de Reparación: la Bicameral definió las autoridades y comenzó el análisis  de informes de la auditoría",
+      "url": "https://www.eltribuno.com/salta/2026-3-31-12-5-0-fondo-de-reparacion-la-bicameral-definio-las-autoridades-y-comenzo-el-analisis-de-informes-de-la-auditoria",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "política",
+      "excerpt": "Con el fin de analizar los informes emanados por la Auditoría General de la Provincia sobre el Fondo de Reparación Histórica, la comisión Bicameral Examinadora de las Cuentas de Inversión constituyó su mesa de conducción. La diputada Patricia Hucena ejercerá la presidencia, mientras que la secretaría quedó a cargo del senador Juan Cruz Curá.",
+      "classified": true
+    },
+    {
+      "title": "McDonald’s cumple 25 años en Salta:  llega un festejo con shows, premios y sorpresas",
+      "url": "https://www.eltribuno.com/salta/2026-3-31-11-53-0-mcdonald-s-cumple-25-anos-en-salta-llega-un-festejo-con-shows-premios-y-sorpresas",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "cultura",
+      "excerpt": "Será el sábado 4 de abril en el local de Alto NOA Shopping, con propuestas durante toda la jornada para disfrutar en familia, desde la mañana hasta la noche. ¡Un evento imperdible!",
+      "classified": true
+    },
+    {
+      "title": "Conmoción en barrio 25 de Mayo: encontraron a un obrero muerto en el interior de una casa en construcción",
+      "url": "https://www.eltribuno.com/policiales/2026-3-31-11-24-0-conmocion-en-barrio-25-de-mayo-encontraron-a-obrero-muerto-en-el-interior-de-una-casa-en-construccion",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "sociedad",
+      "excerpt": "El hallazgo se registró en una vivienda de calle Orán al 1900, en barrio 25 de Mayo. La víctima tenía acceso al inmueble y, según las primeras versiones, se habría quitado la vida.",
+      "classified": true
+    },
+    {
+      "title": "General Mosconi: murió atrapado entre las rejas de una casa abandonada",
+      "url": "https://www.eltribuno.com/policiales/2026-3-31-10-19-0-geenral-mosconi-murio-atrapado-entre-las-rejas-de-una-casa-abandonada",
+      "date": "2026-03-31",
+      "source": "eltribuno.com",
+      "section": "sociedad",
+      "excerpt": "Según indicaron vecinos, el hombre era muy conocido en la zona por sus actos delictivos",
+      "classified": true
+    },
+    {
+      "title": "Diputados le dio media sanción a la Carta Orgánica de Tartagal",
+      "url": "https://informatesalta.com.ar/legislativa/diputados-le-dio-media-sancion-a-la-carta-organica-de-tartagal_a69cc42a60041d9a6474ea8df",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Hackeo internacional pone en alerta a Salta: Investigan filtración de datos de organismos públicos",
+      "url": "https://informatesalta.com.ar/sociedad/hackeo-internacional-pone-en-alerta-a-salta--investigan-filtracion-de-datos-de-organismos-publicos_a69cc3ae80041d9a6474dabce",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Ya está en Argentina el salteño que habría abusado de su prima y huyó a Croacia",
+      "url": "https://informatesalta.com.ar/policiales/ya-esta-en-argentina-el-salteno-que-habria-abusado-de-su-prima-y-huyo-a-croacia_a69cc3c750041d9a6474ddde4",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Mañana comienza el juicio por el femicidio en El Tipal",
+      "url": "https://informatesalta.com.ar/justicia/manana-comienza-el-juicio-por-el-femicidio-en-el-tipal_a69cc05080041d9a64747e187",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Este jueves habrá una conmemoración de la muerte de Cristo en el Centro de Convenciones",
+      "url": "https://informatesalta.com.ar/sociedad/este-jueves-habra-una-conmemoracion-de-la-muerte-de-cristo-en-el-centro-de-convenciones_a69cc28180041d9a6474b75f2",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "cultura",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Cada minuto cuenta: ¿Los salteños saben actuar ante un ACV?",
+      "url": "https://informatesalta.com.ar/salud/cada-minuto-cuenta---los-saltenos-saben-actuar-ante-un-acv-_a69cc285d0041d9a6474b7e3a",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Diputados despidieron con dolor a Álvaro Ulloa con un minuto de silencio",
+      "url": "https://informatesalta.com.ar/legislativa/diputados-despidieron-con-dolor-a-alvaro-ulloa-con-un-minuto-de-silencio_a69cc33fd0041d9a6474cbd34",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Vecinos de Pinares en peligro por colectivos articulados que pasan a gran velocidad",
+      "url": "https://informatesalta.com.ar/reclamo/vecinos-de-pinares-en-peligro-por-colectivos-articulados-que-pasan-a-gran-velocidad_a69cc2a6d0041d9a6474bb7f2",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Niegan que se haya hackeado el sistema de historias clínicas SAFESA",
+      "url": "https://informatesalta.com.ar/gobierno/niegan-que-se-haya-hackeado-el-sistema-de-historias-clinicas-safesa_a69cc23110041d9a6474ae572",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Ebrio que choca, paga: “Hay que sumar los gastos de operativo de Tránsito\"",
+      "url": "https://informatesalta.com.ar/municipal/ebrio-que-choca--paga---hay-que-sumar-los-gastos-de-operativo-de-transito-_a69cbf7490041d9a647461aa4",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Detienen a una banda de cuatreros; operarían para carnicerías de Salta",
+      "url": "https://informatesalta.com.ar/policiales/detienen-a-una-banda-de-cuatreros--operarian-para-carnicerias-de-salta_a69cbce4674bdce1aebf90bb1",
+      "date": "2026-03-31",
+      "source": "informatesalta.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Sáenz lanzó el Hospital Público Digital SAFESA que garantizará atención médica de alta complejidad en toda la provincia",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRzZEZmNOM2dqUHZzcEdQd3JOWmEyRkxYZGhwTGpCYmtXOTR2Y05iV1J1MEg1VUFySmh4Vk9oaUg2bkJvejdxZ3VvcDVIbWIwY0xoOTdmZmFwUndrSW81LXR2YkNPWktvWVBYd0l1ZW5vbzYzR3JEYmFvSjhCRk9VSjREVkk4QTFYbmNsMlhaUFZoNWxHRW5HUXktRGdxcHQ0UU4zZU5FR3lDMWhEVkpiUUdVSlRzanlqVjJZaVVORWFKSXotSEE4dGN3U29lTGtSLWZ3WGdlaEtycFQxQ0Vuakx2RTNaeXlNUEhZMzEyeC1pTE1xbHJrb0M4WQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-07",
+      "source": "Gobierno de la Provincia de Salta, Argentina",
+      "section": "economía",
+      "excerpt": "Sáenz lanzó el Hospital Público Digital SAFESA que garantizará atención médica de alta complejidad en toda la provincia Gobierno de la Provincia de Salta, Argentina",
+      "classified": true
+    }
+  ]
+}

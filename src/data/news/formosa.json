@@ -1,0 +1,21 @@
+{
+  "province": "Formosa",
+  "slug": "formosa",
+  "updated": "2026-03-31T23:33:12.680Z",
+  "sources": [
+    "La Mañana",
+    "Formosa Hoy",
+    "Google News Formosa"
+  ],
+  "articles": [
+    {
+      "title": "REFSA Telecomunicaciones (Formosa - Argentina) en el debate sobre conectividad \"IA Ready\" en NPlay Cono Sur",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOQ19aNXVoNVpKUENXWExJdWFZV0Z1ajRQdGtNc3NHWmdDTmFvdHlyYzR5Slhab1NGdjFLUGkyTHRQQUxvZktuT3VrcTBLWjJ5ZGpXcENZV0VZOV9iaTRmM05QbmZWb0RLdV9kX0F1dHRZTExUZFRpakV0U0dTSnJxLU1NQi1XMG9KQ2J6bEg2ZUJ6MXBhdHJjTEZlWW9saHBMNmFJVlZCcGdDWTl2dGkzU2luLXp0a2N2LXc3SkZMQXhVVWN0NkpELUJ5dmtKNEZlbnVRZUlBZ3lOMHR2c0d3?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-18",
+      "source": "Gobierno de la Provincia de Formosa",
+      "section": "política",
+      "excerpt": "REFSA Telecomunicaciones (Formosa - Argentina) en el debate sobre conectividad \"IA Ready\" en NPlay Cono Sur Gobierno de la Provincia de Formosa",
+      "classified": true
+    }
+  ]
+}

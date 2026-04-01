@@ -1,4 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
+import ProvinceNews from './ProvinceNews';
 
 const OverlayPanel = lazy(() => import('./panels/OverlayPanel'));
 const CongressPanel = lazy(() => import('./panels/CongressPanel'));
@@ -15,9 +16,10 @@ const PanelFallback = () => (
 const BASE_TABS = [
   { id: 'congress', label: 'Congress' },
   { id: 'cabinet', label: 'Cabinet' },
+  { id: 'news', label: 'News' },
 ];
 
-export default function BottomBar({ panelWidth = 320, congress, overlays, energyLayers, selectedProvince, governors, onHeightChange }) {
+export default function BottomBar({ congress, overlays, energyLayers, selectedProvince, governors }) {
   const hasOverlay = overlays?.mining || energyLayers?.length > 0;
 
   const tabs = hasOverlay
@@ -31,18 +33,22 @@ export default function BottomBar({ panelWidth = 320, congress, overlays, energy
     else if (activeTab === 'overlay') setActiveTab('congress');
   }, [hasOverlay]); // eslint-disable-line
 
-  const barH = activeTab === 'cabinet' ? 250 : activeTab === 'congress' ? 155 : 150;
-
-  useEffect(() => { onHeightChange?.(barH); }, [barH]); // eslint-disable-line
-
   return (
-    <div
-      className="fixed bottom-0 left-[200px] border-t z-[999] transition-all duration-300 flex flex-col"
-      style={{ background: '#FDF0D5', borderColor: 'rgba(0,48,73,0.12)', right: panelWidth, height: barH }}
+    <aside
+      className="fixed left-0 z-[999] flex flex-col"
+      style={{
+        top: 56,
+        bottom: 100,
+        width: 340,
+        background: '#FFF8EB',
+        borderRight: '1px solid #d4c4a0',
+      }}
       role="tablist"
       aria-label="Dashboard panels"
     >
-      <div className="flex items-center gap-1 px-3 pt-1.5 border-b shrink-0" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
+      {/* Tabs stacked vertically */}
+      <div className="flex flex-col gap-1 px-3 py-2.5 shrink-0"
+        style={{ borderBottom: '1px solid rgba(0,48,73,0.08)' }}>
         {tabs.map(tab => (
           <button
             key={tab.id}
@@ -50,19 +56,19 @@ export default function BottomBar({ panelWidth = 320, congress, overlays, energy
             role="tab"
             aria-selected={activeTab === tab.id}
             aria-controls={`panel-${tab.id}`}
-            className={`text-[14px] px-2.5 py-1 rounded-t font-semibold uppercase tracking-wider transition-all ${
-              activeTab === tab.id ? 'border border-b-transparent -mb-px' : ''
-            }`}
+            className="text-[13px] px-3 py-1.5 rounded-lg font-semibold uppercase tracking-wider transition-all text-center"
             style={activeTab === tab.id
-              ? { background: '#F0E5C8', color: '#003049', borderColor: 'rgba(0,48,73,0.15)' }
-              : { color: 'rgba(0,48,73,0.45)' }}
+              ? { background: '#003049', color: '#FDF0D5' }
+              : { color: 'rgba(0,48,73,0.50)', background: 'rgba(0,48,73,0.04)' }
+            }
           >
             {tab.label}
           </button>
         ))}
       </div>
 
-      <div id={`panel-${activeTab}`} role="tabpanel" className="px-3 py-1.5 flex-1 overflow-y-auto min-h-0">
+      {/* Panel content */}
+      <div id={`panel-${activeTab}`} role="tabpanel" className="px-3 py-2 flex-1 overflow-y-auto overflow-x-hidden min-h-0">
         <Suspense fallback={<PanelFallback />}>
           {activeTab === 'overlay' && <OverlayPanel overlays={overlays} energyLayers={energyLayers} selectedProvince={selectedProvince} />}
           {activeTab === 'congress' && (selectedProvince
@@ -73,8 +79,15 @@ export default function BottomBar({ panelWidth = 320, congress, overlays, energy
             ? <ProvincialCabinetPanel selectedProvince={selectedProvince} governors={governors} />
             : <CabinetPanel />
           )}
+          {activeTab === 'news' && (
+            selectedProvince
+              ? <ProvinceNews province={selectedProvince} />
+              : <div className="flex flex-col items-center justify-center py-8 text-center">
+                  <p className="text-[13px] text-[#003049]/50">Select a province on the map to view provincial news summaries.</p>
+                </div>
+          )}
         </Suspense>
       </div>
-    </div>
+    </aside>
   );
 }

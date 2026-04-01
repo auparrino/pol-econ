@@ -102,27 +102,27 @@ const MINERAL_LEGEND = {
 
 function LegendBox({ title, items, useCircles = false }) {
   return (
-    <div className="backdrop-blur-sm rounded-md px-3 py-2 max-w-[160px] shadow-sm"
+    <div className="backdrop-blur-sm rounded-md px-4 py-3 max-w-[200px] shadow-sm"
       style={{ background: 'rgba(253,240,213,0.95)', border: '1px solid rgba(0,48,73,0.15)' }}>
-      <p className="text-[8px] font-bold tracking-[1.5px] uppercase mb-1.5"
+      <p className="text-[10px] font-bold tracking-[1.5px] uppercase mb-2"
         style={{ color: 'rgba(0,48,73,0.55)' }}>
         {title}
       </p>
-      <div className="flex flex-col gap-0.5">
+      <div className="flex flex-col gap-1">
         {items.map((item, i) => (
-          <div key={i} className="flex items-center gap-1.5">
+          <div key={i} className="flex items-center gap-2">
             {useCircles ? (
               <span
-                className="w-2.5 h-2.5 rounded-full shrink-0"
+                className="w-3 h-3 rounded-full shrink-0"
                 style={{ backgroundColor: item.color, border: '1px solid rgba(0,48,73,0.15)' }}
               />
             ) : (
               <span
-                className="w-3 h-2.5 rounded-sm shrink-0"
+                className="w-3.5 h-3 rounded-sm shrink-0"
                 style={{ backgroundColor: item.color }}
               />
             )}
-            <span className="text-[9px] leading-tight" style={{ color: 'rgba(0,48,73,0.70)' }}>{item.label}</span>
+            <span className="text-[12px] leading-tight" style={{ color: 'rgba(0,48,73,0.70)' }}>{item.label}</span>
           </div>
         ))}
       </div>

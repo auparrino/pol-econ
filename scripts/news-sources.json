@@ -1,0 +1,220 @@
+{
+  "provinces": [
+    {
+      "name": "Buenos Aires",
+      "slug": "buenos-aires",
+      "sources": [
+        { "name": "El Día", "domain": "eldia.com", "rss": "https://www.eldia.com/rss/politica", "sections": ["politica", "economia", "la-ciudad"] },
+        { "name": "0221", "domain": "0221.com.ar", "rss": "https://www.0221.com.ar/rss", "sections": ["politica", "sociedad"] },
+        { "name": "Info Platense", "domain": "infoplatense.com.ar", "rss": null, "url": "https://www.infoplatense.com.ar", "selectors": { "list": "article a", "title": "h2", "link": "a[href]" } }
+      ]
+    },
+    {
+      "name": "Ciudad de Buenos Aires",
+      "slug": "caba",
+      "sources": [
+        { "name": "BAE Negocios", "domain": "baenegocios.com", "rss": "https://www.baenegocios.com/feed/", "sections": ["politica", "economia"] },
+        { "name": "Cronista", "domain": "cronista.com", "rss": "https://www.cronista.com/feed/", "sections": ["politica", "economia"] },
+        { "name": "Google News CABA", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=%22Ciudad+de+Buenos+Aires%22+OR+%22gobierno+porte%C3%B1o%22+OR+%22GCBA%22+OR+%22legislatura+porte%C3%B1a%22&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true }
+      ]
+    },
+    {
+      "name": "Catamarca",
+      "slug": "catamarca",
+      "sources": [
+        { "name": "Google News Catamarca", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=Catamarca+Argentina+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno+OR+provincia&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true },
+        { "name": "El Esquiú", "domain": "elesquiu.com", "rss": null, "url": "https://www.elesquiu.com", "selectors": { "list": ".post-item a", "title": "h2,h3", "link": "a[href]" } },
+        { "name": "Diario C", "domain": "diarioc.com.ar", "rss": null, "url": "https://www.diarioc.com.ar", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } }
+      ]
+    },
+    {
+      "name": "Chaco",
+      "slug": "chaco",
+      "sources": [
+        { "name": "Diario Chaco", "domain": "diariochaco.com", "rss": "https://www.diariochaco.com/rss.xml", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "Chaco Día por Día", "domain": "chacodiapordia.com", "rss": "https://www.chacodiapordia.com/feed/", "sections": ["politica", "economia"] },
+        { "name": "Data Chaco", "domain": "datachaco.com", "rss": "https://datachaco.com/feed/", "sections": ["politica", "sociedad"] }
+      ]
+    },
+    {
+      "name": "Chubut",
+      "slug": "chubut",
+      "sources": [
+        { "name": "El Chubut", "domain": "elchubut.com.ar", "rss": null, "url": "https://www.elchubut.com.ar", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } },
+        { "name": "Diario Jornada", "domain": "diariojornada.com.ar", "rss": "https://www.diariojornada.com.ar/rss", "sections": ["politica", "economia"] },
+        { "name": "El Patagónico", "domain": "elpatagonico.com", "rss": "https://www.elpatagonico.com/rss", "sections": ["politica", "economia", "sociedad"] }
+      ]
+    },
+    {
+      "name": "Córdoba",
+      "slug": "cordoba",
+      "sources": [
+        { "name": "Cba24n", "domain": "cba24n.com.ar", "rss": "https://www.cba24n.com.ar/rss", "sections": ["politica", "economia"] },
+        { "name": "Hoy Día Córdoba", "domain": "hoydia.com.ar", "rss": "https://www.hoydia.com.ar/feed/", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "La Voz (Google News)", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=C%C3%B3rdoba+Argentina+provincia+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true }
+      ]
+    },
+    {
+      "name": "Corrientes",
+      "slug": "corrientes",
+      "sources": [
+        { "name": "Diario Época", "domain": "diarioepoca.com", "rss": "https://www.diarioepoca.com/rss/", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "El Litoral Ctes", "domain": "ellitoral.com.ar", "rss": "https://www.ellitoral.com.ar/feed/", "sections": ["politica", "economia"] },
+        { "name": "Google News Corrientes", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=Corrientes+Argentina+provincia+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true }
+      ]
+    },
+    {
+      "name": "Entre Ríos",
+      "slug": "entre-rios",
+      "sources": [
+        { "name": "El Diario ER", "domain": "eldiario.com.ar", "rss": "https://www.eldiario.com.ar/feed/", "sections": ["politica", "economia"] },
+        { "name": "Google News Entre Ríos", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=%22Entre+R%C3%ADos%22+Argentina+provincia+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true },
+        { "name": "El Once", "domain": "elonce.com", "rss": null, "url": "https://www.elonce.com", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } }
+      ]
+    },
+    {
+      "name": "Formosa",
+      "slug": "formosa",
+      "sources": [
+        { "name": "La Mañana", "domain": "lamananaonline.com.ar", "rss": null, "url": "https://www.lamananaonline.com.ar", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } },
+        { "name": "Formosa Hoy", "domain": "formosahoy.com", "rss": null, "url": "https://www.formosahoy.com", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } },
+        { "name": "Google News Formosa", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=Formosa+Argentina+provincia+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true }
+      ]
+    },
+    {
+      "name": "Jujuy",
+      "slug": "jujuy",
+      "sources": [
+        { "name": "Jujuy al Momento", "domain": "jujuyalmomento.com", "rss": "https://www.jujuyalmomento.com/rss", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "El Tribuno Jujuy", "domain": "eltribuno.com", "rss": "https://www.eltribuno.com/feed/", "sections": ["politica", "economia"] },
+        { "name": "Jujuy Online", "domain": "jujuyonlinenoticias.com.ar", "rss": null, "url": "https://jujuyonlinenoticias.com.ar", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } }
+      ]
+    },
+    {
+      "name": "La Pampa",
+      "slug": "la-pampa",
+      "sources": [
+        { "name": "Diario Textual", "domain": "diariotextual.com", "rss": "https://diariotextual.com/feed/", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "La Arena", "domain": "laarena.com.ar", "rss": "https://www.laarena.com.ar/feed/", "sections": ["politica", "economia"] },
+        { "name": "InfoPico", "domain": "infopico.com", "rss": "https://infopico.com/feed/", "sections": ["politica", "sociedad"] }
+      ]
+    },
+    {
+      "name": "La Rioja",
+      "slug": "la-rioja",
+      "sources": [
+        { "name": "Nueva Rioja", "domain": "nuevarioja.com.ar", "rss": null, "url": "https://www.nuevarioja.com.ar", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } },
+        { "name": "La Rioja Online", "domain": "larioja.com.ar", "rss": null, "url": "https://www.larioja.com.ar", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } },
+        { "name": "Google News La Rioja", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=%22La+Rioja%22+Argentina+provincia+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true }
+      ]
+    },
+    {
+      "name": "Mendoza",
+      "slug": "mendoza",
+      "sources": [
+        { "name": "Unidiversidad", "domain": "unidiversidad.com.ar", "rss": "https://www.unidiversidad.com.ar/rss", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "Mendoza Opina", "domain": "mendozaopina.com", "rss": "https://mendozaopina.com/feed/", "sections": ["politica", "economia"] },
+        { "name": "Google News Mendoza", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=Mendoza+Argentina+provincia+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true }
+      ]
+    },
+    {
+      "name": "Misiones",
+      "slug": "misiones",
+      "sources": [
+        { "name": "Misiones Online", "domain": "misionesonline.net", "rss": "https://misionesonline.net/feed/", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "Primera Edición", "domain": "primeraedicion.com.ar", "rss": "https://www.primeraedicion.com.ar/feed/", "sections": ["politica", "economia"] },
+        { "name": "Misiones Cuatro", "domain": "misionescuatro.com", "rss": "https://misionescuatro.com/feed/", "sections": ["politica", "sociedad"] }
+      ]
+    },
+    {
+      "name": "Neuquén",
+      "slug": "neuquen",
+      "sources": [
+        { "name": "LM Neuquén", "domain": "lmneuquen.com", "rss": "https://www.lmneuquen.com/rss", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "Río Negro (Neuquén)", "domain": "rionegro.com.ar", "rss": "https://www.rionegro.com.ar/feed/", "sections": ["politica", "economia"] },
+        { "name": "Mejor Informado", "domain": "mejorinformado.com", "rss": "https://mejorinformado.com/feed/", "sections": ["politica", "sociedad"] }
+      ]
+    },
+    {
+      "name": "Río Negro",
+      "slug": "rio-negro",
+      "sources": [
+        { "name": "Río Negro", "domain": "rionegro.com.ar", "rss": "https://www.rionegro.com.ar/feed/", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "ADN Río Negro", "domain": "adnrionegro.com.ar", "rss": "https://adnrionegro.com.ar/feed/", "sections": ["politica", "sociedad"] },
+        { "name": "Noticias Net", "domain": "noticiasnet.com.ar", "rss": "https://www.noticiasnet.com.ar/feed/", "sections": ["politica", "economia"] }
+      ]
+    },
+    {
+      "name": "Salta",
+      "slug": "salta",
+      "sources": [
+        { "name": "El Tribuno Salta", "domain": "eltribuno.com", "rss": "https://www.eltribuno.com/feed/", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "Informate Salta", "domain": "informatesalta.com.ar", "rss": "https://informatesalta.com.ar/rss/", "sections": ["politica", "sociedad"] },
+        { "name": "Google News Salta", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=Salta+Argentina+provincia+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true }
+      ]
+    },
+    {
+      "name": "San Juan",
+      "slug": "san-juan",
+      "sources": [
+        { "name": "Google News San Juan", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=%22San+Juan%22+Argentina+provincia+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true },
+        { "name": "Diario de Cuyo", "domain": "diariodecuyo.com.ar", "rss": null, "url": "https://www.diariodecuyo.com.ar", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } },
+        { "name": "Tiempo de San Juan", "domain": "tiempodesanjuan.com", "rss": null, "url": "https://www.tiempodesanjuan.com", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } }
+      ]
+    },
+    {
+      "name": "San Luis",
+      "slug": "san-luis",
+      "sources": [
+        { "name": "El Diario de la República", "domain": "eldiariodelarepublica.com", "rss": "https://www.eldiariodelarepublica.com/feed/", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "San Luis Info", "domain": "sanluisinfo.com", "rss": null, "url": "https://sanluisinfo.com", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } },
+        { "name": "Agencia San Luis", "domain": "agenciasanluis.com", "rss": "https://agenciasanluis.com/feed/", "sections": ["politica", "economia"] }
+      ]
+    },
+    {
+      "name": "Santa Cruz",
+      "slug": "santa-cruz",
+      "sources": [
+        { "name": "Tiempo Sur", "domain": "tiemposur.com.ar", "rss": "https://www.tiemposur.com.ar/feed/", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "La Opinión Austral", "domain": "laopinionaustral.com.ar", "rss": "https://laopinionaustral.com.ar/feed/", "sections": ["politica", "economia"] },
+        { "name": "OPI Santa Cruz", "domain": "opisantacruz.com.ar", "rss": "https://opisantacruz.com.ar/feed/", "sections": ["politica", "sociedad"] }
+      ]
+    },
+    {
+      "name": "Santa Fe",
+      "slug": "santa-fe",
+      "sources": [
+        { "name": "Google News Santa Fe", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=%22Santa+Fe%22+Argentina+provincia+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno+OR+Rosario&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true },
+        { "name": "El Litoral SF", "domain": "ellitoral.com", "rss": null, "url": "https://www.ellitoral.com", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } },
+        { "name": "La Capital", "domain": "lacapital.com.ar", "rss": null, "url": "https://www.lacapital.com.ar", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } }
+      ]
+    },
+    {
+      "name": "Santiago del Estero",
+      "slug": "santiago-del-estero",
+      "sources": [
+        { "name": "El Liberal", "domain": "elliberal.com.ar", "rss": "https://www.elliberal.com.ar/rss", "sections": ["politica", "economia", "santiago"] },
+        { "name": "Nuevo Diario Web", "domain": "nuevodiarioweb.com.ar", "rss": "https://www.nuevodiarioweb.com.ar/feed/", "sections": ["politica", "economia"] },
+        { "name": "Diario Panorama", "domain": "diariopanorama.com", "rss": "https://www.diariopanorama.com/rss", "sections": ["politica", "economia", "sociedad"] }
+      ]
+    },
+    {
+      "name": "Tierra del Fuego",
+      "slug": "tierra-del-fuego",
+      "sources": [
+        { "name": "El Sureño", "domain": "elsurenio.com.ar", "rss": null, "url": "https://www.elsurenio.com.ar", "selectors": { "list": "article a", "title": "h2,h3", "link": "a[href]" } },
+        { "name": "Tiempo Fueguino", "domain": "tiempofueguino.com", "rss": "https://www.tiempofueguino.com/feed/", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "Sur54", "domain": "sur54.com.ar", "rss": "https://sur54.com.ar/feed/", "sections": ["politica", "sociedad"] }
+      ]
+    },
+    {
+      "name": "Tucumán",
+      "slug": "tucuman",
+      "sources": [
+        { "name": "La Gaceta", "domain": "lagaceta.com.ar", "rss": "https://www.lagaceta.com.ar/rss/", "sections": ["politica", "economia", "sociedad"] },
+        { "name": "El Tucumano", "domain": "eltucumano.com", "rss": "https://www.eltucumano.com/rss/", "sections": ["politica", "economia"] },
+        { "name": "Google News Tucumán", "domain": "news.google.com", "rss": "https://news.google.com/rss/search?q=Tucum%C3%A1n+Argentina+provincia+pol%C3%ADtica+OR+econom%C3%ADa+OR+gobierno&hl=es-419&gl=AR&ceid=AR:es-419", "google_news": true }
+      ]
+    }
+  ]
+}

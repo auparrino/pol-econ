@@ -1,0 +1,48 @@
+{
+  "province": "Neuquén",
+  "slug": "neuquen",
+  "updated": "2026-03-31T23:34:26.560Z",
+  "sources": [
+    "LM Neuquén",
+    "Río Negro (Neuquén)",
+    "Mejor Informado"
+  ],
+  "articles": [
+    {
+      "title": "Allanamientos en Neuquén por robo calificado dejan tres demorados y armas secuestradas",
+      "url": "https://www.rionegro.com.ar/policiales/allanamientos-en-neuquen-por-robo-calificado-dejan-tres-demorados-y-armas-secuestradas-4522345/",
+      "date": "2026-03-31",
+      "source": "rionegro.com.ar",
+      "section": "justicia",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Financiamiento Universitario: el Gobierno apelará el fallo en contra e impulsa una ley alternativa en el Congreso",
+      "url": "https://www.rionegro.com.ar/politica/financiamiento-universitario-el-gobierno-apelara-el-fallo-en-contra-e-impulsa-una-ley-alternativa-en-el-congreso-4522340/",
+      "date": "2026-03-31",
+      "source": "rionegro.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Alquileres: cuánto pueden costar en Neuquén y el Alto Valle, desde un monoambiente hasta una casa",
+      "url": "https://www.rionegro.com.ar/economia/alquileres-cuanto-pueden-costar-en-neuquen-y-el-alto-valle-desde-un-monoambiente-a-una-casa-4520731/",
+      "date": "2026-03-31",
+      "source": "rionegro.com.ar",
+      "section": "economía",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Caputo se reunió con supermercados: preocupación por la caída del consumo y la presión de tasas municipales",
+      "url": "https://www.rionegro.com.ar/politica/caputo-se-reunio-con-supermercados-preocupacion-por-la-caida-del-consumo-y-la-presion-de-tasas-municipales-4522172/",
+      "date": "2026-03-31",
+      "source": "rionegro.com.ar",
+      "section": "economía",
+      "excerpt": "",
+      "classified": true
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "province": "Tucumán",
+  "slug": "tucuman",
+  "updated": "2026-03-31T23:36:26.649Z",
+  "sources": [
+    "La Gaceta",
+    "El Tucumano",
+    "Google News Tucumán"
+  ],
+  "articles": [
+    {
+      "title": "Esta noche, en \"Panorama Tucumano\": La Madrid, ¿un pueblo condenado o una historia que resiste?",
+      "url": "https://www.lagaceta.com.ar/nota/1130673/lg-play/esta-noche-panorama-tucumano-madrid-un-pueblo-condenado-o-historia-resiste.html",
+      "date": "2026-03-31",
+      "source": "lagaceta.com.ar",
+      "section": "cultura",
+      "excerpt": "El programa puede verse desde las 20.30 en las plataformas de LA GACETA, en Canal 11 de CCC y en Canal 7 de Flow (Somos Tucumán).",
+      "classified": true
+    },
+    {
+      "title": "¿Por qué se redujo la pobreza en Tucumán?",
+      "url": "https://www.lagaceta.com.ar/nota/1130694/economia/por-se-redujo-pobreza-tucuman.html",
+      "date": "2026-03-31",
+      "source": "lagaceta.com.ar",
+      "section": "economía",
+      "excerpt": "Los datos del Indec reflejan una tasa del 23,6%, debido a una mejora transitoria en el poder adquisitivo de la sociedad tras una brusca actualización de precios durante 2024.",
+      "classified": true
+    },
+    {
+      "title": "A 13 años de su creación, la Corte habilitó el Juzgado Federal N° 3 en Tucumán",
+      "url": "https://www.lagaceta.com.ar/nota/1130674/politica/a-13-anos-creacion-corte-habilito-juzgado-federal-n-3-tucuman.html",
+      "date": "2026-03-31",
+      "source": "lagaceta.com.ar",
+      "section": "política",
+      "excerpt": "La dependencia entrará en funciones con su titular, José Manuel Díaz Vélez, que había estado subrogando los otros dos juzgados.",
+      "classified": true
+    },
+    {
+      "title": "“Quiero aprender todo lo que pueda y aplicarlo acá”: el músico tucumano que se formará en Nueva York",
+      "url": "https://www.lagaceta.com.ar/nota/1130662/cultura/quiero-aprender-todo-lo-pueda-aplicarlo-aca-musico-tucumano-se-formara-nueva-york.html",
+      "date": "2026-03-31",
+      "source": "lagaceta.com.ar",
+      "section": "cultura",
+      "excerpt": "Docente, pianista y director musical, Michel Fontanet fue seleccionado entre más de 2.000 postulantes para una formación intensiva internacional. Ahora busca apoyo para viajar, con la meta de volver y potenciar la escena local.",
+      "classified": true
+    },
+    {
+      "title": "Tucumán será sede del primer Congreso de Medicina Integrativa en abril",
+      "url": "https://www.lagaceta.com.ar/nota/1130670/sociedad/tucuman-sera-sede-primer-congreso-medicina-integrativa-abril.html",
+      "date": "2026-03-31",
+      "source": "lagaceta.com.ar",
+      "section": "sociedad",
+      "excerpt": "Especialistas de todo el país y del exterior participarán de un encuentro con impacto científico y turístico",
+      "classified": true
+    },
+    {
+      "title": "Secuestran 30.000 atados de cigarrillos y cubiertas en un operativo sobre la Ruta 9 en Tucumán",
+      "url": "https://www.lagaceta.com.ar/nota/1130668/seguridad/secuestran-30000-atados-cigarrillos-cubiertas-operativo-sobre-ruta-9-tucuman.html",
+      "date": "2026-03-31",
+      "source": "lagaceta.com.ar",
+      "section": "sociedad",
+      "excerpt": "Operativo en la localidad de Choromoro,",
+      "classified": true
+    },
+    {
+      "title": "El dólar oficial cayó $75 en el primer trimestre del año",
+      "url": "https://www.lagaceta.com.ar/nota/1130661/economia/dolar-oficial-cayo-75-primer-trimestre-ano.html",
+      "date": "2026-03-31",
+      "source": "lagaceta.com.ar",
+      "section": "economía",
+      "excerpt": "En la jornada de este martes, la divisa cedió $15, pero se ubicó por arriba de los $1.400 en la city tucumana. ¿A cuánto cotizó el dólar \"blue\"?",
+      "classified": true
+    },
+    {
+      "title": "Enviaron 60 pliegos para cubrir vacantes en las justicias Nacional y Federal, pero ninguno para Tucumán",
+      "url": "https://www.lagaceta.com.ar/nota/1130658/politica/enviaron-60-pliegos-para-cubrir-vacantes-justicias-nacional-federal-pero-ninguno-para-tucuman.html",
+      "date": "2026-03-31",
+      "source": "lagaceta.com.ar",
+      "section": "política",
+      "excerpt": "El Senado deberá tratar ahora las postulaciones que fueron remitidas por el presidente y el ministro de Justicia.",
+      "classified": true
+    },
+    {
+      "title": "Brote de chikungunya: casa por casa, buscan pacientes con fiebre y criaderos en el sur de San Miguel de Tucumán",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318555/brote-de-chikungunya-casa-por-casa-buscan-pacientes-con-fiebre-y-criaderos-en-el-sur-de-san-miguel-de-tucuman?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "sociedad",
+      "excerpt": "SALUD PÚBLICA | El Ministerio de Salud Pública intensificó los trabajos de prevención luego de que se confirmó que ya son 36 los contagiados al sur de la Capital. \"No hay vacuna contra el chikungunya, la única forma de prevenirlo es evitar la picadura\", alertan.",
+      "classified": true
+    },
+    {
+      "title": "Informe INDEC: la pobreza en el Gran Tucumán-Tafí Viejo bajó del 23,4% al 17,8% en el segundo semestre de 2025",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318554/informe-indec-la-pobreza-en-el-gran-tucumantafi-viejo-bajo-del-234porciento-al-178porciento-en-el-segundo-semestre-de-2025?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "economía",
+      "excerpt": "ECONOMÍA | Hoy se conoció el informe de incidencia de la pobreza y la indigencia en 31 aglomerados urbanos, que arrojó que en el corazón de nuestra provincia hay 220.127 tucumanos pobres y 29.634 indigentes.",
+      "classified": true
+    },
+    {
+      "title": "\"Tenía apenas 17 años\": desgarrador, quién era el joven que perdió la vida este martes en Tucumán",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318553/tenia-apenas-17-anos-desgarrador-quien-era-el-joven-que-perdio-la-vida-este-martes-en-tucuman?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "sociedad",
+      "excerpt": "QEPD | Bruno Isaías Álvarez Navarro, murió en la madrugada de este martes tras un violento accidente de tránsito ocurrido en Alderetes. Su amigo Héctor lucha por su vida.",
+      "classified": true
+    },
+    {
+      "title": "Arrancó la primera inspección anual a los colectivos urbanos de la Capital",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318552/arranco-la-primera-inspeccion-anual-a-los-colectivos-urbanos-de-la-capital?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "sociedad",
+      "excerpt": "EN LA CAPITAL | La Municipalidad realiza las pruebas de control de calidad a las unidades de las líneas 1 a la 19. \"Rechazamos cualquier colectivo que tenga un asiento roto, un vidrio roto y ellos tienen la obligación de repararlo\", afirmó José María Molina, subdirector de Transporte.",
+      "classified": true
+    },
+    {
+      "title": "Cumbre Jaldo-Acevedo para coordinar el plan de salvataje del Cottolengo Don Orione",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318550/cumbre-jaldoacevedo-para-coordinar-el-plan-de-salvataje-del-cottolengo-don-orione?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "política",
+      "excerpt": "POLÍTICA | El gobernador y el vice se reunieron en Casa de Gobierno tras mantener sendos encuentros con las autoridades de la institución que afrenta una grave crisis económica.",
+      "classified": true
+    },
+    {
+      "title": "\"¡Urgente!\": llamado anónimo y conmoción en Tucumán por otro cuerpo hallado sin vida",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318548/urgente-llamado-anonimo-y-conmocion-en-tucuman-por-otro-cuerpo-hallado-sin-vida?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "sociedad",
+      "excerpt": "INVESTIGACIÓN | Un llamado anónimo alertó al personal de la Policía Local Alderetes sobre el hallazgo de un cuerpo sin vida en la autopista Juan Domingo Perón, a la altura del puente de las vías del ferrocarril, cerca de las 9 de la mañana.",
+      "classified": true
+    },
+    {
+      "title": "“La Tucumanesa”: una heroína olvidada sube a escena en La Sodería",
+      "url": "https://www.eltucumano.com/noticia/libre/318547/la-tucumanesa-una-heroina-olvidada-sube-a-escena-en-la-soderia?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "cultura",
+      "excerpt": "TEATRO | La nueva obra para infancias recupera la historia de Manuela Pedraza desde el humor, la emoción y una mirada contemporánea. Estrena el 3 de abril en La Sodería Casa de Teatro.",
+      "classified": true
+    },
+    {
+      "title": "\"Se deben garantizar condiciones adecuadas para el normal desarrollo\": Jaldo recibió a autoridades agropecuarias nacionales",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318546/se-deben-garantizar-condiciones-adecuadas-para-el-normal-desarrollo-jaldo-recibio-a-autoridades-agropecuarias-nacionales?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "política",
+      "excerpt": "CASA DE GOBIERNO | En el encuentro, se abordó la situación del sector agropecuario, el abastecimiento de combustibles y las expectativas productivas de la provincia.",
+      "classified": true
+    },
+    {
+      "title": "Horacio Rovelli: \"La modificación de la Ley de Glaciares es un proyecto a medida de cinco emprendimientos mineros\"",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318545/horacio-rovelli-la-modificacion-de-la-ley-de-glaciares-es-un-proyecto-a-medida-de-cinco-emprendimientos-mineros?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "economía",
+      "excerpt": "FM LATUCUMANA 95.9 | En su columna semanal por FM latucumana 95.9, el economista tucumano denunció que el modelo actual busca convertir a la Argentina en un enclave extractivista sin industria. Advirtió sobre el impacto ambiental en San Juan y Catamarca y describió la crisis económica como una \"masacre por goteo\" que ya afecta el consumo básico y la cadena de pagos.",
+      "classified": true
+    },
+    {
+      "title": "\"Queremos ser el Cosquín Rock del NOA\": últimas horas para ser parte del primer Festival de Rock & House de Tucumán",
+      "url": "https://www.eltucumano.com/noticia/libre/318544/queremos-ser-el-cosquin-rock-del-noa-ultimas-horas-para-ser-parte-del-primer-festival-de-rock-house-de-tucuman?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "cultura",
+      "excerpt": "AGENDA | El productor de Club de Amigos reveló que el evento está prácticamente agotado, con solo 100 entradas disponibles para una capacidad de 1.500 personas. Doce horas de música en vivo, dos escenarios y transmisión en vivo por YouTube y Twitch.",
+      "classified": true
+    },
+    {
+      "title": "\"Somos una población vulnerable\": Tucumán enfrenta su primer brote de chikungunya",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318542/somos-una-poblacion-vulnerable-tucuman-enfrenta-su-primer-brote-de-chikungunya?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "sociedad",
+      "excerpt": "FM LATUCUMANA 95.9 | La directora de Epidemiología del Siprosa, Rominza Cuezzo, confirmó que ya se registran 36 casos en la provincia, con focos activos en San Miguel de Tucumán. Explicó que la vacuna contra el dengue no brinda protección para este virus y alertó sobre la intensidad de los dolores articulares como síntoma distintivo.",
+      "classified": true
+    },
+    {
+      "title": "Imputan a un tucumano que estafó en $180.000.000 a 14 personas con la venta de sus autos",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318541/imputan-a-un-tucumano-que-estafo-en-180000000-a-14-personas-con-la-venta-de-sus-autos?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "justicia",
+      "excerpt": "JUDICIALES | A través de un concesionario de compraventa de automotores, captaba a las víctimas por redes sociales y mediante engaños les pedía la entrega de sus vehículos para la venta futura, pero las personas damnificadas nunca recibían el dinero que había sido acordado.",
+      "classified": true
+    },
+    {
+      "title": "\"Esa identidad está vinculada al dolor\": buscan facilitar la supresión del apellido del progenitor en casos de abuso",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318540/esa-identidad-esta-vinculada-al-dolor-buscan-facilitar-la-supresion-del-apellido-del-progenitor-en-casos-de-abuso?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "sociedad",
+      "excerpt": "FM LATUCUMANA 95.9 | La abogada Ingrid Lausberg y la activista Sofía Rubino presentaron un proyecto de ley para agilizar el cambio de nombre en víctimas de violencia sexual intrafamiliar. La iniciativa pretende evitar trámites burocráticos y juicios revictimizantes, priorizando la salud mental y la dignidad de quienes buscan desprenderse del vínculo con sus agresores.",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno de Tucumán intensifica los trabajos para rehabilitar caminos y asegurar el regreso a clases tras las inundaciones",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318538/el-gobierno-de-tucuman-intensifica-los-trabajos-para-rehabilitar-caminos-y-asegurar-el-regreso-a-clases-tras-las-inundaciones?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "infraestructura",
+      "excerpt": "OBRAS | El gobernador Osvaldo Jaldo destacó el operativo realizado durante el fin de semana largo para recuperar rutas secundarias y terciarias afectadas por el agua. En Aguilares, el nuevo desborde del río Medinas obligó a suspender la presencialidad en cuatro escuelas, mientras que la Ruta Nacional 65 permanece con corte total debido a la acumulación de lodo y rocas.",
+      "classified": true
+    },
+    {
+      "title": "Brote de chikungunya en Tucumán, suspenden la reforma laboral y más: mirá La Tucumana de Mañana",
+      "url": "https://www.eltucumano.com/noticia/interes-general/318536/brote-de-chikungunya-en-tucuman-suspenden-la-reforma-laboral-y-mas-mira-la-tucumana-de-manana?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "sociedad",
+      "excerpt": "FM LATUCUMANA 95.9 | De 8 a 12, Ana Pedraza y Gabriel Sanzano te cuentan todas las novedades de Tucumán y el país.",
+      "classified": true
+    },
+    {
+      "title": "Tucumán intensifica operativos en la Capital tras detectarse nuevos casos de chikungunya",
+      "url": "https://www.eltucumano.com/noticia/actualidad/318535/tucuman-intensifica-operativos-en-la-capital-tras-detectarse-nuevos-casos-de-chikungunya?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "sociedad",
+      "excerpt": "SALUD | El Ministerio de Salud Pública realiza búsquedas activas casa por casa en el sector sudeste de San Miguel de Tucumán para controlar el foco de contagios y brindar atención oportuna.",
+      "classified": true
+    },
+    {
+      "title": "Último día de marzo: así estará el tiempo este martes en Tucumán",
+      "url": "https://www.eltucumano.com/noticia/libre/318532/ultimo-dia-de-marzo-asi-estara-el-tiempo-este-martes-en-tucuman?dnd=rss",
+      "date": "2026-03-31",
+      "source": "eltucumano.com",
+      "section": "general",
+      "excerpt": "PRONóSTICO | El Servicio Meteorológico Nacional anticipó cómo será la jornada de hoy y qué esperar para Semana Santa.",
+      "classified": true
+    },
+    {
+      "title": "Scania celebró 50 años en Tucumán y el Gobierno destacó su aporte industrial y social",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNR2tDMzl0ME53TUVSbktzWnhFamFpaGNCN19SWVB6NXZ4VjV2azE1OUhxYjhUdEI3N1FHRVlLUEtlVUlqcEZIMXpYejNzOTFGUmhwX09jYmVjZHkwQTU4cnBPNUFXN3RtXzBVM2Y1a3hKbl9DTk1sNVlZZ0FvYm9LcUp6bGQ2V0I2MldvWUJlZlZ6OFppbmgxbWNUQjBLTWxVMW83OVdYdzQ5RDhfYVJwRGt5d0o0X0xXVVRqMDJRdG1rSGk3blNBYnVGbWE4NlNuLUthM05R?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-26",
+      "source": "Tendencia de Noticias",
+      "section": "economía",
+      "excerpt": "Scania celebró 50 años en Tucumán y el Gobierno destacó su aporte industrial y social Tendencia de Noticias",
+      "classified": true
+    },
+    {
+      "title": "Cercanía y oración de la Iglesia en Argentina con los afectados por las inundaciones en Tucumán",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZW5ORVJHUEFlOXd6X0k1SnV3S2pqZ3pFZ1VkLWFOYlhQTUxmWFRBTFN6WUtFaW0wZVFKQXdFZEZ5MVFmbWR1WWVKVWdmVUJqMmllckZPX2UySlY3bHF3VEszN3N4aWl1UnpQNWV3Y0Nsa3NqZmw5RGlYbDlJUEY4dENKZm0xb0NwZnVYaFlvSEZoUWVuMXpmT1U1Q013WVNGVnh4VERBSzFmS2tfOGVnQ19oN212WTduZ1dJWGd3bHlKQ3F5b3B6eXd5RDBxSkwtY25J0gHYAUFVX3lxTE92RDJUdjE1cS1DM01UV01ybUhoMFA1c2Rhd3ozYTgzdmJqWkpYUDc5YzF0QjM1YTQ2dmlFS2lSSkd3dmRMNWtBVl9uRmJGcXdKdlVSc2sydnRPUWVmVk5fdHJKNjhOUS03Z0Ixam5GTXNnTU9TYmJvc3AxeEotUmVBQkV6UGNHUzBYLW44RUJQUmJvNUtqdWdfWFJQd28tTFNzWjk2b1NuMy1BY3h4SURfNGliTGlmZ3EwWHpOVlZ6LVBObWdWOUhJY2xSSko5ZEFueHNnd0d5aQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-13",
+      "source": "ACI Prensa",
+      "section": "cultura",
+      "excerpt": "Cercanía y oración de la Iglesia en Argentina con los afectados por las inundaciones en Tucumán ACI Prensa",
+      "classified": true
+    }
+  ]
+}

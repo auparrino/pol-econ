@@ -1,0 +1,48 @@
+{
+  "province": "Catamarca",
+  "slug": "catamarca",
+  "updated": "2026-03-31T23:31:45.669Z",
+  "sources": [
+    "Google News Catamarca",
+    "El Esquiú",
+    "Diario C"
+  ],
+  "articles": [
+    {
+      "title": "Argentina: NGEx iniciará perforación en Catamarca",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdGRCVURJWGZpMnYzWktVZ3NvZm1yLWIzOTFqVWRPdHphYzJyZkswWE00WERTaFk5enRlcndmVDdScDQtdHBkM3B0QWJOVVdqLVFNYzF0ajJHcVNnaV9YSnBZbjk0V0tmMVdRbVB6a2gwOEJqZDJSbTNEcE10YVFERUlzRGZjU0JnbUdsYmRjeEw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-30",
+      "source": "rumbominero.com",
+      "section": "economía",
+      "excerpt": "Argentina: NGEx iniciará perforación en Catamarca rumbominero.com",
+      "classified": true
+    },
+    {
+      "title": "Te presentamos la Copa Robótica Argentina 2026 - Ministerio de Educación - Gobierno de Catamarca",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQa1ZUMkpNTUJhTHozVDVBcHBPUkZYa3NqMHo4TFg3S0pVeDVYZEZJNzVRVEtWQXBFRGlvOHVjNG4tWjlEMlQ1RENsV3ZHMG1rWDluMXUxYmdtdl8xQlRwLXFlMi1ha3Nfd01ZWWJacUhSMlYxcVJpc3Y4ZmlhZTFQUXN2bHVOYTdOMDAxdk9Jd2tpcVFiWVZMWWMxLTBCQTJFS0E?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-16",
+      "source": "Inicio",
+      "section": "sociedad",
+      "excerpt": "Te presentamos la Copa Robótica Argentina 2026 Ministerio de Educación - Gobierno de Catamarca - Inicio",
+      "classified": true
+    },
+    {
+      "title": "Gobierno y Glencore Argentina avanzan en la reactivación de Alumbrera",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONmNfeU1aU3BBRTN3Vm5aZGtuYklTYkdfTVFpWU51M0dGTl9NNmdGZlJubFpXM2ZYQ1czWlIxWVUxWXhSSzVCOWdmMzVKWTVqd0xEMDFKRENBYWt3cFJnbHRHRUdUVDRuUG01VlJyZy1TVm9WMFZMS1lTNjQwempoaGlsOTdTN3ZVMWxoLUFMejBXYW5xOVUyWW9ZTQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-12",
+      "source": "Catamarca Radio y Televisión",
+      "section": "economía",
+      "excerpt": "Gobierno y Glencore Argentina avanzan en la reactivación de Alumbrera Catamarca Radio y Televisión",
+      "classified": true
+    },
+    {
+      "title": "Catamarca cerró con balance positivo su participación en FITUR 2026",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZlkxRU0zeS1xTGpOX0RxdkhJZG84MlpuUUxrM0t6ZzB2ZlN4TDRiQlc5cjhyb3JPakNaUW9pOGFpc0QzNHRiU2tobjUxWTk5VDB4MFltbnNkenNzOGhkMDh5bjFVUk1mTTllUmpKel9SdlIyN2hPR3RDT0stS05mbm1McHJYSWVJU1owcTlBZmlWVHdwMExzR3MxeDN6UWQwT1E0ZmZGUFFwSFF4?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-02",
+      "source": "Gobierno de Catamarca",
+      "section": "cultura",
+      "excerpt": "Catamarca cerró con balance positivo su participación en FITUR 2026 Gobierno de Catamarca",
+      "classified": true
+    }
+  ]
+}

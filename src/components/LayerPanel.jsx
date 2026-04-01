@@ -5,7 +5,7 @@ const CHOROPLETH_MODES = [
   { id: 'partido', label: 'Gov. Party' },
   { id: 'alineamiento', label: 'Alignment' },
   { id: 'pobreza', label: 'Poverty' },
-  { id: 'pbg', label: 'PBG per capita' },
+  { id: 'pbg', label: 'PBG p/c' },
   { id: 'poblacion', label: 'Population' },
   { id: 'region', label: 'Region' },
   { id: 'fiscal', label: 'Fiscal Dep.' },
@@ -15,9 +15,22 @@ const OVERLAY_LAYERS = [
   { id: 'mining', label: 'Mining', icon: '⛏️', color: '#ffd700' },
 ];
 
-const Separator = () => (
-  <div className="my-2 border-b" style={{ borderColor: 'rgba(0,48,73,0.10)' }} />
-);
+function Pill({ active, onClick, children, icon, color }) {
+  return (
+    <button
+      onClick={onClick}
+      className="inline-flex items-center gap-1.5 text-[15px] rounded-full transition-all font-medium whitespace-nowrap"
+      style={active
+        ? { background: '#003049', color: '#FDF0D5', border: '1px solid #003049', padding: '8px 20px' }
+        : { background: 'transparent', color: '#003049', border: '1px solid rgba(0,48,73,0.18)', padding: '8px 20px' }
+      }
+    >
+      {icon && <span className="text-[13px]">{icon}</span>}
+      {children}
+      {color && <span className="w-1.5 h-1.5 rounded-full ml-0.5" style={{ backgroundColor: color }} />}
+    </button>
+  );
+}
 
 export default function LayerPanel({
   choroplethMode,
@@ -38,111 +51,68 @@ export default function LayerPanel({
   };
 
   return (
-    <aside className="fixed top-[64px] left-0 w-[220px] bottom-0 border-r z-[999] flex flex-col overflow-y-auto"
-      style={{ background: '#FDF0D5', borderColor: 'rgba(0,48,73,0.12)' }}>
-      <div className="p-3">
-        <h2 className="text-[15px] font-bold tracking-[2px] uppercase mb-3"
-          style={{ color: 'rgba(0,48,73,0.70)' }}>
-          Layers
-        </h2>
-
-        <Separator />
-
-        {/* Choropleth modes */}
-        <div className="mb-2">
-          <p className="text-[14px] font-semibold tracking-[1.5px] uppercase mb-2"
-            style={{ color: 'rgba(0,48,73,0.60)' }}>
-            Color by
-          </p>
-          <div className="flex flex-col gap-1">
-            {CHOROPLETH_MODES.map(mode => (
-              <button
-                key={mode.id}
-                onClick={() => setChoroplethMode(mode.id)}
-                aria-label={`Color by ${mode.label}`}
-                aria-pressed={choroplethMode === mode.id}
-                className={`text-left text-[17px] px-2.5 py-1.5 rounded transition-all border ${
-                  choroplethMode === mode.id
-                    ? 'bg-crimson/15 border-crimson/40 font-semibold'
-                    : 'border-transparent'
-                }`}
-                style={{
-                  color: choroplethMode === mode.id ? '#003049' : 'rgba(0,48,73,0.70)',
-                  backgroundColor: choroplethMode === mode.id ? undefined : undefined,
-                }}
-                onMouseEnter={e => { if (choroplethMode !== mode.id) e.currentTarget.style.backgroundColor = 'rgba(0,48,73,0.07)'; }}
-                onMouseLeave={e => { if (choroplethMode !== mode.id) e.currentTarget.style.backgroundColor = ''; }}
-              >
-                {mode.label}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <Separator />
-
-        {/* Overlays */}
-        <div className="mb-2">
-          <p className="text-[14px] font-semibold tracking-[1.5px] uppercase mb-2"
-            style={{ color: 'rgba(0,48,73,0.60)' }}>
-            Overlays
-          </p>
-          <div className="flex flex-col gap-1">
-            {OVERLAY_LAYERS.map(layer => (
-              <label
-                key={layer.id}
-                className="flex items-center gap-1.5 text-[16px] cursor-pointer px-2 py-1 rounded transition-all"
-                style={{
-                  color: overlays[layer.id] ? '#003049' : 'rgba(0,48,73,0.70)',
-                  backgroundColor: overlays[layer.id] ? 'rgba(0,48,73,0.08)' : '',
-                }}
-              >
-                <input
-                  type="checkbox"
-                  checked={!!overlays[layer.id]}
-                  onChange={() => toggleOverlay(layer.id)}
-                  className="accent-crimson w-3 h-3"
-                />
-                <span className="text-[17px] mr-0.5">{layer.icon}</span>
-                <span className="flex-1">{layer.label}</span>
-                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: layer.color }} />
-              </label>
-            ))}
-            {ENERGY_LAYER_CONFIGS.map(layer => (
-              <label
-                key={layer.id}
-                className="flex items-center gap-1.5 text-[16px] cursor-pointer px-2 py-1 rounded transition-all"
-                style={{
-                  color: energyLayers.includes(layer.id) ? '#003049' : 'rgba(0,48,73,0.70)',
-                  backgroundColor: energyLayers.includes(layer.id) ? 'rgba(0,48,73,0.08)' : '',
-                }}
-              >
-                <input
-                  type="checkbox"
-                  checked={energyLayers.includes(layer.id)}
-                  onChange={() => toggleEnergy(layer.id)}
-                  className="accent-crimson w-3 h-3"
-                />
-                <span className="text-[17px] mr-0.5">{layer.icon}</span>
-                <span className="flex-1">{layer.label}</span>
-                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: layer.color }} />
-              </label>
-            ))}
-          </div>
+    <div
+      className="fixed bottom-0 left-0 right-0 z-[999] flex flex-col items-center justify-center gap-1.5 px-4 py-2"
+      style={{
+        height: 100,
+        background: '#FFF8EB',
+        borderTop: '1px solid #d4c4a0',
+      }}
+    >
+      {/* Row 1: Choropleth */}
+      <div className="flex items-center gap-2">
+        <span className="text-[12px] font-semibold uppercase tracking-wider shrink-0 w-[65px]"
+          style={{ color: 'rgba(0,48,73,0.45)' }}>
+          Color by
+        </span>
+        <div className="flex items-center gap-1.5 flex-wrap">
+          {CHOROPLETH_MODES.map(mode => (
+            <Pill
+              key={mode.id}
+              active={choroplethMode === mode.id}
+              onClick={() => setChoroplethMode(mode.id)}
+            >
+              {mode.label}
+            </Pill>
+          ))}
         </div>
       </div>
 
-      <div className="mt-auto p-3 border-t" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
-        <p className="text-[14px] leading-relaxed" style={{ color: 'rgba(0,48,73,0.38)' }}>
-          INDEC · BCRA · SIACAM · IGN
-          <br />
-          Fundar · comovoto.dev.ar
-          <br />
-          datos.energia.gob.ar
-          <br />
-          <span style={{ color: 'rgba(0,48,73,0.50)' }}>Updated: Mar 2026</span>
-        </p>
+      {/* Row 2: Overlays */}
+      <div className="flex items-center gap-2">
+        <span className="text-[12px] font-semibold uppercase tracking-wider shrink-0 w-[65px]"
+          style={{ color: 'rgba(0,48,73,0.45)' }}>
+          Overlays
+        </span>
+        <div className="flex items-center gap-1.5 flex-wrap">
+          {OVERLAY_LAYERS.map(layer => (
+            <Pill
+              key={layer.id}
+              active={!!overlays[layer.id]}
+              onClick={() => toggleOverlay(layer.id)}
+              icon={layer.icon}
+              color={layer.color}
+            >
+              {layer.label}
+            </Pill>
+          ))}
+          {ENERGY_LAYER_CONFIGS.map(layer => (
+            <Pill
+              key={layer.id}
+              active={energyLayers.includes(layer.id)}
+              onClick={() => toggleEnergy(layer.id)}
+              icon={layer.icon}
+              color={layer.color}
+            >
+              {layer.label}
+            </Pill>
+          ))}
+        </div>
+        {/* Sources */}
+        <div className="ml-auto shrink-0 text-[9px]" style={{ color: 'rgba(0,48,73,0.35)' }}>
+          INDEC · BCRA · SIACAM · IGN · Mar 2026
+        </div>
       </div>
-    </aside>
+    </div>
   );
 }

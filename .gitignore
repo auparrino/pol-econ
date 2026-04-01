@@ -31,5 +31,8 @@ portfolio_shots/
 portfolio-politicdash.pdf
 create_portfolio.py
 
+# Environment
+.env
+
 # Local Netlify folder
 .netlify

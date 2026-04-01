@@ -1,0 +1,111 @@
+{
+  "province": "Mendoza",
+  "slug": "mendoza",
+  "updated": "2026-03-31T23:34:08.162Z",
+  "sources": [
+    "Unidiversidad",
+    "Mendoza Opina",
+    "Google News Mendoza"
+  ],
+  "articles": [
+    {
+      "title": "Como un castillo de arena: las instituciones resisten miles de ciberataques diarios",
+      "url": "https://www.unidiversidad.com.ar/como-un-castillo-de-arena-las-instituciones-resisten-miles-de-ciberataques-diarios",
+      "date": "2026-03-31",
+      "source": "unidiversidad.com.ar",
+      "section": "general",
+      "excerpt": "\"Viene la ola, lo derriba y uno vuelve a levantarlo\". Bajo esa lógica, expertos analizan por qué la ciberseguridad se volvió una batalla diaria para el sector público y privado. Entre el eslabón débil, que son los usuarios, y la sofisticación de los ataques, cómo se protegen en un escenario de riesgo constante.",
+      "classified": true
+    },
+    {
+      "title": "Producto Bruto: Mendoza creció un punto menos que Argentina en 2025",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSWpGdFJzQTJNeHNacjNyYXJpT250N1Y3VkMwVi1fSWRqamxyMlBsTVlXem1rNk1oNVFCclU0MTVWdVNHNlNxYnBFcS0wQVFidDFXdHFIaW45RWQ0Q05GQlZhZFpmM1hiRENvemdfRnI3Q2JmWkFCYmhiMnFJalVobEx1bEdOQjB1NGlhamJBcmRITG80VDhKcnBncHo4aXVnWEY1TTF6V2k5LVItLXc?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "Los Andes",
+      "section": "economía",
+      "excerpt": "Producto Bruto: Mendoza creció un punto menos que Argentina en 2025 Los Andes",
+      "classified": true
+    },
+    {
+      "title": "Tras las tormentas de verano: ¿qué tan eficaz fue el sistema de contención aluvional en el Gran Mendoza?",
+      "url": "https://www.unidiversidad.com.ar/tras-las-tormentas-de-verano-que-tan-eficaz-fue-el-sistema-de-contencion-aluvional-en-el-gran-mendoza",
+      "date": "2026-03-30",
+      "source": "unidiversidad.com.ar",
+      "section": "sociedad",
+      "excerpt": "Las lluvias del 30 de enero, 20 de febrero y 7 de marzo reabrieron un debate recurrente: si la provincia está preparada para contener tormentas intensas. Especialistas coincidieron en que los eventos estuvieron dentro de lo esperable para el verano, aunque dejaron daños en sectores del escudo que protege a la zona metropolitana de aluviones. Faltan obras clave.",
+      "classified": true
+    },
+    {
+      "title": "A 50 años del golpe, un equipo científico mendocino busca responder dónde están las personas desaparecidas",
+      "url": "https://www.unidiversidad.com.ar/a-50-anos-del-golpe-un-equipo-cientifico-mendocino-busca-responder-donde-estan-las-personas-desaparecidas",
+      "date": "2026-03-23",
+      "source": "unidiversidad.com.ar",
+      "section": "política",
+      "excerpt": "El Equipo Mendocino de Arqueología y Antropología Forense de la UNCUYO, busca trabajar a la par de los organismos de derechos humanos. Aunque las desapariciones fueron el plan de la dictadura y los represores locales nunca han roto su pacto de silencio, desde el Emaaf aseguran que para investigar no necesitan certezas ni verdades irrefutables, sino recursos, una justicia decidida y tiempo.",
+      "classified": true
+    },
+    {
+      "title": "A 50 años de la última dictadura: cifras del terror de Estado en Mendoza",
+      "url": "https://www.unidiversidad.com.ar/a-50-anos-de-la-ultima-dictadura-cifras-del-terror-de-estado-en-mendoza",
+      "date": "2026-03-20",
+      "source": "unidiversidad.com.ar",
+      "section": "sociedad",
+      "excerpt": "Los números trágicos que dejó el golpe de Estado en la provincia sirven para entender la magnitud del plan sistemático que ordenaron las Juntas Militares. Las cifras son datos abiertos, por lo que los procesos por la memoria, la verdad y la justicia siguen en curso.",
+      "classified": true
+    },
+    {
+      "title": "Diez datos sobre el pichiciego y su importancia en la Reserva de Biósfera Ñacuñán",
+      "url": "https://www.unidiversidad.com.ar/diez-datos-sobre-el-pichiciego-y-su-importancia-en-la-reserva-de-biosfera-nacunan",
+      "date": "2026-03-10",
+      "source": "unidiversidad.com.ar",
+      "section": "cultura",
+      "excerpt": "Tiene varias características particulares y es muy difícil de observar, ya que vive bajo tierra. Mariella Superina y Pablo Cuello, especialistas del Conicet, resaltan el valor de esta especie, sobre todo, para esa primera área protegida creada en Mendoza.",
+      "classified": true
+    },
+    {
+      "title": "Mendoza lanza Forma Tec con 3.000 cupos para especialización en tecnologías digitales",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNm9YZDkxRWdDMTN5NTNZMENmajJYWGVVV1FBbmlVUUxtMFllQW9MVzNVTHl6VTRNenFrdmtKYjlUWnRwMmVEZlNKYVF6ZEpfbmhXUS1IWjN2UWMzcThwNzh1OWRIbFFGLUNwR2hGZW1JVThJY21mWGVfendhRk1EVnE1Q2cwRVJoclp1YVNrRkNyTUk3TTBwekdBX2dWTzU4RVNhWE45UTJIVkxwSkZldGE1NjdEenc?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-25",
+      "source": "PRENSA GOBIERNO DE MENDOZA",
+      "section": "política",
+      "excerpt": "Mendoza lanza Forma Tec con 3.000 cupos para especialización en tecnologías digitales PRENSA GOBIERNO DE MENDOZA",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno de Mendoza llamará a concursos para cargos en la Administración Pública",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTFNiZ0F5bDBrb0gwRTZveHZ1WDlOMll5WjFEdlgtRHpxcnpPTGsxQW5zbC1jX1pxSkVOTmdvQ29jVFVZREV4eVE1cU01cEJKU3g2NUVFOWRpbEJXUVc2TkxCSi12RzJKS3VOVTBGUWg4U3Q5U2hFVi1kZzQzaUt0Z2Z3Z3RKTDU0dEhFT1BOM1NUdml3V3YxU1FCdU5DbWFBd05JZThMbENyNXNHS1E?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-02-24",
+      "source": "PRENSA GOBIERNO DE MENDOZA",
+      "section": "política",
+      "excerpt": "El Gobierno de Mendoza llamará a concursos para cargos en la Administración Pública PRENSA GOBIERNO DE MENDOZA",
+      "classified": true
+    },
+    {
+      "title": "Del Conicet Mendoza a la Antártida: estudian la luz solar en un lugar único para lograr hábitats sustentables",
+      "url": "https://www.unidiversidad.com.ar/del-conicet-mendoza-a-la-antartida-estudian-la-luz-solar-en-un-lugar-unico-para-lograr-habitats-sustentables",
+      "date": "2026-02-23",
+      "source": "unidiversidad.com.ar",
+      "section": "economía",
+      "excerpt": "El proyecto, comandado por el Instituto de Ambiente, Hábitat y Energía (Inahe), busca realizar aportes que mejoren la calidad de vida de quienes habitan territorios polares, así como también fortalecer la presencia científica en el Atlántico Sur. El 22 de febrero se conmemoró la primera ocupación argentina en el continente blanco.",
+      "classified": true
+    },
+    {
+      "title": "Vitivinicultura: una investigación pone el foco en las desigualdades del sector",
+      "url": "https://www.unidiversidad.com.ar/vitivinicultura-una-investigacion-pone-el-foco-en-las-desigualdades-del-sector",
+      "date": "2026-02-18",
+      "source": "unidiversidad.com.ar",
+      "section": "economía",
+      "excerpt": "La socióloga mendocina Bárbara Altschuler analizó el proceso de reconfiguración vitivinícola. Dijo que existe un abismo entre la imagen que se vende al mundo y la realidad del sector. La supremacía de una zona en detrimento del Este y la pérdida material y simbólica que sufrió el trabajo rural.",
+      "classified": true
+    },
+    {
+      "title": "Un equipo del Conicet creó un material innovador para remover arsénico, patógenos y otros contaminantes del agua",
+      "url": "https://www.unidiversidad.com.ar/un-equipo-del-conicet-creo-un-material-innovador-para-remover-arsenico-patogenos-y-otros-contaminantes-del-agua",
+      "date": "2026-02-13",
+      "source": "unidiversidad.com.ar",
+      "section": "economía",
+      "excerpt": "Está producido a partir de carbón activado modificado con sales metálicas. Se podría aplicar tanto en sistemas de filtrado doméstico como industrial. Ya fue probado a nivel de laboratorio de acuerdo con la normativa de Anmat.",
+      "classified": true
+    }
+  ]
+}

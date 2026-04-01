@@ -6,6 +6,7 @@ import { officialSenators } from '../data/officialSenators';
 import votacionesRaw from '../data/votaciones.json';
 import vabProvincial from '../data/vab_provincial.json';
 import { fiscalData } from '../data/fiscalData';
+// ProvinceNews moved to left sidebar (BottomBar tabs)
 
 // Pre-compute national VAB total for GDP share
 const nationalVabTotal = vabProvincial.reduce((s, d) => s + (d.vab_total || 0), 0);
@@ -558,8 +559,8 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
   if (!province) {
     return (
       <aside
-        className="fixed top-[64px] right-0 bottom-0 border-l z-[999] bg-[#FDF0D5] flex items-center justify-center p-6 transition-all duration-300"
-        style={{ width }}
+        className="fixed top-[56px] right-0 border-l z-[999] flex items-center justify-center p-6 transition-all duration-300"
+        style={{ width, bottom: 100, background: '#FFF8EB', borderColor: '#d4c4a0' }}
       >
         <div className="text-center">
           <div className="text-4xl mb-3 opacity-30">🗺</div>
@@ -601,11 +602,11 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
 
   return (
     <aside
-      className="fixed top-[64px] right-0 bottom-0 border-l z-[999] bg-[#FDF0D5] overflow-y-auto transition-all duration-300"
-      style={{ width }}
+      className="fixed top-[56px] right-0 border-l z-[999] overflow-y-auto overflow-x-hidden transition-all duration-300"
+      style={{ width, bottom: 100, background: '#FFF8EB', borderColor: '#d4c4a0' }}
     >
       {/* Header */}
-      <div className="sticky top-0 bg-[#FDF0D5] border-b border-[#003049]/12 p-3 z-10">
+      <div className="sticky top-0 border-b p-3 z-10" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.10)' }}>
         <div className="flex items-start justify-between">
           <div>
             <h2 className="text-[18px] font-black text-[#003049] tracking-tight">

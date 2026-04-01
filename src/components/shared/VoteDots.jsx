@@ -30,9 +30,9 @@ function VoteDotsRaw({ name, chamber }) {
     <div className="flex gap-0.5 shrink-0">
       {topics.map(t => {
         const v = record.v[t];
-        if (!v) return <span key={t} className="w-[14px] h-[14px] rounded-sm bg-[#003049]/6 flex items-center justify-center text-[7px] text-[#003049]/40">–</span>;
+        if (!v) return <span key={t} className="w-[10px] h-[10px] rounded-sm bg-[#003049]/6 flex items-center justify-center text-[7px] text-[#003049]/40">–</span>;
         const color = VOTE_COLOR_BB[v] || '#64748b';
-        return <span key={t} className="w-[14px] h-[14px] rounded-sm flex items-center justify-center text-[7px] font-bold"
+        return <span key={t} className="w-[10px] h-[10px] rounded-sm flex items-center justify-center text-[7px] font-bold"
           style={{ backgroundColor: `${color}22`, color, border: `1px solid ${color}55` }}
           title={t}>{VOTE_LBL[v]}</span>;
       })}

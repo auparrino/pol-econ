@@ -218,7 +218,7 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
   const isFiltered = hasMining && selectedProvince && filteredProjects.length < miningProjects.length;
 
   return (
-    <div className="flex flex-wrap gap-x-3 gap-y-1 content-center h-full overflow-x-auto overflow-y-hidden">
+    <div className="flex flex-col gap-3 overflow-y-auto overflow-x-hidden">
       {hasMining && (
         <>
           <div>
@@ -226,17 +226,17 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
               Mining projects{isFiltered ? <span className="ml-1 text-[#7d3c98]">· {selectedProvince}</span> : ''}
             </p>
             <div className="flex items-baseline gap-2">
-              <span className="text-[30px] font-bold font-mono text-[#003049] leading-none">{stats.total}</span>
+              <span className="text-[26px] font-bold font-mono text-[#003049] leading-none">{stats.total}</span>
               <div className="text-[16px] text-[#003049]/60">
                 <div>{isFiltered ? `of ${miningStatsAll.total} total` : 'SIACAM metalliferous'}</div>
                 <div>{stats.produccion} in production</div>
               </div>
             </div>
           </div>
-          <div className="w-px h-10 bg-[#003049]/10 shrink-0 self-center" />
+          <div className="h-px w-full bg-[#003049]/10 shrink-0" />
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">By mineral</p>
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               {stats.byMineral.map(([mineral, count]) => (
                 <div key={mineral} className="text-center">
                   <p className="text-[22px] font-bold font-mono leading-none" style={{ color: MINERAL_COLORS_BAR[mineral] || '#003049' }}>{count}</p>
@@ -245,7 +245,7 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
               ))}
             </div>
           </div>
-          <div className="w-px h-10 bg-[#003049]/10 shrink-0 self-center" />
+          <div className="h-px w-full bg-[#003049]/10 shrink-0" />
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Stage</p>
             <div className="flex flex-col gap-0.5">
@@ -259,10 +259,10 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
           </div>
           {stats.byPais.length > 0 && (
             <>
-              <div className="w-px h-10 bg-[#003049]/10 shrink-0 self-center" />
+              <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
                 <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Capital origin</p>
-                <div className="flex gap-3">
+                <div className="flex flex-wrap gap-3">
                   {stats.byPais.map(([country, count]) => (
                     <div key={country} className="flex items-center gap-1">
                       <FlagEmoji size={14}>{COUNTRY_FLAGS[country] || '\u{1F310}'}</FlagEmoji>
@@ -281,13 +281,13 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
 
       {hasYac && (
         <>
-          {hasMining && <div className="w-px h-10 bg-[#003049]/10 shrink-0" />}
+          {hasMining && <div className="h-[3px] w-full bg-[#003049]/20 shrink-0 rounded-full" />}
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">
               HC Fields{selectedProvince ? <span className="ml-1 text-[#7d3c98]">· {selectedProvince}</span> : ''}
             </p>
             <div className="flex items-baseline gap-2">
-              <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#10B981' }}>{yacCount}</span>
+              <span className="text-[26px] font-bold font-mono leading-none" style={{ color: '#10B981' }}>{yacCount}</span>
               <div className="text-[16px] text-[#003049]/60">
                 <div>concession areas</div>
                 {!yacIsFiltered ? (
@@ -300,10 +300,10 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
           </div>
           {!yacIsFiltered && (
             <>
-              <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+              <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
                 <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Vaca Muerta</p>
-                <div className="flex gap-3">
+                <div className="flex flex-wrap gap-3">
                   <div className="text-center"><p className="text-[22px] font-bold font-mono text-[#003049]">{YAC_STATS.vaca_muerta.oil_pct}%</p><p className="text-[14px] text-[#003049]/50 leading-none">of oil</p></div>
                   <div className="text-center"><p className="text-[22px] font-bold font-mono text-[#003049]">{YAC_STATS.vaca_muerta.gas_pct}%</p><p className="text-[14px] text-[#003049]/50 leading-none">of gas</p></div>
                   <div className="text-center"><p className="text-[19px] font-bold font-mono" style={{ color: '#10B981' }}>+{YAC_STATS.vaca_muerta.growth_yoy}%</p><p className="text-[14px] text-[#003049]/50 leading-none">YoY oil</p></div>
@@ -313,7 +313,7 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
                   <span className="text-[13px] text-[#003049]/50 bg-[#003049]/5 rounded px-1 py-0.5">{YAC_STATS.vaca_muerta.reserves_oil_bbbl}Bbbl + {YAC_STATS.vaca_muerta.reserves_gas_tcf}Tcf</span>
                 </div>
               </div>
-              <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+              <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
                 <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">By basin</p>
                 <div className="flex flex-col gap-0.5">
@@ -333,10 +333,10 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
               </div>
             </>
           )}
-          <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+          <div className="h-px w-full bg-[#003049]/10 shrink-0" />
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Top operators</p>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {yacProvStats ? yacProvStats.ops.map(op => (
                 <div key={op.short} className="text-center">
                   <p className="text-[22px] font-bold font-mono text-[#003049]">{op.count}</p>
@@ -354,7 +354,7 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
               ))}
             </div>
           </div>
-          <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+          <div className="h-px w-full bg-[#003049]/10 shrink-0" />
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Capital</p>
             <div className="flex flex-col gap-1">
@@ -381,13 +381,13 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
 
       {hasRef && (
         <>
-          <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+          <div className="h-[3px] w-full bg-[#003049]/20 shrink-0 rounded-full" />
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">
               Refineries{refIsFiltered ? <span className="ml-1 text-[#7d3c98]">· {selectedProvince}</span> : ''}
             </p>
             <div className="flex items-baseline gap-2">
-              <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#F97316' }}>{refIsFiltered ? filteredRef.length : REF_STATS.total}</span>
+              <span className="text-[26px] font-bold font-mono leading-none" style={{ color: '#F97316' }}>{refIsFiltered ? filteredRef.length : REF_STATS.total}</span>
               <div className="text-[16px] text-[#003049]/60">
                 <div>{refIsFiltered ? `of ${REF_STATS.total} total` : 'active plants'}</div>
                 {!refIsFiltered && <div>{REF_STATS.capacidad_kbd} kb/d cap.</div>}
@@ -396,10 +396,10 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
           </div>
           {!refIsFiltered && (
             <>
-              <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+              <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
                 <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Refining operators</p>
-                <div className="flex gap-2">
+                <div className="flex flex-wrap gap-2">
                   {REF_STATS.operadores.map(op => (
                     <div key={op.name} className="text-center">
                       <p className="text-[22px] font-bold font-mono text-[#003049]">{op.pct}%</p>
@@ -414,7 +414,7 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
           )}
           {refIsFiltered && filteredRef.length > 0 && (
             <>
-              <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+              <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
                 <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">In province</p>
                 <div className="flex flex-col gap-0.5">
@@ -438,20 +438,20 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
 
       {hasCen && (
         <>
-          <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+          <div className="h-[3px] w-full bg-[#003049]/20 shrink-0 rounded-full" />
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">
               Power Plants{cenIsFiltered ? <span className="ml-1 text-[#7d3c98]">· {selectedProvince}</span> : ''}
             </p>
             <div className="flex items-baseline gap-2">
-              <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#A855F7' }}>{cenIsFiltered ? (cenStats ? cenStats.count : 0) : CEN_STATS.total}</span>
+              <span className="text-[26px] font-bold font-mono leading-none" style={{ color: '#A855F7' }}>{cenIsFiltered ? (cenStats ? cenStats.count : 0) : CEN_STATS.total}</span>
               <div className="text-[16px] text-[#003049]/60">
                 <div>{cenIsFiltered ? `of ${cenFeatures.length} in CAMMESA` : 'major plants'}</div>
                 <div>{cenIsFiltered ? (cenStats && cenStats.hasMW ? `${(cenStats.totalMW / 1000).toFixed(1)} GW inst.` : 'no MW data') : `${CEN_STATS.capacidad_gw} GW inst.`}</div>
               </div>
             </div>
           </div>
-          <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+          <div className="h-px w-full bg-[#003049]/10 shrink-0" />
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">By type</p>
             <div className="flex gap-2">
@@ -473,15 +473,15 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
           </div>
           {cenIsFiltered && renovStats && (
             <>
-              <div className="w-px h-10 bg-[#003049]/10 shrink-0 self-center" />
+              <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
                 <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Renew. pipeline</p>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[30px] font-bold font-mono leading-none" style={{ color: '#22C55E' }}>{renovStats.count}</span>
+                  <span className="text-[26px] font-bold font-mono leading-none" style={{ color: '#22C55E' }}>{renovStats.count}</span>
                   <div className="text-[16px] text-[#003049]/60"><div>projects</div><div>{renovStats.totalMW >= 100 ? `${(renovStats.totalMW / 1000).toFixed(1)} GW` : `${renovStats.totalMW} MW`}</div></div>
                 </div>
               </div>
-              <div className="w-px h-10 bg-[#003049]/10 shrink-0 self-center" />
+              <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
                 <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">By source</p>
                 <div className="flex gap-2">
@@ -497,7 +497,7 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
           )}
           {!cenIsFiltered && (
             <>
-              <div className="w-px h-10 bg-[#003049]/10 shrink-0" />
+              <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
                 <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Main operators</p>
                 <div className="flex gap-2">

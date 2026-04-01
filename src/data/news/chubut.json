@@ -1,0 +1,84 @@
+{
+  "province": "Chubut",
+  "slug": "chubut",
+  "updated": "2026-03-31T23:32:03.951Z",
+  "sources": [
+    "El Chubut",
+    "Diario Jornada",
+    "El Patagónico"
+  ],
+  "articles": [
+    {
+      "title": "Rawson realiza la vigilia por Malvinas y la recreación de la Virgen de las Trincheras",
+      "url": "https://www.elchubut.com.ar/rawson/2026-3-31-17-54-0-rawson-realiza-la-vigilia-por-malvinas-y-la-recreacion-de-la-virgen-de-las-trincheras",
+      "date": "2026-03-31",
+      "source": "elchubut.com.ar",
+      "section": "cultura",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Torres firmó con Nación el pago de la deuda de Anses con Chubut por más de $48 mil millones",
+      "url": "https://www.elchubut.com.ar/regionales/2026-3-31-16-53-0-torres-firmo-con-nacion-el-pago-de-la-deuda-de-anses-con-chubut-por-mas-de-48-mil-millones",
+      "date": "2026-03-31",
+      "source": "elchubut.com.ar",
+      "section": "economía",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Secuestran 300 gramos de cocaína a una mujer en la zona sur de Trelew",
+      "url": "https://www.elchubut.com.ar/policiales/2026-3-31-19-28-0-secuestran-300-gramos-de-cocaina-a-una-mujer-en-la-zona-sur-de-trelew",
+      "date": "2026-03-31",
+      "source": "elchubut.com.ar",
+      "section": "sociedad",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Giacomone asume la presidencia del STJ: “La ciudadanía tiene que poder acceder a todas las causas judiciales”",
+      "url": "https://www.elchubut.com.ar/regionales/2026-3-31-18-31-0-giacomone-asume-la-presidencia-del-stj-la-ciudadania-tiene-que-poder-acceder-a-todas-las-causas-judiciales",
+      "date": "2026-03-31",
+      "source": "elchubut.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Descargate los Agrupados de DIARIO EL CHUBUT",
+      "url": "https://www.elchubut.com.ar/portada/2022-12-29-12-11-0-descargate-los-agrupados-de-diario-el-chubut",
+      "date": "2026-03-31",
+      "source": "elchubut.com.ar",
+      "section": "general",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "STJ: realizaron audiencia de impugnación extraordinaria en causa por destitución de Mariel Suárez",
+      "url": "https://www.elchubut.com.ar/judiciales/2026-3-31-15-34-0-stj-realizaron-audiencia-de-impugnacion-extraordinaria-en-causa-por-destitucion-de-mariel-suarez",
+      "date": "2026-03-31",
+      "source": "elchubut.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "Bowen propuso el sistema D’Hondt para las internas del PJ",
+      "url": "https://www.elchubut.com.ar/regionales/2026-3-31-18-10-0-bowen-propuso-el-sistema-d-hondt-para-las-internas-del-pj",
+      "date": "2026-03-31",
+      "source": "elchubut.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    },
+    {
+      "title": "El Municipio de Rawson depositará los sueldos el lunes en el Banco Patagonia",
+      "url": "https://www.elchubut.com.ar/rawson/2026-3-31-11-27-0-el-municipio-de-rawson-depositara-los-sueldos-el-lunes-en-el-banco-patagonia",
+      "date": "2026-03-31",
+      "source": "elchubut.com.ar",
+      "section": "política",
+      "excerpt": "",
+      "classified": true
+    }
+  ]
+}

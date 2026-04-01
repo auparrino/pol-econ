@@ -1,0 +1,201 @@
+{
+  "province": "Ciudad de Buenos Aires",
+  "slug": "caba",
+  "updated": "2026-03-31T23:31:25.814Z",
+  "sources": [
+    "BAE Negocios",
+    "Cronista",
+    "Google News CABA"
+  ],
+  "articles": [
+    {
+      "title": "Empresas de colectivos del AMBA reducirán frecuencias desde este miércoles por la suba del gasoil",
+      "url": "https://www.baenegocios.com/sociedad/empresas-de-colectivos-del-amba-reduciran-frecuencias-desde-este-miercoles-por-la-suba-del-gasoil-3226/",
+      "date": "2026-03-31",
+      "source": "baenegocios.com",
+      "section": "economía",
+      "excerpt": "Cuatro cámaras empresarias anunciaron recortes desde el mediodía y advirtieron que el servicio \"está en serio riesgo\". El Gobierno anticipó sanciones.",
+      "classified": true
+    },
+    {
+      "title": "Lilia Lemoine asumió al frente de Juicio Político y La Libertad Avanza recuperó una comisión clave",
+      "url": "https://www.baenegocios.com/politica/lilia-lemoine-asumio-al-frente-de-juicio-politico-y-la-libertad-avanza-recupero-una-comision-clave/",
+      "date": "2026-03-31",
+      "source": "baenegocios.com",
+      "section": "política",
+      "excerpt": "La diputada bonaerense presidirá el cuerpo tras dos años de parálisis. Unión por la Patria ya impulsó una ampliación del pedido contra Milei.",
+      "classified": true
+    },
+    {
+      "title": "Agostina Páez pagó casi 18.500 dólares e inició los trámites para regresar a la Argentina",
+      "url": "https://www.baenegocios.com/sociedad/agostina-paez-regresa-a-argentina-tras-pasar-70-dias-en-rio-de-janeiro/",
+      "date": "2026-03-31",
+      "source": "baenegocios.com",
+      "section": "sociedad",
+      "excerpt": "La Cámara de Río le concedió un habeas corpus, levantó las restricciones y habilitó a la abogada a iniciar los trámites finales para volver al país",
+      "classified": true
+    },
+    {
+      "title": "Mayra Mendoza a Caputo: \"Dedique su tiempo a resolver la crisis y no a culpar a los municipios\"",
+      "url": "https://www.baenegocios.com/politica/mayra-mendoza-a-caputo-dedique-su-tiempo-a-resolver-la-crisis-y-no-a-culpar-a-los-municipios/",
+      "date": "2026-03-31",
+      "source": "baenegocios.com",
+      "section": "política",
+      "excerpt": "La dirigente de Quilmes criticó al ministro tras sus dichos sobre tasas municipales y lo instó a \"visitar hospitales, pymes y escuelas\"",
+      "classified": true
+    },
+    {
+      "title": "Aumentan un 6,5% las cuotas de los colegios bonaerenses",
+      "url": "https://www.baenegocios.com/economia/aumentan-un-6-5-las-cuotas-de-los-colegios-bonaerenses/",
+      "date": "2026-03-31",
+      "source": "baenegocios.com",
+      "section": "economía",
+      "excerpt": "La Provincia autorizó una suba en los aranceles de colegios privados con subsidio estatal. El incremento alcanza a casi 1,3 millones de alumnos",
+      "classified": true
+    },
+    {
+      "title": "Anuncian rebaja de retenciones a automotores \"en días o semanas\"",
+      "url": "https://www.baenegocios.com/economia/anuncian-rebaja-de-retenciones-a-automotores-en-dias-o-semanas/",
+      "date": "2026-03-31",
+      "source": "baenegocios.com",
+      "section": "economía",
+      "excerpt": "La industria espera que se inicie un sendero de disminución de las alícuotas hasta su eliminación total",
+      "classified": true
+    },
+    {
+      "title": "Del calor sofocante al clima otoñal: un frente frío cambia el tiempo en Buenos Aires",
+      "url": "https://www.baenegocios.com/sociedad/un-frente-frio-corta-la-ola-de-calor-en-el-amba-608/",
+      "date": "2026-03-31",
+      "source": "baenegocios.com",
+      "section": "sociedad",
+      "excerpt": "El AMBA deja atrás el calor húmedo, mientras el SMN alerta por tormentas intensas y acumulados que pueden superar los 100 mm",
+      "classified": true
+    },
+    {
+      "title": "El gobierno porteño quiere cerrar la mitad de los cursos de un secundario de reingreso para jóvenes que",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOaG9KWTNHYnJVbTAwS2hqRDBudU5CamhnTFFzSDE2OUJubll6NlVQZWxIT3RKYVBCeS1QTXNCMDVZWU9FYS0tZFJHOUQyZVQ0ZTFLUk5wd1F1NkFCSkhYX0NhVEZCdHEtYTgyQ0lKQ3RPQ2dpanl3VWQ4ajBlRHZYREFKakRpbnVpa1BOek56ek1lcWVsbGhEY2lIZUJndmh0STRoeGZnb0E2NmVCSnRTaWVvQ1R4WFJ6OEMwQzhva3B4SGZJd01IeHUtUlh5RnUyTTJrN3VwbkI3TTF3eG1yV2NQRTlESG1Eenc4RlZ6RXR2WUFFVXc5TW9lR1NoMEVv0gGGAkFVX3lxTFB4RjhrZjhya19DUF9sQWJTUVAwMEN0WlA4Qy1nOVVZcjRSQWMzdGZBME80Q0VaQUFrTzBiWFFwcnpwcTlnaVN6Z2lvNV9kbTdDMkpadVhSZGtvVnpTUGFVMVBaZXpTdG9XR3dEa0d5SDZzQzVuRlZlcXYyM1lUMUs5N01GR1J6R0pWVDc5bjM2TUp0RXQtREpGSnkweHh6dURQOUdtNmFFeXkzWG5pMWROSlRmbzdZenNENnZBMFRlNG1OTEpRV1hibTZxdDdXVHozZUJVQ3hzdTlTOTltTDJvMWdUMGt3c09VX3BtdDZkX1VGQU9PMFBqazZhajBjNGlESkRiM3c?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "Tiempo Argentino",
+      "section": "sociedad",
+      "excerpt": "El gobierno porteño quiere cerrar la mitad de los cursos de un secundario de reingreso para jóvenes que Tiempo Argentino",
+      "classified": true
+    },
+    {
+      "title": "Ciudad de Buenos Aires lanzó becas para personas con discapacidad",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRmFOOTlRZ2NzcTNUUjV3REUzU3A1dmlQTmFfaTRZdHp5dVB6czh5UU8zSnJuMVdVUU1sZVdFdnF0Nm5ZT21XM1VBRUtYSC1GZUdZU3pkcF9hTzU3NlhYVHM1ZnpCelVHbEJkVGtzSlhRRnlRT0ZSWUFZcmtoNXJTTlFXRndYNDVBdUJ1aWt3cUVZY0hqSEZoQm9MZF9pOTZaOHZ1aQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "EconoBlog",
+      "section": "sociedad",
+      "excerpt": "Ciudad de Buenos Aires lanzó becas para personas con discapacidad EconoBlog",
+      "classified": true
+    },
+    {
+      "title": "¿Cuánto aumentarán los colectivos, subtes y peajes en la Ciudad de Buenos Aires a partir del 1 de abril?",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQV2w2Z3R0WDNKTTk5bDNRWWhMRXUyYkFnQVNVM1hPNXJlNkVYZ0o2SHhrTENia3V3b1c3bThJaThvSlB5NGJwVWNxaGFLZnRndnlmSnJLeE1PQnIxQ0tGbjhRSU1LX3RtNlBVX29TbTlqU2lETEZmRnFmM0tlckZoLUdRVVlYX2FXZld5TWJ6WjZMVmdodk1ndERvV2p3YWRYTEtrSjY4LWtud1pKNWVPSXd5VVg0S1BXU2hmUW1CNWNOY2FRaC1uMklDWVRPT0hQSFpER242ZWdYSlIzbmV1WHRlRWJvUGR3amNZMHBn?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "tycsports.com",
+      "section": "economía",
+      "excerpt": "¿Cuánto aumentarán los colectivos, subtes y peajes en la Ciudad de Buenos Aires a partir del 1 de abril? tycsports.com",
+      "classified": true
+    },
+    {
+      "title": "Adiós al papel: la Ciudad de Buenos Aires digitaliza las boletas de ABL y Patentes",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNkNkT01iazRTZDZpdUNBRHhEdlBmVWhhR3lIYXRhcGlTUnhySmxPNWRvOGMxb0JDaXVzc2YtTzM5cXI2Zjg2V3NKMW02NUpRcWxidFNNMU5ZVTRWVWhKNXI3SHZCd1E0YVpGSWluYi10Zm5yUEN6LXNCZDZoZkpwNUNEZ1lCeDd4enpQblUzSUhjV2laaWFCSkFWMFhJWVhWdXpxNVJtRjE2c1FLR3A1dzRUb1hWMW1C?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "El Eco",
+      "section": "política",
+      "excerpt": "Adiós al papel: la Ciudad de Buenos Aires digitaliza las boletas de ABL y Patentes El Eco",
+      "classified": true
+    },
+    {
+      "title": "Desarticulan una red de estafadores gitanos en la Ciudad de Buenos Aires",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTDZXc3BPZmNhUWg4ZW15OXVsc0V3aHVoTWpYbFgwVVFEQ3pmUUozcDBKZTRyVTg5NFRPS2R0LXMwa1ctaWhNYXh3d0x3c3F1TzNLQUZTWnZKbnZnYXdzTktwUjE1SjJ4bndxOFhxcy1aRWM2cTRacmJqejR2X19lbTVDVi1oQTJOclhOR1RXV20yLU43Z2V6N1FVdGJrVWxQV2NOaU1MSVkxbHhjLXVTYWk4TU1yQzRFUFNHLdIBwgFBVV95cUxNcENzUW4xYWE1QmdKN3JmNTNZQ2hWTEdjQWdXejhfbDZuZXJLRjlfVUdmZHlwX19PUEdTSUgyVHMwNmY2emVMVlhwOVE4MEFUYmRTcFFNVW1MaExsUmozWTBhODNkZFM3YkFVVDY5amVkSWtXWWdTamotUVZwSmdmQlVTMkVfcFlrbEZ4TGFlMzQ5OEhzNmZOWHFObkpQT01ndFAxRi1vQ0xDTGdkTGk3czI1SDd2dW8wenZPUzlxU1N2UQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "Cadena 3 Argentina",
+      "section": "sociedad",
+      "excerpt": "Desarticulan una red de estafadores gitanos en la Ciudad de Buenos Aires Cadena 3 Argentina",
+      "classified": true
+    },
+    {
+      "title": "Pascuas en las plazas y anfiteatros de la Ciudad de Buenos Aires",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVzhFTjRFbmpVZUpZRnFTaDRwanRxNmNNQnFqRnB3dXYyZnRtQ3Q0ako5VndIV1VtQWs2MFVEcF9KQWNNczhDRzlkUzYySTFnZmR3aWI3QXNQNnhoV1FBZU4wVEFaTTAzM2NEVktnazRycHNTX29wREZxOEZvbXRqRnhiTk1Na09MRTJVLWhjeEthUGdlR1dILXRtMW9LbGlNbDRJczhUa3pDdXZvRzRz?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "ImpulsoBaires",
+      "section": "cultura",
+      "excerpt": "Pascuas en las plazas y anfiteatros de la Ciudad de Buenos Aires ImpulsoBaires",
+      "classified": true
+    },
+    {
+      "title": "Aumentos de abril: cuánto subirán las prepagas, alquileres, transporte y tarifas",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPX0xtYUFBQ3lyU1FhZ0tpeWRaNV9GLVRBXzR6TmZDUndLTVFzQnlXbU1jWTVZdm9CTnh1SGNvYTlOVkVhd1FSTTBfSHFBb2FEMHBhd0kxZWs5dHUxdDBmc2Nfb3ZPcExSSEFSSzZMUVk0OFlxeGtPLTd3dTZXM3BuWmFfWGZNcV9OLW9XYTRGcGxkUm5Belg2SVYzUDJOUUtHZ3JEeFNIZkpaUW5vNERfWEN2a21MT3BjdHBIMkxWRdIB2gFBVV95cUxPckI1RDBOM2tWUFhFX09LNXpGYmpCUHZGQV9Eb3hKSm84b1pOUG9fY0NaVHNlYkRRTldYTFZMVllqc3ZMMmhJVDE4ejlacmZBd1lsUGZaWmIzNklDSU1tUzNPOEpCMTZ5bkhQb1diOUlYa1JPd3hjRTFLeDNvSUg4MlBsYmc4bGJoSVp0TEFKN2NiYllDNXhIQ01GWHktX1V2X3FJSGxqY0xwNVdFOXBJdHBnVmx5RHBzTG9aWU5nNkFlWnkzNDFiZG43S3o0czdoXzNhYlBjSHY1dw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "Infobae",
+      "section": "economía",
+      "excerpt": "Aumentos de abril: cuánto subirán las prepagas, alquileres, transporte y tarifas Infobae",
+      "classified": true
+    },
+    {
+      "title": "Para ahorrar, el GCBA elimina las boletas en papel de ABL y Patentes y avanza a un sistema 100% digital",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMFhjaDdQUVlNTmZRckhENmNCNmFTUGsxUnRYSk5mOFFmYVZoaDJZRU45VjJaR0xrTThYeFNabmlhMFIwVTBxTmFIcktKbDE2ZU43UWhIdm1fdWM3YkxOY2ZoOWd0SXM3cVhsSXlaSUVIMmQ3QmdWdnpuX2tDZ3NhQ1hfdG9IcnFndXg3WHZITGF1a2FmZDlBY2RoLUJhb0FKZThmeEhrLUJCdHpPM0dEbUw4dmlXVnNjUkFSMTA5NXJJeUduNHlLcXVydGo?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "Pura Ciudad",
+      "section": "economía",
+      "excerpt": "Para ahorrar, el GCBA elimina las boletas en papel de ABL y Patentes y avanza a un sistema 100% digital Pura Ciudad",
+      "classified": true
+    },
+    {
+      "title": "Retiraron cuadro de Eva Perón en Barrio 31 y crece la polémica",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNclgxLXV5Vjg2LUdzcFhncy13MHhJRExyNG9TVUdySncyQUJUOXl4SmJWTWxLVjZHZ3pOUXh5NTk2SnRuRVpaRXlieVBJbVFqZG5GYW9jdEhfMjdDeThrZXRlNmxuS19GWmh6eC1JN2NBSGJ4aHZjeUxOQUhyRnlvU1Nqa3pKRjBTVXFma1NRUVFweVAzRUtaYlBUTzNZZGdfbHo5NEJR?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "visionpolitica.com.ar",
+      "section": "sociedad",
+      "excerpt": "Retiraron cuadro de Eva Perón en Barrio 31 y crece la polémica visionpolitica.com.ar",
+      "classified": true
+    },
+    {
+      "title": "Leve repunte en supermercados y fuerte caída en mayoristas: cómo cerró el consumo en la Ciudad de Buenos Aires en 2025",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNWlN2LWRIU3FnX0V0d0FBdGxrNU9HRHE4TzUzVGxnUmI0cUlfTUdtQ1NNY2VUM0FTLTJyVlJFQUFCMWZwUG5GU2NQcWNRbk5DWVZVaHdZY3Q4cWQyWVc4a3B5X3ZUc2I5QzRKei1iUnlCRlFXcVdud1hvTGRVWjlXdHF4VC04azU5THVGMGxOZWwyWC00eEE2akxSTk83S1NXb2E5M01PTGFZVXROX3EyTi1JZVFlVU1kZHhySVhNdmtaQ2JtX1Bxb2pyeFp6a1lXM2oyTk9JRVhxZzBDVlExZk1R?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-31",
+      "source": "Pura Ciudad",
+      "section": "economía",
+      "excerpt": "Leve repunte en supermercados y fuerte caída en mayoristas: cómo cerró el consumo en la Ciudad de Buenos Aires en 2025 Pura Ciudad",
+      "classified": true
+    },
+    {
+      "title": "La Ciudad de Buenos Aires anunció la creación de un Distrito de Inteligencia Artificial",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMnBpekdsUEkyN1ZKRzVtSWpjdjJtR1VWM1oyeGFvZmVVQjhPMXRkSm5obThJYjNXblVtaWZHTk8wV2pWWlNvVk1udEtGcVZjOF9GRkhMcTJzLWR1cERXV0kwZEowUnpQU1JuYkVaU0ZmdTNIMS1rRHl2OU1GakppQURWSWlWemQ0LWxra1RTVzQtQ2tQcmNaQUp2MFRrdkdIRW9pQXJyNVlrT1BYVHItb2xNR3VENmsybkcxSnVzbkFWRF9xbTUtZXBPS1FIcE9BS3FQSkNjRQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-30",
+      "source": "diariolavanguardia",
+      "section": "política",
+      "excerpt": "La Ciudad de Buenos Aires anunció la creación de un Distrito de Inteligencia Artificial diariolavanguardia",
+      "classified": true
+    },
+    {
+      "title": "Las denuncias contra Manuel Adorni complican su candidatura a jefe de Gobierno porteño",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQb1RXR1l0VTZiWDJ0Wlp5UlZoRTJkNmVzMTk2ODhFbHhZZ1plNkpNYS1HenJHU0FCUWJONExmaGxLeVlXaVItV3ZDOUl0M1JrZXY3V1lUVkZzeW5TN1Y1YVZGenlGZzdSSzVPUWp4eVJNNm9Objh2LXRFYmdYR2JwUDFGRlVCTEdDVzhSSFlBWXVCR2hHTmw1TTAzOWtUTE42a25SVkgyM3ExdEFVemgwRENDS3FFbFR4TldlbVNOQ0Izbkdv?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-29",
+      "source": "Página|12",
+      "section": "política",
+      "excerpt": "Las denuncias contra Manuel Adorni complican su candidatura a jefe de Gobierno porteño Página|12",
+      "classified": true
+    },
+    {
+      "title": "La Libertad Avanza presentó un paquete de proyectos en la Legislatura porteña en medio de tensiones con el PRO",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNTm05YlltRk84a0w3T1ZWeTJydkNWb3AtYVJsc3RRT3picVlPaVE5NmZlTk1SZ1E3ZDZEMHZuc1o2Z3hTSWticWhoeVo4UFFRMk53cHZwT2pVTlh1NWd4MThSaHd0S2dsWGxlN3ctTWZMMmlqdVpyTmMtY05UYS1LS3JSTWVPYkI2cEZ3Qk9XX3FqWFY2U3Y0X0d4cHp4emVIak9Jb2ZjUFlEZFktQl9SVWc2eVM1VGVCTGtoTENsWFZFaHNha0VIY184clFjMVRFOWQ5M0s3anpHS29nVUtGLTNTdVBkQUs4OHlF0gGGAkFVX3lxTFBtZ0J2X3p4S2dMUnktaHlDNW50eE13U2tuVmtpbWhpclYtY0lFOUl1QnlwczFHUzd6aElUUUl0cUZUY3YwN2tRZVdIcEc4SE9GazZxTTZXYVk4enhBTmtrbDVfcW9QVFZRM1hIWURXYlE0WXprZkVMcF9LNTZMNWZYZmVvZ0RSZndITlpGV01EMnh1X285QnFnaW9UMUlZMy1QeFVvczhQY1dnbnNFQkR2c0pGVHVPZTl6TjhVTExQM0VtdWhfeUMySEJTUHhPTVViSHNCeFhEb3Fjb1RqM1RjUm9pdU1IdE16bUplb08zaFQ5MVVpUzFhQkxPSXFuSVBnellNNXc?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-27",
+      "source": "Infobae",
+      "section": "política",
+      "excerpt": "La Libertad Avanza presentó un paquete de proyectos en la Legislatura porteña en medio de tensiones con el PRO Infobae",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno porteño se puso a disposición para honrar, visibilizar y reclamar por las víctimas argentinas del terrorismo de Hamas en Israel | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos Aires",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRXJycWo5YnpzbGdJdlNqemw4Nnh1djdIZ1VkalhhRUthMXdsXzBzaWhtQjlJTV9mNHBHWmpCN3RVcGZ1emg2eDEzNnV6cDdHblVXZlFsUjZmTFBnVzNTQWpURnFoUWo2V1hJSUhId2UtUVpZMFhsdVdhQzg0NklEQ2RGSnlYal94c2N0cEZaWlBRdnFqOTlSdE9hcVZjTTA2UGQtVEo1dHJLeWdmd01JWHp6aGFYeUlNdF9SM0FUU24zMGta?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "date": "2026-03-23",
+      "source": "Buenos Aires Ciudad",
+      "section": "política",
+      "excerpt": "El Gobierno porteño se puso a disposición para honrar, visibilizar y reclamar por las víctimas argentinas del terrorismo de Hamas en Israel | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma de Buenos Aires Buenos Aires Ciudad",
+      "classified": true
+    }
+  ]
+}

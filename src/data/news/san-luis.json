@@ -1,0 +1,201 @@
+{
+  "province": "San Luis",
+  "slug": "san-luis",
+  "updated": "2026-03-31T23:35:09.665Z",
+  "sources": [
+    "El Diario de la República",
+    "San Luis Info",
+    "Agencia San Luis"
+  ],
+  "articles": [
+    {
+      "title": "San Luis confirmó el primer caso de dengue de la temporada",
+      "url": "https://agenciasanluis.com/2026/03/31/1152895-san-luis-confirmo-el-primer-caso-de-dengue-de-la-temporada/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "Corresponde a un paciente de la ciudad de San Luis, sin antecedente de viaje fuera de la provincia. Salud activó bloqueo de foco, control vectorial y búsqueda activa de febriles en la zona del CAPS Serranías Puntanas.",
+      "classified": true
+    },
+    {
+      "title": "Más de 220 proyectos se presentaron en la tercera edición del programa IDEA",
+      "url": "https://agenciasanluis.com/2026/03/31/1152883-mas-de-220-proyectos-se-presentaron-en-la-tercera-edicion-del-programa-idea/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "economía",
+      "excerpt": "El pasado 27 de marzo finalizó la inscripción para la tercera edición del programa. El mismo, alcanzó una cifra récord de iniciativas que reflejan el compromiso, la creatividad y el potencial de las nuevas generaciones. Este crecimiento posiciona a IDEA como un espacio estratégico para el fortalecimiento de la economía del conocimiento en la provincia.",
+      "classified": true
+    },
+    {
+      "title": "Presentaron el cortometraje ‘Santos Ortiz y el Tratado de Huanacache’",
+      "url": "https://agenciasanluis.com/2026/03/31/1152859-presentaron-el-cortometraje-santos-ortiz-y-el-tratado-de-huanacache/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "cultura",
+      "excerpt": "La producción, realizada íntegramente con herramientas de IA, propone recuperar la figura de un protagonista del federalismo argentino.",
+      "classified": true
+    },
+    {
+      "title": "Continúa la asistencia sanitaria a productores en Villa del Carmen",
+      "url": "https://agenciasanluis.com/2026/03/31/1152860-continua-la-asistencia-sanitaria-a-productores-en-villa-del-carmen/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "economía",
+      "excerpt": "El ministerio de Desarrollo Productivo continúa fortaleciendo la promoción rural con acciones concretas de asistencia sanitaria destinadas a pequeños y medianos productores, a través del trabajo del equipo técnico en territorio.",
+      "classified": true
+    },
+    {
+      "title": "Villa Mercedes se suma al uso de Alarma Ciudadana para proteger a víctimas de violencia",
+      "url": "https://agenciasanluis.com/2026/03/31/1152839-villa-mercedes-se-suma-al-uso-de-alarma-ciudadana-para-proteger-a-victimas-de-violencia/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "Personal de ministerio de Desarrollo Humano y de la Agencia de Ciencia y Tecnología dictaron una capacitación al equipo de la subsecretaría de Mujer del municipio sobre el funcionamiento de la aplicación.",
+      "classified": true
+    },
+    {
+      "title": "Boleto Educativo Interurbano en el interior: “Nos viene muy bien a todos en la familia”",
+      "url": "https://agenciasanluis.com/2026/03/31/1152816-boleto-educativo-interurbano-en-el-interior-nos-viene-muy-bien-a-todos-en-la-familia/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "economía",
+      "excerpt": "Diego Morla, profesor de Matemática en La Toma y Naschel, destaca cómo el BEI reduce el desgaste de los vehículos particulares y ayuda a la economía de los hogares con hijos estudiantes.",
+      "classified": true
+    },
+    {
+      "title": "Fiscalizaron el agua cruda de perforaciones de los departamentos Ayacucho y Dupuy",
+      "url": "https://agenciasanluis.com/2026/03/31/1152750-fiscalizaron-el-agua-cruda-de-perforaciones-de-los-departamentos-ayacucho-y-dupuy/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "justicia",
+      "excerpt": "Las muestras tomadas por el ente son de perforaciones de Luján, El Vinagrillo, La Botija, Unión y Navia.",
+      "classified": true
+    },
+    {
+      "title": "Llevarán adelante un nuevo ciclo de capacitación docente en cooperativismo escolar",
+      "url": "https://agenciasanluis.com/2026/03/31/1152753-realizaran-un-nuevo-ciclo-de-capacitacion-docente-en-cooperativismo-escolar/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "Está a cargo de la dirección de Cooperativas y Mutuales. Se dictará en primera instancia para los docentes de la Región Educativa IV. Es gratuita, otorga puntaje e iniciará el 10 de abril.",
+      "classified": true
+    },
+    {
+      "title": "Realizan tareas de mantenimiento sobre los canales de riego de Villa Mercedes",
+      "url": "https://agenciasanluis.com/2026/03/31/1152778-realizan-tareas-de-mantenimiento-sobre-los-canales-de-riego-de-villa-mercedes/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "infraestructura",
+      "excerpt": "Los trabajos se ejecutan sobre 10 kilómetros del canal, limpiando el cauce de vegetación y residuos que puedan provocar anegamientos en el sistema.",
+      "classified": true
+    },
+    {
+      "title": "El Gobierno inició la construcción de 24 viviendas en Villa de la Quebrada, Nogolí y San Pablo",
+      "url": "https://agenciasanluis.com/2026/03/31/1152762-el-gobierno-inicio-la-construccion-de-24-viviendas-en-villa-de-la-quebrada-nogoli-y-san-pablo/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "infraestructura",
+      "excerpt": "Las tareas comprenden la preparación de terreno, ejecución de fundaciones y obras de infraestructura urbana, en el marco del programa ‘Tenemos Futuro’, que impulsa la construcción de viviendas en toda la provincia.",
+      "classified": true
+    },
+    {
+      "title": "Fortalecen a la Policía con equipamiento tecnológico tras más de 10 años sin entregas similares",
+      "url": "https://agenciasanluis.com/2026/03/31/1152737-fortalecen-a-la-policia-con-equipamiento-tecnologico-tras-mas-de-10-anos-sin-entregas-similares/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "seguridad",
+      "excerpt": "Se destinaron 65 computadoras con sus respectivos accesorios y 23 impresoras a distintas Unidades y direcciones que componen al ministerio de Seguridad. Fue durante esta semana y se prevee que las entregas continúen durante las próximas semanas. El Área de Tecnología de la institución informó que se acompañará a los efectivos policiales con capacitaciones específicas para el cuidado y uso correcto del equipamiento recibido",
+      "classified": true
+    },
+    {
+      "title": "Está disponible el calendario de vuelos de abril del Aeropuerto Internacional Valle del Conlara",
+      "url": "https://agenciasanluis.com/2026/03/31/1152782-esta-disponible-el-calendario-de-vuelos-de-abril-del-aeropuerto-internacional-valle-del-conlara/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "infraestructura",
+      "excerpt": "El Ente de Desarrollo Aeronáutico (EDA) presentó la programación mensual, con más frecuencias que fortalecen la conexión entre la provincia de San Luis y la ciudad de Buenos Aires.",
+      "classified": true
+    },
+    {
+      "title": "Durante casi un mes, el Tren de Capital Humano ofrecerá diversos servicios en la provincia",
+      "url": "https://agenciasanluis.com/2026/03/31/1152719-durante-casi-un-mes-el-tren-de-capital-humano-ofrecera-diversos-servicios-en-la-provincia/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "infraestructura",
+      "excerpt": "El primer destino será Beazley el lunes 6 y el martes 7 de abril. El jueves 9 de abril y el viernes 10 estará en Justo Daract y a partir del 13 y hasta el 24 de abril estará en Villa Mercedes. La formación ofrecerá atención sanitaria en distintas especialidades, además de la posibilidad de hacer trámites vinculados al DNI y actividades culturales.",
+      "classified": true
+    },
+    {
+      "title": "BEI en La Toma: un apoyo incondicional para el esfuerzo de las familias",
+      "url": "https://agenciasanluis.com/2026/03/31/1152730-bei-en-la-toma-un-apoyo-incondicional-para-el-esfuerzo-de-las-familias/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "economía",
+      "excerpt": "Marisa Soloa, mamá de Milagros Escuedero, destaca cómo el Boleto Educativo Interurbano (BEI) transforma la rutina de quienes viajan diariamente desde Naschel para estudiar en el Colegio 'Manuel Belgrano'.",
+      "classified": true
+    },
+    {
+      "title": "La UNSL y la Reserva La Siempre Viva firmaron un acuerdo para impulsar la investigación",
+      "url": "https://agenciasanluis.com/2026/03/31/1152712-la-unsl-y-la-reserva-la-siempre-viva-firmaron-un-acuerdo-para-impulsar-la-investigacion/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "cultura",
+      "excerpt": "El acuerdo promueve trabajos científicos conjuntos y el desarrollo de futuros proyectos vinculados a la conservación ambiental y el uso sostenible del territorio.",
+      "classified": true
+    },
+    {
+      "title": "Vialidad Provincial despliega operativos de mejora en Santa Rita, Los Chañares y otras zonas",
+      "url": "https://agenciasanluis.com/2026/03/31/1152673-vialidad-provincial-despliega-operativos-de-mejora-en-santa-rita-los-chanares-y-otras-zonas/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "infraestructura",
+      "excerpt": "Se abordan caminos no pavimentados con perfilado y compactación. También se trabaja sobre la ruta 1C y se completan tareas en los parajes La Avenencia, La Petra y Las Barranquitas, entre otros.",
+      "classified": true
+    },
+    {
+      "title": "El ministerio de Educación fortaleció el vínculo pedagógico con directivos de la Región I",
+      "url": "https://agenciasanluis.com/2026/03/31/1152669-el-ministerio-de-educacion-fortalecio-el-vinculo-pedagogico-con-directivos-de-la-region-i/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "Más de 60 directivos de 40 escuelas de nivel Inicial, rurales, técnicas, especiales, de jornada extendida y en contexto de encierro iniciaron la primera capacitación en Alfabetización.",
+      "classified": true
+    },
+    {
+      "title": "Resultados del sorteo de los inscriptos de San Luis capital",
+      "url": "https://agenciasanluis.com/2026/03/31/1152653-resultados-del-sorteo-de-los-inscriptos-de-san-luis-capital/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "política",
+      "excerpt": "Como parte del segundo sorteo a nivel provincial que desarrolló el Ejecutivo y, tras el operativo en la Caja Social de este martes, ya se conocen las personas sorteadas.",
+      "classified": true
+    },
+    {
+      "title": "Villa del Carmen inauguró su nueva Oficina de Informes Turísticos",
+      "url": "https://agenciasanluis.com/2026/03/31/1152657-villa-del-carmen-inauguro-su-nueva-oficina-de-informes-turisticos/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "cultura",
+      "excerpt": "El nuevo espacio se integra al desarrollo del corredor turístico de la Costa de los Comechingones, consolidando la oferta de la región y fortaleciendo la atención a visitantes.",
+      "classified": true
+    },
+    {
+      "title": "Informaron cuáles serán los cortes de calles por la apertura de Sesiones en la Legislatura",
+      "url": "https://agenciasanluis.com/2026/03/31/1152648-informaron-cuales-seran-los-cortes-de-calles-por-la-apertura-de-sesiones-en-la-legislatura/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "política",
+      "excerpt": "La Policía de la Provincia informó que las interrupciones comenzarán a las 7:00 y finalizará a las 15:00, y se centrarán en calle Ascasubi, en sentido norte-sur, se ubicará al inicio del puente que conecta con la Legislatura, permitiendo a los conductores acceder a la subida hacia la avenida Santos Ortiz. Además, todas las calles lindantes al edificio permanecerán cerradas, sin posibilidad de estacionamiento vehicular.",
+      "classified": true
+    },
+    {
+      "title": "Resultados del sorteo de los inscriptos de Villa Mercedes",
+      "url": "https://agenciasanluis.com/2026/03/31/1152646-resultados-del-sorteo-de-los-inscriptos-de-villa-mercedes-2/",
+      "date": "2026-03-31",
+      "source": "agenciasanluis.com",
+      "section": "sociedad",
+      "excerpt": "Como parte del segundo sorteo a nivel provincial que desarrolló el Ejecutivo y, tras el operativo en la Caja Social de este martes, ya se conocen las personas sorteadas.",
+      "classified": true
+    }
+  ]
+}

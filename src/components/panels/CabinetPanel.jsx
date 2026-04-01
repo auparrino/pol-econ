@@ -44,11 +44,11 @@ function CabinetPanelRaw() {
       {ALL_CARDS.map((p, i) => (
         <div
           key={i}
-          className="flex-1 min-w-[100px] rounded px-2 py-1 border"
+          className="flex-1 min-w-[100px] rounded px-3 py-2 border text-center"
           style={{ background: getBg(p.tier), borderColor: getBorder(p.tier) }}
         >
-          <p className="text-[7px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
-          <p className="text-[15px] font-bold text-[#003049] leading-tight truncate">{p.name}</p>
+          <p className="text-[9px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
+          <p className="text-[13px] font-bold text-[#003049] leading-tight">{p.name}</p>
           {p.party && (
             <p className="text-[13px] leading-tight" style={{ color: getPartyColor(p.party) }}>{p.party}</p>
           )}
