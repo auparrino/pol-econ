@@ -10,6 +10,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           'vendor-leaflet': ['leaflet', 'react-leaflet'],
+          'vendor-recharts': ['recharts'],
         },
       },
     },

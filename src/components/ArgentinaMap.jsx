@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import { miningProjects } from '../data/miningProjects';
 import EnergyLayers from './EnergyLayers';
 import { sociodemographic } from '../data/sociodemographic';
-import { fiscalData } from '../data/fiscalData';
+import { getAllFiscal } from '../hooks/useEconomyData';
 
 const PARTY_COLORS = {
   'PJ': '#1a6fa3',
@@ -115,20 +115,22 @@ function getRegionColor(governor) {
 }
 
 function getFiscalColor(provinceName) {
-  const pn = (provinceName || '').toLowerCase();
-  const isCABA = pn.includes('ciudad');
-  const entry = fiscalData.find(d => {
-    const dn = d.provincia.toLowerCase();
-    if (isCABA) return dn.includes('ciudad');
+  const pn = (provinceName || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const isCABA = pn.includes('ciudad') || pn === 'caba';
+  const allFiscal = getAllFiscal();
+  const entry = allFiscal.find(d => {
+    const dn = d.province.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    if (isCABA) return dn.includes('ciudad') || dn === 'caba';
     if (dn.includes('ciudad')) return false;
     return dn === pn || dn.includes(pn) || pn.includes(dn);
   });
-  const pct = entry?.transferencias_pct ?? 60;
-  if (pct < 30) return '#27ae60';
-  if (pct < 55) return '#f39c12';
-  if (pct < 70) return '#e67e22';
-  if (pct < 85) return '#C1121F';
-  return '#780000';
+  const dep = entry?.dependency ?? 50;
+  // Lower dependency = greener
+  if (dep <= 30) return '#27ae60';
+  if (dep <= 50) return '#2ecc71';
+  if (dep <= 70) return '#669BBC';
+  if (dep <= 85) return '#d4a800';
+  return '#C1121F';
 }
 
 const POVERTY_SCALE = [
@@ -152,22 +154,6 @@ function getPovertyColor(provinceName) {
   return POVERTY_SCALE.find(s => pov <= s.max)?.color || '#669BBC';
 }
 
-function getPBGColor(provinceName) {
-  const pn = provinceName?.toLowerCase();
-  const isCABA = pn?.includes('ciudad');
-  const data = sociodemographic.find(s => {
-    const sn = s.provincia?.toLowerCase();
-    if (isCABA) return sn === 'ciudad de buenos aires' || sn === 'caba';
-    if (sn === 'ciudad de buenos aires' || sn === 'caba') return false;
-    return sn === pn || sn?.includes(pn) || pn?.includes(sn);
-  });
-  const pbg = data?.pbg_per_capita_usd ?? 20000;
-  if (pbg >= 50000) return '#27ae60';
-  if (pbg >= 30000) return '#2ecc71';
-  if (pbg >= 20000) return '#3498db';
-  if (pbg >= 15000) return '#669BBC';
-  return '#1a3a5c';
-}
 
 // Creates custom panes with explicit z-index so energy layers always render above provinces
 function CreatePanes() {
@@ -310,7 +296,6 @@ export default function ArgentinaMap({
       case 'poblacion': return getPopulationColor(gov);
       case 'region': return getRegionColor(gov);
       case 'pobreza': return getPovertyColor(provinceName);
-      case 'pbg': return getPBGColor(provinceName);
       case 'fiscal': return getFiscalColor(provinceName);
       default: return '#669BBC';
     }

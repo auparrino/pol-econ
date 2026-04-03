@@ -4,12 +4,9 @@ import { politicalContext } from '../data/politicalContext';
 import { sociodemographic } from '../data/sociodemographic';
 import { officialSenators } from '../data/officialSenators';
 import votacionesRaw from '../data/votaciones.json';
-import vabProvincial from '../data/vab_provincial.json';
 import { fiscalData } from '../data/fiscalData';
+import EconomySummary from './economy/EconomySummary';
 // ProvinceNews moved to left sidebar (BottomBar tabs)
-
-// Pre-compute national VAB total for GDP share
-const nationalVabTotal = vabProvincial.reduce((s, d) => s + (d.vab_total || 0), 0);
 
 
 // Voting topics metadata
@@ -225,13 +222,6 @@ function SocioSection({ province }) {
     return fn === provName || fn?.includes(provName) || provName?.includes(fn);
   });
 
-  // Compute top sectors from VAB data
-  const vabEntry = vabProvincial.find(d => {
-    const dn = d.provincia?.toLowerCase();
-    if (isCABA) return dn === 'caba' || dn?.includes('ciudad');
-    if (dn === 'caba' || dn?.includes('ciudad')) return false;
-    return dn === provName || dn?.includes(provName) || provName?.includes(dn);
-  });
   if (!data) return null;
 
   const povertyColor = data.pobreza > 50 ? '#C1121F' : data.pobreza > 40 ? '#e67e22' : data.pobreza > 30 ? '#f39c12' : '#27ae60';
@@ -490,71 +480,7 @@ function LegislatorsSection({ province, congress }) {
   );
 }
 
-// Sector bar component
-function SectorBar({ label, pct, color = '#3b82f6' }) {
-  if (pct == null) return null;
-  return (
-    <div className="flex items-center gap-1.5 py-0.5">
-      <span className="text-[13px] text-[#003049]/60 w-[115px] shrink-0 truncate">{label}</span>
-      <div className="flex-1 h-[7px] bg-[#003049]/10 rounded-full overflow-hidden">
-        <div className="h-full rounded-full" style={{ width: `${Math.min(pct, 100)}%`, backgroundColor: color }} />
-      </div>
-      <span className="text-[13px] font-mono text-[#003049]/60 w-[34px] text-right">{pct.toFixed(1)}%</span>
-    </div>
-  );
-}
-
-function EconomicSection({ province }) {
-  const provName = province?.toLowerCase();
-  const data = vabProvincial.find(d => {
-    const dn = d.provincia?.toLowerCase();
-    if (!dn || !provName) return false;
-    const isCABA = provName.includes('ciudad') || provName === 'caba' || provName === 'c.a.b.a.';
-    const dIsCABA = dn === 'caba' || dn.includes('ciudad autónoma') || dn.toLowerCase() === 'caba';
-    if (isCABA) return dIsCABA || dn === 'caba';
-    if (dIsCABA) return false;
-    return dn === provName || dn.includes(provName) || provName.includes(dn);
-  });
-
-  if (!data) return null;
-
-  const sectorEntries = Array.isArray(data.sectores)
-    ? data.sectores.filter(s => s.en !== 'Public Administration').slice(0, 10)
-    : [];
-
-  return (
-    <Section
-      title="Provincial Economy (VAB 2023)"
-      tooltip="Valor Agregado Bruto (VAB) by sector. VAB reflects the productive activity of establishments located in each province, calculated by summing each local sector's value added (production approach). It covers output of resident units with an economic interest center in the territory. While GDP is national, provincial VAB (PBG) decentralizes this measurement for regional analysis. Source: INDEC Estimaciones Provinciales del PBG (2023)."
-    >
-      <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10 space-y-1">
-        <div className="flex justify-between items-center mb-2">
-          <div>
-            <p className="text-[13px] text-[#003049]/60">Leading sector</p>
-            <p className="text-[15px] font-bold text-[#003049]">{sectorEntries[0]?.en ?? '—'}</p>
-            <p className="text-[13px] text-[#003049]/50">{sectorEntries[0]?.pct}% of prov. VAB</p>
-          </div>
-          <div className="text-right">
-            <p className="text-[13px] text-[#003049]/60">National GDP share</p>
-            <p className="text-[17px] font-bold font-mono text-warning">
-              {((data.vab_total / nationalVabTotal) * 100).toFixed(1)}%
-            </p>
-          </div>
-        </div>
-        {data.productos_principales && (
-          <p className="text-[13px] text-[#003049]/70 italic border-t border-[#003049]/10 pt-1.5 mb-1.5 leading-relaxed">
-            {data.productos_principales}
-          </p>
-        )}
-        <div className="border-t border-[#003049]/10 pt-1.5">
-          {sectorEntries.map(({ en, pct, color }) => (
-            <SectorBar key={en} label={en} pct={pct} color={color} />
-          ))}
-        </div>
-      </div>
-    </Section>
-  );
-}
+// EconomicSection replaced by EconomySummary component (economy/EconomySummary.jsx)
 
 export default function ProvincePanel({ province, governors, congress, onClose, width = 320, mobile = false }) {
   if (!province) {
@@ -663,8 +589,8 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
               </Section>
             )}
 
-            {/* Economic structure (VAB) */}
-            <EconomicSection province={province} />
+            {/* Economic summary (SIPA + Fiscal + Exports) */}
+            <EconomySummary province={province} Section={Section} DataRow={DataRow} />
           </>
         ) : (
           <p className="text-[10px] text-[#003049]/60 italic">

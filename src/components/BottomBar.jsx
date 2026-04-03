@@ -6,6 +6,7 @@ const CongressPanel = lazy(() => import('./panels/CongressPanel'));
 const ProvincialCongressPanel = lazy(() => import('./panels/ProvincialCongressPanel'));
 const CabinetPanel = lazy(() => import('./panels/CabinetPanel'));
 const ProvincialCabinetPanel = lazy(() => import('./panels/ProvincialCabinetPanel'));
+const EconomyPanel = lazy(() => import('./panels/EconomyPanel'));
 
 const PanelFallback = () => (
   <div className="flex items-center justify-center h-full">
@@ -16,6 +17,7 @@ const PanelFallback = () => (
 const BASE_TABS = [
   { id: 'congress', label: 'Congress' },
   { id: 'cabinet', label: 'Cabinet' },
+  { id: 'economy', label: 'Economy' },
   { id: 'news', label: 'News' },
 ];
 
@@ -79,6 +81,7 @@ export default function BottomBar({ congress, overlays, energyLayers, selectedPr
             ? <ProvincialCabinetPanel selectedProvince={selectedProvince} governors={governors} />
             : <CabinetPanel />
           )}
+          {activeTab === 'economy' && <EconomyPanel selectedProvince={selectedProvince} mobile={mobile} />}
           {activeTab === 'news' && (
             selectedProvince
               ? <ProvinceNews province={selectedProvince} />

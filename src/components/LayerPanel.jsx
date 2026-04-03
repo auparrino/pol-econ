@@ -5,7 +5,6 @@ const CHOROPLETH_MODES = [
   { id: 'partido', label: 'Gov. Party' },
   { id: 'alineamiento', label: 'Alignment' },
   { id: 'pobreza', label: 'Poverty' },
-  { id: 'pbg', label: 'PBG p/c' },
   { id: 'poblacion', label: 'Population' },
   { id: 'region', label: 'Region' },
   { id: 'fiscal', label: 'Fiscal Dep.' },

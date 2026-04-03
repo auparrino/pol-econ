@@ -42,24 +42,14 @@ const LEGENDS = {
       { color: '#780000', label: '> 55%' },
     ],
   },
-  pbg: {
-    title: 'PBG per capita (USD PPP)',
-    items: [
-      { color: '#27ae60', label: '> $50K' },
-      { color: '#2ecc71', label: '$30K–$50K' },
-      { color: '#3498db', label: '$20K–$30K' },
-      { color: '#669BBC', label: '$15K–$20K' },
-      { color: '#1a3a5c', label: '< $15K' },
-    ],
-  },
   fiscal: {
-    title: 'Fed. Transfer Dependency (2023)',
+    title: 'Fiscal Dependency (2024)',
     items: [
-      { color: '#27ae60', label: '< 30% (self-sufficient)' },
-      { color: '#f39c12', label: '30–55%' },
-      { color: '#e67e22', label: '55–70%' },
-      { color: '#C1121F', label: '70–85%' },
-      { color: '#780000', label: '> 85% (high dep.)' },
+      { color: '#27ae60', label: '< 30% (low depend.)' },
+      { color: '#2ecc71', label: '30–50%' },
+      { color: '#669BBC', label: '50–70%' },
+      { color: '#d4a800', label: '70–85%' },
+      { color: '#C1121F', label: '> 85% (high depend.)' },
     ],
   },
   region: {
