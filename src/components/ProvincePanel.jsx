@@ -121,19 +121,27 @@ function DataRow({ label, value, color, info }) {
   );
 }
 
+const ALIGNMENT_LABELS = {
+  'oficialismo': 'Ruling Coalition',
+  'aliado': 'Allied',
+  'negociador': 'Swing Vote',
+  'oposición dura': 'Hard Opposition',
+  'oposición': 'Opposition',
+};
+
 function AlignmentBadge({ alignment }) {
   const a = alignment?.toLowerCase() || '';
-  let bg, text;
-  if (a.includes('oficialismo')) { bg = 'bg-purple-500/15'; text = 'text-[#8e44ad]'; }
-  else if (a.includes('aliado')) { bg = 'bg-teal-500/15'; text = 'text-[#17a589]'; }
-  else if (a.includes('negociador') || a.includes('pragmát')) { bg = 'bg-yellow-500/20'; text = 'text-[#d68910]'; }
-  else if (a.includes('oposición dura')) { bg = 'bg-red-800/15'; text = 'text-[#780000]'; }
-  else if (a.includes('oposición')) { bg = 'bg-red-500/15'; text = 'text-[#C1121F]'; }
-  else { bg = 'bg-steel/20'; text = 'text-steel'; }
+  let bg, text, label;
+  if (a.includes('oficialismo')) { bg = 'bg-purple-500/15'; text = 'text-[#8e44ad]'; label = ALIGNMENT_LABELS['oficialismo']; }
+  else if (a.includes('aliado')) { bg = 'bg-teal-500/15'; text = 'text-[#17a589]'; label = ALIGNMENT_LABELS['aliado']; }
+  else if (a.includes('negociador') || a.includes('pragmát')) { bg = 'bg-yellow-500/20'; text = 'text-[#d68910]'; label = ALIGNMENT_LABELS['negociador']; }
+  else if (a.includes('oposición dura')) { bg = 'bg-red-800/15'; text = 'text-[#780000]'; label = ALIGNMENT_LABELS['oposición dura']; }
+  else if (a.includes('oposición')) { bg = 'bg-red-500/15'; text = 'text-[#C1121F]'; label = ALIGNMENT_LABELS['oposición']; }
+  else { bg = 'bg-steel/20'; text = 'text-steel'; label = null; }
 
   return (
-    <span className={`inline-block text-[12px] font-bold px-2 py-0.5 rounded uppercase tracking-wider ${bg} ${text}`}>
-      {alignment || 'S/D'}
+    <span className={`inline-block text-[12px] font-bold px-3 py-1 rounded uppercase tracking-wider ${bg} ${text}`}>
+      {label || alignment || 'N/A'}
     </span>
   );
 }

@@ -24,9 +24,13 @@ const BASE_TABS = [
 export default function BottomBar({ congress, overlays, energyLayers, selectedProvince, governors, mobile = false }) {
   const hasOverlay = overlays?.mining || energyLayers?.length > 0;
 
+  const activeTabs = selectedProvince
+    ? BASE_TABS
+    : BASE_TABS.filter(t => t.id !== 'economy' && t.id !== 'news');
+
   const tabs = hasOverlay
-    ? [{ id: 'overlay', label: 'Overlays' }, ...BASE_TABS]
-    : BASE_TABS;
+    ? [{ id: 'overlay', label: 'Overlays' }, ...activeTabs]
+    : activeTabs;
 
   const [activeTab, setActiveTab] = useState('congress');
 

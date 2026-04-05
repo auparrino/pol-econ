@@ -5,29 +5,23 @@ import {
 } from 'recharts';
 import { TAX_COLORS, TAX_LABELS, CustomTooltip, AXIS_STYLE, GRID_STYLE, formatMillions } from './chartTheme';
 import { getAllFiscal } from '../../hooks/useEconomyData';
-
-function fmtMoney(v) {
-  if (!v) return '$0';
-  if (v >= 1e6) return `$${(v / 1e6).toFixed(1)}T`;
-  if (v >= 1e3) return `$${(v / 1e3).toFixed(0)}B`;
-  return `$${v.toFixed(0)}M`;
-}
+import { fmtMoney } from '../../utils/formatNumber';
 
 function DependencyBar({ dependency, year }) {
   if (dependency == null) return null;
   const color = dependency <= 30 ? '#27ae60' : dependency <= 50 ? '#2ecc71' : dependency <= 70 ? '#d4a800' : dependency <= 85 ? '#f97316' : '#C1121F';
-  const label = dependency <= 30 ? 'Baja dependencia' : dependency <= 50 ? 'Moderada' : dependency <= 70 ? 'Alta' : 'Muy alta dependencia';
+  const label = dependency <= 30 ? 'Low dependency' : dependency <= 50 ? 'Moderate' : dependency <= 70 ? 'High' : 'Very high dependency';
   return (
     <div className="bg-[#003049]/6 rounded-lg p-2.5 border border-[#003049]/10">
       <div className="flex justify-between items-center mb-1">
-        <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider">Dependencia de Nación</p>
+        <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider">Federal dependency</p>
         <p className="text-[14px] font-bold font-mono" style={{ color }}>{dependency.toFixed(1)}%</p>
       </div>
       <div className="h-[8px] bg-[#003049]/10 rounded-full overflow-hidden">
         <div className="h-full rounded-full" style={{ width: `${Math.min(dependency, 100)}%`, backgroundColor: color }} />
       </div>
       <p className="text-[11px] text-[#003049]/40 mt-1">
-        {label} — transferencias nacionales / ingresos totales ({year})
+        {label} — national transfers / total revenues ({year})
       </p>
     </div>
   );
@@ -49,7 +43,7 @@ function TaxStructure({ taxDetail }) {
 
   return (
     <div>
-      <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Estructura tributaria propia</p>
+      <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Own tax structure</p>
       <div className="h-[10px] bg-[#003049]/10 rounded-full overflow-hidden flex mb-1.5">
         {data.map(d => (
           <div
@@ -96,7 +90,7 @@ function DependencyRanking({ currentProvince }) {
 
   return (
     <div>
-      <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Ranking dependencia (menor → mayor)</p>
+      <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Dependency ranking (lowest → highest)</p>
       <div className="space-y-0.5">
         {shown.map(p => {
           const isCurrent = p.province.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') === cn;
@@ -136,7 +130,7 @@ export default function FiscalSection({ fiscal, provinceName, mobile }) {
   return (
     <div className="space-y-3">
       <p className="text-[11px] text-[#003049]/40 leading-relaxed">
-        Finanzas provinciales (APNF, Sec. de Hacienda). La dependencia fiscal mide qué porcentaje de los ingresos proviene de transferencias nacionales (coparticipación + leyes especiales) vs. recursos propios (impuestos provinciales + regalías + otros no tributarios).
+        Provincial finances (APNF, Sec. of Treasury). Fiscal dependency measures what percentage of revenues comes from national transfers (revenue-sharing + special laws) vs. own resources (provincial taxes + royalties + other non-tax revenue).
       </p>
 
       <DependencyBar dependency={fiscal.dependency} year={fiscal.year} />
@@ -146,24 +140,24 @@ export default function FiscalSection({ fiscal, provinceName, mobile }) {
         {/* Stacked bar: own vs national */}
         <div className="h-[10px] bg-[#003049]/10 rounded-full overflow-hidden flex">
           <div className="h-full" style={{ width: `${100 - (fiscal.dependency || 0)}%`, backgroundColor: '#4ade80' }}
-            title={`Recursos propios: ${(100 - fiscal.dependency).toFixed(1)}%`} />
+            title={`Own resources: ${(100 - fiscal.dependency).toFixed(1)}%`} />
           <div className="h-full" style={{ width: `${fiscal.dependency || 0}%`, backgroundColor: '#f97316' }}
-            title={`Transferencias nacionales: ${fiscal.dependency?.toFixed(1)}%`} />
+            title={`National transfers: ${fiscal.dependency?.toFixed(1)}%`} />
         </div>
         <div className="flex justify-between text-[11px]">
           <span className="text-[#003049]/60 flex items-center gap-1">
             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: '#4ade80' }} />
-            Propios: {fmtMoney(fiscal.ownTotal || fiscal.ownRevenue)}
+            Own: {fmtMoney(fiscal.ownTotal || fiscal.ownRevenue)}
           </span>
           <span className="text-[#003049]/60 flex items-center gap-1">
             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: '#f97316' }} />
-            Nación: {fmtMoney(fiscal.nationalTransfers)}
+            National: {fmtMoney(fiscal.nationalTransfers)}
           </span>
         </div>
         {/* Royalties if significant */}
         {fiscal.royalties > 0 && (
           <p className="text-[11px] text-[#003049]/50 border-t border-[#003049]/10 pt-1">
-            Incluye <strong>regalías: {fmtMoney(fiscal.royalties)}</strong> (petróleo, gas, minería)
+            Includes <strong>royalties: {fmtMoney(fiscal.royalties)}</strong> (oil, gas, mining)
           </p>
         )}
       </div>
@@ -175,7 +169,7 @@ export default function FiscalSection({ fiscal, provinceName, mobile }) {
       {/* Revenue evolution */}
       {tsData.length > 2 && !mobile && (
         <div>
-          <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Evolución ingresos (nominal)</p>
+          <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Revenue evolution (nominal)</p>
           <div style={{ width: '100%', height: 130 }}>
             <ResponsiveContainer minWidth={0} minHeight={0}>
               <AreaChart data={tsData} margin={{ top: 4, right: 4, bottom: 0, left: -10 }}>
@@ -183,8 +177,8 @@ export default function FiscalSection({ fiscal, provinceName, mobile }) {
                 <XAxis dataKey="year" tick={{ fontSize: 11, fill: 'rgba(0,48,73,0.5)' }} />
                 <YAxis tick={{ fontSize: 11, fill: 'rgba(0,48,73,0.5)' }} tickFormatter={formatMillions} />
                 <Tooltip content={<CustomTooltip formatter={v => `$${formatMillions(v)}`} />} />
-                <Area type="monotone" dataKey="own" stackId="1" fill="#4ade80" fillOpacity={0.7} stroke="#4ade80" name="Recaudación propia" />
-                <Area type="monotone" dataKey="transfers" stackId="1" fill="#f97316" fillOpacity={0.7} stroke="#f97316" name="Transf. nacionales" />
+                <Area type="monotone" dataKey="own" stackId="1" fill="#4ade80" fillOpacity={0.7} stroke="#4ade80" name="Own revenue" />
+                <Area type="monotone" dataKey="transfers" stackId="1" fill="#f97316" fillOpacity={0.7} stroke="#f97316" name="Nat. transfers" />
               </AreaChart>
             </ResponsiveContainer>
           </div>

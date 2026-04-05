@@ -4,6 +4,8 @@
  */
 import { useEconomyData } from '../../hooks/useEconomyData';
 import { FAMILY_COLORS } from './chartTheme';
+import { fmtNum } from '../../utils/formatNumber';
+import { translateSector } from '../../utils/sectorTranslations';
 
 export default function EconomySummary({ province, Section, DataRow }) {
   const { sipa, fiscal, exports } = useEconomyData(province);
@@ -20,27 +22,27 @@ export default function EconomySummary({ province, Section, DataRow }) {
     : '#C1121F';
 
   return (
-    <Section title="Provincial Economy" tooltip="Resumen: empleo registrado (SIPA/CEP XXI), finanzas provinciales (Sec. Hacienda TOP+RON), exportaciones (INDEC). Ver pestaña Economy para análisis completo.">
+    <Section title="Provincial Economy" tooltip="Summary: registered employment (SIPA/CEP XXI), provincial finances (Sec. Hacienda TOP+RON), exports (INDEC). See Economy tab for full analysis.">
       <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10 space-y-2">
         {/* Top sector */}
         {sipa?.sectors?.[0] && (
           <div>
             <div className="flex justify-between items-start">
               <div>
-                <p className="text-[11px] text-[#003049]/50">Sector principal (SIPA)</p>
-                <p className="text-[14px] font-bold text-[#003049]">{sipa.sectors[0].name}</p>
+                <p className="text-[11px] text-[#003049]/50">Leading sector (SIPA)</p>
+                <p className="text-[14px] font-bold text-[#003049]">{translateSector(sipa.sectors[0].clae2, sipa.sectors[0].name)}</p>
                 <p className="text-[12px] text-[#003049]/50">
-                  {sipa.sectors[0].employees?.toLocaleString()} puestos ({sipa.sectors[0].share_pct}%)
+                  {fmtNum(sipa.sectors[0].employees)} jobs ({sipa.sectors[0].share_pct}%)
                 </p>
               </div>
               <div className="text-right">
-                <p className="text-[11px] text-[#003049]/50">Empleo registrado</p>
+                <p className="text-[11px] text-[#003049]/50">Registered employment</p>
                 <p className="text-[16px] font-bold font-mono text-[#003049]">
-                  {(sipa.total || sipa.private)?.toLocaleString()}
+                  {fmtNum(sipa.total || sipa.private)}
                 </p>
                 {sipa.public > 0 && (
                   <p className="text-[10px] text-[#003049]/40">
-                    Priv: {sipa.private?.toLocaleString()} / Púb: {sipa.public?.toLocaleString()}
+                    Priv: {fmtNum(sipa.private)} / Pub: {fmtNum(sipa.public)}
                   </p>
                 )}
               </div>
@@ -51,7 +53,7 @@ export default function EconomySummary({ province, Section, DataRow }) {
                 const color = FAMILY_COLORS[s.family] || '#94a3b8';
                 return (
                   <div key={s.clae2} className="flex items-center gap-1 py-0.5">
-                    <span className="text-[11px] text-[#003049]/50 w-[110px] truncate">{s.name}</span>
+                    <span className="text-[11px] text-[#003049]/50 w-[110px] truncate">{translateSector(s.clae2, s.name)}</span>
                     <div className="flex-1 h-[5px] bg-[#003049]/8 rounded-full overflow-hidden">
                       <div className="h-full rounded-full" style={{ width: `${Math.min(s.share_pct * 2.5, 100)}%`, backgroundColor: color }} />
                     </div>
@@ -67,25 +69,25 @@ export default function EconomySummary({ province, Section, DataRow }) {
         <div className="flex gap-2 border-t border-[#003049]/10 pt-2">
           {fiscal?.dependency != null && (
             <div className="flex-1">
-              <p className="text-[11px] text-[#003049]/50">Dep. fiscal</p>
+              <p className="text-[11px] text-[#003049]/50">Fiscal dep.</p>
               <p className="text-[15px] font-bold font-mono" style={{ color: depColor }}>
                 {fiscal.dependency.toFixed(1)}%
               </p>
-              <p className="text-[10px] text-[#003049]/40">transf. nac. / total</p>
+              <p className="text-[10px] text-[#003049]/40">nat. transfers / total</p>
             </div>
           )}
           {latestExport && (
             <div className="flex-1">
-              <p className="text-[11px] text-[#003049]/50">Exportaciones ({latestExport.year})</p>
+              <p className="text-[11px] text-[#003049]/50">Exports ({latestExport.year})</p>
               <p className="text-[15px] font-bold font-mono text-[#003049]">
-                USD {latestExport.total?.toFixed(0)}M
+                USD {fmtNum(Math.round(latestExport.total))}M
               </p>
             </div>
           )}
         </div>
 
         <p className="text-[10px] text-[#003049]/30 italic">
-          Análisis completo en pestaña Economy
+          Full analysis in Economy tab
         </p>
       </div>
     </Section>

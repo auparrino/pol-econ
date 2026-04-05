@@ -386,15 +386,15 @@ async function classifyArticles(province, articles) {
 // ─────────────────────────────────────────────────────
 
 const SUMMARY_FOCUS = {
-  today: 'Enfocate en las noticias más recientes y urgentes. Sé breve y directo.',
-  week: 'Identificá tendencias y patrones de la semana. Agrupá por tema.',
-  month: 'Hacé un análisis más amplio de la evolución del mes. Destacá cambios y tendencias.',
+  today: 'Focus on the most recent and urgent news. Be brief and direct.',
+  week: 'Identify trends and patterns of the week. Group by topic.',
+  month: 'Provide a broader analysis of the month\'s developments. Highlight changes and trends.',
 };
 
 const SUMMARY_LABELS = {
-  today: 'hoy',
-  week: 'la última semana',
-  month: 'el último mes',
+  today: 'today',
+  week: 'the last week',
+  month: 'the last month',
 };
 
 async function generateSummary(province, articles, timeframe) {
@@ -405,16 +405,16 @@ async function generateSummary(province, articles, timeframe) {
     .map((a, i) => `${i + 1}. [${a.date}] [${a.section}] ${a.title}${a.excerpt ? `\n   ${a.excerpt.slice(0, 150)}` : ''}`)
     .join('\n');
 
-  const prompt = `Sos un analista político argentino. Resumí las siguientes noticias de la provincia de ${province} de ${SUMMARY_LABELS[timeframe]}.
+  const prompt = `You are an Argentine political analyst. Summarize the following news from the province of ${province} from ${SUMMARY_LABELS[timeframe]}.
 
 ${SUMMARY_FOCUS[timeframe]}
 
-Enfocate en:
-- Desarrollos políticos provinciales
-- Situación económica local
-- Temas sociales relevantes
+Focus on:
+- Provincial political developments
+- Local economic situation
+- Relevant social issues
 
-Respondé en español. Sé conciso pero informativo. Organizá por temas si hay varios. No inventes información que no esté en las noticias.
+Respond in English. Be concise but informative. Organize by topic if there are several. Do not invent information not present in the news.
 
 NOTICIAS (${articles.length} artículos):
 
@@ -430,7 +430,7 @@ ${articleText}`;
       body: JSON.stringify({
         model: CEREBRAS_MODEL,
         messages: [
-          { role: 'system', content: 'Sos un analista político argentino especializado en política provincial. Respondés siempre en español.' },
+          { role: 'system', content: 'You are an Argentine political analyst specializing in provincial politics. Always respond in English.' },
           { role: 'user', content: prompt },
         ],
         temperature: 0.3,
