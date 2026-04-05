@@ -13,7 +13,8 @@ const BottomBar = lazy(() => import('./components/BottomBar'));
 
 /* Layout constants — desktop */
 const HEADER_H = 56;
-const SIDEBAR_W = 340;
+const OVERLAY_W = 300;
+const RIGHT_PANEL_W = 340;
 const LAYER_BAR_H = 100;
 
 function useIsMobile() {
@@ -31,15 +32,15 @@ export default function App() {
   const [overlays, setOverlays] = useState({ mining: false });
   const [energyLayers, setEnergyLayers] = useState([]);
   const [selectedProvince, setSelectedProvince] = useState(null);
-  const [mobilePanel, setMobilePanel] = useState(null); // 'congress' | 'province' | 'layers' | null
+  const [mobilePanel, setMobilePanel] = useState(null); // 'main' | 'layers' | null
   const { congress } = useCongressData();
   const isMobile = useIsMobile();
 
-  const panelWidth = selectedProvince ? 320 : 280;
+  const hasOverlay = overlays?.mining || energyLayers?.length > 0;
 
   // On mobile, auto-show province panel when province is selected
   useEffect(() => {
-    if (isMobile && selectedProvince) setMobilePanel('province');
+    if (isMobile && selectedProvince) setMobilePanel('main');
   }, [isMobile, selectedProvince]);
 
   if (isMobile) {
@@ -65,9 +66,8 @@ export default function App() {
         {/* Mobile bottom tabs — fixed to bottom */}
         <div className="fixed bottom-0 left-0 right-0 flex border-t bg-cream z-[1001]" style={{ borderColor: '#d4c4a0' }}>
           {[
-            { id: 'congress', label: 'Congress' },
+            { id: 'main', label: selectedProvince ? (selectedProvince.length > 12 ? selectedProvince.slice(0, 12) + '.' : selectedProvince) : 'Overview' },
             { id: 'layers', label: 'Layers' },
-            ...(selectedProvince ? [{ id: 'province', label: selectedProvince.length > 12 ? selectedProvince.slice(0, 12) + '.' : selectedProvince }] : []),
           ].map(tab => (
             <button
               key={tab.id}
@@ -91,20 +91,19 @@ export default function App() {
             className="fixed left-0 right-0 bg-cream border-t overflow-y-auto z-[1000]"
             style={{
               top: HEADER_H,
-              bottom: 46, /* tab bar height */
+              bottom: 46,
               borderColor: '#d4c4a0',
             }}
           >
             <div className="p-3">
-              {mobilePanel === 'congress' && (
+              {mobilePanel === 'main' && (
                 <ErrorBoundary>
                   <Suspense fallback={<LoadingSpinner />}>
-                    <BottomBar
-                      congress={congress}
-                      overlays={overlays}
-                      energyLayers={energyLayers}
-                      selectedProvince={selectedProvince}
+                    <ProvincePanel
+                      province={selectedProvince}
                       governors={governors}
+                      congress={congress}
+                      onClose={() => { setSelectedProvince(null); setMobilePanel(null); }}
                       mobile
                     />
                   </Suspense>
@@ -121,19 +120,6 @@ export default function App() {
                   mobile
                 />
               )}
-              {mobilePanel === 'province' && selectedProvince && (
-                <ErrorBoundary>
-                  <Suspense fallback={<LoadingSpinner />}>
-                    <ProvincePanel
-                      province={selectedProvince}
-                      governors={governors}
-                      congress={congress}
-                      onClose={() => { setSelectedProvince(null); setMobilePanel(null); }}
-                      mobile
-                    />
-                  </Suspense>
-                </ErrorBoundary>
-              )}
             </div>
           </div>
         )}
@@ -141,29 +127,33 @@ export default function App() {
     );
   }
 
-  // Desktop layout (unchanged)
+  // Desktop layout
+  const leftOffset = hasOverlay ? OVERLAY_W : 0;
+
   return (
     <div className="h-screen w-screen overflow-hidden bg-cream">
       <Header />
 
-      <ErrorBoundary>
-        <Suspense fallback={null}>
-          <BottomBar
-            congress={congress}
-            overlays={overlays}
-            energyLayers={energyLayers}
-            selectedProvince={selectedProvince}
-            governors={governors}
-          />
-        </Suspense>
-      </ErrorBoundary>
+      {/* Left sidebar: overlay-only (conditionally shown) */}
+      {hasOverlay && (
+        <ErrorBoundary>
+          <Suspense fallback={null}>
+            <BottomBar
+              overlays={overlays}
+              energyLayers={energyLayers}
+              selectedProvince={selectedProvince}
+            />
+          </Suspense>
+        </ErrorBoundary>
+      )}
 
+      {/* Map area */}
       <div
         className="fixed transition-all duration-300"
         style={{
           top: HEADER_H,
-          left: SIDEBAR_W,
-          right: panelWidth,
+          left: leftOffset,
+          right: RIGHT_PANEL_W,
           bottom: LAYER_BAR_H,
         }}
       >
@@ -180,6 +170,7 @@ export default function App() {
         <Legend choroplethMode={choroplethMode} showMining={overlays.mining} />
       </div>
 
+      {/* Right panel: main content (always visible) */}
       <ErrorBoundary>
         <Suspense fallback={<LoadingSpinner />}>
           <ProvincePanel
@@ -187,7 +178,7 @@ export default function App() {
             governors={governors}
             congress={congress}
             onClose={() => setSelectedProvince(null)}
-            width={panelWidth}
+            width={RIGHT_PANEL_W}
           />
         </Suspense>
       </ErrorBoundary>
