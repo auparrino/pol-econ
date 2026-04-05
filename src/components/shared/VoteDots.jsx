@@ -3,14 +3,16 @@ import votacionesRaw from '../../data/votaciones.json';
 
 const SEN_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
 const DIP_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
-const VOTE_COLOR_BB = { A: '#27ae60', N: '#C1121F', ABS: '#64748b' };
-const VOTE_LBL = { A: 'A', N: 'N', ABS: '~' };
+const VOTE_COLOR_BB = { A: '#27ae60', N: '#C1121F', ABS: '#64748b', X: '#64748b', U: '#94a3b8' };
+const VOTE_LBL = { A: 'A', N: 'N', ABS: '~', X: '~', U: '–' };
 
 const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
+const normName = s => s?.split(',')[0]?.trim().toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') || '';
+
 const votesByName = (() => {
   const map = {};
   for (const l of votacionesList) {
-    const key = l.n?.split(',')[0]?.trim().toUpperCase();
+    const key = normName(l.n);
     if (key && l.v) {
       if (!map[key]) map[key] = [];
       map[key].push({ v: l.v, c: l.c });
@@ -20,7 +22,7 @@ const votesByName = (() => {
 })();
 
 function VoteDotsRaw({ name, chamber }) {
-  const key = name?.split(',')[0]?.trim().toUpperCase();
+  const key = normName(name);
   const matches = votesByName[key];
   if (!matches) return null;
   const chamberKey = chamber === 'senadores' ? 'S' : 'D';
