@@ -1,6 +1,12 @@
-import { lazy, Suspense } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
+import ProvinceNews from './ProvinceNews';
 
 const OverlayPanel = lazy(() => import('./panels/OverlayPanel'));
+const CongressPanel = lazy(() => import('./panels/CongressPanel'));
+const ProvincialCongressPanel = lazy(() => import('./panels/ProvincialCongressPanel'));
+const CabinetPanel = lazy(() => import('./panels/CabinetPanel'));
+const ProvincialCabinetPanel = lazy(() => import('./panels/ProvincialCabinetPanel'));
+const EconomyPanel = lazy(() => import('./panels/EconomyPanel'));
 
 const PanelFallback = () => (
   <div className="flex items-center justify-center h-full">
@@ -8,10 +14,26 @@ const PanelFallback = () => (
   </div>
 );
 
-export default function BottomBar({ overlays, energyLayers, selectedProvince, mobile = false }) {
+const BASE_TABS = [
+  { id: 'congress', label: 'Congress' },
+  { id: 'cabinet', label: 'Cabinet' },
+  { id: 'economy', label: 'Economy' },
+  { id: 'news', label: 'News' },
+];
+
+export default function BottomBar({ congress, overlays, energyLayers, selectedProvince, governors, mobile = false }) {
   const hasOverlay = overlays?.mining || energyLayers?.length > 0;
 
-  if (!hasOverlay) return null;
+  const tabs = hasOverlay
+    ? [{ id: 'overlay', label: 'Overlays' }, ...BASE_TABS]
+    : BASE_TABS;
+
+  const [activeTab, setActiveTab] = useState('congress');
+
+  useEffect(() => {
+    if (hasOverlay) setActiveTab('overlay');
+    else if (activeTab === 'overlay') setActiveTab('congress');
+  }, [hasOverlay]); // eslint-disable-line
 
   return (
     <aside
@@ -19,24 +41,54 @@ export default function BottomBar({ overlays, energyLayers, selectedProvince, mo
       style={mobile ? { background: '#FFF8EB' } : {
         top: 56,
         bottom: 100,
-        width: 300,
+        width: 340,
         background: '#FFF8EB',
         borderRight: '1px solid #d4c4a0',
       }}
-      aria-label="Overlay panel"
+      role="tablist"
+      aria-label="Dashboard panels"
     >
-      {/* Header */}
-      <div className="px-3 py-2.5 shrink-0" style={{ borderBottom: '1px solid rgba(0,48,73,0.08)' }}>
-        <p className="text-[13px] px-3 py-1.5 rounded-lg font-semibold uppercase tracking-wider text-center"
-          style={{ background: '#003049', color: '#FDF0D5' }}>
-          Overlays
-        </p>
+      {/* Tabs stacked vertically */}
+      <div className="flex flex-col gap-1 px-3 py-2.5 shrink-0"
+        style={{ borderBottom: '1px solid rgba(0,48,73,0.08)' }}>
+        {tabs.map(tab => (
+          <button
+            key={tab.id}
+            onClick={() => setActiveTab(tab.id)}
+            role="tab"
+            aria-selected={activeTab === tab.id}
+            aria-controls={`panel-${tab.id}`}
+            className="text-[13px] px-3 py-1.5 rounded-lg font-semibold uppercase tracking-wider transition-all text-center"
+            style={activeTab === tab.id
+              ? { background: '#003049', color: '#FDF0D5' }
+              : { color: 'rgba(0,48,73,0.50)', background: 'rgba(0,48,73,0.04)' }
+            }
+          >
+            {tab.label}
+          </button>
+        ))}
       </div>
 
       {/* Panel content */}
-      <div className="flex-1 overflow-y-auto overflow-x-hidden min-h-0" style={{ padding: '12px 16px' }}>
+      <div id={`panel-${activeTab}`} role="tabpanel" className="flex-1 overflow-y-auto overflow-x-hidden min-h-0" style={{ padding: '12px 16px' }}>
         <Suspense fallback={<PanelFallback />}>
-          <OverlayPanel overlays={overlays} energyLayers={energyLayers} selectedProvince={selectedProvince} />
+          {activeTab === 'overlay' && <OverlayPanel overlays={overlays} energyLayers={energyLayers} selectedProvince={selectedProvince} />}
+          {activeTab === 'congress' && (selectedProvince
+            ? <ProvincialCongressPanel selectedProvince={selectedProvince} congress={congress} />
+            : <CongressPanel congress={congress} />
+          )}
+          {activeTab === 'cabinet' && (selectedProvince
+            ? <ProvincialCabinetPanel selectedProvince={selectedProvince} governors={governors} />
+            : <CabinetPanel />
+          )}
+          {activeTab === 'economy' && <EconomyPanel selectedProvince={selectedProvince} mobile={mobile} />}
+          {activeTab === 'news' && (
+            selectedProvince
+              ? <ProvinceNews province={selectedProvince} />
+              : <div className="flex flex-col items-center justify-center py-8 text-center">
+                  <p className="text-[13px] text-[#003049]/50">Select a province on the map to view provincial news summaries.</p>
+                </div>
+          )}
         </Suspense>
       </div>
     </aside>

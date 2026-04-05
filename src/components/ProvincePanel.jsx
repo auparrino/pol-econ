@@ -1,25 +1,13 @@
-import { useState, lazy, Suspense } from 'react';
+import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { politicalContext } from '../data/politicalContext';
 import { sociodemographic } from '../data/sociodemographic';
 import { officialSenators } from '../data/officialSenators';
 import votacionesRaw from '../data/votaciones.json';
 import { fiscalData } from '../data/fiscalData';
-import { governors as allGovernors } from '../data/governors';
-import { fmtNum } from '../utils/formatNumber';
+import EconomySummary from './economy/EconomySummary';
+// ProvinceNews moved to left sidebar (BottomBar tabs)
 
-const CongressPanel = lazy(() => import('./panels/CongressPanel'));
-const ProvincialCongressPanel = lazy(() => import('./panels/ProvincialCongressPanel'));
-const CabinetPanel = lazy(() => import('./panels/CabinetPanel'));
-const ProvincialCabinetPanel = lazy(() => import('./panels/ProvincialCabinetPanel'));
-const EconomyPanel = lazy(() => import('./panels/EconomyPanel'));
-const ProvinceNews = lazy(() => import('./ProvinceNews'));
-
-const PanelFallback = () => (
-  <div className="flex items-center justify-center py-8">
-    <div className="w-5 h-5 border-2 border-[#003049]/20 border-t-[#003049]/60 rounded-full animate-spin" />
-  </div>
-);
 
 // Voting topics metadata
 const VOTE_TOPICS = {
@@ -42,6 +30,10 @@ for (const leg of votacionesList) {
   }
 }
 
+// Pre-compute ruling bloc (LLA) majority position per topic per chamber.
+// For each topic, the "oficialista position" is the vote cast by >=90% of
+// present LLA legislators. A legislator's "Gov. align" % = how often they
+// voted the same way as the LLA bloc position.
 const OFICIALISMO_BLOCS = ['la libertad avanza'];
 const SENATE_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
 const DEPUTY_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
@@ -59,10 +51,11 @@ function computeBlocPosition(chamber, topics) {
       if (v) { voteCounts[v] = (voteCounts[v] || 0) + 1; totalPresent++; }
     }
     if (totalPresent === 0) { positions[topic] = null; continue; }
+    // Find the vote cast by >=90% of present bloc members
     for (const [vote, count] of Object.entries(voteCounts)) {
       if (count / totalPresent >= 0.9) { positions[topic] = vote; break; }
     }
-    if (!positions[topic]) positions[topic] = null;
+    if (!positions[topic]) positions[topic] = null; // no clear >=90% majority
   }
   return positions;
 }
@@ -70,12 +63,12 @@ function computeBlocPosition(chamber, topics) {
 const senateBlocPos = computeBlocPosition('S', SENATE_TOPICS);
 const deputyBlocPos = computeBlocPosition('D', DEPUTY_TOPICS);
 
-/* ── Shared UI components ── */
-
 function InfoTooltip({ text }) {
   const [rect, setRect] = useState(null);
+
   const handleEnter = (e) => setRect(e.currentTarget.getBoundingClientRect());
   const handleLeave = () => setRect(null);
+
   return (
     <span className="inline-flex ml-1 align-middle">
       <span
@@ -86,7 +79,11 @@ function InfoTooltip({ text }) {
       {rect && createPortal(
         <div
           className="fixed z-[99999] w-[210px] bg-[#003049] text-[#FDF0D5] text-[9px] rounded px-2.5 py-2 leading-relaxed shadow-xl pointer-events-none normal-case tracking-normal font-normal"
-          style={{ top: rect.top - 8, left: rect.left + rect.width / 2, transform: 'translate(-50%, -100%)' }}
+          style={{
+            top: rect.top - 8,
+            left: rect.left + rect.width / 2,
+            transform: 'translate(-50%, -100%)',
+          }}
         >
           {text}
           <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#003049]" />
@@ -124,27 +121,19 @@ function DataRow({ label, value, color, info }) {
   );
 }
 
-const ALIGNMENT_LABELS = {
-  'oficialismo': 'Ruling Coalition',
-  'aliado': 'Allied',
-  'negociador': 'Swing Vote',
-  'oposición dura': 'Hard Opposition',
-  'oposición': 'Opposition',
-};
-
 function AlignmentBadge({ alignment }) {
   const a = alignment?.toLowerCase() || '';
-  let bg, text, label;
-  if (a.includes('oficialismo')) { bg = 'bg-purple-500/15'; text = 'text-[#8e44ad]'; label = ALIGNMENT_LABELS['oficialismo']; }
-  else if (a.includes('aliado')) { bg = 'bg-teal-500/15'; text = 'text-[#17a589]'; label = ALIGNMENT_LABELS['aliado']; }
-  else if (a.includes('negociador') || a.includes('pragmát')) { bg = 'bg-yellow-500/20'; text = 'text-[#d68910]'; label = ALIGNMENT_LABELS['negociador']; }
-  else if (a.includes('oposición dura')) { bg = 'bg-red-800/15'; text = 'text-[#780000]'; label = ALIGNMENT_LABELS['oposición dura']; }
-  else if (a.includes('oposición')) { bg = 'bg-red-500/15'; text = 'text-[#C1121F]'; label = ALIGNMENT_LABELS['oposición']; }
-  else { bg = 'bg-steel/20'; text = 'text-steel'; label = null; }
+  let bg, text;
+  if (a.includes('oficialismo')) { bg = 'bg-purple-500/15'; text = 'text-[#8e44ad]'; }
+  else if (a.includes('aliado')) { bg = 'bg-teal-500/15'; text = 'text-[#17a589]'; }
+  else if (a.includes('negociador') || a.includes('pragmát')) { bg = 'bg-yellow-500/20'; text = 'text-[#d68910]'; }
+  else if (a.includes('oposición dura')) { bg = 'bg-red-800/15'; text = 'text-[#780000]'; }
+  else if (a.includes('oposición')) { bg = 'bg-red-500/15'; text = 'text-[#C1121F]'; }
+  else { bg = 'bg-steel/20'; text = 'text-steel'; }
 
   return (
-    <span className={`inline-block text-[12px] font-bold px-3 py-1 rounded uppercase tracking-wider ${bg} ${text}`}>
-      {label || alignment || 'N/A'}
+    <span className={`inline-block text-[12px] font-bold px-2 py-0.5 rounded uppercase tracking-wider ${bg} ${text}`}>
+      {alignment || 'S/D'}
     </span>
   );
 }
@@ -156,6 +145,51 @@ const COALITION_COLORS = {
   PJ: '#2980b9',
   OTROS: '#669BBC',
 };
+
+function parseLegComp(str) {
+  if (!str) return null;
+  const isBicameral = /bicameral/i.test(str);
+  if (!isBicameral) {
+    const of = str.match(/of\.\s*([\d.]+)/)?.[1];
+    const op = str.match(/op\.\s*([\d.]+)/)?.[1];
+    if (of && op) return [{ label: null, of: parseFloat(of), op: parseFloat(op) }];
+  } else {
+    const dipOf = str.match(/Dip\..*?of\.\s*([\d.]+)/)?.[1];
+    const dipOp = str.match(/Dip\..*?op\.\s*([\d.]+)/)?.[1];
+    const senOf = str.match(/Sen\..*?of\.\s*([\d.]+)/)?.[1];
+    const senOp = str.match(/Sen\..*?op\.\s*([\d.]+)/)?.[1];
+    const res = [];
+    if (dipOf && dipOp) res.push({ label: 'Dip.', of: parseFloat(dipOf), op: parseFloat(dipOp) });
+    if (senOf && senOp) res.push({ label: 'Sen.', of: parseFloat(senOf), op: parseFloat(senOp) });
+    if (res.length) return res;
+  }
+  return null;
+}
+
+function LegislaturaBars({ composicion }) {
+  const parsed = parseLegComp(composicion);
+  if (!parsed) return <span className="text-[14px] text-[#003049]">{composicion}</span>;
+  return (
+    <div className="space-y-1.5 mt-1">
+      {parsed.map(({ label, of, op }, i) => (
+        <div key={i}>
+          <div className="flex justify-between text-[13px] mb-0.5">
+            {label && <span className="text-[#003049]/50">{label}</span>}
+            <span className="ml-auto">
+              <span style={{ color: '#7d3c98' }}>of. {of}%</span>
+              <span className="text-[#003049]/40 mx-1">·</span>
+              <span style={{ color: '#C1121F' }}>op. {op}%</span>
+            </span>
+          </div>
+          <div className="flex h-[5px] rounded-full overflow-hidden bg-[#003049]/10">
+            <div style={{ width: `${of}%`, backgroundColor: '#7d3c98', opacity: 0.75 }} />
+            <div style={{ width: `${op}%`, backgroundColor: '#C1121F', opacity: 0.75 }} />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 function HBar({ value, max, color = '#669BBC', label, info }) {
   const pct = Math.min((value / max) * 100, 100);
@@ -210,19 +244,19 @@ function SocioSection({ province }) {
             max={100}
             color={fiscalColor}
             label="Fed. transfers"
-            info="% of total provincial revenues from national transfers (coparticipacion + discretionary). Source: Ministerio de Economia / IARAF 2023."
+            info="% of total provincial revenues from national transfers (coparticipación + discretionary). Source: Ministerio de Economía / IARAF 2023."
           />
         )}
       </div>
       <div className="mt-2">
-        <DataRow label="PBG/cap (PPP)" value={`$${fmtNum(data.pbg_per_capita_usd)}`} color="text-success" />
+        <DataRow label="PBG/cap (PPP)" value={`$${data.pbg_per_capita_usd?.toLocaleString('en-US')}`} color="text-success" />
         <DataRow label="Schooling" value={`${data.escolaridad} yrs`} />
         <DataRow label="Literacy" value={`${data.alfabetismo}%`} />
         {fiscal && (
           <DataRow
             label="Own revenues"
             value={`${fiscal.recursos_propios_pct}%`}
-            info="% of total provincial revenues from own sources (provincial taxes, royalties). Complement of federal transfers. Source: Ministerio de Economia / IARAF 2023."
+            info="% of total provincial revenues from own sources (provincial taxes, royalties). Complement of federal transfers. Source: Ministerio de Economía / IARAF 2023."
           />
         )}
       </div>
@@ -231,7 +265,7 @@ function SocioSection({ province }) {
 }
 
 function AlignmentBar({ value }) {
-  if (value == null) return <span className="text-[12px] text-[#003049]/60 italic">N/A</span>;
+  if (value == null) return <span className="text-[12px] text-[#003049]/60 italic">S/D</span>;
   const pct = Math.min(value, 100);
   const color = pct >= 75 ? '#7d3c98' : pct >= 50 ? '#17a589' : pct >= 25 ? '#d4a800' : '#780000';
   return (
@@ -267,18 +301,26 @@ function VoteDot({ topic, vote }) {
 
 function LegislatorCard({ leg }) {
   const coColor = COALITION_COLORS[leg.co] || COALITION_COLORS.OTROS;
+
+  // Look up vote data from xlsx
   const lastName = leg.n?.split(',')[0]?.trim().toUpperCase();
   const matches = votacionesByName[lastName] || [];
+  // Pick the one matching chamber (senadores -> S, diputados -> D)
   const chamberKey = leg.c === 'senadores' ? 'S' : 'D';
   const voteRecord = matches.find(m => m.c === chamberKey) || matches[0];
   const votes = voteRecord?.v || {};
+
+  // Topics for this chamber
   const chamberTopics = leg.c === 'senadores' ? SENATE_TOPICS : DEPUTY_TOPICS;
   const blocPos = leg.c === 'senadores' ? senateBlocPos : deputyBlocPos;
+
   const hasAnyVote = chamberTopics.some(t => votes[t]);
 
+  // Compute alla: % of votes matching the ruling bloc's >=90% position
   const computedAlla = (() => {
     if (leg.alla != null) return leg.alla;
     if (!votes || Object.keys(votes).length === 0) return null;
+    // Only count topics where both legislator voted AND bloc had a clear position
     const comparable = chamberTopics.filter(t => votes[t] && blocPos[t]);
     if (!comparable.length) return null;
     const aligned = comparable.filter(t => votes[t] === blocPos[t]).length;
@@ -286,7 +328,7 @@ function LegislatorCard({ leg }) {
   })();
 
   return (
-    <div className="py-1.5 border-b border-[#003049]/10 last:border-0">
+    <div className="py-1.5 border-b border-steel-dim/10 last:border-0">
       <div className="flex items-center gap-2">
         <div className="w-1.5 h-1.5 rounded-full shrink-0 mt-0.5" style={{ backgroundColor: coColor }} />
         <div className="flex-1 min-w-0">
@@ -313,6 +355,7 @@ function LegislatorCard({ leg }) {
   );
 }
 
+// Constitutional deputy seats per province
 const DEPUTY_SEATS_BY_PROV = {
   'buenos aires': 70, 'caba': 25, 'ciudad de buenos aires': 25,
   'catamarca': 5, 'chaco': 7, 'chubut': 5, 'córdoba': 18, 'cordoba': 18,
@@ -328,6 +371,7 @@ function LegislatorsSection({ province, congress }) {
   const provName = province?.toLowerCase();
   const isCABA = provName?.includes('ciudad de buenos aires') || provName === 'caba';
 
+  // Get comovoto data for this province
   const comovotoLegislators = congress
     ? Object.entries(congress.byProvince).find(([key]) => {
         const k = key.toLowerCase();
@@ -337,16 +381,20 @@ function LegislatorsSection({ province, congress }) {
       })?.[1] || []
     : [];
 
+  // Build senators from official list, merging comovoto alignment
   const comovotoSenators = comovotoLegislators.filter(l => l.c === 'senadores');
   const officialProvSenators = officialSenators.filter(s => {
     const sp = s.p?.toLowerCase();
     if (isCABA) return sp === 'ciudad de buenos aires';
+    // Guard against CABA/Buenos Aires confusion
     if (sp === 'ciudad de buenos aires') return false;
     return sp === provName || sp?.includes(provName) || provName?.includes(sp);
   });
 
+  // Normalize accented characters for matching
   const norm = s => s?.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().trim() || '';
 
+  // Merge: for each official senator, find matching comovoto entry
   const senators = officialProvSenators.map(official => {
     const officialLast = norm(official.n?.split(',')[0]);
     const match = comovotoSenators.find(cv => {
@@ -354,17 +402,25 @@ function LegislatorsSection({ province, congress }) {
       return officialLast === cvLast;
     });
     return {
-      n: official.n, b: official.b, co: match?.co || official.co,
-      alla: match?.alla ?? null, pres: match?.pres ?? null, c: 'senadores',
+      n: official.n,
+      b: official.b,
+      co: match?.co || official.co,
+      alla: match?.alla ?? null,
+      pres: match?.pres ?? null,
+      c: 'senadores',
       term: `${official.desde}–${official.hasta}`,
     };
   });
 
+  // Deputies from comovoto only (no official list available)
   const sortByAlign = (a, b) => (b.alla ?? -1) - (a.alla ?? -1);
   const deputies = comovotoLegislators.filter(l => l.c === 'diputados').sort(sortByAlign);
   const expectedDeps = DEPUTY_SEATS_BY_PROV[provName] || DEPUTY_SEATS_BY_PROV[isCABA ? 'caba' : ''] || '?';
+
+  // Sort senators: those with alignment first (sorted by alignment), then those without
   senators.sort(sortByAlign);
 
+  // Average gov alignment for the province (from comovoto data)
   const allWithAlign = comovotoLegislators.filter(l => l.alla != null);
   const avgAlign = allWithAlign.length > 0
     ? allWithAlign.reduce((s, l) => s + l.alla, 0) / allWithAlign.length
@@ -376,7 +432,7 @@ function LegislatorsSection({ province, congress }) {
     <>
       {avgAlign != null && (
         <Section title="Overall Legislative Alignment"
-          tooltip="Measures how often each legislator votes the same way as the LLA ruling bloc across all congressional votes. Source: comovoto.dev.ar."
+          tooltip="Measures how often each legislator votes the same way as the LLA ruling bloc across all congressional votes (147+ Diputados, 154+ Senado since Dec 2023). Source: comovoto.dev.ar (updated weekly from votaciones.hcdn.gob.ar and senado.gob.ar)."
         >
           <p className="text-[12px] text-[#003049]/50 mb-1.5 leading-tight">
             % of all congressional votes aligned with the LLA ruling bloc. Source: comovoto.dev.ar
@@ -400,14 +456,18 @@ function LegislatorsSection({ province, congress }) {
       {senators.length > 0 && (
         <Section title={`Senators (${senators.length})`}>
           <div className="bg-[#003049]/6 rounded-md p-2 border border-[#003049]/10">
-            {senators.map((leg, i) => <LegislatorCard key={i} leg={leg} />)}
+            {senators.map((leg, i) => (
+              <LegislatorCard key={i} leg={leg} />
+            ))}
           </div>
         </Section>
       )}
       {deputies.length > 0 && (
         <Section title={`Deputies (${deputies.length}/${expectedDeps})`}>
           <div className="bg-[#003049]/6 rounded-md p-2 border border-[#003049]/10 max-h-[200px] overflow-y-auto">
-            {deputies.map((leg, i) => <LegislatorCard key={i} leg={leg} />)}
+            {deputies.map((leg, i) => (
+              <LegislatorCard key={i} leg={leg} />
+            ))}
             {deputies.length < expectedDeps && (
               <p className="text-[12px] text-[#003049]/60 italic mt-1">
                 {expectedDeps - deputies.length} seats without data in comovoto
@@ -420,99 +480,32 @@ function LegislatorsSection({ province, congress }) {
   );
 }
 
-/* ── National Overview ── */
+// EconomicSection replaced by EconomySummary component (economy/EconomySummary.jsx)
 
-function NationalOverview() {
-  const totalPop = allGovernors.reduce((s, g) => s + (g.poblacion_censo_2022 || 0), 0);
-  const totalArea = allGovernors.reduce((s, g) => s + (g.superficie_km2 || 0), 0);
-  const density = totalArea > 0 ? (totalPop / totalArea).toFixed(1) : '–';
-
-  return (
-    <div className="mb-4">
-      <div className="bg-[#003049]/6 rounded-md p-3 border border-[#003049]/10">
-        <p className="text-[16px] font-bold text-[#003049]">Argentina</p>
-        <div className="flex gap-4 mt-1 text-[13px] text-[#003049]/60">
-          <span>Pop: {fmtNum(totalPop)}</span>
-          <span>Area: {fmtNum(totalArea)} km²</span>
-          <span>Density: {density} hab/km²</span>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/* ── Tab definitions ── */
-
-const PROVINCE_TABS = [
-  { id: 'congress', label: 'Congress' },
-  { id: 'cabinet', label: 'Cabinet' },
-  { id: 'economy', label: 'Economy' },
-  { id: 'news', label: 'News' },
-];
-
-const NATIONAL_TABS = [
-  { id: 'congress', label: 'Congress' },
-  { id: 'cabinet', label: 'Cabinet' },
-  { id: 'economy', label: 'Economy' },
-];
-
-/* ── Main Component ── */
-
-export default function ProvincePanel({ province, governors, congress, onClose, width = 340, mobile = false }) {
-  const [activeTab, setActiveTab] = useState('congress');
-
-  // Empty state: no province selected and no tabs
+export default function ProvincePanel({ province, governors, congress, onClose, width = 320, mobile = false }) {
   if (!province) {
-    const tabs = NATIONAL_TABS;
-
     if (mobile) return null;
-
     return (
       <aside
-        className="fixed top-[56px] right-0 border-l z-[999] flex flex-col transition-all duration-300"
+        className="fixed top-[56px] right-0 border-l z-[999] flex items-center justify-center p-6 transition-all duration-300"
         style={{ width, bottom: 100, background: '#FFF8EB', borderColor: '#d4c4a0' }}
       >
-        {/* National header */}
-        <div className="sticky top-0 border-b z-10" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.10)', padding: '12px 16px' }}>
-          <h2 className="text-[18px] font-black text-[#003049] tracking-tight">ARGENTINA</h2>
-          <p className="text-[14px] text-steel mt-0.5">Political Dashboard</p>
-        </div>
-
-        {/* Tab bar */}
-        <div className="flex gap-1 px-3 py-2 shrink-0" style={{ borderBottom: '1px solid rgba(0,48,73,0.08)' }}>
-          {tabs.map(tab => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className="text-[12px] px-3 py-1.5 rounded-lg font-semibold uppercase tracking-wider transition-all flex-1 text-center"
-              style={activeTab === tab.id
-                ? { background: '#003049', color: '#FDF0D5' }
-                : { color: 'rgba(0,48,73,0.50)', background: 'rgba(0,48,73,0.04)' }
-              }
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Tab content */}
-        <div className="flex-1 overflow-y-auto overflow-x-hidden min-h-0" style={{ padding: '12px 16px' }}>
-          <NationalOverview />
-          <Suspense fallback={<PanelFallback />}>
-            {activeTab === 'congress' && <CongressPanel congress={congress} />}
-            {activeTab === 'cabinet' && <CabinetPanel />}
-            {activeTab === 'economy' && <EconomyPanel selectedProvince={null} mobile={mobile} />}
-          </Suspense>
+        <div className="text-center">
+          <div className="text-4xl mb-3 opacity-30">🗺</div>
+          <p className="text-[11px] text-[#003049]/60">
+            Click a province on the map<br />to view detailed information
+          </p>
         </div>
       </aside>
     );
   }
 
-  // Province selected
   const gov = (() => {
     const s = province.toLowerCase();
+    // Exact match first
     const exact = governors.find(g => g.provincia?.toLowerCase() === s);
     if (exact) return exact;
+    // Fuzzy match but avoid Buenos Aires / Ciudad de Buenos Aires confusion
     return governors.find(g => {
       const p = g.provincia?.toLowerCase();
       if (!p) return false;
@@ -535,96 +528,74 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
     });
   })();
 
-  const tabs = PROVINCE_TABS;
-
   return (
     <aside
-      className={mobile ? 'overflow-y-auto overflow-x-hidden' : 'fixed top-[56px] right-0 border-l z-[999] flex flex-col overflow-hidden transition-all duration-300'}
+      className={mobile ? 'overflow-y-auto overflow-x-hidden' : 'fixed top-[56px] right-0 border-l z-[999] overflow-y-auto overflow-x-hidden transition-all duration-300'}
       style={mobile ? { background: '#FFF8EB' } : { width, bottom: 100, background: '#FFF8EB', borderColor: '#d4c4a0' }}
     >
-      {/* Sticky header */}
-      <div className="sticky top-0 border-b z-10 shrink-0" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.10)', padding: '12px 16px' }}>
+      {/* Header */}
+      <div className="sticky top-0 border-b z-10" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.10)', padding: '12px 16px' }}>
         <div className="flex items-start justify-between">
           <div>
-            <h2 className="text-[18px] font-black text-[#003049] tracking-tight">{province}</h2>
+            <h2 className="text-[18px] font-black text-[#003049] tracking-tight">
+              {province}
+            </h2>
             {gov && (
               <p className="text-[14px] text-steel mt-0.5">
-                {gov.region} · {fmtNum(gov.superficie_km2)} km²
+                {gov.region} · {gov.superficie_km2?.toLocaleString('es-AR')} km²
               </p>
             )}
           </div>
-          <button onClick={onClose} className="text-[#003049]/40 hover:text-[#003049] transition-colors text-lg leading-none p-1">×</button>
-        </div>
-        {gov && (
-          <div className="flex items-center justify-between mt-2">
-            <div>
-              <span className="text-[15px] font-bold text-[#003049]">{gov.gobernador}</span>
-              <p className="text-[13px] text-steel mt-0.5">{gov.partido}</p>
-            </div>
-            <AlignmentBadge alignment={gov.alineamiento_nacion} />
-          </div>
-        )}
-      </div>
-
-      {/* Tab bar */}
-      <div className="flex gap-1 px-3 py-2 shrink-0" style={{ borderBottom: '1px solid rgba(0,48,73,0.08)' }}>
-        {tabs.map(tab => (
           <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className="text-[12px] px-3 py-1.5 rounded-lg font-semibold uppercase tracking-wider transition-all flex-1 text-center"
-            style={activeTab === tab.id
-              ? { background: '#003049', color: '#FDF0D5' }
-              : { color: 'rgba(0,48,73,0.50)', background: 'rgba(0,48,73,0.04)' }
-            }
+            onClick={onClose}
+            className="text-[#003049]/40 hover:text-[#003049] transition-colors text-lg leading-none p-1"
           >
-            {tab.label}
+            ×
           </button>
-        ))}
+        </div>
       </div>
 
-      {/* Scrollable content */}
-      <div className="flex-1 overflow-y-auto overflow-x-hidden min-h-0" style={{ padding: '12px 16px' }}>
-        {activeTab === 'congress' && (
+      <div style={{ padding: '16px 18px' }}>
+        {gov ? (
           <>
-            {/* Demographics + Socio in Congress tab as overview */}
-            {gov && (
-              <>
-                <Section title="Demographics">
-                  <DataRow label="Population" value={fmtNum(gov.poblacion_censo_2022)} />
-                  <DataRow label="Density" value={gov.densidad ? `${gov.densidad} hab/km²` : null} />
-                  <DataRow label="Area" value={`${fmtNum(gov.superficie_km2)} km²`} />
-                  <DataRow label="Region" value={gov.region} />
-                </Section>
-                <SocioSection province={province} />
-                {polContext?.rigi_adhesion_provincial && (
-                  <Section title="RIGI">
-                    <div className="bg-[#003049]/6 rounded-md p-2 border border-[#003049]/10">
-                      <DataRow label="Status" value={polContext.rigi_adhesion_provincial} />
-                    </div>
-                  </Section>
-                )}
-              </>
+            {/* Governor summary */}
+            <div className="bg-[#003049]/6 rounded-md p-3 border border-[#003049]/10 mb-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <span className="text-[16px] font-bold text-[#003049]">{gov.gobernador}</span>
+                  <p className="text-[14px] text-steel mt-0.5">{gov.partido}</p>
+                </div>
+                <AlignmentBadge alignment={gov.alineamiento_nacion} />
+              </div>
+            </div>
+
+            {/* Demographics */}
+            <Section title="Demographics">
+              <DataRow label="Population" value={gov.poblacion_censo_2022?.toLocaleString('es-AR')} />
+              <DataRow label="Density" value={gov.densidad ? `${gov.densidad} hab/km²` : null} />
+              <DataRow label="Area" value={`${gov.superficie_km2?.toLocaleString('es-AR')} km²`} />
+              <DataRow label="Region" value={gov.region} />
+            </Section>
+
+            {/* Socioeconomic */}
+            <SocioSection province={province} />
+
+            {/* RIGI */}
+            {polContext?.rigi_adhesion_provincial && (
+              <Section title="RIGI">
+                <div className="bg-[#003049]/6 rounded-md p-2 border border-[#003049]/10">
+                  <DataRow label="Status" value={polContext.rigi_adhesion_provincial} />
+                </div>
+              </Section>
             )}
-            <Suspense fallback={<PanelFallback />}>
-              <LegislatorsSection province={province} congress={congress} />
-            </Suspense>
+
+            {/* Economic summary (SIPA + Fiscal + Exports) */}
+            <EconomySummary province={province} Section={Section} DataRow={DataRow} />
           </>
-        )}
-        {activeTab === 'cabinet' && (
-          <Suspense fallback={<PanelFallback />}>
-            <ProvincialCabinetPanel selectedProvince={province} governors={governors} />
-          </Suspense>
-        )}
-        {activeTab === 'economy' && (
-          <Suspense fallback={<PanelFallback />}>
-            <EconomyPanel selectedProvince={province} mobile={mobile} />
-          </Suspense>
-        )}
-        {activeTab === 'news' && (
-          <Suspense fallback={<PanelFallback />}>
-            <ProvinceNews province={province} />
-          </Suspense>
+        ) : (
+          <p className="text-[10px] text-[#003049]/60 italic">
+            Data not yet loaded for this province.
+          </p>
         )}
       </div>
     </aside>

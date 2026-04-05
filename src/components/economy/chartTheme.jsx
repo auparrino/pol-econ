@@ -29,10 +29,10 @@ export const CATEGORY_COLORS = {
 };
 
 export const CATEGORY_LABELS = {
-  pp: 'Primary Prod.',
+  pp: 'Prod. Primarios',
   moa: 'MOA',
   moi: 'MOI',
-  cye: 'Fuels & Energy',
+  cye: 'Comb. y Energía',
 };
 
 // Tax type colors
@@ -45,11 +45,11 @@ export const TAX_COLORS = {
 };
 
 export const TAX_LABELS = {
-  iibb: 'Gross Income',
-  inmobiliario: 'Property',
-  automotores: 'Vehicle',
-  sellos: 'Stamp',
-  otros: 'Other',
+  iibb: 'Ingresos Brutos',
+  inmobiliario: 'Inmobiliario',
+  automotores: 'Automotores',
+  sellos: 'Sellos',
+  otros: 'Otros',
 };
 
 // Recharts shared tooltip style

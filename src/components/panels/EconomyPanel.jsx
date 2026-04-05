@@ -3,13 +3,11 @@ import { useEconomyData, sipaData } from '../../hooks/useEconomyData';
 import EmploymentSection from '../economy/EmploymentSection';
 import FiscalSection from '../economy/FiscalSection';
 import ExportsSection from '../economy/ExportsSection';
-import ProductionSection from '../economy/ProductionSection';
 
 const SUB_TABS = [
   { id: 'employment', label: 'Employment' },
   { id: 'fiscal', label: 'Fiscal' },
   { id: 'exports', label: 'Exports' },
-  { id: 'production', label: 'Production' },
 ];
 
 export default function EconomyPanel({ selectedProvince, mobile = false }) {
@@ -40,7 +38,7 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
           <button
             key={tab.id}
             onClick={() => setSubTab(tab.id)}
-            className="text-[11px] px-2 py-1.5 rounded-lg font-semibold uppercase tracking-wider transition-all flex-1 text-center"
+            className="text-[12px] px-3 py-1.5 rounded-lg font-semibold uppercase tracking-wider transition-all flex-1 text-center"
             style={subTab === tab.id
               ? { background: '#003049', color: '#FDF0D5' }
               : { color: 'rgba(0,48,73,0.50)', background: 'rgba(0,48,73,0.06)' }
@@ -70,13 +68,9 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
           : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No export data available for this province.</p>
       )}
 
-      {subTab === 'production' && (
-        <ProductionSection provinceName={selectedProvince} sipaSectors={sipa?.sectors} mobile={mobile} />
-      )}
-
       {/* Source footer */}
       <p className="text-[10px] text-[#003049]/30 mt-4 leading-relaxed">
-        Sources: CEP XXI/SIPA (employment), Sec. Hacienda TOP/EAIF (fiscal), INDEC (exports), CEPAL (production)
+        Sources: CEP XXI/SIPA (employment), Sec. Hacienda TOP/EAIF (fiscal), INDEC (exports)
       </p>
     </div>
   );
