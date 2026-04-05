@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { politicalContext } from '../../data/politicalContext';
 import { officialSenators } from '../../data/officialSenators';
+import { officialDeputies } from '../../data/officialDeputies';
 import votacionesRaw from '../../data/votaciones.json';
 import VoteDots from '../shared/VoteDots';
 import { matchProvince, blocColor } from '../shared/helpers';
@@ -136,10 +137,20 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
     return { n: official.n, b: official.b, alla, c: 'senadores' };
   }).sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
 
-  const deputies = comovotoLegs.filter(l => l.c === 'diputados').map(l => ({
-    ...l,
-    alla: computeAlla(l.n, 'D') // Override comovoto alla with our calculation
-  })).sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
+  // Deputies: use official HCDN list, merge with comovoto voting data
+  const comovotoDeps = comovotoLegs.filter(l => l.c === 'diputados');
+  const officialProvDeps = officialDeputies.filter(d => {
+    const dp = d.p?.toLowerCase();
+    if (isCABA) return dp === 'ciudad de buenos aires';
+    if (dp === 'ciudad de buenos aires') return false;
+    return dp === pn || dp?.includes(pn) || pn?.includes(dp);
+  });
+  const deputies = officialProvDeps.map(official => {
+    const lastName = normalizeN(official.n?.split(',')[0]);
+    const match = comovotoDeps.find(cv => normalizeN(cv.n?.split(',')[0]) === lastName);
+    const alla = computeAlla(official.n, 'D');
+    return { n: official.n, b: official.b, alla, c: 'diputados', co: match?.co || official.co };
+  }).sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
 
   const LegRow = ({ l }) => {
     const alla = l.alla;
@@ -225,7 +236,7 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
             <div className="space-y-0">
               {deputies.map((l, i) => (
                 <div key={i} className="flex items-center gap-1 py-px">
-                  <span className="text-[11px] font-semibold text-[#003049] truncate flex-1 min-w-0">{l.n?.split(',')[0]}</span>
+                  <span className="text-[11px] font-semibold text-[#003049] truncate flex-1 min-w-0">{l.n}</span>
                   <VoteDots name={l.n} chamber={l.c} />
                   <span className="text-[10px] font-mono shrink-0 w-[28px] text-right" style={{
                     color: l.alla != null ? (l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#780000') : '#003049'

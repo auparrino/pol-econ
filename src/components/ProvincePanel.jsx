@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { politicalContext } from '../data/politicalContext';
 import { sociodemographic } from '../data/sociodemographic';
 import { officialSenators } from '../data/officialSenators';
+import { officialDeputies } from '../data/officialDeputies';
 import votacionesRaw from '../data/votaciones.json';
 import { fiscalData } from '../data/fiscalData';
 import EconomySummary from './economy/EconomySummary';
@@ -420,9 +421,27 @@ function LegislatorsSection({ province, congress }) {
     };
   });
 
-  // Deputies from comovoto only (no official list available)
+  // Deputies from official HCDN list, merging comovoto voting data
   const sortByAlign = (a, b) => (b.alla ?? -1) - (a.alla ?? -1);
-  const deputies = comovotoLegislators.filter(l => l.c === 'diputados').sort(sortByAlign);
+  const comovotoDeputies = comovotoLegislators.filter(l => l.c === 'diputados');
+  const officialProvDeputies = officialDeputies.filter(d => {
+    const dp = d.p?.toLowerCase();
+    if (isCABA) return dp === 'ciudad de buenos aires';
+    if (dp === 'ciudad de buenos aires') return false;
+    return dp === provName || dp?.includes(provName) || provName?.includes(dp);
+  });
+  const deputies = officialProvDeputies.map(official => {
+    const officialLast = norm(official.n?.split(',')[0]);
+    const match = comovotoDeputies.find(cv => norm(cv.n?.split(',')[0]) === officialLast);
+    return {
+      n: official.n,
+      b: official.b,
+      co: match?.co || official.co,
+      alla: match?.alla ?? null,
+      c: 'diputados',
+      term: `${official.desde}–${official.hasta}`,
+    };
+  }).sort(sortByAlign);
   const expectedDeps = DEPUTY_SEATS_BY_PROV[provName] || DEPUTY_SEATS_BY_PROV[isCABA ? 'caba' : ''] || '?';
 
   // Sort senators: those with alignment first (sorted by alignment), then those without
