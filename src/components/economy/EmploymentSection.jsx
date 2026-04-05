@@ -89,7 +89,8 @@ export default function EmploymentSection({ sipa, mobile }) {
         {(() => {
           const shown = topSectors.slice(0, 8);
           const shownPct = shown.reduce((s, sec) => s + sec.share_pct, 0);
-          const otherPct = Math.max(0, 100 - shownPct);
+          const publicPct = sipa.public > 0 ? (sipa.public / sipa.total * 100) : 0;
+          const otherPrivatePct = Math.max(0, 100 - shownPct - publicPct);
           return (
             <div className="h-[10px] bg-[#003049]/10 rounded-full overflow-hidden flex mb-2">
               {shown.map(s => (
@@ -100,11 +101,18 @@ export default function EmploymentSection({ sipa, mobile }) {
                   title={`${translateSector(s.clae2, s.name)}: ${s.share_pct}%`}
                 />
               ))}
-              {otherPct > 0.5 && (
+              {otherPrivatePct > 0.5 && (
                 <div
                   className="h-full"
-                  style={{ width: `${otherPct}%`, backgroundColor: '#d4d4d8' }}
-                  title={`Other: ${otherPct.toFixed(1)}%`}
+                  style={{ width: `${otherPrivatePct}%`, backgroundColor: '#d4d4d8' }}
+                  title={`Other private sectors: ${otherPrivatePct.toFixed(1)}%`}
+                />
+              )}
+              {publicPct > 0 && (
+                <div
+                  className="h-full"
+                  style={{ width: `${publicPct}%`, backgroundColor: '#f97316' }}
+                  title={`Public employment: ${publicPct.toFixed(1)}%`}
                 />
               )}
             </div>
@@ -115,6 +123,19 @@ export default function EmploymentSection({ sipa, mobile }) {
           {topSectors.map(s => (
             <SectorBar key={s.clae2} {...s} />
           ))}
+          {/* Public employment as a sector row */}
+          {sipa.public > 0 && (
+            <div className="flex items-center gap-1.5 py-[3px] border-t border-[#003049]/8 mt-1 pt-1" title={`Public employment: ${fmtNum(sipa.public)}`}>
+              <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: '#f97316' }} />
+              <span className="text-[12px] text-[#003049]/70 flex-1 min-w-0 break-words leading-tight font-semibold">Public employment</span>
+              <span className="text-[11px] font-mono text-[#003049]/50 shrink-0">
+                {fmtK(sipa.public)}
+              </span>
+              <span className="text-[11px] font-mono text-[#003049]/40 w-[38px] text-right shrink-0">
+                {(sipa.public / sipa.total * 100).toFixed(1)}%
+              </span>
+            </div>
+          )}
         </div>
       </div>
 

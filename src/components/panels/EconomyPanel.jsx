@@ -40,7 +40,7 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
           <button
             key={tab.id}
             onClick={() => setSubTab(tab.id)}
-            className="text-[11px] px-2 py-1.5 rounded-lg font-semibold uppercase tracking-wider transition-all flex-1 text-center"
+            className="text-[10px] px-1.5 py-1.5 rounded-lg font-semibold uppercase tracking-wide transition-all flex-1 text-center"
             style={subTab === tab.id
               ? { background: '#003049', color: '#FDF0D5' }
               : { color: 'rgba(0,48,73,0.50)', background: 'rgba(0,48,73,0.06)' }

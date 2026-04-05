@@ -35,7 +35,7 @@ export default function App() {
   const { congress } = useCongressData();
   const isMobile = useIsMobile();
 
-  const panelWidth = selectedProvince ? 320 : 280;
+  const panelWidth = selectedProvince ? 340 : 300;
 
   // On mobile, auto-show province panel when province is selected
   useEffect(() => {
