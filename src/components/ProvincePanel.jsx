@@ -424,11 +424,13 @@ function LegislatorsSection({ province, congress }) {
   // Deputies from official HCDN list, merging comovoto voting data
   const sortByAlign = (a, b) => (b.alla ?? -1) - (a.alla ?? -1);
   const comovotoDeputies = comovotoLegislators.filter(l => l.c === 'diputados');
+  const normProv = s => s?.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') || '';
+  const provNorm = normProv(province);
   const officialProvDeputies = officialDeputies.filter(d => {
-    const dp = d.p?.toLowerCase();
+    const dp = normProv(d.p);
     if (isCABA) return dp === 'ciudad de buenos aires';
     if (dp === 'ciudad de buenos aires') return false;
-    return dp === provName || dp?.includes(provName) || provName?.includes(dp);
+    return dp === provNorm || dp.includes(provNorm) || provNorm.includes(dp);
   });
   const deputies = officialProvDeputies.map(official => {
     const officialLast = norm(official.n?.split(',')[0]);

@@ -139,11 +139,13 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
 
   // Deputies: use official HCDN list, merge with comovoto voting data
   const comovotoDeps = comovotoLegs.filter(l => l.c === 'diputados');
+  const normProv = s => s?.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') || '';
+  const pnNorm = normProv(selectedProvince);
   const officialProvDeps = officialDeputies.filter(d => {
-    const dp = d.p?.toLowerCase();
+    const dp = normProv(d.p);
     if (isCABA) return dp === 'ciudad de buenos aires';
     if (dp === 'ciudad de buenos aires') return false;
-    return dp === pn || dp?.includes(pn) || pn?.includes(dp);
+    return dp === pnNorm || dp.includes(pnNorm) || pnNorm.includes(dp);
   });
   const deputies = officialProvDeps.map(official => {
     const lastName = normalizeN(official.n?.split(',')[0]);
