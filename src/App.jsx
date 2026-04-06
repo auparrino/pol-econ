@@ -35,9 +35,9 @@ export default function App() {
   const { congress } = useCongressData();
   const isMobile = useIsMobile();
 
-  // Right panel only appears when an overlay is active.
-  const hasOverlay = overlays?.mining || energyLayers.length > 0;
-  const rightPanelWidth = hasOverlay ? 320 : 0;
+  // Right panel always reserves space — it carries the overlay summary
+  // (when nothing is active) or the detail (when something is on).
+  const rightPanelWidth = 320;
 
   if (isMobile) {
     return (
@@ -102,9 +102,11 @@ export default function App() {
         <Suspense fallback={null}>
           <RightOverlayPanel
             overlays={overlays}
+            setOverlays={setOverlays}
             energyLayers={energyLayers}
+            setEnergyLayers={setEnergyLayers}
             selectedProvince={selectedProvince}
-            width={rightPanelWidth || 320}
+            width={rightPanelWidth}
             topOffset={HEADER_H}
             bottomOffset={LAYER_BAR_H}
           />
