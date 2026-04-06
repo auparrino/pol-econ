@@ -56,10 +56,10 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-[1002] flex items-center gap-2"
-      style={{ background: '#FFF8EB', borderBottom: '1px solid #d4c4a0', height: 56, padding: '0 12px' }}
+      className="fixed top-0 left-0 right-0 z-[1002] flex items-center"
+      style={{ background: '#FFF8EB', borderBottom: '1px solid #d4c4a0', height: 56, padding: '0 16px' }}
     >
-      <div className="shrink-0">
+      <div className="shrink-0 absolute" style={{ left: 16 }}>
         <h1 className="text-[14px] font-extrabold tracking-tight text-navy leading-tight">
           ARGENTINA
         </h1>
@@ -68,7 +68,7 @@ export default function Header() {
         </p>
       </div>
 
-      <div className="flex items-center gap-1.5 flex-1 justify-end flex-wrap">
+      <div className="flex items-center justify-center flex-wrap w-full" style={{ gap: 14 }}>
         {chips}
       </div>
     </header>
