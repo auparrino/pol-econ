@@ -28,8 +28,8 @@ function AlignmentBadge({ alignment }) {
   const s = alignmentBadgeStyle(alignment);
   return (
     <span
-      className="inline-block text-[11px] font-bold px-2.5 py-1 rounded uppercase tracking-wider whitespace-nowrap"
-      style={{ background: s.bg, color: s.color }}
+      className="inline-block text-[11px] font-bold px-3 py-1 rounded uppercase tracking-wider whitespace-nowrap shrink-0"
+      style={{ background: s.bg, color: s.color, letterSpacing: '0.05em' }}
     >
       {s.label}
     </span>
@@ -168,11 +168,11 @@ export default function OverviewPanel({ selectedProvince, governors, onClose }) 
 
       {/* Governor card */}
       <div
-        className="rounded-md p-2.5 border mb-3"
-        style={{ background: 'rgba(0,48,73,0.06)', borderColor: 'rgba(0,48,73,0.10)' }}
+        className="rounded-md border mb-3"
+        style={{ background: 'rgba(0,48,73,0.06)', borderColor: 'rgba(0,48,73,0.10)', padding: '10px 12px' }}
       >
-        <div className="flex items-start justify-between gap-2">
-          <div className="min-w-0">
+        <div className="flex items-start justify-between gap-3">
+          <div className="min-w-0 flex-1">
             <div className="text-[14px] font-bold text-[#003049] truncate">{gov.gobernador}</div>
             <div className="text-[12px] text-[#003049]/60 truncate">{gov.partido}</div>
           </div>

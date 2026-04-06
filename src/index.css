@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Color+Emoji&display=swap');
 
 @theme {
   --color-maroon: #780000;
@@ -31,7 +31,7 @@
   --color-danger: #e74c3c;
   --color-cream-warm: #FFF8EB;
   --color-gold-border: #d4c4a0;
-  --font-display: 'Inter', 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', system-ui, sans-serif;
+  --font-display: 'Montserrat', 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', system-ui, sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
 }
 
