@@ -3,8 +3,8 @@ import votacionesRaw from '../../data/votaciones.json';
 
 const SEN_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
 const DIP_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
-const VOTE_COLOR_BB = { A: '#27ae60', N: '#C1121F', ABS: '#64748b', X: '#64748b', U: '#94a3b8' };
-const VOTE_LBL = { A: 'A', N: 'N', ABS: '~', X: '~', U: '–' };
+const VOTE_COLOR_BB = { A: '#27ae60', N: '#C1121F', ABS: '#d4a800', X: '#d4a800' };
+const VOTE_LBL = { A: 'A', N: 'N', ABS: '~', X: '~' };
 
 const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
 const normName = s => s?.split(',')[0]?.trim().toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') || '';
@@ -33,11 +33,22 @@ function VoteDotsRaw({ name, chamber }) {
     <div className="flex gap-0.5 shrink-0">
       {topics.map(t => {
         const v = record.v[t];
-        if (!v) return <span key={t} className="w-[10px] h-[10px] rounded-sm bg-[#003049]/6 flex items-center justify-center text-[7px] text-[#003049]/40">–</span>;
+        // Absent (no record): empty dashed box, distinct from any cast vote
+        if (!v) return (
+          <span key={t}
+            className="w-[10px] h-[10px] rounded-sm flex items-center justify-center text-[6px] font-bold"
+            style={{
+              background: 'transparent',
+              color: 'rgba(0,48,73,0.35)',
+              border: '1px dashed rgba(0,48,73,0.35)',
+            }}
+            title={`${t}: Absent`}
+          ></span>
+        );
         const color = VOTE_COLOR_BB[v] || '#64748b';
-        return <span key={t} className="w-[10px] h-[10px] rounded-sm flex items-center justify-center text-[7px] font-bold"
-          style={{ backgroundColor: `${color}22`, color, border: `1px solid ${color}55` }}
-          title={t}>{VOTE_LBL[v]}</span>;
+        return <span key={t} className="w-[10px] h-[10px] rounded-sm flex items-center justify-center text-[6px] font-bold"
+          style={{ backgroundColor: `${color}22`, color, border: `1px solid ${color}66` }}
+          title={`${t}: ${v === 'A' ? 'Affirmative' : v === 'N' ? 'Negative' : 'Abstention'}`}>{VOTE_LBL[v]}</span>;
       })}
     </div>
   );
