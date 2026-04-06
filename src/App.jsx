@@ -8,10 +8,9 @@ import LoadingSpinner from './components/LoadingSpinner';
 import { governors } from './data/governors';
 import useCongressData from './hooks/useCongressData';
 
-const ProvincePanel = lazy(() => import('./components/ProvincePanel'));
+const RightOverlayPanel = lazy(() => import('./components/RightOverlayPanel'));
 const BottomBar = lazy(() => import('./components/BottomBar'));
 const MobileShell = lazy(() => import('./components/mobile/MobileShell'));
-const VotesView = lazy(() => import('./components/VotesView'));
 
 /* Layout constants — desktop */
 const HEADER_H = 56;
@@ -30,14 +29,15 @@ function useIsMobile() {
 
 export default function App() {
   const [choroplethMode, setChoroplethMode] = useState('region');
-  const [view, setView] = useState('atlas'); // 'atlas' | 'votes'
   const [overlays, setOverlays] = useState({ mining: false });
   const [energyLayers, setEnergyLayers] = useState([]);
   const [selectedProvince, setSelectedProvince] = useState(null);
   const { congress } = useCongressData();
   const isMobile = useIsMobile();
 
-  const panelWidth = selectedProvince ? 340 : 300;
+  // Right panel only appears when an overlay is active.
+  const hasOverlay = overlays?.mining || energyLayers.length > 0;
+  const rightPanelWidth = hasOverlay ? 320 : 0;
 
   if (isMobile) {
     return (
@@ -54,31 +54,13 @@ export default function App() {
             setEnergyLayers={setEnergyLayers}
             selectedProvince={selectedProvince}
             setSelectedProvince={setSelectedProvince}
-            view={view}
-            setView={setView}
           />
         </Suspense>
       </ErrorBoundary>
     );
   }
 
-  // Desktop: Votes view takes over the whole surface when active.
-  if (view === 'votes') {
-    return (
-      <div className="h-screen w-screen overflow-hidden bg-cream">
-        <Header />
-        <div className="fixed" style={{ top: HEADER_H, left: 0, right: 0, bottom: 0 }}>
-          <ErrorBoundary>
-            <Suspense fallback={<LoadingSpinner />}>
-              <VotesView onExit={() => setView('atlas')} />
-            </Suspense>
-          </ErrorBoundary>
-        </div>
-      </div>
-    );
-  }
-
-  // Desktop layout (unchanged)
+  // Desktop layout
   return (
     <div className="h-screen w-screen overflow-hidden bg-cream">
       <Header />
@@ -100,7 +82,7 @@ export default function App() {
         style={{
           top: HEADER_H,
           left: SIDEBAR_W,
-          right: panelWidth,
+          right: rightPanelWidth,
           bottom: LAYER_BAR_H,
         }}
       >
@@ -118,13 +100,14 @@ export default function App() {
       </div>
 
       <ErrorBoundary>
-        <Suspense fallback={<LoadingSpinner />}>
-          <ProvincePanel
-            province={selectedProvince}
-            governors={governors}
-            congress={congress}
-            onClose={() => setSelectedProvince(null)}
-            width={panelWidth}
+        <Suspense fallback={null}>
+          <RightOverlayPanel
+            overlays={overlays}
+            energyLayers={energyLayers}
+            selectedProvince={selectedProvince}
+            width={rightPanelWidth || 320}
+            topOffset={HEADER_H}
+            bottomOffset={LAYER_BAR_H}
           />
         </Suspense>
       </ErrorBoundary>
@@ -137,22 +120,6 @@ export default function App() {
         energyLayers={energyLayers}
         setEnergyLayers={setEnergyLayers}
       />
-
-      {/* Floating Votes entry — top-right, above legend */}
-      <button
-        onClick={() => setView('votes')}
-        className="fixed text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md transition-transform hover:scale-105"
-        style={{
-          top: HEADER_H + 12,
-          right: panelWidth + 14,
-          background: '#003049',
-          color: '#FDF0D5',
-          zIndex: 1001,
-        }}
-        title="Open the vote explorer: per-vote choropleth + cross-analysis"
-      >
-        📊 Vote Explorer →
-      </button>
     </div>
   );
 }
