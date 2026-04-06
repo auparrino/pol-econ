@@ -14,6 +14,7 @@ const EmploymentSection = lazy(() => import('./economy/EmploymentSection'));
 const FiscalSection = lazy(() => import('./economy/FiscalSection'));
 const ExportsSection = lazy(() => import('./economy/ExportsSection'));
 const ProductionSection = lazy(() => import('./economy/ProductionSection'));
+const NationalEconomy = lazy(() => import('./panels/NationalEconomy'));
 
 const PanelFallback = () => (
   <div className="flex items-center justify-center h-full">
@@ -25,22 +26,19 @@ const BASE_TABS = [
   { id: 'overview',   label: 'Overview',   needsProvince: true  },
   { id: 'congress',   label: 'Congress',   needsProvince: false },
   { id: 'cabinet',    label: 'Cabinet',    needsProvince: false },
-  { id: 'employment', label: 'Employment', needsProvince: true  },
-  { id: 'fiscal',     label: 'Fiscal',     needsProvince: true  },
-  { id: 'exports',    label: 'Exports',    needsProvince: true  },
-  { id: 'production', label: 'Production', needsProvince: true  },
-  { id: 'rigi',       label: 'RIGI',       needsProvince: true  },
+  { id: 'employment', label: 'Employment', needsProvince: false },
+  { id: 'fiscal',     label: 'Fiscal',     needsProvince: false },
+  { id: 'exports',    label: 'Exports',    needsProvince: false },
+  { id: 'production', label: 'Production', needsProvince: false },
+  { id: 'rigi',       label: 'RIGI',       needsProvince: false },
   { id: 'news',       label: 'News',       needsProvince: true, beta: true },
 ];
 
 function EconomySectionWrapper({ section, selectedProvince, mobile }) {
   const { sipa, fiscal, exports, exportDest } = useEconomyData(selectedProvince);
   if (!selectedProvince) {
-    return (
-      <p className="text-[12px] text-[#003049]/50 py-4 text-center">
-        Select a province on the map.
-      </p>
-    );
+    // National-level fallback aggregating all provinces.
+    return <NationalEconomy section={section} />;
   }
   if (section === 'employment') {
     return sipa

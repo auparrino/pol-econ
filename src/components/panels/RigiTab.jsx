@@ -4,7 +4,7 @@
 // explainer about how the two interact.
 
 import { politicalContext } from '../../data/politicalContext';
-import { RigiPanel } from '../shared/RigiPanel';
+import { RigiPanel, RigiNationalOverview } from '../shared/RigiPanel';
 
 function findPolContext(provinceName) {
   if (!provinceName) return null;
@@ -71,19 +71,29 @@ function parseAdhesion(value) {
   return { status, label, detail, color, bg };
 }
 
-function EmptyState() {
+function NationalRigi() {
   return (
-    <div className="flex flex-col items-center justify-center text-center py-12 px-4">
-      <div className="text-4xl mb-3 opacity-30">🪨</div>
-      <p className="text-[12px] text-[#003049]/55 leading-snug">
-        Click a province on the map<br />to view its RIGI status and projects.
+    <div>
+      <div className="pb-2 border-b mb-3" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
+        <h2 className="text-[16px] font-black text-[#003049] tracking-tight leading-tight">
+          RIGI · National overview
+        </h2>
+        <p className="text-[11px] text-[#003049]/60 mt-0.5 leading-snug">
+          Régimen de Incentivo para Grandes Inversiones — national tax / FX
+          benefits for large projects, optionally layered with provincial benefits.
+        </p>
+      </div>
+      <RigiNationalOverview />
+      <p className="text-[9px] text-[#003049]/45 italic mt-3 leading-snug">
+        Click a province on the map to see its RIGI adhesion status and the
+        projects filed in that jurisdiction.
       </p>
     </div>
   );
 }
 
 export default function RigiTab({ selectedProvince }) {
-  if (!selectedProvince) return <EmptyState />;
+  if (!selectedProvince) return <NationalRigi />;
 
   const pol = findPolContext(selectedProvince);
   const adhesion = parseAdhesion(pol?.rigi_adhesion_provincial);
