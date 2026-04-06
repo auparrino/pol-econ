@@ -64,7 +64,7 @@ export default function Header() {
           ARGENTINA
         </h1>
         <p className="text-[9px] font-medium tracking-[1.5px] uppercase text-steel -mt-0.5">
-          Political Dashboard
+          Political & Economic Atlas
         </p>
       </div>
 
