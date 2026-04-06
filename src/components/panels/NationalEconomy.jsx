@@ -66,6 +66,12 @@ function StatBars({ items, total, valueKey = 'value', maxItems = 6 }) {
 
 // ───────────────────────────────────────────────────── Employment ──
 
+// Reference figure: independent registered workers (monotributistas + autónomos)
+// at the latest available official cut. Sourced from Min. Trabajo SIPA monthly
+// reports (~3.1 M as of late 2023 / early 2024). Used only for the contextual
+// note — the per-province breakdown does not include independientes.
+const INDEPENDENT_WORKERS_REFERENCE_M = 3.1;
+
 function EmploymentNational() {
   const stats = useMemo(() => {
     let totalPriv = 0, totalPub = 0;
@@ -89,21 +95,41 @@ function EmploymentNational() {
     return { total, totalPriv, totalPub, families, topProv };
   }, []);
 
+  // Approximate full-universe figure: dependent + independents.
+  const totalWithIndep = stats.total + INDEPENDENT_WORKERS_REFERENCE_M * 1e6;
+
   return (
     <div>
       <p className="text-[11px] text-[#003049]/55 leading-snug mb-2">
-        Registered private + public employment, aggregated from the SIPA dataset across all 24 provinces.
+        <b className="text-[#003049]/75">Dependent</b> registered employment (private + public + casas particulares),
+        aggregated from the SIPA dataset across all 24 provinces. Excludes
+        monotributistas and autónomos.
       </p>
       <div className="grid grid-cols-3 gap-2 mb-2">
-        <HeroNumber label="Total registered" value={fmtN(stats.total)} sub="jobs" color="#003049" />
+        <HeroNumber label="Dependent total" value={fmtN(stats.total)} sub="jobs (SIPA)" color="#003049" />
         <HeroNumber label="Private" value={fmtN(stats.totalPriv)} sub={`${Math.round(stats.totalPriv / stats.total * 100)}%`} color="#0f766e" />
         <HeroNumber label="Public" value={fmtN(stats.totalPub)} sub={`${Math.round(stats.totalPub / stats.total * 100)}%`} color="#7d3c98" />
+      </div>
+      <div
+        className="rounded-md px-3 py-2 mb-2 text-[10px] leading-snug"
+        style={{ background: 'rgba(0,48,73,0.04)', border: '1px solid rgba(0,48,73,0.10)' }}
+      >
+        <div className="text-[#003049]/65">
+          Add <b className="font-mono text-[#003049]">~{INDEPENDENT_WORKERS_REFERENCE_M.toFixed(1)}M</b>{' '}
+          monotributistas + autónomos (Min. Trabajo) for the full registered universe:{' '}
+          <b className="font-mono text-[#003049]">~{(totalWithIndep / 1e6).toFixed(1)}M</b>{' '}
+          registered workers in Argentina.
+        </div>
       </div>
       <SectionTitle>By sector family</SectionTitle>
       <StatBars items={stats.families} total={stats.families.reduce((s, x) => s + x.value, 0)} />
       <SectionTitle>Top provinces</SectionTitle>
       <StatBars items={stats.topProv} />
-      <p className="text-[9px] text-[#003049]/40 italic mt-3">Source: SIPA — Sistema Integrado Previsional Argentino.</p>
+      <p className="text-[9px] text-[#003049]/40 italic mt-3 leading-snug">
+        Source: CEP XXI / SIPA — Sistema Integrado Previsional Argentino.
+        Province-level breakdown vintage {sipa.lastUpdated || 'late 2023'}.
+        Independientes reference: Min. Trabajo, Situación y evolución del trabajo registrado.
+      </p>
     </div>
   );
 }
@@ -121,26 +147,31 @@ function FiscalNational() {
       if (p.dependency != null) ranking.push({ province: p.province, dep: p.dependency });
     }
     const total = own + transfers;
-    const dependency = total > 0 ? (transfers / total) * 100 : 0;
+    // Weighted average: share of consolidated provincial revenue that comes
+    // from federal transfers. This is the AGGREGATE dependence of the
+    // 24 provinces taken as a single block — not a metric of the national
+    // government itself.
+    const transferShare = total > 0 ? (transfers / total) * 100 : 0;
     const discrecional = transfers - copart;
     ranking.sort((a, b) => a.dep - b.dep);
-    return { own, transfers, copart, discrecional, total, dependency, ranking };
+    return { own, transfers, copart, discrecional, total, transferShare, ranking };
   }, []);
 
   return (
     <div>
       <p className="text-[11px] text-[#003049]/55 leading-snug mb-2">
-        Consolidated provincial finances 2024. Sums all 24 provinces from Mecon DNAP.
+        Consolidated <b className="text-[#003049]/75">provincial</b> finances 2024 — the 24 provinces taken
+        as a single block, summed from Mecon DNAP. Not the national government.
       </p>
       <div className="grid grid-cols-3 gap-2 mb-2">
         <HeroNumber
-          label="Avg dependency"
-          value={`${stats.dependency.toFixed(1)}%`}
-          sub="of revenue"
-          color={stats.dependency > 65 ? '#C1121F' : stats.dependency > 50 ? '#e67e22' : '#27ae60'}
+          label="Provinces ← Nation"
+          value={`${stats.transferShare.toFixed(1)}%`}
+          sub="of consolidated provincial revenue comes from federal transfers"
+          color={stats.transferShare > 65 ? '#C1121F' : stats.transferShare > 50 ? '#e67e22' : '#27ae60'}
         />
-        <HeroNumber label="Own revenue" value={fmtN(stats.own)} sub="ARS M" color="#0f766e" />
-        <HeroNumber label="Nat. transfers" value={fmtN(stats.transfers)} sub="ARS M" color="#7d3c98" />
+        <HeroNumber label="Own revenue" value={fmtN(stats.own)} sub="ARS M (provincial taxes + royalties + other)" color="#0f766e" />
+        <HeroNumber label="Nat. transfers" value={fmtN(stats.transfers)} sub="ARS M (coparticipación + discrecionales)" color="#7d3c98" />
       </div>
       <SectionTitle>How the transfer envelope splits</SectionTitle>
       <div className="flex h-[10px] rounded-sm overflow-hidden mb-1" style={{ background: 'rgba(0,48,73,0.10)' }}>
