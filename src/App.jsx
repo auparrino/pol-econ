@@ -43,12 +43,16 @@ export default function App() {
   }, [isMobile, selectedProvince]);
 
   if (isMobile) {
+    const TAB_BAR_H = 46;
     return (
-      <div className="h-screen w-screen overflow-hidden bg-cream flex flex-col">
+      <div className="h-screen w-screen overflow-hidden bg-cream relative">
         <Header />
 
-        {/* Map — fills remaining space, pb for bottom tab bar */}
-        <div className="flex-1 relative" style={{ paddingBottom: 46 }}>
+        {/* Map — positioned between header and tab bar */}
+        <div
+          className="absolute left-0 right-0"
+          style={{ top: HEADER_H, bottom: TAB_BAR_H }}
+        >
           <ErrorBoundary>
             <ArgentinaMap
               governors={governors}
@@ -63,7 +67,10 @@ export default function App() {
         </div>
 
         {/* Mobile bottom tabs — fixed to bottom */}
-        <div className="fixed bottom-0 left-0 right-0 flex border-t bg-cream z-[1001]" style={{ borderColor: '#d4c4a0' }}>
+        <div
+          className="fixed bottom-0 left-0 right-0 flex border-t bg-cream z-[1001]"
+          style={{ borderColor: '#d4c4a0', height: TAB_BAR_H }}
+        >
           {[
             { id: 'congress', label: 'Congress' },
             { id: 'layers', label: 'Layers' },
@@ -74,7 +81,6 @@ export default function App() {
               onClick={() => setMobilePanel(mobilePanel === tab.id ? null : tab.id)}
               className="flex-1 text-[11px] font-bold uppercase tracking-wider"
               style={{
-                padding: '12px 0',
                 ...(mobilePanel === tab.id
                   ? { background: '#003049', color: '#FDF0D5' }
                   : { color: '#003049' }),
@@ -85,13 +91,13 @@ export default function App() {
           ))}
         </div>
 
-        {/* Mobile slide-up panel */}
+        {/* Mobile slide-up panel — between header and tab bar */}
         {mobilePanel && (
           <div
-            className="fixed left-0 right-0 bg-cream border-t z-[1000] flex flex-col"
+            className="fixed left-0 right-0 bg-cream border-t z-[1000] flex flex-col shadow-lg"
             style={{
               top: HEADER_H,
-              bottom: 46, /* tab bar height */
+              bottom: TAB_BAR_H,
               borderColor: '#d4c4a0',
             }}
           >

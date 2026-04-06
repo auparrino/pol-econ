@@ -56,7 +56,7 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-[1000] flex items-center gap-3 overflow-x-auto scrollbar-thin"
+      className="fixed top-0 left-0 right-0 z-[1002] flex items-center gap-3 overflow-x-auto scrollbar-thin"
       style={{ background: '#FFF8EB', borderBottom: '1px solid #d4c4a0', height: 56, padding: '0 16px' }}
     >
       <div className="shrink-0">
@@ -68,7 +68,7 @@ export default function Header() {
         </p>
       </div>
 
-      <div className="flex items-center gap-4 flex-1 justify-center flex-wrap">
+      <div className="flex items-center gap-4 flex-1 justify-center flex-nowrap">
         {chips}
       </div>
     </header>
