@@ -414,9 +414,9 @@ Focus on:
 - Local economic situation
 - Relevant social issues
 
-Respond in English. Be concise but informative. Organize by topic if there are several. Do not invent information not present in the news.
+CRITICAL: Your entire response MUST be written in English. Do not use any Spanish words or phrases. Translate proper nouns where appropriate but keep names of people, parties, and places in their original form. Be concise but informative. Organize by topic if there are several. Do not invent information not present in the news.
 
-NOTICIAS (${articles.length} artículos):
+NEWS ARTICLES (${articles.length} articles, original headlines in Spanish — translate them in your summary):
 
 ${articleText}`;
 

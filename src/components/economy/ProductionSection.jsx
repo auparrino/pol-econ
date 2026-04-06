@@ -318,33 +318,39 @@ const SPECIES_COLORS = { bovine: '#d97706', sheep: '#8b5cf6', pigs: '#ec4899', g
 
 function LivestockCard({ species }) {
   return (
-    <SectionCard title="Livestock" subtitle="heads" color="#d97706">
-      <div className="space-y-1.5">
+    <SectionCard title="Livestock" subtitle="share of national stock" color="#d97706">
+      <div className="space-y-2">
         {species.map(sp => {
           const color = SPECIES_COLORS[sp.id] || '#94a3b8';
           const barW = Math.min(sp.pct, 100);
           return (
             <div key={sp.id}>
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between mb-1">
                 <div className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: color }} />
-                  <span className="text-[12px] text-[#003049]/70">{sp.name_en}</span>
-                  {sp.year < 2024 && <span className="text-[9px] text-[#003049]/30">({sp.year})</span>}
+                  <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: color }} />
+                  <span className="text-[13px] font-semibold text-[#003049]">{sp.name_en}</span>
+                  {sp.year < 2024 && <span className="text-[10px] text-[#003049]/40">({sp.year})</span>}
                 </div>
-                <span className="text-[12px] font-mono text-[#003049] font-semibold">{fmtNum(sp.data.heads)}</span>
+                <span className="text-[12px] font-mono text-[#003049]">
+                  {fmtNum(sp.data.heads)}
+                  <span className="text-[#003049]/40 ml-1">heads</span>
+                </span>
               </div>
-              <div className="flex items-center gap-1.5 mt-0.5">
-                <div className="flex-1 h-[4px] bg-[#003049]/6 rounded-full overflow-hidden">
+              <div className="flex items-center gap-2">
+                <div className="flex-1 h-[10px] bg-[#003049]/6 rounded-full overflow-hidden">
                   <div className="h-full rounded-full" style={{ width: `${barW}%`, backgroundColor: color }} />
                 </div>
-                <span className="text-[10px] font-mono text-[#003049]/40 w-[32px] text-right">{sp.pct.toFixed(1)}%</span>
+                <span className="text-[11px] font-mono font-bold w-[44px] text-right" style={{ color }}>{sp.pct.toFixed(1)}%</span>
               </div>
+              <p className="text-[9px] text-[#003049]/35 mt-0.5">
+                of {fmtNum(sp.total)} heads nationally
+              </p>
             </div>
           );
         })}
       </div>
-      <p className="text-[10px] text-[#003049]/30 mt-1.5">
-        % of national stock. Sources: MAGyP, SENASA.
+      <p className="text-[10px] text-[#003049]/30 mt-2 pt-1.5 border-t border-[#003049]/8">
+        Bars show province share of Argentina's national stock per species. Sources: MAGyP, SENASA.
       </p>
     </SectionCard>
   );
