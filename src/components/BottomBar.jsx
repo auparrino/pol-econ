@@ -2,6 +2,8 @@ import { useState, useEffect, lazy, Suspense } from 'react';
 import ProvinceNews from './ProvinceNews';
 import { useEconomyData, sipaData } from '../hooks/useEconomyData';
 
+import { FiscalTriptych } from './shared/FiscalTriptych';
+
 const CongressPanel = lazy(() => import('./panels/CongressPanel'));
 const ProvincialCongressPanel = lazy(() => import('./panels/ProvincialCongressPanel'));
 const CabinetPanel = lazy(() => import('./panels/CabinetPanel'));
@@ -44,9 +46,15 @@ function EconomySectionWrapper({ section, selectedProvince, mobile }) {
       : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No employment data available for this province.</p>;
   }
   if (section === 'fiscal') {
-    return fiscal
-      ? <FiscalSection fiscal={fiscal} provinceName={selectedProvince} mobile={mobile} />
-      : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No fiscal data available for this province.</p>;
+    return (
+      <div className="space-y-3">
+        <FiscalTriptych provinceName={selectedProvince} />
+        {fiscal
+          ? <FiscalSection fiscal={fiscal} provinceName={selectedProvince} mobile={mobile} />
+          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No fiscal detail data available for this province.</p>
+        }
+      </div>
+    );
   }
   if (section === 'exports') {
     return exports?.length > 0
@@ -90,6 +98,33 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
       role="tablist"
       aria-label="Dashboard panels"
     >
+      {/* Selected province pill — visible from every tab */}
+      {selectedProvince && (
+        <div
+          className="flex items-center justify-between gap-2 px-3 py-2 shrink-0"
+          style={{ background: 'rgba(0,48,73,0.06)', borderBottom: '1px solid rgba(0,48,73,0.10)' }}
+        >
+          <div className="min-w-0 flex items-center gap-2">
+            <span className="text-[10px] uppercase tracking-wider text-[#003049]/55 font-semibold">
+              Province
+            </span>
+            <span className="text-[13px] font-bold text-[#003049] truncate">
+              {selectedProvince}
+            </span>
+          </div>
+          {onClearProvince && (
+            <button
+              onClick={onClearProvince}
+              className="shrink-0 text-[#003049]/50 hover:text-[#003049] hover:bg-[#003049]/10 transition-colors text-[16px] leading-none w-6 h-6 rounded flex items-center justify-center"
+              aria-label="Clear province selection"
+              title="Clear selection — back to full map"
+            >
+              ×
+            </button>
+          )}
+        </div>
+      )}
+
       {/* Tabs stacked vertically */}
       <div className="flex flex-col gap-1 px-3 py-2 shrink-0"
         style={{ borderBottom: '1px solid rgba(0,48,73,0.08)' }}>

@@ -133,38 +133,12 @@ export default function FiscalSection({ fiscal, provinceName, mobile }) {
 
   return (
     <div className="space-y-3">
-      <p className="text-[11px] text-[#003049]/40 leading-relaxed">
-        Provincial finances (APNF, Sec. of Treasury). Fiscal dependency measures what percentage of revenues comes from national transfers (revenue-sharing + special laws) vs. own resources (provincial taxes + royalties + other non-tax revenue).
-      </p>
-
-      <DependencyBar dependency={fiscal.dependency} year={fiscal.year} />
-
-      {/* Revenue breakdown */}
-      <div className="bg-[#003049]/6 rounded-lg p-2.5 border border-[#003049]/10 space-y-1.5">
-        {/* Stacked bar: own vs national */}
-        <div className="h-[10px] bg-[#003049]/10 rounded-full overflow-hidden flex">
-          <div className="h-full" style={{ width: `${100 - (fiscal.dependency || 0)}%`, backgroundColor: '#4ade80' }}
-            title={`Own resources: ${(100 - fiscal.dependency).toFixed(1)}%`} />
-          <div className="h-full" style={{ width: `${fiscal.dependency || 0}%`, backgroundColor: '#f97316' }}
-            title={`National transfers: ${fiscal.dependency?.toFixed(1)}%`} />
-        </div>
-        <div className="flex justify-between text-[11px]">
-          <span className="text-[#003049]/60 flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: '#4ade80' }} />
-            Own: {fmtMoney(fiscal.ownTotal || fiscal.ownRevenue)}
-          </span>
-          <span className="text-[#003049]/60 flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: '#f97316' }} />
-            National: {fmtMoney(fiscal.nationalTransfers)}
-          </span>
-        </div>
-        {/* Royalties if significant */}
-        {fiscal.royalties > 0 && (
-          <p className="text-[11px] text-[#003049]/50 border-t border-[#003049]/10 pt-1">
-            Includes <strong>royalties: {fmtMoney(fiscal.royalties)}</strong> (oil, gas, mining)
-          </p>
-        )}
-      </div>
+      {/* Royalties callout (only when material) */}
+      {fiscal.royalties > 0 && (
+        <p className="text-[11px] text-[#003049]/60">
+          Includes <strong>royalties: {fmtMoney(fiscal.royalties)}</strong> (oil, gas, mining)
+        </p>
+      )}
 
       <TaxStructure taxDetail={fiscal.taxDetail} />
 
