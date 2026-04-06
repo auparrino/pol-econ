@@ -19,8 +19,26 @@ function matchProv(a, b) {
   if (x.includes('ciudad') !== y.includes('ciudad')) return false;
   return x === y || x.includes(y) || y.includes(x);
 }
+function toTitleCase(s) {
+  if (!s) return '';
+  return s.toLowerCase().replace(/(^|\s|-)([a-záéíóúñ])/g, (_, sep, ch) => sep + ch.toUpperCase());
+}
 
+// Tecnologia codes used in centrales.json:
+//   TV = Térmica de Vapor      (steam thermal, includes industrial cogen e.g. SIDERCA)
+//   TG = Térmica de Gas        (gas turbine)
+//   DI = Diésel                (small thermal diesel)
+//   CC = Ciclo Combinado       (combined cycle, if present)
+//   HI = Hidroeléctrica
+//   NU = Nuclear
+//   EO = Eólica
+//   SO = Solar
+//   BI = Biomasa
 const CENTRAL_TYPE_GROUPS = {
+  TV: { name: 'Thermal',     color: '#EF4444' },
+  TG: { name: 'Thermal',     color: '#EF4444' },
+  DI: { name: 'Thermal',     color: '#EF4444' },
+  CC: { name: 'Thermal',     color: '#EF4444' },
   TE: { name: 'Thermal',     color: '#EF4444' },
   HI: { name: 'Hydro',       color: '#3B82F6' },
   NU: { name: 'Nuclear',     color: '#A855F7' },
@@ -367,10 +385,17 @@ function RefineriesCard({ active, onToggle, selectedProvince }) {
           <ul className="text-[10px] space-y-0.5">
             {list.map((f, i) => {
               const p = f.properties || {};
+              // The dataset's primary identifier is `empresa`; when it's
+              // missing fall back to the `planta` site name (which is the
+              // actual physical plant), then to a generic counter.
+              const primary = p.empresa || (p.planta ? toTitleCase(p.planta) : null) || `Plant ${i + 1}`;
+              const secondary = p.empresa && p.planta && p.planta.toLowerCase() !== p.empresa.toLowerCase()
+                ? toTitleCase(p.planta)
+                : null;
               return (
-                <li key={i} className="flex justify-between gap-1 text-[#003049]/70">
-                  <span className="truncate">{p.nombre || p.refineria || `Plant ${i + 1}`}</span>
-                  {p.empresa && <span className="text-[#003049]/55 truncate">{p.empresa}</span>}
+                <li key={i} className="flex justify-between gap-2 text-[#003049]/70">
+                  <span className="truncate">{primary}</span>
+                  {secondary && <span className="text-[#003049]/45 truncate text-right shrink-0">{secondary}</span>}
                 </li>
               );
             })}
