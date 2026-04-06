@@ -130,6 +130,21 @@ export function RigiPanel({ provinceName }) {
   );
 }
 
+function StackedBarRow({ label, value, max, color }) {
+  const pct = max > 0 ? (value / max) * 100 : 0;
+  return (
+    <div className="flex items-center gap-2 text-[10px] py-[3px]">
+      <span className="w-[78px] text-[#003049]/70 truncate capitalize">{label}</span>
+      <div className="flex-1 h-[6px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
+        <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: color }} />
+      </div>
+      <span className="font-mono text-[#003049]/80 text-right min-w-[52px] tabular-nums">
+        {fmtUSD(value)}
+      </span>
+    </div>
+  );
+}
+
 export function RigiNationalOverview() {
   const projects = rigi.projects;
   const approved = projects.filter(p => p.estado === 'aprobado');
@@ -146,50 +161,75 @@ export function RigiNationalOverview() {
     bySector[p.sector] = (bySector[p.sector] || 0) + (p.monto_usd_millones || 0);
     byProvince[p.provincia] = (byProvince[p.provincia] || 0) + (p.monto_usd_millones || 0);
   }
+  const sectorRows = Object.entries(bySector).sort((a, b) => b[1] - a[1]);
+  const provinceRows = Object.entries(byProvince).sort((a, b) => b[1] - a[1]);
+  const maxSector = Math.max(...sectorRows.map(([, v]) => v));
+  const maxProvince = Math.max(...provinceRows.map(([, v]) => v));
 
   return (
     <div>
-      <div className="flex items-baseline gap-3 mb-2 flex-wrap">
-        <div className="text-[15px] font-bold font-mono text-[#003049]">
-          {fmtUSD(grandTotal)}
-        </div>
-        <div className="text-[10px] text-[#003049]/55">
-          across {projects.length} projects
-        </div>
-      </div>
-      <div className="flex gap-2 mb-3 text-[10px]">
-        <span
-          className="inline-flex items-center gap-1 px-2 py-0.5 rounded"
-          style={{ background: '#17a58922', color: '#0f766e' }}
-        >
-          <b>{approved.length}</b> Approved
-          <span className="font-mono">· {fmtUSD(totalApproved)}</span>
-        </span>
-        <span
-          className="inline-flex items-center gap-1 px-2 py-0.5 rounded"
-          style={{ background: '#d4a80022', color: '#b58500' }}
-        >
-          <b>{review.length}</b> Under review
-          <span className="font-mono">· {fmtUSD(totalReview)}</span>
-        </span>
-      </div>
-      <div className="grid grid-cols-2 gap-3">
-        <div>
-          <div className="text-[9px] uppercase tracking-wider text-[#003049]/55 mb-1">By sector</div>
-          {Object.entries(bySector).sort((a, b) => b[1] - a[1]).map(([k, v]) => (
-            <div key={k} className="flex justify-between text-[11px] text-[#003049] py-0.5">
-              <span className="capitalize">{k}</span>
-              <span className="font-mono">{fmtUSD(v)}</span>
+      {/* Hero total */}
+      <div
+        className="rounded-md p-3 border mb-3"
+        style={{ background: 'rgba(0,48,73,0.04)', borderColor: 'rgba(0,48,73,0.10)' }}
+      >
+        <div className="flex items-baseline justify-between gap-2 mb-2">
+          <div>
+            <div className="text-[20px] font-extrabold font-mono text-[#003049] leading-none">
+              {fmtUSD(grandTotal)}
             </div>
+            <div className="text-[10px] text-[#003049]/55 mt-0.5">
+              across {projects.length} projects
+            </div>
+          </div>
+        </div>
+        {/* Approved vs review split bar */}
+        <div className="flex h-[8px] rounded-sm overflow-hidden mb-1.5" style={{ background: 'rgba(0,48,73,0.08)' }}>
+          <div style={{ width: `${(totalApproved / grandTotal) * 100}%`, background: '#17a589' }} />
+          <div style={{ width: `${(totalReview / grandTotal) * 100}%`, background: '#d4a800' }} />
+        </div>
+        <div className="flex justify-between text-[10px]">
+          <span style={{ color: '#0f766e' }}>
+            <b>{approved.length}</b> approved · <span className="font-mono">{fmtUSD(totalApproved)}</span>
+          </span>
+          <span style={{ color: '#b58500' }}>
+            <b>{review.length}</b> under review · <span className="font-mono">{fmtUSD(totalReview)}</span>
+          </span>
+        </div>
+      </div>
+
+      {/* By sector */}
+      <div className="mb-3">
+        <div className="text-[9px] uppercase tracking-wider text-[#003049]/55 font-semibold mb-1">
+          By sector
+        </div>
+        <div>
+          {sectorRows.map(([k, v]) => (
+            <StackedBarRow
+              key={k}
+              label={k}
+              value={v}
+              max={maxSector}
+              color={SECTOR_COLOR[k] || '#669BBC'}
+            />
           ))}
         </div>
+      </div>
+
+      {/* By province */}
+      <div>
+        <div className="text-[9px] uppercase tracking-wider text-[#003049]/55 font-semibold mb-1">
+          By province
+        </div>
         <div>
-          <div className="text-[9px] uppercase tracking-wider text-[#003049]/55 mb-1">By province</div>
-          {Object.entries(byProvince).sort((a, b) => b[1] - a[1]).map(([k, v]) => (
-            <div key={k} className="flex justify-between text-[11px] text-[#003049] py-0.5">
-              <span className="truncate">{k}</span>
-              <span className="font-mono">{fmtUSD(v)}</span>
-            </div>
+          {provinceRows.map(([k, v]) => (
+            <StackedBarRow
+              key={k}
+              label={k}
+              value={v}
+              max={maxProvince}
+              color="#669BBC"
+            />
           ))}
         </div>
       </div>
