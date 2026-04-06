@@ -12,8 +12,8 @@ const LEGENDS = {
     ],
   },
   alineamiento: {
-    title: 'Alignment (editorial)',
-    subtitle: 'Editorial label — not reproducible. Prefer Align. Score.',
+    title: "Governor's stance",
+    subtitle: "Editorial label of the sitting governor's relation to the national Executive",
     items: [
       { color: '#7d3c98', label: 'Ruling coalition' },
       { color: '#17a589', label: 'Allied' },
@@ -23,14 +23,14 @@ const LEGENDS = {
     ],
   },
   score_executive: {
-    title: 'Alignment Score (reproducible)',
-    subtitle: '% of votes matching executive, avg across province legislators',
+    title: 'Legislators score',
+    subtitle: "Avg % of votes matching the Executive, across the province's national legislators",
     items: [
       { color: '#780000', label: '< 20% (hard opp.)' },
       { color: '#C1121F', label: '20–40%' },
       { color: '#d4a800', label: '40–60%' },
       { color: '#17a589', label: '60–80%' },
-      { color: '#7d3c98', label: '> 80% (exec.)' },
+      { color: '#7d3c98', label: '> 80% (with exec.)' },
     ],
   },
   poblacion: {
