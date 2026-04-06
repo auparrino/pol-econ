@@ -305,7 +305,7 @@ export default function MobileProvinceTab({ province, governors, congress, overl
   if (!province) {
     return (
       <div className="absolute inset-0 flex flex-col">
-        <div className="shrink-0 flex items-center px-4" style={{ height: 40, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)' }}>
+        <div className="shrink-0 flex items-center" style={{ height: 48, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 16px' }}>
           <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight">Province</h1>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center text-center px-8">
@@ -351,13 +351,13 @@ export default function MobileProvinceTab({ province, governors, congress, overl
     <div className="absolute inset-0 flex flex-col">
       {/* Title bar */}
       <div
-        className="shrink-0 flex items-center justify-between px-4"
-        style={{ height: 40, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)' }}
+        className="shrink-0 flex items-center justify-between gap-2"
+        style={{ height: 48, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 16px' }}
       >
-        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight truncate">{province}</h1>
+        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight truncate min-w-0">{province}</h1>
         <button
           onClick={onGoToMap}
-          className="text-[16px] text-[#003049]/60 leading-none p-1"
+          className="shrink-0 text-[18px] text-[#003049]/60 leading-none p-1"
           aria-label="Back to map"
         >
           🗺
@@ -366,18 +366,22 @@ export default function MobileProvinceTab({ province, governors, congress, overl
 
       {/* Scroll body */}
       <div className="flex-1 overflow-y-auto overflow-x-hidden">
-        <div className="p-3 space-y-3" style={{ paddingBottom: 80 }}>
+        <div className="space-y-3" style={{ padding: '14px 16px 80px' }}>
           <Hero province={province} governor={governor} />
           <KeyFactsStrip province={province} governor={governor} />
 
           {hasActiveOverlay && (
             <Accordion title="Active Layers" defaultOpen>
               <Suspense fallback={<p className="text-[12px] text-[#003049]/60">Loading…</p>}>
-                <OverlayPanel
-                  overlays={overlays}
-                  energyLayers={energyLayers}
-                  selectedProvince={province}
-                />
+                {/* OverlayPanel was sized for the 340px desktop sidebar — scale it down
+                    so its typography matches the rest of the mobile accordions. */}
+                <div style={{ transformOrigin: 'top left', transform: 'scale(0.78)', width: '128.2%', marginBottom: -60 }}>
+                  <OverlayPanel
+                    overlays={overlays}
+                    energyLayers={energyLayers}
+                    selectedProvince={province}
+                  />
+                </div>
               </Suspense>
             </Accordion>
           )}

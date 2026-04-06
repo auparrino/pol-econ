@@ -61,6 +61,11 @@ body {
 .leaflet-tooltip-left.province-tooltip::before { border-left-color: var(--color-cream) !important; }
 .leaflet-tooltip-right.province-tooltip::before { border-right-color: var(--color-cream) !important; }
 
+/* Hide leaflet zoom controls on small screens — pinch-zoom is the native gesture */
+@media (max-width: 767px) {
+  .leaflet-control-zoom { display: none !important; }
+}
+
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--color-cream); }
 ::-webkit-scrollbar-thumb { background: var(--color-steel); border-radius: 3px; opacity: 0.4; }

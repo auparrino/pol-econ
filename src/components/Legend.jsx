@@ -90,29 +90,43 @@ const MINERAL_LEGEND = {
   ],
 };
 
-function LegendBox({ title, items, useCircles = false }) {
+function LegendBox({ title, items, useCircles = false, mobile = false }) {
   return (
-    <div className="backdrop-blur-sm rounded-md px-4 py-3 max-w-[200px] shadow-sm"
-      style={{ background: 'rgba(253,240,213,0.95)', border: '1px solid rgba(0,48,73,0.15)' }}>
-      <p className="text-[10px] font-bold tracking-[1.5px] uppercase mb-2"
-        style={{ color: 'rgba(0,48,73,0.55)' }}>
+    <div
+      className="backdrop-blur-sm rounded-md shadow-sm"
+      style={{
+        background: 'rgba(253,240,213,0.95)',
+        border: '1px solid rgba(0,48,73,0.18)',
+        padding: mobile ? '6px 9px' : '12px 16px',
+        maxWidth: mobile ? 170 : 200,
+      }}
+    >
+      <p
+        className="font-bold tracking-[1.4px] uppercase"
+        style={{ color: 'rgba(0,48,73,0.55)', fontSize: mobile ? 8 : 10, marginBottom: mobile ? 4 : 8 }}
+      >
         {title}
       </p>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col" style={{ gap: mobile ? 2 : 4 }}>
         {items.map((item, i) => (
-          <div key={i} className="flex items-center gap-2">
+          <div key={i} className="flex items-center" style={{ gap: mobile ? 5 : 8 }}>
             {useCircles ? (
               <span
-                className="w-3 h-3 rounded-full shrink-0"
-                style={{ backgroundColor: item.color, border: '1px solid rgba(0,48,73,0.15)' }}
+                className="rounded-full shrink-0"
+                style={{
+                  backgroundColor: item.color,
+                  border: '1px solid rgba(0,48,73,0.15)',
+                  width: mobile ? 8 : 12,
+                  height: mobile ? 8 : 12,
+                }}
               />
             ) : (
               <span
-                className="w-3.5 h-3 rounded-sm shrink-0"
-                style={{ backgroundColor: item.color }}
+                className="rounded-sm shrink-0"
+                style={{ backgroundColor: item.color, width: mobile ? 10 : 14, height: mobile ? 8 : 12 }}
               />
             )}
-            <span className="text-[12px] leading-tight" style={{ color: 'rgba(0,48,73,0.70)' }}>{item.label}</span>
+            <span style={{ color: 'rgba(0,48,73,0.72)', fontSize: mobile ? 10 : 12, lineHeight: 1.15 }}>{item.label}</span>
           </div>
         ))}
       </div>
@@ -120,20 +134,28 @@ function LegendBox({ title, items, useCircles = false }) {
   );
 }
 
-export default function Legend({ choroplethMode, showMining = false, showEnergy = false }) {
+export default function Legend({ choroplethMode, showMining = false, showEnergy = false, mobile = false }) {
   const legend = LEGENDS[choroplethMode];
   const hasContent = legend || showMining || showEnergy;
 
   return (
     <div
-      className="absolute bottom-3 left-3 z-[500] flex flex-col gap-2 transition-opacity duration-300"
-      style={{ opacity: hasContent ? 1 : 0, pointerEvents: hasContent ? 'auto' : 'none' }}
+      className="absolute z-[500] flex flex-col gap-1.5 transition-opacity duration-300"
+      style={{
+        opacity: hasContent ? 1 : 0,
+        pointerEvents: hasContent ? 'auto' : 'none',
+        bottom: mobile ? 12 : 12,
+        left: mobile ? 10 : 12,
+        right: mobile ? 10 : 'auto',
+        maxHeight: mobile ? 'calc(100% - 60px)' : 'none',
+        overflowY: mobile ? 'auto' : 'visible',
+      }}
       role="complementary"
       aria-label="Map legend"
     >
-      {legend && <LegendBox title={legend.title} items={legend.items} />}
-      {showMining && <LegendBox title={MINERAL_LEGEND.title} items={MINERAL_LEGEND.items} useCircles />}
-      {showEnergy && <LegendBox title={ENERGY_LEGEND.title} items={ENERGY_LEGEND.items} useCircles />}
+      {legend && <LegendBox title={legend.title} items={legend.items} mobile={mobile} />}
+      {showMining && <LegendBox title={MINERAL_LEGEND.title} items={MINERAL_LEGEND.items} useCircles mobile={mobile} />}
+      {showEnergy && <LegendBox title={ENERGY_LEGEND.title} items={ENERGY_LEGEND.items} useCircles mobile={mobile} />}
     </div>
   );
 }

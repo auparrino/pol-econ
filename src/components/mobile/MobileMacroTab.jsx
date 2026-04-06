@@ -18,11 +18,11 @@ function Delta({ delta }) {
 function BigCard({ label, value, prefix = '', suffix = '', delta }) {
   return (
     <div
-      className="rounded-xl border p-3 min-w-0"
-      style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}
+      className="rounded-xl border min-w-0"
+      style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)', padding: '12px 14px' }}
     >
       <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/55">{label}</p>
-      <div className="flex items-baseline justify-between gap-1.5 mt-1 min-w-0">
+      <div className="flex items-baseline gap-1.5 mt-1 min-w-0">
         <p className="text-[19px] font-extrabold font-mono text-[#003049] leading-tight truncate min-w-0">
           {value != null
             ? `${prefix}${typeof value === 'number' ? value.toLocaleString('es-AR') : value}${suffix}`
@@ -54,11 +54,11 @@ export default function MobileMacroTab() {
 
   return (
     <div className="absolute inset-0 flex flex-col">
-      <div className="shrink-0 flex items-center px-4" style={{ height: 40, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)' }}>
+      <div className="shrink-0 flex items-center" style={{ height: 48, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 16px' }}>
         <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight">Macro</h1>
       </div>
       <div className="flex-1 overflow-y-auto overflow-x-hidden">
-        <div className="p-3 space-y-4">
+        <div className="space-y-4" style={{ padding: '14px 16px 24px' }}>
           <div>
             <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/55 mb-1.5">USD</p>
             <div className="grid grid-cols-2 gap-2">

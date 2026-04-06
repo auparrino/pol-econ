@@ -495,6 +495,31 @@ function LegislatorsSection({ province, congress }) {
           </div>
         </Section>
       )}
+      {(senators.length > 0 || deputies.length > 0) && (
+        <div className="mb-2 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[10px] text-[#003049]/70">
+          <span className="uppercase tracking-wider font-semibold text-[#003049]/45">Vote:</span>
+          <span className="inline-flex items-center gap-1">
+            <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold text-[10px]"
+              style={{ backgroundColor: '#27ae6022', color: '#27ae60', border: '1px solid #27ae6066' }}>A</span>
+            In favour
+          </span>
+          <span className="inline-flex items-center gap-1">
+            <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold text-[10px]"
+              style={{ backgroundColor: '#C1121F22', color: '#C1121F', border: '1px solid #C1121F66' }}>N</span>
+            Against
+          </span>
+          <span className="inline-flex items-center gap-1">
+            <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold"
+              style={{ backgroundColor: '#d4a80022', color: '#d4a800', border: '1px solid #d4a80066', fontSize: 7 }}>ABS</span>
+            Abstention
+          </span>
+          <span className="inline-flex items-center gap-1">
+            <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold text-[9px]"
+              style={{ background: 'transparent', color: 'rgba(0,48,73,0.35)', border: '1px dashed rgba(0,48,73,0.35)' }}>AUS</span>
+            Absent
+          </span>
+        </div>
+      )}
       {senators.length > 0 && (
         <Section title={`Senators (${senators.length})`}>
           <div className="bg-[#003049]/6 rounded-md p-2 border border-[#003049]/10">

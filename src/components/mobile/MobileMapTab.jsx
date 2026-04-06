@@ -44,20 +44,20 @@ export default function MobileMapTab({
     <div className="absolute inset-0 flex flex-col">
       {/* Title bar — bigger Layers button, more obvious */}
       <div
-        className="shrink-0 flex items-center justify-between px-3 gap-2"
-        style={{ height: 44, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)' }}
+        className="shrink-0 flex items-center justify-between gap-3"
+        style={{ height: 48, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 14px' }}
       >
-        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight truncate">Argentina Atlas</h1>
+        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight truncate min-w-0">Argentina Atlas</h1>
         <button
           onClick={() => setSheetOpen(true)}
-          className="shrink-0 inline-flex items-center gap-1.5 text-[12px] font-bold uppercase tracking-wider px-3.5 py-2 rounded-lg"
-          style={{ background: '#003049', color: '#FDF0D5' }}
+          className="shrink-0 inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider rounded-lg"
+          style={{ background: '#003049', color: '#FDF0D5', padding: '7px 12px' }}
           aria-label="Open layers and color settings"
         >
           <span>⚙</span>
-          <span>Layers & Color</span>
+          <span>Layers</span>
           {overlayCount > 0 && (
-            <span className="ml-1 text-[10px] px-1.5 rounded-full" style={{ background: '#FDF0D5', color: '#003049' }}>
+            <span className="text-[9px] px-1.5 rounded-full ml-0.5" style={{ background: '#FDF0D5', color: '#003049' }}>
               {overlayCount}
             </span>
           )}
@@ -78,20 +78,26 @@ export default function MobileMapTab({
         </ErrorBoundary>
         {/* Hide legend when peek card is up (would overlap) */}
         {!hasPeekCard && (
-          <Legend choroplethMode={choroplethMode} showMining={overlays.mining} />
+          <Legend
+            choroplethMode={choroplethMode}
+            showMining={overlays.mining}
+            showEnergy={energyLayers.length > 0}
+            mobile
+          />
         )}
 
-        {/* Active mode chip — clearly tappable, with chevron */}
+        {/* Active mode chip — top-right (zoom controls hidden on mobile, top-left is free for legend later) */}
         {choroplethMode !== 'none' && (
           <button
             onClick={() => setSheetOpen(true)}
-            className="absolute left-2 z-[1400] inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full"
+            className="absolute z-[1400] inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full"
             style={{
-              top: 8,
+              top: 10,
+              right: 10,
               background: '#FFF8EB',
               border: '1px solid #003049',
               color: '#003049',
-              boxShadow: '0 2px 8px rgba(0,48,73,0.18)',
+              boxShadow: '0 2px 8px rgba(0,48,73,0.22)',
             }}
             aria-label={`Change color mode (current: ${activeModeLabel})`}
           >

@@ -19,6 +19,16 @@ function alignColorOf(a) {
   return '#669BBC';
 }
 
+function alignLabelOf(a) {
+  const s = a?.toLowerCase() || '';
+  if (s.includes('oficialismo')) return 'Ruling Coalition';
+  if (s.includes('aliado')) return 'Allied';
+  if (s.includes('negociador') || s.includes('pragmát')) return 'Pragmatic';
+  if (s.includes('oposición dura')) return 'Hard Opposition';
+  if (s.includes('oposición')) return 'Opposition';
+  return a || '—';
+}
+
 function PeekCard({ province, governor, onOpen, onDismiss }) {
   if (!province) return null;
   const align = governor?.alineamiento_nacion;
@@ -49,7 +59,7 @@ function PeekCard({ province, governor, onOpen, onDismiss }) {
               className="inline-block mt-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded"
               style={{ background: `${color}22`, color }}
             >
-              {align}
+              {alignLabelOf(align)}
             </span>
           )}
         </div>
