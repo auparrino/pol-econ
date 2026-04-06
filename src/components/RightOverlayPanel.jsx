@@ -273,9 +273,15 @@ const PROVINCE_BASINS = {
 
 function HcFieldsCard({ active, onToggle, selectedProvince }) {
   const basinsForProv = selectedProvince ? PROVINCE_BASINS[selectedProvince] || null : null;
-  const basinsToShow = basinsForProv
-    ? HC_BASIN_NOTES.filter(b => basinsForProv.includes(b.name))
-    : HC_BASIN_NOTES;
+  // Three states:
+  //   - no province selected         → show every basin
+  //   - province IS in the map       → show only its basin(s)
+  //   - province is NOT in the map   → show NONE (it's a non-producing province)
+  const basinsToShow = !selectedProvince
+    ? HC_BASIN_NOTES
+    : basinsForProv
+      ? HC_BASIN_NOTES.filter(b => basinsForProv.includes(b.name))
+      : [];
   return (
     <div className="rounded-md p-2.5"
       style={{
