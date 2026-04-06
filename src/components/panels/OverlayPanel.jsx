@@ -248,13 +248,28 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
           <div className="h-px w-full bg-[#003049]/10 shrink-0" />
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Stage</p>
-            <div className="flex flex-col gap-0.5">
-              {stats.byEstado.map(([est, count]) => (
-                <div key={est} className="flex items-center gap-1.5">
-                  <div className="h-1.5 rounded-full shrink-0" style={{ width: Math.max(4, Math.round(count / stats.total * 55)), background: '#003049', opacity: 0.25 + (count / stats.total) * 0.7 }} />
-                  <span className="text-[14px] text-[#003049]/60 leading-none">{est.length > 16 ? est.slice(0, 16) + '.' : est}<span className="font-mono text-[#003049] ml-1">{count}</span></span>
-                </div>
-              ))}
+            <div className="flex flex-col gap-1">
+              {stats.byEstado.map(([est, count], i) => {
+                const STAGE_EN = {
+                  'Producción': 'Production', 'Construcción': 'Construction',
+                  'Exploración avanzada': 'Advanced exploration', 'Exploración inicial': 'Initial exploration',
+                  'Prospección': 'Prospection', 'Factibilidad': 'Feasibility',
+                  'Prefactibilidad': 'Pre-feasibility', 'Evaluación Económica Preliminar': 'Preliminary economic eval.',
+                  'Cese de operaciones': 'Ceased operations', 'Reingeniería': 'Re-engineering',
+                };
+                const STAGE_COLORS = ['#16a34a', '#22c55e', '#3b82f6', '#60a5fa', '#a78bfa', '#f59e0b', '#f97316', '#ef4444', '#94a3b8', '#64748b'];
+                const color = STAGE_COLORS[i % STAGE_COLORS.length];
+                const label = STAGE_EN[est] || est;
+                return (
+                  <div key={est} className="flex items-center gap-2">
+                    <div className="flex-1 h-[6px] bg-[#003049]/8 rounded-full overflow-hidden">
+                      <div className="h-full rounded-full" style={{ width: `${Math.max(4, count / stats.total * 100)}%`, backgroundColor: color }} />
+                    </div>
+                    <span className="text-[12px] text-[#003049]/60 shrink-0 min-w-[100px]">{label}</span>
+                    <span className="text-[12px] font-mono text-[#003049] font-bold w-[24px] text-right shrink-0">{count}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
           {stats.byPais.length > 0 && (

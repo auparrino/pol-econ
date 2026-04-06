@@ -88,14 +88,14 @@ export default function App() {
         {/* Mobile slide-up panel */}
         {mobilePanel && (
           <div
-            className="fixed left-0 right-0 bg-cream border-t overflow-y-auto z-[1000]"
+            className="fixed left-0 right-0 bg-cream border-t z-[1000] flex flex-col"
             style={{
               top: HEADER_H,
               bottom: 46, /* tab bar height */
               borderColor: '#d4c4a0',
             }}
           >
-            <div className="p-3">
+            <div className="flex-1 overflow-y-auto overflow-x-hidden p-3 min-h-0">
               {mobilePanel === 'congress' && (
                 <ErrorBoundary>
                   <Suspense fallback={<LoadingSpinner />}>

@@ -125,7 +125,7 @@ function DataRow({ label, value, color, info }) {
 const ALIGNMENT_LABELS = {
   'oficialismo': 'Ruling Coalition',
   'aliado': 'Allied',
-  'negociador': 'Swing Vote',
+  'negociador': 'Pragmatic',
   'oposición dura': 'Hard Opposition',
   'oposición': 'Opposition',
 };

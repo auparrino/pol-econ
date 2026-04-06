@@ -19,7 +19,19 @@ function ProvincialCabinetPanelRaw({ selectedProvince, governors }) {
     infoCards.push({ role: 'Alignment', name: gov.alineamiento_nacion || '—', detail: '', tier: 'info' });
   }
 
-  const miningStance = pol?.posicion_mineria || null;
+  const MINING_STANCE_EN = {
+    'San Juan': 'Strongly pro-mining; pushes all Cu megaprojects; royalties-for-infrastructure law',
+    'Salta': 'Actively pro-mining; pushes Taca Taca & lithium; delegated Mining Sec. to active official',
+    'Catamarca': 'Very pro-mining; leads regional Lithium Table; celebrates every RIGI adhesion; direct CEO ties with Rio Tinto & Zijin',
+    'Jujuy': 'Pro-mining & pro-lithium; Morales continuity; JEMSE (state company) participates in lithium projects; 2023 pro-investment constitutional reform',
+    'Santa Cruz': 'Moderately pro-mining; Newmont deal for CNE1 USD 800M; seeks economic diversification post-YPF exit from Comodoro',
+    'Chubut': 'Ambivalent — does NOT seek to repeal Law 5001; explicitly stated "not on the agenda"; focus on silica sands & uranium (not covered by 5001)',
+    'Mendoza': 'Actively pro-mining; original promoter of Glacier Law modification; achieved PSJ Copper DIA Dec-2025 (historic milestone); 27 copper DIAs in Malargüe',
+    'Río Negro': 'Moderately pro-mining; repealed 2011 ban; Calcatreu advancing; main focus on Vaca Muerta LNG',
+    'Neuquén': 'Focus on Vaca Muerta hydrocarbons; metallic mining secondary; uranium in exploration',
+  };
+  const miningStanceRaw = pol?.posicion_mineria || null;
+  const miningStance = miningStanceRaw ? (MINING_STANCE_EN[selectedProvince] || miningStanceRaw) : null;
 
   const ministers = (gabData?.gabinete || []).filter(m => m.tier !== 'exec');
 

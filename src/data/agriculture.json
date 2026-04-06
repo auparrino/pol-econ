@@ -1,5 +1,5 @@
 {
-  "campaign": "2024/2025",
+  "campaign": "2023/2024 / 2024/2025",
   "source": "MAGyP - Estimaciones Agrícolas",
   "provinces": [
     {
@@ -130,8 +130,8 @@
     },
     {
       "province": "Córdoba",
-      "total_tons": 37974555,
-      "total_area_ha": 8694846,
+      "total_tons": 37974585,
+      "total_area_ha": 8694876,
       "crops": [
         {
           "crop": "maíz",
@@ -251,6 +251,13 @@
           "tons": 732,
           "area_ha": 535,
           "yield_kg_ha": 1368
+        },
+        {
+          "crop": "alpiste",
+          "crop_en": "Canary Grass",
+          "tons": 30,
+          "area_ha": 30,
+          "yield_kg_ha": 1000
         }
       ]
     },
@@ -375,8 +382,8 @@
     },
     {
       "province": "Entre Ríos",
-      "total_tons": 8944317,
-      "total_area_ha": 2518590,
+      "total_tons": 8944636,
+      "total_area_ha": 2518704,
       "crops": [
         {
           "crop": "soja total",
@@ -461,6 +468,13 @@
           "tons": 560,
           "area_ha": 400,
           "yield_kg_ha": 1400
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 319,
+          "area_ha": 114,
+          "yield_kg_ha": 2798
         },
         {
           "crop": "lenteja",
@@ -662,8 +676,8 @@
     },
     {
       "province": "Salta",
-      "total_tons": 3137497,
-      "total_area_ha": 1208617,
+      "total_tons": 3137662,
+      "total_area_ha": 1208887,
       "crops": [
         {
           "crop": "maíz",
@@ -771,6 +785,13 @@
           "yield_kg_ha": 653
         },
         {
+          "crop": "arveja",
+          "crop_en": "Pea",
+          "tons": 120,
+          "area_ha": 180,
+          "yield_kg_ha": 667
+        },
+        {
           "crop": "alpiste",
           "crop_en": "Canary Grass",
           "tons": 68,
@@ -783,6 +804,13 @@
           "tons": 50,
           "area_ha": 50,
           "yield_kg_ha": 1000
+        },
+        {
+          "crop": "lino",
+          "crop_en": "Flax",
+          "tons": 45,
+          "area_ha": 90,
+          "yield_kg_ha": 500
         }
       ]
     },
@@ -955,6 +983,104 @@
       ]
     },
     {
+      "province": "Misiones",
+      "total_tons": 1365403,
+      "total_area_ha": 240005,
+      "crops": [
+        {
+          "crop": "yerba mate",
+          "crop_en": "Yerba Mate",
+          "tons": 867924,
+          "area_ha": 179978,
+          "yield_kg_ha": 4822
+        },
+        {
+          "crop": "té",
+          "crop_en": "Tea",
+          "tons": 349026,
+          "area_ha": 29039,
+          "yield_kg_ha": 12019
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 133318,
+          "area_ha": 26664,
+          "yield_kg_ha": 5000
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 15135,
+          "area_ha": 4324,
+          "yield_kg_ha": 3500
+        }
+      ]
+    },
+    {
+      "province": "Corrientes",
+      "total_tons": 1002831,
+      "total_area_ha": 159337,
+      "crops": [
+        {
+          "crop": "arroz",
+          "crop_en": "Rice",
+          "tons": 785100,
+          "area_ha": 110600,
+          "yield_kg_ha": 7099
+        },
+        {
+          "crop": "yerba mate",
+          "crop_en": "Yerba Mate",
+          "tons": 119256,
+          "area_ha": 24517,
+          "yield_kg_ha": 4864
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 55380,
+          "area_ha": 8520,
+          "yield_kg_ha": 6500
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 14100,
+          "area_ha": 4700,
+          "yield_kg_ha": 3000
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 9800,
+          "area_ha": 2800,
+          "yield_kg_ha": 3500
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 8010,
+          "area_ha": 5550,
+          "yield_kg_ha": 1443
+        },
+        {
+          "crop": "té",
+          "crop_en": "Tea",
+          "tons": 7727,
+          "area_ha": 830,
+          "yield_kg_ha": 9310
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 3458,
+          "area_ha": 1820,
+          "yield_kg_ha": 1900
+        }
+      ]
+    },
+    {
       "province": "Tucumán",
       "total_tons": 898706,
       "total_area_ha": 371595,
@@ -1035,55 +1161,6 @@
           "tons": 242,
           "area_ha": 220,
           "yield_kg_ha": 1100
-        }
-      ]
-    },
-    {
-      "province": "Corrientes",
-      "total_tons": 875848,
-      "total_area_ha": 133990,
-      "crops": [
-        {
-          "crop": "arroz",
-          "crop_en": "Rice",
-          "tons": 785100,
-          "area_ha": 110600,
-          "yield_kg_ha": 7099
-        },
-        {
-          "crop": "maíz",
-          "crop_en": "Corn",
-          "tons": 55380,
-          "area_ha": 8520,
-          "yield_kg_ha": 6500
-        },
-        {
-          "crop": "trigo total",
-          "crop_en": "Wheat",
-          "tons": 14100,
-          "area_ha": 4700,
-          "yield_kg_ha": 3000
-        },
-        {
-          "crop": "sorgo",
-          "crop_en": "Sorghum",
-          "tons": 9800,
-          "area_ha": 2800,
-          "yield_kg_ha": 3500
-        },
-        {
-          "crop": "soja total",
-          "crop_en": "Soybeans",
-          "tons": 8010,
-          "area_ha": 5550,
-          "yield_kg_ha": 1443
-        },
-        {
-          "crop": "girasol",
-          "crop_en": "Sunflower",
-          "tons": 3458,
-          "area_ha": 1820,
-          "yield_kg_ha": 1900
         }
       ]
     },
@@ -1238,27 +1315,6 @@
           "tons": 180,
           "area_ha": 150,
           "yield_kg_ha": 1200
-        }
-      ]
-    },
-    {
-      "province": "Misiones",
-      "total_tons": 148453,
-      "total_area_ha": 30988,
-      "crops": [
-        {
-          "crop": "maíz",
-          "crop_en": "Corn",
-          "tons": 133318,
-          "area_ha": 26664,
-          "yield_kg_ha": 5000
-        },
-        {
-          "crop": "soja total",
-          "crop_en": "Soybeans",
-          "tons": 15135,
-          "area_ha": 4324,
-          "yield_kg_ha": 3500
         }
       ]
     },

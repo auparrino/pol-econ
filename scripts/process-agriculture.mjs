@@ -138,14 +138,27 @@ for (let i = 1; i < lines.length; i++) {
   });
 }
 
-// Find latest campaign
-const campaigns = [...new Set(rows.map(r => r.campania))].sort();
-const latestCampaign = campaigns[campaigns.length - 1];
-console.log(`Latest campaign: ${latestCampaign}`);
+// Use latest available campaign per crop per province (not a single global campaign)
+// This ensures perennial crops (yerba mate, tea, tobacco) with older campaigns are included
+const latestCampaignByCrop = {};
+for (const r of rows) {
+  const key = `${r.provincia}|${r.cultivo}`;
+  if (!latestCampaignByCrop[key] || r.campania > latestCampaignByCrop[key]) {
+    latestCampaignByCrop[key] = r.campania;
+  }
+}
 
-// Filter to latest campaign
-const filtered = rows.filter(r => r.campania === latestCampaign);
-console.log(`Rows for ${latestCampaign}: ${filtered.length}`);
+// Only keep the 2 most recent campaign years globally for reference
+const allCampaigns = [...new Set(Object.values(latestCampaignByCrop))].sort();
+const recentCampaigns = allCampaigns.slice(-2);
+console.log(`Using campaigns: ${recentCampaigns.join(', ')}`);
+
+// Filter: keep only rows matching the latest campaign for their crop+province
+const filtered = rows.filter(r => {
+  const key = `${r.provincia}|${r.cultivo}`;
+  return r.campania === latestCampaignByCrop[key] && recentCampaigns.includes(r.campania);
+});
+console.log(`Filtered rows: ${filtered.length}`);
 
 // Group by province, then by crop (summing across departamentos)
 const provMap = {};
@@ -203,7 +216,7 @@ const provinces = Object.entries(provMap)
   .sort((a, b) => b.total_tons - a.total_tons);
 
 const output = {
-  campaign: latestCampaign,
+  campaign: recentCampaigns.join(' / '),
   source: 'MAGyP - Estimaciones Agrícolas',
   provinces,
 };
