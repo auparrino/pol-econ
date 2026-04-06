@@ -75,14 +75,39 @@ export default function ProvinceNews({ province }) {
   return (
     <div>
       <h3
-        className="text-[15px] font-bold tracking-[1.5px] uppercase text-steel mb-2 border-b pb-1"
+        className="text-[15px] font-bold tracking-[1.5px] uppercase text-steel mb-2 border-b pb-1 flex items-center gap-2"
         style={{ borderColor: 'rgba(0,48,73,0.12)' }}
       >
         Provincial News
+        <span
+          className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded"
+          style={{ background: '#d4a80022', color: '#b58500', border: '1px solid #d4a80055' }}
+        >
+          Beta
+        </span>
       </h3>
 
+      {/* AI disclaimer */}
+      <div
+        className="rounded-md px-3 py-2.5 mb-4 text-[10px] leading-snug"
+        style={{ background: '#d4a80012', border: '1px solid #d4a80044', color: '#003049' }}
+      >
+        <div className="flex items-start gap-2">
+          <span className="text-[13px] leading-none mt-0.5" aria-hidden>⚠</span>
+          <div className="space-y-1">
+            <div className="font-bold">Beta — AI-generated summary</div>
+            <p className="text-[#003049]/75">
+              Articles are scraped from public RSS feeds and condensed by an LLM.
+              Output may contain hallucinations, omissions, mistranslations, or
+              outdated framing. <b>Always verify against the original source</b> before
+              citing or acting on any claim. Not a substitute for human editorial review.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Timeframe buttons */}
-      <div className="flex gap-2 mb-2">
+      <div className="flex gap-2 mb-4">
         {TIMEFRAMES.map(tf => (
           <button
             key={tf.id}
@@ -127,7 +152,7 @@ export default function ProvinceNews({ province }) {
 
       {/* Empty state */}
       {!activeTimeframe && !loading && !summary && !error && (
-        <p className="text-[12px] text-[#003049]/40 italic py-1">
+        <p className="text-[12px] text-[#003049]/40 italic py-2">
           Select a timeframe to generate an AI summary of provincial news.
         </p>
       )}

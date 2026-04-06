@@ -9,6 +9,7 @@ const ProvincialCongressPanel = lazy(() => import('./panels/ProvincialCongressPa
 const CabinetPanel = lazy(() => import('./panels/CabinetPanel'));
 const ProvincialCabinetPanel = lazy(() => import('./panels/ProvincialCabinetPanel'));
 const OverviewPanel = lazy(() => import('./panels/OverviewPanel'));
+const RigiTab = lazy(() => import('./panels/RigiTab'));
 const EmploymentSection = lazy(() => import('./economy/EmploymentSection'));
 const FiscalSection = lazy(() => import('./economy/FiscalSection'));
 const ExportsSection = lazy(() => import('./economy/ExportsSection'));
@@ -28,7 +29,8 @@ const BASE_TABS = [
   { id: 'fiscal',     label: 'Fiscal',     needsProvince: true  },
   { id: 'exports',    label: 'Exports',    needsProvince: true  },
   { id: 'production', label: 'Production', needsProvince: true  },
-  { id: 'news',       label: 'News',       needsProvince: true  },
+  { id: 'rigi',       label: 'RIGI',       needsProvince: true  },
+  { id: 'news',       label: 'News',       needsProvince: true, beta: true },
 ];
 
 function EconomySectionWrapper({ section, selectedProvince, mobile }) {
@@ -128,22 +130,36 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
       {/* Tabs stacked vertically */}
       <div className="flex flex-col gap-1 px-3 py-2 shrink-0"
         style={{ borderBottom: '1px solid rgba(0,48,73,0.08)' }}>
-        {tabs.map(tab => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            role="tab"
-            aria-selected={activeTab === tab.id}
-            aria-controls={`panel-${tab.id}`}
-            className="text-[12px] px-3 py-1 rounded-lg font-semibold uppercase tracking-wider transition-all text-center"
-            style={activeTab === tab.id
-              ? { background: '#003049', color: '#FDF0D5' }
-              : { color: 'rgba(0,48,73,0.50)', background: 'rgba(0,48,73,0.04)' }
-            }
-          >
-            {tab.label}
-          </button>
-        ))}
+        {tabs.map(tab => {
+          const isActive = activeTab === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              role="tab"
+              aria-selected={isActive}
+              aria-controls={`panel-${tab.id}`}
+              className="text-[12px] px-3 py-1 rounded-lg font-semibold uppercase tracking-wider transition-all text-center inline-flex items-center justify-center gap-1.5"
+              style={isActive
+                ? { background: '#003049', color: '#FDF0D5' }
+                : { color: 'rgba(0,48,73,0.50)', background: 'rgba(0,48,73,0.04)' }
+              }
+            >
+              <span>{tab.label}</span>
+              {tab.beta && (
+                <span
+                  className="text-[8px] font-bold uppercase tracking-wider px-1 py-px rounded leading-none"
+                  style={isActive
+                    ? { background: '#FDF0D533', color: '#FDF0D5' }
+                    : { background: '#d4a80022', color: '#b58500', border: '1px solid #d4a80055' }
+                  }
+                >
+                  Beta
+                </span>
+              )}
+            </button>
+          );
+        })}
       </div>
 
       {/* Panel content */}
@@ -161,6 +177,7 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
           {(activeTab === 'employment' || activeTab === 'fiscal' || activeTab === 'exports' || activeTab === 'production') && (
             <EconomySectionWrapper section={activeTab} selectedProvince={selectedProvince} mobile={mobile} />
           )}
+          {activeTab === 'rigi' && <RigiTab selectedProvince={selectedProvince} />}
           {activeTab === 'news' && (
             selectedProvince
               ? <ProvinceNews province={selectedProvince} />
