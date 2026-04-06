@@ -83,26 +83,6 @@ function computeAlla(name, chamber) {
   return Math.round((matches / comparable) * 100);
 }
 
-function parseLegBars(str) {
-  if (!str) return null;
-  const isBi = /bicameral/i.test(str);
-  if (!isBi) {
-    const of = str.match(/of\.\s*([\d.]+)/)?.[1];
-    const op = str.match(/op\.\s*([\d.]+)/)?.[1];
-    if (of && op) return [{ label: null, of: parseFloat(of), op: parseFloat(op) }];
-  } else {
-    const res = [];
-    const dOf = str.match(/Dip\..*?of\.\s*([\d.]+)/)?.[1];
-    const dOp = str.match(/Dip\..*?op\.\s*([\d.]+)/)?.[1];
-    const sOf = str.match(/Sen\..*?of\.\s*([\d.]+)/)?.[1];
-    const sOp = str.match(/Sen\..*?op\.\s*([\d.]+)/)?.[1];
-    if (dOf && dOp) res.push({ label: 'Dip.', of: parseFloat(dOf), op: parseFloat(dOp) });
-    if (sOf && sOp) res.push({ label: 'Sen.', of: parseFloat(sOf), op: parseFloat(sOp) });
-    if (res.length) return res;
-  }
-  return null;
-}
-
 function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
   const pol = matchProvince(politicalContext, selectedProvince);
   const pn = selectedProvince?.toLowerCase();
@@ -170,39 +150,8 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
     );
   };
 
-  const legBars = parseLegBars(pol?.legislatura_composicion);
-
   return (
     <div className="flex flex-col gap-3 pt-0.5">
-      {/* Provincial Legislature */}
-      {pol?.legislatura_composicion && (
-        <div>
-          <p className="text-[11px] uppercase tracking-widest text-[#003049]/50 mb-1 font-semibold">Prov. Legislature</p>
-          {legBars ? (
-            <div className="space-y-1.5">
-              {legBars.map(({ label, of, op }, i) => (
-                <div key={i}>
-                  <div className="flex justify-between text-[11px] mb-0.5">
-                    {label && <span className="text-[#003049]/50">{label}</span>}
-                    <span className="ml-auto">
-                      <span style={{ color: '#7d3c98' }}>of. {of}%</span>
-                      <span className="text-[#003049]/40 mx-1">·</span>
-                      <span style={{ color: '#C1121F' }}>op. {op}%</span>
-                    </span>
-                  </div>
-                  <div className="flex h-[5px] rounded-full overflow-hidden bg-[#003049]/10">
-                    <div style={{ width: `${of}%`, backgroundColor: '#7d3c98', opacity: 0.75 }} />
-                    <div style={{ width: `${op}%`, backgroundColor: '#C1121F', opacity: 0.75 }} />
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="text-[11px] text-[#003049] leading-relaxed">{pol.legislatura_composicion}</p>
-          )}
-        </div>
-      )}
-
       {/* Senators */}
       <div>
         <p className="text-[11px] uppercase tracking-widest text-[#003049]/50 mb-1 font-semibold">Senators ({senators.length})</p>

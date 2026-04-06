@@ -95,18 +95,12 @@ export function FiscalTriptych({ provinceName }) {
 
   return (
     <div className="mt-2">
-      <div className="grid grid-cols-3 gap-1.5">
+      <div className="grid grid-cols-2 gap-1.5">
         <Metric
           label="Fed. transfers"
           value={`${depLatest?.toFixed(1) ?? '—'}%`}
           sub={`of total revenue · ${prov.year}`}
           color={depColor}
-        />
-        <Metric
-          label="Non-automatic"
-          value={discOfTotalPct != null ? `${discOfTotalPct.toFixed(1)}%` : '—'}
-          sub="of total revenue"
-          color={discColor}
         />
         <Metric
           label="Δ vs 2019"

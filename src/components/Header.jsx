@@ -8,7 +8,7 @@ function DeltaBadge({ delta }) {
   const arrow = dir === 'up' ? '▲' : dir === 'down' ? '▼' : '·';
   const color = dir === 'up' ? '#27ae60' : dir === 'down' ? '#C1121F' : '#8899aa';
   return (
-    <span className="text-[11px] font-mono ml-0.5" style={{ color }}>
+    <span className="text-[9px] font-mono ml-0.5" style={{ color }}>
       {arrow}{abs}%
     </span>
   );
@@ -17,10 +17,10 @@ function DeltaBadge({ delta }) {
 function MacroChip({ label, value, prefix = '', suffix = '', delta }) {
   return (
     <span
-      className="inline-flex items-center gap-2 rounded-full text-[15px] border whitespace-nowrap"
-      style={{ background: 'rgba(0,48,73,0.08)', borderColor: 'rgba(0,48,73,0.18)', color: '#003049', padding: '8px 20px' }}
+      className="inline-flex items-center gap-1 rounded-full text-[11px] border whitespace-nowrap"
+      style={{ background: 'rgba(0,48,73,0.08)', borderColor: 'rgba(0,48,73,0.18)', color: '#003049', padding: '3px 9px' }}
     >
-      <span className="font-medium opacity-50 text-[12px] uppercase tracking-wide">{label}</span>
+      <span className="font-medium opacity-50 text-[9px] uppercase tracking-wide">{label}</span>
       <span className="font-semibold font-mono">
         {value != null
           ? `${prefix}${typeof value === 'number' ? value.toLocaleString('es-AR') : value}${suffix}`
@@ -56,19 +56,19 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-[1002] flex items-center gap-3 overflow-x-auto scrollbar-thin"
-      style={{ background: '#FFF8EB', borderBottom: '1px solid #d4c4a0', height: 56, padding: '0 16px' }}
+      className="fixed top-0 left-0 right-0 z-[1002] flex items-center gap-2"
+      style={{ background: '#FFF8EB', borderBottom: '1px solid #d4c4a0', height: 56, padding: '0 12px' }}
     >
       <div className="shrink-0">
-        <h1 className="text-[16px] font-extrabold tracking-tight text-navy leading-tight">
+        <h1 className="text-[14px] font-extrabold tracking-tight text-navy leading-tight">
           ARGENTINA
         </h1>
-        <p className="text-[9px] font-medium tracking-[1.5px] uppercase text-steel -mt-0.5">
+        <p className="text-[8px] font-medium tracking-[1.4px] uppercase text-steel -mt-0.5">
           Political & Economic Atlas
         </p>
       </div>
 
-      <div className="flex items-center gap-4 flex-1 justify-center flex-nowrap">
+      <div className="flex items-center gap-1.5 flex-1 justify-end flex-wrap">
         {chips}
       </div>
     </header>

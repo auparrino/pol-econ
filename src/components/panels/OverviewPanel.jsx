@@ -1,9 +1,10 @@
 // OverviewPanel — left-panel tab showing the high-level province snapshot:
 // hero (province name + region + area), governor card with alignment badge,
-// demographics, and core socioeconomic indicators. Companion deeper sections
-// (Fiscal, RIGI, Legislators, Economy) live in their own BottomBar tabs.
+// demographics, core socioeconomic indicators, and RIGI. Fiscal lives in its
+// own Fiscal tab. Other deep sections live in dedicated BottomBar tabs.
 
 import { sociodemographic } from '../../data/sociodemographic';
+import { RigiPanel } from '../shared/RigiPanel';
 
 const ALIGNMENT_LABELS = {
   oficialismo:      'Ruling Coalition',
@@ -225,10 +226,14 @@ export default function OverviewPanel({ selectedProvince, governors, onClose }) 
         <p className="text-[11px] text-[#003049]/50 italic">No socioeconomic data.</p>
       )}
 
+      {/* RIGI */}
+      <SectionTitle>RIGI Projects</SectionTitle>
+      <RigiPanel provinceName={selectedProvince} />
+
       {/* Footer hint about other tabs */}
       <div className="mt-4 pt-2 border-t text-[9px] text-[#003049]/45 leading-snug" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
         Deep data lives in other tabs:
-        <br />Congress · Cabinet · Economy · News · Macro
+        <br />Congress · Cabinet · Employment · Fiscal · Exports · Production · News
       </div>
     </div>
   );

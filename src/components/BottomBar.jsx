@@ -1,12 +1,16 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import ProvinceNews from './ProvinceNews';
+import { useEconomyData, sipaData } from '../hooks/useEconomyData';
 
 const CongressPanel = lazy(() => import('./panels/CongressPanel'));
 const ProvincialCongressPanel = lazy(() => import('./panels/ProvincialCongressPanel'));
 const CabinetPanel = lazy(() => import('./panels/CabinetPanel'));
 const ProvincialCabinetPanel = lazy(() => import('./panels/ProvincialCabinetPanel'));
-const EconomyPanel = lazy(() => import('./panels/EconomyPanel'));
 const OverviewPanel = lazy(() => import('./panels/OverviewPanel'));
+const EmploymentSection = lazy(() => import('./economy/EmploymentSection'));
+const FiscalSection = lazy(() => import('./economy/FiscalSection'));
+const ExportsSection = lazy(() => import('./economy/ExportsSection'));
+const ProductionSection = lazy(() => import('./economy/ProductionSection'));
 
 const PanelFallback = () => (
   <div className="flex items-center justify-center h-full">
@@ -15,18 +19,51 @@ const PanelFallback = () => (
 );
 
 const BASE_TABS = [
-  { id: 'overview', label: 'Overview' },
-  { id: 'congress', label: 'Congress' },
-  { id: 'cabinet', label: 'Cabinet' },
-  { id: 'economy', label: 'Economy' },
-  { id: 'news', label: 'News' },
+  { id: 'overview',   label: 'Overview',   needsProvince: true  },
+  { id: 'congress',   label: 'Congress',   needsProvince: false },
+  { id: 'cabinet',    label: 'Cabinet',    needsProvince: false },
+  { id: 'employment', label: 'Employment', needsProvince: true  },
+  { id: 'fiscal',     label: 'Fiscal',     needsProvince: true  },
+  { id: 'exports',    label: 'Exports',    needsProvince: true  },
+  { id: 'production', label: 'Production', needsProvince: true  },
+  { id: 'news',       label: 'News',       needsProvince: true  },
 ];
+
+function EconomySectionWrapper({ section, selectedProvince, mobile }) {
+  const { sipa, fiscal, exports, exportDest } = useEconomyData(selectedProvince);
+  if (!selectedProvince) {
+    return (
+      <p className="text-[12px] text-[#003049]/50 py-4 text-center">
+        Select a province on the map.
+      </p>
+    );
+  }
+  if (section === 'employment') {
+    return sipa
+      ? <EmploymentSection sipa={sipa} mobile={mobile} />
+      : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No employment data available for this province.</p>;
+  }
+  if (section === 'fiscal') {
+    return fiscal
+      ? <FiscalSection fiscal={fiscal} provinceName={selectedProvince} mobile={mobile} />
+      : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No fiscal data available for this province.</p>;
+  }
+  if (section === 'exports') {
+    return exports?.length > 0
+      ? <ExportsSection exports={exports} exportDest={exportDest} mobile={mobile} />
+      : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No export data available for this province.</p>;
+  }
+  if (section === 'production') {
+    return <ProductionSection provinceName={selectedProvince} />;
+  }
+  return null;
+}
 
 export default function BottomBar({ congress, selectedProvince, governors, onClearProvince, mobile = false }) {
   // Overlays are owned by the right-side RightOverlayPanel — not duplicated here.
   const tabs = selectedProvince
     ? BASE_TABS
-    : BASE_TABS.filter(t => t.id !== 'overview' && t.id !== 'economy' && t.id !== 'news');
+    : BASE_TABS.filter(t => !t.needsProvince);
 
   const [activeTab, setActiveTab] = useState('congress');
 
@@ -34,6 +71,11 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
   useEffect(() => {
     if (selectedProvince) setActiveTab('overview');
   }, [selectedProvince]);
+
+  // If active tab becomes unavailable (e.g. province cleared), fall back to congress.
+  useEffect(() => {
+    if (!tabs.find(t => t.id === activeTab)) setActiveTab('congress');
+  }, [tabs, activeTab]);
 
   return (
     <aside
@@ -49,7 +91,7 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
       aria-label="Dashboard panels"
     >
       {/* Tabs stacked vertically */}
-      <div className="flex flex-col gap-1 px-3 py-2.5 shrink-0"
+      <div className="flex flex-col gap-1 px-3 py-2 shrink-0"
         style={{ borderBottom: '1px solid rgba(0,48,73,0.08)' }}>
         {tabs.map(tab => (
           <button
@@ -58,7 +100,7 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
             role="tab"
             aria-selected={activeTab === tab.id}
             aria-controls={`panel-${tab.id}`}
-            className="text-[13px] px-3 py-1.5 rounded-lg font-semibold uppercase tracking-wider transition-all text-center"
+            className="text-[12px] px-3 py-1 rounded-lg font-semibold uppercase tracking-wider transition-all text-center"
             style={activeTab === tab.id
               ? { background: '#003049', color: '#FDF0D5' }
               : { color: 'rgba(0,48,73,0.50)', background: 'rgba(0,48,73,0.04)' }
@@ -81,7 +123,9 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
             ? <ProvincialCabinetPanel selectedProvince={selectedProvince} governors={governors} />
             : <CabinetPanel />
           )}
-          {activeTab === 'economy' && <EconomyPanel selectedProvince={selectedProvince} mobile={mobile} />}
+          {(activeTab === 'employment' || activeTab === 'fiscal' || activeTab === 'exports' || activeTab === 'production') && (
+            <EconomySectionWrapper section={activeTab} selectedProvince={selectedProvince} mobile={mobile} />
+          )}
           {activeTab === 'news' && (
             selectedProvince
               ? <ProvinceNews province={selectedProvince} />

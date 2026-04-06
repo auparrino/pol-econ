@@ -116,15 +116,19 @@ function DependencyRanking({ currentProvince }) {
 export default function FiscalSection({ fiscal, provinceName, mobile }) {
   if (!fiscal) return null;
 
+  // Composition over time as % share — invariant to inflation, unlike nominal ARS values.
   const tsData = useMemo(() => {
     if (!fiscal.timeSeries) return [];
     return fiscal.timeSeries
       .filter(t => t.year >= 2010)
-      .map(t => ({
-        year: t.year,
-        own: t.own,
-        transfers: t.transfers,
-      }));
+      .map(t => {
+        const total = (t.own || 0) + (t.transfers || 0);
+        return {
+          year: t.year,
+          ownPct: total > 0 ? (t.own / total) * 100 : 0,
+          transfersPct: total > 0 ? (t.transfers / total) * 100 : 0,
+        };
+      });
   }, [fiscal]);
 
   return (
@@ -166,22 +170,31 @@ export default function FiscalSection({ fiscal, provinceName, mobile }) {
 
       <DependencyRanking currentProvince={provinceName} />
 
-      {/* Revenue evolution */}
+      {/* Revenue composition over time — % share, inflation-invariant */}
       {tsData.length > 2 && !mobile && (
         <div>
-          <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Revenue evolution (nominal)</p>
+          <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">
+            Revenue composition over time (% share)
+          </p>
           <div style={{ width: '100%', height: 130 }}>
             <ResponsiveContainer minWidth={0} minHeight={0}>
-              <AreaChart data={tsData} margin={{ top: 4, right: 4, bottom: 0, left: -10 }}>
+              <AreaChart data={tsData} margin={{ top: 4, right: 4, bottom: 0, left: -10 }} stackOffset="expand">
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,48,73,0.08)" />
                 <XAxis dataKey="year" tick={{ fontSize: 11, fill: 'rgba(0,48,73,0.5)' }} />
-                <YAxis tick={{ fontSize: 11, fill: 'rgba(0,48,73,0.5)' }} tickFormatter={formatMillions} />
-                <Tooltip content={<CustomTooltip formatter={v => `$${formatMillions(v)}`} />} />
-                <Area type="monotone" dataKey="own" stackId="1" fill="#4ade80" fillOpacity={0.7} stroke="#4ade80" name="Own revenue" />
-                <Area type="monotone" dataKey="transfers" stackId="1" fill="#f97316" fillOpacity={0.7} stroke="#f97316" name="Nat. transfers" />
+                <YAxis
+                  tick={{ fontSize: 11, fill: 'rgba(0,48,73,0.5)' }}
+                  tickFormatter={(v) => `${Math.round(v * 100)}%`}
+                  domain={[0, 1]}
+                />
+                <Tooltip content={<CustomTooltip formatter={v => `${v.toFixed(1)}%`} />} />
+                <Area type="monotone" dataKey="ownPct" stackId="1" fill="#4ade80" fillOpacity={0.75} stroke="#4ade80" name="Own resources" />
+                <Area type="monotone" dataKey="transfersPct" stackId="1" fill="#f97316" fillOpacity={0.75} stroke="#f97316" name="Nat. transfers" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
+          <p className="text-[9px] text-[#003049]/40 italic mt-0.5 leading-snug">
+            Each year normalized to 100% — invariant to inflation. Tracks how the own/national mix has shifted over time.
+          </p>
         </div>
       )}
     </div>
