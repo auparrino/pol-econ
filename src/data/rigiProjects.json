@@ -1,0 +1,187 @@
+{
+  "version": "2026-04-06",
+  "methodology": "Manually curated list of RIGI projects. Amounts in USD millions. 'aprobado' = officially approved under RIGI. 'en_revision' = filed and under review.",
+  "last_curation": "2026-04-06",
+  "projects": [
+    {
+      "id": "el-quemado-solar",
+      "nombre": "Parque Solar El Quemado",
+      "empresa": "YPF Luz",
+      "pais_origen": "AR",
+      "sector": "energy",
+      "provincia": "Mendoza",
+      "monto_usd_millones": 211,
+      "estado": "aprobado"
+    },
+    {
+      "id": "vmos-vaca-muerta-sur",
+      "nombre": "Vaca Muerta Oleoducto Sur (VMOS)",
+      "empresa": "YPF / PAE / Vista / Pampa / Chevron / Shell",
+      "pais_origen": "AR+mix",
+      "sector": "oilgas",
+      "provincia": "Río Negro",
+      "monto_usd_millones": 2500,
+      "estado": "aprobado"
+    },
+    {
+      "id": "southern-energy-gnl",
+      "nombre": "Southern Energy GNL",
+      "empresa": "PAE / YPF / Pampa Energía / Harbour Energy / Golar LNG",
+      "pais_origen": "AR/UK/NO",
+      "sector": "oilgas",
+      "provincia": "Río Negro",
+      "monto_usd_millones": 6900,
+      "estado": "aprobado"
+    },
+    {
+      "id": "rincon-litio",
+      "nombre": "Rincón Litio",
+      "empresa": "Rio Tinto",
+      "pais_origen": "UK/AU",
+      "sector": "mining",
+      "mineral": "Litio",
+      "provincia": "Salta",
+      "monto_usd_millones": 2500,
+      "estado": "aprobado"
+    },
+    {
+      "id": "sidersa",
+      "nombre": "Sidersa+ (Acero Verde)",
+      "empresa": "Sidersa",
+      "pais_origen": "AR",
+      "sector": "industry",
+      "provincia": "Buenos Aires",
+      "monto_usd_millones": 296,
+      "estado": "aprobado"
+    },
+    {
+      "id": "hombre-muerto-oeste",
+      "nombre": "Hombre Muerto Oeste (HMW)",
+      "empresa": "Galan Lithium",
+      "pais_origen": "AU",
+      "sector": "mining",
+      "mineral": "Litio",
+      "provincia": "Catamarca",
+      "monto_usd_millones": 217,
+      "estado": "aprobado"
+    },
+    {
+      "id": "olavarria-eolico",
+      "nombre": "Parque Eólico Olavarría",
+      "empresa": "PCR / ArcelorMittal Acindar",
+      "pais_origen": "AR/LU",
+      "sector": "energy",
+      "provincia": "Buenos Aires",
+      "monto_usd_millones": 275,
+      "estado": "aprobado"
+    },
+    {
+      "id": "los-azules",
+      "nombre": "Los Azules (Cobre)",
+      "empresa": "McEwen Copper",
+      "pais_origen": "CA",
+      "sector": "mining",
+      "mineral": "Cobre",
+      "provincia": "San Juan",
+      "monto_usd_millones": 2700,
+      "estado": "aprobado"
+    },
+    {
+      "id": "terminal-timbues",
+      "nombre": "Terminal Timbúes",
+      "empresa": "Terminal Timbúes S.A.",
+      "pais_origen": "AR",
+      "sector": "infrastructure",
+      "provincia": "Santa Fe",
+      "monto_usd_millones": 277,
+      "estado": "aprobado"
+    },
+    {
+      "id": "gualcamayo",
+      "nombre": "Gualcamayo (Oro y Plata)",
+      "empresa": "Minas Argentinas / Mineros S.A.",
+      "pais_origen": "CO",
+      "sector": "mining",
+      "mineral": "Oro/Plata",
+      "provincia": "San Juan",
+      "monto_usd_millones": 665,
+      "estado": "aprobado"
+    },
+    {
+      "id": "veladero-expansion",
+      "nombre": "Veladero Expansión (Fases 8-9)",
+      "empresa": "Barrick Gold / Minera Andina del Sol",
+      "pais_origen": "CA",
+      "sector": "mining",
+      "mineral": "Oro",
+      "provincia": "San Juan",
+      "monto_usd_millones": 380,
+      "estado": "aprobado"
+    },
+    {
+      "id": "diablillos",
+      "nombre": "Diablillos (Oro y Plata)",
+      "empresa": "AbraSilver Resource Corp.",
+      "pais_origen": "CA",
+      "sector": "mining",
+      "mineral": "Oro/Plata",
+      "provincia": "Salta",
+      "monto_usd_millones": 760,
+      "estado": "aprobado"
+    },
+    {
+      "id": "fenix-litio",
+      "nombre": "Fénix Expansión (Litio)",
+      "empresa": "Rio Tinto",
+      "pais_origen": "UK/AU",
+      "sector": "mining",
+      "mineral": "Litio",
+      "provincia": "Catamarca",
+      "monto_usd_millones": 530,
+      "estado": "aprobado"
+    },
+    {
+      "id": "vicuna-josemaria-filo",
+      "nombre": "Vicuña District (Josemaría + Filo del Sol)",
+      "empresa": "Vicuña Corp. (Lundin Mining 50% / BHP 50%)",
+      "pais_origen": "CA/AU",
+      "sector": "mining",
+      "mineral": "Cobre/Oro",
+      "provincia": "San Juan",
+      "monto_usd_millones": 18000,
+      "estado": "en_revision"
+    },
+    {
+      "id": "el-pachon",
+      "nombre": "El Pachón (Cobre)",
+      "empresa": "Glencore",
+      "pais_origen": "CH",
+      "sector": "mining",
+      "mineral": "Cobre",
+      "provincia": "San Juan",
+      "monto_usd_millones": 9500,
+      "estado": "en_revision"
+    },
+    {
+      "id": "agua-rica-mara",
+      "nombre": "Agua Rica / MARA (Cobre)",
+      "empresa": "Glencore",
+      "pais_origen": "CH",
+      "sector": "mining",
+      "mineral": "Cobre",
+      "provincia": "Catamarca",
+      "monto_usd_millones": 4000,
+      "estado": "en_revision"
+    },
+    {
+      "id": "argentina-lng-fase2",
+      "nombre": "Argentina LNG (Fase 2)",
+      "empresa": "YPF / Eni / XRG (ADNOC)",
+      "pais_origen": "AR/IT/AE",
+      "sector": "oilgas",
+      "provincia": "Río Negro",
+      "monto_usd_millones": 16000,
+      "estado": "en_revision"
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+﻿pais_id;pais;provincia_id;provincia;campaña;tipo de tabaco;superficie_plantada;superficie_cosechada;unidad_sup_id;unidad_superficie;produccion;unidad_prod_id;unidad_produccion;rendimiento;unidad_rendimiento;precio_acopio;precio_fet;precio_total;precio_moneda_id;precio_moneda;unidad_precio
+032;Argentina;10;Catamarca;1986/1987;burley;948;948;ha;hectarea;1433118;kg;kilogramo;1512;kilogramos/hectarea;1.32;1.32;2.64;s/d;pesos australes;pesos/kilogramos
+032;Argentina;10;Catamarca;1986/1987;criollo s.;300;300;ha;hectarea;483188;kg;kilogramo;1611;kilogramos/hectarea;0.7;0.7;1.39;s/d;pesos australes;pesos/kilogramos
+032;Argentina;10;Catamarca;1987/1988;burley;610;610;ha;hectarea;913230;kg;kilogramo;1497;kilogramos/hectarea;4;4.04;8.04;s/d;pesos australes;pesos/kilogramos
+032;Argentina;10;Catamarca;1987/1988;criollo s.;215;215;ha;hectarea;379431;kg;kilogramo;1765;kilogramos/hectarea;3.61;3.64;7.25;s/d;pesos australes;pesos/kilogramos
+032;Argentina;10;Catamarca;1988/1989;burley;1310;1191;ha;hectarea;1167102;kg;kilogramo;980;kilogramos/hectarea;20.03;42.54;62.57;s/d;pesos australes;pesos/kilogramos
+032;Argentina;10;Catamarca;1988/1989;criollo s.;265;238;ha;hectarea;388907;kg;kilogramo;1634;kilogramos/hectarea;321.29;321.29;642.58;s/d;pesos australes;pesos/kilogramos
+032;Argentina;10;Catamarca;1989/1990;burley;1308;1189;ha;hectarea;880511;kg;kilogramo;741;kilogramos/hectarea;2998.82;1999.21;4998.03;s/d;pesos australes;pesos/kilogramos
+032;Argentina;10;Catamarca;1989/1990;criollo s.;153;138;ha;hectarea;147323;kg;kilogramo;1068;kilogramos/hectarea;3462.93;2309.2;5772.13;s/d;pesos australes;pesos/kilogramos
+032;Argentina;10;Catamarca;1990/1991;burley;1320;1200;ha;hectarea;1650214;kg;kilogramo;1375;kilogramos/hectarea;14799;9866;24665;s/d;pesos australes;pesos/kilogramos
+032;Argentina;10;Catamarca;1990/1991;criollo s.;187;168;ha;hectarea;195863;kg;kilogramo;1166;kilogramos/hectarea;7404;4936;12340;s/d;pesos australes;pesos/kilogramos
+032;Argentina;10;Catamarca;1991/1992;burley;1696;1542;ha;hectarea;1777030;kg;kilogramo;1152;kilogramos/hectarea;1.6;0.55;2.15;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1991/1992;criollo s.;186;167;ha;hectarea;131371;kg;kilogramo;787;kilogramos/hectarea;1.15;0.21;1.36;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1991/1992;virginia;2;2;ha;hectarea;1662;kg;kilogramo;831;kilogramos/hectarea;1.48;0.52;2;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1992/1993;burley;1600;1247;ha;hectarea;1597138;kg;kilogramo;1281;kilogramos/hectarea;1.67;0.55;2.22;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1992/1993;criollo s.;200;113;ha;hectarea;147895;kg;kilogramo;1309;kilogramos/hectarea;0.94;0.21;1.15;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1992/1993;virginia;4;4;ha;hectarea;5570;kg;kilogramo;1393;kilogramos/hectarea;1.2;0.39;1.59;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1993/1994;burley;800;600;ha;hectarea;983402;kg;kilogramo;1639;kilogramos/hectarea;0.81;1.21;2.02;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1993/1994;criollo s.;200;87;ha;hectarea;68953;kg;kilogramo;793;kilogramos/hectarea;0.81;0.69;1.5;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1994/1995;burley;761;711;ha;hectarea;718972;kg;kilogramo;1011;kilogramos/hectarea;1;1.12;2.12;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1994/1995;criollo s.;200;150;ha;hectarea;157127;kg;kilogramo;1048;kilogramos/hectarea;0.95;0.74;1.69;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1995/1996;burley;909;870;ha;hectarea;923282;kg;kilogramo;1061;kilogramos/hectarea;0.6;0.76;1.36;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1995/1996;virginia;5;5;ha;hectarea;6313;kg;kilogramo;1263;kilogramos/hectarea;1.02;0.9;1.92;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1995/1996;criollo misionero;4;4;ha;hectarea;5389;kg;kilogramo;1347;kilogramos/hectarea;0.88;0.79;1.67;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1995/1996;criollo s.;145;100;ha;hectarea;106596;kg;kilogramo;1066;kilogramos/hectarea;0.85;0.63;1.48;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1996/1997;burley;750;620;ha;hectarea;763380;kg;kilogramo;1231;kilogramos/hectarea;1.35;0.71;2.06;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1996/1997;virginia;110;90;ha;hectarea;116548;kg;kilogramo;1295;kilogramos/hectarea;1.04;0.37;1.41;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1996/1997;criollo misionero;30;25;ha;hectarea;33145;kg;kilogramo;1326;kilogramos/hectarea;0.23;0.65;0.88;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1997/1998;burley;1212;800;ha;hectarea;1218890;kg;kilogramo;1524;kilogramos/hectarea;1.26;0.69;1.95;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1997/1998;virginia;90;41;ha;hectarea;61979;kg;kilogramo;1512;kilogramos/hectarea;1.26;0.62;1.88;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1997/1998;criollo misionero;7;5;ha;hectarea;6410;kg;kilogramo;1282;kilogramos/hectarea;0.6;0.55;1.15;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1998/1999;burley;900;820;ha;hectarea;1000327;kg;kilogramo;1220;kilogramos/hectarea;0.98;0.62;1.6;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;1999/2000;burley;585;570;ha;hectarea;840491;kg;kilogramo;1475;kilogramos/hectarea;0.78;0.55;1.33;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2000/2001;burley;685;650;ha;hectarea;974039;kg;kilogramo;1499;kilogramos/hectarea;0.87;0.69;1.56;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2001/2002;burley;908;859;ha;hectarea;1201508;kg;kilogramo;1399;kilogramos/hectarea;1.39;1.03;2.42;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2002/2003;burley;866;624;ha;hectarea;991773;kg;kilogramo;1591;kilogramos/hectarea;2.88;1.47;4.35;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2003/2004;burley;1044;589;ha;hectarea;914041;kg;kilogramo;1553;kilogramos/hectarea;2.44;1.09;3.53;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2004/2005;burley;851;820;ha;hectarea;1571756;kg;kilogramo;1917;kilogramos/hectarea;2.85;1.2;4.05;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2005/2006;virginia;20;5;ha;hectarea;7496;kg;kilogramo;1499;kilogramos/hectarea;1.58;0.65;2.23;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2005/2006;burley;818;745;ha;hectarea;1163787;kg;kilogramo;1562;kilogramos/hectarea;2.89;1.35;4.25;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2006/2007;virginia;11;11;ha;hectarea;8624;kg;kilogramo;784;kilogramos/hectarea;1.47;0.57;2.04;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2006/2007;burley;612;549;ha;hectarea;850286;kg;kilogramo;1550;kilogramos/hectarea;3.16;1.44;4.61;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2007/2008;virginia;2;2;ha;hectarea;4588;kg;kilogramo;1843;kilogramos/hectarea;4.91;1.51;6.42;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2007/2008;burley;541;502;ha;hectarea;900044;kg;kilogramo;1793;kilogramos/hectarea;5.31;1.72;7.03;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2008/2009;virginia;10;7;ha;hectarea;8357;kg;kilogramo;1286;kilogramos/hectarea;6.48;1.54;8.02;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2008/2009;burley;683;554;ha;hectarea;1178215;kg;kilogramo;2128;kilogramos/hectarea;7.02;1.78;8.8;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2009/2010;virginia;10;5;ha;hectarea;5667;kg;kilogramo;1133;kilogramos/hectarea;7.12;1.63;8.75;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2009/2010;burley;651;482;ha;hectarea;782582;kg;kilogramo;1624;kilogramos/hectarea;7.38;1.79;9.17;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2010/2011;virginia;2;1;ha;hectarea;344;kg;kilogramo;491;kilogramos/hectarea;6.93;1.71;8.64;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2010/2011;burley;685;408;ha;hectarea;762458;kg;kilogramo;1871;kilogramos/hectarea;7.13;1.94;9.07;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2010/2011;criollo argentino;59;27;ha;hectarea;55781;kg;kilogramo;2034;kilogramos/hectarea;8.96;2.24;11.2;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2011/2012;burley;629;613;ha;hectarea;745710;kg;kilogramo;1216;kilogramos/hectarea;8.04;2.52;10.56;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2011/2012;criollo argentino;146;142;ha;hectarea;146043;kg;kilogramo;1030;kilogramos/hectarea;9.83;2.83;12.66;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2012/2013;burley;452;417;ha;hectarea;609701;kg;kilogramo;1464;kilogramos/hectarea;10.39;2.91;13.3;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2012/2013;criollo argentino;134;123;ha;hectarea;210550;kg;kilogramo;1712;kilogramos/hectarea;10.89;2.82;13.71;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2013/2014;burley;533;381;ha;hectarea;560436;kg;kilogramo;1471;kilogramos/hectarea;15.4;4.28;19.68;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2013/2014;criollo argentino;98;70;ha;hectarea;192533;kg;kilogramo;2750;kilogramos/hectarea;15.45;3.96;19.41;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2014/2015;burley;532;522;ha;hectarea;602795;kg;kilogramo;1155;kilogramos/hectarea;15.28;5.53;20.81;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2014/2015;criollo argentino;103;82;ha;hectarea;185367;kg;kilogramo;2261;kilogramos/hectarea;17.23;5.61;22.84;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2015/2016;burley;441;437;ha;hectarea;484396;kg;kilogramo;1108;kilogramos/hectarea;20.44;9.93;30.37;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2015/2016;criollo argentino;96;81;ha;hectarea;112604;kg;kilogramo;1390;kilogramos/hectarea;22.37;9.84;32.21;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2016/2017;burley;396.26;359.93;ha;hectarea;622980;kg;kilogramo;1731;kilogramos/hectarea;23.68;8.9;32.58;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2016/2017;criollo argentino;154.36;140.21;ha;hectarea;149950;kg;kilogramo;1069;kilogramos/hectarea;22.73;7.83;30.56;ARS;pesos;pesos/kilogramos
+032;Argentina;10;Catamarca;2016/2017;criollo misionero;0;0;ha;hectarea;27710;kg;kilogramo;0;kilogramos/hectarea;17.48;5.42;22.9;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1986/1987;virginia;300;300;ha;hectarea;553808;kg;kilogramo;1846;kilogramos/hectarea;1.21;1.21;2.43;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1986/1987;criollo correntino;150;150;ha;hectarea;135741;kg;kilogramo;905;kilogramos/hectarea;1.1;1.1;2.21;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1986/1987;burley;108;s/d;ha;hectarea;112;kg;kilogramo;s/d;kilogramos/hectarea;1.52;1.52;3.03;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1987/1988;virginia;237;237;ha;hectarea;532275;kg;kilogramo;2246;kilogramos/hectarea;4;4.09;8.09;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1987/1988;criollo correntino;106;106;ha;hectarea;188745;kg;kilogramo;1781;kilogramos/hectarea;4.26;4.26;8.52;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1988/1989;virginia;250;213;ha;hectarea;382932;kg;kilogramo;1798;kilogramos/hectarea;17.33;36.67;53.99;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1988/1989;criollo correntino;175;160;ha;hectarea;288481;kg;kilogramo;1803;kilogramos/hectarea;42.55;49.89;92.44;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1989/1990;virginia;170;159;ha;hectarea;327221;kg;kilogramo;2058;kilogramos/hectarea;3142.57;2094.25;5236.82;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1989/1990;criollo correntino;145;128;ha;hectarea;218290;kg;kilogramo;1705;kilogramos/hectarea;3103.69;2068.85;5172.54;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1990/1991;virginia;146;105;ha;hectarea;177626;kg;kilogramo;1692;kilogramos/hectarea;14196;9464;23660;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1990/1991;criollo correntino;70;60;ha;hectarea;137045;kg;kilogramo;2284;kilogramos/hectarea;9450;6300;15750;s/d;pesos australes;pesos/kilogramos
+032;Argentina;22;Chaco;1991/1992;virginia;318;290;ha;hectarea;538299;kg;kilogramo;1856;kilogramos/hectarea;1.48;0.51;1.99;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1991/1992;criollo correntino;120;100;ha;hectarea;183564;kg;kilogramo;1836;kilogramos/hectarea;1.58;0.45;2.03;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1991/1992;burley;30;10;ha;hectarea;10929;kg;kilogramo;1093;kilogramos/hectarea;1.6;0.42;2.02;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1992/1993;virginia;365;255;ha;hectarea;482405;kg;kilogramo;1892;kilogramos/hectarea;1.67;0.54;2.21;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1992/1993;criollo correntino;100;70;ha;hectarea;121481;kg;kilogramo;1735;kilogramos/hectarea;1.07;0.47;1.54;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1992/1993;burley;108;30;ha;hectarea;37450;kg;kilogramo;1248;kilogramos/hectarea;1.69;0.56;2.25;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1993/1994;virginia;70;50;ha;hectarea;48484;kg;kilogramo;970;kilogramos/hectarea;0.87;1.04;1.91;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1993/1994;criollo correntino;100;70;ha;hectarea;202570;kg;kilogramo;2894;kilogramos/hectarea;1.08;0.95;2.03;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1993/1994;burley;30;25;ha;hectarea;14161;kg;kilogramo;566;kilogramos/hectarea;0.57;0.97;1.54;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1994/1995;virginia;35;35;ha;hectarea;51691;kg;kilogramo;1477;kilogramos/hectarea;1.23;1.21;2.44;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1994/1995;criollo correntino;156;121;ha;hectarea;335232;kg;kilogramo;2771;kilogramos/hectarea;1.07;0.91;1.98;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1995/1996;virginia;139;112;ha;hectarea;162190;kg;kilogramo;1448;kilogramos/hectarea;0.92;1.14;2.06;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1995/1996;criollo correntino;418;334;ha;hectarea;348797;kg;kilogramo;1044;kilogramos/hectarea;1.08;0.92;2;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1996/1997;virginia;280;240;ha;hectarea;350476;kg;kilogramo;1460;kilogramos/hectarea;1.86;0.71;2.57;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1996/1997;criollo correntino;350;270;ha;hectarea;528795;kg;kilogramo;1959;kilogramos/hectarea;1.04;0.76;1.8;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1997/1998;virginia;447;447;ha;hectarea;517825;kg;kilogramo;1158;kilogramos/hectarea;1.42;0.7;2.12;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1997/1998;criollo correntino;560;560;ha;hectarea;492484;kg;kilogramo;879;kilogramos/hectarea;1.03;0.76;1.79;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1998/1999;virginia;700;510;ha;hectarea;782788;kg;kilogramo;1535;kilogramos/hectarea;0.81;0.76;1.57;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1998/1999;criollo correntino;600;450;ha;hectarea;741336;kg;kilogramo;1647;kilogramos/hectarea;0.86;0.79;1.65;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1999/2000;virginia;490;265;ha;hectarea;515623;kg;kilogramo;1946;kilogramos/hectarea;1.13;0.72;1.85;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;1999/2000;criollo correntino;500;300;ha;hectarea;453447;kg;kilogramo;1511;kilogramos/hectarea;0.6;0.78;1.38;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2000/2001;virginia;384;270;ha;hectarea;405252;kg;kilogramo;1500;kilogramos/hectarea;1.14;0.81;1.95;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2000/2001;criollo correntino;562;395;ha;hectarea;602092;kg;kilogramo;1523;kilogramos/hectarea;0.66;0.87;1.53;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2001/2002;virginia;360;233;ha;hectarea;387375;kg;kilogramo;1663;kilogramos/hectarea;1.66;0.99;2.65;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2001/2002;criollo correntino;949;652;ha;hectarea;1017317;kg;kilogramo;1560;kilogramos/hectarea;0.77;1.06;1.83;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2002/2003;virginia;275;206;ha;hectarea;311390;kg;kilogramo;1510;kilogramos/hectarea;3.46;1.56;5.02;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2002/2003;criollo correntino;1214;911;ha;hectarea;1194194;kg;kilogramo;1312;kilogramos/hectarea;1.07;1.63;2.7;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2003/2004;virginia;321;317;ha;hectarea;379521;kg;kilogramo;1197;kilogramos/hectarea;3.68;1.46;5.14;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2003/2004;criollo correntino;1507;1215;ha;hectarea;1542031;kg;kilogramo;1269;kilogramos/hectarea;1.36;0.9;2.26;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2004/2005;virginia;289;283;ha;hectarea;363691;kg;kilogramo;1285;kilogramos/hectarea;3.8;1.52;5.32;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2004/2005;criollo chaqueño;1353;994;ha;hectarea;661347;kg;kilogramo;665;kilogramos/hectarea;1.58;0.72;2.3;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2005/2006;virginia;301;287;ha;hectarea;386295;kg;kilogramo;1346;kilogramos/hectarea;4.26;1.83;6.09;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2005/2006;criollo chaqueño;759;394;ha;hectarea;297484;kg;kilogramo;755;kilogramos/hectarea;1.56;0.66;2.22;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2006/2007;virginia;305;287;ha;hectarea;443028;kg;kilogramo;1544;kilogramos/hectarea;4.85;1.95;6.8;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2006/2007;criollo chaqueño;428;246;ha;hectarea;122735;kg;kilogramo;499;kilogramos/hectarea;1.84;0.73;2.57;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2007/2008;virginia;281;279;ha;hectarea;449113;kg;kilogramo;1613;kilogramos/hectarea;5.96;1.85;7.81;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2007/2008;criollo chaqueño;297;162;ha;hectarea;142852;kg;kilogramo;884;kilogramos/hectarea;2.97;0.91;3.89;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2008/2009;virginia;393;342;ha;hectarea;311626;kg;kilogramo;911;kilogramos/hectarea;8.26;1.97;10.22;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2008/2009;criollo chaqueño;260;157;ha;hectarea;153700;kg;kilogramo;979;kilogramos/hectarea;5.29;1.26;6.56;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2009/2010;virginia;320;320;ha;hectarea;335466;kg;kilogramo;1048;kilogramos/hectarea;9.14;2.27;11.41;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2009/2010;criollo chaqueño;255;255;ha;hectarea;207748;kg;kilogramo;815;kilogramos/hectarea;6.08;1.42;7.5;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2010/2011;virginia;364;281;ha;hectarea;710745;kg;kilogramo;2529;kilogramos/hectarea;9.17;2.54;11.71;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2010/2011;criollo chaqueño;309;304;ha;hectarea;331634;kg;kilogramo;1090;kilogramos/hectarea;5.95;1.63;7.59;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2011/2012;virginia;389;298;ha;hectarea;478887;kg;kilogramo;1607;kilogramos/hectarea;11.52;3.38;14.9;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2011/2012;criollo chaqueño;308;285;ha;hectarea;274821;kg;kilogramo;964;kilogramos/hectarea;6.63;1.86;8.49;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2012/2013;virginia;407;214;ha;hectarea;286845;kg;kilogramo;1340;kilogramos/hectarea;8.76;3.24;12;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2012/2013;criollo chaqueño;280;240;ha;hectarea;119041;kg;kilogramo;495;kilogramos/hectarea;7.07;2.01;9.08;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2013/2014;virginia;373;237;ha;hectarea;390780;kg;kilogramo;1649;kilogramos/hectarea;12.61;4.67;17.28;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2013/2014;criollo chaqueño;285;205;ha;hectarea;269940;kg;kilogramo;1317;kilogramos/hectarea;8.4;3.09;11.49;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2014/2015;virginia;370;;ha;hectarea;423628;kg;kilogramo;0;kilogramos/hectarea;14.36;7.03;21.39;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2014/2015;criollo chaqueño;337;;ha;hectarea;458350;kg;kilogramo;0;kilogramos/hectarea;11.51;3.77;15.28;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2015/2016;virginia;263;209;ha;hectarea;354313;kg;kilogramo;1695;kilogramos/hectarea;29.6;12.29;41.89;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2015/2016;criollo chaqueño;174;130;ha;hectarea;234705;kg;kilogramo;1805;kilogramos/hectarea;13.38;5.92;19.3;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2016/2017;virginia;347;327.51;ha;hectarea;388206;kg;kilogramo;1185;kilogramos/hectarea;29.95;11.13;41.08;ARS;pesos;pesos/kilogramos
+032;Argentina;22;Chaco;2016/2017;criollo chaqueño;507.5;478.99;ha;hectarea;521865;kg;kilogramo;1090;kilogramos/hectarea;18.43;6.35;24.78;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1986/1987;criollo correntino;10900;5700;ha;hectarea;4833750;kg;kilogramo;848;kilogramos/hectarea;0.86;0.86;1.72;s/d;pesos australes;pesos/kilogramos
+032;Argentina;18;Corrientes;1987/1988;criollo correntino;9994;9994;ha;hectarea;9796282;kg;kilogramo;980;kilogramos/hectarea;3.6;3.6;7.21;s/d;pesos australes;pesos/kilogramos
+032;Argentina;18;Corrientes;1988/1989;burley;9;8;ha;hectarea;8353;kg;kilogramo;1044;kilogramos/hectarea;52.82;67.49;120.32;s/d;pesos australes;pesos/kilogramos
+032;Argentina;18;Corrientes;1988/1989;criollo correntino;7000;6500;ha;hectarea;8037860;kg;kilogramo;1237;kilogramos/hectarea;59.76;56.54;116.3;s/d;pesos australes;pesos/kilogramos
+032;Argentina;18;Corrientes;1989/1990;burley;50;42;ha;hectarea;42327;kg;kilogramo;1008;kilogramos/hectarea;7049.54;4699.69;11749.23;s/d;pesos australes;pesos/kilogramos
+032;Argentina;18;Corrientes;1989/1990;criollo correntino;7500;5100;ha;hectarea;4258019;kg;kilogramo;835;kilogramos/hectarea;2765.05;1842.38;4607.43;s/d;pesos australes;pesos/kilogramos
+032;Argentina;18;Corrientes;1990/1991;burley;250;100;ha;hectarea;119113;kg;kilogramo;1191;kilogramos/hectarea;14157;9438;23595;s/d;pesos australes;pesos/kilogramos
+032;Argentina;18;Corrientes;1990/1991;criollo correntino;6000;5000;ha;hectarea;3737198;kg;kilogramo;747;kilogramos/hectarea;8656;5771;14427;s/d;pesos australes;pesos/kilogramos
+032;Argentina;18;Corrientes;1991/1992;burley;520;450;ha;hectarea;466075;kg;kilogramo;1036;kilogramos/hectarea;1.6;0.43;2.03;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1991/1992;criollo correntino;7500;5300;ha;hectarea;5921068;kg;kilogramo;1117;kilogramos/hectarea;1.58;0.36;1.94;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1992/1993;burley;500;500;ha;hectarea;444950;kg;kilogramo;890;kilogramos/hectarea;0.49;0.53;1.02;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1992/1993;criollo correntino;4500;4500;ha;hectarea;3575950;kg;kilogramo;795;kilogramos/hectarea;0.84;0.39;1.23;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1992/1993;virginia;9;9;ha;hectarea;13180;kg;kilogramo;1464;kilogramos/hectarea;1.54;0.5;2.04;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1993/1994;burley;260;260;ha;hectarea;279961;kg;kilogramo;1077;kilogramos/hectarea;0.86;1.04;1.9;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1993/1994;criollo correntino;5000;3100;ha;hectarea;3953839;kg;kilogramo;1275;kilogramos/hectarea;0.85;0.79;1.64;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1994/1995;burley;14;14;ha;hectarea;16294;kg;kilogramo;1164;kilogramos/hectarea;1.1;1.11;2.21;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1994/1995;criollo correntino;6800;6400;ha;hectarea;7411672;kg;kilogramo;1158;kilogramos/hectarea;0.85;0.78;1.63;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1995/1996;burley;35;32;ha;hectarea;36505;kg;kilogramo;1141;kilogramos/hectarea;0.86;0.92;1.78;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1995/1996;criollo correntino;6500;5400;ha;hectarea;5982758;kg;kilogramo;1108;kilogramos/hectarea;0.87;0.78;1.65;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1996/1997;burley;37;32;ha;hectarea;36046;kg;kilogramo;1126;kilogramos/hectarea;0.88;0.72;1.6;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1996/1997;criollo correntino;5900;5030;ha;hectarea;5935243;kg;kilogramo;1180;kilogramos/hectarea;0.83;0.62;1.45;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1997/1998;burley;150;75;ha;hectarea;66653;kg;kilogramo;889;kilogramos/hectarea;1.12;0.59;1.71;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1997/1998;virginia;150;80;ha;hectarea;63511;kg;kilogramo;794;kilogramos/hectarea;1.41;0.69;2.1;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1997/1998;criollo correntino;5900;4445;ha;hectarea;2695115;kg;kilogramo;606;kilogramos/hectarea;1.27;0.61;1.88;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1998/1999;burley;90;74;ha;hectarea;182077;kg;kilogramo;2461;kilogramos/hectarea;1.17;0.66;1.83;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1998/1999;virginia;175;143;ha;hectarea;336043;kg;kilogramo;2350;kilogramos/hectarea;1.17;0.65;1.82;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1998/1999;criollo correntino;5600;4500;ha;hectarea;6981375;kg;kilogramo;1551;kilogramos/hectarea;0.59;0.62;1.21;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1999/2000;burley;88;52;ha;hectarea;67946;kg;kilogramo;1307;kilogramos/hectarea;0.81;0.5;1.31;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1999/2000;virginia;182;98;ha;hectarea;141198;kg;kilogramo;1441;kilogramos/hectarea;1.04;0.67;1.71;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;1999/2000;criollo correntino;4770;3150;ha;hectarea;3693264;kg;kilogramo;1172;kilogramos/hectarea;0.61;0.6;1.21;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2000/2001;burley;45;40;ha;hectarea;51526;kg;kilogramo;1288;kilogramos/hectarea;1.04;0.73;1.77;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2000/2001;virginia;115;101;ha;hectarea;146841;kg;kilogramo;1454;kilogramos/hectarea;0.9;0.67;1.57;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2000/2001;criollo correntino;3560;3538;ha;hectarea;4139020;kg;kilogramo;1170;kilogramos/hectarea;0.56;0.65;1.21;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2001/2002;burley;340;265;ha;hectarea;446492;kg;kilogramo;1685;kilogramos/hectarea;1.62;0.96;2.58;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2001/2002;virginia;228;173;ha;hectarea;301776;kg;kilogramo;1744;kilogramos/hectarea;1.21;0.7;1.91;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2001/2002;criollo correntino;3667;2999;ha;hectarea;3892401;kg;kilogramo;1298;kilogramos/hectarea;1.27;0.84;2.11;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2002/2003;burley;593;292;ha;hectarea;350359;kg;kilogramo;1200;kilogramos/hectarea;2.47;1.39;3.86;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2002/2003;virginia;148;73;ha;hectarea;87267;kg;kilogramo;1195;kilogramos/hectarea;1.51;1.34;2.85;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2002/2003;criollo correntino;4199;2362;ha;hectarea;2397481;kg;kilogramo;1015;kilogramos/hectarea;1.47;1.28;2.75;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2003/2004;burley;400;350;ha;hectarea;511693;kg;kilogramo;1462;kilogramos/hectarea;2.46;1.17;3.63;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2003/2004;virginia;350;270;ha;hectarea;408898;kg;kilogramo;1514;kilogramos/hectarea;2.11;1.23;3.34;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2003/2004;criollo correntino;3500;3200;ha;hectarea;4907606;kg;kilogramo;1534;kilogramos/hectarea;1.6;0.7;2.3;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2004/2005;burley;438;316;ha;hectarea;378618;kg;kilogramo;1198;kilogramos/hectarea;2.58;1.12;3.7;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2004/2005;virginia;363;310;ha;hectarea;371471;kg;kilogramo;1198;kilogramos/hectarea;2.53;1.31;3.84;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2004/2005;criollo correntino;4045;3851;ha;hectarea;4619359;kg;kilogramo;1200;kilogramos/hectarea;1.75;0.81;2.56;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2005/2006;burley;364;263;ha;hectarea;314822;kg;kilogramo;1199;kilogramos/hectarea;2.41;1.25;3.66;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2005/2006;virginia;542;486;ha;hectarea;582783;kg;kilogramo;1200;kilogramos/hectarea;3.12;1.67;4.79;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2005/2006;criollo correntino;5268;4464;ha;hectarea;5354729;kg;kilogramo;1200;kilogramos/hectarea;1.86;0.78;2.64;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2006/2007;burley;396;268;ha;hectarea;50597;kg;kilogramo;189;kilogramos/hectarea;2.27;1.22;3.49;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2006/2007;virginia;661;513;ha;hectarea;174334;kg;kilogramo;340;kilogramos/hectarea;2.93;1.62;4.56;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2006/2007;criollo correntino;4836;4498;ha;hectarea;2079745;kg;kilogramo;462;kilogramos/hectarea;1.85;0.72;2.56;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2007/2008;burley;164;106;ha;hectarea;126749;kg;kilogramo;1199;kilogramos/hectarea;3.12;1.24;4.36;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2007/2008;virginia;453;209;ha;hectarea;251244;kg;kilogramo;1199;kilogramos/hectarea;3.58;1.57;5.15;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2007/2008;criollo correntino;2987;2629;ha;hectarea;3152886;kg;kilogramo;1199;kilogramos/hectarea;3.1;0.95;4.05;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2008/2009;burley;242;242;ha;hectarea;92238;kg;kilogramo;381;kilogramos/hectarea;4.17;1.69;5.86;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2008/2009;virginia;170;170;ha;hectarea;69578;kg;kilogramo;410;kilogramos/hectarea;4.25;1.62;5.87;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2008/2009;criollo correntino;2929;2929;ha;hectarea;2328824;kg;kilogramo;795;kilogramos/hectarea;4.04;0.96;4.99;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2009/2010;burley;31;13;ha;hectarea;9619;kg;kilogramo;726;kilogramos/hectarea;4.71;1.93;6.64;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2009/2010;virginia;63;28;ha;hectarea;27134;kg;kilogramo;970;kilogramos/hectarea;5.04;2.07;7.11;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2009/2010;criollo correntino;2458;2290;ha;hectarea;1130945;kg;kilogramo;494;kilogramos/hectarea;4.47;1.04;5.52;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2010/2011;burley;46;38;ha;hectarea;24681;kg;kilogramo;646;kilogramos/hectarea;4.72;2.08;6.8;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2010/2011;virginia;118;98;ha;hectarea;129212;kg;kilogramo;1319;kilogramos/hectarea;4.69;2.08;6.77;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2010/2011;criollo correntino;1633;1355;ha;hectarea;2118179;kg;kilogramo;1563;kilogramos/hectarea;4.59;1.22;5.82;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2010/2011;criollo argentino;94;78;ha;hectarea;113473;kg;kilogramo;1454;kilogramos/hectarea;8.21;2.05;10.26;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2011/2012;burley;47;39;ha;hectarea;16810;kg;kilogramo;431;kilogramos/hectarea;8.41;2.96;11.38;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2011/2012;virginia;144;120;ha;hectarea;46707;kg;kilogramo;389;kilogramos/hectarea;5.9;3.06;8.96;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2011/2012;criollo correntino;1744;1453;ha;hectarea;2673662;kg;kilogramo;1840;kilogramos/hectarea;7.08;1.74;8.81;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2011/2012;criollo argentino;92;77;ha;hectarea;102622;kg;kilogramo;1341;kilogramos/hectarea;12.45;2.78;15.23;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2012/2013;burley;22;7;ha;hectarea;5011;kg;kilogramo;716;kilogramos/hectarea;5.84;2.85;8.69;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2012/2013;virginia;85;70;ha;hectarea;22474;kg;kilogramo;321;kilogramos/hectarea;10.54;3.19;13.73;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2012/2013;criollo correntino;1755;645;ha;hectarea;1338513;kg;kilogramo;2076;kilogramos/hectarea;5.66;1.58;7.24;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2012/2013;criollo argentino;85;31;ha;hectarea;53292;kg;kilogramo;1708;kilogramos/hectarea;10.54;2.77;13.31;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2013/2014;burley;12;7;ha;hectarea;8079;kg;kilogramo;1154;kilogramos/hectarea;7.68;3.84;11.52;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2013/2014;virginia;260;137;ha;hectarea;154127;kg;kilogramo;1125;kilogramos/hectarea;13.16;3.55;16.71;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2013/2014;criollo correntino;2300;1853;ha;hectarea;2088996;kg;kilogramo;1127;kilogramos/hectarea;8.03;3.55;11.58;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2014/2015;virginia;158;28;ha;hectarea;21952;kg;kilogramo;784;kilogramos/hectarea;15.67;5.53;21.2;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2014/2015;criollo correntino;1602;283;ha;hectarea;467044;kg;kilogramo;1650;kilogramos/hectarea;7.87;2.85;10.72;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2015/2016;virginia;148;96;ha;hectarea;52292;kg;kilogramo;545;kilogramos/hectarea;19.02;8.41;27.43;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2015/2016;criollo correntino;1636;1065;ha;hectarea;634892;kg;kilogramo;596;kilogramos/hectarea;11.8;5.22;17.02;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2016/2017;virginia;66;66;ha;hectarea;51343;kg;kilogramo;32;kilogramos/hectarea;21.75;7.49;29.24;ARS;pesos;pesos/kilogramos
+032;Argentina;18;Corrientes;2016/2017;criollo correntino;1626;1626;ha;hectarea;1268937;kg;kilogramo;19226;kilogramos/hectarea;14.78;5.09;19.87;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1986/1987;virginia;16297;15881;ha;hectarea;23319024;kg;kilogramo;1468;kilogramos/hectarea;1.29;1.29;2.59;s/d;pesos australes;pesos/kilogramos
+032;Argentina;38;Jujuy;1986/1987;burley;180;180;ha;hectarea;251171;kg;kilogramo;1395;kilogramos/hectarea;1.1;1.1;2.21;s/d;pesos australes;pesos/kilogramos
+032;Argentina;38;Jujuy;1987/1988;virginia;16028;15789;ha;hectarea;21711831;kg;kilogramo;1375;kilogramos/hectarea;4.22;4.34;8.56;s/d;pesos australes;pesos/kilogramos
+032;Argentina;38;Jujuy;1987/1988;burley;170;135;ha;hectarea;200907;kg;kilogramo;1488;kilogramos/hectarea;3.86;3.84;7.7;s/d;pesos australes;pesos/kilogramos
+032;Argentina;38;Jujuy;1988/1989;virginia;16088;15095;ha;hectarea;26745856;kg;kilogramo;1772;kilogramos/hectarea;22.21;44.32;66.53;s/d;pesos australes;pesos/kilogramos
+032;Argentina;38;Jujuy;1988/1989;burley;210;193;ha;hectarea;286660;kg;kilogramo;1485;kilogramos/hectarea;20.51;38.83;59.34;s/d;pesos australes;pesos/kilogramos
+032;Argentina;38;Jujuy;1989/1990;virginia;13757;12998;ha;hectarea;23176624;kg;kilogramo;1783;kilogramos/hectarea;3209.97;2139.79;5349.76;s/d;pesos australes;pesos/kilogramos
+032;Argentina;38;Jujuy;1989/1990;burley;149;137;ha;hectarea;203757;kg;kilogramo;1487;kilogramos/hectarea;5680.43;3786.9;9467.33;s/d;pesos australes;pesos/kilogramos
+032;Argentina;38;Jujuy;1990/1991;virginia;16162;15977;ha;hectarea;32414883;kg;kilogramo;2029;kilogramos/hectarea;13937;9291;23228;s/d;pesos australes;pesos/kilogramos
+032;Argentina;38;Jujuy;1990/1991;burley;161;148;ha;hectarea;219547;kg;kilogramo;1483;kilogramos/hectarea;13373;8916;22289;s/d;pesos australes;pesos/kilogramos
+032;Argentina;38;Jujuy;1991/1992;virginia;19765;17197;ha;hectarea;30101784;kg;kilogramo;1750;kilogramos/hectarea;1.48;0.57;2.05;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1991/1992;burley;123;113;ha;hectarea;167385;kg;kilogramo;1481;kilogramos/hectarea;1.6;0.47;2.07;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1992/1993;virginia;19479;15979;ha;hectarea;33109364;kg;kilogramo;2072;kilogramos/hectarea;1.84;0.59;2.43;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1992/1993;burley;300;300;ha;hectarea;188397;kg;kilogramo;628;kilogramos/hectarea;1.51;0.5;2.01;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1993/1994;virginia;13010;12573;ha;hectarea;22737412;kg;kilogramo;1808;kilogramos/hectarea;1.17;1.16;2.33;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1993/1994;burley;60;25;ha;hectarea;39960;kg;kilogramo;1598;kilogramos/hectarea;0.72;0.84;1.56;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1994/1995;virginia;14428;12220;ha;hectarea;21971781;kg;kilogramo;1798;kilogramos/hectarea;1.35;1.33;2.68;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1994/1995;burley;3;3;ha;hectarea;4683;kg;kilogramo;1561;kilogramos/hectarea;0.71;0.98;1.69;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1995/1996;virginia;16170;13870;ha;hectarea;30174961;kg;kilogramo;2176;kilogramos/hectarea;1.8;1.4;3.2;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1995/1996;burley;5;2;ha;hectarea;2198;kg;kilogramo;1099;kilogramos/hectarea;1.25;1.18;2.43;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1996/1997;virginia;20500;19400;ha;hectarea;39028151;kg;kilogramo;2012;kilogramos/hectarea;1.96;0.73;2.69;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1996/1997;burley;1;1;ha;hectarea;346;kg;kilogramo;692;kilogramos/hectarea;1.22;0.72;1.94;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1997/1998;virginia;21916;19900;ha;hectarea;42731828;kg;kilogramo;2147;kilogramos/hectarea;1.45;0.71;2.16;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1998/1999;virginia;20500;18000;ha;hectarea;34326453;kg;kilogramo;1907;kilogramos/hectarea;1.32;0.73;2.05;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;1999/2000;virginia;16026;15801;ha;hectarea;34838393;kg;kilogramo;2205;kilogramos/hectarea;1.11;0.71;1.82;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2000/2001;virginia;14659;12711;ha;hectarea;30175578;kg;kilogramo;2374;kilogramos/hectarea;1.17;0.83;2;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2001/2002;virginia;14986;14986;ha;hectarea;35846505;kg;kilogramo;2392;kilogramos/hectarea;1.88;1.1;2.98;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2002/2003;virginia;15375;14377;ha;hectarea;35690269;kg;kilogramo;2482;kilogramos/hectarea;3.59;1.62;5.21;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2003/2004;virginia;19017;18417;ha;hectarea;45165534;kg;kilogramo;2452;kilogramos/hectarea;3.88;1.52;5.4;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2003/2004;burley;1;1;ha;hectarea;1739;kg;kilogramo;1739;kilogramos/hectarea;2.74;1.2;3.94;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2004/2005;virginia;19100;18400;ha;hectarea;43226194;kg;kilogramo;2349;kilogramos/hectarea;3.44;1.34;4.78;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2005/2006;virginia;18624;17597;ha;hectarea;39279218;kg;kilogramo;2232;kilogramos/hectarea;4.19;1.75;5.93;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2006/2007;virginia;19045;17580;ha;hectarea;43313839;kg;kilogramo;2464;kilogramos/hectarea;5.12;1.99;7.11;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2007/2008;virginia;19408;18829;ha;hectarea;44059350;kg;kilogramo;2340;kilogramos/hectarea;5.9;1.82;7.71;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2008/2009;virginia;18846;18846;ha;hectarea;44438596;kg;kilogramo;2358;kilogramos/hectarea;8.98;2.13;11.11;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2009/2010;virginia;19635;19635;ha;hectarea;49461487;kg;kilogramo;2519;kilogramos/hectarea;9.63;2.25;11.88;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2010/2011;virginia;19919;19408;ha;hectarea;44566124;kg;kilogramo;2296;kilogramos/hectarea;9.06;2.27;11.33;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2010/2011;k. ahumado;1;0.48;ha;hectarea;595;kg;kilogramo;1240;kilogramos/hectarea;12.18;3.04;15.23;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2011/2012;virginia;16851;16664;ha;hectarea;42320963;kg;kilogramo;2540;kilogramos/hectarea;10.48;3.02;13.5;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2012/2013;virginia;16589;15946;ha;hectarea;39779575;kg;kilogramo;2495;kilogramos/hectarea;14.28;3.69;17.97;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2013/2014;virginia;17225;16011;ha;hectarea;41074979;kg;kilogramo;2565;kilogramos/hectarea;19.43;4.97;24.4;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2014/2015;virginia;16071;15674;ha;hectarea;44503582;kg;kilogramo;2839;kilogramos/hectarea;20.04;6.55;26.59;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2015/2016;virginia;13259;12212;ha;hectarea;37845331;kg;kilogramo;3099;kilogramos/hectarea;29.22;12.92;42.14;ARS;pesos;pesos/kilogramos
+032;Argentina;38;Jujuy;2016/2017;virginia;14682;14557;ha;hectarea;40586210;kg;kilogramo;2788;kilogramos/hectarea;31.71;10.92;42.64;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1986/1987;burley;4850;4850;ha;hectarea;6286460;kg;kilogramo;1296;kilogramos/hectarea;1.24;1.24;2.49;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1986/1987;virginia;1082;1082;ha;hectarea;1781776;kg;kilogramo;1647;kilogramos/hectarea;1.17;1.17;2.33;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1986/1987;criollo misionero;2817;2817;ha;hectarea;3520491;kg;kilogramo;1250;kilogramos/hectarea;0.58;0.58;1.16;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1986/1987;kentucky;124;124;ha;hectarea;116121;kg;kilogramo;936;kilogramos/hectarea;1.01;1.01;2.02;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1987/1988;burley;4508;4508;ha;hectarea;7603465;kg;kilogramo;1687;kilogramos/hectarea;4.54;4.51;9.05;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1987/1988;virginia;1113;1113;ha;hectarea;2554020;kg;kilogramo;2295;kilogramos/hectarea;4.1;4.16;8.25;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1987/1988;criollo misionero;3500;3500;ha;hectarea;4277646;kg;kilogramo;1222;kilogramos/hectarea;2.52;2.52;5.04;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1987/1988;kentucky;135;131;ha;hectarea;140915;kg;kilogramo;1076;kilogramos/hectarea;4.2;4.2;8.4;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1988/1989;burley;5322;4843;ha;hectarea;8972076;kg;kilogramo;1853;kilogramos/hectarea;23.3;47.81;71.11;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1988/1989;virginia;1047;953;ha;hectarea;2114034;kg;kilogramo;2218;kilogramos/hectarea;18.59;40.72;59.32;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1988/1989;criollo misionero;2794;2543;ha;hectarea;2627454;kg;kilogramo;1033;kilogramos/hectarea;30.95;36.08;67.04;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1988/1989;kentucky;52;47;ha;hectarea;32500;kg;kilogramo;691;kilogramos/hectarea;78.97;78.83;157.8;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1989/1990;burley;6172;5617;ha;hectarea;9301239;kg;kilogramo;1656;kilogramos/hectarea;5579.84;3719.89;9299.73;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1989/1990;virginia;875;796;ha;hectarea;1671232;kg;kilogramo;2100;kilogramos/hectarea;4599.43;3066.29;7665.72;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1989/1990;criollo misionero;1292;1176;ha;hectarea;1137264;kg;kilogramo;967;kilogramos/hectarea;2780.73;1853.96;4634.69;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1989/1990;kentucky;35;32;ha;hectarea;33938;kg;kilogramo;1061;kilogramos/hectarea;4779.1;3186.16;7965.26;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1990/1991;burley;11252;10239;ha;hectarea;15433108;kg;kilogramo;1507;kilogramos/hectarea;16807;11204;28011;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1990/1991;virginia;961;875;ha;hectarea;1573870;kg;kilogramo;1799;kilogramos/hectarea;14971;9981;24952;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1990/1991;criollo misionero;2767;2518;ha;hectarea;2466102;kg;kilogramo;979;kilogramos/hectarea;7696;5131;12827;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1990/1991;kentucky;36;33;ha;hectarea;20889;kg;kilogramo;633;kilogramos/hectarea;11410;7606;19016;s/d;pesos australes;pesos/kilogramos
+032;Argentina;54;Misiones;1991/1992;burley;18092;16464;ha;hectarea;29591525;kg;kilogramo;1797;kilogramos/hectarea;1.6;0.55;2.15;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1991/1992;virginia;1104;994;ha;hectarea;2368474;kg;kilogramo;2383;kilogramos/hectarea;1.48;0.52;2;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1991/1992;criollo misionero;3195;2907;ha;hectarea;2585742;kg;kilogramo;889;kilogramos/hectarea;0.75;0.32;1.07;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1991/1992;kentucky;8;7;ha;hectarea;9097;kg;kilogramo;1300;kilogramos/hectarea;1.52;0.64;2.15;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1992/1993;burley;19241;18385;ha;hectarea;31731384;kg;kilogramo;1726;kilogramos/hectarea;1.6;0.53;2.13;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1992/1993;virginia;1202;1151;ha;hectarea;2303052;kg;kilogramo;2001;kilogramos/hectarea;1.74;0.56;2.3;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1992/1993;criollo misionero;914;604;ha;hectarea;1054150;kg;kilogramo;1745;kilogramos/hectarea;0.75;0.31;1.06;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1992/1993;kentucky;8;6;ha;hectarea;8801;kg;kilogramo;1467;kilogramos/hectarea;1.57;0.66;2.23;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1993/1994;burley;13308;13308;ha;hectarea;22113126;kg;kilogramo;1662;kilogramos/hectarea;1.18;1.23;2.41;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1993/1994;virginia;1191;1191;ha;hectarea;2511208;kg;kilogramo;2108;kilogramos/hectarea;1.21;1.19;2.4;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1993/1994;criollo misionero;3256;3256;ha;hectarea;3296551;kg;kilogramo;1012;kilogramos/hectarea;0.75;0.75;1.5;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1993/1994;kentucky;291;291;ha;hectarea;8484;kg;kilogramo;29;kilogramos/hectarea;1.57;0.81;2.38;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1994/1995;burley;12584;8037;ha;hectarea;13673013;kg;kilogramo;1701;kilogramos/hectarea;1.3;1.12;2.42;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1994/1995;virginia;1029;967;ha;hectarea;1934533;kg;kilogramo;2001;kilogramos/hectarea;1.29;1.26;2.55;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1994/1995;criollo misionero;4501;3979;ha;hectarea;4855014;kg;kilogramo;1220;kilogramos/hectarea;0.75;0.76;1.51;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1994/1995;kentucky;3;3;ha;hectarea;3414;kg;kilogramo;1138;kilogramos/hectarea;1.59;0.82;2.41;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1995/1996;burley;13856;11423;ha;hectarea;19419670;kg;kilogramo;1700;kilogramos/hectarea;1.31;1.23;2.54;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1995/1996;virginia;1260;1256;ha;hectarea;2520004;kg;kilogramo;2006;kilogramos/hectarea;1.35;1.05;2.4;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1995/1996;criollo misionero;3760;3756;ha;hectarea;4769414;kg;kilogramo;1270;kilogramos/hectarea;0.85;0.75;1.6;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1995/1996;kentucky;12;11;ha;hectarea;10802;kg;kilogramo;982;kilogramos/hectarea;1.75;0.83;2.58;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1996/1997;burley;16000;15200;ha;hectarea;26050714;kg;kilogramo;1714;kilogramos/hectarea;1.45;0.72;2.17;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1996/1997;virginia;900;870;ha;hectarea;1760368;kg;kilogramo;2023;kilogramos/hectarea;1.49;0.58;2.07;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1996/1997;criollo misionero;4400;4170;ha;hectarea;4982265;kg;kilogramo;1195;kilogramos/hectarea;0.78;0.63;1.41;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1996/1997;kentucky;4;4;ha;hectarea;3545;kg;kilogramo;1013;kilogramos/hectarea;1.44;0.63;2.07;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1997/1998;burley;21200;20092;ha;hectarea;18484424;kg;kilogramo;920;kilogramos/hectarea;1.45;0.72;2.17;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1997/1998;virginia;904;893;ha;hectarea;1436707;kg;kilogramo;1609;kilogramos/hectarea;1.42;0.7;2.12;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1997/1998;criollo misionero;3658;3255;ha;hectarea;1848319;kg;kilogramo;568;kilogramos/hectarea;0.68;0.63;1.31;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1998/1999;burley;21000;19660;ha;hectarea;28057921;kg;kilogramo;1427;kilogramos/hectarea;1.37;0.74;2.11;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1998/1999;virginia;800;533;ha;hectarea;1216485;kg;kilogramo;2282;kilogramos/hectarea;1.32;0.71;2.03;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1998/1999;criollo misionero;4000;3905;ha;hectarea;3166962;kg;kilogramo;811;kilogramos/hectarea;0.7;0.64;1.34;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1999/2000;burley;16494;16214;ha;hectarea;28528666;kg;kilogramo;1760;kilogramos/hectarea;1.16;0.73;1.89;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1999/2000;virginia;339;338;ha;hectarea;780950;kg;kilogramo;2311;kilogramos/hectarea;0.98;0.65;1.63;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;1999/2000;criollo misionero;4296;3852;ha;hectarea;3874802;kg;kilogramo;1006;kilogramos/hectarea;0.56;0.62;1.18;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2000/2001;burley;17489;17227;ha;hectarea;24830076;kg;kilogramo;1441;kilogramos/hectarea;1.2;0.84;2.04;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2000/2001;virginia;148;145;ha;hectarea;282499;kg;kilogramo;1955;kilogramos/hectarea;0.92;0.7;1.62;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2000/2001;criollo misionero;3119;2969;ha;hectarea;1980641;kg;kilogramo;667;kilogramos/hectarea;0.46;0.68;1.14;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2001/2002;burley;22371;21798;ha;hectarea;36731178;kg;kilogramo;1685;kilogramos/hectarea;1.88;1.13;3.01;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2001/2002;virginia;175;172;ha;hectarea;395231;kg;kilogramo;2298;kilogramos/hectarea;1.19;0.86;2.05;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2001/2002;criollo misionero;2973;2660;ha;hectarea;2297883;kg;kilogramo;864;kilogramos/hectarea;0.89;0.88;1.77;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2002/2003;burley;25280;23968;ha;hectarea;27760224;kg;kilogramo;1158;kilogramos/hectarea;3.27;1.57;4.84;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2002/2003;virginia;191;187;ha;hectarea;252212;kg;kilogramo;1349;kilogramos/hectarea;2.47;1.71;4.18;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2002/2003;criollo misionero;3689;2767;ha;hectarea;1569908;kg;kilogramo;567;kilogramos/hectarea;1.11;1.06;2.17;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2003/2004;burley;27428;26839;ha;hectarea;45599932;kg;kilogramo;1699;kilogramos/hectarea;3.31;1.38;4.69;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2003/2004;virginia;325;315;ha;hectarea;732457;kg;kilogramo;2325;kilogramos/hectarea;2.44;1.61;4.05;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2003/2004;criollo misionero;2425;2183;ha;hectarea;1660565;kg;kilogramo;761;kilogramos/hectarea;1.63;0.67;2.3;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2004/2005;burley;32692;30417;ha;hectarea;49800580;kg;kilogramo;1637;kilogramos/hectarea;3.53;1.36;4.89;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2004/2005;virginia;346;343;ha;hectarea;784923;kg;kilogramo;2288;kilogramos/hectarea;3.01;1.63;4.64;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2004/2005;criollo misionero;2194;2010;ha;hectarea;1803441;kg;kilogramo;897;kilogramos/hectarea;1.59;0.72;2.31;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2005/2006;burley;27814;26851;ha;hectarea;42081966;kg;kilogramo;1567;kilogramos/hectarea;3.74;1.52;5.27;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2005/2006;virginia;409;388;ha;hectarea;838014;kg;kilogramo;2160;kilogramos/hectarea;3.01;1.8;4.8;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2005/2006;criollo misionero;2383;2223;ha;hectarea;1885628;kg;kilogramo;848;kilogramos/hectarea;1.67;0.7;2.37;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2006/2007;burley;25888;24748;ha;hectarea;32334246;kg;kilogramo;1307;kilogramos/hectarea;4.2;1.6;5.8;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2006/2007;virginia;60;60;ha;hectarea;139684;kg;kilogramo;2328;kilogramos/hectarea;3.82;1.85;5.67;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2006/2007;criollo misionero;2188;1636;ha;hectarea;1526018;kg;kilogramo;933;kilogramos/hectarea;1.86;0.72;2.58;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2007/2008;burley;26458;21918;ha;hectarea;35280412;kg;kilogramo;1610;kilogramos/hectarea;5.93;1.81;7.73;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2007/2008;virginia;837;492;ha;hectarea;730267;kg;kilogramo;1484;kilogramos/hectarea;3.55;1.09;4.64;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2008/2009;criollo misionero;29950;25565;ha;hectarea;40336541;kg;kilogramo;1578;kilogramos/hectarea;7.98;1.87;9.85;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2008/2009;burley;969;788;ha;hectarea;709053;kg;kilogramo;900;kilogramos/hectarea;4.24;1;5.24;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2009/2010;virginia;27515;18446;ha;hectarea;28681790;kg;kilogramo;1555;kilogramos/hectarea;8.49;1.97;10.46;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2009/2010;criollo misionero;1066;746;ha;hectarea;731185;kg;kilogramo;980;kilogramos/hectarea;4.73;1.1;5.83;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2010/2011;burley;30060;25518;ha;hectarea;35204004;kg;kilogramo;1380;kilogramos/hectarea;8.68;2.13;10.81;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2010/2011;criollo misionero;1036;693;ha;hectarea;955505;kg;kilogramo;1379;kilogramos/hectarea;4.45;1.11;5.56;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2011/2012;burley;25352;21294;ha;hectarea;29080235;kg;kilogramo;1366;kilogramos/hectarea;10.33;2.96;13.29;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2011/2012;criollo misionero;828;518;ha;hectarea;725619;kg;kilogramo;1401;kilogramos/hectarea;5.73;1.65;7.38;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2012/2013;burley;24870;22362;ha;hectarea;27013893;kg;kilogramo;1208;kilogramos/hectarea;16.08;3.28;19.36;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2012/2013;criollo misionero;681;366;ha;hectarea;443021;kg;kilogramo;1210;kilogramos/hectarea;9.08;1.87;10.95;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2013/2014;burley;25500;23768;ha;hectarea;36826527;kg;kilogramo;1549;kilogramos/hectarea;17.79;4.54;22.33;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2013/2014;criollo misionero;440;410;ha;hectarea;514993;kg;kilogramo;1256;kilogramos/hectarea;8.83;2.26;11.09;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2014/2015;burley;25108;17331;ha;hectarea;25008109;kg;kilogramo;1443;kilogramos/hectarea;19.17;6.13;25.3;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2014/2015;criollo misionero;485;254;ha;hectarea;304924;kg;kilogramo;1200;kilogramos/hectarea;9.82;3.21;13.03;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2015/2016;burley;19910;12384;ha;hectarea;17873156;kg;kilogramo;1443;kilogramos/hectarea;25.41;10.99;36.4;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2015/2016;criollo misionero;532;331;ha;hectarea;275971;kg;kilogramo;834;kilogramos/hectarea;12;5.31;17.31;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2016/2017;burley;21752;21752;ha;hectarea;33890721;kg;kilogramo;1558;kilogramos/hectarea;27.96;9.47;37.43;ARS;pesos;pesos/kilogramos
+032;Argentina;54;Misiones;2016/2017;criollo misionero;308;308;ha;hectarea;480328;kg;kilogramo;1558;kilogramos/hectarea;13.83;4.94;18.76;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1986/1987;virginia;13000;11700;ha;hectarea;18309035;kg;kilogramo;1565;kilogramo/hectarea;1.3;1.3;2.59;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1986/1987;burley;600;550;ha;hectarea;817641;kg;kilogramo;1487;kilogramo/hectarea;1.18;1.18;2.35;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1986/1987;criollo s.;900;350;ha;hectarea;478689;kg;kilogramo;1368;kilogramo/hectarea;0.75;0.75;1.5;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1987/1988;virginia;12000;11400;ha;hectarea;17255063;kg;kilogramo;1514;kilogramo/hectarea;4.19;4.3;8.49;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1987/1988;burley;423;365;ha;hectarea;541726;kg;kilogramo;1484;kilogramo/hectarea;3.79;3.74;7.53;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1987/1988;criollo s.;450;404;ha;hectarea;603853;kg;kilogramo;1495;kilogramo/hectarea;3.75;3.75;7.5;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1988/1989;virginia;14245;12963;ha;hectarea;19082624;kg;kilogramo;1472;kilogramo/hectarea;38.92;41.34;80.26;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1988/1989;burley;399;363;ha;hectarea;494358;kg;kilogramo;1362;kilogramo/hectarea;32.33;47.89;80.22;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1988/1989;criollo s.;477;434;ha;hectarea;658614;kg;kilogramo;1518;kilogramo/hectarea;370.57;346.71;717.28;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1989/1990;virginia;11754;10696;ha;hectarea;18505405;kg;kilogramo;1730;kilogramo/hectarea;3312.14;2208.09;5520.23;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1989/1990;burley;231;210;ha;hectarea;228910;kg;kilogramo;1090;kilogramo/hectarea;7868.98;5245.88;13114.86;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1989/1990;criollo s.;564;513;ha;hectarea;707605;kg;kilogramo;1379;kilogramo/hectarea;4127.86;2752.78;6880.64;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1990/1991;virginia;14403;13107;ha;hectarea;24408884;kg;kilogramo;1862;kilogramo/hectarea;14094;9396;23490;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1990/1991;burley;248;226;ha;hectarea;304024;kg;kilogramo;1345;kilogramo/hectarea;15900;10600;26500;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1990/1991;criollo s.;493;449;ha;hectarea;537497;kg;kilogramo;1197;kilogramo/hectarea;8505;5670;14175;s/d;pesos australes;pesos/kilogramos
+032;Argentina;66;Salta;1991/1992;virginia;18012;16211;ha;hectarea;22393981;kg;kilogramo;1381;kilogramo/hectarea;1.48;0.57;2.05;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1991/1992;burley;297;270;ha;hectarea;280316;kg;kilogramo;1038;kilogramo/hectarea;1.6;0.52;2.12;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1991/1992;criollo s.;442;402;ha;hectarea;357270;kg;kilogramo;889;kilogramo/hectarea;1.14;0.24;1.38;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1992/1993;virginia;19533;19533;ha;hectarea;28130588;kg;kilogramo;1440;kilogramo/hectarea;1.8;0.58;2.38;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1992/1993;burley;261;261;ha;hectarea;140771;kg;kilogramo;539;kilogramo/hectarea;1.59;0.52;2.11;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1992/1993;criollo s.;802;802;ha;hectarea;613256;kg;kilogramo;765;kilogramo/hectarea;1.13;0.25;1.38;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1993/1994;virginia;11435;9228;ha;hectarea;16352000;kg;kilogramo;1772;kilogramo/hectarea;1.14;1.17;2.31;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1993/1994;burley;53;5;ha;hectarea;9806;kg;kilogramo;1961;kilogramo/hectarea;0.76;1.31;2.07;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1993/1994;criollo s.;597;563;ha;hectarea;840613;kg;kilogramo;1493;kilogramo/hectarea;1.03;0.88;1.91;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1994/1995;virginia;11123;11123;ha;hectarea;19137159;kg;kilogramo;1721;kilogramo/hectarea;1.36;1.33;2.69;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1994/1995;burley;15;10;ha;hectarea;11765;kg;kilogramo;1177;kilogramo/hectarea;0.91;1.03;1.94;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1994/1995;criollo s.;800;720;ha;hectarea;1187161;kg;kilogramo;1649;kilogramo/hectarea;1.03;0.8;1.83;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1995/1996;virginia;13145;12940;ha;hectarea;25880785;kg;kilogramo;2000;kilogramo/hectarea;1.82;1.42;3.24;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1995/1996;burley;15;10;ha;hectarea;11958;kg;kilogramo;1196;kilogramo/hectarea;1.38;1.29;2.67;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1995/1996;criollo s.;750;700;ha;hectarea;1284818;kg;kilogramo;1835;kilogramo/hectarea;1.06;0.79;1.85;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1996/1997;virginia;18000;17000;ha;hectarea;33730416;kg;kilogramo;1984;kilogramo/hectarea;2.01;0.7;2.71;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1996/1997;burley;9;8;ha;hectarea;8081;kg;kilogramo;1010;kilogramo/hectarea;1.34;0.67;2.01;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1996/1997;criollo s.;240;218;ha;hectarea;422310;kg;kilogramo;1937;kilogramo/hectarea;1.03;0.63;1.66;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1997/1998;virginia;21400;20400;ha;hectarea;37316783;kg;kilogramo;1829;kilogramo/hectarea;1.62;0.72;2.34;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1997/1998;criollo s.;360;306;ha;hectarea;490270;kg;kilogramo;1602;kilogramo/hectarea;1.05;0.63;1.68;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1998/1999;virginia;18000;13345;ha;hectarea;24164984;kg;kilogramo;1811;kilogramo/hectarea;1.34;0.74;2.08;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1998/1999;criollo s.;350;321;ha;hectarea;520599;kg;kilogramo;1622;kilogramo/hectarea;0.93;0.64;1.57;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1999/2000;virginia;14137;12356;ha;hectarea;29564489;kg;kilogramo;2393;kilogramo/hectarea;1.13;0.73;1.86;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;1999/2000;criollo s.;744;730;ha;hectarea;1468413;kg;kilogramo;2012;kilogramo/hectarea;0.77;0.62;1.39;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2000/2001;virginia;12301;12301;ha;hectarea;23286595;kg;kilogramo;1893;kilogramo/hectarea;1.18;0.84;2.02;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2000/2001;criollo s.;582;582;ha;hectarea;1146551;kg;kilogramo;1971;kilogramo/hectarea;0.82;0.68;1.5;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2001/2002;virginia;14427;14427;ha;hectarea;35912781;kg;kilogramo;2489;kilogramo/hectarea;1.95;1.15;3.1;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2001/2002;criollo s.;654;654;ha;hectarea;1680541;kg;kilogramo;2570;kilogramo/hectarea;1.36;1.01;2.37;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2002/2003;virginia;16185;14750;ha;hectarea;33799706;kg;kilogramo;2291;kilogramo/hectarea;3.81;1.72;5.53;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2002/2003;criollo s.;622;603;ha;hectarea;1581751;kg;kilogramo;2623;kilogramo/hectarea;2.21;1.55;3.76;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2003/2004;virginia;19408;18324;ha;hectarea;44390764;kg;kilogramo;2423;kilogramo/hectarea;4.1;1.6;5.7;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2003/2004;criollo s.;959;917;ha;hectarea;1643133;kg;kilogramo;1792;kilogramo/hectarea;2.28;1.26;3.54;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2004/2005;virginia;21892;20314;ha;hectarea;46944946;kg;kilogramo;2311;kilogramo/hectarea;3.85;1.49;5.34;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2004/2005;criollo s.;995;961;ha;hectarea;1953689;kg;kilogramo;2032;kilogramo/hectarea;2.35;1.09;3.44;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2005/2006;virginia;21325;19122;ha;hectarea;41035229;kg;kilogramo;2146;kilogramo/hectarea;4.17;1.73;5.9;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2005/2006;criollo s.;861;851;ha;hectarea;1676048;kg;kilogramo;1970;kilogramo/hectarea;3.09;1.29;4.38;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2006/2007;virginia;22629;20157;ha;hectarea;41076267;kg;kilogramo;2038;kilogramo/hectarea;5.07;1.97;7.05;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2006/2007;criollo s.;918;901;ha;hectarea;1253201;kg;kilogramo;1392;kilogramo/hectarea;3.53;1.37;4.9;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2007/2008;virginia;21029;18507;ha;hectarea;37707438;kg;kilogramo;2037;kilogramo/hectarea;6.18;1.9;8.08;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2007/2008;criollo s.;748;738;ha;hectarea;1323511;kg;kilogramo;1793;kilogramo/hectarea;4.9;1.51;6.41;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2008/2009;virginia;20382;20382;ha;hectarea;37531002;kg;kilogramo;1841;kilogramo/hectarea;9.32;2.22;11.54;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2008/2009;criollo s.;857;857;ha;hectarea;1325325;kg;kilogramo;1547;kilogramo/hectarea;6.28;1.5;7.78;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2009/2010;virginia;21212;20585;ha;hectarea;44982556;kg;kilogramo;2185;kilogramo/hectarea;10.11;2.36;12.48;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2009/2010;criollo s.;849;849;ha;hectarea;882044;kg;kilogramo;1039;kilogramo/hectarea;8.13;1.89;10.02;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2010/2011;virginia;22673;22673;ha;hectarea;42880645;kg;kilogramo;1891;kilogramo/hectarea;9.92;2.49;12.41;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2010/2011;criollo s.;497;467;ha;hectarea;626257;kg;kilogramo;1341;kilogramo/hectarea;7.15;1.78;8.93;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2010/2011;criollo a.;389;387;ha;hectarea;406585;kg;kilogramo;1050;kilogramo/hectarea;8.67;2.17;10.84;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2010/2011;k. ahumado;34;34;ha;hectarea;33129;kg;kilogramo;984;kilogramo/hectarea;11.75;2.93;14.68;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2011/2012;virginia;18559;18473;ha;hectarea;32038762;kg;kilogramo;1734;kilogramo/hectarea;10.6;3.04;13.64;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2011/2012;criollo s.;502;347;ha;hectarea;601872;kg;kilogramo;1735;kilogramo/hectarea;7.79;2.24;10.03;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2011/2012;criollo a.;359;234;ha;hectarea;355032;kg;kilogramo;1517;kilogramo/hectarea;9.86;2.84;12.7;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2012/2013;virginia;19431;19231;ha;hectarea;35654017;kg;kilogramo;1854;kilogramo/hectarea;14.54;3.76;18.3;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2012/2013;criollo s.;249;205;ha;hectarea;305170;kg;kilogramo;1489;kilogramo/hectarea;9.73;2.52;12.25;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2012/2013;criollo a.;201;198;ha;hectarea;344451;kg;kilogramo;1740;kilogramo/hectarea;11.44;2.96;14.4;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2013/2014;virginia;20494;19267;ha;hectarea;38786475;kg;kilogramo;2013;kilogramo/hectarea;20.17;5.17;25.34;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2014/2015;virginia;18891;17789;ha;hectarea;30883226;kg;kilogramo;1736;kilogramo/hectarea;18.3;5.97;24.27;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2015/2016;virginia;16126;13391;ha;hectarea;30955772;kg;kilogramo;2312;kilogramo/hectarea;27.25;12.05;39.3;ARS;pesos;pesos/kilogramos
+032;Argentina;66;Salta;2016/2017;virginia;16859;14000.11;ha;hectarea;32330198;kg;kilogramo;2309;kilogramo/hectarea;31.52;10.85;42.38;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1986/1987;burley;8000;7200;ha;hectarea;7748546;kg;kilogramo;1076;kilogramos/hectarea;1.29;1.29;2.58;s/d;pesos australes;pesos/kilogramos
+032;Argentina;90;Tucumán;1986/1987;virginia;418;s/d;ha;hectarea;616;kg;kilogramo;s/d;kilogramos/hectarea;1.06;1.06;2.12;s/d;pesos australes;pesos/kilogramos
+032;Argentina;90;Tucumán;1987/1988;burley;7662;7308;ha;hectarea;5409256;kg;kilogramo;740;kilogramos/hectarea;3.93;4;7.92;s/d;pesos australes;pesos/kilogramos
+032;Argentina;90;Tucumán;1988/1989;burley;7388;6152;ha;hectarea;9200106;kg;kilogramo;1495;kilogramos/hectarea;20.62;44.51;65.13;s/d;pesos australes;pesos/kilogramos
+032;Argentina;90;Tucumán;1989/1990;burley;6880;5000;ha;hectarea;6770185;kg;kilogramo;1354;kilogramos/hectarea;2864.77;1909.84;4774.61;s/d;pesos australes;pesos/kilogramos
+032;Argentina;90;Tucumán;1990/1991;burley;8842;7514;ha;hectarea;11086858;kg;kilogramo;1475;kilogramos/hectarea;14610;9740;24350;s/d;pesos australes;pesos/kilogramos
+032;Argentina;90;Tucumán;1990/1991;virginia;14;14;ha;hectarea;21660;kg;kilogramo;1547;kilogramos/hectarea;13770;9180;22950;s/d;pesos australes;pesos/kilogramos
+032;Argentina;90;Tucumán;1991/1992;burley;8780;8273;ha;hectarea;12073145;kg;kilogramo;1459;kilogramos/hectarea;1.6;0.55;2.15;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1991/1992;virginia;140;137;ha;hectarea;218039;kg;kilogramo;1592;kilogramos/hectarea;1.48;0.52;2;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1992/1993;burley;8550;4500;ha;hectarea;8462268;kg;kilogramo;1881;kilogramos/hectarea;1.74;0.57;2.31;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1992/1993;virginia;450;300;ha;hectarea;137171;kg;kilogramo;457;kilogramos/hectarea;1.74;0.56;2.3;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1993/1994;burley;6000;5000;ha;hectarea;8396136;kg;kilogramo;1679;kilogramos/hectarea;0.92;1.22;2.14;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1993/1994;virginia;70;30;ha;hectarea;94676;kg;kilogramo;3156;kilogramos/hectarea;1.17;1.21;2.38;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1994/1995;burley;5900;5300;ha;hectarea;7487978;kg;kilogramo;1413;kilogramos/hectarea;1.12;1.18;2.3;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1994/1995;virginia;70;40;ha;hectarea;53982;kg;kilogramo;1350;kilogramos/hectarea;1.16;1.33;2.49;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1995/1996;burley;6000;5095;ha;hectarea;6489660;kg;kilogramo;1274;kilogramos/hectarea;0.9;1.01;1.91;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1995/1996;virginia;70;50;ha;hectarea;65057;kg;kilogramo;1301;kilogramos/hectarea;1.09;1.34;2.43;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1996/1997;burley;6900;6300;ha;hectarea;9152391;kg;kilogramo;1453;kilogramos/hectarea;1.31;0.69;2;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1996/1997;virginia;250;200;ha;hectarea;303585;kg;kilogramo;1518;kilogramos/hectarea;1.18;0.63;1.81;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1997/1998;burley;6200;5532;ha;hectarea;8840276;kg;kilogramo;1598;kilogramos/hectarea;1.32;0.72;2.04;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1997/1998;virginia;300;170;ha;hectarea;238228;kg;kilogramo;1401;kilogramos/hectarea;1.32;0.65;1.97;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1998/1999;burley;6100;5800;ha;hectarea;11705911;kg;kilogramo;2018;kilogramos/hectarea;1.02;0.67;1.69;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1998/1999;virginia;200;140;ha;hectarea;259513;kg;kilogramo;1854;kilogramos/hectarea;1.16;0.64;1.8;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1999/2000;burley;5840;5788;ha;hectarea;9559916;kg;kilogramo;1652;kilogramos/hectarea;0.89;0.62;1.51;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;1999/2000;virginia;150;98;ha;hectarea;181507;kg;kilogramo;1852;kilogramos/hectarea;1.09;0.7;1.79;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2000/2001;burley;5855;5807;ha;hectarea;9924210;kg;kilogramo;1709;kilogramos/hectarea;0.92;0.74;1.66;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2000/2001;virginia;145;93;ha;hectarea;165252;kg;kilogramo;1777;kilogramos/hectarea;1.18;0.89;2.07;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2001/2002;burley;6150;6000;ha;hectarea;12107781;kg;kilogramo;2018;kilogramos/hectarea;1.58;1.06;2.64;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2001/2002;virginia;120;110;ha;hectarea;217938;kg;kilogramo;1981;kilogramos/hectarea;1.98;1.16;3.14;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2002/2003;burley;6500;4513;ha;hectarea;9708867;kg;kilogramo;2151;kilogramos/hectarea;2.95;1.52;4.47;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2002/2003;virginia;70;70;ha;hectarea;141816;kg;kilogramo;2026;kilogramos/hectarea;3.39;1.53;4.92;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2003/2004;burley;6400;4580;ha;hectarea;9339806;kg;kilogramo;2039;kilogramos/hectarea;2.6;1.13;3.73;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2003/2004;virginia;100;70;ha;hectarea;96091;kg;kilogramo;1373;kilogramos/hectarea;3.48;1.36;4.84;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2004/2005;burley;6900;4100;ha;hectarea;8488968;kg;kilogramo;2070;kilogramos/hectarea;2.83;1.17;4;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2004/2005;virginia;100;50;ha;hectarea;94726;kg;kilogramo;1895;kilogramos/hectarea;3.73;1.44;5.17;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2005/2006;burley;5000;4500;ha;hectarea;9274390;kg;kilogramo;2061;kilogramos/hectarea;2.88;1.35;4.23;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2005/2006;virginia;100;80;ha;hectarea;166666;kg;kilogramo;2083;kilogramos/hectarea;4.16;1.73;5.89;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2006/2007;burley;4000;2000;ha;hectarea;4222906;kg;kilogramo;2111;kilogramos/hectarea;3.19;1.45;4.63;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2006/2007;virginia;100;70;ha;hectarea;143997;kg;kilogramo;2057;kilogramos/hectarea;4.57;1.78;6.35;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2007/2008;burley;3140;3035;ha;hectarea;6070406;kg;kilogramo;2000;kilogramos/hectarea;5.23;1.69;6.91;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2007/2008;virginia;91;91;ha;hectarea;182273;kg;kilogramo;2000;kilogramos/hectarea;6.19;1.9;8.09;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2008/2009;burley;3683;3628;ha;hectarea;6894107;kg;kilogramo;1900;kilogramos/hectarea;7.04;1.79;8.83;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2008/2009;virginia;83;81;ha;hectarea;154253;kg;kilogramo;1900;kilogramos/hectarea;8.85;2.1;10.95;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2009/2010;burley;4167;3951;ha;hectarea;5530327;kg;kilogramo;1400;kilogramos/hectarea;7.25;1.75;9.01;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2009/2010;virginia;72;70;ha;hectarea;101438;kg;kilogramo;1449;kilogramos/hectarea;9.18;2.15;11.32;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2010/2011;burley;3963;3894;ha;hectarea;6239308;kg;kilogramo;1602;kilogramos/hectarea;7.17;1.91;9.08;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2010/2011;virginia;50;46;ha;hectarea;73669;kg;kilogramo;1600;kilogramos/hectarea;7.17;1.8;8.97;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2010/2011;criollo argentino;5;5;ha;hectarea;8891;kg;kilogramo;1710;kilogramos/hectarea;9.23;2.31;11.54;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2011/2012;burley;3098;2980;ha;hectarea;5657974;kg;kilogramo;1899;kilogramos/hectarea;7.92;2.45;10.37;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2011/2012;virginia;74;73;ha;hectarea;23366;kg;kilogramo;320;kilogramos/hectarea;8.73;2.51;11.24;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2011/2012;criollo argentino;16;16;ha;hectarea;44813;kg;kilogramo;2829;kilogramos/hectarea;11.34;2.93;14.27;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2012/2013;burley;3059;2980;ha;hectarea;5977955;kg;kilogramo;2006;kilogramos/hectarea;10.44;2.94;13.37;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2012/2013;criollo argentino;113;111;ha;hectarea;184199;kg;kilogramo;1659;kilogramos/hectarea;11.34;2.93;14.27;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2013/2014;burley;3562;3155;ha;hectarea;5877469;kg;kilogramo;1863;kilogramos/hectarea;15.34;4.3;19.64;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2013/2014;criollo argentino;206;182;ha;hectarea;340080;kg;kilogramo;1869;kilogramos/hectarea;15.52;3.98;19.5;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2014/2015;burley;4150;3002;ha;hectarea;5996456;kg;kilogramo;1997;kilogramos/hectarea;16.11;5.79;21.9;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2014/2015;criollo argentino;140;119;ha;hectarea;250554;kg;kilogramo;2105;kilogramos/hectarea;15.91;5.18;21.09;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2015/2016;burley;3342;3338;ha;hectarea;4651359;kg;kilogramo;1393;kilogramos/hectarea;20.78;10.01;30.79;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2015/2016;virginia;1;1;ha;hectarea;733;kg;kilogramo;733;kilogramos/hectarea;31.92;14.11;46.03;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2015/2016;criollo argentino;140;140;ha;hectarea;195343;kg;kilogramo;1395;kilogramos/hectarea;22.04;9.78;31.82;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2016/2017;virginia;17.45;16.69;ha;hectarea;30806;kg;kilogramo;1846;kilogramos/hectarea;32.5;11.39;43.89;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2016/2017;burley;3589.26;3433.29;ha;hectarea;6335159;kg;kilogramo;1845;kilogramos/hectarea;23.88;9.02;32.9;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2016/2017;criollo argentino;203.8;194.94;ha;hectarea;359713;kg;kilogramo;1845;kilogramos/hectarea;24.54;8.46;33;ARS;pesos;pesos/kilogramos
+032;Argentina;90;Tucumán;2016/2017;criollo misionero;62;60;ha;hectarea;110299;kg;kilogramo;1845;kilogramos/hectarea;17.39;5.4;22.79;ARS;pesos;pesos/kilogramos

@@ -4,6 +4,21 @@ import { fiscalData } from '../../data/fiscalData';
 import { officialSenators } from '../../data/officialSenators';
 import { officialDeputies } from '../../data/officialDeputies';
 import { politicalContext } from '../../data/politicalContext';
+import alignmentScores from '../../data/alignmentScores.json';
+import votacionesRaw from '../../data/votaciones.json';
+import { FiscalTriptych } from '../shared/FiscalTriptych';
+import { RigiPanel } from '../shared/RigiPanel';
+
+const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
+const votacionesByLastName = (() => {
+  const m = {};
+  for (const l of votacionesList) {
+    const ln = l.n?.split(',')[0]?.trim().toUpperCase();
+    if (!ln) continue;
+    (m[ln] ||= []).push(l);
+  }
+  return m;
+})();
 
 const EconomyPanel = lazy(() => import('../panels/EconomyPanel'));
 const ProvincialCabinetPanel = lazy(() => import('../panels/ProvincialCabinetPanel'));
@@ -192,14 +207,14 @@ function normProv(s) {
   return s?.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') || '';
 }
 
-function LegislatorRow({ leg, alla }) {
+function LegislatorRow({ leg, chamberKey }) {
   const co = COALITION_COLOR[leg.co] || COALITION_COLOR.OTROS;
-  const pct = alla;
-  const barColor = pct == null ? '#94a3b8'
-    : pct >= 75 ? '#7d3c98'
-    : pct >= 50 ? '#17a589'
-    : pct >= 25 ? '#d4a800'
-    : '#780000';
+  const last = leg.n?.split(',')[0]?.trim().toUpperCase();
+  const candidates = votacionesByLastName[last] || [];
+  const rec = candidates.find(r => r.c === chamberKey) || candidates[0];
+  const scoreEntry = rec ? alignmentScores.per_legislator?.[rec.n] : null;
+  const fmt = (x) => x == null ? '—' : `${Math.round(x * 100)}%`;
+
   return (
     <div className="py-1.5 border-b border-[#003049]/8 last:border-0">
       <div className="flex items-center gap-2">
@@ -208,13 +223,23 @@ function LegislatorRow({ leg, alla }) {
           <p className="text-[12px] text-[#003049] truncate font-medium">{leg.n}</p>
           <p className="text-[10px] text-[#003049]/60 truncate">{leg.b}</p>
         </div>
-        <div className="shrink-0 w-[64px]">
-          <div className="h-[5px] bg-[#003049]/10 rounded-full overflow-hidden">
-            <div className="h-full rounded-full" style={{ width: `${Math.min(pct ?? 0, 100)}%`, background: barColor }} />
+        <div
+          className="shrink-0 grid grid-cols-3 gap-1.5 px-1.5 py-1 rounded"
+          style={{ background: 'rgba(0,48,73,0.05)' }}
+          title="w/Exec · w/Bloc · Absent — across 6 curated executive-position votes"
+        >
+          <div className="text-center">
+            <div className="text-[7px] uppercase tracking-wider text-[#003049]/50 leading-none">Exec</div>
+            <div className="text-[10px] font-mono font-bold text-[#003049] leading-tight">{fmt(scoreEntry?.score_executive)}</div>
           </div>
-          <p className="text-[9px] font-mono text-right mt-0.5" style={{ color: barColor }}>
-            {pct != null ? `${pct.toFixed(0)}%` : 'S/D'}
-          </p>
+          <div className="text-center">
+            <div className="text-[7px] uppercase tracking-wider text-[#003049]/50 leading-none">Bloc</div>
+            <div className="text-[10px] font-mono font-bold text-[#003049] leading-tight">{fmt(scoreEntry?.score_bloc)}</div>
+          </div>
+          <div className="text-center">
+            <div className="text-[7px] uppercase tracking-wider text-[#003049]/50 leading-none">Abs</div>
+            <div className="text-[10px] font-mono font-bold text-[#003049] leading-tight">{fmt(scoreEntry?.rate_absent)}</div>
+          </div>
         </div>
       </div>
     </div>
@@ -245,12 +270,12 @@ function LegislatorsBody({ province, congress }) {
 
   const senators = officialSenators.filter(matchProv).map(o => {
     const m = comovotoEntry.find(cv => cv.c === 'senadores' && norm(cv.n?.split(',')[0]) === norm(o.n?.split(',')[0]));
-    return { n: o.n, b: o.b, co: m?.co || o.co, alla: m?.alla ?? null };
+    return { n: o.n, b: o.b, co: m?.co || o.co, alla: m?.alla ?? null, tv: m?.tv ?? null };
   }).sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
 
   const deputies = officialDeputies.filter(matchProv).map(o => {
     const m = comovotoEntry.find(cv => cv.c === 'diputados' && norm(cv.n?.split(',')[0]) === norm(o.n?.split(',')[0]));
-    return { n: o.n, b: o.b, co: m?.co || o.co, alla: m?.alla ?? null };
+    return { n: o.n, b: o.b, co: m?.co || o.co, alla: m?.alla ?? null, tv: m?.tv ?? null };
   }).sort((a, b) => (b.alla ?? -1) - (a.alla ?? -1));
 
   if (senators.length === 0 && deputies.length === 0) {
@@ -264,6 +289,9 @@ function LegislatorsBody({ province, congress }) {
 
   return (
     <div className="space-y-3">
+      <p className="text-[10px] text-[#003049]/55 leading-tight">
+        % = share of all roll-call votes (n) where the legislator sided with the LLA bloc, since Dec 2023. Source: comovoto.dev.ar.
+      </p>
       {avg != null && (
         <div className="rounded-lg p-2.5 border border-[#003049]/10" style={{ background: 'rgba(0,48,73,0.04)' }}>
           <div className="flex items-center justify-between mb-1">
@@ -285,7 +313,7 @@ function LegislatorsBody({ province, congress }) {
           <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/50 mb-1">
             Senators ({senators.length})
           </p>
-          <div>{senators.map((l, i) => <LegislatorRow key={i} leg={l} alla={l.alla} />)}</div>
+          <div>{senators.map((l, i) => <LegislatorRow key={i} leg={l} chamberKey="S" />)}</div>
         </div>
       )}
       {deputies.length > 0 && (
@@ -293,7 +321,7 @@ function LegislatorsBody({ province, congress }) {
           <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/50 mb-1">
             Deputies ({deputies.length})
           </p>
-          <div>{deputies.map((l, i) => <LegislatorRow key={i} leg={l} alla={l.alla} />)}</div>
+          <div>{deputies.map((l, i) => <LegislatorRow key={i} leg={l} chamberKey="D" />)}</div>
         </div>
       )}
     </div>
@@ -401,6 +429,10 @@ export default function MobileProvinceTab({ province, governors, congress, overl
             <SocioBody province={province} />
           </Accordion>
 
+          <Accordion title="Fiscal Dependency" defaultOpen>
+            <FiscalTriptych provinceName={province} />
+          </Accordion>
+
           <Accordion title="Economy">
             <Suspense fallback={<p className="text-[12px] text-[#003049]/60">Loading…</p>}>
               <EconomyPanel selectedProvince={province} mobile />
@@ -423,11 +455,17 @@ export default function MobileProvinceTab({ province, governors, congress, overl
             </Suspense>
           </Accordion>
 
-          {polCtx?.rigi_adhesion_provincial && (
-            <Accordion title="RIGI">
-              <p className="text-[12px] text-[#003049]">{polCtx.rigi_adhesion_provincial}</p>
-            </Accordion>
-          )}
+          <Accordion title="RIGI">
+            <RigiPanel provinceName={province} />
+            {polCtx?.rigi_adhesion_provincial && (
+              <div className="mt-2 pt-2 border-t border-[#003049]/10">
+                <p className="text-[10px] text-[#003049]/55 leading-snug mb-1">
+                  Provincial adhesion law (separate from national project approval — adds provincial tax benefits on top):
+                </p>
+                <p className="text-[12px] text-[#003049]">{polCtx.rigi_adhesion_provincial}</p>
+              </div>
+            )}
+          </Accordion>
         </div>
       </div>
     </div>

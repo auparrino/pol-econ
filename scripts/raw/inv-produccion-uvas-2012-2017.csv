@@ -1,0 +1,3226 @@
+anio,provincia,provincia_id,departamento,departamento_id,localidad,localidad_id,quintales
+2012,Buenos Aires,06,Coronel Suárez,06203,Villa La Arcadia,06203100,765.1
+2012,Buenos Aires,06,General Pueyrredón,06357,Chapadmalal,06357080,670.84
+2012,Buenos Aires,06,Tornquist,06819,Saldungaray,06819020,244.31
+2012,Buenos Aires,06,Tornquist,06819,Villa Ventana,06819070,40.95
+2012,Buenos Aires,06,Villarino,06875,Médanos,06875060,392.85
+2012,Catamarca,10,Andalgalá,10021,Andalgalá,10021020,214.4
+2012,Catamarca,10,Belén,10035,Belén,10035020,160
+2012,Catamarca,10,Belén,10035,Hualfín,10035070,12881.5
+2012,Catamarca,10,Belén,10035,Los Nacimientos,10035120,64.2
+2012,Catamarca,10,Belén,10035,Puerta de Corral Quemado,10035130,473.6
+2012,Catamarca,10,Pomán,10084,San Miguel,10084090,407.6
+2012,Catamarca,10,Pomán,10084,Siján,10084110,1164.24
+2012,Catamarca,10,Santa María,10091,Andalhualá,10091010,204.8
+2012,Catamarca,10,Santa María,10091,Lampacito,10091030,4962.1
+2012,Catamarca,10,Santa María,10091,Lampacito,10091030,2021.9
+2012,Catamarca,10,Santa María,10091,Chañar Punco,10091030,39049.43
+2012,Catamarca,10,Santa María,10091,Famatanca,10091070,194.8
+2012,Catamarca,10,Santa María,10091,Fuerte Quemado,10091080,609.7
+2012,Catamarca,10,Santa María,10091,La Loma,10091100,36.8
+2012,Catamarca,10,Santa María,10091,El Cerrito,10091110,162.6
+2012,Catamarca,10,Santa María,10091,Las Mojarras,10091110,4139.2
+2012,Catamarca,10,Santa María,10091,Loro Huasi,10091120,49.8
+2012,Catamarca,10,Santa María,10091,San José,10091140,912.6
+2012,Catamarca,10,Santa María,10091,Santa María,10091150,7037.3
+2012,Catamarca,10,Santa María,10091,Santa María,10091150,7721.9
+2012,Catamarca,10,Santa María,10091,Yapes,10091160,84
+2012,Catamarca,10,Tinogasta,10105,Anillaco,10105010,307
+2012,Catamarca,10,Tinogasta,10105,Copacabana,10105050,8220.64
+2012,Catamarca,10,Tinogasta,10105,El Puesto,10105090,910.2
+2012,Catamarca,10,Tinogasta,10105,El Salado,10105100,241.3
+2012,Catamarca,10,Tinogasta,10105,Fiambalá,10105110,7697.38
+2012,Catamarca,10,Tinogasta,10105,Medanitos,10105130,28018.47
+2012,Catamarca,10,Tinogasta,10105,Palo Blanco,10105140,1449.2
+2012,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,16104.99
+2012,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,3146.15
+2012,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,5860.8
+2012,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,1320
+2012,Catamarca,10,Tinogasta,10105,San José Norte,10105A27,15261.1
+2012,Córdoba,14,Calamuchita,14007,Atos Pampa,14007A01,16.03
+2012,Córdoba,14,Colón,14021,Colonia Caroya,14021050,8910.28
+2012,Córdoba,14,Colón,14021,Colonia Vicente Agüero,14021070,1255.03
+2012,Córdoba,14,Colón,14021,Santa Teresa,14021A20,361.6
+2012,Córdoba,14,Cruz del Eje,14028,Cruz del Eje,14028050,555
+2012,Córdoba,14,Cruz del Eje,14028,San Marcos Sierra,14028170,83.5
+2012,Córdoba,14,Ischilín,14049,Quilino,14049100,753.6
+2012,Córdoba,14,Ischilín,14049,Ischilín,14049A07,409.45
+2012,Córdoba,14,Santa María,14147,Potrero de Garay,14147230,80.4
+2012,Córdoba,14,Totoral,14168,Sinsacate,14168110,70.5
+2012,Córdoba,14,Tulumba,14175,San Pedro Norte,14175100,14.5
+2012,Chubut,26,Cushamen,26014,Cushamen Centro,26014030,130
+2012,Entre Ríos,30,Colón,30008,Colón,30008020,451.47
+2012,Entre Ríos,30,Concordia,30015,Estación Yeruá,30015080,147.9
+2012,Entre Ríos,30,Concordia,30015,Estación Yeruá,30015080,93.05
+2012,Entre Ríos,30,Victoria,30105,Victoria,30105060,25
+2012,Jujuy,38,Tilcara,38094,Huacalera,38094020,52
+2012,Jujuy,38,Tilcara,38094,Maimará,38094040,208.69
+2012,La Pampa,42,Puelén,42112,25 de Mayo,42112020,15943.71
+2012,La Rioja,46,Castro Barros,46021,Aminga,46021010,31888.5
+2012,La Rioja,46,Castro Barros,46021,Anillaco,46021020,5096.19
+2012,La Rioja,46,General Felipe Varela,46028,Guandacol,46028020,18601.4
+2012,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,1374.7
+2012,La Rioja,46,General Felipe Varela,46028,Los Palacios,46028030,8238.1
+2012,La Rioja,46,General Felipe Varela,46028,Pagancillo,46028040,3343.5
+2012,La Rioja,46,General Felipe Varela,46028,Villa Unión,46028050,13290.3
+2012,La Rioja,46,General Felipe Varela,46028,Banda Florida,46028050,2754.1
+2012,La Rioja,46,General Felipe Varela,46028,Villa Unión,46028050,377.3
+2012,La Rioja,46,General Felipe Varela,46028,Paso San Isidro,46028A14,233.4
+2012,La Rioja,46,General Felipe Varela,46028,Paso San Isidro,46028A14,233.4
+2012,La Rioja,46,Chilecito,46042,Los Sarmientos,46042010,199.4
+2012,La Rioja,46,Chilecito,46042,La Puntilla,46042010,18.2
+2012,La Rioja,46,Chilecito,46042,Anguinán,46042010,135102.74
+2012,La Rioja,46,Chilecito,46042,San Miguel,46042010,206.4
+2012,La Rioja,46,Chilecito,46042,Chilecito,46042010,609.2
+2012,La Rioja,46,Chilecito,46042,Colonia Catinzaco,46042030,7007.8
+2012,La Rioja,46,Chilecito,46042,Malligasta,46042070,173050.6
+2012,La Rioja,46,Chilecito,46042,Miranda,46042080,213
+2012,La Rioja,46,Chilecito,46042,Nonogasta,46042090,139117.48
+2012,La Rioja,46,Chilecito,46042,San Nicolás,46042100,2819.69
+2012,La Rioja,46,Chilecito,46042,Sañogasta,46042120,1385.3
+2012,La Rioja,46,Chilecito,46042,Tilimuqui,46042130,92900.61
+2012,La Rioja,46,Chilecito,46042,Vichigasta,46042140,216152.3
+2012,La Rioja,46,Famatina,46049,Bajo Carrizal,46049040,24.8
+2012,La Rioja,46,Famatina,46049,Campanas,46049050,88
+2012,La Rioja,46,Famatina,46049,Chañarmuyo,46049060,5831
+2012,La Rioja,46,Famatina,46049,Famatina,46049070,2471.2
+2012,La Rioja,46,Famatina,46049,Famatina,46049070,1440.5
+2012,La Rioja,46,Famatina,46049,Famatina,46049070,37
+2012,La Rioja,46,Famatina,46049,Pituil,46049090,7013.36
+2012,La Rioja,46,Famatina,46049,Plaza Vieja,46049100,2235.4
+2012,La Rioja,46,General Lamadrid,46077,Villa Castelli,46077010,6878.3
+2012,La Rioja,46,General Lamadrid,46077,Villa Castelli,46077010,448
+2012,La Rioja,46,Vinchina,46098,Villa San José de Vinchina,46098020,2652.1
+2012,La Rioja,46,San Blas de Los Sauces,46119,Chaupihuasi,46119010,832.2
+2012,La Rioja,46,San Blas de Los Sauces,46119,Alpasinche,46119010,1335.5
+2012,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,676.2
+2012,La Rioja,46,Sanagasta,46126,Villa Sanagasta,46126010,239.1
+2012,Mendoza,50,General Alvear,50014,Bowen,50014010,77448.7
+2012,Mendoza,50,General Alvear,50014,Bowen,50014010,1986.05
+2012,Mendoza,50,General Alvear,50014,Carmensa,50014020,22698.6
+2012,Mendoza,50,General Alvear,50014,Carmensa,50014020,549.9
+2012,Mendoza,50,General Alvear,50014,General Alvear,50014030,26390.7
+2012,Mendoza,50,General Alvear,50014,General Alvear,50014030,25462.32
+2012,Mendoza,50,General Alvear,50014,General Alvear,50014030,19052.69
+2012,Mendoza,50,General Alvear,50014,General Alvear,50014030,2467.8
+2012,Mendoza,50,General Alvear,50014,General Alvear,50014030,4568
+2012,Mendoza,50,General Alvear,50014,Los Compartos,50014040,44199.75
+2012,Mendoza,50,General Alvear,50014,Colonia San Pedro del Atuel,50014A04,633.3
+2012,Mendoza,50,General Alvear,50014,El Ceibo,50014A08,943.4
+2012,Mendoza,50,General Alvear,50014,El Ceibo,50014A08,8757
+2012,Mendoza,50,General Alvear,50014,La California,50014A12,5351.7
+2012,Mendoza,50,General Alvear,50014,La Escandinava,50014A14,14534.9
+2012,Mendoza,50,General Alvear,50014,La Marsolina,50014A16,34820.01
+2012,Mendoza,50,General Alvear,50014,La Marsolina,50014A16,581.6
+2012,Mendoza,50,General Alvear,50014,La Montilla,50014A17,289.7
+2012,Mendoza,50,General Alvear,50014,Los Campamentos,50014A19,6414
+2012,Mendoza,50,General Alvear,50014,Poste de Fierro,50014A24,13617
+2012,Mendoza,50,Godoy Cruz,50021,Gobernador Benegas,50021010,34.2
+2012,Mendoza,50,Guaymallén,50028,Colonia Segovia,50028010,15459.2
+2012,Mendoza,50,Guaymallén,50028,San José,50028020,93.2
+2012,Mendoza,50,Guaymallén,50028,Dorrego,50028020,2751.1
+2012,Mendoza,50,Guaymallén,50028,Buena Nueva,50028020,7074.8
+2012,Mendoza,50,Guaymallén,50028,El Sauce,50028020,14668.6
+2012,Mendoza,50,Guaymallén,50028,Bermejo,50028020,8287.35
+2012,Mendoza,50,Guaymallén,50028,Rodeo de la Cruz,50028020,7804.8
+2012,Mendoza,50,Guaymallén,50028,San Francisco del Monte,50028020,29.2
+2012,Mendoza,50,Guaymallén,50028,Villa Nueva,50028020,4022
+2012,Mendoza,50,Guaymallén,50028,La Primavera,50028030,4872.1
+2012,Mendoza,50,Guaymallén,50028,La Primavera,50028030,1031.4
+2012,Mendoza,50,Guaymallén,50028,La Primavera,50028030,522.5
+2012,Mendoza,50,Guaymallén,50028,Los Corralitos,50028040,12436.62
+2012,Mendoza,50,Guaymallén,50028,Puente de Hierro,50028050,69.9
+2012,Mendoza,50,Junín,50035,Ingeniero Giagnoni,50035010,2305.9
+2012,Mendoza,50,Junín,50035,Junín,50035020,2814.8
+2012,Mendoza,50,Junín,50035,Junín,50035020,7883.85
+2012,Mendoza,50,Junín,50035,Junín,50035020,113749.22
+2012,Mendoza,50,Junín,50035,Junín,50035020,2946.6
+2012,Mendoza,50,Junín,50035,La Colonia,50035030,86081.84
+2012,Mendoza,50,Junín,50035,Los Barriales,50035040,609.2
+2012,Mendoza,50,Junín,50035,Los Barriales,50035040,69108.11
+2012,Mendoza,50,Junín,50035,Los Barriales,50035040,2495.56
+2012,Mendoza,50,Junín,50035,Medrano,50035050,1386.2
+2012,Mendoza,50,Junín,50035,Medrano,50035050,6062.4
+2012,Mendoza,50,Junín,50035,Medrano,50035050,3697.1
+2012,Mendoza,50,Junín,50035,Medrano,50035050,159401.32
+2012,Mendoza,50,Junín,50035,Phillips,50035060,210897.9
+2012,Mendoza,50,Junín,50035,Phillips,50035060,686
+2012,Mendoza,50,Junín,50035,Rodríguez Peña,50035070,61184.04
+2012,Mendoza,50,Junín,50035,Algarrobo Grande,50035A00,10161.8
+2012,Mendoza,50,Junín,50035,Algarrobo Grande,50035A00,8136.8
+2012,Mendoza,50,Junín,50035,Algarrobo Grande,50035A00,184259.2
+2012,Mendoza,50,Junín,50035,Alto Verde,50035A01,25991.7
+2012,Mendoza,50,Junín,50035,Alto Verde,50035A01,59227.62
+2012,Mendoza,50,Junín,50035,Tres Esquinas,50035A02,6569.77
+2012,Mendoza,50,La Paz,50042,La Paz,50042020,15604.95
+2012,Mendoza,50,La Paz,50042,La Paz,50042020,4523.02
+2012,Mendoza,50,La Paz,50042,Villa Antigua,50042030,3815.8
+2012,Mendoza,50,La Paz,50042,Las Chacritas,50042A07,1496.6
+2012,Mendoza,50,Las Heras,50049,Jocolí,50049030,10229.2
+2012,Mendoza,50,Las Heras,50049,El Algarrobal,50049050,57040.77
+2012,Mendoza,50,Las Heras,50049,El Plumerillo,50049050,6491.6
+2012,Mendoza,50,Las Heras,50049,Panquehuá,50049050,3247.86
+2012,Mendoza,50,Las Heras,50049,Las Heras,50049050,1900.7
+2012,Mendoza,50,Las Heras,50049,Las Heras,50049050,2743.2
+2012,Mendoza,50,Las Heras,50049,El Challao,50049050,52.83
+2012,Mendoza,50,Las Heras,50049,Capdevila,50049050,23014
+2012,Mendoza,50,Las Heras,50049,El Borbollón,50049050,19789.2
+2012,Mendoza,50,Las Heras,50049,Las Heras,50049050,420.6
+2012,Mendoza,50,Las Heras,50049,Polvaredas,50049080,1296.2
+2012,Mendoza,50,Las Heras,50049,El Pastal,50049A04,21909.3
+2012,Mendoza,50,Las Heras,50049,El Pastal,50049A04,3351.6
+2012,Mendoza,50,Lavalle,50056,Barrio Alto del Olvido,50056010,2929.4
+2012,Mendoza,50,Lavalle,50056,Barrio La Palmera,50056030,42826
+2012,Mendoza,50,Lavalle,50056,Barrio La Pega,50056040,31345.4
+2012,Mendoza,50,Lavalle,50056,Costa de Araujo,50056080,816.8
+2012,Mendoza,50,Lavalle,50056,Costa de Araujo,50056080,527098.01
+2012,Mendoza,50,Lavalle,50056,Costa de Araujo,50056080,242.6
+2012,Mendoza,50,Lavalle,50056,El Paramillo,50056090,74338.58
+2012,Mendoza,50,Lavalle,50056,El Vergel,50056100,32838.2
+2012,Mendoza,50,Lavalle,50056,El Vergel,50056100,253.8
+2012,Mendoza,50,Lavalle,50056,Ingeniero Gustavo André,50056110,4707.4
+2012,Mendoza,50,Lavalle,50056,Ingeniero Gustavo André,50056110,247126.3
+2012,Mendoza,50,Lavalle,50056,Jocolí,50056120,175801.8
+2012,Mendoza,50,Lavalle,50056,Jocolí Viejo,50056130,18294.1
+2012,Mendoza,50,Lavalle,50056,Las Violetas,50056140,7188.9
+2012,Mendoza,50,Lavalle,50056,3 de Mayo,50056150,7110.85
+2012,Mendoza,50,Lavalle,50056,3 de Mayo,50056150,88641.18
+2012,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,2416.4
+2012,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,52204.86
+2012,Mendoza,50,Lavalle,50056,El Carmen,50056A05,12039.5
+2012,Mendoza,50,Lavalle,50056,El Chilcal,50056A06,26595
+2012,Mendoza,50,Lavalle,50056,El Chilcal,50056A06,704.6
+2012,Mendoza,50,Lavalle,50056,El Plumero,50056A09,1388.7
+2012,Mendoza,50,Lavalle,50056,El Plumero,50056A09,85718.66
+2012,Mendoza,50,Lavalle,50056,El Retiro,50056A12,6739.4
+2012,Mendoza,50,Lavalle,50056,La Asunción,50056A15,5373.7
+2012,Mendoza,50,Lavalle,50056,La Holanda,50056A17,168.8
+2012,Mendoza,50,Lavalle,50056,Resurrección,50056A23,335.4
+2012,Mendoza,50,Lavalle,50056,San Francisco,50056A24,17135.1
+2012,Mendoza,50,Lavalle,50056,San José,50056A26,863.6
+2012,Mendoza,50,Lavalle,50056,San José,50056A26,199.6
+2012,Mendoza,50,Luján de Cuyo,50063,Agrelo,50063010,327089.31
+2012,Mendoza,50,Luján de Cuyo,50063,El Carrizal,50063050,107571.82
+2012,Mendoza,50,Luján de Cuyo,50063,Las Compuertas,50063070,25386.5
+2012,Mendoza,50,Luján de Cuyo,50063,Mayor Drummond,50063090,36359.27
+2012,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,7111.21
+2012,Mendoza,50,Luján de Cuyo,50063,Chacras de Coria,50063090,5935.44
+2012,Mendoza,50,Luján de Cuyo,50063,La Puntilla,50063090,102.2
+2012,Mendoza,50,Luján de Cuyo,50063,Vistalba,50063090,26325.95
+2012,Mendoza,50,Luján de Cuyo,50063,Carrodilla,50063090,16136.9
+2012,Mendoza,50,Luján de Cuyo,50063,Perdriel,50063100,84.6
+2012,Mendoza,50,Luján de Cuyo,50063,Perdriel,50063100,97689.05
+2012,Mendoza,50,Luján de Cuyo,50063,Ugarteche,50063120,322642.08
+2012,Mendoza,50,Luján de Cuyo,50063,Anchoris,50063A01,9380.02
+2012,Mendoza,50,Luján de Cuyo,50063,Baños Lunlunta,50063A02,1486.67
+2012,Mendoza,50,Maipú,50070,Barrancas,50070010,252880.67
+2012,Mendoza,50,Maipú,50070,Barrancas,50070010,156.4
+2012,Mendoza,50,Maipú,50070,Barrio Jesús de Nazaret,50070020,1009.85
+2012,Mendoza,50,Maipú,50070,Cruz de Piedra,50070030,49038.91
+2012,Mendoza,50,Maipú,50070,Cruz de Piedra,50070030,73405.52
+2012,Mendoza,50,Maipú,50070,El Pedregal,50070040,9244.5
+2012,Mendoza,50,Maipú,50070,Fray Luis Beltrán,50070050,633732.47
+2012,Mendoza,50,Maipú,50070,Fray Luis Beltrán,50070050,33603.14
+2012,Mendoza,50,Maipú,50070,Fray Luis Beltrán,50070050,26599.1
+2012,Mendoza,50,Maipú,50070,Maipú,50070060,3748.73
+2012,Mendoza,50,Maipú,50070,General Gutiérrez,50070060,2985.65
+2012,Mendoza,50,Maipú,50070,Coquimbito,50070060,31395.78
+2012,Mendoza,50,Maipú,50070,Maipú,50070060,386.4
+2012,Mendoza,50,Maipú,50070,Rodeo del Medio,50070070,1036.22
+2012,Mendoza,50,Maipú,50070,Rodeo del Medio,50070070,67643.75
+2012,Mendoza,50,Maipú,50070,Rodeo del Medio,50070070,15912.8
+2012,Mendoza,50,Maipú,50070,Rodeo del Medio,50070070,391.2
+2012,Mendoza,50,Maipú,50070,Russell,50070080,51568.01
+2012,Mendoza,50,Maipú,50070,San Roque,50070090,46470.38
+2012,Mendoza,50,Maipú,50070,San Roque,50070090,19366.4
+2012,Mendoza,50,Maipú,50070,El Paraíso,50070A01,2747.2
+2012,Mendoza,50,Maipú,50070,Los Álamos,50070A02,17369.86
+2012,Mendoza,50,Rivadavia,50084,Andrade,50084010,133206.01
+2012,Mendoza,50,Rivadavia,50084,El Mirador,50084040,14779.15
+2012,Mendoza,50,Rivadavia,50084,El Mirador,50084040,255626.29
+2012,Mendoza,50,Rivadavia,50084,La Central,50084050,345826.29
+2012,Mendoza,50,Rivadavia,50084,La Libertad,50084080,90900.39
+2012,Mendoza,50,Rivadavia,50084,Los Árboles,50084090,83726.97
+2012,Mendoza,50,Rivadavia,50084,Los Campamentos,50084100,526722.4
+2012,Mendoza,50,Rivadavia,50084,Los Campamentos,50084100,537.6
+2012,Mendoza,50,Rivadavia,50084,Medrano,50084110,88041.59
+2012,Mendoza,50,Rivadavia,50084,Mundo Nuevo,50084120,11555.8
+2012,Mendoza,50,Rivadavia,50084,Reducción de Abajo,50084130,85346.11
+2012,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,90187.06
+2012,Mendoza,50,Rivadavia,50084,Santa María de Oro,50084150,52306.5
+2012,Mendoza,50,Rivadavia,50084,San Isidro,50084A03,19
+2012,Mendoza,50,San Carlos,50091,Barrio El Cepillo,50091010,24358.97
+2012,Mendoza,50,San Carlos,50091,Chilecito,50091020,519.2
+2012,Mendoza,50,San Carlos,50091,Chilecito,50091020,45844.85
+2012,Mendoza,50,San Carlos,50091,Eugenio Bustos,50091030,159599.2
+2012,Mendoza,50,San Carlos,50091,La Consulta,50091040,2939.2
+2012,Mendoza,50,San Carlos,50091,La Consulta,50091040,308400.59
+2012,Mendoza,50,San Carlos,50091,Pareditas,50091050,20193.86
+2012,Mendoza,50,San Carlos,50091,San Carlos,50091060,28107.06
+2012,Mendoza,50,San Carlos,50091,San Carlos,50091060,8173.8
+2012,Mendoza,50,San Carlos,50091,Casas Viejas,50091A01,5191.3
+2012,Mendoza,50,San Carlos,50091,El Capacho,50091A03,806.4
+2012,Mendoza,50,San Carlos,50091,Tres Esquinas,50091A17,1091.8
+2012,Mendoza,50,San Martín,50098,Alto Verde,50098020,332545.77
+2012,Mendoza,50,San Martín,50098,Chapanay,50098060,782123.92
+2012,Mendoza,50,San Martín,50098,Chivilcoy,50098070,81517.9
+2012,Mendoza,50,San Martín,50098,El Espino,50098073,59471.6
+2012,Mendoza,50,San Martín,50098,El Ramblón,50098077,170704.42
+2012,Mendoza,50,San Martín,50098,El Ramblón,50098077,61493.76
+2012,Mendoza,50,San Martín,50098,Montecaseros,50098080,695856.67
+2012,Mendoza,50,San Martín,50098,Nueva California,50098090,337147.92
+2012,Mendoza,50,San Martín,50098,San Martín,50098100,5376.6
+2012,Mendoza,50,San Martín,50098,San Martín,50098100,65287.02
+2012,Mendoza,50,San Martín,50098,San Martín,50098100,681.8
+2012,Mendoza,50,San Martín,50098,Palmira,50098100,165501.1
+2012,Mendoza,50,San Martín,50098,Tres Porteñas,50098110,260371.19
+2012,Mendoza,50,San Martín,50098,Alto Chapanay,50098A00,7092.2
+2012,Mendoza,50,San Martín,50098,Alto Salvador,50098A01,149937.28
+2012,Mendoza,50,San Martín,50098,Buen Orden,50098A03,75756.5
+2012,Mendoza,50,San Martín,50098,El Central,50098A06,197691
+2012,Mendoza,50,San Martín,50098,El Divisadero,50098A07,166567.18
+2012,Mendoza,50,San Martín,50098,Las Chimbas,50098A09,23238.1
+2012,Mendoza,50,San Rafael,50105,Barrio Campos El Toledano,50105010,1076
+2012,Mendoza,50,San Rafael,50105,Capitán Montoya,50105050,1382.6
+2012,Mendoza,50,San Rafael,50105,Cuadro Benegas,50105060,53753.14
+2012,Mendoza,50,San Rafael,50105,El Tropezón,50105090,1095
+2012,Mendoza,50,San Rafael,50105,Goudge,50105100,86421.09
+2012,Mendoza,50,San Rafael,50105,Jaime Prats,50105110,55274.48
+2012,Mendoza,50,San Rafael,50105,La Llave Nueva,50105120,31528.9
+2012,Mendoza,50,San Rafael,50105,La Llave Nueva,50105120,2512.9
+2012,Mendoza,50,San Rafael,50105,Las Malvinas,50105130,752
+2012,Mendoza,50,San Rafael,50105,Monte Comán,50105150,7096.8
+2012,Mendoza,50,San Rafael,50105,Rama Caída,50105180,2652.5
+2012,Mendoza,50,San Rafael,50105,Rama Caída,50105180,45082.78
+2012,Mendoza,50,San Rafael,50105,Real del Padre,50105190,167306.03
+2012,Mendoza,50,San Rafael,50105,Salto de las Rosas,50105200,4766.07
+2012,Mendoza,50,San Rafael,50105,Cuadro Nacional,50105210,92434.41
+2012,Mendoza,50,San Rafael,50105,San Rafael,50105210,200.6
+2012,Mendoza,50,San Rafael,50105,San Rafael,50105210,7345.34
+2012,Mendoza,50,San Rafael,50105,Cuadro Nacional,50105210,7430.4
+2012,Mendoza,50,San Rafael,50105,25 de Mayo,50105220,89.8
+2012,Mendoza,50,San Rafael,50105,25 de Mayo,50105220,2064.63
+2012,Mendoza,50,San Rafael,50105,Villa Atuel,50105230,56542.54
+2012,Mendoza,50,San Rafael,50105,Villa Atuel,50105230,52273.7
+2012,Mendoza,50,San Rafael,50105,Villa Atuel,50105230,2231.2
+2012,Mendoza,50,San Rafael,50105,Cañada Seca,50105A04,181022.34
+2012,Mendoza,50,San Rafael,50105,Colonia Bombal y Tabanera,50105A06,11629.1
+2012,Mendoza,50,San Rafael,50105,Colonia Colomer,50105A07,417.6
+2012,Mendoza,50,San Rafael,50105,Colonia El Usillal,50105A08,14916.85
+2012,Mendoza,50,San Rafael,50105,Colonia Elena,50105A09,10065.2
+2012,Mendoza,50,San Rafael,50105,Colonia Española,50105A10,1919.6
+2012,Mendoza,50,San Rafael,50105,Colonia Gelman,50105A11,4213.7
+2012,Mendoza,50,San Rafael,50105,Colonia Jáuregui,50105A12,639.3
+2012,Mendoza,50,San Rafael,50105,Colonia López,50105A13,24497.58
+2012,Mendoza,50,San Rafael,50105,El Algarrobal,50105A20,179
+2012,Mendoza,50,San Rafael,50105,El Cerrito,50105A22,15505.91
+2012,Mendoza,50,San Rafael,50105,La Guevarina,50105A32,1931.3
+2012,Mendoza,50,San Rafael,50105,La Llave Vieja,50105A35,2265.6
+2012,Mendoza,50,San Rafael,50105,Las Paredes,50105A44,91242.07
+2012,Mendoza,50,San Rafael,50105,Las Paredes,50105A44,927
+2012,Mendoza,50,San Rafael,50105,Los Claveles,50105A46,2490.2
+2012,Mendoza,50,San Rafael,50105,Los Sifones,50105A51,885.4
+2012,Mendoza,50,San Rafael,50105,Rincón del Atuel,50105A60,328.6
+2012,Mendoza,50,San Rafael,50105,Soitué,50105A64,4056.2
+2012,Mendoza,50,Santa Rosa,50112,Barrio 12 de Octubre,50112010,92296.04
+2012,Mendoza,50,Santa Rosa,50112,Barrio 12 de Octubre,50112010,19730.6
+2012,Mendoza,50,Santa Rosa,50112,Barrio Molina Cabrera,50112030,3153.6
+2012,Mendoza,50,Santa Rosa,50112,La Dormida,50112040,101657.28
+2012,Mendoza,50,Santa Rosa,50112,La Dormida,50112040,23932.6
+2012,Mendoza,50,Santa Rosa,50112,Las Catitas,50112050,151821.52
+2012,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,15170.2
+2012,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,310917.93
+2012,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,89999.44
+2012,Mendoza,50,Santa Rosa,50112,Gobernador Civit,50112A05,1713.2
+2012,Mendoza,50,Santa Rosa,50112,Los Yoles,50112A10,13080.48
+2012,Mendoza,50,Tunuyán,50119,Campo Los Andes,50119020,11233.8
+2012,Mendoza,50,Tunuyán,50119,Colonia Las Rosas,50119030,1447.8
+2012,Mendoza,50,Tunuyán,50119,El Manzano,50119040,522.34
+2012,Mendoza,50,Tunuyán,50119,Los Sauces,50119050,48819.25
+2012,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,59715.36
+2012,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,13858.65
+2012,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,18821.18
+2012,Mendoza,50,Tunuyán,50119,Vista Flores,50119070,186740.62
+2012,Mendoza,50,Tunuyán,50119,El Totoral,50119A02,60803.08
+2012,Mendoza,50,Tunuyán,50119,El Totoral,50119A02,6858.37
+2012,Mendoza,50,Tunuyán,50119,La Primavera,50119A04,12744.68
+2012,Mendoza,50,Tunuyán,50119,Las Pintadas,50119A07,28415.62
+2012,Mendoza,50,Tunuyán,50119,Los Árboles,50119A08,113585.25
+2012,Mendoza,50,Tunuyán,50119,Los Árboles,50119A08,14181.66
+2012,Mendoza,50,Tunuyán,50119,Los Chacales,50119A09,28499.31
+2012,Mendoza,50,Tunuyán,50119,Villa Seca,50119A14,108417.25
+2012,Mendoza,50,Tupungato,50126,Cordón del Plata,50126020,4971.34
+2012,Mendoza,50,Tupungato,50126,Cordón del Plata,50126020,73844.05
+2012,Mendoza,50,Tupungato,50126,Cordón del Plata,50126020,139856.62
+2012,Mendoza,50,Tupungato,50126,El Peral,50126030,63256.65
+2012,Mendoza,50,Tupungato,50126,El Zampal,50126035,88934.08
+2012,Mendoza,50,Tupungato,50126,La Arboleda,50126040,169911.4
+2012,Mendoza,50,Tupungato,50126,San José,50126050,23423.79
+2012,Mendoza,50,Tupungato,50126,Tupungato,50126060,456.83
+2012,Mendoza,50,Tupungato,50126,Tupungato,50126060,14361.04
+2012,Mendoza,50,Tupungato,50126,Tupungato,50126060,61427.19
+2012,Mendoza,50,Tupungato,50126,Villa Bastias,50126060,26812.91
+2012,Mendoza,50,Tupungato,50126,Anchoris,50126A01,23683.1
+2012,Mendoza,50,Tupungato,50126,Gualtallary,50126A05,141762.77
+2012,Mendoza,50,Tupungato,50126,Zapata,50126A12,8995.44
+2012,Misiones,54,Leandro N. Alem,54070,Leandro N. Alem,54070070,15.2
+2012,Neuquén,58,Añelo,58014,Añelo,58014010,7258.2
+2012,Neuquén,58,Añelo,58014,San Patricio del Chañar,58014020,161078.64
+2012,Neuquén,58,Collón Curá,58028,Piedra del Águila,58028010,607.8
+2012,Neuquén,58,Confluencia,58035,Plottier,58035100,388.9
+2012,Neuquén,58,Confluencia,58035,Senillosa,58035110,512.03
+2012,Neuquén,58,Picún Leufú,58098,Picún Leufú,58098020,19.7
+2012,Neuquén,58,Picunches,58105,Bajada del Agrio,58105010,32
+2012,Río Negro,62,Adolfo Alsina,62007,San Javier,62007080,1189.85
+2012,Río Negro,62,Adolfo Alsina,62007,Viedma,62007090,299
+2012,Río Negro,62,Avellaneda,62014,Darwin,62014060,3298.07
+2012,Río Negro,62,Avellaneda,62014,Luis Beltrán,62014080,2754.96
+2012,Río Negro,62,Avellaneda,62014,Pomona,62014090,2444.1
+2012,Río Negro,62,Conesa,62028,Colonia San Juan,62028A02,40.2
+2012,Río Negro,62,El Cuy,62035,El Cuy,62035030,1106.7
+2012,Río Negro,62,El Cuy,62035,Valle Azul,62035080,3190.1
+2012,Río Negro,62,General Roca,62042,Allen,62042010,12200.49
+2012,Río Negro,62,General Roca,62042,Barda del Medio,62042030,428
+2012,Río Negro,62,General Roca,62042,Barrio Guerrico,62042160,288.8
+2012,Río Negro,62,General Roca,62042,Barrio Pinar,62042297,590.28
+2012,Río Negro,62,General Roca,62042,Cervantes,62042370,885.8
+2012,Río Negro,62,General Roca,62042,Chichinales,62042380,735.8
+2012,Río Negro,62,General Roca,62042,Cipolletti,62042400,1865.4
+2012,Río Negro,62,General Roca,62042,General Enrique Godoy,62042430,1899.5
+2012,Río Negro,62,General Roca,62042,General Fernández Oro,62042440,4895.85
+2012,Río Negro,62,General Roca,62042,General Roca,62042450,1295
+2012,Río Negro,62,General Roca,62042,General Roca,62042450,9754.7
+2012,Río Negro,62,General Roca,62042,Ingeniero Luis A. Huergo,62042460,10461.34
+2012,Río Negro,62,General Roca,62042,Mainqué,62042480,11527.76
+2012,Río Negro,62,General Roca,62042,Villa Manzano,62042550,1363.75
+2012,Río Negro,62,General Roca,62042,Villa Regina,62042560,153.6
+2012,Salta,66,Cachi,66014,Cachi,66014010,648.3
+2012,Salta,66,Cachi,66014,Payogasta,66014020,1872.7
+2012,Salta,66,Cafayate,66021,Cafayate,66021010,146778.82
+2012,Salta,66,Cafayate,66021,Cafayate,66021010,9301.91
+2012,Salta,66,Cafayate,66021,Cafayate,66021010,2618.86
+2012,Salta,66,Cafayate,66021,Tolombón,66021020,27697.51
+2012,Salta,66,Cafayate,66021,Las Conchas,66021A04,146.58
+2012,Salta,66,Cafayate,66021,Yacochuya Norte,66021A05,4351.4
+2012,Salta,66,La Viña,66098,Las Curtiembres,66098A08,289.76
+2012,Salta,66,Molinos,66119,Molinos,66119020,1552.54
+2012,Salta,66,Molinos,66119,Colomé,66119A06,3978.9
+2012,Salta,66,San Carlos,66154,Angastaco,66154010,1593.52
+2012,Salta,66,San Carlos,66154,Animaná,66154020,33098.21
+2012,Salta,66,San Carlos,66154,El Barrial,66154030,10.2
+2012,Salta,66,San Carlos,66154,San Carlos,66154040,4128.9
+2012,Salta,66,San Carlos,66154,Corralito,66154A01,1578.51
+2012,Salta,66,San Carlos,66154,Santa Rosa,66154A26,170.46
+2012,San Juan,70,Albardón,70007,El Rincón,70007010,13728.08
+2012,San Juan,70,Albardón,70007,El Rincón,70007010,130990.93
+2012,San Juan,70,Albardón,70007,Villa General San Martín - Campo Afuera,70007020,15583.19
+2012,San Juan,70,Albardón,70007,Villa General San Martín - Campo Afuera,70007020,35114.54
+2012,San Juan,70,Albardón,70007,Villa General San Martín - Campo Afuera,70007020,1614
+2012,San Juan,70,Albardón,70007,Villa General San Martín - Campo Afuera,70007020,5204.68
+2012,San Juan,70,Albardón,70007,Villa General San Martín - Campo Afuera,70007020,15106.22
+2012,San Juan,70,Albardón,70007,Baños La Laja,70007A02,1108.6
+2012,San Juan,70,Albardón,70007,El Salado,70007A03,12168
+2012,San Juan,70,Albardón,70007,Las Tapias,70007A04,6449.5
+2012,San Juan,70,Albardón,70007,Las Tapias,70007A04,3586.57
+2012,San Juan,70,Angaco,70014,Las Tapias,70014010,48829.32
+2012,San Juan,70,Angaco,70014,Las Tapias,70014010,2267
+2012,San Juan,70,Angaco,70014,Villa El Salvador,70014020,16122.5
+2012,San Juan,70,Angaco,70014,Villa El Salvador,70014020,75884.77
+2012,San Juan,70,Angaco,70014,Villa Sefair,70014020,45420.5
+2012,San Juan,70,Angaco,70014,Villa El Salvador,70014020,14845.9
+2012,San Juan,70,Angaco,70014,El Alamito,70014A01,4299.8
+2012,San Juan,70,Angaco,70014,El Bosque,70014A02,48743.1
+2012,San Juan,70,Angaco,70014,Punta del Monte,70014A05,60218.17
+2012,San Juan,70,Calingasta,70021,Barreal - Villa Pituil,70021010,176.58
+2012,San Juan,70,Calingasta,70021,Calingasta,70021020,65.9
+2012,San Juan,70,Calingasta,70021,Tamberías,70021030,5057
+2012,San Juan,70,Calingasta,70021,Hilario,70021A10,3159
+2012,San Juan,70,Calingasta,70021,Sorocayense,70021A30,61.2
+2012,San Juan,70,Calingasta,70021,Villa Corral,70021A31,752.8
+2012,San Juan,70,Capital,70028,San Juan,70028010,120.45
+2012,San Juan,70,Capital,70028,San Juan,70028010,48.2
+2012,San Juan,70,Caucete,70035,Caucete,70035020,80.8
+2012,San Juan,70,Caucete,70035,Caucete,70035020,689.5
+2012,San Juan,70,Caucete,70035,Caucete,70035020,250.4
+2012,San Juan,70,Caucete,70035,Caucete,70035020,408433.39
+2012,San Juan,70,Caucete,70035,Caucete,70035020,5170.06
+2012,San Juan,70,Caucete,70035,El Rincón,70035030,99064.86
+2012,San Juan,70,Caucete,70035,Las Talas - Los Médanos,70035040,55111.02
+2012,San Juan,70,Caucete,70035,Pie de Palo,70035060,20919.3
+2012,San Juan,70,Caucete,70035,Villa Independencia,70035080,96524.72
+2012,San Juan,70,Caucete,70035,La Puntilla,70035A02,183529.31
+2012,San Juan,70,Caucete,70035,Pozo de los Algarrobos,70035A07,192282.63
+2012,San Juan,70,Chimbas,70042,Chimbas,70042010,862
+2012,San Juan,70,Chimbas,70042,Chimbas,70042010,42934.37
+2012,San Juan,70,Chimbas,70042,Chimbas,70042010,126322.05
+2012,San Juan,70,Iglesia,70049,Angualasto,70049010,57.6
+2012,San Juan,70,Jáchal,70056,Pampa Vieja,70056060,339
+2012,San Juan,70,9 de Julio,70063,Alto de Sierra,70063010,3150.9
+2012,San Juan,70,9 de Julio,70063,Las Chacritas,70063030,7163.7
+2012,San Juan,70,9 de Julio,70063,Las Chacritas,70063030,1090.2
+2012,San Juan,70,9 de Julio,70063,Las Chacritas,70063030,154611.89
+2012,San Juan,70,9 de Julio,70063,9 de Julio,70063040,195248.4
+2012,San Juan,70,9 de Julio,70063,La Majadita,70063A00,42059.06
+2012,San Juan,70,9 de Julio,70063,Rincón Cercado,70063A02,26207.56
+2012,San Juan,70,Pocito,70070,Carpintería,70070020,228155.44
+2012,San Juan,70,Pocito,70070,Las Piedritas,70070025,107.8
+2012,San Juan,70,Pocito,70070,Las Piedritas,70070025,1017.2
+2012,San Juan,70,Pocito,70070,Quinto Cuartel,70070030,12969.3
+2012,San Juan,70,Pocito,70070,La Rinconada,70070040,82348.92
+2012,San Juan,70,Pocito,70070,Villa Aberastain,70070040,29489.22
+2012,San Juan,70,Pocito,70070,Villa Aberastain,70070040,4372.2
+2012,San Juan,70,Pocito,70070,Villa Aberastain,70070040,114461.59
+2012,San Juan,70,Pocito,70070,Villa Nacusi,70070050,14724.76
+2012,San Juan,70,Pocito,70070,Villa Nacusi,70070050,1827.2
+2012,San Juan,70,Pocito,70070,Villa Nacusi,70070050,123.4
+2012,San Juan,70,Rawson,70077,El Medanito,70077010,29009.61
+2012,San Juan,70,Rawson,70077,Rawson,70077010,5940.8
+2012,San Juan,70,Rawson,70077,Rawson,70077010,929.8
+2012,San Juan,70,Rawson,70077,Rawson,70077010,91675.06
+2012,San Juan,70,Rawson,70077,Rawson,70077010,7407.18
+2012,San Juan,70,Rawson,70077,Colonia Médano de Oro,70077A00,87304.8
+2012,San Juan,70,Rawson,70077,Colonia Rodas,70077A02,16687.12
+2012,San Juan,70,Rawson,70077,Colonia Rodas,70077A02,10906.42
+2012,San Juan,70,Rivadavia,70084,Rivadavia,70084010,13589.91
+2012,San Juan,70,Rivadavia,70084,Rivadavia,70084010,13813.93
+2012,San Juan,70,Rivadavia,70084,Rivadavia,70084010,21700.68
+2012,San Juan,70,San Martín,70091,Dos Acequias,70091020,125256.84
+2012,San Juan,70,San Martín,70091,San Isidro,70091030,96051.38
+2012,San Juan,70,San Martín,70091,Villa San Martín,70091070,128521.22
+2012,San Juan,70,San Martín,70091,Villa San Martín,70091070,511
+2012,San Juan,70,San Martín,70091,Coll,70091A00,1207.2
+2012,San Juan,70,San Martín,70091,Los Compartos,70091A01,23894.72
+2012,San Juan,70,San Martín,70091,Los Compartos,70091A01,9637.4
+2012,San Juan,70,San Martín,70091,Los Compartos,70091A01,122571.3
+2012,San Juan,70,San Martín,70091,Villa Lugano,70091A02,5853.6
+2012,San Juan,70,San Martín,70091,Villa Lugano,70091A02,10167.6
+2012,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,9142.66
+2012,San Juan,70,Santa Lucía,70098,Colonia Gutiérrez,70098010,6290.94
+2012,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,15902.25
+2012,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,81407.62
+2012,San Juan,70,Santa Lucía,70098,Colonia Gutiérrez,70098010,28376.4
+2012,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,15101.58
+2012,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,18217.73
+2012,San Juan,70,Santa Lucía,70098,Colonia Gutiérrez,70098010,74844.04
+2012,San Juan,70,Sarmiento,70105,Cañada Honda,70105010,76339.62
+2012,San Juan,70,Sarmiento,70105,Colonia Fiscal,70105030,124628.4
+2012,San Juan,70,Sarmiento,70105,Guanacache,70105050,39743.96
+2012,San Juan,70,Sarmiento,70105,Las Lagunas,70105060,79409.38
+2012,San Juan,70,Sarmiento,70105,Los Berros,70105070,803.8
+2012,San Juan,70,Sarmiento,70105,Los Berros,70105070,10259
+2012,San Juan,70,Sarmiento,70105,Pedernal,70105080,35026.73
+2012,San Juan,70,Sarmiento,70105,Punta del Médano,70105090,36648.59
+2012,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,165257.25
+2012,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,34220.74
+2012,San Juan,70,Sarmiento,70105,Cochagual,70105A01,293109.55
+2012,San Juan,70,Sarmiento,70105,San Carlos,70105A07,11075.35
+2012,San Juan,70,Sarmiento,70105,Tres Esquinas,70105A08,48016.98
+2012,San Juan,70,Ullum,70112,Villa Ibáñez,70112010,3442.7
+2012,San Juan,70,Ullum,70112,La Banderita,70112A04,1274.6
+2012,San Juan,70,Ullum,70112,Talacasto,70112A08,128231.84
+2012,San Juan,70,25 de Mayo,70126,Tupelí,70126020,53739.54
+2012,San Juan,70,25 de Mayo,70126,Tupelí,70126020,4329.82
+2012,San Juan,70,25 de Mayo,70126,Villa Borjas - La Chimbera,70126030,187098.58
+2012,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,70753.49
+2012,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,185175.14
+2012,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,233763.26
+2012,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,1537.5
+2012,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,22820.18
+2012,San Juan,70,25 de Mayo,70126,Cuatro Esquinas,70126A04,2613.2
+2012,San Juan,70,25 de Mayo,70126,Las Casuarinas,70126A06,182070.19
+2012,San Juan,70,25 de Mayo,70126,Punta del Médano,70126A09,16691.84
+2012,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,22981.55
+2012,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,48430.04
+2012,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,113799.17
+2012,San Luis,74,Junín,74049,Santa Rosa del Conlara,74049070,281
+2012,San Luis,74,Juan Martín de Pueyrredón,74056,Beazley,74056040,781.45
+2012,Tucumán,90,Tafí del Valle,90098,Colalao del Valle,90098020,3042.78
+2012,Tucumán,90,Tafí del Valle,90098,El Bañado,90098A12,267.5
+2012,Tucumán,90,Tafí del Valle,90098,El Paso,90098A18,245.19
+2013,Buenos Aires,06,Benito Juárez,06084,Benito Juárez,06084020,5.85
+2013,Buenos Aires,06,Coronel Dorrego,06189,Coronel Dorrego,06189030,3.33
+2013,Buenos Aires,06,Coronel Pringles,06196,Coronel Pringles,06196010,53.71
+2013,Buenos Aires,06,Coronel Suárez,06203,Coronel Suárez,06203020,378
+2013,Buenos Aires,06,General Pueyrredón,06357,Barrio El Boquerón,06357020,545.55
+2013,Buenos Aires,06,Saavedra,06700,Saavedra,06700070,260
+2013,Buenos Aires,06,Tornquist,06819,Tornquist,06819040,62.04
+2013,Buenos Aires,06,Tornquist,06819,Tornquist,06819040,573.14
+2013,Buenos Aires,06,Villarino,06875,Argerich,06875010,574.08
+2013,Catamarca,10,Andalgalá,10021,Andalgalá,10021020,329.8
+2013,Catamarca,10,Belén,10035,Belén,10035020,325.4
+2013,Catamarca,10,Belén,10035,Belén,10035020,158.8
+2013,Catamarca,10,Belén,10035,Belén,10035020,10651.2
+2013,Catamarca,10,Belén,10035,Belén,10035020,70.6
+2013,Catamarca,10,Belén,10035,Belén,10035020,149.8
+2013,Catamarca,10,Pomán,10084,Pomán,10084070,1079.22
+2013,Catamarca,10,Pomán,10084,Pomán,10084070,801.2
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,5269.6
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,6544.5
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,93
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,257.8
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,1954.4
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,115
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,35232.6
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,704
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,7981.91
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,18.6
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,1512.68
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,34
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,201.6
+2013,Catamarca,10,Santa María,10091,Santa María,10091150,3168.8
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,2186.6
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,935.7
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,14326.87
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,1064.1
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,2061.6
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,1109.3
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,568.8
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,13106.68
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,8223.4
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,235.4
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,4448.7
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,6761.4
+2013,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,28089.35
+2013,Córdoba,14,Calamuchita,14007,Santa Rosa de Calamuchita,14007210,42.49
+2013,Córdoba,14,Colón,14021,La Calera,14021150,8350.6
+2013,Córdoba,14,Colón,14021,La Calera,14021150,99.2
+2013,Córdoba,14,Colón,14021,La Calera,14021150,1464.4
+2013,Córdoba,14,Cruz del Eje,14028,Cruz del Eje,14028050,624.4
+2013,Córdoba,14,Cruz del Eje,14028,Cruz del Eje,14028050,49.1
+2013,Córdoba,14,Ischilín,14049,Ischilín,14049A07,281.56
+2013,Córdoba,14,Santa María,14147,Las Quintas,14147190,113.68
+2013,Córdoba,14,Totoral,14168,Macha,14168A20,149.6
+2013,Córdoba,14,Tulumba,14175,Villa Tulumba,14175110,16
+2013,Entre Ríos,30,Colón,30008,Colón,30008020,90.96
+2013,Entre Ríos,30,Concordia,30015,Concordia,30015060,111.44
+2013,Entre Ríos,30,Concordia,30015,Concordia,30015060,116.98
+2013,Jujuy,38,Tilcara,38094,Tilcara,38094050,9.8
+2013,Jujuy,38,Tilcara,38094,Tilcara,38094050,216.25
+2013,La Pampa,42,Puelén,42112,Puelén,42112010,16319.99
+2013,La Rioja,46,Castro Barros,46021,Aminga,46021010,4442
+2013,La Rioja,46,Castro Barros,46021,Aminga,46021010,29469.4
+2013,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,173.2
+2013,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,1828.3
+2013,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,14523.06
+2013,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,2095.3
+2013,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,19812.1
+2013,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,6157.4
+2013,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,1242.1
+2013,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,255.6
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,82
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,3018.5
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,87043.95
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,216
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,192220.28
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,1970.69
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,121555.01
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,6740.9
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,160269.3
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,72.6
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,218580.54
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,2126.5
+2013,La Rioja,46,Chilecito,46042,Chilecito,46042010,13.6
+2013,La Rioja,46,Famatina,46049,Famatina,46049070,1895.1
+2013,La Rioja,46,Famatina,46049,Famatina,46049070,4842.5
+2013,La Rioja,46,Famatina,46049,Famatina,46049070,7.5
+2013,La Rioja,46,Famatina,46049,Famatina,46049070,54.2
+2013,La Rioja,46,Famatina,46049,Famatina,46049070,19.4
+2013,La Rioja,46,Famatina,46049,Famatina,46049070,1054.4
+2013,La Rioja,46,Famatina,46049,Famatina,46049070,5192.2
+2013,La Rioja,46,Famatina,46049,Famatina,46049070,2273.3
+2013,La Rioja,46,General Lamadrid,46077,Batidero,46077A00,442.5
+2013,La Rioja,46,General Lamadrid,46077,Batidero,46077A00,5305.9
+2013,La Rioja,46,Vinchina,46098,Villa San José de Vinchina,46098020,1903.2
+2013,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,2433.2
+2013,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,123
+2013,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,1506.4
+2013,La Rioja,46,Sanagasta,46126,Villa Sanagasta,46126010,164
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,353.2
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,144635.33
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,24994.85
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,6982.6
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,35416.42
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,3446.2
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,24995.4
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,230.6
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,634.8
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,46098.6
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,1185.8
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,8320.6
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,17449.6
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,65920.1
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,816.8
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,32841.1
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,33290.1
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,11842.9
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,11548.8
+2013,Mendoza,50,General Alvear,50014,General Alvear,50014030,3723.8
+2013,Mendoza,50,Godoy Cruz,50021,Godoy Cruz,50021010,45.6
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,453.4
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,2867.26
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,16342.36
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,15579.02
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,4801.2
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,21351.6
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,8512.33
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,11548.3
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,6769.26
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,388.2
+2013,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,5440.92
+2013,Mendoza,50,Junín,50035,Junín,50035020,181459.03
+2013,Mendoza,50,Junín,50035,Junín,50035020,255735.99
+2013,Mendoza,50,Junín,50035,Junín,50035020,5433.67
+2013,Mendoza,50,Junín,50035,Junín,50035020,18645.2
+2013,Mendoza,50,Junín,50035,Junín,50035020,350928.46
+2013,Mendoza,50,Junín,50035,Junín,50035020,147176.98
+2013,Mendoza,50,Junín,50035,Junín,50035020,9338.35
+2013,Mendoza,50,Junín,50035,Junín,50035020,15782.51
+2013,Mendoza,50,Junín,50035,Junín,50035020,320561
+2013,Mendoza,50,Junín,50035,Junín,50035020,109482.62
+2013,Mendoza,50,Junín,50035,Junín,50035020,642.6
+2013,Mendoza,50,Junín,50035,Junín,50035020,17211.8
+2013,Mendoza,50,Junín,50035,Junín,50035020,1340
+2013,Mendoza,50,Junín,50035,Junín,50035020,21579.56
+2013,Mendoza,50,Junín,50035,Junín,50035020,3937.4
+2013,Mendoza,50,Junín,50035,Junín,50035020,3718.7
+2013,Mendoza,50,Junín,50035,Junín,50035020,190071.48
+2013,Mendoza,50,Junín,50035,Junín,50035020,173618.43
+2013,Mendoza,50,Junín,50035,Junín,50035020,2151.6
+2013,Mendoza,50,La Paz,50042,La Paz,50042020,2027.4
+2013,Mendoza,50,La Paz,50042,La Paz,50042020,7725.8
+2013,Mendoza,50,La Paz,50042,La Paz,50042020,4777.2
+2013,Mendoza,50,La Paz,50042,La Paz,50042020,17833.4
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,30183.1
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,12.32
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,536
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,1527.4
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,1182.1
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,3983.7
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,4386.9
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,9227.5
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,7613.8
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,1809.8
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,68.08
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,50447.8
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,21842.95
+2013,Mendoza,50,Las Heras,50049,Las Heras,50049050,65438.85
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,53099.33
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,42691.1
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1745.3
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,238.8
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,16983.1
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,387.6
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,439.2
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,127742.92
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,68482.3
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,157.2
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,121934.54
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,26836.7
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,171037.54
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,326204.04
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,29963
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,8301.7
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1307.4
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,4337.8
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,6325.2
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,17716
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,778
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,5003.8
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,11837.73
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,685449.77
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,36689.5
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,86404.08
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1663.6
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,105728.33
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,10533.2
+2013,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,3913.1
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,265534.51
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,282.9
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,42584.84
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,974.12
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,10181.09
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,32621.89
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,9996.4
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,36028.69
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,417270
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,451329.51
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,10719.2
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,122002.13
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,20176.37
+2013,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,90.8
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,4605.17
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,32214.04
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,5243
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,21237.9
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,58539.09
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,44271.72
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,57995.51
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,94331.53
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,1130.92
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,320006.05
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,1188.5
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,397.6
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,230.2
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,41432.08
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,91696.91
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,5085.6
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,6009.7
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,678515.44
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,3131.74
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,16100.4
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,41459.2
+2013,Mendoza,50,Maipú,50070,Maipú,50070060,85975.78
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,96311.48
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,152517.17
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,267092.31
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,468
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,118984.02
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,634101.7
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,377.8
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,196881.09
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,135889.8
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,451862.45
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,141080.01
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,192.2
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,119664.53
+2013,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,18651.54
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,20302.63
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,3369.18
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,8107.6
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,52905.81
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,965.27
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,35183.38
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,197752.3
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,385242.29
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,37853.36
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,8150.5
+2013,Mendoza,50,San Carlos,50091,San Carlos,50091060,1387.6
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,101473.6
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,260559.38
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,3534.2
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,46227.1
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,921536.76
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,1000.2
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,39680
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,206378.75
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,239970.32
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,93614.88
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,11529.8
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,182877.7
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,463013.43
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,371048.4
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,11851
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,1106234.78
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,195782.68
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,307492.12
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,67142.94
+2013,Mendoza,50,San Martín,50098,San Martín,50098100,122898.31
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,886
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,2324.05
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,4787
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,11546.96
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,1010.4
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,15660.5
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,144524.08
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,3425
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,54083.1
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,10691.09
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,2437.9
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,2253.5
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,5541
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,49944.6
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,5928.2
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,3293.5
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,831.8
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,191.6
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,123100.06
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,9923.1
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,61838.94
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,237656.61
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,1501.6
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,36185.8
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,708.8
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,1953
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,10451.69
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,2284.6
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,6074.6
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,12520.55
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,41279.3
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,1835.2
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,59759.36
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,103724.67
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,2733
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,563.8
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,15357.5
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,169.4
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,485.1
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,66979.26
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,226289.42
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,460.8
+2013,Mendoza,50,San Rafael,50105,San Rafael,50105210,448.4
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,95339.64
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,3557.6
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,92085.7
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,156212.32
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,19353.9
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,113128.7
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,404104.36
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,17811.54
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,21901.02
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,205775.32
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,26973.32
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,3669.1
+2013,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,27669.5
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,18287.9
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,108231.78
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,36782.8
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,1766.81
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,18166.28
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,60415.17
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,51835.45
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,2586.19
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,55915.02
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,16876.14
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,46161.66
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,9261.76
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,11930.16
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,124190.41
+2013,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,215278.86
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,187995.01
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,30506.03
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,80979.61
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,123.14
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,3370
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,94718.77
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,14284.8
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,186570.17
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,200884.96
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,38554.27
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,17850.79
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,66775.7
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,38502.59
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,122562.24
+2013,Mendoza,50,Tupungato,50126,Tupungato,50126060,9533.9
+2013,Misiones,54,Capital,54028,Posadas,54028030,22.4
+2013,Neuquén,58,Añelo,58014,Añelo,58014010,8644.48
+2013,Neuquén,58,Añelo,58014,Añelo,58014010,158408.47
+2013,Neuquén,58,Confluencia,58035,Senillosa,58035110,726.06
+2013,Neuquén,58,Confluencia,58035,Senillosa,58035110,334.62
+2013,Neuquén,58,Picún Leufú,58098,Picún Leufú,58098020,173.7
+2013,Neuquén,58,Picunches,58105,Las Lajas,58105030,45.4
+2013,Río Negro,62,Adolfo Alsina,62007,El Juncal,62007030,1997.47
+2013,Río Negro,62,Adolfo Alsina,62007,El Juncal,62007030,1221
+2013,Río Negro,62,Avellaneda,62014,Pomona,62014090,1637.5
+2013,Río Negro,62,Avellaneda,62014,Pomona,62014090,2573
+2013,Río Negro,62,Avellaneda,62014,Pomona,62014090,3117.19
+2013,Río Negro,62,El Cuy,62035,El Cuy,62035030,3054.6
+2013,Río Negro,62,El Cuy,62035,El Cuy,62035030,457
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,11928.71
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,410
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,322
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,243.2
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,10791.35
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,13782.9
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,16657.95
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,4396.92
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,1458.7
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,1512
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,1842.88
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,1042.9
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,890.4
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,1386.21
+2013,Río Negro,62,General Roca,62042,General Roca,62042450,108.04
+2013,Salta,66,Cachi,66014,Cachi,66014010,610.58
+2013,Salta,66,Cachi,66014,Cachi,66014010,2352.7
+2013,Salta,66,Cafayate,66021,Cafayate,66021010,201.93
+2013,Salta,66,Cafayate,66021,Cafayate,66021010,5033.14
+2013,Salta,66,Cafayate,66021,Cafayate,66021010,193082.2
+2013,Salta,66,Cafayate,66021,Cafayate,66021010,6008.46
+2013,Salta,66,Cafayate,66021,Cafayate,66021010,34887.98
+2013,Salta,66,Cafayate,66021,Cafayate,66021010,116.4
+2013,Salta,66,Cafayate,66021,Cafayate,66021010,6606.26
+2013,Salta,66,La Viña,66098,La Viña,66098040,205.72
+2013,Salta,66,Molinos,66119,Molinos,66119020,1592.44
+2013,Salta,66,Molinos,66119,Molinos,66119020,32
+2013,Salta,66,Molinos,66119,Molinos,66119020,40
+2013,Salta,66,Molinos,66119,Molinos,66119020,3028.6
+2013,Salta,66,San Carlos,66154,San Carlos,66154040,1659.15
+2013,Salta,66,San Carlos,66154,San Carlos,66154040,1332.55
+2013,Salta,66,San Carlos,66154,San Carlos,66154040,6.03
+2013,Salta,66,San Carlos,66154,San Carlos,66154040,3878.1
+2013,Salta,66,San Carlos,66154,San Carlos,66154040,33398.04
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,13446.54
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,16054.12
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,36387.33
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,713.6
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,193541.21
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,7399.54
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,16271.39
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,1291.7
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,6996.75
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,2064.46
+2013,San Juan,70,Albardón,70007,El Rincón,70007010,18554.58
+2013,San Juan,70,Angaco,70014,Las Tapias,70014010,4516.1
+2013,San Juan,70,Angaco,70014,Las Tapias,70014010,86915.99
+2013,San Juan,70,Angaco,70014,Las Tapias,70014010,39763.73
+2013,San Juan,70,Angaco,70014,Las Tapias,70014010,49377.79
+2013,San Juan,70,Angaco,70014,Las Tapias,70014010,47576.61
+2013,San Juan,70,Angaco,70014,Las Tapias,70014010,14009
+2013,San Juan,70,Angaco,70014,Las Tapias,70014010,63230.69
+2013,San Juan,70,Angaco,70014,Las Tapias,70014010,792
+2013,San Juan,70,Angaco,70014,Las Tapias,70014010,20653.2
+2013,San Juan,70,Calingasta,70021,Calingasta,70021020,69.5
+2013,San Juan,70,Calingasta,70021,Calingasta,70021020,5689.2
+2013,San Juan,70,Calingasta,70021,Calingasta,70021020,760.4
+2013,San Juan,70,Calingasta,70021,Calingasta,70021020,2567.2
+2013,San Juan,70,Calingasta,70021,Calingasta,70021020,74.6
+2013,San Juan,70,Calingasta,70021,Calingasta,70021020,73
+2013,San Juan,70,Calingasta,70021,Calingasta,70021020,236.67
+2013,San Juan,70,Capital,70028,San Juan,70028010,15.3
+2013,San Juan,70,Capital,70028,San Juan,70028010,774.2
+2013,San Juan,70,Caucete,70035,Caucete,70035020,94
+2013,San Juan,70,Caucete,70035,Caucete,70035020,119587.27
+2013,San Juan,70,Caucete,70035,Caucete,70035020,167.2
+2013,San Juan,70,Caucete,70035,Caucete,70035020,61964.9
+2013,San Juan,70,Caucete,70035,Caucete,70035020,33550.6
+2013,San Juan,70,Caucete,70035,Caucete,70035020,6345.97
+2013,San Juan,70,Caucete,70035,Caucete,70035020,258999.14
+2013,San Juan,70,Caucete,70035,Caucete,70035020,916.4
+2013,San Juan,70,Caucete,70035,Caucete,70035020,504194.55
+2013,San Juan,70,Caucete,70035,Caucete,70035020,120403.83
+2013,San Juan,70,Caucete,70035,Caucete,70035020,209677.32
+2013,San Juan,70,Chimbas,70042,Chimbas,70042010,41915.5
+2013,San Juan,70,Chimbas,70042,Chimbas,70042010,1135.99
+2013,San Juan,70,Chimbas,70042,Chimbas,70042010,141000.72
+2013,San Juan,70,Iglesia,70049,Iglesia,70049030,71
+2013,San Juan,70,9 de Julio,70063,9 de Julio,70063040,1562.8
+2013,San Juan,70,9 de Julio,70063,9 de Julio,70063040,25520.42
+2013,San Juan,70,9 de Julio,70063,9 de Julio,70063040,7211.56
+2013,San Juan,70,9 de Julio,70063,9 de Julio,70063040,10023.1
+2013,San Juan,70,9 de Julio,70063,9 de Julio,70063040,50054.72
+2013,San Juan,70,9 de Julio,70063,9 de Julio,70063040,132014.69
+2013,San Juan,70,9 de Julio,70063,9 de Julio,70063040,302317.5
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,4307.8
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,108375.47
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,134314.61
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,29796.95
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,10826.74
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,14807.3
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,552
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,335.8
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,182.4
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,249509.28
+2013,San Juan,70,Pocito,70070,Villa Aberastain,70070040,1749.8
+2013,San Juan,70,Rawson,70077,Rawson,70077010,10952.45
+2013,San Juan,70,Rawson,70077,Rawson,70077010,6591.2
+2013,San Juan,70,Rawson,70077,Rawson,70077010,28877.98
+2013,San Juan,70,Rawson,70077,Rawson,70077010,85276.5
+2013,San Juan,70,Rawson,70077,Rawson,70077010,129729.64
+2013,San Juan,70,Rawson,70077,Rawson,70077010,410
+2013,San Juan,70,Rawson,70077,Rawson,70077010,6392
+2013,San Juan,70,Rivadavia,70084,Rivadavia,70084010,28004.66
+2013,San Juan,70,Rivadavia,70084,Rivadavia,70084010,15326.73
+2013,San Juan,70,Rivadavia,70084,Rivadavia,70084010,14568.26
+2013,San Juan,70,San Martín,70091,Villa San Martín,70091070,8757.5
+2013,San Juan,70,San Martín,70091,Villa San Martín,70091070,24752.71
+2013,San Juan,70,San Martín,70091,Villa San Martín,70091070,11190.6
+2013,San Juan,70,San Martín,70091,Villa San Martín,70091070,142940.68
+2013,San Juan,70,San Martín,70091,Villa San Martín,70091070,96330.47
+2013,San Juan,70,San Martín,70091,Villa San Martín,70091070,1327.1
+2013,San Juan,70,San Martín,70091,Villa San Martín,70091070,146208.74
+2013,San Juan,70,San Martín,70091,Villa San Martín,70091070,5130.96
+2013,San Juan,70,San Martín,70091,Villa San Martín,70091070,111640.87
+2013,San Juan,70,San Martín,70091,Villa San Martín,70091070,384
+2013,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,14947.03
+2013,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,83705.52
+2013,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,19952.58
+2013,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,26077.3
+2013,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,5175.01
+2013,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,81948.05
+2013,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,13990.42
+2013,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,8750.3
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,48455.5
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,429734.83
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,156172.78
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,45480.93
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,81700.9
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,9178.9
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,1104.6
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,42131.05
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,10343.7
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,34639.75
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,52361
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,200787.97
+2013,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,75939.5
+2013,San Juan,70,Ullum,70112,Talacasto,70112A08,2724.7
+2013,San Juan,70,Ullum,70112,Talacasto,70112A08,155787
+2013,San Juan,70,Ullum,70112,Talacasto,70112A08,2175
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,437.8
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,75238.9
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,18078.2
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,95757.12
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,283093.53
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,22775.32
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,3922.6
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,11780.26
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,204284.67
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,252383.08
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,329662.69
+2013,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,8670.18
+2013,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,49368.41
+2013,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,1038.8
+2013,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,111687.64
+2013,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,25129.88
+2013,San Luis,74,Junín,74049,Merlo,74049060,407.36
+2013,San Luis,74,Juan Martín de Pueyrredón,74056,San Luis,74056150,696
+2013,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,142.4
+2013,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,438.05
+2013,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,2409.75
+2014,Buenos Aires,06,Coronel Dorrego,06189,Coronel Dorrego,06189030,1.06
+2014,Buenos Aires,06,Coronel Pringles,06196,Coronel Pringles,06196010,27.82
+2014,Buenos Aires,06,Coronel Suárez,06203,Coronel Suárez,06203020,1852.5
+2014,Buenos Aires,06,General Pueyrredón,06357,Barrio El Boquerón,06357020,634.43
+2014,Buenos Aires,06,Saavedra,06700,Saavedra,06700070,251.5
+2014,Buenos Aires,06,Tandil,06791,Tandil,06791050,0.99
+2014,Buenos Aires,06,Tornquist,06819,Tornquist,06819040,279.98
+2014,Buenos Aires,06,Tornquist,06819,Tornquist,06819040,104.1
+2014,Buenos Aires,06,Villarino,06875,Argerich,06875010,697.22
+2014,Catamarca,10,Andalgalá,10021,Andalgalá,10021020,213.2
+2014,Catamarca,10,Belén,10035,Belén,10035020,81.4
+2014,Catamarca,10,Belén,10035,Belén,10035020,117
+2014,Catamarca,10,Belén,10035,Belén,10035020,83.8
+2014,Catamarca,10,Belén,10035,Belén,10035020,9901.6
+2014,Catamarca,10,Pomán,10084,Pomán,10084070,616.8
+2014,Catamarca,10,Pomán,10084,Pomán,10084070,956.5
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,772
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,40103.87
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,1424
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,225.6
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,1498.6
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,55.8
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,7789.6
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,5140.9
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,2397.8
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,124
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,5.8
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,38
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,6036.44
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,39.4
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,153.6
+2014,Catamarca,10,Santa María,10091,Santa María,10091150,36.6
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,17619.29
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,480.3
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,1632.2
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,283.2
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,7772.19
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,5881.9
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,4714.7
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,868
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,2462
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,28545.13
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,1154.4
+2014,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,7037.9
+2014,Córdoba,14,Calamuchita,14007,Santa Rosa de Calamuchita,14007210,56
+2014,Córdoba,14,Colón,14021,La Calera,14021150,109.6
+2014,Córdoba,14,Colón,14021,La Calera,14021150,814.1
+2014,Córdoba,14,Colón,14021,La Calera,14021150,5874.54
+2014,Córdoba,14,Ischilín,14049,Ischilín,14049A07,283.93
+2014,Córdoba,14,Santa María,14147,Las Quintas,14147190,227
+2014,Córdoba,14,Totoral,14168,Macha,14168A20,42.3
+2014,Chubut,26,Cushamen,26014,Cushamen Centro,26014030,15
+2014,Entre Ríos,30,Colón,30008,Colón,30008020,260.3
+2014,Entre Ríos,30,Concordia,30015,Concordia,30015060,29.3
+2014,Entre Ríos,30,Concordia,30015,Concordia,30015060,329.1
+2014,Entre Ríos,30,Diamante,30021,Diamante,30021080,28
+2014,Jujuy,38,Tilcara,38094,Tilcara,38094050,64.3
+2014,Jujuy,38,Tilcara,38094,Tilcara,38094050,240.6
+2014,La Pampa,42,Curacó,42042,Puelches,42042020,148.71
+2014,La Pampa,42,Puelén,42112,Puelén,42112010,11883.33
+2014,La Rioja,46,Castro Barros,46021,Aminga,46021010,4005
+2014,La Rioja,46,Castro Barros,46021,Aminga,46021010,20022.4
+2014,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,36.8
+2014,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,2002.4
+2014,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,16061.9
+2014,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,6322.9
+2014,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,244.3
+2014,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,2936.2
+2014,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,25522.2
+2014,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,3760.6
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,3317.9
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,220724.8
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,67
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,228297.44
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,153283.6
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,6581.5
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,705.5
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,108760.5
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,161.9
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,2365.5
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,183422.3
+2014,La Rioja,46,Chilecito,46042,Chilecito,46042010,82.4
+2014,La Rioja,46,Famatina,46049,Famatina,46049070,940.5
+2014,La Rioja,46,Famatina,46049,Famatina,46049070,21.2
+2014,La Rioja,46,Famatina,46049,Famatina,46049070,2623.3
+2014,La Rioja,46,Famatina,46049,Famatina,46049070,7680.9
+2014,La Rioja,46,Famatina,46049,Famatina,46049070,2369.9
+2014,La Rioja,46,Famatina,46049,Famatina,46049070,5.2
+2014,La Rioja,46,Famatina,46049,Famatina,46049070,8018.24
+2014,La Rioja,46,General Lamadrid,46077,Batidero,46077A00,6921.6
+2014,La Rioja,46,General Lamadrid,46077,Batidero,46077A00,625.8
+2014,La Rioja,46,Vinchina,46098,Villa San José de Vinchina,46098020,2841.1
+2014,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,817.4
+2014,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,3218.9
+2014,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,727.7
+2014,La Rioja,46,Sanagasta,46126,Villa Sanagasta,46126010,150
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,51205.5
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,2830.5
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,9829.5
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,9012.9
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,24952
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,26049
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,117556.58
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,6468
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,1186.8
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,191.4
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,17182.08
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,26241.6
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,3494.32
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,5659
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,18441.27
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,36230.23
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,575.6
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,95
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,567
+2014,Mendoza,50,General Alvear,50014,General Alvear,50014030,14370.5
+2014,Mendoza,50,Godoy Cruz,50021,Godoy Cruz,50021010,22.4
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,11734.76
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,3788.4
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,17450.8
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,6094.03
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,8274.8
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,4999.9
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,300.8
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,3598.32
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,250.8
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,14451.9
+2014,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,4923.8
+2014,Mendoza,50,Junín,50035,Junín,50035020,1434.4
+2014,Mendoza,50,Junín,50035,Junín,50035020,7926.2
+2014,Mendoza,50,Junín,50035,Junín,50035020,139454.75
+2014,Mendoza,50,Junín,50035,Junín,50035020,303533.09
+2014,Mendoza,50,Junín,50035,Junín,50035020,991.4
+2014,Mendoza,50,Junín,50035,Junín,50035020,17740
+2014,Mendoza,50,Junín,50035,Junín,50035020,16589.4
+2014,Mendoza,50,Junín,50035,Junín,50035020,3117.7
+2014,Mendoza,50,Junín,50035,Junín,50035020,3050.1
+2014,Mendoza,50,Junín,50035,Junín,50035020,159753.97
+2014,Mendoza,50,Junín,50035,Junín,50035020,3374.48
+2014,Mendoza,50,Junín,50035,Junín,50035020,215257.35
+2014,Mendoza,50,Junín,50035,Junín,50035020,140270.19
+2014,Mendoza,50,Junín,50035,Junín,50035020,212191.72
+2014,Mendoza,50,Junín,50035,Junín,50035020,1328
+2014,Mendoza,50,Junín,50035,Junín,50035020,277191.54
+2014,Mendoza,50,Junín,50035,Junín,50035020,130286.2
+2014,Mendoza,50,Junín,50035,Junín,50035020,11758.4
+2014,Mendoza,50,La Paz,50042,La Paz,50042020,2090.58
+2014,Mendoza,50,La Paz,50042,La Paz,50042020,3317
+2014,Mendoza,50,La Paz,50042,La Paz,50042020,1676.6
+2014,Mendoza,50,La Paz,50042,La Paz,50042020,7128.6
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,57615.6
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,2790.8
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,2948
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,82.01
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,1002.4
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,1964.4
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,28739.5
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,5690.2
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,9028.1
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,420.8
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,1750.3
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,26.1
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,48223.21
+2014,Mendoza,50,Las Heras,50049,Las Heras,50049050,22334.6
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,148459.89
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,102189.8
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,65483.76
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,116796.51
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,564.8
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,464.4
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,15524.6
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,97
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1662
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,3873.8
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,10356.47
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1588.2
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,35555.9
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,3675.43
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,7216.4
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,22635.2
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,790.8
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,2401.4
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,12037.46
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,513620.58
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,32365.7
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,72082.19
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1099.2
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,94415.7
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,9573.8
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,26649.6
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,338688.79
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,28693.8
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1034.2
+2014,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,51240.27
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,30079.18
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,36564.63
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,1486.9
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,12612.84
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,28027.52
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,97.2
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,275943.32
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,7320.46
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,13746.58
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,1643.02
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,9580.17
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,394843.36
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,78.3
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,384997.76
+2014,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,110148.17
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,1096.8
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,415.6
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,251.4
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,32891.76
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,76572.44
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,16361.5
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,6976.1
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,572219.61
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,2427.35
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,9745.67
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,36805.89
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,36882.39
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,3703.3
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,17954.75
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,47699.47
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,2842.38
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,88663.04
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,46736.82
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,78848.59
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,36409.2
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,967.1
+2014,Mendoza,50,Maipú,50070,Maipú,50070060,297348.46
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,89060.89
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,106464.18
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,138935.73
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,117251.12
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,1694
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,19914.76
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,103077.03
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,364.6
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,144835.38
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,477049.6
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,278706.82
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,640144.64
+2014,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,158465.15
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,5455
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,42218.16
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,360566.77
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,19545.14
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,25885.85
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,1128.8
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,195082.5
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,1215.12
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,48701.86
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,3016.8
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,7214.8
+2014,Mendoza,50,San Carlos,50091,San Carlos,50091060,408.4
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,738801.8
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,6163.4
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,207000.33
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,9883.2
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,84574.5
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,99613.86
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,25295.11
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,3126.2
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,1022666.55
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,305462.52
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,219363.92
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,219493.75
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,263760.98
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,380299.15
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,103208.42
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,199817.09
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,52706.26
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,108066.95
+2014,Mendoza,50,San Martín,50098,San Martín,50098100,176609.5
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,1325.2
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,4378.4
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,8623.58
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,4582.4
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,2127.93
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,47920.19
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,2737.5
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,7.4
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,50002.6
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,2326.2
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,89152.97
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,3837.8
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,2104
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,1222.2
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,190205.65
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,1776.6
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,51704.4
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,14410.94
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,3100.1
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,2581.8
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,8106.36
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,1816.95
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,795.4
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,27755.57
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,1461.8
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,59246.89
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,6528.32
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,102332.67
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,102.2
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,16561.47
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,865.4
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,14168.9
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,1281
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,95038.63
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,2600.4
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,720.2
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,36515.3
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,11639.5
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,196.4
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,469
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,53283.59
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,163643
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,422.2
+2014,Mendoza,50,San Rafael,50105,San Rafael,50105210,273.4
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,98184.97
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,5063
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,74543.48
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,18778.1
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,313829.37
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,97916.1
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,2086.3
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,25329.7
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,106166.5
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,14421.48
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,17396.9
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,200314.93
+2014,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,142357.46
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,66708.56
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,9956.2
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,203986.35
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,106385.4
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,12206.16
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,12026.16
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,17933.9
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,2668.84
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,7951.11
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,83305.03
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,77525.35
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,19289.26
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,39594.1
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,161113.25
+2014,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,46899.5
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,192032.3
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,34657.85
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,12534.1
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,80167.61
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,79291.86
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,5964.05
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,107202.88
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,40146.43
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,57038.39
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,16344
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,4940.03
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,121
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,196138.78
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,31054.96
+2014,Mendoza,50,Tupungato,50126,Tupungato,50126060,189929.8
+2014,Neuquén,58,Añelo,58014,Añelo,58014010,4935.1
+2014,Neuquén,58,Añelo,58014,Añelo,58014010,108832.83
+2014,Neuquén,58,Confluencia,58035,Senillosa,58035110,809.27
+2014,Neuquén,58,Confluencia,58035,Senillosa,58035110,256.49
+2014,Neuquén,58,Picún Leufú,58098,Picún Leufú,58098020,318.7
+2014,Neuquén,58,Picunches,58105,Las Lajas,58105030,51.1
+2014,Río Negro,62,Adolfo Alsina,62007,El Juncal,62007030,2154.86
+2014,Río Negro,62,Adolfo Alsina,62007,El Juncal,62007030,1077
+2014,Río Negro,62,Avellaneda,62014,Pomona,62014090,219.28
+2014,Río Negro,62,Avellaneda,62014,Pomona,62014090,2878.4
+2014,Río Negro,62,Avellaneda,62014,Pomona,62014090,1189.6
+2014,Río Negro,62,Avellaneda,62014,Pomona,62014090,1555.8
+2014,Río Negro,62,El Cuy,62035,El Cuy,62035030,937.92
+2014,Río Negro,62,El Cuy,62035,El Cuy,62035030,2125.5
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,2121.76
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,989.88
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,429.1
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,1007.3
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,1368.1
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,973
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,16963.04
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,202.2
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,3315.86
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,12106.76
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,5201.7
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,223.6
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,303.1
+2014,Río Negro,62,General Roca,62042,General Roca,62042450,6380.21
+2014,Salta,66,Cachi,66014,Cachi,66014010,807.03
+2014,Salta,66,Cachi,66014,Cachi,66014010,2071
+2014,Salta,66,Cafayate,66021,Cafayate,66021010,5347.76
+2014,Salta,66,Cafayate,66021,Cafayate,66021010,6849.71
+2014,Salta,66,Cafayate,66021,Cafayate,66021010,41305.56
+2014,Salta,66,Cafayate,66021,Cafayate,66021010,205056.34
+2014,Salta,66,Cafayate,66021,Cafayate,66021010,48.8
+2014,Salta,66,Cafayate,66021,Cafayate,66021010,5708.64
+2014,Salta,66,La Viña,66098,La Viña,66098040,176.19
+2014,Salta,66,Molinos,66119,Molinos,66119020,70
+2014,Salta,66,Molinos,66119,Molinos,66119020,1721.35
+2014,Salta,66,Molinos,66119,Molinos,66119020,4320.15
+2014,Salta,66,Molinos,66119,Molinos,66119020,52
+2014,Salta,66,San Carlos,66154,San Carlos,66154040,2944.79
+2014,Salta,66,San Carlos,66154,San Carlos,66154040,19.17
+2014,Salta,66,San Carlos,66154,San Carlos,66154040,4836.5
+2014,Salta,66,San Carlos,66154,San Carlos,66154040,115.7
+2014,Salta,66,San Carlos,66154,San Carlos,66154040,41340.21
+2014,Salta,66,San Carlos,66154,San Carlos,66154040,1175.19
+2014,San Juan,70,Albardón,70007,El Rincón,70007010,110888.66
+2014,San Juan,70,Albardón,70007,El Rincón,70007010,9130.69
+2014,San Juan,70,Albardón,70007,El Rincón,70007010,708.7
+2014,San Juan,70,Albardón,70007,El Rincón,70007010,1112.1
+2014,San Juan,70,Albardón,70007,El Rincón,70007010,14854
+2014,San Juan,70,Albardón,70007,El Rincón,70007010,10163.66
+2014,San Juan,70,Albardón,70007,El Rincón,70007010,27379.93
+2014,San Juan,70,Albardón,70007,El Rincón,70007010,2146.8
+2014,San Juan,70,Albardón,70007,El Rincón,70007010,7902.95
+2014,San Juan,70,Albardón,70007,El Rincón,70007010,6017.72
+2014,San Juan,70,Angaco,70014,Las Tapias,70014010,85324.94
+2014,San Juan,70,Angaco,70014,Las Tapias,70014010,51549.53
+2014,San Juan,70,Angaco,70014,Las Tapias,70014010,17595
+2014,San Juan,70,Angaco,70014,Las Tapias,70014010,1255.4
+2014,San Juan,70,Angaco,70014,Las Tapias,70014010,5177.8
+2014,San Juan,70,Angaco,70014,Las Tapias,70014010,49856.2
+2014,San Juan,70,Angaco,70014,Las Tapias,70014010,16002.3
+2014,San Juan,70,Angaco,70014,Las Tapias,70014010,40048.75
+2014,San Juan,70,Angaco,70014,Las Tapias,70014010,54676.47
+2014,San Juan,70,Calingasta,70021,Calingasta,70021020,119.6
+2014,San Juan,70,Calingasta,70021,Calingasta,70021020,3235.7
+2014,San Juan,70,Calingasta,70021,Calingasta,70021020,336.8
+2014,San Juan,70,Calingasta,70021,Calingasta,70021020,6810.3
+2014,San Juan,70,Calingasta,70021,Calingasta,70021020,203.2
+2014,San Juan,70,Calingasta,70021,Calingasta,70021020,84.8
+2014,San Juan,70,Calingasta,70021,Calingasta,70021020,411.54
+2014,San Juan,70,Capital,70028,San Juan,70028010,1092.4
+2014,San Juan,70,Caucete,70035,Caucete,70035020,479377.75
+2014,San Juan,70,Caucete,70035,Caucete,70035020,183631.66
+2014,San Juan,70,Caucete,70035,Caucete,70035020,55525.56
+2014,San Juan,70,Caucete,70035,Caucete,70035020,344
+2014,San Juan,70,Caucete,70035,Caucete,70035020,26964.8
+2014,San Juan,70,Caucete,70035,Caucete,70035020,215631.37
+2014,San Juan,70,Caucete,70035,Caucete,70035020,107720.19
+2014,San Juan,70,Caucete,70035,Caucete,70035020,7298.3
+2014,San Juan,70,Caucete,70035,Caucete,70035020,410.4
+2014,San Juan,70,Caucete,70035,Caucete,70035020,113.8
+2014,San Juan,70,Caucete,70035,Caucete,70035020,108757.56
+2014,San Juan,70,Chimbas,70042,Chimbas,70042010,32898.29
+2014,San Juan,70,Chimbas,70042,Chimbas,70042010,137696.21
+2014,San Juan,70,Chimbas,70042,Chimbas,70042010,1087.89
+2014,San Juan,70,Iglesia,70049,Iglesia,70049030,27
+2014,San Juan,70,9 de Julio,70063,9 de Julio,70063040,221745.28
+2014,San Juan,70,9 de Julio,70063,9 de Julio,70063040,3174.4
+2014,San Juan,70,9 de Julio,70063,9 de Julio,70063040,140644.26
+2014,San Juan,70,9 de Julio,70063,9 de Julio,70063040,1702.2
+2014,San Juan,70,9 de Julio,70063,9 de Julio,70063040,7392.7
+2014,San Juan,70,9 de Julio,70063,9 de Julio,70063040,46309.72
+2014,San Juan,70,9 de Julio,70063,9 de Julio,70063040,23984.26
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,451.8
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,2043
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,4500.8
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,130
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,7277.26
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,91921.28
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,139
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,111763.47
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,27384.79
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,214643.9
+2014,San Juan,70,Pocito,70070,Villa Aberastain,70070040,10024.42
+2014,San Juan,70,Rawson,70077,Rawson,70077010,29840.23
+2014,San Juan,70,Rawson,70077,Rawson,70077010,6845
+2014,San Juan,70,Rawson,70077,Rawson,70077010,90427.64
+2014,San Juan,70,Rawson,70077,Rawson,70077010,671.6
+2014,San Juan,70,Rawson,70077,Rawson,70077010,5959.15
+2014,San Juan,70,Rawson,70077,Rawson,70077010,10725.81
+2014,San Juan,70,Rawson,70077,Rawson,70077010,94176.43
+2014,San Juan,70,Rivadavia,70084,Rivadavia,70084010,20257.12
+2014,San Juan,70,Rivadavia,70084,Rivadavia,70084010,13599.26
+2014,San Juan,70,Rivadavia,70084,Rivadavia,70084010,12071.9
+2014,San Juan,70,San Martín,70091,Villa San Martín,70091070,13018.6
+2014,San Juan,70,San Martín,70091,Villa San Martín,70091070,1217
+2014,San Juan,70,San Martín,70091,Villa San Martín,70091070,6781.7
+2014,San Juan,70,San Martín,70091,Villa San Martín,70091070,157128.99
+2014,San Juan,70,San Martín,70091,Villa San Martín,70091070,129039.52
+2014,San Juan,70,San Martín,70091,Villa San Martín,70091070,19964.6
+2014,San Juan,70,San Martín,70091,Villa San Martín,70091070,11909.9
+2014,San Juan,70,San Martín,70091,Villa San Martín,70091070,104039.93
+2014,San Juan,70,San Martín,70091,Villa San Martín,70091070,133833.64
+2014,San Juan,70,San Martín,70091,Villa San Martín,70091070,233.4
+2014,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,15051.28
+2014,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,84160.9
+2014,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,4241.9
+2014,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,25957.4
+2014,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,87934.04
+2014,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,11255.7
+2014,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,9681.34
+2014,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,21037.07
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,47022.6
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,31629.3
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,804.4
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,209089.79
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,398274.26
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,51041.46
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,55662
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,8707.6
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,37794.28
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,216580.62
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,49267.32
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,13305.77
+2014,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,84201.2
+2014,San Juan,70,Ullum,70112,Talacasto,70112A08,2875.93
+2014,San Juan,70,Ullum,70112,Talacasto,70112A08,111636.45
+2014,San Juan,70,Ullum,70112,Talacasto,70112A08,2789.4
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,11080.2
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,9367
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,4788.6
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,234805.3
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,189954.02
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,299358.73
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,86702.88
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,24467.5
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,62495.78
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,716.6
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,8370.7
+2014,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,272581.77
+2014,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,44238.79
+2014,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,1931.8
+2014,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,61312.66
+2014,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,22688.04
+2014,San Luis,74,Junín,74049,Merlo,74049060,191.7
+2014,San Luis,74,Juan Martín de Pueyrredón,74056,San Luis,74056150,278.07
+2014,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,1811.24
+2014,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,165.23
+2014,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,469.75
+2015,Buenos Aires,06,Coronel Pringles,06196,Coronel Pringles,06196010,25
+2015,Buenos Aires,06,General Pueyrredón,06357,Barrio El Boquerón,06357020,225.7
+2015,Buenos Aires,06,Saavedra,06700,Saavedra,06700070,220.7
+2015,Buenos Aires,06,Tornquist,06819,Tornquist,06819040,236.02
+2015,Buenos Aires,06,Villarino,06875,Argerich,06875010,147.45
+2015,Catamarca,10,Andalgalá,10021,Andalgalá,10021020,266
+2015,Catamarca,10,Belén,10035,Belén,10035020,266.4
+2015,Catamarca,10,Belén,10035,Belén,10035020,9686.04
+2015,Catamarca,10,Pomán,10084,Pomán,10084070,636.2
+2015,Catamarca,10,Pomán,10084,Pomán,10084070,744.3
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,8796.87
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,1851.71
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,936.7
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,14.5
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,37.2
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,11.8
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,27715.29
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,67.12
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,141.2
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,3230.4
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,33.4
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,6579.2
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,4801.93
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,3365.1
+2015,Catamarca,10,Santa María,10091,Santa María,10091150,95
+2015,Catamarca,10,Santa Rosa,10098,Los Altos,10098050,8
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,841.8
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,1390
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,550.5
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,4656.74
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,26626.61
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,10328
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,4819.6
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,31.9
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,2299.7
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,15464.8
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,2502.9
+2015,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,9432.54
+2015,Córdoba,14,Calamuchita,14007,Santa Rosa de Calamuchita,14007210,159.69
+2015,Córdoba,14,Calamuchita,14007,Santa Rosa de Calamuchita,14007210,119.45
+2015,Córdoba,14,Colón,14021,La Calera,14021150,4531.19
+2015,Córdoba,14,Colón,14021,La Calera,14021150,67.2
+2015,Córdoba,14,Cruz del Eje,14028,Cruz del Eje,14028050,72.2
+2015,Córdoba,14,Ischilín,14049,Ischilín,14049A07,21
+2015,Córdoba,14,Ischilín,14049,Ischilín,14049A07,357.58
+2015,Córdoba,14,San Alberto,14126,Ambul,14126010,23
+2015,Córdoba,14,Santa María,14147,Las Quintas,14147190,233.5
+2015,Córdoba,14,Tulumba,14175,Villa Tulumba,14175110,6
+2015,Chubut,26,Sarmiento,26091,Sarmiento,26091020,52.53
+2015,Entre Ríos,30,Colón,30008,Colón,30008020,29.6
+2015,Entre Ríos,30,Diamante,30021,Diamante,30021080,60.6
+2015,Entre Ríos,30,Gualeguaychú,30056,Gualeguaychú,30056070,25.9
+2015,Jujuy,38,Tilcara,38094,Tilcara,38094050,365
+2015,Jujuy,38,Tilcara,38094,Tilcara,38094050,152.7
+2015,La Pampa,42,Curacó,42042,Puelches,42042020,392.3
+2015,La Pampa,42,Puelén,42112,Puelén,42112010,70
+2015,La Pampa,42,Puelén,42112,Puelén,42112010,11358.42
+2015,La Rioja,46,Castro Barros,46021,Aminga,46021010,27542.7
+2015,La Rioja,46,Castro Barros,46021,Aminga,46021010,4272.4
+2015,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,4672.5
+2015,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,1239.9
+2015,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,12.4
+2015,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,3304.5
+2015,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,11093.5
+2015,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,22417.9
+2015,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,3043
+2015,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,277.3
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,59
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,130721.1
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,2185
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,935.3
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,558.8
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,6.8
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,113.2
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,172583.06
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,150864.5
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,1097.4
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,76.2
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,3142.9
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,102499.91
+2015,La Rioja,46,Chilecito,46042,Chilecito,46042010,188514.47
+2015,La Rioja,46,Famatina,46049,Famatina,46049070,6048.72
+2015,La Rioja,46,Famatina,46049,Famatina,46049070,1801.64
+2015,La Rioja,46,Famatina,46049,Famatina,46049070,343.7
+2015,La Rioja,46,Famatina,46049,Famatina,46049070,28.8
+2015,La Rioja,46,Famatina,46049,Famatina,46049070,848.6
+2015,La Rioja,46,Famatina,46049,Famatina,46049070,5709.3
+2015,La Rioja,46,Famatina,46049,Famatina,46049070,5706.48
+2015,La Rioja,46,General Lamadrid,46077,Batidero,46077A00,377
+2015,La Rioja,46,General Lamadrid,46077,Batidero,46077A00,5677.7
+2015,La Rioja,46,Vinchina,46098,Villa San José de Vinchina,46098020,2404
+2015,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,1744
+2015,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,677.7
+2015,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,731.2
+2015,La Rioja,46,Sanagasta,46126,Villa Sanagasta,46126010,292
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,594.4
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,272
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,26338.16
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,869.4
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,379.4
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,16981.4
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,22923.3
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,80752.86
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,9947.8
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,32973.9
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,3911
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,426.2
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,7182.7
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,6201.1
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,4797
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,13483.31
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,1558.2
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,21233.8
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,11726.4
+2015,Mendoza,50,General Alvear,50014,General Alvear,50014030,1523.4
+2015,Mendoza,50,Godoy Cruz,50021,Godoy Cruz,50021010,37.2
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,9214.3
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,10525.2
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,228.6
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,4496.2
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,185.6
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,4692.95
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,10479.5
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,2583.4
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,4230.6
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,12692.6
+2015,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,5314.61
+2015,Mendoza,50,Junín,50035,Junín,50035020,280477.4
+2015,Mendoza,50,Junín,50035,Junín,50035020,16834.6
+2015,Mendoza,50,Junín,50035,Junín,50035020,121761.79
+2015,Mendoza,50,Junín,50035,Junín,50035020,4539.5
+2015,Mendoza,50,Junín,50035,Junín,50035020,219.4
+2015,Mendoza,50,Junín,50035,Junín,50035020,2169.5
+2015,Mendoza,50,Junín,50035,Junín,50035020,2448.8
+2015,Mendoza,50,Junín,50035,Junín,50035020,130839.13
+2015,Mendoza,50,Junín,50035,Junín,50035020,247512.62
+2015,Mendoza,50,Junín,50035,Junín,50035020,3352
+2015,Mendoza,50,Junín,50035,Junín,50035020,123489.88
+2015,Mendoza,50,Junín,50035,Junín,50035020,8456.3
+2015,Mendoza,50,Junín,50035,Junín,50035020,1378.6
+2015,Mendoza,50,Junín,50035,Junín,50035020,112052.76
+2015,Mendoza,50,Junín,50035,Junín,50035020,9860.5
+2015,Mendoza,50,Junín,50035,Junín,50035020,1317.6
+2015,Mendoza,50,Junín,50035,Junín,50035020,157342.96
+2015,Mendoza,50,Junín,50035,Junín,50035020,210427.54
+2015,Mendoza,50,La Paz,50042,La Paz,50042020,1473.2
+2015,Mendoza,50,La Paz,50042,La Paz,50042020,12199.9
+2015,Mendoza,50,La Paz,50042,La Paz,50042020,3590.15
+2015,Mendoza,50,La Paz,50042,La Paz,50042020,3131.4
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,539.42
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,93.88
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,56423.68
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,24787.4
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,42232.2
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,72.97
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,1638
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,26742
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,5208.6
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,6392.2
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,2290.44
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,3297.2
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,1165.2
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,1286.8
+2015,Mendoza,50,Las Heras,50049,Las Heras,50049050,334.1
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,3644.4
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,7323.5
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,20652.8
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,747.4
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,4102.4
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,13202.62
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,624824.25
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,31346.6
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,68580.89
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1270.8
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,100422.9
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,9824.6
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,25310.1
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,331506.54
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,145333.57
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,27997.61
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,960.6
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,63759.1
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,56253.63
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,34692
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,624.4
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,10373.35
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,2206.1
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,2086.4
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,176.2
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,20232
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,387.8
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1416.3
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,107655.38
+2015,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,61340.78
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,9302.9
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,1719.8
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,14022.95
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,351915.92
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,27627.99
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,356682.81
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,5945.97
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,232796.6
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,245
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,21.8
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,28924.63
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,97626.93
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,33211.27
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,7739.14
+2015,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,1643.12
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,52781.23
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,3747.2
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,31227.96
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,29349.1
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,11397.6
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,2675.9
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,577061.18
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,4606.3
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,2756.9
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,95007.32
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,51207.6
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,68418.54
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,26073.8
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,506.72
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,290832.96
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,1339.8
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,246.8
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,130.8
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,33639.86
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,71890.4
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,18929.5
+2015,Mendoza,50,Maipú,50070,Maipú,50070060,14713
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,81345.95
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,74591.49
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,551
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,117673.35
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,336807.51
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,223602.4
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,13357.8
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,119984.56
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,1903
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,99987.92
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,109630.49
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,80250.91
+2015,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,482962.07
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,2111.4
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,370261.27
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,20283.35
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,29787.93
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,6599.1
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,948
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,7136.9
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,48710.96
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,848.8
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,35533.84
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,208650.72
+2015,Mendoza,50,San Carlos,50091,San Carlos,50091060,229.8
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,8654.3
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,194713.66
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,382171.52
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,82371.2
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,700241.42
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,46519.4
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,89779.6
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,182249.12
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,8992.5
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,214329.12
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,69508.91
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,98245.9
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,36922
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,2200.8
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,933838.56
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,358212.99
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,178438.23
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,207807.48
+2015,Mendoza,50,San Martín,50098,San Martín,50098100,269782.49
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,938
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,236
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,11358.9
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,583.2
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,1880
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,91033.03
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,1182.4
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,2148.8
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,2980.6
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,33219
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,3380.4
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,3158.2
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,5644.2
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,547.2
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,705.4
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,26604.4
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,45474.22
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,5378.6
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,94298.69
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,225.8
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,12002.65
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,1090
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,14041.88
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,2000
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,2642.2
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,90.2
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,42365.72
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,91655.26
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,3266.4
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,1156.2
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,189589.36
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,395.6
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,2050.2
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,51805.23
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,13003.2
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,45526.76
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,2963.15
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,4627.9
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,8544.72
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,5677.5
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,194.6
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,358.42
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,138356.7
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,49822.55
+2015,Mendoza,50,San Rafael,50105,San Rafael,50105210,246.4
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,15886
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,158879.4
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,100226.8
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,94399.1
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,5152.3
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,15037.71
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,81284.7
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,27939.3
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,3595.31
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,314930.77
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,87374.9
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,108326.14
+2015,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,10970.26
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,22372.42
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,220267.6
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,13128.36
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,109077.18
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,12579.06
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,5851.9
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,79753.86
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,61967.19
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,191144.47
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,31346.1
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,16103.25
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,84618.66
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,93771.91
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,9812.44
+2015,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,624.07
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,99745.8
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,39859.53
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,64415.58
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,197371.18
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,47.8
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,6518.62
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,75214.22
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,9299.8
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,237245.73
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,182772.11
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,38765.14
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,16233.75
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,51311.63
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,34677.49
+2015,Mendoza,50,Tupungato,50126,Tupungato,50126060,8651.2
+2015,Neuquén,58,Añelo,58014,Añelo,58014010,147457.27
+2015,Neuquén,58,Añelo,58014,Añelo,58014010,9431.45
+2015,Neuquén,58,Confluencia,58035,Senillosa,58035110,72.2
+2015,Neuquén,58,Confluencia,58035,Senillosa,58035110,647.3
+2015,Neuquén,58,Confluencia,58035,Senillosa,58035110,342.54
+2015,Neuquén,58,Lácar,58056,San Martín de los Andes,58056010,32
+2015,Neuquén,58,Picún Leufú,58098,Picún Leufú,58098020,350
+2015,Río Negro,62,Adolfo Alsina,62007,El Juncal,62007030,1254.16
+2015,Río Negro,62,Avellaneda,62014,Pomona,62014090,3211.2
+2015,Río Negro,62,Avellaneda,62014,Pomona,62014090,418.9
+2015,Río Negro,62,Avellaneda,62014,Pomona,62014090,2438.7
+2015,Río Negro,62,Avellaneda,62014,Pomona,62014090,184
+2015,Río Negro,62,Bariloche,62021,Villa Mascardi,62021110,79
+2015,Río Negro,62,El Cuy,62035,El Cuy,62035030,535.83
+2015,Río Negro,62,El Cuy,62035,El Cuy,62035030,2538.5
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,14734.06
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,1316.8
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,101.2
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,704.1
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,1646.6
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,468.66
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,8405.22
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,16243.09
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,1890.7
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,3813.34
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,1440.8
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,72.2
+2015,Río Negro,62,General Roca,62042,General Roca,62042450,6289.63
+2015,Salta,66,Cachi,66014,Cachi,66014010,879.18
+2015,Salta,66,Cachi,66014,Cachi,66014010,3520.1
+2015,Salta,66,Cafayate,66021,Cafayate,66021010,280.15
+2015,Salta,66,Cafayate,66021,Cafayate,66021010,194026.38
+2015,Salta,66,Cafayate,66021,Cafayate,66021010,5590.92
+2015,Salta,66,Cafayate,66021,Cafayate,66021010,35067.35
+2015,Salta,66,Cafayate,66021,Cafayate,66021010,7233.27
+2015,Salta,66,Cafayate,66021,Cafayate,66021010,64.5
+2015,Salta,66,Cafayate,66021,Cafayate,66021010,4910.31
+2015,Salta,66,La Viña,66098,La Viña,66098040,291.25
+2015,Salta,66,Molinos,66119,Molinos,66119020,103.57
+2015,Salta,66,Molinos,66119,Molinos,66119020,2258.01
+2015,Salta,66,Molinos,66119,Molinos,66119020,6059.8
+2015,Salta,66,Molinos,66119,Molinos,66119020,70
+2015,Salta,66,San Carlos,66154,San Carlos,66154040,5625.3
+2015,Salta,66,San Carlos,66154,San Carlos,66154040,3649.09
+2015,Salta,66,San Carlos,66154,San Carlos,66154040,44092.37
+2015,Salta,66,San Carlos,66154,San Carlos,66154040,661
+2015,Salta,66,San Carlos,66154,San Carlos,66154040,181
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,1823.66
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,4873.9
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,111731.96
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,15777.19
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,16011.24
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,367.8
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,1636.7
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,33486.65
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,11356.4
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,12788.01
+2015,San Juan,70,Albardón,70007,El Rincón,70007010,11852.8
+2015,San Juan,70,Angaco,70014,Las Tapias,70014010,662.2
+2015,San Juan,70,Angaco,70014,Las Tapias,70014010,52567.2
+2015,San Juan,70,Angaco,70014,Las Tapias,70014010,48328.98
+2015,San Juan,70,Angaco,70014,Las Tapias,70014010,49805.05
+2015,San Juan,70,Angaco,70014,Las Tapias,70014010,31826.29
+2015,San Juan,70,Angaco,70014,Las Tapias,70014010,74064.38
+2015,San Juan,70,Angaco,70014,Las Tapias,70014010,7007.8
+2015,San Juan,70,Angaco,70014,Las Tapias,70014010,17641.2
+2015,San Juan,70,Angaco,70014,Las Tapias,70014010,17229.4
+2015,San Juan,70,Calingasta,70021,Calingasta,70021020,137.6
+2015,San Juan,70,Calingasta,70021,Calingasta,70021020,66.6
+2015,San Juan,70,Calingasta,70021,Calingasta,70021020,576.51
+2015,San Juan,70,Calingasta,70021,Calingasta,70021020,1170.2
+2015,San Juan,70,Calingasta,70021,Calingasta,70021020,6711.9
+2015,San Juan,70,Calingasta,70021,Calingasta,70021020,1740
+2015,San Juan,70,Caucete,70035,Caucete,70035020,80906.1
+2015,San Juan,70,Caucete,70035,Caucete,70035020,20749.3
+2015,San Juan,70,Caucete,70035,Caucete,70035020,173997.15
+2015,San Juan,70,Caucete,70035,Caucete,70035020,37009.35
+2015,San Juan,70,Caucete,70035,Caucete,70035020,133842.93
+2015,San Juan,70,Caucete,70035,Caucete,70035020,338575.52
+2015,San Juan,70,Caucete,70035,Caucete,70035020,62987.06
+2015,San Juan,70,Caucete,70035,Caucete,70035020,81.7
+2015,San Juan,70,Caucete,70035,Caucete,70035020,797.6
+2015,San Juan,70,Caucete,70035,Caucete,70035020,6642.2
+2015,San Juan,70,Caucete,70035,Caucete,70035020,480.2
+2015,San Juan,70,Caucete,70035,Caucete,70035020,89.2
+2015,San Juan,70,Chimbas,70042,Chimbas,70042010,2326.33
+2015,San Juan,70,Chimbas,70042,Chimbas,70042010,132996.49
+2015,San Juan,70,Chimbas,70042,Chimbas,70042010,20439.7
+2015,San Juan,70,Iglesia,70049,Iglesia,70049030,2611.8
+2015,San Juan,70,Iglesia,70049,Iglesia,70049030,12038.2
+2015,San Juan,70,Iglesia,70049,Iglesia,70049030,41.8
+2015,San Juan,70,Iglesia,70049,Iglesia,70049030,207.2
+2015,San Juan,70,9 de Julio,70063,9 de Julio,70063040,784.4
+2015,San Juan,70,9 de Julio,70063,9 de Julio,70063040,14173.31
+2015,San Juan,70,9 de Julio,70063,9 de Julio,70063040,6245.98
+2015,San Juan,70,9 de Julio,70063,9 de Julio,70063040,1816.6
+2015,San Juan,70,9 de Julio,70063,9 de Julio,70063040,36986.48
+2015,San Juan,70,9 de Julio,70063,9 de Julio,70063040,129732.97
+2015,San Juan,70,9 de Julio,70063,9 de Julio,70063040,269432.93
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,1082.4
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,61.4
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,25573.79
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,84
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,10789.4
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,7461.4
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,102547.03
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,81293.41
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,4494.7
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,1863
+2015,San Juan,70,Pocito,70070,Villa Aberastain,70070040,191586.12
+2015,San Juan,70,Rawson,70077,Rawson,70077010,3759.9
+2015,San Juan,70,Rawson,70077,Rawson,70077010,33286.56
+2015,San Juan,70,Rawson,70077,Rawson,70077010,82723.2
+2015,San Juan,70,Rawson,70077,Rawson,70077010,91844.09
+2015,San Juan,70,Rawson,70077,Rawson,70077010,6533.18
+2015,San Juan,70,Rawson,70077,Rawson,70077010,9408.4
+2015,San Juan,70,Rawson,70077,Rawson,70077010,579.4
+2015,San Juan,70,Rivadavia,70084,Rivadavia,70084010,14157.09
+2015,San Juan,70,Rivadavia,70084,Rivadavia,70084010,10352.6
+2015,San Juan,70,Rivadavia,70084,Rivadavia,70084010,14964
+2015,San Juan,70,San Martín,70091,Villa San Martín,70091070,9641.1
+2015,San Juan,70,San Martín,70091,Villa San Martín,70091070,5311.84
+2015,San Juan,70,San Martín,70091,Villa San Martín,70091070,145253.04
+2015,San Juan,70,San Martín,70091,Villa San Martín,70091070,368.4
+2015,San Juan,70,San Martín,70091,Villa San Martín,70091070,117561.73
+2015,San Juan,70,San Martín,70091,Villa San Martín,70091070,25187.88
+2015,San Juan,70,San Martín,70091,Villa San Martín,70091070,110406.3
+2015,San Juan,70,San Martín,70091,Villa San Martín,70091070,6986.6
+2015,San Juan,70,San Martín,70091,Villa San Martín,70091070,140818.32
+2015,San Juan,70,San Martín,70091,Villa San Martín,70091070,1060.4
+2015,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,11853.77
+2015,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,24421.14
+2015,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,14919.42
+2015,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,15998.03
+2015,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,8890.62
+2015,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,72026.1
+2015,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,78926.7
+2015,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,5964.57
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,155984.99
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,39654.9
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,11121.8
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,42879.54
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,59257.6
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,74330
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,396
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,22428
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,295275.77
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,171398
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,8888.8
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,65347.4
+2015,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,48488.48
+2015,San Juan,70,Ullum,70112,Talacasto,70112A08,2297.03
+2015,San Juan,70,Ullum,70112,Talacasto,70112A08,1980.39
+2015,San Juan,70,Ullum,70112,Talacasto,70112A08,111332.68
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,20088.2
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,172585.33
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,3043.4
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,157915.91
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,15414.6
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,1625.1
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,198408.23
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,5245.84
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,252386.65
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,64935.44
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,487.9
+2015,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,43112.16
+2015,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,49125.6
+2015,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,62767.12
+2015,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,27068.37
+2015,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,378
+2015,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,1682
+2015,San Luis,74,Ayacucho,74007,Candelaria,74007010,312.2
+2015,San Luis,74,Junín,74049,Merlo,74049060,205.85
+2015,San Luis,74,Juan Martín de Pueyrredón,74056,San Luis,74056150,1549.7
+2015,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,14.15
+2015,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,4.05
+2015,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,56.87
+2015,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,145.6
+2015,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,2522.71
+2015,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,715.54
+2016,Buenos Aires,06,General Pueyrredón,06357,Barrio El Boquerón,06357020,569
+2016,Buenos Aires,06,Saavedra,06700,Saavedra,06700070,60.9
+2016,Buenos Aires,06,Tornquist,06819,Tornquist,06819040,147.05
+2016,Buenos Aires,06,Tornquist,06819,Tornquist,06819040,31.4
+2016,Buenos Aires,06,Villarino,06875,Argerich,06875010,494.79
+2016,Catamarca,10,Andalgalá,10021,Andalgalá,10021020,250
+2016,Catamarca,10,Belén,10035,Belén,10035020,104.6
+2016,Catamarca,10,Belén,10035,Belén,10035020,3574.13
+2016,Catamarca,10,Belén,10035,Belén,10035020,87.8
+2016,Catamarca,10,Belén,10035,Belén,10035020,45.68
+2016,Catamarca,10,Pomán,10084,Pomán,10084070,448.6
+2016,Catamarca,10,Pomán,10084,Pomán,10084070,403.2
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,78.06
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,474
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,798.6
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,22
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,18076.54
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,605.47
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,13
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,4015.99
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,206.6
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,1056.2
+2016,Catamarca,10,Santa María,10091,Santa María,10091150,113.2
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,858.6
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,429.14
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,1295.41
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,1609.17
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,3674.47
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,5168.68
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,31512.2
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,1195.26
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,12375.9
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,5396.37
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,5502.06
+2016,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,641.45
+2016,Córdoba,14,Calamuchita,14007,Santa Rosa de Calamuchita,14007210,161.2
+2016,Córdoba,14,Calamuchita,14007,Santa Rosa de Calamuchita,14007210,29.8
+2016,Córdoba,14,Calamuchita,14007,Santa Rosa de Calamuchita,14007210,74.07
+2016,Córdoba,14,Colón,14021,La Calera,14021150,181.3
+2016,Córdoba,14,Colón,14021,La Calera,14021150,2538.34
+2016,Córdoba,14,Colón,14021,La Calera,14021150,8.1
+2016,Córdoba,14,Cruz del Eje,14028,Cruz del Eje,14028050,131.4
+2016,Córdoba,14,Cruz del Eje,14028,Cruz del Eje,14028050,32.5
+2016,Córdoba,14,Ischilín,14049,Ischilín,14049A07,175.64
+2016,Córdoba,14,San Javier,14133,San Javier y Yacanto,14133170,73
+2016,Córdoba,14,San Javier,14133,San Javier y Yacanto,14133170,2
+2016,Córdoba,14,San Javier,14133,San Javier y Yacanto,14133170,45.2
+2016,Córdoba,14,San Javier,14133,San Javier y Yacanto,14133170,47.6
+2016,Córdoba,14,San Javier,14133,San Javier y Yacanto,14133170,8.1
+2016,Córdoba,14,Santa María,14147,Las Quintas,14147190,129.9
+2016,Chubut,26,Cushamen,26014,Cushamen Centro,26014030,15
+2016,Chubut,26,Sarmiento,26091,Sarmiento,26091020,166.1
+2016,Entre Ríos,30,Colón,30008,Colón,30008020,391.3
+2016,Entre Ríos,30,Concordia,30015,Concordia,30015060,255.07
+2016,Entre Ríos,30,Diamante,30021,Diamante,30021080,50
+2016,Entre Ríos,30,Gualeguaychú,30056,Gualeguaychú,30056070,34.55
+2016,Jujuy,38,Tilcara,38094,Tilcara,38094050,61.91
+2016,Jujuy,38,Tilcara,38094,Tilcara,38094050,174
+2016,La Pampa,42,Curacó,42042,Puelches,42042020,195
+2016,La Pampa,42,Puelén,42112,Puelén,42112010,16506.06
+2016,La Pampa,42,Puelén,42112,Puelén,42112010,758.6
+2016,La Rioja,46,Castro Barros,46021,Aminga,46021010,3325.8
+2016,La Rioja,46,Castro Barros,46021,Aminga,46021010,20474.3
+2016,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,3434.6
+2016,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,27027.6
+2016,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,10966.3
+2016,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,2879
+2016,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,391.6
+2016,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,168.1
+2016,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,2877
+2016,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,5219.9
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,165140.09
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,84845.32
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,3024.7
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,51.8
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,494.1
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,136026.5
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,78
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,153095.8
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,69.4
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,446.2
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,26.3
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,4683.9
+2016,La Rioja,46,Chilecito,46042,Chilecito,46042010,55173
+2016,La Rioja,46,Famatina,46049,Famatina,46049070,2298
+2016,La Rioja,46,Famatina,46049,Famatina,46049070,6469.5
+2016,La Rioja,46,Famatina,46049,Famatina,46049070,5490.1
+2016,La Rioja,46,Famatina,46049,Famatina,46049070,1550.5
+2016,La Rioja,46,Famatina,46049,Famatina,46049070,648.9
+2016,La Rioja,46,Famatina,46049,Famatina,46049070,7552.67
+2016,La Rioja,46,Famatina,46049,Famatina,46049070,14.7
+2016,La Rioja,46,General Lamadrid,46077,Batidero,46077A00,427.6
+2016,La Rioja,46,General Lamadrid,46077,Batidero,46077A00,8478.9
+2016,La Rioja,46,Vinchina,46098,Villa San José de Vinchina,46098020,2240.9
+2016,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,323.8
+2016,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,1842.4
+2016,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,558.6
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,848.8
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,2811.9
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,12281.5
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,6246.1
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,327.4
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,1516.8
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,6361.1
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,17882.2
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,4666.4
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,2783.5
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,130
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,8437.3
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,12745.2
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,45104.3
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,12279.3
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,1032.6
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,4089.6
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,437.4
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,127
+2016,Mendoza,50,General Alvear,50014,General Alvear,50014030,597.8
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,6913.9
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,5810.63
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,2403.8
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,1994.9
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,66.7
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,3467.92
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,3655.32
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,11132.6
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,38
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,2408.4
+2016,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,5833.4
+2016,Mendoza,50,Junín,50035,Junín,50035020,85580
+2016,Mendoza,50,Junín,50035,Junín,50035020,81394.87
+2016,Mendoza,50,Junín,50035,Junín,50035020,4570.3
+2016,Mendoza,50,Junín,50035,Junín,50035020,1580.6
+2016,Mendoza,50,Junín,50035,Junín,50035020,148450.33
+2016,Mendoza,50,Junín,50035,Junín,50035020,115103.88
+2016,Mendoza,50,Junín,50035,Junín,50035020,59460.56
+2016,Mendoza,50,Junín,50035,Junín,50035020,3762.4
+2016,Mendoza,50,Junín,50035,Junín,50035020,476
+2016,Mendoza,50,Junín,50035,Junín,50035020,10988.9
+2016,Mendoza,50,Junín,50035,Junín,50035020,1719.6
+2016,Mendoza,50,Junín,50035,Junín,50035020,1060.2
+2016,Mendoza,50,Junín,50035,Junín,50035020,91144.82
+2016,Mendoza,50,Junín,50035,Junín,50035020,51037.95
+2016,Mendoza,50,Junín,50035,Junín,50035020,995.4
+2016,Mendoza,50,Junín,50035,Junín,50035020,6823.5
+2016,Mendoza,50,Junín,50035,Junín,50035020,128.4
+2016,Mendoza,50,Junín,50035,Junín,50035020,134582.99
+2016,Mendoza,50,La Paz,50042,La Paz,50042020,3204.75
+2016,Mendoza,50,La Paz,50042,La Paz,50042020,2109.65
+2016,Mendoza,50,La Paz,50042,La Paz,50042020,177.6
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,721
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,4261.8
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,3174.6
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,2194.62
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,6870.6
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,39849.52
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,18904.7
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,36525.55
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,1076.2
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,522.2
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,54.5
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,21505.5
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,339.1
+2016,Mendoza,50,Las Heras,50049,Las Heras,50049050,91.3
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,11758.2
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,46649.8
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,87291.42
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,447.8
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,358
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,17756.46
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,72.4
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1337.7
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1538.5
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,8345.19
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,823.8
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,27649.2
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,39409.1
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,17816.7
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,551.1
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,19073.4
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,277799.09
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,125203.01
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,25168.2
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,2866.6
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,6525.8
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,670.6
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1490.8
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,8100.6
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,365385.29
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,25144.76
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,44118.64
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,843.6
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,58958.3
+2016,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,6689.6
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,23620.14
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,77.6
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,151041.74
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,3611.66
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,308521.17
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,4475.7
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,751.8
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,18626.97
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,70535.31
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,5588.66
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,255183.02
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,20.2
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,20598.85
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,433.64
+2016,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,7235.02
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,260.2
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,20802.8
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,1664.9
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,1381.58
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,53961.43
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,250224.35
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,314065.74
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,8514
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,19541.5
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,264.3
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,126
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,122.4
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,24800.01
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,35432.76
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,9698.88
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,3128.2
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,37259.04
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,16552.19
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,2524
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,5302.3
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,18930.18
+2016,Mendoza,50,Maipú,50070,Maipú,50070060,31370.02
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,67851.74
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,237930.81
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,74496.32
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,31268.27
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,169646.6
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,41549.59
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,55489.3
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,6840.9
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,69898.72
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,429.2
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,399.6
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,57559.08
+2016,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,85946.34
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,23043.99
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,158
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,2138.2
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,2911.2
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,300.6
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,5883.8
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,18241.79
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,14591.93
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,280044.9
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,598.9
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,172700.07
+2016,Mendoza,50,San Carlos,50091,San Carlos,50091060,26087.53
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,735.4
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,17028.44
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,82242.66
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,75679.63
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,35736.8
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,42087.1
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,24609.3
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,23196.9
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,104723.15
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,39213.2
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,371682.48
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,137527.5
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,2097.6
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,156355.13
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,2294
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,517509.65
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,216544.1
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,118561.76
+2016,Mendoza,50,San Martín,50098,San Martín,50098100,63006.43
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,1678.4
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,509.8
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,524.4
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,47827.04
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,4360.6
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,35861.76
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,2354.74
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,2619.6
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,3198.6
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,2202.6
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,4537.4
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,1271.8
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,391.2
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,16878.35
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,813.2
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,36640.19
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,2509
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,80389.91
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,5109.2
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,62404.61
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,93
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,4898.6
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,797
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,207.6
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,156820.79
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,747.6
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,4466.4
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,3651.8
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,299.2
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,273.74
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,79729.12
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,43545.23
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,139.4
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,9371.4
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,2634.2
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,26741.32
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,27.6
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,2332.6
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,1319.4
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,33484.8
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,1988.2
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,2056.7
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,139
+2016,Mendoza,50,San Rafael,50105,San Rafael,50105210,48938.31
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,148041.88
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,51411.22
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,2406.7
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,14278.14
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,37335.8
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,38845.2
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,298.6
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,41071.3
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,30051.2
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,28097.54
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,4827.9
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,905.56
+2016,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,5843.8
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,5801.24
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,161827.94
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,58021.35
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,10338.24
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,4309.6
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,72574.5
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,45936.95
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,149074.17
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,18906.36
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,55895.57
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,65888.74
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,127.67
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,945.07
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,17377.09
+2016,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,12753.7
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,175673.9
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,141545.97
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,127449.67
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,27.2
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,37305.15
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,1838.04
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,11448.81
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,5495.4
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,85207.51
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,44677.68
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,29708.28
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,37527.81
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,35201.92
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,79982.88
+2016,Mendoza,50,Tupungato,50126,Tupungato,50126060,5177
+2016,Neuquén,58,Añelo,58014,Añelo,58014010,114046.34
+2016,Neuquén,58,Añelo,58014,Añelo,58014010,10421.25
+2016,Neuquén,58,Confluencia,58035,Senillosa,58035110,82.87
+2016,Neuquén,58,Confluencia,58035,Senillosa,58035110,125.4
+2016,Neuquén,58,Confluencia,58035,Senillosa,58035110,862.58
+2016,Neuquén,58,Lácar,58056,San Martín de los Andes,58056010,21.6
+2016,Neuquén,58,Picún Leufú,58098,Picún Leufú,58098020,159.8
+2016,Río Negro,62,Adolfo Alsina,62007,El Juncal,62007030,154.9
+2016,Río Negro,62,Adolfo Alsina,62007,El Juncal,62007030,1541.71
+2016,Río Negro,62,Avellaneda,62014,Pomona,62014090,108
+2016,Río Negro,62,Avellaneda,62014,Pomona,62014090,1758.9
+2016,Río Negro,62,Avellaneda,62014,Pomona,62014090,503.07
+2016,Río Negro,62,Avellaneda,62014,Pomona,62014090,1518.2
+2016,Río Negro,62,El Cuy,62035,El Cuy,62035030,744.13
+2016,Río Negro,62,El Cuy,62035,El Cuy,62035030,2112.74
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,586.6
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,1529.1
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,2659.11
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,9230.9
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,4981.35
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,15730.6
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,12
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,78.8
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,7446.77
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,234.65
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,1357.96
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,683
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,517.1
+2016,Río Negro,62,General Roca,62042,General Roca,62042450,1227.9
+2016,Salta,66,Cachi,66014,Cachi,66014010,2294.4
+2016,Salta,66,Cachi,66014,Cachi,66014010,690.68
+2016,Salta,66,Cafayate,66021,Cafayate,66021010,141257.93
+2016,Salta,66,Cafayate,66021,Cafayate,66021010,21123.91
+2016,Salta,66,Cafayate,66021,Cafayate,66021010,5412.4
+2016,Salta,66,Cafayate,66021,Cafayate,66021010,2909.88
+2016,Salta,66,Cafayate,66021,Cafayate,66021010,118.75
+2016,Salta,66,Cafayate,66021,Cafayate,66021010,1752.19
+2016,Salta,66,La Viña,66098,La Viña,66098040,116
+2016,Salta,66,Molinos,66119,Molinos,66119020,47.5
+2016,Salta,66,Molinos,66119,Molinos,66119020,3295.7
+2016,Salta,66,Molinos,66119,Molinos,66119020,91.98
+2016,Salta,66,Molinos,66119,Molinos,66119020,949.71
+2016,Salta,66,San Carlos,66154,San Carlos,66154040,109.1
+2016,Salta,66,San Carlos,66154,San Carlos,66154040,26349.18
+2016,Salta,66,San Carlos,66154,San Carlos,66154040,693.2
+2016,Salta,66,San Carlos,66154,San Carlos,66154040,2085.5
+2016,Salta,66,San Carlos,66154,San Carlos,66154040,2663.9
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,7676.8
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,12607.85
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,9416.87
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,3210.4
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,6266.58
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,852.2
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,2027.2
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,30659.58
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,6506.5
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,11992.49
+2016,San Juan,70,Albardón,70007,El Rincón,70007010,122875.03
+2016,San Juan,70,Angaco,70014,Las Tapias,70014010,8552.2
+2016,San Juan,70,Angaco,70014,Las Tapias,70014010,20424.2
+2016,San Juan,70,Angaco,70014,Las Tapias,70014010,64067.95
+2016,San Juan,70,Angaco,70014,Las Tapias,70014010,20182.3
+2016,San Juan,70,Angaco,70014,Las Tapias,70014010,82566.76
+2016,San Juan,70,Angaco,70014,Las Tapias,70014010,43708.83
+2016,San Juan,70,Angaco,70014,Las Tapias,70014010,48389.91
+2016,San Juan,70,Angaco,70014,Las Tapias,70014010,53863.81
+2016,San Juan,70,Calingasta,70021,Calingasta,70021020,516.29
+2016,San Juan,70,Calingasta,70021,Calingasta,70021020,1788.6
+2016,San Juan,70,Calingasta,70021,Calingasta,70021020,169.9
+2016,San Juan,70,Calingasta,70021,Calingasta,70021020,1039
+2016,San Juan,70,Calingasta,70021,Calingasta,70021020,27.9
+2016,San Juan,70,Calingasta,70021,Calingasta,70021020,9258.9
+2016,San Juan,70,Caucete,70035,Caucete,70035020,426423.97
+2016,San Juan,70,Caucete,70035,Caucete,70035020,175356.6
+2016,San Juan,70,Caucete,70035,Caucete,70035020,36972.26
+2016,San Juan,70,Caucete,70035,Caucete,70035020,205
+2016,San Juan,70,Caucete,70035,Caucete,70035020,24412.44
+2016,San Juan,70,Caucete,70035,Caucete,70035020,207936.19
+2016,San Juan,70,Caucete,70035,Caucete,70035020,96923.63
+2016,San Juan,70,Caucete,70035,Caucete,70035020,1860.8
+2016,San Juan,70,Caucete,70035,Caucete,70035020,6093.1
+2016,San Juan,70,Caucete,70035,Caucete,70035020,422.8
+2016,San Juan,70,Caucete,70035,Caucete,70035020,170.4
+2016,San Juan,70,Caucete,70035,Caucete,70035020,111451.7
+2016,San Juan,70,Chimbas,70042,Chimbas,70042010,125819.5
+2016,San Juan,70,Chimbas,70042,Chimbas,70042010,14720.1
+2016,San Juan,70,Chimbas,70042,Chimbas,70042010,458
+2016,San Juan,70,Iglesia,70049,Iglesia,70049030,2380
+2016,San Juan,70,Iglesia,70049,Iglesia,70049030,286.2
+2016,San Juan,70,9 de Julio,70063,9 de Julio,70063040,1644.4
+2016,San Juan,70,9 de Julio,70063,9 de Julio,70063040,129435.9
+2016,San Juan,70,9 de Julio,70063,9 de Julio,70063040,48226.06
+2016,San Juan,70,9 de Julio,70063,9 de Julio,70063040,1589.8
+2016,San Juan,70,9 de Julio,70063,9 de Julio,70063040,5964.17
+2016,San Juan,70,9 de Julio,70063,9 de Julio,70063040,19404.6
+2016,San Juan,70,9 de Julio,70063,9 de Julio,70063040,251194.82
+2016,San Juan,70,Pocito,70070,Villa Aberastain,70070040,4218.8
+2016,San Juan,70,Pocito,70070,Villa Aberastain,70070040,9997
+2016,San Juan,70,Pocito,70070,Villa Aberastain,70070040,24599.81
+2016,San Juan,70,Pocito,70070,Villa Aberastain,70070040,5128.5
+2016,San Juan,70,Pocito,70070,Villa Aberastain,70070040,168288.63
+2016,San Juan,70,Pocito,70070,Villa Aberastain,70070040,902.8
+2016,San Juan,70,Pocito,70070,Villa Aberastain,70070040,1963.8
+2016,San Juan,70,Pocito,70070,Villa Aberastain,70070040,76774.01
+2016,San Juan,70,Pocito,70070,Villa Aberastain,70070040,82
+2016,San Juan,70,Pocito,70070,Villa Aberastain,70070040,80654.16
+2016,San Juan,70,Rawson,70077,Rawson,70077010,2891
+2016,San Juan,70,Rawson,70077,Rawson,70077010,404.6
+2016,San Juan,70,Rawson,70077,Rawson,70077010,80771.7
+2016,San Juan,70,Rawson,70077,Rawson,70077010,93413.8
+2016,San Juan,70,Rawson,70077,Rawson,70077010,30083.55
+2016,San Juan,70,Rawson,70077,Rawson,70077010,4897
+2016,San Juan,70,Rawson,70077,Rawson,70077010,8496.7
+2016,San Juan,70,Rivadavia,70084,Rivadavia,70084010,9834.6
+2016,San Juan,70,Rivadavia,70084,Rivadavia,70084010,12473.02
+2016,San Juan,70,Rivadavia,70084,Rivadavia,70084010,9227.2
+2016,San Juan,70,San Martín,70091,Villa San Martín,70091070,337.8
+2016,San Juan,70,San Martín,70091,Villa San Martín,70091070,12569.4
+2016,San Juan,70,San Martín,70091,Villa San Martín,70091070,157844.29
+2016,San Juan,70,San Martín,70091,Villa San Martín,70091070,24077.57
+2016,San Juan,70,San Martín,70091,Villa San Martín,70091070,119450.13
+2016,San Juan,70,San Martín,70091,Villa San Martín,70091070,151108.73
+2016,San Juan,70,San Martín,70091,Villa San Martín,70091070,1223.4
+2016,San Juan,70,San Martín,70091,Villa San Martín,70091070,6712.6
+2016,San Juan,70,San Martín,70091,Villa San Martín,70091070,164490.95
+2016,San Juan,70,San Martín,70091,Villa San Martín,70091070,8784.1
+2016,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,12590.1
+2016,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,77385.79
+2016,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,4671.9
+2016,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,15534.9
+2016,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,25202.67
+2016,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,11437.2
+2016,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,70050.64
+2016,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,7905.8
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,49263.96
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,6836.6
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,321169.71
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,14996.6
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,69684.9
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,73044.03
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,38107.15
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,170489.6
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,40991.2
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,66509.88
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,8025.8
+2016,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,168346
+2016,San Juan,70,Ullum,70112,Talacasto,70112A08,1956.9
+2016,San Juan,70,Ullum,70112,Talacasto,70112A08,94373.23
+2016,San Juan,70,Ullum,70112,Talacasto,70112A08,1506
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,5684.1
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,256162.71
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,6435.29
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,1623.43
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,48752.27
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,28778.3
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,82815.8
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,323361.75
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,15015.82
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,2487.2
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,222730.39
+2016,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,164303.75
+2016,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,1837.5
+2016,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,48303.59
+2016,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,20298.4
+2016,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,43914.35
+2016,San Luis,74,Ayacucho,74007,Candelaria,74007010,220.46
+2016,San Luis,74,Belgrano,74014,La Calera,74014010,10.6
+2016,San Luis,74,Junín,74049,Merlo,74049060,144
+2016,San Luis,74,Juan Martín de Pueyrredón,74056,San Luis,74056150,778.4
+2016,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,493.87
+2016,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,285.29
+2016,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,41.41
+2016,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,16.08
+2016,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,1.71
+2016,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,50.68
+2017,Buenos Aires,06,Balcarce,06063,Balcarce,06063010,258.38
+2017,Buenos Aires,06,General Pueyrredón,06357,Barrio El Boquerón,06357020,563.6
+2017,Buenos Aires,06,Saavedra,06700,Saavedra,06700070,22.1
+2017,Buenos Aires,06,Tornquist,06819,Tornquist,06819040,131.08
+2017,Buenos Aires,06,Tornquist,06819,Tornquist,06819040,80.42
+2017,Buenos Aires,06,Villarino,06875,Argerich,06875010,361.74
+2017,Catamarca,10,Andalgalá,10021,Andalgalá,10021020,336.2
+2017,Catamarca,10,Belén,10035,Belén,10035020,103.8
+2017,Catamarca,10,Belén,10035,Belén,10035020,190.5
+2017,Catamarca,10,Belén,10035,Belén,10035020,8812.76
+2017,Catamarca,10,Belén,10035,Belén,10035020,471.29
+2017,Catamarca,10,Belén,10035,Belén,10035020,304.46
+2017,Catamarca,10,Pomán,10084,Pomán,10084070,960.92
+2017,Catamarca,10,Pomán,10084,Pomán,10084070,1021.84
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,27.9
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,57.6
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,7348.2
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,3511.7
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,2554.63
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,165.4
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,568.1
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,8454.35
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,822.5
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,30.6
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,33823.06
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,137.6
+2017,Catamarca,10,Santa María,10091,Santa María,10091150,663.4
+2017,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,13484.61
+2017,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,744.12
+2017,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,7273.1
+2017,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,2320.72
+2017,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,7334.07
+2017,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,23550.54
+2017,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,4795.43
+2017,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,4671.6
+2017,Catamarca,10,Tinogasta,10105,Tinogasta,10105180,2044.57
+2017,Catamarca,10,Valle Viejo,10112,El Portezuelo,10112010,13.15
+2017,Córdoba,14,Calamuchita,14007,Santa Rosa de Calamuchita,14007210,272.7
+2017,Córdoba,14,Calamuchita,14007,Santa Rosa de Calamuchita,14007210,47.24
+2017,Córdoba,14,Colón,14021,La Calera,14021150,34.2
+2017,Córdoba,14,Colón,14021,La Calera,14021150,353.9
+2017,Córdoba,14,Colón,14021,La Calera,14021150,4132.99
+2017,Córdoba,14,Cruz del Eje,14028,Cruz del Eje,14028050,117.63
+2017,Córdoba,14,Cruz del Eje,14028,Cruz del Eje,14028050,167.4
+2017,Córdoba,14,Ischilín,14049,Ischilín,14049A07,176.1
+2017,Córdoba,14,Ischilín,14049,Ischilín,14049A07,239.04
+2017,Córdoba,14,San Javier,14133,San Javier y Yacanto,14133170,39.4
+2017,Córdoba,14,San Javier,14133,San Javier y Yacanto,14133170,127
+2017,Córdoba,14,San Javier,14133,San Javier y Yacanto,14133170,8.7
+2017,Córdoba,14,Santa María,14147,Las Quintas,14147190,81
+2017,Córdoba,14,Tulumba,14175,Villa Tulumba,14175110,11.04
+2017,Córdoba,14,Tulumba,14175,Villa Tulumba,14175110,61.72
+2017,Chubut,26,Cushamen,26014,Cushamen Centro,26014030,61.4
+2017,Chubut,26,Sarmiento,26091,Sarmiento,26091020,487.55
+2017,Entre Ríos,30,Colón,30008,Colón,30008020,392
+2017,Entre Ríos,30,Concordia,30015,Concordia,30015060,916.4
+2017,Entre Ríos,30,Diamante,30021,Diamante,30021080,167.37
+2017,Entre Ríos,30,Diamante,30021,Diamante,30021080,32.3
+2017,Entre Ríos,30,Gualeguaychú,30056,Gualeguaychú,30056070,66.04
+2017,Entre Ríos,30,Victoria,30105,Victoria,30105060,2
+2017,Entre Ríos,30,Victoria,30105,Victoria,30105060,20.6
+2017,Jujuy,38,Tilcara,38094,Tilcara,38094050,262
+2017,Jujuy,38,Tilcara,38094,Tilcara,38094050,90.2
+2017,Jujuy,38,Tumbaya,38098,Tumbaya,38098040,113.66
+2017,La Pampa,42,Curacó,42042,Puelches,42042020,292
+2017,La Pampa,42,Puelén,42112,Puelén,42112010,645.8
+2017,La Pampa,42,Puelén,42112,Puelén,42112010,11178.58
+2017,La Rioja,46,Castro Barros,46021,Aminga,46021010,24359.5
+2017,La Rioja,46,Castro Barros,46021,Aminga,46021010,4675.1
+2017,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,11278.4
+2017,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,4837.1
+2017,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,2511.2
+2017,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,19652.2
+2017,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,2295.9
+2017,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,119.35
+2017,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,374.3
+2017,La Rioja,46,General Felipe Varela,46028,Santa Clara,46028020,1932.5
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,1171.9
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,3283.85
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,93341.8
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,177332.58
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,7406.5
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,130
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,846.9
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,95.8
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,149692.92
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,58.2
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,136959.33
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,75708.36
+2017,La Rioja,46,Chilecito,46042,Chilecito,46042010,13.2
+2017,La Rioja,46,Famatina,46049,Famatina,46049070,10.2
+2017,La Rioja,46,Famatina,46049,Famatina,46049070,5971.4
+2017,La Rioja,46,Famatina,46049,Famatina,46049070,3641.85
+2017,La Rioja,46,Famatina,46049,Famatina,46049070,6049.14
+2017,La Rioja,46,Famatina,46049,Famatina,46049070,6511.8
+2017,La Rioja,46,Famatina,46049,Famatina,46049070,386.3
+2017,La Rioja,46,Famatina,46049,Famatina,46049070,1365.3
+2017,La Rioja,46,General Lamadrid,46077,Batidero,46077A00,275.1
+2017,La Rioja,46,General Lamadrid,46077,Batidero,46077A00,7305.7
+2017,La Rioja,46,Vinchina,46098,Villa San José de Vinchina,46098020,2853.8
+2017,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,472.99
+2017,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,519.58
+2017,La Rioja,46,San Blas de Los Sauces,46119,San Blas,46119010,1661.2
+2017,La Rioja,46,Sanagasta,46126,Villa Sanagasta,46126010,160
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,23944.9
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,2937.6
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,354.6
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,210.8
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,18111.31
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,739.4
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,10827.4
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,2990.7
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,790.3
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,11502.3
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,6479.78
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,938.8
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,2678.5
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,64.4
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,4211.21
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,68922.19
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,15048.88
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,10162.6
+2017,Mendoza,50,General Alvear,50014,General Alvear,50014030,7002.8
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,2290.35
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,2057.2
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,12261
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,1502.7
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,6674.98
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,6637.1
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,3801.3
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,35.8
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,17.4
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,2845.04
+2017,Mendoza,50,Guaymallén,50028,Guaymallén,50028020,6448.2
+2017,Mendoza,50,Junín,50035,Junín,50035020,77614.38
+2017,Mendoza,50,Junín,50035,Junín,50035020,6763.3
+2017,Mendoza,50,Junín,50035,Junín,50035020,1263.2
+2017,Mendoza,50,Junín,50035,Junín,50035020,187369.13
+2017,Mendoza,50,Junín,50035,Junín,50035020,13542.4
+2017,Mendoza,50,Junín,50035,Junín,50035020,2180.5
+2017,Mendoza,50,Junín,50035,Junín,50035020,954.6
+2017,Mendoza,50,Junín,50035,Junín,50035020,123993.13
+2017,Mendoza,50,Junín,50035,Junín,50035020,101694.38
+2017,Mendoza,50,Junín,50035,Junín,50035020,156183.38
+2017,Mendoza,50,Junín,50035,Junín,50035020,115523.02
+2017,Mendoza,50,Junín,50035,Junín,50035020,5035
+2017,Mendoza,50,Junín,50035,Junín,50035020,686
+2017,Mendoza,50,Junín,50035,Junín,50035020,1569.4
+2017,Mendoza,50,Junín,50035,Junín,50035020,204782.92
+2017,Mendoza,50,Junín,50035,Junín,50035020,3638.1
+2017,Mendoza,50,Junín,50035,Junín,50035020,12998.9
+2017,Mendoza,50,Junín,50035,Junín,50035020,198891.42
+2017,Mendoza,50,La Paz,50042,La Paz,50042020,3706.4
+2017,Mendoza,50,La Paz,50042,La Paz,50042020,1803.6
+2017,Mendoza,50,La Paz,50042,La Paz,50042020,4417.76
+2017,Mendoza,50,La Paz,50042,La Paz,50042020,1020.2
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,3184.8
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,31472.06
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,18259.55
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,29340.93
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,75.23
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,812.6
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,17642.8
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,2327.6
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,4134.6
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,2127.2
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,461.2
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,590
+2017,Mendoza,50,Las Heras,50049,Las Heras,50049050,62.1
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,17211.2
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,285.8
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,30603.3
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,3127
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,52425.3
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,557.2
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,77734.9
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,40545.65
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,14451
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1196.4
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,630.4
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,532.6
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,6448.8
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,458849.13
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,30822.04
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,7622.23
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,21207.6
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,305223.87
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,114927.1
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,24500
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,1455.6
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,15525
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,3328
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,4470.8
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,418.4
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,8875.02
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,68
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,69880.72
+2017,Mendoza,50,Lavalle,50056,Villa Tulumaya,50056160,50832.9
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,4108.82
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,20465.96
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,1565
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,8145.44
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,22610.58
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,171777.03
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,5557.91
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,623.8
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,7414.12
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,329945.72
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,20843.3
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,307631.92
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,32.66
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,101.2
+2017,Mendoza,50,Luján de Cuyo,50063,Luján de Cuyo,50063090,78754.51
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,1238.5
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,33421.81
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,7295.9
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,3631
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,23942.8
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,28717.92
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,23546.24
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,165.4
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,190.2
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,283841.83
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,7633.1
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,1633.4
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,417912.5
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,3066.2
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,497.5
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,14059.55
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,42211.95
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,28612.97
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,51618.04
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,35235.21
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,355.9
+2017,Mendoza,50,Maipú,50070,Maipú,50070060,66472.15
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,45606.26
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,85665.3
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,75709.25
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,590
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,12075.93
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,71901.87
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,83.4
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,118881
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,338947.06
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,128387.59
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,255670.79
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,101055.64
+2017,Mendoza,50,Rivadavia,50084,Rivadavia,50084140,60044.4
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,21824.79
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,142802.14
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,6933.5
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,7083.8
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,592.4
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,342.1
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,232067.58
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,18324.42
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,7639.35
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,20594.39
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,2079.4
+2017,Mendoza,50,San Carlos,50091,San Carlos,50091060,786.4
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,93121.86
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,4542.3
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,165369.41
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,225034.53
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,161506.6
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,147307.78
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,321348.53
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,178951.7
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,32648.2
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,73962.88
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,80012.9
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,8170.2
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,155540.42
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,43778.9
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,42843.67
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,470440.18
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,3020
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,118485.3
+2017,Mendoza,50,San Martín,50098,San Martín,50098100,706748.42
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,9077
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,1265.6
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,30680.2
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,13310.5
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,1778.4
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,2457.8
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,20512.62
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,5137
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,1614.4
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,196.4
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,6280.71
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,1094.8
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,38117.36
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,107.6
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,172.8
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,75580.65
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,38884.33
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,330.8
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,9285.4
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,512.09
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,56403.29
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,281.2
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,4058.6
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,77755.08
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,7078.2
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,801
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,23299.3
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,1206.4
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,992.2
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,869.9
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,2638.4
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,5086.38
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,64441.24
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,3971.55
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,782.2
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,143916.34
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,150.8
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,21117.6
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,2353.4
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,308.8
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,2483.4
+2017,Mendoza,50,San Rafael,50105,San Rafael,50105210,2259.21
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,3804.3
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,4470.6
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,630
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,58155.37
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,50015.85
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,59074.3
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,225587.57
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,71506.35
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,4612.7
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,17383.8
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,90929.48
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,24296.88
+2017,Mendoza,50,Santa Rosa,50112,Santa Rosa,50112060,71571.1
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,167800.5
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,2449.6
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,69412.64
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,8939.11
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,105112.85
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,14581.59
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,1513.83
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,163.37
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,60515.97
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,50941.16
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,13538.81
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,34118.36
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,117672.7
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,7565.26
+2017,Mendoza,50,Tunuyán,50119,Tunuyán,50119060,38815.39
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,41767.12
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,3628.74
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,25.8
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,164370.04
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,5890.4
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,54805.22
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,28901.49
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,93795.26
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,24773.01
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,11749.68
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,23409.85
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,140849.25
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,134028.99
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,8569
+2017,Mendoza,50,Tupungato,50126,Tupungato,50126060,55657.47
+2017,Neuquén,58,Añelo,58014,Añelo,58014010,4377
+2017,Neuquén,58,Añelo,58014,Añelo,58014010,94343.91
+2017,Neuquén,58,Confluencia,58035,Senillosa,58035110,1588.6
+2017,Neuquén,58,Confluencia,58035,Senillosa,58035110,934.7
+2017,Neuquén,58,Lácar,58056,San Martín de los Andes,58056010,54
+2017,Río Negro,62,Adolfo Alsina,62007,El Juncal,62007030,1988.56
+2017,Río Negro,62,Avellaneda,62014,Pomona,62014090,952.6
+2017,Río Negro,62,Avellaneda,62014,Pomona,62014090,144.8
+2017,Río Negro,62,Avellaneda,62014,Pomona,62014090,388.97
+2017,Río Negro,62,Avellaneda,62014,Pomona,62014090,3296.8
+2017,Río Negro,62,El Cuy,62035,El Cuy,62035030,753.87
+2017,Río Negro,62,El Cuy,62035,El Cuy,62035030,2696.99
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,1410
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,198.5
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,4.8
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,105.4
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,2552.2
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,574.2
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,12076.31
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,182.3
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,12813.99
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,1608.4
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,3655.08
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,325.57
+2017,Río Negro,62,General Roca,62042,General Roca,62042450,2463.95
+2017,Salta,66,Cachi,66014,Cachi,66014010,1452.22
+2017,Salta,66,Cachi,66014,Cachi,66014010,4290.7
+2017,Salta,66,Cafayate,66021,Cafayate,66021010,8451
+2017,Salta,66,Cafayate,66021,Cafayate,66021010,47539.86
+2017,Salta,66,Cafayate,66021,Cafayate,66021010,3923.03
+2017,Salta,66,Cafayate,66021,Cafayate,66021010,7109.19
+2017,Salta,66,Cafayate,66021,Cafayate,66021010,227223.39
+2017,Salta,66,La Viña,66098,La Viña,66098040,252
+2017,Salta,66,Molinos,66119,Molinos,66119020,6580.3
+2017,Salta,66,Molinos,66119,Molinos,66119020,88
+2017,Salta,66,Molinos,66119,Molinos,66119020,1740.31
+2017,Salta,66,San Carlos,66154,San Carlos,66154040,185
+2017,Salta,66,San Carlos,66154,San Carlos,66154040,2929.77
+2017,Salta,66,San Carlos,66154,San Carlos,66154040,45451.36
+2017,Salta,66,San Carlos,66154,San Carlos,66154040,670
+2017,Salta,66,San Carlos,66154,San Carlos,66154040,6599.6
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,90384.74
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,12472.4
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,9237.6
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,9103.81
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,25993.58
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,2051.9
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,390.4
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,3141.76
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,9197.79
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,1180.5
+2017,San Juan,70,Albardón,70007,El Rincón,70007010,7379.8
+2017,San Juan,70,Angaco,70014,Las Tapias,70014010,17600.3
+2017,San Juan,70,Angaco,70014,Las Tapias,70014010,981.2
+2017,San Juan,70,Angaco,70014,Las Tapias,70014010,69304.67
+2017,San Juan,70,Angaco,70014,Las Tapias,70014010,26284.7
+2017,San Juan,70,Angaco,70014,Las Tapias,70014010,50835.82
+2017,San Juan,70,Angaco,70014,Las Tapias,70014010,19077.18
+2017,San Juan,70,Angaco,70014,Las Tapias,70014010,35603.84
+2017,San Juan,70,Angaco,70014,Las Tapias,70014010,44394.55
+2017,San Juan,70,Angaco,70014,Las Tapias,70014010,6187
+2017,San Juan,70,Calingasta,70021,Calingasta,70021020,1650.8
+2017,San Juan,70,Calingasta,70021,Calingasta,70021020,9850.6
+2017,San Juan,70,Calingasta,70021,Calingasta,70021020,1242.36
+2017,San Juan,70,Calingasta,70021,Calingasta,70021020,154.4
+2017,San Juan,70,Calingasta,70021,Calingasta,70021020,1405.2
+2017,San Juan,70,Calingasta,70021,Calingasta,70021020,180.7
+2017,San Juan,70,Caucete,70035,Caucete,70035020,193740.88
+2017,San Juan,70,Caucete,70035,Caucete,70035020,3804
+2017,San Juan,70,Caucete,70035,Caucete,70035020,350.2
+2017,San Juan,70,Caucete,70035,Caucete,70035020,199.8
+2017,San Juan,70,Caucete,70035,Caucete,70035020,45612.9
+2017,San Juan,70,Caucete,70035,Caucete,70035020,178004.77
+2017,San Juan,70,Caucete,70035,Caucete,70035020,94908.1
+2017,San Juan,70,Caucete,70035,Caucete,70035020,79553.55
+2017,San Juan,70,Caucete,70035,Caucete,70035020,863.8
+2017,San Juan,70,Caucete,70035,Caucete,70035020,392532.89
+2017,San Juan,70,Caucete,70035,Caucete,70035020,116.8
+2017,San Juan,70,Caucete,70035,Caucete,70035020,24667.2
+2017,San Juan,70,Chimbas,70042,Chimbas,70042010,10732.27
+2017,San Juan,70,Chimbas,70042,Chimbas,70042010,862.4
+2017,San Juan,70,Chimbas,70042,Chimbas,70042010,101410.24
+2017,San Juan,70,Iglesia,70049,Iglesia,70049030,63.6
+2017,San Juan,70,9 de Julio,70063,9 de Julio,70063040,5527.78
+2017,San Juan,70,9 de Julio,70063,9 de Julio,70063040,101609.72
+2017,San Juan,70,9 de Julio,70063,9 de Julio,70063040,569.8
+2017,San Juan,70,9 de Julio,70063,9 de Julio,70063040,216234.47
+2017,San Juan,70,9 de Julio,70063,9 de Julio,70063040,19057.6
+2017,San Juan,70,9 de Julio,70063,9 de Julio,70063040,40028
+2017,San Juan,70,9 de Julio,70063,9 de Julio,70063040,1466.5
+2017,San Juan,70,Pocito,70070,Villa Aberastain,70070040,30.6
+2017,San Juan,70,Pocito,70070,Villa Aberastain,70070040,64382.03
+2017,San Juan,70,Pocito,70070,Villa Aberastain,70070040,15262.2
+2017,San Juan,70,Pocito,70070,Villa Aberastain,70070040,141795.69
+2017,San Juan,70,Pocito,70070,Villa Aberastain,70070040,590.6
+2017,San Juan,70,Pocito,70070,Villa Aberastain,70070040,1342.8
+2017,San Juan,70,Pocito,70070,Villa Aberastain,70070040,8654.6
+2017,San Juan,70,Pocito,70070,Villa Aberastain,70070040,2590.3
+2017,San Juan,70,Pocito,70070,Villa Aberastain,70070040,3238.26
+2017,San Juan,70,Pocito,70070,Villa Aberastain,70070040,57719.8
+2017,San Juan,70,Rawson,70077,Rawson,70077010,2303.8
+2017,San Juan,70,Rawson,70077,Rawson,70077010,54747.23
+2017,San Juan,70,Rawson,70077,Rawson,70077010,6944.3
+2017,San Juan,70,Rawson,70077,Rawson,70077010,288.8
+2017,San Juan,70,Rawson,70077,Rawson,70077010,4568.74
+2017,San Juan,70,Rawson,70077,Rawson,70077010,22694.8
+2017,San Juan,70,Rawson,70077,Rawson,70077010,80439.59
+2017,San Juan,70,Rivadavia,70084,Rivadavia,70084010,9980.2
+2017,San Juan,70,Rivadavia,70084,Rivadavia,70084010,6438.8
+2017,San Juan,70,Rivadavia,70084,Rivadavia,70084010,6852.63
+2017,San Juan,70,San Martín,70091,Villa San Martín,70091070,11675.4
+2017,San Juan,70,San Martín,70091,Villa San Martín,70091070,109849.03
+2017,San Juan,70,San Martín,70091,Villa San Martín,70091070,124676.64
+2017,San Juan,70,San Martín,70091,Villa San Martín,70091070,374.6
+2017,San Juan,70,San Martín,70091,Villa San Martín,70091070,12353.9
+2017,San Juan,70,San Martín,70091,Villa San Martín,70091070,25570.6
+2017,San Juan,70,San Martín,70091,Villa San Martín,70091070,152853.6
+2017,San Juan,70,San Martín,70091,Villa San Martín,70091070,125857.37
+2017,San Juan,70,San Martín,70091,Villa San Martín,70091070,5561.2
+2017,San Juan,70,San Martín,70091,Villa San Martín,70091070,579.4
+2017,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,56619.41
+2017,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,54076.7
+2017,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,7856.4
+2017,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,7025
+2017,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,10555.14
+2017,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,16722.5
+2017,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,3210.22
+2017,San Juan,70,Santa Lucía,70098,Santa Lucía,70098010,7941.19
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,81418.6
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,4126.6
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,45443.4
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,404311.69
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,153607.36
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,46733.14
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,61448.55
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,27873.77
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,45983
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,11662.8
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,189845.55
+2017,San Juan,70,Sarmiento,70105,Villa Media Agua,70105100,9647
+2017,San Juan,70,Ullum,70112,Talacasto,70112A08,104615.27
+2017,San Juan,70,Ullum,70112,Talacasto,70112A08,2507.5
+2017,San Juan,70,Ullum,70112,Talacasto,70112A08,882
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,12319.6
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,240320.41
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,4804.2
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,18909.6
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,241805.25
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,140191.07
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,4265.3
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,7586.2
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,2361.4
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,998
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,54395.65
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,77703.4
+2017,San Juan,70,25 de Mayo,70126,Villa Santa Rosa,70126050,311754.47
+2017,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,1606.2
+2017,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,33381.09
+2017,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,21430.63
+2017,San Juan,70,Zonda,70133,Villa Basilio Nievas,70133010,42348.47
+2017,San Luis,74,Ayacucho,74007,Candelaria,74007010,391.46
+2017,San Luis,74,Belgrano,74014,La Calera,74014010,104.5
+2017,San Luis,74,Junín,74049,Merlo,74049060,439
+2017,San Luis,74,Juan Martín de Pueyrredón,74056,San Luis,74056150,792.7
+2017,San Luis,74,Juan Martín de Pueyrredón,74056,San Luis,74056150,27
+2017,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,19.11
+2017,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,594.27
+2017,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,22.19
+2017,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,121.69
+2017,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,1969.84
+2017,Tucumán,90,Tafí del Valle,90098,Tafí del Valle,90098040,184.73

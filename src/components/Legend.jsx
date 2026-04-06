@@ -12,13 +12,25 @@ const LEGENDS = {
     ],
   },
   alineamiento: {
-    title: 'Alignment w/ National Gov.',
+    title: 'Alignment (editorial)',
+    subtitle: 'Editorial label — not reproducible. Prefer Align. Score.',
     items: [
       { color: '#7d3c98', label: 'Ruling coalition' },
       { color: '#17a589', label: 'Allied' },
       { color: '#d4a800', label: 'Negotiator' },
       { color: '#C1121F', label: 'Opposition' },
       { color: '#780000', label: 'Hard opposition' },
+    ],
+  },
+  score_executive: {
+    title: 'Alignment Score (reproducible)',
+    subtitle: '% of votes matching executive, avg across province legislators',
+    items: [
+      { color: '#780000', label: '< 20% (hard opp.)' },
+      { color: '#C1121F', label: '20–40%' },
+      { color: '#d4a800', label: '40–60%' },
+      { color: '#17a589', label: '60–80%' },
+      { color: '#7d3c98', label: '> 80% (exec.)' },
     ],
   },
   poblacion: {
@@ -33,7 +45,8 @@ const LEGENDS = {
     ],
   },
   pobreza: {
-    title: 'Poverty Rate (EPH H2 2024)',
+    title: 'Poverty (EPH urban, H2 2024)',
+    subtitle: 'GBA + provincial capitals only — not province-wide',
     items: [
       { color: '#27ae60', label: '< 25%' },
       { color: '#f39c12', label: '25–35%' },
@@ -90,7 +103,7 @@ const MINERAL_LEGEND = {
   ],
 };
 
-function LegendBox({ title, items, useCircles = false, mobile = false }) {
+function LegendBox({ title, subtitle, items, useCircles = false, mobile = false }) {
   return (
     <div
       className="backdrop-blur-sm rounded-md shadow-sm"
@@ -103,10 +116,18 @@ function LegendBox({ title, items, useCircles = false, mobile = false }) {
     >
       <p
         className="font-bold tracking-[1.4px] uppercase"
-        style={{ color: 'rgba(0,48,73,0.55)', fontSize: mobile ? 8 : 10, marginBottom: mobile ? 4 : 8 }}
+        style={{ color: 'rgba(0,48,73,0.55)', fontSize: mobile ? 8 : 10, marginBottom: subtitle ? 2 : (mobile ? 4 : 8) }}
       >
         {title}
       </p>
+      {subtitle && (
+        <p
+          className="italic"
+          style={{ color: 'rgba(0,48,73,0.45)', fontSize: mobile ? 8 : 9, marginBottom: mobile ? 4 : 6, lineHeight: 1.2 }}
+        >
+          {subtitle}
+        </p>
+      )}
       <div className="flex flex-col" style={{ gap: mobile ? 2 : 4 }}>
         {items.map((item, i) => (
           <div key={i} className="flex items-center" style={{ gap: mobile ? 5 : 8 }}>
@@ -153,7 +174,7 @@ export default function Legend({ choroplethMode, showMining = false, showEnergy 
       role="complementary"
       aria-label="Map legend"
     >
-      {legend && <LegendBox title={legend.title} items={legend.items} mobile={mobile} />}
+      {legend && <LegendBox title={legend.title} subtitle={legend.subtitle} items={legend.items} mobile={mobile} />}
       {showMining && <LegendBox title={MINERAL_LEGEND.title} items={MINERAL_LEGEND.items} useCircles mobile={mobile} />}
       {showEnergy && <LegendBox title={ENERGY_LEGEND.title} items={ENERGY_LEGEND.items} useCircles mobile={mobile} />}
     </div>

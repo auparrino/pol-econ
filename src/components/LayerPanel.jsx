@@ -2,11 +2,12 @@ import { ENERGY_LAYER_CONFIGS } from './EnergyLayers';
 
 const CHOROPLETH_MODES = [
   { id: 'none', label: 'None' },
+  { id: 'region', label: 'Region' },
   { id: 'partido', label: 'Gov. Party' },
-  { id: 'alineamiento', label: 'Alignment' },
+  { id: 'alineamiento', label: 'Alignment (edit.)' },
+  { id: 'score_executive', label: 'Align. Score' },
   { id: 'pobreza', label: 'Poverty' },
   { id: 'poblacion', label: 'Population' },
-  { id: 'region', label: 'Region' },
   { id: 'fiscal', label: 'Fiscal Dep.' },
 ];
 

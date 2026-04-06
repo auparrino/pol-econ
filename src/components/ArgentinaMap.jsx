@@ -6,6 +6,7 @@ import { miningProjects } from '../data/miningProjects';
 import EnergyLayers from './EnergyLayers';
 import { sociodemographic } from '../data/sociodemographic';
 import { getAllFiscal } from '../hooks/useEconomyData';
+import alignmentScores from '../data/alignmentScores.json';
 
 const PARTY_COLORS = {
   'PJ': '#1a6fa3',
@@ -140,6 +141,29 @@ const POVERTY_SCALE = [
   { max: 55, color: '#C1121F' },
   { max: Infinity, color: '#780000' },
 ];
+
+function getAlignScoreColor(provinceName) {
+  const target = provinceName?.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+  if (!target) return '#e5e5e5';
+  const isCABA = target.includes('ciudad') || target === 'caba';
+  let match = null;
+  for (const [key, val] of Object.entries(alignmentScores.per_province || {})) {
+    const k = key.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+    if (isCABA) {
+      if (k.includes('ciudad') || k === 'caba') { match = val; break; }
+      continue;
+    }
+    if (k.includes('ciudad')) continue;
+    if (k === target || k.includes(target) || target.includes(k)) { match = val; break; }
+  }
+  const s = match?.score_executive;
+  if (s == null) return '#e5e5e5';
+  if (s < 0.2) return '#780000';
+  if (s < 0.4) return '#C1121F';
+  if (s < 0.6) return '#d4a800';
+  if (s < 0.8) return '#17a589';
+  return '#7d3c98';
+}
 
 function getPovertyColor(provinceName) {
   const pn = provinceName?.toLowerCase();
@@ -297,6 +321,7 @@ export default function ArgentinaMap({
       case 'region': return getRegionColor(gov);
       case 'pobreza': return getPovertyColor(provinceName);
       case 'fiscal': return getFiscalColor(provinceName);
+      case 'score_executive': return getAlignScoreColor(provinceName);
       default: return '#669BBC';
     }
   }, [governors, choroplethMode]);

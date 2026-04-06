@@ -6,6 +6,7 @@ import MobileMapTab from './MobileMapTab';
 const MobileProvinceTab = lazy(() => import('./MobileProvinceTab'));
 const MobileNationTab = lazy(() => import('./MobileNationTab'));
 const MobileMacroTab = lazy(() => import('./MobileMacroTab'));
+const VotesView = lazy(() => import('../VotesView'));
 
 const TAB_BAR_H = 56;
 
@@ -85,6 +86,7 @@ function PeekCard({ province, governor, onOpen, onDismiss }) {
 const TABS = [
   { id: 'map',      label: 'Map',      icon: '🗺' },
   { id: 'province', label: 'Province', icon: '📍' },
+  { id: 'votes',    label: 'Votes',    icon: '🗳' },
   { id: 'nation',   label: 'Nation',   icon: '🏛' },
   { id: 'macro',    label: 'Macro',    icon: '📊' },
 ];
@@ -146,6 +148,13 @@ export default function MobileShell({
                 energyLayers={energyLayers}
                 onGoToMap={() => setTab('map')}
               />
+            </Suspense>
+          </ErrorBoundary>
+        )}
+        {tab === 'votes' && (
+          <ErrorBoundary>
+            <Suspense fallback={<LoadingSpinner />}>
+              <VotesView mobile />
             </Suspense>
           </ErrorBoundary>
         )}

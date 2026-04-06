@@ -7,6 +7,7 @@ const ProvincialCongressPanel = lazy(() => import('./panels/ProvincialCongressPa
 const CabinetPanel = lazy(() => import('./panels/CabinetPanel'));
 const ProvincialCabinetPanel = lazy(() => import('./panels/ProvincialCabinetPanel'));
 const EconomyPanel = lazy(() => import('./panels/EconomyPanel'));
+const MobileMacroTab = lazy(() => import('./mobile/MobileMacroTab'));
 
 const PanelFallback = () => (
   <div className="flex items-center justify-center h-full">
@@ -19,6 +20,7 @@ const BASE_TABS = [
   { id: 'cabinet', label: 'Cabinet' },
   { id: 'economy', label: 'Economy' },
   { id: 'news', label: 'News' },
+  { id: 'macro', label: 'Macro' },
 ];
 
 export default function BottomBar({ congress, overlays, energyLayers, selectedProvince, governors, mobile = false }) {
@@ -92,6 +94,11 @@ export default function BottomBar({ congress, overlays, energyLayers, selectedPr
               : <div className="flex flex-col items-center justify-center py-8 text-center">
                   <p className="text-[13px] text-[#003049]/50">Select a province on the map to view provincial news summaries.</p>
                 </div>
+          )}
+          {activeTab === 'macro' && (
+            <div className="relative" style={{ minHeight: 400 }}>
+              <MobileMacroTab />
+            </div>
           )}
         </Suspense>
       </div>

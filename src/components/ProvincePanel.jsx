@@ -5,8 +5,11 @@ import { sociodemographic } from '../data/sociodemographic';
 import { officialSenators } from '../data/officialSenators';
 import { officialDeputies } from '../data/officialDeputies';
 import votacionesRaw from '../data/votaciones.json';
+import alignmentScores from '../data/alignmentScores.json';
 import { fiscalData } from '../data/fiscalData';
 import EconomySummary from './economy/EconomySummary';
+import { FiscalTriptych } from './shared/FiscalTriptych';
+import { RigiPanel } from './shared/RigiPanel';
 // ProvinceNews moved to left sidebar (BottomBar tabs)
 
 
@@ -245,30 +248,22 @@ function SocioSection({ province }) {
   return (
     <Section title="Socioeconomic">
       <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10 space-y-1.5">
-        <HBar value={data.pobreza} max={65} color={povertyColor} label="Poverty" info="% of population below the poverty line. Source: INDEC EPH 2024 (urban areas). National average ~38%." />
-        <HBar value={data.desempleo} max={12} color={unemployColor} label="Unemploy." info="Open unemployment rate (%). Source: INDEC EPH 2024 Q2. Urban areas only." />
-        {fiscal && (
-          <HBar
-            value={fiscal.transferencias_pct}
-            max={100}
-            color={fiscalColor}
-            label="Fed. transfers"
-            info="% of total provincial revenues from national transfers (coparticipación + discretionary). Source: Ministerio de Economía / IARAF 2023."
-          />
-        )}
+        <HBar value={data.pobreza} max={65} color={povertyColor} label="Poverty" info="% of population below the poverty line. EPH urban aggregates (GBA + provincial capitals). NOT province-wide. Source: INDEC EPH H2 2024." />
+        <HBar value={data.desempleo} max={12} color={unemployColor} label="Unemploy." info="Open unemployment rate (%). EPH urban only. Source: INDEC EPH 2024 Q2." />
       </div>
       <div className="mt-2">
-        <DataRow label="PBG/cap (PPP)" value={`$${data.pbg_per_capita_usd?.toLocaleString('en-US')}`} color="text-success" />
-        <DataRow label="Schooling" value={`${data.escolaridad} yrs`} />
-        <DataRow label="Literacy" value={`${data.alfabetismo}%`} />
-        {fiscal && (
-          <DataRow
-            label="Own revenues"
-            value={`${fiscal.recursos_propios_pct}%`}
-            info="% of total provincial revenues from own sources (provincial taxes, royalties). Complement of federal transfers. Source: Ministerio de Economía / IARAF 2023."
-          />
-        )}
+        <DataRow label="PBG/cap (PPP)" value={`$${data.pbg_per_capita_usd?.toLocaleString('en-US')}`} color="text-success" info="CEPAL 2022 estimate. Source: CEPAL provincial accounts." />
+        <DataRow label="Schooling" value={`${data.escolaridad} yrs`} info="Census 2022." />
+        <DataRow label="Literacy" value={`${data.alfabetismo}%`} info="Census 2022." />
       </div>
+    </Section>
+  );
+}
+
+function FiscalSection({ province }) {
+  return (
+    <Section title="Fiscal Dependency" tooltip="Share of provincial revenues from national transfers. Sparkline shows dependency% 2005→latest (Mecon DNAP). Discrecionales share = nationalTransfers − coparticipation, the portion the executive can turn on/off politically.">
+      <FiscalTriptych provinceName={province} />
     </Section>
   );
 }
@@ -321,6 +316,16 @@ function VoteDot({ topic, vote }) {
   );
 }
 
+function MiniMetric({ label, value }) {
+  const display = value == null ? '—' : `${Math.round(value * 100)}%`;
+  return (
+    <div className="text-center">
+      <div className="text-[8px] uppercase tracking-wider text-[#003049]/50 leading-none">{label}</div>
+      <div className="text-[12px] font-mono font-bold text-[#003049] leading-tight mt-0.5">{display}</div>
+    </div>
+  );
+}
+
 function LegislatorCard({ leg }) {
   const coColor = COALITION_COLORS[leg.co] || COALITION_COLORS.OTROS;
 
@@ -334,20 +339,19 @@ function LegislatorCard({ leg }) {
 
   // Topics for this chamber
   const chamberTopics = leg.c === 'senadores' ? SENATE_TOPICS : DEPUTY_TOPICS;
-  const blocPos = leg.c === 'senadores' ? senateBlocPos : deputyBlocPos;
 
   const hasAnyVote = chamberTopics.some(t => votes[t]);
 
-  // Compute alla: % of votes matching the ruling bloc's >=90% position
-  const computedAlla = (() => {
-    if (leg.alla != null) return leg.alla;
-    if (!votes || Object.keys(votes).length === 0) return null;
-    // Only count topics where both legislator voted AND bloc had a clear position
-    const comparable = chamberTopics.filter(t => votes[t] && blocPos[t]);
-    if (!comparable.length) return null;
-    const aligned = comparable.filter(t => votes[t] === blocPos[t]).length;
-    return Math.round((aligned / comparable.length) * 100);
-  })();
+  // Reproducible 3 metrics from alignmentScores.json (computed by scripts/compute-alignment.mjs)
+  const scoreEntry = alignmentScores.per_legislator?.[voteRecord?.n] || null;
+  const scoreExecutive = scoreEntry?.score_executive ?? null;
+  const scoreBloc = scoreEntry?.score_bloc ?? null;
+  const rateAbsent = scoreEntry?.rate_absent ?? null;
+
+  const tooltipTxt =
+    'Reproducible metrics across 6 curated executive-position votes (2024–26). ' +
+    'w/Exec = matches executive / cast. w/Bloc = matches own-bloc majority (≥60%) / cast. ' +
+    'Absent = absences / total listed. See src/data/executivePositions.json.';
 
   return (
     <div className="py-1.5 border-b border-steel-dim/10 last:border-0">
@@ -360,9 +364,14 @@ function LegislatorCard({ leg }) {
             {leg.term && <span className="text-[#003049]/50 ml-1">({leg.term})</span>}
           </p>
         </div>
-        <div className="text-right shrink-0" title="% of all congressional votes aligned with the LLA ruling bloc (source: comovoto.dev.ar)">
-          <p className="text-[11px] text-[#003049]/60 mb-0.5">Gov. align</p>
-          <AlignmentBar value={computedAlla} />
+        <div
+          className="grid grid-cols-3 gap-1.5 shrink-0 px-1.5 py-1 rounded"
+          style={{ background: 'rgba(0,48,73,0.05)', minWidth: 104 }}
+          title={tooltipTxt}
+        >
+          <MiniMetric label="w/Exec" value={scoreExecutive} />
+          <MiniMetric label="w/Bloc" value={scoreBloc} />
+          <MiniMetric label="Absent" value={rateAbsent} />
         </div>
       </div>
       {hasAnyVote && (
@@ -429,6 +438,7 @@ function LegislatorsSection({ province, congress }) {
       co: match?.co || official.co,
       alla: match?.alla ?? null,
       pres: match?.pres ?? null,
+      tv: match?.tv ?? null,
       c: 'senadores',
       term: `${official.desde}–${official.hasta}`,
     };
@@ -453,6 +463,7 @@ function LegislatorsSection({ province, congress }) {
       b: official.b,
       co: match?.co || official.co,
       alla: match?.alla ?? null,
+      tv: match?.tv ?? null,
       c: 'diputados',
       term: `${official.desde}–${official.hasta}`,
     };
@@ -494,6 +505,11 @@ function LegislatorsSection({ province, congress }) {
             </div>
           </div>
         </Section>
+      )}
+      {(senators.length > 0 || deputies.length > 0) && (
+        <p className="mb-1.5 text-[10px] text-[#003049]/55 leading-tight">
+          <span className="font-semibold text-[#003049]/70">Gov. align</span> = % of all roll-call votes (n) where the legislator sided with the LLA bloc, since Dec 2023. Dots below show key topic samples only — they do not feed the %.
+        </p>
       )}
       {(senators.length > 0 || deputies.length > 0) && (
         <div className="mb-2 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[10px] text-[#003049]/70">
@@ -647,14 +663,25 @@ export default function ProvincePanel({ province, governors, congress, onClose, 
             {/* Socioeconomic */}
             <SocioSection province={province} />
 
-            {/* RIGI */}
-            {polContext?.rigi_adhesion_provincial && (
-              <Section title="RIGI">
-                <div className="bg-[#003049]/6 rounded-md p-2 border border-[#003049]/10">
-                  <DataRow label="Status" value={polContext.rigi_adhesion_provincial} />
+            {/* Fiscal Dependency (tríptico: %, disc share, Δ vs 2019, sparkline 2005→2024) */}
+            <FiscalSection province={province} />
+
+            {/* RIGI — national projects + provincial adhesion law (separate things) */}
+            <Section
+              title="RIGI"
+              tooltip="Two separate things: (1) National-level project approval by the Executive — works regardless of the province — and (2) Provincial adhesion law, which adds provincial-level tax benefits on top. A province without its own adhesion law can still host approved RIGI projects."
+            >
+              <RigiPanel provinceName={province} />
+              {polContext?.rigi_adhesion_provincial && (
+                <div className="mt-2 pt-2 border-t border-[#003049]/10">
+                  <DataRow
+                    label="Provincial adhesion law"
+                    value={polContext.rigi_adhesion_provincial}
+                    info="Whether the province has passed its own RIGI adhesion law, which layers provincial tax benefits on top of the national regime. Independent from national project approval."
+                  />
                 </div>
-              </Section>
-            )}
+              )}
+            </Section>
 
             {/* Economic summary (SIPA + Fiscal + Exports) */}
             <EconomySummary province={province} Section={Section} DataRow={DataRow} />

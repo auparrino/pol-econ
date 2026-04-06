@@ -1,0 +1,139 @@
+<h2>Layout Correcto: Propuesta Final</h2>
+<p class="subtitle">Congress/Cabinet a la izquierda | Layers abajo | Province se queda a la derecha</p>
+
+<div class="mockup" style="max-width:900px;margin:0 auto;">
+  <div class="mockup-header">Nuevo Layout PoliticDash (Comex-style)</div>
+  <div class="mockup-body" style="padding:0;background:#FDF0D5;font-family:Inter,system-ui,sans-serif;">
+
+    <!-- Header - light comex style -->
+    <div style="background:#FFF8EB;padding:10px 16px;border-bottom:1px solid #d4c4a0;display:flex;justify-content:space-between;align-items:center;">
+      <div>
+        <span style="font-size:15px;font-weight:700;color:#003049;letter-spacing:0.5px;">ARGENTINA</span>
+        <span style="font-size:9px;color:#669BBC;margin-left:6px;">Political Dashboard</span>
+      </div>
+      <div style="display:flex;gap:5px;font-size:8px;flex-wrap:wrap;justify-content:flex-end;">
+        <span style="background:rgba(0,48,73,0.06);padding:3px 8px;border-radius:12px;color:#003049;border:1px solid rgba(0,48,73,0.13);">USD <b>1,200</b></span>
+        <span style="background:rgba(0,48,73,0.06);padding:3px 8px;border-radius:12px;color:#003049;border:1px solid rgba(0,48,73,0.13);">Blue <b>1,350</b></span>
+        <span style="background:rgba(0,48,73,0.06);padding:3px 8px;border-radius:12px;color:#003049;border:1px solid rgba(0,48,73,0.13);">Riesgo <b style="color:#C1121F;">650</b></span>
+        <span style="background:rgba(0,48,73,0.06);padding:3px 8px;border-radius:12px;color:#003049;border:1px solid rgba(0,48,73,0.13);">Soja <b>$380</b></span>
+        <span style="background:rgba(0,48,73,0.06);padding:3px 8px;border-radius:12px;color:#003049;border:1px solid rgba(0,48,73,0.13);">Dep.30d <b>2.8%</b></span>
+      </div>
+    </div>
+
+    <!-- Main content area -->
+    <div style="display:flex;height:260px;">
+
+      <!-- LEFT: Congress/Cabinet/Overlays (was BottomBar) -->
+      <div style="width:140px;background:#FFF8EB;border-right:1px solid #d4c4a0;display:flex;flex-direction:column;overflow:hidden;">
+        <!-- Tabs as pill buttons -->
+        <div style="padding:8px 8px 4px;display:flex;gap:3px;flex-wrap:wrap;">
+          <span style="font-size:7px;font-weight:600;padding:3px 7px;background:#003049;color:#FDF0D5;border-radius:10px;cursor:pointer;">Congress</span>
+          <span style="font-size:7px;padding:3px 7px;border-radius:10px;cursor:pointer;border:1px solid rgba(0,48,73,0.2);color:#003049;">Cabinet</span>
+          <span style="font-size:7px;padding:3px 7px;border-radius:10px;cursor:pointer;border:1px solid rgba(0,48,73,0.2);color:#003049;">Overlays</span>
+        </div>
+        <!-- Congress content -->
+        <div style="flex:1;overflow-y:auto;padding:6px 8px;font-size:7px;color:#003049;">
+          <div style="font-weight:600;font-size:7px;text-transform:uppercase;opacity:0.45;margin-bottom:4px;letter-spacing:0.5px;">Senate Blocs</div>
+          <div style="background:rgba(0,48,73,0.05);border-radius:4px;padding:4px 6px;margin-bottom:3px;">
+            <div style="display:flex;justify-content:space-between;"><span style="font-weight:600;">UP</span><span>33</span></div>
+          </div>
+          <div style="background:rgba(0,48,73,0.05);border-radius:4px;padding:4px 6px;margin-bottom:3px;">
+            <div style="display:flex;justify-content:space-between;"><span style="font-weight:600;">LLA</span><span>7</span></div>
+          </div>
+          <div style="background:rgba(0,48,73,0.05);border-radius:4px;padding:4px 6px;margin-bottom:3px;">
+            <div style="display:flex;justify-content:space-between;"><span style="font-weight:600;">PRO</span><span>6</span></div>
+          </div>
+          <div style="font-weight:600;font-size:7px;text-transform:uppercase;opacity:0.45;margin:8px 0 4px;letter-spacing:0.5px;">Deputies Blocs</div>
+          <div style="background:rgba(0,48,73,0.05);border-radius:4px;padding:4px 6px;margin-bottom:3px;">
+            <div style="display:flex;justify-content:space-between;"><span style="font-weight:600;">UP</span><span>99</span></div>
+          </div>
+          <div style="background:rgba(0,48,73,0.05);border-radius:4px;padding:4px 6px;margin-bottom:3px;">
+            <div style="display:flex;justify-content:space-between;"><span style="font-weight:600;">LLA</span><span>38</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTER: Map -->
+      <div style="flex:1;background:#e8d5b0;display:flex;align-items:center;justify-content:center;position:relative;">
+        <div style="font-size:14px;color:#003049;opacity:0.3;font-weight:600;">Argentina Map</div>
+        <div style="position:absolute;bottom:6px;left:6px;background:rgba(253,240,213,0.92);padding:3px 6px;font-size:7px;border:1px solid rgba(0,48,73,0.1);border-radius:3px;backdrop-filter:blur(4px);">
+          <div style="font-weight:600;font-size:6px;text-transform:uppercase;opacity:0.5;margin-bottom:2px;">Legend</div>
+          <div style="display:flex;gap:6px;">
+            <span>&#9632; Oficialismo</span>
+            <span>&#9632; Oposicion</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Province Panel (stays) -->
+      <div style="width:130px;background:#FFF8EB;border-left:1px solid #d4c4a0;display:flex;flex-direction:column;overflow:hidden;">
+        <div style="padding:8px;border-bottom:1px solid rgba(0,48,73,0.08);">
+          <div style="font-weight:700;font-size:10px;color:#003049;">Buenos Aires</div>
+          <div style="font-size:7px;color:#669BBC;">Axel Kicillof (PJ)</div>
+        </div>
+        <div style="flex:1;overflow-y:auto;padding:6px 8px;font-size:7px;color:#003049;">
+          <div style="font-weight:600;font-size:6px;text-transform:uppercase;opacity:0.45;margin-bottom:3px;">Sociodemographic</div>
+          <div style="display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px solid rgba(0,48,73,0.06);"><span style="opacity:0.6;">Population</span><span style="font-weight:600;">17.5M</span></div>
+          <div style="display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px solid rgba(0,48,73,0.06);"><span style="opacity:0.6;">Poverty</span><span style="font-weight:600;color:#C1121F;">38.2%</span></div>
+          <div style="display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px solid rgba(0,48,73,0.06);"><span style="opacity:0.6;">Schooling</span><span style="font-weight:600;">10.8y</span></div>
+
+          <div style="font-weight:600;font-size:6px;text-transform:uppercase;opacity:0.45;margin:8px 0 3px;">Economy</div>
+          <div style="display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px solid rgba(0,48,73,0.06);"><span style="opacity:0.6;">Lead sector</span><span style="font-weight:600;">Manuf.</span></div>
+          <div style="margin-top:4px;">
+            <div style="display:flex;align-items:center;gap:3px;margin-bottom:2px;">
+              <div style="height:4px;width:60%;background:#003049;border-radius:2px;"></div>
+              <span style="font-size:5px;">Manuf 22%</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:3px;margin-bottom:2px;">
+              <div style="height:4px;width:35%;background:#669BBC;border-radius:2px;"></div>
+              <span style="font-size:5px;">Retail 14%</span>
+            </div>
+          </div>
+
+          <div style="font-weight:600;font-size:6px;text-transform:uppercase;opacity:0.45;margin:8px 0 3px;">Senators</div>
+          <div style="background:rgba(0,48,73,0.05);border-radius:3px;padding:3px 4px;margin-bottom:2px;font-size:6px;">
+            <span style="font-weight:600;">Senator Name</span> <span style="opacity:0.5;">UP</span>
+          </div>
+          <div style="background:rgba(0,48,73,0.05);border-radius:3px;padding:3px 4px;margin-bottom:2px;font-size:6px;">
+            <span style="font-weight:600;">Senator Name</span> <span style="opacity:0.5;">LLA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM: Layer Controls (was LayerPanel left sidebar) -->
+    <div style="border-top:1px solid #d4c4a0;padding:8px 12px;background:#FFF8EB;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+      <span style="font-size:7px;font-weight:600;text-transform:uppercase;color:#003049;opacity:0.45;letter-spacing:0.5px;">Choropleth:</span>
+      <div style="display:flex;gap:4px;">
+        <span style="font-size:7px;padding:3px 8px;background:#003049;color:#FDF0D5;border-radius:10px;font-weight:600;">Alignment</span>
+        <span style="font-size:7px;padding:3px 8px;border:1px solid rgba(0,48,73,0.2);border-radius:10px;color:#003049;">Party</span>
+        <span style="font-size:7px;padding:3px 8px;border:1px solid rgba(0,48,73,0.2);border-radius:10px;color:#003049;">Poverty</span>
+        <span style="font-size:7px;padding:3px 8px;border:1px solid rgba(0,48,73,0.2);border-radius:10px;color:#003049;">PBG p/c</span>
+      </div>
+      <span style="font-size:7px;font-weight:600;text-transform:uppercase;color:#003049;opacity:0.45;letter-spacing:0.5px;margin-left:8px;">Overlays:</span>
+      <div style="display:flex;gap:4px;">
+        <span style="font-size:7px;padding:3px 8px;border:1px solid rgba(0,48,73,0.2);border-radius:10px;color:#003049;">Mining</span>
+        <span style="font-size:7px;padding:3px 8px;border:1px solid rgba(0,48,73,0.2);border-radius:10px;color:#003049;">HC Fields</span>
+        <span style="font-size:7px;padding:3px 8px;border:1px solid rgba(0,48,73,0.2);border-radius:10px;color:#003049;">Pipelines</span>
+        <span style="font-size:7px;padding:3px 8px;border:1px solid rgba(0,48,73,0.2);border-radius:10px;color:#003049;">Refineries</span>
+        <span style="font-size:7px;padding:3px 8px;border:1px solid rgba(0,48,73,0.2);border-radius:10px;color:#003049;">Power Plants</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Annotation labels -->
+<div style="max-width:900px;margin:16px auto 0;display:flex;gap:12px;">
+  <div style="flex:1;background:rgba(23,165,137,0.08);border:1px solid rgba(23,165,137,0.2);border-radius:6px;padding:10px;">
+    <strong style="color:#17a589;font-size:12px;">LEFT: Congress/Cabinet/Overlays</strong>
+    <p style="font-size:11px;margin:4px 0 0;">Tabs as pill buttons at top. Vertical scroll for bloc data, cabinet members, overlay stats. Was the bottom bar.</p>
+  </div>
+  <div style="flex:1;background:rgba(102,155,188,0.1);border:1px solid rgba(102,155,188,0.25);border-radius:6px;padding:10px;">
+    <strong style="color:#669BBC;font-size:12px;">BOTTOM: Layer Controls</strong>
+    <p style="font-size:11px;margin:4px 0 0;">Horizontal pill buttons for choropleth mode + overlay toggles. Compact single row. Was the left sidebar.</p>
+  </div>
+  <div style="flex:1;background:rgba(193,18,31,0.06);border:1px solid rgba(193,18,31,0.15);border-radius:6px;padding:10px;">
+    <strong style="color:#C1121F;font-size:12px;">RIGHT: Province Detail (unchanged)</strong>
+    <p style="font-size:11px;margin:4px 0 0;">Stays as right sidebar. Refreshed aesthetics (Inter font, comex card style, lighter backgrounds).</p>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+{
+  "version": "2026-04-06",
+  "methodology": "Empty seed — no source CSVs found in scripts/raw/fiscal/. Add Mecon DNAP files and re-run to populate.",
+  "provinces": {
+    "Buenos Aires": {
+      "series": []
+    },
+    "Ciudad de Buenos Aires": {
+      "series": []
+    },
+    "Catamarca": {
+      "series": []
+    },
+    "Chaco": {
+      "series": []
+    },
+    "Chubut": {
+      "series": []
+    },
+    "Córdoba": {
+      "series": []
+    },
+    "Corrientes": {
+      "series": []
+    },
+    "Entre Ríos": {
+      "series": []
+    },
+    "Formosa": {
+      "series": []
+    },
+    "Jujuy": {
+      "series": []
+    },
+    "La Pampa": {
+      "series": []
+    },
+    "La Rioja": {
+      "series": []
+    },
+    "Mendoza": {
+      "series": []
+    },
+    "Misiones": {
+      "series": []
+    },
+    "Neuquén": {
+      "series": []
+    },
+    "Río Negro": {
+      "series": []
+    },
+    "Salta": {
+      "series": []
+    },
+    "San Juan": {
+      "series": []
+    },
+    "San Luis": {
+      "series": []
+    },
+    "Santa Cruz": {
+      "series": []
+    },
+    "Santa Fe": {
+      "series": []
+    },
+    "Santiago del Estero": {
+      "series": []
+    },
+    "Tierra del Fuego": {
+      "series": []
+    },
+    "Tucumán": {
+      "series": []
+    }
+  }
+}
