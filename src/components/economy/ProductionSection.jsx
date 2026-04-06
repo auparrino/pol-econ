@@ -95,10 +95,16 @@ export default function ProductionSection({ provinceName }) {
     () => findByProvince(oilgasData.provinces, provinceName),
     [provinceName],
   );
-  const livestock = useMemo(
-    () => findByProvince(livestockData.provinces, provinceName),
-    [provinceName],
-  );
+  const livestock = useMemo(() => {
+    if (!provinceName || !livestockData.species) return [];
+    return livestockData.species
+      .map(sp => {
+        const match = findByProvince(sp.provinces, provinceName);
+        if (!match) return null;
+        return { ...sp, data: match, pct: ((match.heads / sp.total) * 100) };
+      })
+      .filter(Boolean);
+  }, [provinceName]);
   const plants = useMemo(() => {
     if (!provinceName) return [];
     const n = norm(provinceName);
@@ -108,7 +114,7 @@ export default function ProductionSection({ provinceName }) {
     });
   }, [provinceName]);
 
-  const hasData = agri || oilgas || livestock || plants.length > 0;
+  const hasData = agri || oilgas || livestock.length > 0 || plants.length > 0;
 
   if (!hasData) {
     return (
@@ -131,7 +137,7 @@ export default function ProductionSection({ provinceName }) {
       {oilgas && <OilGasCard data={oilgas} year={oilgasData.period} national={oilgasData.national} />}
 
       {/* ── Livestock ────────────────────────────────────────── */}
-      {livestock && <LivestockCard data={livestock} year={livestockData.year} total={livestockData.total_heads} />}
+      {livestock.length > 0 && <LivestockCard species={livestock} />}
 
       {/* ── Vehicles ─────────────────────────────────────────── */}
       {plants.length > 0 && <VehicleCard plants={plants} year={vehicleData.year} totalNational={vehicleData.total_vehicles} />}
@@ -221,22 +227,37 @@ function OilGasCard({ data, year, national }) {
 
 /* ── Livestock card ──────────────────────────────────────────────── */
 
-function LivestockCard({ data, year, total }) {
+const SPECIES_COLORS = { bovine: '#d97706', sheep: '#8b5cf6', pigs: '#ec4899', goats: '#06b6d4', horses: '#84cc16' };
+
+function LivestockCard({ species }) {
   return (
-    <SectionCard title="Cattle Stock" subtitle={String(year)} color="#d97706">
-      <div className="space-y-1">
-        <StatChip label="Heads" value={fmtNum(data.heads)} color="#d97706" />
-        <StatChip label="Share of national stock" value={`${data.pct.toFixed(1).replace('.', ',')}%`} />
+    <SectionCard title="Livestock" subtitle="heads" color="#d97706">
+      <div className="space-y-1.5">
+        {species.map(sp => {
+          const color = SPECIES_COLORS[sp.id] || '#94a3b8';
+          const barW = Math.min(sp.pct, 100);
+          return (
+            <div key={sp.id}>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: color }} />
+                  <span className="text-[12px] text-[#003049]/70">{sp.name_en}</span>
+                  {sp.year < 2024 && <span className="text-[9px] text-[#003049]/30">({sp.year})</span>}
+                </div>
+                <span className="text-[12px] font-mono text-[#003049] font-semibold">{fmtNum(sp.data.heads)}</span>
+              </div>
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <div className="flex-1 h-[4px] bg-[#003049]/6 rounded-full overflow-hidden">
+                  <div className="h-full rounded-full" style={{ width: `${barW}%`, backgroundColor: color }} />
+                </div>
+                <span className="text-[10px] font-mono text-[#003049]/40 w-[32px] text-right">{sp.pct.toFixed(1)}%</span>
+              </div>
+            </div>
+          );
+        })}
       </div>
-      {/* mini bar */}
-      <div className="mt-1.5 h-[5px] bg-[#003049]/8 rounded-full overflow-hidden">
-        <div
-          className="h-full rounded-full bg-[#d97706]"
-          style={{ width: `${Math.min(data.pct, 100)}%` }}
-        />
-      </div>
-      <p className="text-[10px] text-[#003049]/30 mt-0.5">
-        National total: {fmtNum(total)} heads
+      <p className="text-[10px] text-[#003049]/30 mt-1.5">
+        % of national stock. Sources: MAGyP, SENASA.
       </p>
     </SectionCard>
   );
