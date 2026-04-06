@@ -6,7 +6,6 @@ const ProvincialCongressPanel = lazy(() => import('./panels/ProvincialCongressPa
 const CabinetPanel = lazy(() => import('./panels/CabinetPanel'));
 const ProvincialCabinetPanel = lazy(() => import('./panels/ProvincialCabinetPanel'));
 const EconomyPanel = lazy(() => import('./panels/EconomyPanel'));
-const MobileMacroTab = lazy(() => import('./mobile/MobileMacroTab'));
 const OverviewPanel = lazy(() => import('./panels/OverviewPanel'));
 
 const PanelFallback = () => (
@@ -21,10 +20,9 @@ const BASE_TABS = [
   { id: 'cabinet', label: 'Cabinet' },
   { id: 'economy', label: 'Economy' },
   { id: 'news', label: 'News' },
-  { id: 'macro', label: 'Macro' },
 ];
 
-export default function BottomBar({ congress, selectedProvince, governors, mobile = false }) {
+export default function BottomBar({ congress, selectedProvince, governors, onClearProvince, mobile = false }) {
   // Overlays are owned by the right-side RightOverlayPanel — not duplicated here.
   const tabs = selectedProvince
     ? BASE_TABS
@@ -74,7 +72,7 @@ export default function BottomBar({ congress, selectedProvince, governors, mobil
       {/* Panel content */}
       <div id={`panel-${activeTab}`} role="tabpanel" className="flex-1 overflow-y-auto overflow-x-hidden min-h-0" style={{ padding: '12px 16px' }}>
         <Suspense fallback={<PanelFallback />}>
-          {activeTab === 'overview' && <OverviewPanel selectedProvince={selectedProvince} governors={governors} />}
+          {activeTab === 'overview' && <OverviewPanel selectedProvince={selectedProvince} governors={governors} onClose={onClearProvince} />}
           {activeTab === 'congress' && (selectedProvince
             ? <ProvincialCongressPanel selectedProvince={selectedProvince} congress={congress} />
             : <CongressPanel congress={congress} />
@@ -90,11 +88,6 @@ export default function BottomBar({ congress, selectedProvince, governors, mobil
               : <div className="flex flex-col items-center justify-center py-8 text-center">
                   <p className="text-[13px] text-[#003049]/50">Select a province on the map to view provincial news summaries.</p>
                 </div>
-          )}
-          {activeTab === 'macro' && (
-            <div className="relative" style={{ minHeight: 400 }}>
-              <MobileMacroTab />
-            </div>
           )}
         </Suspense>
       </div>

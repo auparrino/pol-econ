@@ -254,17 +254,24 @@ function MiningMarkers({ visible }) {
 
 function FlyToProvince({ geoData, selectedProvince }) {
   const map = useMap();
+  const prevSelected = useRef(null);
 
   useEffect(() => {
-    if (!geoData || !selectedProvince) return;
-    const feature = geoData.features.find(
-      f => f.properties.NAME_1?.toLowerCase() === selectedProvince.toLowerCase()
-    );
-    if (!feature) return;
-    const bounds = L.geoJSON(feature).getBounds();
-    if (bounds.isValid()) {
-      map.flyToBounds(bounds, { padding: [40, 40], maxZoom: 7, duration: 0.8 });
+    if (!geoData) return;
+    if (selectedProvince) {
+      const feature = geoData.features.find(
+        f => f.properties.NAME_1?.toLowerCase() === selectedProvince.toLowerCase()
+      );
+      if (!feature) return;
+      const bounds = L.geoJSON(feature).getBounds();
+      if (bounds.isValid()) {
+        map.flyToBounds(bounds, { padding: [40, 40], maxZoom: 7, duration: 0.8 });
+      }
+    } else if (prevSelected.current) {
+      // Deselected — fly back to full Argentina view.
+      map.flyToBounds([[-55, -74], [-21, -53]], { padding: [20, 20], duration: 0.8 });
     }
+    prevSelected.current = selectedProvince;
   }, [selectedProvince, geoData, map]);
 
   return null;

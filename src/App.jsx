@@ -71,6 +71,7 @@ export default function App() {
             congress={congress}
             selectedProvince={selectedProvince}
             governors={governors}
+            onClearProvince={() => setSelectedProvince(null)}
           />
         </Suspense>
       </ErrorBoundary>

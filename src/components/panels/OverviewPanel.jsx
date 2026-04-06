@@ -104,7 +104,7 @@ function EmptyState() {
   );
 }
 
-export default function OverviewPanel({ selectedProvince, governors }) {
+export default function OverviewPanel({ selectedProvince, governors, onClose }) {
   if (!selectedProvince) return <EmptyState />;
 
   const gov = findGovernor(governors, selectedProvince);
@@ -113,7 +113,19 @@ export default function OverviewPanel({ selectedProvince, governors }) {
   if (!gov) {
     return (
       <div className="p-4">
-        <h2 className="text-[16px] font-black text-[#003049]">{selectedProvince}</h2>
+        <div className="flex items-start justify-between gap-2">
+          <h2 className="text-[16px] font-black text-[#003049]">{selectedProvince}</h2>
+          {onClose && (
+            <button
+              onClick={onClose}
+              className="text-[#003049]/40 hover:text-[#003049] transition-colors text-lg leading-none p-1"
+              aria-label="Clear selection"
+              title="Clear selection — back to full map"
+            >
+              ×
+            </button>
+          )}
+        </div>
         <p className="text-[11px] text-[#003049]/50 italic mt-2">No governor data loaded for this province.</p>
       </div>
     );
@@ -132,13 +144,25 @@ export default function OverviewPanel({ selectedProvince, governors }) {
   return (
     <div>
       {/* Hero */}
-      <div className="pb-2 border-b mb-2" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
-        <h2 className="text-[18px] font-black text-[#003049] tracking-tight leading-tight">
-          {selectedProvince}
-        </h2>
-        <p className="text-[12px] text-[#003049]/60 mt-0.5">
-          {gov.region} · {gov.superficie_km2?.toLocaleString('es-AR')} km²
-        </p>
+      <div className="pb-2 border-b mb-2 flex items-start justify-between gap-2" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
+        <div className="min-w-0">
+          <h2 className="text-[18px] font-black text-[#003049] tracking-tight leading-tight">
+            {selectedProvince}
+          </h2>
+          <p className="text-[12px] text-[#003049]/60 mt-0.5">
+            {gov.region} · {gov.superficie_km2?.toLocaleString('es-AR')} km²
+          </p>
+        </div>
+        {onClose && (
+          <button
+            onClick={onClose}
+            className="text-[#003049]/40 hover:text-[#003049] transition-colors text-xl leading-none p-1 -mt-1 -mr-1 shrink-0"
+            aria-label="Clear selection"
+            title="Clear selection — back to full map"
+          >
+            ×
+          </button>
+        )}
       </div>
 
       {/* Governor card */}
