@@ -5,8 +5,8 @@ import { senateBlocs, deputyBlocs, SENATE_TOTAL, DEPUTY_TOTAL } from '../../data
 function CongressPanelRaw({ congress }) {
   return (
     <div className="flex flex-col gap-3">
-      <BlocBar blocs={senateBlocs} total={SENATE_TOTAL} label="Senate" scale={1} />
-      <BlocBar blocs={deputyBlocs} total={DEPUTY_TOTAL} label="Deputies" scale={0.4} />
+      <BlocBar blocs={senateBlocs} total={SENATE_TOTAL} label="Senate" />
+      <BlocBar blocs={deputyBlocs} total={DEPUTY_TOTAL} label="Deputies" />
 
       {/* Key votes */}
       {[
