@@ -201,7 +201,7 @@ export const governors = [
     vicegobernador: "Hebe Casado",
     partido: "UCR",
     coalicion: "Cambia Mendoza",
-    alineamiento_nacion: "Negociador",
+    alineamiento_nacion: "Aliado",
     posicion_ideologica: "Radicalismo. Pro-minería con matices (Ley 7722 sigue vigente). Peso propio en la UCR nacional.",
     inicio_mandato: "2023-12",
     fin_mandato: "2027-12",

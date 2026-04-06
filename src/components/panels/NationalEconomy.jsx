@@ -233,16 +233,20 @@ function ExportsNational() {
       .slice(0, 6)
       .map(([name, value]) => ({ name, value, display: `US$${fmtN(value)}M` }));
 
-    // Top destinations from exports_by_destination if available
+    // Top destinations from exports_by_destination — the real shape is
+    // { year, province, destinations: [{ country, value }] }, where 'value'
+    // is in USD millions. Aggregate across provinces for the latest year.
     let destinations = [];
     try {
       const destRows = Array.isArray(exportsByDestination) ? exportsByDestination : Object.values(exportsByDestination);
       const destLatest = destRows.filter(r => r.year === latestYear);
       const byDest = {};
       for (const r of destLatest) {
-        const k = r.destination || r.country || r.dest;
-        if (!k) continue;
-        byDest[k] = (byDest[k] || 0) + (r.value || r.total || r.usd || 0);
+        for (const d of (r.destinations || [])) {
+          const k = d.country;
+          if (!k || k === 'Resto') continue; // Resto = 'rest of world' bucket, not a real country
+          byDest[k] = (byDest[k] || 0) + (d.value || 0);
+        }
       }
       destinations = Object.entries(byDest)
         .sort((a, b) => b[1] - a[1])

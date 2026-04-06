@@ -201,12 +201,17 @@ function MiningCard({ active, onToggle, selectedProvince }) {
       ? miningProjects.filter(p => matchProv(p.provincia, selectedProvince))
       : miningProjects;
     const minerals = {}, stages = {}, countries = {}, provinces = {};
+    let unknownCountry = 0;
     for (const p of list) {
       if (p.mineral)   minerals[p.mineral]   = (minerals[p.mineral]   || 0) + 1;
       if (p.estado)    stages[p.estado]      = (stages[p.estado]      || 0) + 1;
-      if (p.pais)      countries[p.pais]     = (countries[p.pais]     || 0) + 1;
       if (p.provincia) provinces[p.provincia]= (provinces[p.provincia]|| 0) + 1;
+      // 37% of SIACAM projects have no operator origin recorded; surface them
+      // as 'Not disclosed' rather than dropping them silently.
+      if (p.pais) countries[p.pais] = (countries[p.pais] || 0) + 1;
+      else unknownCountry += 1;
     }
+    if (unknownCountry > 0) countries['Not disclosed'] = unknownCountry;
     const top = (o, n) => Object.entries(o)
       .sort((a, b) => b[1] - a[1])
       .slice(0, n)
@@ -452,10 +457,10 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
     >
       <CardHeader
         id="centrales" label="Power Plants" icon="⚡" color="#A855F7"
-        count={selectedProvince ? stats.count : 78}
+        count={selectedProvince ? stats.count : POWER_TOTAL_GW.toFixed(1)}
         countLabel={selectedProvince
-          ? `plants in ${selectedProvince}${stats.totalMW > 0 ? ` · ${(stats.totalMW / 1000).toFixed(1)} GW` : ''}`
-          : `plants · ${POWER_TOTAL_GW.toFixed(1)} GW installed`
+          ? `plants in dataset (partial sample)`
+          : `GW installed nationwide (CAMMESA, end-2024)`
         }
         active={active} onToggle={onToggle}
       />
@@ -494,36 +499,19 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
         </>
       )}
       {selectedProvince && stats.count === 0 && (
-        <p className="text-[10px] text-[#003049]/50 italic">No plants recorded in {selectedProvince}.</p>
+        <p className="text-[10px] text-[#003049]/50 italic">
+          No plants in the partial sample for {selectedProvince}. This does not
+          mean the province has no power plants — the dataset is incomplete.
+        </p>
       )}
       {selectedProvince && stats.count > 0 && (
         <>
-          {stats.fuels.length > 0 && stats.totalMW > 0 && (
-            <MiniSection title="By fuel">
-              <div className="space-y-0.5">
-                {stats.fuels.map(f => {
-                  const pct = (f.mw / stats.totalMW) * 100;
-                  return (
-                    <div key={f.name} className="flex items-center gap-1.5 text-[10px]">
-                      <span className="w-[60px] text-[#003049]/65">{f.name}</span>
-                      <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
-                        <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: f.color }} />
-                      </div>
-                      <span className="font-mono text-[#003049]/70 text-right min-w-[44px]">
-                        {f.mw >= 1000 ? `${(f.mw / 1000).toFixed(1)} GW` : `${f.mw.toFixed(0)} MW`}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            </MiniSection>
-          )}
           {stats.topPlants.length > 0 && (
-            <MiniSection title="Top plants">
+            <MiniSection title="Plants in this sample">
               <ul className="text-[10px] space-y-0.5">
                 {stats.topPlants.map((p, i) => (
                   <li key={`${p.name}_${i}`} className="flex justify-between gap-1 text-[#003049]/70">
-                    <span className="truncate">{p.name}</span>
+                    <span className="truncate">{toTitleCase(p.name)}</span>
                     <span className="font-mono text-[#003049]/55 shrink-0">
                       {p.tech} · {p.mw >= 1000 ? `${(p.mw / 1000).toFixed(1)} GW` : `${p.mw.toFixed(0)} MW`}
                     </span>
@@ -532,6 +520,11 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
               </ul>
             </MiniSection>
           )}
+          <p className="text-[9px] text-[#003049]/45 italic mt-2 leading-snug">
+            ⚠ Partial dataset — only 78 plants nationwide with usable MW data,
+            heavily biased toward Patagonia. Counts and totals here under-
+            represent reality.
+          </p>
         </>
       )}
     </div>
