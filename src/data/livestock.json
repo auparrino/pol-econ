@@ -1,0 +1,32 @@
+{
+  "year": 2024,
+  "date": "2024-12-31",
+  "source": "MAGyP / SENASA - SIGSA - Serie stock Bovino por provincia al 31-12 (2007-2024)",
+  "source_url": "https://www.magyp.gob.ar/sitio/areas/bovinos/informacion_interes/informes/_archivos//000001=Series%20de%20stock%20bovino%20y%20mapas/000000_Stock/000000_Serie%20stock%20Bovino%20por%20provincia%20al%2031-12%20(2007-2024).xlsx",
+  "total_heads": 51624909,
+  "provinces": [
+    { "province": "Buenos Aires", "heads": 19419096, "pct": 37.6 },
+    { "province": "Santa Fe", "heads": 6024319, "pct": 11.7 },
+    { "province": "Corrientes", "heads": 4518834, "pct": 8.8 },
+    { "province": "Entre Ríos", "heads": 4351929, "pct": 8.4 },
+    { "province": "Córdoba", "heads": 4343706, "pct": 8.4 },
+    { "province": "La Pampa", "heads": 2966676, "pct": 5.7 },
+    { "province": "Chaco", "heads": 2328360, "pct": 4.5 },
+    { "province": "Formosa", "heads": 1596904, "pct": 3.1 },
+    { "province": "San Luis", "heads": 1336277, "pct": 2.6 },
+    { "province": "Santiago del Estero", "heads": 1129611, "pct": 2.2 },
+    { "province": "Salta", "heads": 1083617, "pct": 2.1 },
+    { "province": "Río Negro", "heads": 657064, "pct": 1.3 },
+    { "province": "Misiones", "heads": 376278, "pct": 0.7 },
+    { "province": "Mendoza", "heads": 362882, "pct": 0.7 },
+    { "province": "Neuquén", "heads": 222033, "pct": 0.4 },
+    { "province": "Chubut", "heads": 199325, "pct": 0.4 },
+    { "province": "Catamarca", "heads": 172282, "pct": 0.3 },
+    { "province": "La Rioja", "heads": 152212, "pct": 0.3 },
+    { "province": "Tucumán", "heads": 129323, "pct": 0.3 },
+    { "province": "Jujuy", "heads": 85372, "pct": 0.2 },
+    { "province": "Santa Cruz", "heads": 78809, "pct": 0.2 },
+    { "province": "Tierra del Fuego", "heads": 48794, "pct": 0.1 },
+    { "province": "San Juan", "heads": 41206, "pct": 0.1 }
+  ]
+}

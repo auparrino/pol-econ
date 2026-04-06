@@ -1,0 +1,1336 @@
+{
+  "campaign": "2024/2025",
+  "source": "MAGyP - Estimaciones Agrícolas",
+  "provinces": [
+    {
+      "province": "Buenos Aires",
+      "total_tons": 50808760,
+      "total_area_ha": 13311121,
+      "crops": [
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 17196317,
+          "area_ha": 2401205,
+          "yield_kg_ha": 7162
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 15533596,
+          "area_ha": 5397466,
+          "yield_kg_ha": 2878
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 9265428,
+          "area_ha": 2614970,
+          "yield_kg_ha": 3543
+        },
+        {
+          "crop": "cebada total",
+          "crop_en": "Barley",
+          "tons": 4590520,
+          "area_ha": 1201963,
+          "yield_kg_ha": 3819
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 2774333,
+          "area_ha": 1163461,
+          "yield_kg_ha": 2385
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 429815,
+          "area_ha": 205451,
+          "yield_kg_ha": 2092
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 315761,
+          "area_ha": 84799,
+          "yield_kg_ha": 3724
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 305594,
+          "area_ha": 66276,
+          "yield_kg_ha": 4611
+        },
+        {
+          "crop": "arveja",
+          "crop_en": "Pea",
+          "tons": 199489,
+          "area_ha": 72223,
+          "yield_kg_ha": 2762
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 116569,
+          "area_ha": 50385,
+          "yield_kg_ha": 2314
+        },
+        {
+          "crop": "alpiste",
+          "crop_en": "Canary Grass",
+          "tons": 39135,
+          "area_ha": 30296,
+          "yield_kg_ha": 1292
+        },
+        {
+          "crop": "colza",
+          "crop_en": "Canola",
+          "tons": 22575,
+          "area_ha": 10184,
+          "yield_kg_ha": 2217
+        },
+        {
+          "crop": "lenteja",
+          "crop_en": "Lentil",
+          "tons": 8140,
+          "area_ha": 6084,
+          "yield_kg_ha": 1338
+        },
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 6991,
+          "area_ha": 3191,
+          "yield_kg_ha": 2191
+        },
+        {
+          "crop": "mijo",
+          "crop_en": "Millet",
+          "tons": 3369,
+          "area_ha": 2514,
+          "yield_kg_ha": 1340
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 1043,
+          "area_ha": 553,
+          "yield_kg_ha": 1886
+        },
+        {
+          "crop": "lino",
+          "crop_en": "Flax",
+          "tons": 85,
+          "area_ha": 100,
+          "yield_kg_ha": 850
+        }
+      ]
+    },
+    {
+      "province": "Córdoba",
+      "total_tons": 37974555,
+      "total_area_ha": 8694846,
+      "crops": [
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 17971562,
+          "area_ha": 2256817,
+          "yield_kg_ha": 7963
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 14628596,
+          "area_ha": 4599374,
+          "yield_kg_ha": 3181
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 2280460,
+          "area_ha": 881126,
+          "yield_kg_ha": 2588
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 1268363,
+          "area_ha": 373983,
+          "yield_kg_ha": 3391
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 878262,
+          "area_ha": 167291,
+          "yield_kg_ha": 5250
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 693727,
+          "area_ha": 277083,
+          "yield_kg_ha": 2504
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 85235,
+          "area_ha": 46803,
+          "yield_kg_ha": 1821
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 58098,
+          "area_ha": 33282,
+          "yield_kg_ha": 1746
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 47576,
+          "area_ha": 27490,
+          "yield_kg_ha": 1731
+        },
+        {
+          "crop": "cebada total",
+          "crop_en": "Barley",
+          "tons": 38940,
+          "area_ha": 17165,
+          "yield_kg_ha": 2269
+        },
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 10298,
+          "area_ha": 6200,
+          "yield_kg_ha": 1661
+        },
+        {
+          "crop": "algodón",
+          "crop_en": "Cotton",
+          "tons": 4600,
+          "area_ha": 2300,
+          "yield_kg_ha": 2000
+        },
+        {
+          "crop": "colza",
+          "crop_en": "Canola",
+          "tons": 3061,
+          "area_ha": 2317,
+          "yield_kg_ha": 1321
+        },
+        {
+          "crop": "mijo",
+          "crop_en": "Millet",
+          "tons": 2368,
+          "area_ha": 1360,
+          "yield_kg_ha": 1741
+        },
+        {
+          "crop": "arveja",
+          "crop_en": "Pea",
+          "tons": 1872,
+          "area_ha": 1125,
+          "yield_kg_ha": 1664
+        },
+        {
+          "crop": "lenteja",
+          "crop_en": "Lentil",
+          "tons": 805,
+          "area_ha": 595,
+          "yield_kg_ha": 1353
+        },
+        {
+          "crop": "lino",
+          "crop_en": "Flax",
+          "tons": 732,
+          "area_ha": 535,
+          "yield_kg_ha": 1368
+        }
+      ]
+    },
+    {
+      "province": "Santa Fe",
+      "total_tons": 22331093,
+      "total_area_ha": 6048426,
+      "crops": [
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 11463852,
+          "area_ha": 3362223,
+          "yield_kg_ha": 3410
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 5219638,
+          "area_ha": 637144,
+          "yield_kg_ha": 8192
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 3494812,
+          "area_ha": 1221341,
+          "yield_kg_ha": 2861
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 751489,
+          "area_ha": 341097,
+          "yield_kg_ha": 2203
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 584775,
+          "area_ha": 128802,
+          "yield_kg_ha": 4540
+        },
+        {
+          "crop": "algodón",
+          "crop_en": "Cotton",
+          "tons": 410269,
+          "area_ha": 228400,
+          "yield_kg_ha": 1796
+        },
+        {
+          "crop": "arroz",
+          "crop_en": "Rice",
+          "tons": 220720,
+          "area_ha": 32400,
+          "yield_kg_ha": 6812
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 51170,
+          "area_ha": 18275,
+          "yield_kg_ha": 2800
+        },
+        {
+          "crop": "cebada total",
+          "crop_en": "Barley",
+          "tons": 48143,
+          "area_ha": 20794,
+          "yield_kg_ha": 2315
+        },
+        {
+          "crop": "arveja",
+          "crop_en": "Pea",
+          "tons": 44554,
+          "area_ha": 20877,
+          "yield_kg_ha": 2134
+        },
+        {
+          "crop": "lenteja",
+          "crop_en": "Lentil",
+          "tons": 21240,
+          "area_ha": 24000,
+          "yield_kg_ha": 885
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 12062,
+          "area_ha": 6526,
+          "yield_kg_ha": 1848
+        },
+        {
+          "crop": "colza",
+          "crop_en": "Canola",
+          "tons": 6354,
+          "area_ha": 4647,
+          "yield_kg_ha": 1367
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 1300,
+          "area_ha": 1000,
+          "yield_kg_ha": 1300
+        },
+        {
+          "crop": "alpiste",
+          "crop_en": "Canary Grass",
+          "tons": 375,
+          "area_ha": 250,
+          "yield_kg_ha": 1500
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 340,
+          "area_ha": 650,
+          "yield_kg_ha": 523
+        }
+      ]
+    },
+    {
+      "province": "Entre Ríos",
+      "total_tons": 8944317,
+      "total_area_ha": 2518590,
+      "crops": [
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 3372215,
+          "area_ha": 1251450,
+          "yield_kg_ha": 2695
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 2254760,
+          "area_ha": 341500,
+          "yield_kg_ha": 6603
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 2217630,
+          "area_ha": 691600,
+          "yield_kg_ha": 3207
+        },
+        {
+          "crop": "arroz",
+          "crop_en": "Rice",
+          "tons": 524948,
+          "area_ha": 67420,
+          "yield_kg_ha": 7786
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 437182,
+          "area_ha": 97770,
+          "yield_kg_ha": 4472
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 60392,
+          "area_ha": 27320,
+          "yield_kg_ha": 2211
+        },
+        {
+          "crop": "cebada total",
+          "crop_en": "Barley",
+          "tons": 24130,
+          "area_ha": 7200,
+          "yield_kg_ha": 3351
+        },
+        {
+          "crop": "colza",
+          "crop_en": "Canola",
+          "tons": 24010,
+          "area_ha": 15100,
+          "yield_kg_ha": 1590
+        },
+        {
+          "crop": "arveja",
+          "crop_en": "Pea",
+          "tons": 11970,
+          "area_ha": 6300,
+          "yield_kg_ha": 1900
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 8380,
+          "area_ha": 4080,
+          "yield_kg_ha": 2054
+        },
+        {
+          "crop": "lino",
+          "crop_en": "Flax",
+          "tons": 7960,
+          "area_ha": 8300,
+          "yield_kg_ha": 959
+        },
+        {
+          "crop": "alpiste",
+          "crop_en": "Canary Grass",
+          "tons": 560,
+          "area_ha": 400,
+          "yield_kg_ha": 1400
+        },
+        {
+          "crop": "lenteja",
+          "crop_en": "Lentil",
+          "tons": 180,
+          "area_ha": 150,
+          "yield_kg_ha": 1200
+        }
+      ]
+    },
+    {
+      "province": "Santiago del Estero",
+      "total_tons": 6016454,
+      "total_area_ha": 2591397,
+      "crops": [
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 2895235,
+          "area_ha": 1254863,
+          "yield_kg_ha": 2307
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 1612241,
+          "area_ha": 413985,
+          "yield_kg_ha": 3894
+        },
+        {
+          "crop": "algodón",
+          "crop_en": "Cotton",
+          "tons": 440033,
+          "area_ha": 217700,
+          "yield_kg_ha": 2021
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 433058,
+          "area_ha": 394965,
+          "yield_kg_ha": 1096
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 325826,
+          "area_ha": 109995,
+          "yield_kg_ha": 2962
+        },
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 193944,
+          "area_ha": 112814,
+          "yield_kg_ha": 1719
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 73052,
+          "area_ha": 37295,
+          "yield_kg_ha": 1959
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 19326,
+          "area_ha": 20595,
+          "yield_kg_ha": 938
+        },
+        {
+          "crop": "cebada total",
+          "crop_en": "Barley",
+          "tons": 15334,
+          "area_ha": 19519,
+          "yield_kg_ha": 786
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 4079,
+          "area_ha": 5205,
+          "yield_kg_ha": 784
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 1305,
+          "area_ha": 1650,
+          "yield_kg_ha": 791
+        },
+        {
+          "crop": "colza",
+          "crop_en": "Canola",
+          "tons": 1199,
+          "area_ha": 1440,
+          "yield_kg_ha": 833
+        },
+        {
+          "crop": "cártamo",
+          "crop_en": "Safflower",
+          "tons": 1195,
+          "area_ha": 1086,
+          "yield_kg_ha": 1100
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 627,
+          "area_ha": 285,
+          "yield_kg_ha": 2200
+        }
+      ]
+    },
+    {
+      "province": "La Pampa",
+      "total_tons": 5369304,
+      "total_area_ha": 1575656,
+      "crops": [
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 2831135,
+          "area_ha": 453200,
+          "yield_kg_ha": 6247
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 1008942,
+          "area_ha": 400200,
+          "yield_kg_ha": 2521
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 711188,
+          "area_ha": 287400,
+          "yield_kg_ha": 2475
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 459370,
+          "area_ha": 262200,
+          "yield_kg_ha": 1752
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 127986,
+          "area_ha": 36570,
+          "yield_kg_ha": 3500
+        },
+        {
+          "crop": "cebada total",
+          "crop_en": "Barley",
+          "tons": 106389,
+          "area_ha": 47528,
+          "yield_kg_ha": 2238
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 51470,
+          "area_ha": 46900,
+          "yield_kg_ha": 1097
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 44178,
+          "area_ha": 13365,
+          "yield_kg_ha": 3305
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 27607,
+          "area_ha": 27213,
+          "yield_kg_ha": 1014
+        },
+        {
+          "crop": "alpiste",
+          "crop_en": "Canary Grass",
+          "tons": 690,
+          "area_ha": 690,
+          "yield_kg_ha": 1000
+        },
+        {
+          "crop": "mijo",
+          "crop_en": "Millet",
+          "tons": 349,
+          "area_ha": 390,
+          "yield_kg_ha": 895
+        }
+      ]
+    },
+    {
+      "province": "Salta",
+      "total_tons": 3137497,
+      "total_area_ha": 1208617,
+      "crops": [
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 1570901,
+          "area_ha": 255991,
+          "yield_kg_ha": 6137
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 740812,
+          "area_ha": 307973,
+          "yield_kg_ha": 2405
+        },
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 545292,
+          "area_ha": 458950,
+          "yield_kg_ha": 1188
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 79240,
+          "area_ha": 31386,
+          "yield_kg_ha": 2525
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 78665,
+          "area_ha": 57883,
+          "yield_kg_ha": 1359
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 65697,
+          "area_ha": 59675,
+          "yield_kg_ha": 1101
+        },
+        {
+          "crop": "algodón",
+          "crop_en": "Cotton",
+          "tons": 32540,
+          "area_ha": 12550,
+          "yield_kg_ha": 2593
+        },
+        {
+          "crop": "cártamo",
+          "crop_en": "Safflower",
+          "tons": 16379,
+          "area_ha": 15827,
+          "yield_kg_ha": 1035
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 2593,
+          "area_ha": 2584,
+          "yield_kg_ha": 1003
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 2262,
+          "area_ha": 2420,
+          "yield_kg_ha": 935
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 899,
+          "area_ha": 911,
+          "yield_kg_ha": 987
+        },
+        {
+          "crop": "colza",
+          "crop_en": "Canola",
+          "tons": 609,
+          "area_ha": 635,
+          "yield_kg_ha": 959
+        },
+        {
+          "crop": "mijo",
+          "crop_en": "Millet",
+          "tons": 540,
+          "area_ha": 540,
+          "yield_kg_ha": 1000
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 494,
+          "area_ha": 459,
+          "yield_kg_ha": 1076
+        },
+        {
+          "crop": "lenteja",
+          "crop_en": "Lentil",
+          "tons": 456,
+          "area_ha": 698,
+          "yield_kg_ha": 653
+        },
+        {
+          "crop": "alpiste",
+          "crop_en": "Canary Grass",
+          "tons": 68,
+          "area_ha": 85,
+          "yield_kg_ha": 800
+        },
+        {
+          "crop": "cebada total",
+          "crop_en": "Barley",
+          "tons": 50,
+          "area_ha": 50,
+          "yield_kg_ha": 1000
+        }
+      ]
+    },
+    {
+      "province": "San Luis",
+      "total_tons": 2997950,
+      "total_area_ha": 802850,
+      "crops": [
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 2243830,
+          "area_ha": 425720,
+          "yield_kg_ha": 5271
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 410091,
+          "area_ha": 215850,
+          "yield_kg_ha": 1900
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 200290,
+          "area_ha": 111000,
+          "yield_kg_ha": 1804
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 44125,
+          "area_ha": 12940,
+          "yield_kg_ha": 3410
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 39525,
+          "area_ha": 12150,
+          "yield_kg_ha": 3253
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 36338,
+          "area_ha": 11720,
+          "yield_kg_ha": 3101
+        },
+        {
+          "crop": "algodón",
+          "crop_en": "Cotton",
+          "tons": 14810,
+          "area_ha": 4150,
+          "yield_kg_ha": 3569
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 5070,
+          "area_ha": 6500,
+          "yield_kg_ha": 780
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 2100,
+          "area_ha": 1550,
+          "yield_kg_ha": 1355
+        },
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 1131,
+          "area_ha": 870,
+          "yield_kg_ha": 1300
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 640,
+          "area_ha": 400,
+          "yield_kg_ha": 1600
+        }
+      ]
+    },
+    {
+      "province": "Chaco",
+      "total_tons": 1375936,
+      "total_area_ha": 986306,
+      "crops": [
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 403337,
+          "area_ha": 402980,
+          "yield_kg_ha": 1001
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 316577,
+          "area_ha": 147020,
+          "yield_kg_ha": 2153
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 226844,
+          "area_ha": 120010,
+          "yield_kg_ha": 1890
+        },
+        {
+          "crop": "algodón",
+          "crop_en": "Cotton",
+          "tons": 193856,
+          "area_ha": 153920,
+          "yield_kg_ha": 1259
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 107811,
+          "area_ha": 93290,
+          "yield_kg_ha": 1156
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 94462,
+          "area_ha": 58860,
+          "yield_kg_ha": 1605
+        },
+        {
+          "crop": "arroz",
+          "crop_en": "Rice",
+          "tons": 30750,
+          "area_ha": 7500,
+          "yield_kg_ha": 4100
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 1006,
+          "area_ha": 720,
+          "yield_kg_ha": 1397
+        },
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 956,
+          "area_ha": 1700,
+          "yield_kg_ha": 562
+        },
+        {
+          "crop": "cártamo",
+          "crop_en": "Safflower",
+          "tons": 264,
+          "area_ha": 240,
+          "yield_kg_ha": 1100
+        },
+        {
+          "crop": "colza",
+          "crop_en": "Canola",
+          "tons": 73,
+          "area_ha": 66,
+          "yield_kg_ha": 1106
+        }
+      ]
+    },
+    {
+      "province": "Tucumán",
+      "total_tons": 898706,
+      "total_area_ha": 371595,
+      "crops": [
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 473056,
+          "area_ha": 182895,
+          "yield_kg_ha": 2586
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 265954,
+          "area_ha": 55640,
+          "yield_kg_ha": 4780
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 86636,
+          "area_ha": 79370,
+          "yield_kg_ha": 1092
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 34440,
+          "area_ha": 14450,
+          "yield_kg_ha": 2383
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 16132,
+          "area_ha": 15320,
+          "yield_kg_ha": 1053
+        },
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 15395,
+          "area_ha": 19230,
+          "yield_kg_ha": 801
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 3899,
+          "area_ha": 2050,
+          "yield_kg_ha": 1902
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 1319,
+          "area_ha": 1280,
+          "yield_kg_ha": 1030
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 1008,
+          "area_ha": 890,
+          "yield_kg_ha": 1133
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 625,
+          "area_ha": 250,
+          "yield_kg_ha": 2500
+        },
+        {
+          "crop": "colza",
+          "crop_en": "Canola",
+          "tons": 242,
+          "area_ha": 220,
+          "yield_kg_ha": 1100
+        }
+      ]
+    },
+    {
+      "province": "Corrientes",
+      "total_tons": 875848,
+      "total_area_ha": 133990,
+      "crops": [
+        {
+          "crop": "arroz",
+          "crop_en": "Rice",
+          "tons": 785100,
+          "area_ha": 110600,
+          "yield_kg_ha": 7099
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 55380,
+          "area_ha": 8520,
+          "yield_kg_ha": 6500
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 14100,
+          "area_ha": 4700,
+          "yield_kg_ha": 3000
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 9800,
+          "area_ha": 2800,
+          "yield_kg_ha": 3500
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 8010,
+          "area_ha": 5550,
+          "yield_kg_ha": 1443
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 3458,
+          "area_ha": 1820,
+          "yield_kg_ha": 1900
+        }
+      ]
+    },
+    {
+      "province": "Catamarca",
+      "total_tons": 173101,
+      "total_area_ha": 79473,
+      "crops": [
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 101766,
+          "area_ha": 40770,
+          "yield_kg_ha": 2496
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 36988,
+          "area_ha": 7480,
+          "yield_kg_ha": 4945
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 19703,
+          "area_ha": 19690,
+          "yield_kg_ha": 1001
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 4895,
+          "area_ha": 2050,
+          "yield_kg_ha": 2388
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 2958,
+          "area_ha": 2958,
+          "yield_kg_ha": 1000
+        },
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 2586,
+          "area_ha": 4310,
+          "yield_kg_ha": 600
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 2280,
+          "area_ha": 1200,
+          "yield_kg_ha": 1900
+        },
+        {
+          "crop": "algodón",
+          "crop_en": "Cotton",
+          "tons": 1080,
+          "area_ha": 400,
+          "yield_kg_ha": 2700
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 336,
+          "area_ha": 280,
+          "yield_kg_ha": 1200
+        },
+        {
+          "crop": "colza",
+          "crop_en": "Canola",
+          "tons": 259,
+          "area_ha": 235,
+          "yield_kg_ha": 1102
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 250,
+          "area_ha": 100,
+          "yield_kg_ha": 2500
+        }
+      ]
+    },
+    {
+      "province": "Formosa",
+      "total_tons": 171616,
+      "total_area_ha": 62153,
+      "crops": [
+        {
+          "crop": "arroz",
+          "crop_en": "Rice",
+          "tons": 64780,
+          "area_ha": 15800,
+          "yield_kg_ha": 4100
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 45673,
+          "area_ha": 12020,
+          "yield_kg_ha": 3800
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 38800,
+          "area_ha": 22000,
+          "yield_kg_ha": 1764
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 8930,
+          "area_ha": 5174,
+          "yield_kg_ha": 1726
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 6578,
+          "area_ha": 2860,
+          "yield_kg_ha": 2300
+        },
+        {
+          "crop": "algodón",
+          "crop_en": "Cotton",
+          "tons": 2774,
+          "area_ha": 2365,
+          "yield_kg_ha": 1173
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 2678,
+          "area_ha": 765,
+          "yield_kg_ha": 3501
+        },
+        {
+          "crop": "cártamo",
+          "crop_en": "Safflower",
+          "tons": 1223,
+          "area_ha": 1019,
+          "yield_kg_ha": 1200
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 180,
+          "area_ha": 150,
+          "yield_kg_ha": 1200
+        }
+      ]
+    },
+    {
+      "province": "Misiones",
+      "total_tons": 148453,
+      "total_area_ha": 30988,
+      "crops": [
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 133318,
+          "area_ha": 26664,
+          "yield_kg_ha": 5000
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 15135,
+          "area_ha": 4324,
+          "yield_kg_ha": 3500
+        }
+      ]
+    },
+    {
+      "province": "Jujuy",
+      "total_tons": 88097,
+      "total_area_ha": 48191,
+      "crops": [
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 33622,
+          "area_ha": 28018,
+          "yield_kg_ha": 1200
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 26412,
+          "area_ha": 6604,
+          "yield_kg_ha": 3999
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 14396,
+          "area_ha": 7198,
+          "yield_kg_ha": 2000
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 7693,
+          "area_ha": 2137,
+          "yield_kg_ha": 3600
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 4152,
+          "area_ha": 2844,
+          "yield_kg_ha": 1460
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 1134,
+          "area_ha": 810,
+          "yield_kg_ha": 1400
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 520,
+          "area_ha": 400,
+          "yield_kg_ha": 1300
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 120,
+          "area_ha": 120,
+          "yield_kg_ha": 1000
+        },
+        {
+          "crop": "cártamo",
+          "crop_en": "Safflower",
+          "tons": 48,
+          "area_ha": 60,
+          "yield_kg_ha": 800
+        }
+      ]
+    }
+  ]
+}

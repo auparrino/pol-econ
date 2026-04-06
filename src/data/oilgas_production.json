@@ -1,0 +1,189 @@
+{
+  "period": "2025",
+  "source": "Secretaría de Energía - Cap. IV",
+  "updated": "2026-04-06",
+  "national": {
+    "oil_m3": 46438524,
+    "oil_bbl_day": 800244,
+    "gas_km3": 51547888,
+    "gas_mm3_day": 141.3,
+    "wells": 83171
+  },
+  "provinces": [
+    {
+      "province": "Neuquén",
+      "oil_m3": 30036657,
+      "oil_bbl_day": 517602,
+      "gas_km3": 35346913,
+      "gas_mm3_day": 96.8,
+      "wells": 18874,
+      "basins": [
+        {
+          "basin": "NEUQUINA",
+          "oil_pct": 100,
+          "gas_pct": 100
+        }
+      ]
+    },
+    {
+      "province": "Chubut",
+      "oil_m3": 7192670,
+      "oil_bbl_day": 123947,
+      "gas_km3": 2272265,
+      "gas_mm3_day": 6.2,
+      "wells": 21289,
+      "basins": [
+        {
+          "basin": "GOLFO SAN JORGE",
+          "oil_pct": 100,
+          "gas_pct": 100
+        }
+      ]
+    },
+    {
+      "province": "Santa Cruz",
+      "oil_m3": 3592333,
+      "oil_bbl_day": 61904,
+      "gas_km3": 2816394,
+      "gas_mm3_day": 7.7,
+      "wells": 23583,
+      "basins": [
+        {
+          "basin": "GOLFO SAN JORGE",
+          "oil_pct": 95,
+          "gas_pct": 45
+        },
+        {
+          "basin": "AUSTRAL",
+          "oil_pct": 5,
+          "gas_pct": 55
+        }
+      ]
+    },
+    {
+      "province": "Mendoza",
+      "oil_m3": 3099065,
+      "oil_bbl_day": 53404,
+      "gas_km3": 493313,
+      "gas_mm3_day": 1.4,
+      "wells": 8753,
+      "basins": [
+        {
+          "basin": "NEUQUINA",
+          "oil_pct": 73,
+          "gas_pct": 92
+        },
+        {
+          "basin": "CUYANA",
+          "oil_pct": 27,
+          "gas_pct": 8
+        }
+      ]
+    },
+    {
+      "province": "Rio Negro",
+      "oil_m3": 1231603,
+      "oil_bbl_day": 21223,
+      "gas_km3": 984136,
+      "gas_mm3_day": 2.7,
+      "wells": 5667,
+      "basins": [
+        {
+          "basin": "NEUQUINA",
+          "oil_pct": 100,
+          "gas_pct": 100
+        }
+      ]
+    },
+    {
+      "province": "La Pampa",
+      "oil_m3": 660932,
+      "oil_bbl_day": 11389,
+      "gas_km3": 174327,
+      "gas_mm3_day": 0.5,
+      "wells": 2699,
+      "basins": [
+        {
+          "basin": "NEUQUINA",
+          "oil_pct": 100,
+          "gas_pct": 100
+        }
+      ]
+    },
+    {
+      "province": "Estado Nacional",
+      "oil_m3": 263745,
+      "oil_bbl_day": 4545,
+      "gas_km3": 6990325,
+      "gas_mm3_day": 19.2,
+      "wells": 64,
+      "basins": [
+        {
+          "basin": "AUSTRAL",
+          "oil_pct": 100,
+          "gas_pct": 100
+        }
+      ]
+    },
+    {
+      "province": "Tierra del Fuego",
+      "oil_m3": 189806,
+      "oil_bbl_day": 3271,
+      "gas_km3": 1347540,
+      "gas_mm3_day": 3.7,
+      "wells": 1236,
+      "basins": [
+        {
+          "basin": "AUSTRAL",
+          "oil_pct": 100,
+          "gas_pct": 100
+        }
+      ]
+    },
+    {
+      "province": "Salta",
+      "oil_m3": 130864,
+      "oil_bbl_day": 2255,
+      "gas_km3": 1115435,
+      "gas_mm3_day": 3.1,
+      "wells": 896,
+      "basins": [
+        {
+          "basin": "NOROESTE",
+          "oil_pct": 100,
+          "gas_pct": 100
+        }
+      ]
+    },
+    {
+      "province": "Formosa",
+      "oil_m3": 30844,
+      "oil_bbl_day": 532,
+      "gas_km3": 4213,
+      "gas_mm3_day": 0,
+      "wells": 64,
+      "basins": [
+        {
+          "basin": "NOROESTE",
+          "oil_pct": 100,
+          "gas_pct": 100
+        }
+      ]
+    },
+    {
+      "province": "Jujuy",
+      "oil_m3": 10005,
+      "oil_bbl_day": 172,
+      "gas_km3": 3027,
+      "gas_mm3_day": 0,
+      "wells": 46,
+      "basins": [
+        {
+          "basin": "NOROESTE",
+          "oil_pct": 100,
+          "gas_pct": 100
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "year": 2024,
+  "source": "ADEFA, company reports, press (2024 annual data)",
+  "notes": "Production fell 17.1% vs 2023 (610,715). ADEFA does not publish per-brand breakdowns until 7 months after year-end; plant-level figures are estimates from press reports and company announcements.",
+  "total_vehicles": 506571,
+  "total_motorcycles_registered": 491494,
+  "plants": [
+    {
+      "company": "Toyota",
+      "plant": "Zárate",
+      "province": "Buenos Aires",
+      "locality": "Zárate",
+      "lat": -34.0953,
+      "lon": -59.0284,
+      "vehicles": ["Hilux", "SW4", "Hiace"],
+      "type": "pickup / SUV / van",
+      "production": 170330,
+      "share_pct": 33.6,
+      "employees": 7500,
+      "notes": "35.3% of national production per Toyota. Hiace added 2024 (~4,000 units). Three shifts."
+    },
+    {
+      "company": "Stellantis (Fiat)",
+      "plant": "Ferreyra",
+      "province": "Córdoba",
+      "locality": "Ferreyra",
+      "lat": -31.4833,
+      "lon": -64.0975,
+      "vehicles": ["Fiat Cronos"],
+      "type": "sedan",
+      "production": 83200,
+      "share_pct": 16.4,
+      "employees": 2500,
+      "notes": "500,000th Cronos milestone reached Feb 2026. Investment of US$385M for new vehicle family."
+    },
+    {
+      "company": "Stellantis (Peugeot / Citroën)",
+      "plant": "El Palomar",
+      "province": "Buenos Aires",
+      "locality": "El Palomar",
+      "lat": -34.6036,
+      "lon": -58.5989,
+      "vehicles": ["Peugeot 208", "Peugeot 2008", "Peugeot Partner", "Citroën Berlingo"],
+      "type": "hatchback / SUV / van",
+      "production": 72224,
+      "share_pct": 14.3,
+      "employees": 2800,
+      "notes": "3 million cumulative units milestone. 208 ~39,000 + 2008 ~18,000 + Partner/Berlingo ~15,000."
+    },
+    {
+      "company": "Ford",
+      "plant": "Pacheco",
+      "province": "Buenos Aires",
+      "locality": "General Pacheco",
+      "lat": -34.4536,
+      "lon": -58.6353,
+      "vehicles": ["Ranger"],
+      "type": "pickup",
+      "production": 61000,
+      "share_pct": 12.0,
+      "employees": 3800,
+      "notes": "Estimated from 2025 target of 70,000 (+15%). US$660M investment. V6 Lion 3.0L engine since Jun 2024. ~70% exported."
+    },
+    {
+      "company": "Volkswagen",
+      "plant": "Pacheco",
+      "province": "Buenos Aires",
+      "locality": "General Pacheco",
+      "lat": -34.4617,
+      "lon": -58.6281,
+      "vehicles": ["Amarok", "Taos"],
+      "type": "pickup / SUV",
+      "production": 40000,
+      "share_pct": 7.9,
+      "employees": 1041,
+      "notes": "81 vehicles/day, 1 shift. Taos discontinued Jul 2025. US$580M for new Amarok (2027). Estimated ~40k from daily capacity."
+    },
+    {
+      "company": "Renault",
+      "plant": "Santa Isabel",
+      "province": "Córdoba",
+      "locality": "Santa Isabel",
+      "lat": -31.4016,
+      "lon": -64.2647,
+      "vehicles": ["Kangoo", "Logan", "Sandero", "Alaskan"],
+      "type": "van / sedan / pickup",
+      "production": 25000,
+      "share_pct": 4.9,
+      "employees": 2200,
+      "notes": "Logan/Sandero discontinued end 2024. Alaskan discontinued late 2024 (~2,037 sold). New compact pickup (Niágara-based) announced. Estimate includes all models."
+    },
+    {
+      "company": "General Motors (Chevrolet)",
+      "plant": "Alvear",
+      "province": "Santa Fe",
+      "locality": "Alvear",
+      "lat": -33.0283,
+      "lon": -60.6828,
+      "vehicles": ["Tracker"],
+      "type": "SUV",
+      "production": 20000,
+      "share_pct": 3.9,
+      "employees": 1600,
+      "notes": "Cruze discontinued end 2023. Tracker only model since Jan 2024. Mid/high versions. Estimated ~20k."
+    },
+    {
+      "company": "Nissan",
+      "plant": "Santa Isabel (shared w/ Renault)",
+      "province": "Córdoba",
+      "locality": "Santa Isabel",
+      "lat": -31.4016,
+      "lon": -64.2647,
+      "vehicles": ["Frontier"],
+      "type": "pickup",
+      "production": 17500,
+      "share_pct": 3.5,
+      "employees": 800,
+      "notes": "Down from 33,000 in 2023. 100,000th Frontier milestone in May 2024. Production moving to Mexico in 2026."
+    },
+    {
+      "company": "Mercedes-Benz (Grupo ST)",
+      "plant": "Virrey del Pino",
+      "province": "Buenos Aires",
+      "locality": "Virrey del Pino",
+      "lat": -34.7983,
+      "lon": -58.7025,
+      "vehicles": ["Sprinter", "Accelo", "Atego"],
+      "type": "van / truck",
+      "production": 10000,
+      "share_pct": 2.0,
+      "employees": 2200,
+      "notes": "400,000th Sprinter Dec 2023. 70% exported. Plant sold to Grupo ST (through 2029). Estimate ~10k total."
+    },
+    {
+      "company": "Iveco",
+      "plant": "Ferreyra",
+      "province": "Córdoba",
+      "locality": "Ferreyra",
+      "lat": -31.4900,
+      "lon": -64.0950,
+      "vehicles": ["Tector", "Cursor", "Stralis", "Trakker", "Daily", "Eurocargo"],
+      "type": "truck / bus chassis",
+      "production": 4000,
+      "share_pct": 0.8,
+      "employees": 800,
+      "notes": "FPT engine plant produced 200,000th engine Mar 2024. First CNG-powered buses in Nov 2024. Estimate ~4k."
+    },
+    {
+      "company": "Scania",
+      "plant": "Colombres",
+      "province": "Tucumán",
+      "locality": "Colombres",
+      "lat": -26.8422,
+      "lon": -65.1692,
+      "vehicles": [],
+      "type": "transmissions (components only)",
+      "production": 0,
+      "share_pct": 0,
+      "employees": 800,
+      "notes": "Manufactures truck transmissions (G25, G33). 100% exported to Brazil/Europe. Not a vehicle assembly plant. US$45M expansion announced."
+    }
+  ],
+  "motorcycles": {
+    "year": 2024,
+    "source": "CAFAM / press reports",
+    "total_registered": 491494,
+    "national_share_pct": 97,
+    "notes": "97% of motorcycles sold are assembled nationally, mainly in Tierra del Fuego. CAFAM reports registrations, not production. Assembly plants: Mirgor, Newsan, Grupo Iraola (Motomel/Corven/Gilera), Beta (Betular). Top brands by sales: Honda, Motomel, Corven, Zanella, Bajaj.",
+    "assembly_provinces": [
+      {
+        "province": "Tierra del Fuego",
+        "estimated_units": 400000,
+        "companies": ["Mirgor", "Newsan", "Grupo Iraola", "Beta (Betular)"],
+        "notes": "Bulk of national assembly under sub-national tax incentive regime. Brands assembled: Honda, Yamaha, Motomel, Corven, Zanella, Gilera, Bajaj, etc."
+      },
+      {
+        "province": "Buenos Aires",
+        "estimated_units": 70000,
+        "companies": ["Honda Motor Argentina (Campana)", "Corven (Venado Tuerto is Santa Fe)"],
+        "notes": "Honda has a small plant in Campana. Some brands assemble outside TdF."
+      },
+      {
+        "province": "Santa Fe",
+        "estimated_units": 20000,
+        "companies": ["Corven (Venado Tuerto)"],
+        "notes": "Minor assembly operations."
+      }
+    ]
+  },
+  "by_province": [
+    {
+      "province": "Buenos Aires",
+      "vehicles": 353554,
+      "motorcycles": 70000,
+      "plants": ["Toyota Zárate", "Stellantis El Palomar", "Ford Pacheco", "VW Pacheco", "Mercedes-Benz Virrey del Pino"],
+      "notes": "Dominant province. ~70% of national vehicle production."
+    },
+    {
+      "province": "Córdoba",
+      "vehicles": 129700,
+      "motorcycles": 0,
+      "plants": ["Stellantis/Fiat Ferreyra", "Renault Santa Isabel", "Nissan Santa Isabel", "Iveco Ferreyra"],
+      "notes": "Second largest. Fiat Cronos + Renault lineup + Nissan Frontier + Iveco trucks."
+    },
+    {
+      "province": "Santa Fe",
+      "vehicles": 20000,
+      "motorcycles": 20000,
+      "plants": ["GM Alvear"],
+      "notes": "Chevrolet Tracker only. Corven motorcycle assembly in Venado Tuerto."
+    },
+    {
+      "province": "Tucumán",
+      "vehicles": 0,
+      "motorcycles": 0,
+      "plants": ["Scania Colombres (components only)"],
+      "notes": "Scania makes transmissions, not finished vehicles."
+    },
+    {
+      "province": "Tierra del Fuego",
+      "vehicles": 0,
+      "motorcycles": 400000,
+      "plants": [],
+      "notes": "Major motorcycle assembly hub under tax incentive regime. No car/truck assembly."
+    }
+  ]
+}

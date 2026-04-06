@@ -71,12 +71,12 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
       )}
 
       {subTab === 'production' && (
-        <ProductionSection provinceName={selectedProvince} sipaSectors={sipa?.sectors} mobile={mobile} />
+        <ProductionSection provinceName={selectedProvince} />
       )}
 
       {/* Source footer */}
       <p className="text-[10px] text-[#003049]/30 mt-4 leading-relaxed">
-        Sources: CEP XXI/SIPA (employment), Sec. Hacienda TOP/EAIF (fiscal), INDEC (exports), CEPAL (production)
+        Sources: CEP XXI/SIPA (employment), Sec. Hacienda TOP/EAIF (fiscal), INDEC (exports), MAGyP/Sec. Energía/SENASA/ADEFA (production)
       </p>
     </div>
   );
