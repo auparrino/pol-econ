@@ -126,7 +126,20 @@
           "area_ha": 100,
           "yield_kg_ha": 850
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Peach",
+          "Strawberry"
+        ],
+        "vegetables": [
+          "Potato",
+          "Onion",
+          "Tomato",
+          "Lettuce"
+        ],
+        "industrial": []
+      }
     },
     {
       "province": "Córdoba",
@@ -259,7 +272,19 @@
           "area_ha": 30,
           "yield_kg_ha": 1000
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Strawberry"
+        ],
+        "vegetables": [
+          "Potato",
+          "Garlic"
+        ],
+        "industrial": [
+          "Peanut"
+        ]
+      }
     },
     {
       "province": "Santa Fe",
@@ -378,107 +403,17 @@
           "area_ha": 650,
           "yield_kg_ha": 523
         }
-      ]
-    },
-    {
-      "province": "Tucumán",
-      "total_tons": 17968037,
-      "total_area_ha": 665300,
-      "crops": [
-        {
-          "crop": "sugarcane",
-          "crop_en": "Sugarcane",
-          "tons": 17062495,
-          "area_ha": 290000,
-          "yield_kg_ha": 58836,
-          "_source": "IPAAT Zafra 2024"
-        },
-        {
-          "crop": "soja total",
-          "crop_en": "Soybeans",
-          "tons": 473056,
-          "area_ha": 182895,
-          "yield_kg_ha": 2586
-        },
-        {
-          "crop": "maíz",
-          "crop_en": "Corn",
-          "tons": 265954,
-          "area_ha": 55640,
-          "yield_kg_ha": 4780
-        },
-        {
-          "crop": "trigo total",
-          "crop_en": "Wheat",
-          "tons": 86636,
-          "area_ha": 79370,
-          "yield_kg_ha": 1092
-        },
-        {
-          "crop": "sorgo",
-          "crop_en": "Sorghum",
-          "tons": 34440,
-          "area_ha": 14450,
-          "yield_kg_ha": 2383
-        },
-        {
-          "crop": "garbanzo",
-          "crop_en": "Chickpea",
-          "tons": 16132,
-          "area_ha": 15320,
-          "yield_kg_ha": 1053
-        },
-        {
-          "crop": "poroto total",
-          "crop_en": "Beans",
-          "tons": 15395,
-          "area_ha": 19230,
-          "yield_kg_ha": 801
-        },
-        {
-          "crop": "tobacco",
-          "crop_en": "Tobacco",
-          "tons": 6836,
-          "area_ha": 3705,
-          "yield_kg_ha": 1845,
-          "_source": "MAGyP 2016/17"
-        },
-        {
-          "crop": "maní",
-          "crop_en": "Peanuts",
-          "tons": 3899,
-          "area_ha": 2050,
-          "yield_kg_ha": 1902
-        },
-        {
-          "crop": "avena",
-          "crop_en": "Oats",
-          "tons": 1319,
-          "area_ha": 1280,
-          "yield_kg_ha": 1030
-        },
-        {
-          "crop": "centeno",
-          "crop_en": "Rye",
-          "tons": 1008,
-          "area_ha": 890,
-          "yield_kg_ha": 1133
-        },
-        {
-          "crop": "girasol",
-          "crop_en": "Sunflower",
-          "tons": 625,
-          "area_ha": 250,
-          "yield_kg_ha": 2500
-        },
-        {
-          "crop": "colza",
-          "crop_en": "Canola",
-          "tons": 242,
-          "area_ha": 220,
-          "yield_kg_ha": 1100
-        }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Strawberry",
+          "Peach"
+        ],
+        "vegetables": [
+          "Garlic"
+        ],
+        "industrial": []
+      }
     },
     {
       "province": "Entre Ríos",
@@ -583,7 +518,19 @@
           "area_ha": 150,
           "yield_kg_ha": 1200
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Mandarin",
+          "Blueberry",
+          "Pecan nut"
+        ],
+        "vegetables": [],
+        "industrial": [
+          "Rice",
+          "Poultry"
+        ]
+      }
     },
     {
       "province": "Santiago del Estero",
@@ -688,7 +635,14 @@
           "area_ha": 285,
           "yield_kg_ha": 2200
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [],
+        "vegetables": [],
+        "industrial": [
+          "Cotton"
+        ]
+      }
     },
     {
       "province": "La Pampa",
@@ -772,107 +726,18 @@
           "area_ha": 390,
           "yield_kg_ha": 895
         }
-      ]
-    },
-    {
-      "province": "Jujuy",
-      "total_tons": 5228683,
-      "total_area_ha": 137748,
-      "crops": [
-        {
-          "crop": "sugarcane",
-          "crop_en": "Sugarcane",
-          "tons": 5100000,
-          "area_ha": 75000,
-          "yield_kg_ha": 68000,
-          "_source": "IPAAT Zafra 2024 (est. 75% of combined)"
-        },
-        {
-          "crop": "tobacco",
-          "crop_en": "Tobacco",
-          "tons": 40586,
-          "area_ha": 14557,
-          "yield_kg_ha": 2788,
-          "_source": "MAGyP 2016/17"
-        },
-        {
-          "crop": "poroto total",
-          "crop_en": "Beans",
-          "tons": 33622,
-          "area_ha": 28018,
-          "yield_kg_ha": 1200
-        },
-        {
-          "crop": "maíz",
-          "crop_en": "Corn",
-          "tons": 26412,
-          "area_ha": 6604,
-          "yield_kg_ha": 3999
-        },
-        {
-          "crop": "soja total",
-          "crop_en": "Soybeans",
-          "tons": 14396,
-          "area_ha": 7198,
-          "yield_kg_ha": 2000
-        },
-        {
-          "crop": "sorgo",
-          "crop_en": "Sorghum",
-          "tons": 7693,
-          "area_ha": 2137,
-          "yield_kg_ha": 3600
-        },
-        {
-          "crop": "trigo total",
-          "crop_en": "Wheat",
-          "tons": 4152,
-          "area_ha": 2844,
-          "yield_kg_ha": 1460
-        },
-        {
-          "crop": "avena",
-          "crop_en": "Oats",
-          "tons": 1134,
-          "area_ha": 810,
-          "yield_kg_ha": 1400
-        },
-        {
-          "crop": "maní",
-          "crop_en": "Peanuts",
-          "tons": 520,
-          "area_ha": 400,
-          "yield_kg_ha": 1300
-        },
-        {
-          "crop": "garbanzo",
-          "crop_en": "Chickpea",
-          "tons": 120,
-          "area_ha": 120,
-          "yield_kg_ha": 1000
-        },
-        {
-          "crop": "cártamo",
-          "crop_en": "Safflower",
-          "tons": 48,
-          "area_ha": 60,
-          "yield_kg_ha": 800
-        }
-      ]
+      ],
+      "specialties": {
+        "fruits": [],
+        "vegetables": [],
+        "industrial": []
+      }
     },
     {
       "province": "Salta",
-      "total_tons": 4901992,
+      "total_tons": 3302992,
       "total_area_ha": 1256287,
       "crops": [
-        {
-          "crop": "sugarcane",
-          "crop_en": "Sugarcane",
-          "tons": 1700000,
-          "area_ha": 30000,
-          "yield_kg_ha": 56667,
-          "_source": "IPAAT Zafra 2024 (est. 25% of combined)"
-        },
         {
           "crop": "maíz",
           "crop_en": "Corn",
@@ -893,6 +758,14 @@
           "tons": 545292,
           "area_ha": 458950,
           "yield_kg_ha": 1188
+        },
+        {
+          "crop": "azúcar",
+          "crop_en": "Sugar",
+          "tons": 101000,
+          "area_ha": 30000,
+          "yield_kg_ha": 3367,
+          "_source": "IPAAT 2024 (refined sugar from cane, ~7% conversion)"
         },
         {
           "crop": "sorgo",
@@ -1022,7 +895,22 @@
           "area_ha": 90,
           "yield_kg_ha": 500
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Tobacco",
+          "Avocado",
+          "Bean"
+        ],
+        "vegetables": [
+          "Pepper"
+        ],
+        "industrial": [
+          "Sugar",
+          "Tobacco",
+          "Wine (high altitude)"
+        ]
+      }
     },
     {
       "province": "San Luis",
@@ -1106,7 +994,125 @@
           "area_ha": 400,
           "yield_kg_ha": 1600
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [],
+        "vegetables": [],
+        "industrial": []
+      }
+    },
+    {
+      "province": "Tucumán",
+      "total_tons": 2102973,
+      "total_area_ha": 665300,
+      "crops": [
+        {
+          "crop": "azúcar",
+          "crop_en": "Sugar",
+          "tons": 1197431,
+          "area_ha": 290000,
+          "yield_kg_ha": 4129,
+          "_source": "IPAAT 2024 (refined sugar from cane, ~7% conversion)"
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 473056,
+          "area_ha": 182895,
+          "yield_kg_ha": 2586
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 265954,
+          "area_ha": 55640,
+          "yield_kg_ha": 4780
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 86636,
+          "area_ha": 79370,
+          "yield_kg_ha": 1092
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 34440,
+          "area_ha": 14450,
+          "yield_kg_ha": 2383
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 16132,
+          "area_ha": 15320,
+          "yield_kg_ha": 1053
+        },
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 15395,
+          "area_ha": 19230,
+          "yield_kg_ha": 801
+        },
+        {
+          "crop": "tobacco",
+          "crop_en": "Tobacco",
+          "tons": 6836,
+          "area_ha": 3705,
+          "yield_kg_ha": 1845,
+          "_source": "MAGyP 2016/17"
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 3899,
+          "area_ha": 2050,
+          "yield_kg_ha": 1902
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 1319,
+          "area_ha": 1280,
+          "yield_kg_ha": 1030
+        },
+        {
+          "crop": "centeno",
+          "crop_en": "Rye",
+          "tons": 1008,
+          "area_ha": 890,
+          "yield_kg_ha": 1133
+        },
+        {
+          "crop": "girasol",
+          "crop_en": "Sunflower",
+          "tons": 625,
+          "area_ha": 250,
+          "yield_kg_ha": 2500
+        },
+        {
+          "crop": "colza",
+          "crop_en": "Canola",
+          "tons": 242,
+          "area_ha": 220,
+          "yield_kg_ha": 1100
+        }
+      ],
+      "specialties": {
+        "fruits": [
+          "Lemon",
+          "Strawberry",
+          "Avocado",
+          "Blueberry"
+        ],
+        "vegetables": [],
+        "industrial": [
+          "Sugar",
+          "Bioethanol"
+        ]
+      }
     },
     {
       "province": "Misiones",
@@ -1149,7 +1155,21 @@
           "area_ha": 4324,
           "yield_kg_ha": 3500
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Citrus"
+        ],
+        "vegetables": [
+          "Cassava"
+        ],
+        "industrial": [
+          "Yerba Mate",
+          "Tea",
+          "Tobacco",
+          "Wood pulp"
+        ]
+      }
     },
     {
       "province": "Chaco",
@@ -1241,7 +1261,15 @@
           "area_ha": 66,
           "yield_kg_ha": 1106
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [],
+        "vegetables": [],
+        "industrial": [
+          "Cotton",
+          "Tobacco"
+        ]
+      }
     },
     {
       "province": "Mendoza",
@@ -1256,7 +1284,25 @@
           "yield_kg_ha": 9206,
           "_source": "INV 2024"
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Grapes",
+          "Plum",
+          "Cherry",
+          "Peach",
+          "Apricot",
+          "Olive"
+        ],
+        "vegetables": [
+          "Garlic",
+          "Tomato",
+          "Potato"
+        ],
+        "industrial": [
+          "Wine"
+        ]
+      }
     },
     {
       "province": "Corrientes",
@@ -1327,7 +1373,122 @@
           "yield_kg_ha": 780,
           "_source": "MAGyP 2016/17"
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Mandarin",
+          "Orange",
+          "Lemon"
+        ],
+        "vegetables": [
+          "Tomato"
+        ],
+        "industrial": [
+          "Yerba Mate",
+          "Tea",
+          "Rice"
+        ]
+      }
+    },
+    {
+      "province": "Jujuy",
+      "total_tons": 533683,
+      "total_area_ha": 137748,
+      "crops": [
+        {
+          "crop": "azúcar",
+          "crop_en": "Sugar",
+          "tons": 405000,
+          "area_ha": 75000,
+          "yield_kg_ha": 5400,
+          "_source": "IPAAT 2024 (refined sugar from cane, ~7% conversion)"
+        },
+        {
+          "crop": "tobacco",
+          "crop_en": "Tobacco",
+          "tons": 40586,
+          "area_ha": 14557,
+          "yield_kg_ha": 2788,
+          "_source": "MAGyP 2016/17"
+        },
+        {
+          "crop": "poroto total",
+          "crop_en": "Beans",
+          "tons": 33622,
+          "area_ha": 28018,
+          "yield_kg_ha": 1200
+        },
+        {
+          "crop": "maíz",
+          "crop_en": "Corn",
+          "tons": 26412,
+          "area_ha": 6604,
+          "yield_kg_ha": 3999
+        },
+        {
+          "crop": "soja total",
+          "crop_en": "Soybeans",
+          "tons": 14396,
+          "area_ha": 7198,
+          "yield_kg_ha": 2000
+        },
+        {
+          "crop": "sorgo",
+          "crop_en": "Sorghum",
+          "tons": 7693,
+          "area_ha": 2137,
+          "yield_kg_ha": 3600
+        },
+        {
+          "crop": "trigo total",
+          "crop_en": "Wheat",
+          "tons": 4152,
+          "area_ha": 2844,
+          "yield_kg_ha": 1460
+        },
+        {
+          "crop": "avena",
+          "crop_en": "Oats",
+          "tons": 1134,
+          "area_ha": 810,
+          "yield_kg_ha": 1400
+        },
+        {
+          "crop": "maní",
+          "crop_en": "Peanuts",
+          "tons": 520,
+          "area_ha": 400,
+          "yield_kg_ha": 1300
+        },
+        {
+          "crop": "garbanzo",
+          "crop_en": "Chickpea",
+          "tons": 120,
+          "area_ha": 120,
+          "yield_kg_ha": 1000
+        },
+        {
+          "crop": "cártamo",
+          "crop_en": "Safflower",
+          "tons": 48,
+          "area_ha": 60,
+          "yield_kg_ha": 800
+        }
+      ],
+      "specialties": {
+        "fruits": [
+          "Avocado",
+          "Strawberry",
+          "Mango"
+        ],
+        "vegetables": [
+          "Andean potatoes"
+        ],
+        "industrial": [
+          "Sugar",
+          "Tobacco"
+        ]
+      }
     },
     {
       "province": "San Juan",
@@ -1342,7 +1503,19 @@
           "yield_kg_ha": 10075,
           "_source": "INV 2024"
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Grapes",
+          "Olive",
+          "Melon"
+        ],
+        "vegetables": [],
+        "industrial": [
+          "Wine",
+          "Raisins"
+        ]
+      }
     },
     {
       "province": "Catamarca",
@@ -1442,7 +1615,19 @@
           "area_ha": 100,
           "yield_kg_ha": 2500
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Olive",
+          "Grapes",
+          "Walnut"
+        ],
+        "vegetables": [],
+        "industrial": [
+          "Wine",
+          "Olive oil"
+        ]
+      }
     },
     {
       "province": "Formosa",
@@ -1512,7 +1697,17 @@
           "area_ha": 150,
           "yield_kg_ha": 1200
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Banana",
+          "Pomelo"
+        ],
+        "vegetables": [],
+        "industrial": [
+          "Cotton"
+        ]
+      }
     },
     {
       "province": "La Rioja",
@@ -1527,7 +1722,19 @@
           "yield_kg_ha": 8537,
           "_source": "INV 2024 (est.)"
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Olive",
+          "Grapes",
+          "Walnut"
+        ],
+        "vegetables": [],
+        "industrial": [
+          "Wine",
+          "Olive oil"
+        ]
+      }
     },
     {
       "province": "Neuquén",
@@ -1542,7 +1749,16 @@
           "yield_kg_ha": 5200,
           "_source": "INV 2024 (press)"
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Apple",
+          "Pear",
+          "Cherry"
+        ],
+        "vegetables": [],
+        "industrial": []
+      }
     },
     {
       "province": "Río Negro",
@@ -1557,8 +1773,72 @@
           "yield_kg_ha": 3500,
           "_source": "INV 2024 (press)"
         }
-      ]
+      ],
+      "specialties": {
+        "fruits": [
+          "Apple",
+          "Pear",
+          "Cherry"
+        ],
+        "vegetables": [
+          "Onion"
+        ],
+        "industrial": []
+      }
+    },
+    {
+      "province": "Chubut",
+      "total_tons": 0,
+      "total_area_ha": 0,
+      "crops": [],
+      "specialties": {
+        "fruits": [
+          "Cherry",
+          "Berries"
+        ],
+        "vegetables": [
+          "Onion"
+        ],
+        "industrial": []
+      }
+    },
+    {
+      "province": "Santa Cruz",
+      "total_tons": 0,
+      "total_area_ha": 0,
+      "crops": [],
+      "specialties": {
+        "fruits": [],
+        "vegetables": [],
+        "industrial": [
+          "Wool"
+        ]
+      }
+    },
+    {
+      "province": "Tierra del Fuego",
+      "total_tons": 0,
+      "total_area_ha": 0,
+      "crops": [],
+      "specialties": {
+        "fruits": [],
+        "vegetables": [],
+        "industrial": [
+          "Wool"
+        ]
+      }
+    },
+    {
+      "province": "Ciudad de Buenos Aires",
+      "total_tons": 0,
+      "total_area_ha": 0,
+      "crops": [],
+      "specialties": {
+        "fruits": [],
+        "vegetables": [],
+        "industrial": []
+      }
     }
   ],
-  "notes": "Grain crops: MAGyP 2024/25. Yerba mate/tea: MAGyP 2023/24. Sugarcane: IPAAT 2024. Grapes: INV 2024. Tobacco: MAGyP 2016/17."
+  "notes": "Cereals & oilseeds: MAGyP 2024/25 estimates. Yerba mate/tea/tobacco: MAGyP latest available. Sugar: IPAAT 2024 (refined sugar, not cane). Grapes: INV 2024. Specialties are qualitative — known regional production from CNA 2018 + sector reports."
 }

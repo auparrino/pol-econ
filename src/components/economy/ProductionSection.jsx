@@ -114,7 +114,19 @@ export default function ProductionSection({ provinceName }) {
     });
   }, [provinceName]);
 
-  const hasData = agri || oilgas || livestock.length > 0 || plants.length > 0;
+  const motoCompanies = useMemo(() => {
+    if (!provinceName || !vehicleData.motorcycles?.plants_by_province) return [];
+    const n = norm(provinceName);
+    const match = vehicleData.motorcycles.plants_by_province.find(p => {
+      const d = norm(p.province);
+      return d === n || d.includes(n) || n.includes(d);
+    });
+    return match?.companies || [];
+  }, [provinceName]);
+
+  const specialties = useMemo(() => agri?.specialties || null, [agri]);
+
+  const hasData = agri || oilgas || livestock.length > 0 || plants.length > 0 || motoCompanies.length > 0;
 
   if (!hasData) {
     return (
@@ -130,8 +142,11 @@ export default function ProductionSection({ provinceName }) {
         Physical production indicators from national sources.
       </p>
 
-      {/* ── Agriculture ──────────────────────────────────────── */}
+      {/* ── Cereals & oilseeds ───────────────────────────────── */}
       {agri && <AgricultureCard data={agri} campaign={agriData.campaign} />}
+
+      {/* ── Regional specialties (qualitative) ───────────────── */}
+      {specialties && <SpecialtiesCard specialties={specialties} />}
 
       {/* ── Oil & Gas ────────────────────────────────────────── */}
       {oilgas && <OilGasCard data={oilgas} year={oilgasData.period} national={oilgasData.national} />}
@@ -141,18 +156,36 @@ export default function ProductionSection({ provinceName }) {
 
       {/* ── Vehicles ─────────────────────────────────────────── */}
       {plants.length > 0 && <VehicleCard plants={plants} year={vehicleData.year} totalNational={vehicleData.total_vehicles} />}
+
+      {/* ── Motorcycles ──────────────────────────────────────── */}
+      {motoCompanies.length > 0 && <MotorcyclesCard companies={motoCompanies} />}
     </div>
   );
 }
 
 /* ── Agriculture card ────────────────────────────────────────────── */
 
+// Crops shown as quantitative bars (cereals & oilseeds + main industrial crops with hard data)
+const CEREALS_OILSEEDS = new Set([
+  'Soybeans', 'Corn', 'Wheat', 'Sunflower', 'Sorghum', 'Barley',
+  'Malting Barley', 'Feed Barley', 'Rice', 'Oats', 'Rye', 'Flax',
+  'Canola', 'Safflower', 'Millet', 'Canary Grass', 'Durum Wheat',
+  'Grain Sorghum', 'Soybeans (1st)', 'Soybeans (2nd)',
+]);
+const INDUSTRIAL_HARD_DATA = new Set(['Yerba Mate', 'Tea', 'Sugar', 'Tobacco', 'Cotton', 'Grapes', 'Peanuts']);
+
 function AgricultureCard({ data, campaign }) {
-  const crops = (data.crops || []).slice(0, 8);
+  const allCrops = data.crops || [];
+  // Show only crops with hard production data (cereals/oilseeds + main industrial)
+  const crops = allCrops
+    .filter(c => CEREALS_OILSEEDS.has(c.crop_en) || INDUSTRIAL_HARD_DATA.has(c.crop_en))
+    .slice(0, 8);
   const maxTons = crops[0]?.tons || 1;
 
+  if (crops.length === 0) return null;
+
   return (
-    <SectionCard title="Agricultural Production" subtitle={campaign} color="#16a34a">
+    <SectionCard title="Cereals & oilseeds" subtitle={campaign} color="#16a34a">
       <div className="flex gap-4 mb-2">
         <div>
           <p className="text-[10px] text-[#003049]/40 uppercase">Total harvest</p>
@@ -175,6 +208,60 @@ function AgricultureCard({ data, campaign }) {
           />
         ))}
       </div>
+      <p className="text-[9px] text-[#003049]/30 mt-1.5">
+        Sources: MAGyP estimates 2024/25, IPAAT (sugar), INV (grapes).
+      </p>
+    </SectionCard>
+  );
+}
+
+/* ── Regional specialties card (qualitative) ─────────────────────── */
+
+function SpecialtiesCard({ specialties }) {
+  const fruits = specialties?.fruits || [];
+  const vegetables = specialties?.vegetables || [];
+  const industrial = specialties?.industrial || [];
+  if (!fruits.length && !vegetables.length && !industrial.length) return null;
+
+  return (
+    <SectionCard title="Regional specialties" subtitle="known production" color="#84cc16">
+      <div className="space-y-1">
+        {fruits.length > 0 && (
+          <div className="flex gap-2">
+            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">Fruits</span>
+            <span className="text-[11px] text-[#003049]/80 leading-tight">{fruits.join(', ')}</span>
+          </div>
+        )}
+        {vegetables.length > 0 && (
+          <div className="flex gap-2">
+            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">Vegetables</span>
+            <span className="text-[11px] text-[#003049]/80 leading-tight">{vegetables.join(', ')}</span>
+          </div>
+        )}
+        {industrial.length > 0 && (
+          <div className="flex gap-2">
+            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">Industrial</span>
+            <span className="text-[11px] text-[#003049]/80 leading-tight">{industrial.join(', ')}</span>
+          </div>
+        )}
+      </div>
+      <p className="text-[9px] text-[#003049]/30 mt-1.5">
+        Sources: CNA 2018, sector reports. Qualitative — no tonnage available.
+      </p>
+    </SectionCard>
+  );
+}
+
+/* ── Motorcycle plants card (qualitative) ────────────────────────── */
+
+function MotorcyclesCard({ companies }) {
+  if (!companies || companies.length === 0) return null;
+  return (
+    <SectionCard title="Motorcycle plants" subtitle="2024" color="#f59e0b">
+      <p className="text-[11px] text-[#003049]/70 leading-tight">{companies.join(', ')}</p>
+      <p className="text-[9px] text-[#003049]/30 mt-1.5">
+        Source: CAFAM / press. ~12 plants nationally produce 491K motorcycles/year.
+      </p>
     </SectionCard>
   );
 }

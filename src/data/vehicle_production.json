@@ -3,7 +3,6 @@
   "source": "ADEFA, company reports, press (2024 annual data)",
   "notes": "Production fell 17.1% vs 2023 (610,715). ADEFA does not publish per-brand breakdowns until 7 months after year-end; plant-level figures are estimates from press reports and company announcements.",
   "total_vehicles": 506571,
-  "total_motorcycles_registered": 491494,
   "plants": [
     {
       "company": "Toyota",
@@ -146,82 +145,39 @@
       "notes": "FPT engine plant produced 200,000th engine Mar 2024. First CNG-powered buses in Nov 2024. Estimate ~4k."
     },
     {
-      "company": "Scania",
-      "plant": "Colombres",
-      "province": "Tucumán",
-      "locality": "Colombres",
-      "lat": -26.8422,
-      "lon": -65.1692,
-      "vehicles": [],
-      "type": "transmissions (components only)",
-      "production": 0,
-      "share_pct": 0,
+      "company": "Iveco",
+      "plant": "Ferreyra",
+      "province": "Córdoba",
+      "locality": "Ferreyra",
+      "lat": -31.4900,
+      "lon": -64.0950,
+      "vehicles": ["Tector", "Cursor", "Stralis", "Trakker", "Daily", "Eurocargo"],
+      "type": "trucks / bus chassis",
+      "production": 4000,
+      "share_pct": 0.8,
       "employees": 800,
-      "notes": "Manufactures truck transmissions (G25, G33). 100% exported to Brazil/Europe. Not a vehicle assembly plant. US$45M expansion announced."
+      "notes": "Commercial vehicles only (trucks and bus chassis). Not passenger cars. FPT engine plant."
     }
   ],
   "motorcycles": {
     "year": 2024,
     "source": "CAFAM / press reports",
-    "total_registered": 491494,
+    "total_units": 491494,
     "national_share_pct": 97,
-    "notes": "97% of motorcycles sold are assembled nationally, mainly in Tierra del Fuego. CAFAM reports registrations, not production. Assembly plants: Mirgor, Newsan, Grupo Iraola (Motomel/Corven/Gilera), Beta (Betular). Top brands by sales: Honda, Motomel, Corven, Zanella, Bajaj.",
-    "assembly_provinces": [
-      {
-        "province": "Tierra del Fuego",
-        "estimated_units": 400000,
-        "companies": ["Mirgor", "Newsan", "Grupo Iraola", "Beta (Betular)"],
-        "notes": "Bulk of national assembly under sub-national tax incentive regime. Brands assembled: Honda, Yamaha, Motomel, Corven, Zanella, Gilera, Bajaj, etc."
-      },
+    "notes": "CAFAM reports total national production but not per-plant figures. ~12 active factories. Plants listed below by province (qualitative — no production split available).",
+    "plants_by_province": [
       {
         "province": "Buenos Aires",
-        "estimated_units": 70000,
-        "companies": ["Honda Motor Argentina (Campana)", "Corven (Venado Tuerto is Santa Fe)"],
-        "notes": "Honda has a small plant in Campana. Some brands assemble outside TdF."
+        "companies": ["Honda (Campana)", "Yamaha", "Beta", "Gilera", "Hero", "Zanella", "KTM", "TVS (Cardales)"]
       },
       {
         "province": "Santa Fe",
-        "estimated_units": 20000,
-        "companies": ["Corven (Venado Tuerto)"],
-        "notes": "Minor assembly operations."
+        "companies": ["Corven (Venado Tuerto)", "Guerrero", "Bajaj (via Corven)"]
+      },
+      {
+        "province": "Córdoba",
+        "companies": ["Kymco", "Keller", "Okinoi", "Appia"]
       }
     ]
-  },
-  "by_province": [
-    {
-      "province": "Buenos Aires",
-      "vehicles": 353554,
-      "motorcycles": 70000,
-      "plants": ["Toyota Zárate", "Stellantis El Palomar", "Ford Pacheco", "VW Pacheco", "Mercedes-Benz Virrey del Pino"],
-      "notes": "Dominant province. ~70% of national vehicle production."
-    },
-    {
-      "province": "Córdoba",
-      "vehicles": 129700,
-      "motorcycles": 0,
-      "plants": ["Stellantis/Fiat Ferreyra", "Renault Santa Isabel", "Nissan Santa Isabel", "Iveco Ferreyra"],
-      "notes": "Second largest. Fiat Cronos + Renault lineup + Nissan Frontier + Iveco trucks."
-    },
-    {
-      "province": "Santa Fe",
-      "vehicles": 20000,
-      "motorcycles": 20000,
-      "plants": ["GM Alvear"],
-      "notes": "Chevrolet Tracker only. Corven motorcycle assembly in Venado Tuerto."
-    },
-    {
-      "province": "Tucumán",
-      "vehicles": 0,
-      "motorcycles": 0,
-      "plants": ["Scania Colombres (components only)"],
-      "notes": "Scania makes transmissions, not finished vehicles."
-    },
-    {
-      "province": "Tierra del Fuego",
-      "vehicles": 0,
-      "motorcycles": 400000,
-      "plants": [],
-      "notes": "Major motorcycle assembly hub under tax incentive regime. No car/truck assembly."
-    }
-  ]
+  }
 }
