@@ -54,7 +54,7 @@ export default function EmploymentSection({ sipa, mobile }) {
             <div className="flex gap-1.5 mt-1.5">
               <div className="flex-1 h-[8px] bg-[#003049]/10 rounded-full overflow-hidden flex">
                 <div className="h-full rounded-l-full" style={{ width: `${sipa.private / sipa.total * 100}%`, backgroundColor: '#669BBC' }} />
-                <div className="h-full rounded-r-full" style={{ width: `${sipa.public / sipa.total * 100}%`, backgroundColor: '#f97316' }} />
+                <div className="h-full rounded-r-full" style={{ width: `${sipa.public / sipa.total * 100}%`, backgroundColor: '#1a1a1a' }} />
               </div>
             </div>
             <div className="flex justify-between mt-1">
@@ -63,7 +63,7 @@ export default function EmploymentSection({ sipa, mobile }) {
                 Private: {fmtNum(sipa.private)} ({(sipa.private / sipa.total * 100).toFixed(0)}%)
               </span>
               <span className="text-[11px] text-[#003049]/50 flex items-center gap-1">
-                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: '#f97316' }} />
+                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: '#1a1a1a' }} />
                 Public: {fmtNum(sipa.public)} ({(sipa.public / sipa.total * 100).toFixed(0)}%)
               </span>
             </div>
@@ -111,7 +111,7 @@ export default function EmploymentSection({ sipa, mobile }) {
               {publicPct > 0 && (
                 <div
                   className="h-full"
-                  style={{ width: `${publicPct}%`, backgroundColor: '#f97316' }}
+                  style={{ width: `${publicPct}%`, backgroundColor: '#1a1a1a' }}
                   title={`Public employment: ${publicPct.toFixed(1)}%`}
                 />
               )}
@@ -126,7 +126,7 @@ export default function EmploymentSection({ sipa, mobile }) {
           {/* Public employment as a sector row */}
           {sipa.public > 0 && (
             <div className="flex items-center gap-1.5 py-[3px] border-t border-[#003049]/8 mt-1 pt-1" title={`Public employment: ${fmtNum(sipa.public)}`}>
-              <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: '#f97316' }} />
+              <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: '#1a1a1a' }} />
               <span className="text-[12px] text-[#003049]/70 flex-1 min-w-0 break-words leading-tight font-semibold">Public employment</span>
               <span className="text-[11px] font-mono text-[#003049]/50 shrink-0">
                 {fmtK(sipa.public)}
@@ -151,7 +151,7 @@ export default function EmploymentSection({ sipa, mobile }) {
                 <YAxis {...AXIS_STYLE} tickFormatter={formatThousands} />
                 <Tooltip content={<CustomTooltip formatter={v => fmtNum(v)} />} />
                 <Area type="monotone" dataKey="private" stackId="1" fill="#669BBC" fillOpacity={0.5} stroke="#669BBC" name="Private" />
-                <Area type="monotone" dataKey="public" stackId="1" fill="#f97316" fillOpacity={0.5} stroke="#f97316" name="Public" />
+                <Area type="monotone" dataKey="public" stackId="1" fill="#1a1a1a" fillOpacity={0.5} stroke="#1a1a1a" name="Public" />
               </AreaChart>
             </ResponsiveContainer>
           </div>

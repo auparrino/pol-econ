@@ -1,23 +1,24 @@
-// Sector family colors for employment charts
+// Sector family colors — chosen to be visually distinct from each other.
+// Hue spaced ~20° apart, with brightness varied to break up neighbours.
 export const FAMILY_COLORS = {
-  Primary: '#4ade80',
-  Mining: '#a78bfa',
-  Industry: '#60a5fa',
-  Utilities: '#fbbf24',
-  Construction: '#f97316',
-  Trade: '#22d3ee',
-  Transport: '#818cf8',
-  Hospitality: '#fb923c',
-  'IT & Comms': '#34d399',
-  Finance: '#c084fc',
-  'Real Estate': '#94a3b8',
-  'Prof. Services': '#67e8f9',
-  'Admin. Services': '#a3e635',
-  Education: '#f472b6',
-  Health: '#e879f9',
-  Culture: '#fca5a5',
-  'Other Services': '#d4d4d8',
-  Other: '#9ca3af',
+  Primary:           '#16a34a', // green
+  Mining:            '#7c2d12', // dark brown
+  Industry:          '#1d4ed8', // strong blue
+  Utilities:         '#facc15', // yellow
+  Construction:      '#ea580c', // orange
+  Trade:             '#0891b2', // cyan
+  Transport:         '#4338ca', // indigo
+  Hospitality:       '#e11d48', // rose
+  'IT & Comms':      '#06b6d4', // light cyan
+  Finance:           '#9333ea', // violet
+  'Real Estate':     '#78716c', // warm grey
+  'Prof. Services':  '#0d9488', // teal
+  'Admin. Services': '#84cc16', // lime
+  Education:         '#db2777', // pink
+  Health:            '#dc2626', // red
+  Culture:           '#a16207', // gold
+  'Other Services':  '#475569', // slate
+  Other:             '#a8a29e', // light grey
 };
 
 // Export category colors

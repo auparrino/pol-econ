@@ -1,4 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import ErrorBoundary from '../ErrorBoundary';
 import LoadingSpinner from '../LoadingSpinner';
 import MobileMapTab from './MobileMapTab';
@@ -8,6 +8,69 @@ const MobileNationTab = lazy(() => import('./MobileNationTab'));
 const MobileMacroTab = lazy(() => import('./MobileMacroTab'));
 
 const TAB_BAR_H = 56;
+
+function alignColorOf(a) {
+  const s = a?.toLowerCase() || '';
+  if (s.includes('oficialismo')) return '#7d3c98';
+  if (s.includes('aliado')) return '#17a589';
+  if (s.includes('negociador') || s.includes('pragmát')) return '#d4a800';
+  if (s.includes('oposición dura')) return '#780000';
+  if (s.includes('oposición')) return '#C1121F';
+  return '#669BBC';
+}
+
+function PeekCard({ province, governor, onOpen, onDismiss }) {
+  if (!province) return null;
+  const align = governor?.alineamiento_nacion;
+  const color = alignColorOf(align);
+  return (
+    <div
+      className="fixed left-2 right-2 z-[1700] rounded-2xl border"
+      style={{
+        bottom: TAB_BAR_H + 10,
+        background: '#FFF8EB',
+        borderColor: '#003049',
+        boxShadow: '0 8px 24px rgba(0,48,73,0.30)',
+        padding: '10px 14px',
+      }}
+    >
+      <div className="flex items-start justify-between gap-2">
+        <div className="min-w-0 flex-1">
+          <p className="text-[15px] font-extrabold text-[#003049] truncate">{province}</p>
+          {governor ? (
+            <p className="text-[12px] text-[#003049]/70 truncate">
+              {governor.gobernador} · {governor.partido}
+            </p>
+          ) : (
+            <p className="text-[12px] text-[#003049]/50 italic">No data</p>
+          )}
+          {align && (
+            <span
+              className="inline-block mt-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded"
+              style={{ background: `${color}22`, color }}
+            >
+              {align}
+            </span>
+          )}
+        </div>
+        <button
+          onClick={onDismiss}
+          className="text-[#003049]/40 text-2xl leading-none p-1"
+          aria-label="Dismiss"
+        >
+          ×
+        </button>
+      </div>
+      <button
+        onClick={onOpen}
+        className="mt-2 w-full text-[12px] font-bold uppercase tracking-wider rounded-lg py-2"
+        style={{ background: '#003049', color: '#FDF0D5' }}
+      >
+        View full details →
+      </button>
+    </div>
+  );
+}
 
 const TABS = [
   { id: 'map',      label: 'Map',      icon: '🗺' },
@@ -30,14 +93,19 @@ export default function MobileShell({
 }) {
   const [tab, setTab] = useState('map');
 
-  // Auto-hint when a province gets selected from the map: stay on map (peek card),
-  // but if the user already had Province open, refresh content. No forced switch.
-  // (User can manually press "View full details" or the Province tab.)
-  useEffect(() => {
-    if (!selectedProvince && tab === 'province') {
-      // No province selected -> Province tab will show empty state, that's fine.
-    }
-  }, [selectedProvince, tab]);
+  // Resolve governor for the peek card.
+  const peekGovernor = selectedProvince
+    ? governors.find(g => {
+        const p = g.provincia?.toLowerCase();
+        const s = selectedProvince.toLowerCase();
+        if (!p) return false;
+        if (s.includes('ciudad') !== p.includes('ciudad')) return false;
+        return p === s || p.includes(s) || s.includes(p);
+      })
+    : null;
+
+  // Show peek card only on Map tab when a province is selected.
+  const showPeek = tab === 'map' && !!selectedProvince;
 
   return (
     <div className="h-screen w-screen overflow-hidden bg-cream relative">
@@ -54,7 +122,7 @@ export default function MobileShell({
             setEnergyLayers={setEnergyLayers}
             selectedProvince={selectedProvince}
             onProvinceSelect={setSelectedProvince}
-            onOpenProvinceTab={() => setTab('province')}
+            hasPeekCard={showPeek}
           />
         )}
         {tab === 'province' && (
@@ -64,6 +132,8 @@ export default function MobileShell({
                 province={selectedProvince}
                 governors={governors}
                 congress={congress}
+                overlays={overlays}
+                energyLayers={energyLayers}
                 onGoToMap={() => setTab('map')}
               />
             </Suspense>
@@ -84,6 +154,16 @@ export default function MobileShell({
           </ErrorBoundary>
         )}
       </div>
+
+      {/* Global peek card (rendered above tabs, below sheet) */}
+      {showPeek && (
+        <PeekCard
+          province={selectedProvince}
+          governor={peekGovernor}
+          onOpen={() => setTab('province')}
+          onDismiss={() => setSelectedProvince(null)}
+        />
+      )}
 
       {/* Bottom nav */}
       <nav

@@ -19,67 +19,6 @@ const OVERLAY_LAYERS = [
   { id: 'mining', label: 'Mining projects', icon: '⛏️', color: '#ffd700' },
 ];
 
-function PeekCard({ province, governor, onOpen, onDismiss }) {
-  if (!province) return null;
-  const align = governor?.alineamiento_nacion;
-  const alignColor = (() => {
-    const a = align?.toLowerCase() || '';
-    if (a.includes('oficialismo')) return '#7d3c98';
-    if (a.includes('aliado')) return '#17a589';
-    if (a.includes('negociador') || a.includes('pragmát')) return '#d4a800';
-    if (a.includes('oposición dura')) return '#780000';
-    if (a.includes('oposición')) return '#C1121F';
-    return '#669BBC';
-  })();
-  return (
-    <div
-      className="absolute left-2 right-2 z-[1500] rounded-2xl border shadow-lg"
-      style={{
-        bottom: 12,
-        background: '#FFF8EB',
-        borderColor: '#d4c4a0',
-        boxShadow: '0 6px 18px rgba(0,48,73,0.18)',
-        padding: '10px 14px',
-      }}
-    >
-      <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0 flex-1">
-          <p className="text-[15px] font-extrabold text-[#003049] truncate">{province}</p>
-          {governor ? (
-            <p className="text-[12px] text-[#003049]/70 truncate">
-              {governor.gobernador} · {governor.partido}
-            </p>
-          ) : (
-            <p className="text-[12px] text-[#003049]/50 italic">No data</p>
-          )}
-          {align && (
-            <span
-              className="inline-block mt-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded"
-              style={{ background: `${alignColor}22`, color: alignColor }}
-            >
-              {align}
-            </span>
-          )}
-        </div>
-        <button
-          onClick={onDismiss}
-          className="text-[#003049]/40 text-2xl leading-none p-1"
-          aria-label="Dismiss"
-        >
-          ×
-        </button>
-      </div>
-      <button
-        onClick={onOpen}
-        className="mt-2 w-full text-[12px] font-bold uppercase tracking-wider rounded-lg py-2"
-        style={{ background: '#003049', color: '#FDF0D5' }}
-      >
-        View full details →
-      </button>
-    </div>
-  );
-}
-
 export default function MobileMapTab({
   governors,
   choroplethMode,
@@ -90,7 +29,7 @@ export default function MobileMapTab({
   setEnergyLayers,
   selectedProvince,
   onProvinceSelect,
-  onOpenProvinceTab,
+  hasPeekCard,
 }) {
   const [sheetOpen, setSheetOpen] = useState(false);
 
@@ -99,30 +38,29 @@ export default function MobileMapTab({
     setEnergyLayers(prev => prev.includes(id) ? prev.filter(l => l !== id) : [...prev, id]);
 
   const activeModeLabel = CHOROPLETH_MODES.find(m => m.id === choroplethMode)?.label || 'None';
-  const governor = selectedProvince
-    ? governors.find(g => {
-        const p = g.provincia?.toLowerCase();
-        const s = selectedProvince.toLowerCase();
-        if (!p) return false;
-        if (s.includes('ciudad') !== p.includes('ciudad')) return false;
-        return p === s || p.includes(s) || s.includes(p);
-      })
-    : null;
+  const overlayCount = (overlays?.mining ? 1 : 0) + (energyLayers?.length || 0);
 
   return (
     <div className="absolute inset-0 flex flex-col">
-      {/* Title bar */}
+      {/* Title bar — bigger Layers button, more obvious */}
       <div
-        className="shrink-0 flex items-center justify-between px-4"
-        style={{ height: 40, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)' }}
+        className="shrink-0 flex items-center justify-between px-3 gap-2"
+        style={{ height: 44, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)' }}
       >
-        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight">Argentina Atlas</h1>
+        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight truncate">Argentina Atlas</h1>
         <button
           onClick={() => setSheetOpen(true)}
-          className="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full"
-          style={{ background: 'rgba(0,48,73,0.08)', color: '#003049', border: '1px solid rgba(0,48,73,0.18)' }}
+          className="shrink-0 inline-flex items-center gap-1.5 text-[12px] font-bold uppercase tracking-wider px-3.5 py-2 rounded-lg"
+          style={{ background: '#003049', color: '#FDF0D5' }}
+          aria-label="Open layers and color settings"
         >
-          ⚙ Layers
+          <span>⚙</span>
+          <span>Layers & Color</span>
+          {overlayCount > 0 && (
+            <span className="ml-1 text-[10px] px-1.5 rounded-full" style={{ background: '#FDF0D5', color: '#003049' }}>
+              {overlayCount}
+            </span>
+          )}
         </button>
       </div>
 
@@ -138,32 +76,30 @@ export default function MobileMapTab({
             onProvinceSelect={onProvinceSelect}
           />
         </ErrorBoundary>
-        <Legend choroplethMode={choroplethMode} showMining={overlays.mining} />
+        {/* Hide legend when peek card is up (would overlap) */}
+        {!hasPeekCard && (
+          <Legend choroplethMode={choroplethMode} showMining={overlays.mining} />
+        )}
 
-        {/* Active mode chip */}
+        {/* Active mode chip — clearly tappable, with chevron */}
         {choroplethMode !== 'none' && (
           <button
             onClick={() => setSheetOpen(true)}
-            className="absolute left-2 z-[1400] text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full"
+            className="absolute left-2 z-[1400] inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full"
             style={{
               top: 8,
               background: '#FFF8EB',
-              border: '1px solid rgba(0,48,73,0.22)',
+              border: '1px solid #003049',
               color: '#003049',
-              boxShadow: '0 2px 8px rgba(0,48,73,0.12)',
+              boxShadow: '0 2px 8px rgba(0,48,73,0.18)',
             }}
+            aria-label={`Change color mode (current: ${activeModeLabel})`}
           >
-            Color: {activeModeLabel}
+            <span style={{ opacity: 0.55 }}>Color:</span>
+            <span>{activeModeLabel}</span>
+            <span className="text-[8px]">▾</span>
           </button>
         )}
-
-        {/* Peek card on selection */}
-        <PeekCard
-          province={selectedProvince}
-          governor={governor}
-          onOpen={onOpenProvinceTab}
-          onDismiss={() => onProvinceSelect(null)}
-        />
       </div>
 
       {/* Layer sheet */}

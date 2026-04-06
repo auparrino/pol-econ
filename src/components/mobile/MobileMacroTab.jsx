@@ -9,8 +9,8 @@ function Delta({ delta }) {
   const color = dir === 'up' ? '#27ae60' : dir === 'down' ? '#C1121F' : '#8899aa';
   const arrow = dir === 'up' ? '▲' : dir === 'down' ? '▼' : '·';
   return (
-    <span className="text-[11px] font-mono" style={{ color }}>
-      {arrow} {Math.abs(pct).toFixed(1)}%
+    <span className="text-[10px] font-mono whitespace-nowrap" style={{ color }}>
+      {arrow}{Math.abs(pct).toFixed(1)}%
     </span>
   );
 }
@@ -18,16 +18,16 @@ function Delta({ delta }) {
 function BigCard({ label, value, prefix = '', suffix = '', delta }) {
   return (
     <div
-      className="rounded-xl border p-3 flex flex-col justify-between"
+      className="rounded-xl border p-3 min-w-0"
       style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}
     >
       <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/55">{label}</p>
-      <p className="text-[22px] font-extrabold font-mono text-[#003049] leading-tight mt-1">
-        {value != null
-          ? `${prefix}${typeof value === 'number' ? value.toLocaleString('es-AR') : value}${suffix}`
-          : '—'}
-      </p>
-      <div className="mt-1 h-[14px]">
+      <div className="flex items-baseline justify-between gap-1.5 mt-1 min-w-0">
+        <p className="text-[19px] font-extrabold font-mono text-[#003049] leading-tight truncate min-w-0">
+          {value != null
+            ? `${prefix}${typeof value === 'number' ? value.toLocaleString('es-AR') : value}${suffix}`
+            : '—'}
+        </p>
         <Delta delta={delta} />
       </div>
     </div>

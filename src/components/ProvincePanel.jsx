@@ -287,21 +287,34 @@ function AlignmentBar({ value }) {
   );
 }
 
-const VOTE_COLOR = { A: '#27ae60', N: '#C1121F', ABS: '#64748b' };
-const VOTE_LABEL = { A: 'A', N: 'N', ABS: '~' };
+const VOTE_COLOR = { A: '#27ae60', N: '#C1121F', ABS: '#d4a800' };
+const VOTE_LABEL = { A: 'A', N: 'N', ABS: 'ABS' };
 
 function VoteDot({ topic, vote }) {
+  // No record at all = absent. Visually distinct: dashed empty box.
   if (!vote) return (
-    <span title={VOTE_TOPICS[topic]?.label || topic}
-      className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-sm text-[10px] font-bold bg-[#003049]/6 text-[#003049]/60">
-      –
+    <span
+      title={`${VOTE_TOPICS[topic]?.label || topic}: Absent`}
+      className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-sm text-[9px] font-bold"
+      style={{
+        background: 'transparent',
+        color: 'rgba(0,48,73,0.35)',
+        border: '1px dashed rgba(0,48,73,0.35)',
+      }}
+    >
+      AUS
     </span>
   );
   return (
     <span
       title={`${VOTE_TOPICS[topic]?.label || topic}: ${vote === 'A' ? 'Affirmative' : vote === 'N' ? 'Negative' : 'Abstention'}`}
-      className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-sm text-[10px] font-bold"
-      style={{ backgroundColor: `${VOTE_COLOR[vote]}22`, color: VOTE_COLOR[vote], border: `1px solid ${VOTE_COLOR[vote]}55` }}
+      className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-sm font-bold"
+      style={{
+        backgroundColor: `${VOTE_COLOR[vote]}22`,
+        color: VOTE_COLOR[vote],
+        border: `1px solid ${VOTE_COLOR[vote]}66`,
+        fontSize: vote === 'ABS' ? 7 : 10,
+      }}
     >
       {VOTE_LABEL[vote]}
     </span>

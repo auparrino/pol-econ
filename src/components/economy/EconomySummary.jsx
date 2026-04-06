@@ -44,10 +44,10 @@ export default function EconomySummary({ province, Section, DataRow }) {
                   <>
                     <div className="flex h-[5px] rounded-full overflow-hidden mt-1">
                       <div className="h-full" style={{ width: `${sipa.private / sipa.total * 100}%`, backgroundColor: '#669BBC' }} />
-                      <div className="h-full" style={{ width: `${sipa.public / sipa.total * 100}%`, backgroundColor: '#f97316' }} />
+                      <div className="h-full" style={{ width: `${sipa.public / sipa.total * 100}%`, backgroundColor: '#1a1a1a' }} />
                     </div>
                     <p className="text-[10px] text-[#003049]/40">
-                      <span style={{ color: '#669BBC' }}>Priv: {fmtNum(sipa.private)}</span> · <span style={{ color: '#f97316' }}>Pub: {fmtNum(sipa.public)}</span>
+                      <span style={{ color: '#669BBC' }}>Priv: {fmtNum(sipa.private)}</span> · <span style={{ color: '#1a1a1a' }}>Pub: {fmtNum(sipa.public)}</span>
                     </p>
                   </>
                 )}

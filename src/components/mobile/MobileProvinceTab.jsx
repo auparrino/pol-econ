@@ -4,8 +4,10 @@ import { fiscalData } from '../../data/fiscalData';
 import { officialSenators } from '../../data/officialSenators';
 import { officialDeputies } from '../../data/officialDeputies';
 import { politicalContext } from '../../data/politicalContext';
-import EconomySummary from '../economy/EconomySummary';
 
+const EconomyPanel = lazy(() => import('../panels/EconomyPanel'));
+const ProvincialCabinetPanel = lazy(() => import('../panels/ProvincialCabinetPanel'));
+const OverlayPanel = lazy(() => import('../panels/OverlayPanel'));
 const ProvinceNews = lazy(() => import('../ProvinceNews'));
 
 const ALIGNMENT_LABEL = {
@@ -135,25 +137,6 @@ function Accordion({ title, count, defaultOpen = false, children }) {
           {children}
         </div>
       )}
-    </div>
-  );
-}
-
-// Inline Section/DataRow used by EconomySummary inside the accordion.
-function ESection({ title, children }) {
-  return (
-    <div className="mb-3">
-      <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/55 mb-1">{title}</p>
-      {children}
-    </div>
-  );
-}
-function EDataRow({ label, value, color }) {
-  if (!value && value !== 0) return null;
-  return (
-    <div className="flex justify-between items-center py-0.5 text-[12px]">
-      <span className="text-[#003049]/60">{label}</span>
-      <span className={`text-right ${color || 'text-[#003049]'}`}>{value}</span>
     </div>
   );
 }
@@ -317,7 +300,8 @@ function LegislatorsBody({ province, congress }) {
   );
 }
 
-export default function MobileProvinceTab({ province, governors, congress, onGoToMap }) {
+export default function MobileProvinceTab({ province, governors, congress, overlays, energyLayers, onGoToMap }) {
+  const hasActiveOverlay = !!overlays?.mining || (energyLayers?.length > 0);
   if (!province) {
     return (
       <div className="absolute inset-0 flex flex-col">
@@ -382,9 +366,21 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
 
       {/* Scroll body */}
       <div className="flex-1 overflow-y-auto overflow-x-hidden">
-        <div className="p-3 space-y-3">
+        <div className="p-3 space-y-3" style={{ paddingBottom: 80 }}>
           <Hero province={province} governor={governor} />
           <KeyFactsStrip province={province} governor={governor} />
+
+          {hasActiveOverlay && (
+            <Accordion title="Active Layers" defaultOpen>
+              <Suspense fallback={<p className="text-[12px] text-[#003049]/60">Loading…</p>}>
+                <OverlayPanel
+                  overlays={overlays}
+                  energyLayers={energyLayers}
+                  selectedProvince={province}
+                />
+              </Suspense>
+            </Accordion>
+          )}
 
           <Accordion title="Demographics" defaultOpen>
             {governor ? (
@@ -402,7 +398,15 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
           </Accordion>
 
           <Accordion title="Economy">
-            <EconomySummary province={province} Section={ESection} DataRow={EDataRow} />
+            <Suspense fallback={<p className="text-[12px] text-[#003049]/60">Loading…</p>}>
+              <EconomyPanel selectedProvince={province} mobile />
+            </Suspense>
+          </Accordion>
+
+          <Accordion title="Provincial Cabinet">
+            <Suspense fallback={<p className="text-[12px] text-[#003049]/60">Loading…</p>}>
+              <ProvincialCabinetPanel selectedProvince={province} governors={governors} />
+            </Suspense>
           </Accordion>
 
           <Accordion title="Legislators" count={`${senCount}+${depCount}`}>
