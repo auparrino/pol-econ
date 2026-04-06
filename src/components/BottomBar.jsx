@@ -1,7 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import ProvinceNews from './ProvinceNews';
 
-const OverlayPanel = lazy(() => import('./panels/OverlayPanel'));
 const CongressPanel = lazy(() => import('./panels/CongressPanel'));
 const ProvincialCongressPanel = lazy(() => import('./panels/ProvincialCongressPanel'));
 const CabinetPanel = lazy(() => import('./panels/CabinetPanel'));
@@ -25,28 +24,18 @@ const BASE_TABS = [
   { id: 'macro', label: 'Macro' },
 ];
 
-export default function BottomBar({ congress, overlays, energyLayers, selectedProvince, governors, mobile = false }) {
-  const hasOverlay = overlays?.mining || energyLayers?.length > 0;
-
-  const activeTabs = selectedProvince
+export default function BottomBar({ congress, selectedProvince, governors, mobile = false }) {
+  // Overlays are owned by the right-side RightOverlayPanel — not duplicated here.
+  const tabs = selectedProvince
     ? BASE_TABS
     : BASE_TABS.filter(t => t.id !== 'overview' && t.id !== 'economy' && t.id !== 'news');
 
-  const tabs = hasOverlay
-    ? [{ id: 'overlay', label: 'Overlays' }, ...activeTabs]
-    : activeTabs;
-
   const [activeTab, setActiveTab] = useState('congress');
 
-  // When a province is selected, jump to Overview automatically (the most useful default).
+  // When a province is selected, jump to Overview automatically.
   useEffect(() => {
     if (selectedProvince) setActiveTab('overview');
   }, [selectedProvince]);
-
-  useEffect(() => {
-    if (hasOverlay) setActiveTab('overlay');
-    else if (activeTab === 'overlay') setActiveTab(selectedProvince ? 'overview' : 'congress');
-  }, [hasOverlay]); // eslint-disable-line
 
   return (
     <aside
@@ -85,7 +74,6 @@ export default function BottomBar({ congress, overlays, energyLayers, selectedPr
       {/* Panel content */}
       <div id={`panel-${activeTab}`} role="tabpanel" className="flex-1 overflow-y-auto overflow-x-hidden min-h-0" style={{ padding: '12px 16px' }}>
         <Suspense fallback={<PanelFallback />}>
-          {activeTab === 'overlay' && <OverlayPanel overlays={overlays} energyLayers={energyLayers} selectedProvince={selectedProvince} />}
           {activeTab === 'overview' && <OverviewPanel selectedProvince={selectedProvince} governors={governors} />}
           {activeTab === 'congress' && (selectedProvince
             ? <ProvincialCongressPanel selectedProvince={selectedProvince} congress={congress} />

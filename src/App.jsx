@@ -69,8 +69,6 @@ export default function App() {
         <Suspense fallback={null}>
           <BottomBar
             congress={congress}
-            overlays={overlays}
-            energyLayers={energyLayers}
             selectedProvince={selectedProvince}
             governors={governors}
           />
