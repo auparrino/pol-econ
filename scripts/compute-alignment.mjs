@@ -71,7 +71,8 @@ for (const leg of legList) {
     let present = 0;
     for (const m of blocMembers) {
       const v = m.v?.[voteId];
-      if (!v) continue;
+      // Skip absences (missing or 'U'); abstentions ('X') still count as present.
+      if (!v || v === 'U') continue;
       counts[v] = (counts[v] || 0) + 1;
       present += 1;
     }
@@ -121,7 +122,8 @@ for (let i = 0; i < legList.length; i++) {
     const execPos = execByVote[voteId];
     const v = leg.v?.[voteId];
     total += 1;
-    if (!v) { absent += 1; breakdown[voteId] = 'ABSENT'; continue; }
+    // Vote codes: A=Afirmativo, N=Negativo, X=Abstención, U=Ausente, missing=Ausente
+    if (!v || v === 'U') { absent += 1; breakdown[voteId] = 'ABSENT'; continue; }
     cast += 1;
     if (v === execPos) execMatch += 1;
     const blocPos = blocMajority[`${chamber}|${bloc}|${voteId}`];
