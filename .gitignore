@@ -36,3 +36,6 @@ create_portfolio.py
 
 # Local Netlify folder
 .netlify
+scripts/raw/oilgas_2025.csv
+scripts/raw/centrales-shp/
+scripts/raw/centrales-shp.zip
