@@ -33,8 +33,6 @@
   --font-mono: 'IBM Plex Mono', monospace;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
 body {
   font-family: var(--font-display);
   background: var(--color-cream);
