@@ -466,9 +466,12 @@ async function processCentrales() {
         lookup = potenciaMap.get(cleaned);
       }
       if (!lookup) {
-        // Try finding any potencia entry whose description contains this name
+        // Fuzzy: only match against long description keys (≥8 chars) to avoid
+        // 4-letter central codes (e.g. "COST") falsely matching place names
+        // like "GOBERNADOR COSTA". Require the full name to be contained in the
+        // key or vice-versa, not just a short substring.
         for (const [key, val] of potenciaMap) {
-          if (key.length > 3 && (key.includes(nameUp) || nameUp.includes(key))) {
+          if (key.length >= 8 && (key.includes(nameUp) || (nameUp.length >= 8 && nameUp.includes(key)))) {
             lookup = val;
             break;
           }
