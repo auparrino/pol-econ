@@ -654,23 +654,41 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince, compact = f
           </div>
           <div className="h-px w-full bg-[#003049]/10 shrink-0" />
           <div>
-            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">By type</p>
-            <div className="flex gap-2">
-              {cenIsFiltered ? (
-                cenStats && cenStats.sorted.length > 0 ? cenStats.sorted.map(([tec, val]) => (
-                  <div key={tec} className="text-center">
-                    <p className="text-[19px] font-bold font-mono leading-none" style={{ color: CENTRAL_COLORS_BAR[tec] || CENTRAL_COLORS_BAR.default }}>{cenStats.hasMW ? `${(val / 1000).toFixed(1)}GW` : val}</p>
-                    <p className="text-[15px] text-[#003049]/60 leading-none">{CENTRAL_LABELS_BAR[tec] || tec}</p>
-                  </div>
-                )) : <p className="text-[15px] text-[#003049]/40 italic">none in CAMMESA data</p>
-              ) : CEN_STATS.por_tipo.map(t => (
-                <div key={t.tipo} className="text-center">
-                  <p className="text-[19px] font-bold font-mono leading-none" style={{ color: t.color }}>{t.gw}GW</p>
-                  <p className="text-[15px] text-[#003049]/60 leading-none mt-0.5">{t.pct}%</p>
-                  <p className="text-[15px] text-[#003049]/60 leading-none">{t.tipo}</p>
+            <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1.5">By type</p>
+            {cenIsFiltered ? (
+              cenStats && cenStats.sorted.length > 0 ? (
+                <div className="space-y-1">
+                  {cenStats.sorted.map(([tec, val]) => {
+                    const total = cenStats.sorted.reduce((s, [, v]) => s + v, 0);
+                    const pct = total > 0 ? (val / total) * 100 : 0;
+                    const color = CENTRAL_COLORS_BAR[tec] || CENTRAL_COLORS_BAR.default;
+                    return (
+                      <div key={tec} className="flex items-center gap-1.5">
+                        <span className="text-[13px] text-[#003049]/60 w-[52px] shrink-0">{CENTRAL_LABELS_BAR[tec] || tec}</span>
+                        <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
+                          <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: color }} />
+                        </div>
+                        <span className="text-[13px] font-mono text-[#003049]/70 w-[40px] text-right shrink-0">
+                          {cenStats.hasMW ? (val >= 1000 ? `${(val/1000).toFixed(1)}GW` : `${Math.round(val)}MW`) : val}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
-              ))}
-            </div>
+              ) : <p className="text-[15px] text-[#003049]/40 italic">none in CAMMESA data</p>
+            ) : (
+              <div className="space-y-1">
+                {CEN_STATS.por_tipo.map(t => (
+                  <div key={t.tipo} className="flex items-center gap-1.5">
+                    <span className="text-[13px] text-[#003049]/60 w-[52px] shrink-0">{t.tipo}</span>
+                    <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
+                      <div className="h-full rounded-sm" style={{ width: `${t.pct}%`, background: t.color }} />
+                    </div>
+                    <span className="text-[13px] font-mono text-[#003049]/70 w-[40px] text-right shrink-0">{t.gw}GW</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
           {cenIsFiltered && renovStats && (
             <>
@@ -701,13 +719,13 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince, compact = f
               <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
                 <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Main operators</p>
-                <div className="flex gap-2">
+                <div className="flex flex-wrap gap-x-3 gap-y-2">
                   {CEN_STATS.operadores.slice(0, 5).map(op => (
                     <div key={op.name} className="text-center">
-                      <p className="text-[22px] font-bold font-mono text-[#003049]">{op.gw}GW</p>
-                      <p className="text-[16px] text-[#003049]/60 leading-none"><FlagEmoji size={13}>{op.pais}</FlagEmoji></p>
-                      <p className="text-[14px] leading-none mt-0.5" style={{ color: op.tipo === 'estatal' ? '#A855F7' : '#F97316' }}>{op.tipo === 'estatal' ? '▲pub' : '●priv'}</p>
-                      <p className="text-[15px] text-[#003049]/60 leading-none">{op.name.length > 8 ? op.name.slice(0, 8) + '.' : op.name}</p>
+                      <p className="text-[19px] font-bold font-mono text-[#003049]">{op.gw}GW</p>
+                      <p className="text-[14px] text-[#003049]/60 leading-none"><FlagEmoji size={12}>{op.pais}</FlagEmoji></p>
+                      <p className="text-[13px] leading-none mt-0.5" style={{ color: op.tipo === 'estatal' ? '#A855F7' : '#F97316' }}>{op.tipo === 'estatal' ? '▲pub' : '●priv'}</p>
+                      <p className="text-[13px] text-[#003049]/60 leading-none">{op.name.length > 9 ? op.name.slice(0, 9) + '.' : op.name}</p>
                     </div>
                   ))}
                 </div>
