@@ -177,7 +177,7 @@ function Hero({ province, governor }) {
   const color = alignColor(align);
   return (
     <div
-      className="rounded-xl border p-4"
+      className="rounded-xl border p-5"
       style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}
     >
       {governor ? (
@@ -221,7 +221,7 @@ function KeyFactsStrip({ province, governor }) {
       style={{ background: 'rgba(0,48,73,0.04)', borderColor: 'rgba(0,48,73,0.12)' }}
     >
       {facts.map(f => (
-        <div key={f.label} className="px-2 py-2 text-center">
+        <div key={f.label} className="px-2 py-3 text-center">
           <p className="text-[9px] uppercase tracking-wider text-[#003049]/50 font-semibold">{f.label}</p>
           <p className="text-[14px] font-bold font-mono text-[#003049] mt-0.5">{f.value}</p>
         </div>
@@ -234,7 +234,7 @@ function DemographicsContent({ province, governor }) {
   const pw = getProvincePower(province);
   if (!governor) return <NoData />;
   return (
-    <div className="rounded-xl border p-3 text-[12px] space-y-1" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
+    <div className="rounded-xl border p-4 text-[12px] space-y-1.5" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
       <div className="flex justify-between"><span className="text-[#003049]/60">Population</span><span className="font-mono text-[#003049]">{governor.poblacion_censo_2022?.toLocaleString('es-AR')}</span></div>
       <div className="flex justify-between"><span className="text-[#003049]/60">Density</span><span className="font-mono text-[#003049]">{governor.densidad ? `${governor.densidad} hab/km²` : '—'}</span></div>
       <div className="flex justify-between"><span className="text-[#003049]/60">Area</span><span className="font-mono text-[#003049]">{governor.superficie_km2?.toLocaleString('es-AR')} km²</span></div>
@@ -273,7 +273,7 @@ function SocioContent({ province }) {
   const unColor = socio.desempleo > 8 ? '#C1121F' : socio.desempleo > 6 ? '#e67e22' : '#27ae60';
 
   return (
-    <div className="rounded-xl border p-3 space-y-2" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
+    <div className="rounded-xl border p-4 space-y-2" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
       <Bar label="Poverty" value={socio.pobreza} max={65} color={povColor} />
       <Bar label="Unemployment" value={socio.desempleo} max={12} color={unColor} />
       {fiscal && <Bar label="Federal transfers" value={fiscal.transferencias_pct} max={100} color="#669BBC" />}
@@ -479,9 +479,9 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
 
       {/* Horizontal tab strip */}
       <div
-        className="shrink-0 flex gap-1.5 overflow-x-auto"
+        className="shrink-0 flex gap-2 overflow-x-auto"
         style={{
-          padding: '8px 12px',
+          padding: '10px 14px',
           borderBottom: '1px solid rgba(0,48,73,0.10)',
           background: '#FFF8EB',
           scrollbarWidth: 'none',
@@ -494,7 +494,7 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
             <button
               key={t.id}
               onClick={() => setTab(t.id)}
-              className="shrink-0 text-[11px] font-bold uppercase tracking-wider px-4 py-2 rounded-full"
+              className="shrink-0 text-[11px] font-bold uppercase tracking-wider px-5 py-2.5 rounded-full"
               style={active
                 ? { background: '#003049', color: '#FDF0D5' }
                 : { background: 'rgba(0,48,73,0.06)', color: '#003049' }
@@ -508,7 +508,7 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
 
       {/* Tab content */}
       <div className="flex-1 overflow-y-auto overflow-x-hidden">
-        <div style={{ padding: '14px 16px 80px' }}>
+        <div style={{ padding: '18px 18px 88px' }}>
 
           {tab === 'overview' && (
             <div className="space-y-3">
