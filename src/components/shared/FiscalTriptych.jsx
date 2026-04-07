@@ -44,7 +44,7 @@ function CompositionTooltip({ active, payload, label }) {
 
 function Metric({ label, value, sub, color }) {
   return (
-    <div className="rounded-md px-2 py-1.5" style={{ background: 'rgba(0,48,73,0.06)', border: '1px solid rgba(0,48,73,0.10)' }}>
+    <div className="rounded-md px-3 py-3" style={{ background: 'rgba(0,48,73,0.06)', border: '1px solid rgba(0,48,73,0.10)' }}>
       <div className="text-[9px] uppercase tracking-wider text-[#003049]/55">{label}</div>
       <div className="text-[#003049] font-bold text-[15px] font-mono leading-tight" style={color ? { color } : undefined}>{value}</div>
       <div className="text-[9px] text-[#003049]/45">{sub}</div>

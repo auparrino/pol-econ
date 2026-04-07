@@ -514,7 +514,7 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
         <div style={{ padding: '14px 14px 80px' }}>
 
           {tab === 'overview' && (
-            <div className="space-y-3">
+            <div className="space-y-5">
               <Hero province={province} governor={governor} />
               <KeyFactsStrip province={province} governor={governor} />
               <SectionHead>Demographics</SectionHead>
