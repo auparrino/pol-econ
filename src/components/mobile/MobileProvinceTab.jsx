@@ -177,8 +177,8 @@ function Hero({ province, governor }) {
   const color = alignColor(align);
   return (
     <div
-      className="rounded-xl border p-5"
-      style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}
+      className="rounded-xl border"
+      style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)', padding: '20px' }}
     >
       {governor ? (
         <>
@@ -461,27 +461,28 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
   }
 
   return (
-    <div className="absolute inset-0 flex flex-col">
+    <div className="absolute inset-0 flex flex-col" style={{ fontFamily: "'Montserrat', system-ui, sans-serif" }}>
       {/* Title bar */}
       <div
         className="shrink-0 flex items-center gap-2"
-        style={{ height: 48, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 12px 0 8px' }}
+        style={{ height: 54, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 16px' }}
       >
         <button
           onClick={onGoToMap}
-          className="shrink-0 text-[11px] font-bold text-[#003049]/55 py-1 px-2 rounded"
+          className="shrink-0 text-[11px] font-bold text-[#003049]/55 py-1.5 px-3 rounded-full"
+          style={{ background: 'rgba(0,48,73,0.07)' }}
           aria-label="Back to map"
         >
           ← Back to map
         </button>
-        <h1 className="text-[14px] font-extrabold text-[#003049] tracking-tight truncate flex-1 min-w-0">{province}</h1>
+        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight truncate flex-1 min-w-0">{province}</h1>
       </div>
 
       {/* Horizontal tab strip */}
       <div
         className="shrink-0 flex gap-2 overflow-x-auto"
         style={{
-          padding: '10px 14px',
+          padding: '12px 16px',
           borderBottom: '1px solid rgba(0,48,73,0.10)',
           background: '#FFF8EB',
           scrollbarWidth: 'none',
@@ -494,11 +495,13 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
             <button
               key={t.id}
               onClick={() => setTab(t.id)}
-              className="shrink-0 text-[11px] font-bold uppercase tracking-wider px-5 py-2.5 rounded-full"
-              style={active
-                ? { background: '#003049', color: '#FDF0D5' }
-                : { background: 'rgba(0,48,73,0.06)', color: '#003049' }
-              }
+              className="shrink-0 text-[11px] font-bold uppercase tracking-wider rounded-full"
+              style={{
+                padding: '9px 22px',
+                ...(active
+                  ? { background: '#003049', color: '#FDF0D5' }
+                  : { background: 'rgba(0,48,73,0.09)', color: '#003049' })
+              }}
             >
               {t.label}
             </button>
@@ -508,7 +511,7 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
 
       {/* Tab content */}
       <div className="flex-1 overflow-y-auto overflow-x-hidden">
-        <div style={{ padding: '18px 18px 88px' }}>
+        <div style={{ padding: '20px 18px 96px' }}>
 
           {tab === 'overview' && (
             <div className="space-y-3">
