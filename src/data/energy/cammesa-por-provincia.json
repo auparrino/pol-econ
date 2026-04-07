@@ -1,0 +1,755 @@
+{
+  "generated": "2026-04-07",
+  "source": "CAMMESA potencia-instalada Feb-2020",
+  "note": "Plants with ambiguous province assigned to unassigned region bucket",
+  "provinces": {
+    "BUENOS AIRES": {
+      "totalMW": 14786,
+      "byFuente": {
+        "Térmica": 12992.4,
+        "Nuclear": 1107,
+        "Renovable": 686.6
+      },
+      "plantCount": 76,
+      "topPlants": [
+        {
+          "nombre": "ENDESA COSTANERA SA",
+          "fuente": "Térmica",
+          "mw": 1982
+        },
+        {
+          "nombre": "CENTRAL PUERTO SA",
+          "fuente": "Térmica",
+          "mw": 1188
+        },
+        {
+          "nombre": "GENELBA - PETROBRAS",
+          "fuente": "Térmica",
+          "mw": 1043.2
+        },
+        {
+          "nombre": "CENTRAL DOCK SUD",
+          "fuente": "Térmica",
+          "mw": 869.5
+        },
+        {
+          "nombre": "TERMOELECTRICA M.BELGRANO S.A.",
+          "fuente": "Térmica",
+          "mw": 868.2
+        }
+      ]
+    },
+    "NEUQUÉN": {
+      "totalMW": 6300.8,
+      "byFuente": {
+        "Térmica": 1617.4,
+        "Hidráulica": 4664.8,
+        "Renovable": 18.6
+      },
+      "plantCount": 15,
+      "topPlants": [
+        {
+          "nombre": "HIDR. PIEDRA DEL AGUILA S.A.",
+          "fuente": "Hidráulica",
+          "mw": 1440
+        },
+        {
+          "nombre": "HIDROELECTRICA EL CHOCON SA",
+          "fuente": "Hidráulica",
+          "mw": 1290
+        },
+        {
+          "nombre": "AES ALICURA.",
+          "fuente": "Hidráulica",
+          "mw": 1050
+        },
+        {
+          "nombre": "C.T. LOMA DE LA LATA S.A.",
+          "fuente": "Térmica",
+          "mw": 765
+        },
+        {
+          "nombre": "CAPEX S.A. AUTOGENERADOR",
+          "fuente": "Térmica",
+          "mw": 477.1
+        }
+      ]
+    },
+    "MENDOZA": {
+      "totalMW": 1480.5,
+      "byFuente": {
+        "Hidráulica": 772.4,
+        "Renovable": 78.8,
+        "Térmica": 629.3
+      },
+      "plantCount": 20,
+      "topPlants": [
+        {
+          "nombre": "C T MENDOZA COGENERADOR",
+          "fuente": "Térmica",
+          "mw": 575.3
+        },
+        {
+          "nombre": "H. DIAMANTE SA",
+          "fuente": "Hidráulica",
+          "mw": 224
+        },
+        {
+          "nombre": "H. DIAMANTE SA",
+          "fuente": "Hidráulica",
+          "mw": 150
+        },
+        {
+          "nombre": "CONSORCIO POTRERILLOS",
+          "fuente": "Hidráulica",
+          "mw": 120
+        },
+        {
+          "nombre": "HIDROELECTRICA LOS NIHUILES SA",
+          "fuente": "Hidráulica",
+          "mw": 110
+        }
+      ]
+    },
+    "ENTRE RÍOS": {
+      "totalMW": 2144.9,
+      "byFuente": {
+        "Térmica": 1199.9,
+        "Hidráulica": 945
+      },
+      "plantCount": 8,
+      "topPlants": [
+        {
+          "nombre": "CTM SALTO GRANDE",
+          "fuente": "Hidráulica",
+          "mw": 945
+        },
+        {
+          "nombre": "C.T. AES PARANA",
+          "fuente": "Térmica",
+          "mw": 869.5
+        },
+        {
+          "nombre": "C.TERMICA SORRENTO",
+          "fuente": "Térmica",
+          "mw": 217
+        },
+        {
+          "nombre": "CT CONC.DEL URUGUAY II-EMGASUD",
+          "fuente": "Térmica",
+          "mw": 41.8
+        },
+        {
+          "nombre": "CT PARANA - EMGASUD",
+          "fuente": "Térmica",
+          "mw": 40
+        }
+      ]
+    },
+    "MISIONES": {
+      "totalMW": 62.9,
+      "byFuente": {
+        "Térmica": 62.9
+      },
+      "plantCount": 6,
+      "topPlants": [
+        {
+          "nombre": "EMSA GENERACION",
+          "fuente": "Térmica",
+          "mw": 16.8
+        },
+        {
+          "nombre": "CT ALEM - AGGREKO",
+          "fuente": "Térmica",
+          "mw": 15
+        },
+        {
+          "nombre": "CT ARISTOBU.DEL VALLE-SOENERGY",
+          "fuente": "Térmica",
+          "mw": 15
+        },
+        {
+          "nombre": "EMSA GENERACION",
+          "fuente": "Térmica",
+          "mw": 12
+        },
+        {
+          "nombre": "EMSA GENERACION",
+          "fuente": "Térmica",
+          "mw": 2.1
+        }
+      ]
+    },
+    "CHUBUT": {
+      "totalMW": 2031,
+      "byFuente": {
+        "Renovable": 955.9,
+        "Térmica": 537.1,
+        "Hidráulica": 538
+      },
+      "plantCount": 25,
+      "topPlants": [
+        {
+          "nombre": "HIDROELECTRICA FUTALEUFU SA",
+          "fuente": "Hidráulica",
+          "mw": 538
+        },
+        {
+          "nombre": "ALUAR SA - GENERADOR",
+          "fuente": "Térmica",
+          "mw": 189
+        },
+        {
+          "nombre": "P.EOLICO MADRYN 2 GENNEIA",
+          "fuente": "Renovable",
+          "mw": 151.2
+        },
+        {
+          "nombre": "ENERGIA DEL SUR S.A.",
+          "fuente": "Térmica",
+          "mw": 125.1
+        },
+        {
+          "nombre": "P.EOLICO BICENTENARIO 1",
+          "fuente": "Renovable",
+          "mw": 100.8
+        }
+      ]
+    },
+    "SANTIAGO DEL ESTERO": {
+      "totalMW": 190.8,
+      "byFuente": {
+        "Térmica": 163.3,
+        "Renovable": 27.5
+      },
+      "plantCount": 9,
+      "topPlants": [
+        {
+          "nombre": "GENERACION FRIAS S.A.",
+          "fuente": "Térmica",
+          "mw": 60
+        },
+        {
+          "nombre": "CT BANDERA SGOESTERO - ENARSA",
+          "fuente": "Térmica",
+          "mw": 32.5
+        },
+        {
+          "nombre": "CT AÑATUYA II - SULLAIR",
+          "fuente": "Térmica",
+          "mw": 30.7
+        },
+        {
+          "nombre": "GENERACION LA BANDA S.A.",
+          "fuente": "Térmica",
+          "mw": 26
+        },
+        {
+          "nombre": "HIDROELECTRICA RIO HONDO SA",
+          "fuente": "Renovable",
+          "mw": 17.5
+        }
+      ]
+    },
+    "LA RIOJA": {
+      "totalMW": 268.1,
+      "byFuente": {
+        "Renovable": 107.4,
+        "Térmica": 160.7
+      },
+      "plantCount": 16,
+      "topPlants": [
+        {
+          "nombre": "GENERACION RIOJANA SA",
+          "fuente": "Térmica",
+          "mw": 88
+        },
+        {
+          "nombre": "PQUE FOTOVOLTAICO NONOGASTA",
+          "fuente": "Renovable",
+          "mw": 35
+        },
+        {
+          "nombre": "PARQUE EOLICO ARAUCO II SAPEM",
+          "fuente": "Renovable",
+          "mw": 25.2
+        },
+        {
+          "nombre": "PARQUE EOLICO ARAUCO SAPEM",
+          "fuente": "Renovable",
+          "mw": 25.2
+        },
+        {
+          "nombre": "PQUE SOLAR PQUE DE LOS LLANOS",
+          "fuente": "Renovable",
+          "mw": 20
+        }
+      ]
+    },
+    "RÍO NEGRO": {
+      "totalMW": 406.5,
+      "byFuente": {
+        "Térmica": 218.1,
+        "Renovable": 128.4,
+        "Hidráulica": 60
+      },
+      "plantCount": 9,
+      "topPlants": [
+        {
+          "nombre": "CT ROCA SA",
+          "fuente": "Térmica",
+          "mw": 193.1
+        },
+        {
+          "nombre": "P.EOLICO POMONA 1 - RENOVAR",
+          "fuente": "Renovable",
+          "mw": 101.4
+        },
+        {
+          "nombre": "CENTRAL CASA DE PIEDRA",
+          "fuente": "Hidráulica",
+          "mw": 60
+        },
+        {
+          "nombre": "CT BARILOCHE",
+          "fuente": "Térmica",
+          "mw": 20
+        },
+        {
+          "nombre": "GENNEIA S.A.EOLICOS",
+          "fuente": "Renovable",
+          "mw": 11.7
+        }
+      ]
+    },
+    "SANTA FE": {
+      "totalMW": 2458.4,
+      "byFuente": {
+        "Térmica": 2450.7,
+        "Renovable": 7.7
+      },
+      "plantCount": 13,
+      "topPlants": [
+        {
+          "nombre": "TERMOELE. JOSE SAN MARTIN S.A",
+          "fuente": "Térmica",
+          "mw": 865.1
+        },
+        {
+          "nombre": "CT VUELTA DE OBLIGADO",
+          "fuente": "Térmica",
+          "mw": 846.6
+        },
+        {
+          "nombre": "CT BRIGADIER LOPEZ",
+          "fuente": "Térmica",
+          "mw": 280
+        },
+        {
+          "nombre": "CT RENOVA - ALBANESI ENERGIA",
+          "fuente": "Térmica",
+          "mw": 172
+        },
+        {
+          "nombre": "CT PEREZ - SECCO",
+          "fuente": "Térmica",
+          "mw": 81.1
+        }
+      ]
+    },
+    "CÓRDOBA": {
+      "totalMW": 3158.3,
+      "byFuente": {
+        "Térmica": 1404.8,
+        "Renovable": 303.5,
+        "Nuclear": 648,
+        "Hidráulica": 802
+      },
+      "plantCount": 36,
+      "topPlants": [
+        {
+          "nombre": "EPEC GENERACION",
+          "fuente": "Hidráulica",
+          "mw": 750
+        },
+        {
+          "nombre": "NUCLEOELECTRICA ARG. SA",
+          "fuente": "Nuclear",
+          "mw": 648
+        },
+        {
+          "nombre": "CT PILAR - EPEC",
+          "fuente": "Térmica",
+          "mw": 466
+        },
+        {
+          "nombre": "GEN.MEDITERRANEA (CONT.PLUS)",
+          "fuente": "Térmica",
+          "mw": 343
+        },
+        {
+          "nombre": "CT VILLA MARIA",
+          "fuente": "Térmica",
+          "mw": 199.6
+        }
+      ]
+    },
+    "TUCUMÁN": {
+      "totalMW": 954.2,
+      "byFuente": {
+        "Renovable": 56.6,
+        "Térmica": 897.6
+      },
+      "plantCount": 10,
+      "topPlants": [
+        {
+          "nombre": "YPF ENERGÍA ELECTR.EX PLUSPETG",
+          "fuente": "Térmica",
+          "mw": 447
+        },
+        {
+          "nombre": "GENERADORA ELEC.TUCUMAN SA",
+          "fuente": "Térmica",
+          "mw": 232
+        },
+        {
+          "nombre": "GENERACION INDEPENDENCIA S.A.",
+          "fuente": "Térmica",
+          "mw": 120
+        },
+        {
+          "nombre": "CT INDEPEND. ETAPA1 G MEDITERR",
+          "fuente": "Térmica",
+          "mw": 49.6
+        },
+        {
+          "nombre": "CT INDEPEND. ETAPA2 G MEDITERR",
+          "fuente": "Térmica",
+          "mw": 49
+        }
+      ]
+    },
+    "CHACO": {
+      "totalMW": 138.7,
+      "byFuente": {
+        "Térmica": 138.7
+      },
+      "plantCount": 10,
+      "topPlants": [
+        {
+          "nombre": "CT BARRANQUERAS CHACO",
+          "fuente": "Térmica",
+          "mw": 21.7
+        },
+        {
+          "nombre": "CT SAENZ PEÑA - APR ENERGY",
+          "fuente": "Térmica",
+          "mw": 20
+        },
+        {
+          "nombre": "CT CHARATA - SULLAIR",
+          "fuente": "Térmica",
+          "mw": 19.8
+        },
+        {
+          "nombre": "CT CASTELLI - AGGREKO",
+          "fuente": "Térmica",
+          "mw": 15
+        },
+        {
+          "nombre": "CT SAENZ PEÑA II- AGGREKO",
+          "fuente": "Térmica",
+          "mw": 15
+        }
+      ]
+    },
+    "CATAMARCA": {
+      "totalMW": 116.5,
+      "byFuente": {
+        "Térmica": 61,
+        "Renovable": 55.5
+      },
+      "plantCount": 10,
+      "topPlants": [
+        {
+          "nombre": "PQUE SOLAR SAUJIL",
+          "fuente": "Renovable",
+          "mw": 22.5
+        },
+        {
+          "nombre": "CT CATAMARCA - SECCO",
+          "fuente": "Térmica",
+          "mw": 19.2
+        },
+        {
+          "nombre": "CT PARQUE INDUSTR.CATAM-SECCO",
+          "fuente": "Térmica",
+          "mw": 15
+        },
+        {
+          "nombre": "CT TINOGASTA - SULLAIR",
+          "fuente": "Térmica",
+          "mw": 15
+        },
+        {
+          "nombre": "PQUE SOLAR TINOGASTA I",
+          "fuente": "Renovable",
+          "mw": 15
+        }
+      ]
+    },
+    "SAN JUAN": {
+      "totalMW": 506.5,
+      "byFuente": {
+        "Hidráulica": 184.7,
+        "Renovable": 291.8,
+        "Térmica": 30
+      },
+      "plantCount": 20,
+      "topPlants": [
+        {
+          "nombre": "C.H.LOS CARACOLES - EPSE",
+          "fuente": "Hidráulica",
+          "mw": 121.4
+        },
+        {
+          "nombre": "PQUE FOTOV. CORDILLERA SOLAR",
+          "fuente": "Renovable",
+          "mw": 80
+        },
+        {
+          "nombre": "C.H.PUNTA NEGRA - EPSE",
+          "fuente": "Hidráulica",
+          "mw": 63.3
+        },
+        {
+          "nombre": "QUEBRADA ULLUM - EPSE",
+          "fuente": "Renovable",
+          "mw": 45
+        },
+        {
+          "nombre": "HIDROTERMICA SAN JUAN",
+          "fuente": "Renovable",
+          "mw": 42
+        }
+      ]
+    },
+    "SALTA": {
+      "totalMW": 1896.1,
+      "byFuente": {
+        "Hidráulica": 100.5,
+        "Térmica": 1705.1,
+        "Renovable": 90.5
+      },
+      "plantCount": 9,
+      "topPlants": [
+        {
+          "nombre": "C.T. SALTA (TERMOANDES)",
+          "fuente": "Térmica",
+          "mw": 642.7
+        },
+        {
+          "nombre": "YPF ENERGÍA ELECTR.EX PLUSPETG",
+          "fuente": "Térmica",
+          "mw": 382
+        },
+        {
+          "nombre": "C.TERMICA GUEMES S.A.",
+          "fuente": "Térmica",
+          "mw": 361
+        },
+        {
+          "nombre": "CT BRACHO - Y-GEN ELECTRICA II",
+          "fuente": "Térmica",
+          "mw": 274
+        },
+        {
+          "nombre": "AES JURAMENTO",
+          "fuente": "Hidráulica",
+          "mw": 100.5
+        }
+      ]
+    },
+    "CORRIENTES": {
+      "totalMW": 2792.4,
+      "byFuente": {
+        "Térmica": 47.4,
+        "Hidráulica": 2745
+      },
+      "plantCount": 5,
+      "topPlants": [
+        {
+          "nombre": "E.B. YACYRETA",
+          "fuente": "Hidráulica",
+          "mw": 2745
+        },
+        {
+          "nombre": "CT CORRIENTES - AGGREKO",
+          "fuente": "Térmica",
+          "mw": 20
+        },
+        {
+          "nombre": "CT GOYA - SECCO",
+          "fuente": "Térmica",
+          "mw": 13
+        },
+        {
+          "nombre": "CT ITATI - TURBODISEL",
+          "fuente": "Térmica",
+          "mw": 7.2
+        },
+        {
+          "nombre": "CT PASO LA PATRIA-TURBODISEL",
+          "fuente": "Térmica",
+          "mw": 7.2
+        }
+      ]
+    },
+    "FORMOSA": {
+      "totalMW": 60.3,
+      "byFuente": {
+        "Térmica": 60.3
+      },
+      "plantCount": 5,
+      "topPlants": [
+        {
+          "nombre": "CT FORMOSA - APR ENERGY",
+          "fuente": "Térmica",
+          "mw": 30
+        },
+        {
+          "nombre": "CT PIRANE - SULLAIR",
+          "fuente": "Térmica",
+          "mw": 16.3
+        },
+        {
+          "nombre": "CT LAGUNA BLANCA - SECCO",
+          "fuente": "Térmica",
+          "mw": 7
+        },
+        {
+          "nombre": "CT ING JUAREZ - SECCO",
+          "fuente": "Térmica",
+          "mw": 4
+        },
+        {
+          "nombre": "CT PALMAR LARGO - ENARSA",
+          "fuente": "Térmica",
+          "mw": 3
+        }
+      ]
+    },
+    "JUJUY": {
+      "totalMW": 143.9,
+      "byFuente": {
+        "Térmica": 106.3,
+        "Renovable": 37.6
+      },
+      "plantCount": 4,
+      "topPlants": [
+        {
+          "nombre": "CT CAIMANCITO -SULLAIR",
+          "fuente": "Térmica",
+          "mw": 91
+        },
+        {
+          "nombre": "HIDROELECTRICA LAS MADERAS",
+          "fuente": "Renovable",
+          "mw": 30.6
+        },
+        {
+          "nombre": "CT LIBERTADOR GSM - SULLAIR",
+          "fuente": "Térmica",
+          "mw": 15.3
+        },
+        {
+          "nombre": "HIDROELECTRICA REYES EJSEDSA",
+          "fuente": "Renovable",
+          "mw": 7
+        }
+      ]
+    },
+    "LA PAMPA": {
+      "totalMW": 80.8,
+      "byFuente": {
+        "Térmica": 31.2,
+        "Renovable": 49.6
+      },
+      "plantCount": 4,
+      "topPlants": [
+        {
+          "nombre": "P.EOLICO LA BANDERITA",
+          "fuente": "Renovable",
+          "mw": 39.6
+        },
+        {
+          "nombre": "CT REALICO - SECCO",
+          "fuente": "Térmica",
+          "mw": 24
+        },
+        {
+          "nombre": "APELP",
+          "fuente": "Renovable",
+          "mw": 10
+        },
+        {
+          "nombre": "CT SANTA ROSA -TURBODISEL",
+          "fuente": "Térmica",
+          "mw": 7.2
+        }
+      ]
+    },
+    "SANTA CRUZ": {
+      "totalMW": 35,
+      "byFuente": {
+        "Térmica": 35
+      },
+      "plantCount": 1,
+      "topPlants": [
+        {
+          "nombre": "CT RIO CHICO - SPSE",
+          "fuente": "Térmica",
+          "mw": 35
+        }
+      ]
+    },
+    "SAN LUIS": {
+      "totalMW": 8,
+      "byFuente": {
+        "Renovable": 8
+      },
+      "plantCount": 4,
+      "topPlants": [
+        {
+          "nombre": "PQUE SOLAR FTV DE LA PUNTA",
+          "fuente": "Renovable",
+          "mw": 5
+        },
+        {
+          "nombre": "BIO ENERGÍA YANQUETRUZ S.A.",
+          "fuente": "Renovable",
+          "mw": 1.5
+        },
+        {
+          "nombre": "BIOGAS CTBG JUSTO DARACT",
+          "fuente": "Renovable",
+          "mw": 1
+        },
+        {
+          "nombre": "AGRITUR SAN LUIS S.A.",
+          "fuente": "Renovable",
+          "mw": 0.5
+        }
+      ]
+    }
+  },
+  "unassigned": {},
+  "stats": {
+    "totalPlants": 315,
+    "totalAssigned": 315,
+    "totalUnassigned": 0,
+    "assignedMW": 40020,
+    "unassignedMW": 0,
+    "totalMW": 40020
+  }
+}

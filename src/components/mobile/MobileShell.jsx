@@ -2,6 +2,8 @@ import { useState, lazy, Suspense } from 'react';
 import ErrorBoundary from '../ErrorBoundary';
 import LoadingSpinner from '../LoadingSpinner';
 import MobileMapTab from './MobileMapTab';
+import { miningProjects } from '../../data/miningProjects';
+import { alignColor as alignColorOf, alignLabel as alignLabelOf } from '../../utils/alignmentHelpers';
 
 const MobileProvinceTab = lazy(() => import('./MobileProvinceTab'));
 const MobileNationTab = lazy(() => import('./MobileNationTab'));
@@ -9,27 +11,8 @@ const MobileMacroTab = lazy(() => import('./MobileMacroTab'));
 
 const TAB_BAR_H = 56;
 
-function alignColorOf(a) {
-  const s = a?.toLowerCase() || '';
-  if (s.includes('oficialismo')) return '#7d3c98';
-  if (s.includes('aliado')) return '#17a589';
-  if (s.includes('negociador') || s.includes('pragmát')) return '#d4a800';
-  if (s.includes('oposición dura')) return '#780000';
-  if (s.includes('oposición')) return '#C1121F';
-  return '#669BBC';
-}
 
-function alignLabelOf(a) {
-  const s = a?.toLowerCase() || '';
-  if (s.includes('oficialismo')) return 'Ruling Coalition';
-  if (s.includes('aliado')) return 'Allied';
-  if (s.includes('negociador') || s.includes('pragmát')) return 'Pragmatic';
-  if (s.includes('oposición dura')) return 'Hard Opposition';
-  if (s.includes('oposición')) return 'Opposition';
-  return a || '—';
-}
-
-function PeekCard({ province, governor, onOpen, onDismiss }) {
+function PeekCard({ province, governor, miningCount, onOpen, onDismiss }) {
   if (!province) return null;
   const align = governor?.alineamiento_nacion;
   const color = alignColorOf(align);
@@ -62,6 +45,11 @@ function PeekCard({ province, governor, onOpen, onDismiss }) {
               {alignLabelOf(align)}
             </span>
           )}
+          {miningCount != null && (
+            <p className="text-[11px] text-[#003049]/60 mt-1">
+              ⛏ {miningCount} mining project{miningCount !== 1 ? 's' : ''}
+            </p>
+          )}
         </div>
         <button
           onClick={onDismiss}
@@ -75,6 +63,7 @@ function PeekCard({ province, governor, onOpen, onDismiss }) {
         onClick={onOpen}
         className="mt-2 w-full text-[12px] font-bold uppercase tracking-wider rounded-lg py-2"
         style={{ background: '#003049', color: '#FDF0D5' }}
+        aria-label={`View ${province} full details`}
       >
         View full details →
       </button>
@@ -116,6 +105,15 @@ export default function MobileShell({
 
   // Show peek card only on Map tab when a province is selected.
   const showPeek = tab === 'map' && !!selectedProvince;
+
+  // Mining count for peek card overlay summary.
+  const peekMiningCount = showPeek && overlays?.mining && selectedProvince
+    ? miningProjects.filter(p => {
+        const pn = p.provincia?.toLowerCase() || '';
+        const sel = selectedProvince.toLowerCase();
+        return pn === sel || pn.includes(sel) || sel.includes(pn);
+      }).length
+    : null;
 
   return (
     <div className="h-screen w-screen overflow-hidden bg-cream relative">
@@ -170,6 +168,7 @@ export default function MobileShell({
         <PeekCard
           province={selectedProvince}
           governor={peekGovernor}
+          miningCount={peekMiningCount}
           onOpen={() => setTab('province')}
           onDismiss={() => setSelectedProvince(null)}
         />

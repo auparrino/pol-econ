@@ -13,6 +13,8 @@ const SUB_TABS = [
 ];
 
 export default function EconomyPanel({ selectedProvince, mobile = false }) {
+  // On mobile, Fiscal is already shown in the standalone "Fiscal Dependency" accordion
+  const visibleTabs = mobile ? SUB_TABS.filter(t => t.id !== 'fiscal') : SUB_TABS;
   const [subTab, setSubTab] = useState('employment');
   const { sipa, fiscal, exports, exportDest } = useEconomyData(selectedProvince);
 
@@ -36,7 +38,7 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
     <div>
       {/* Sub-tabs */}
       <div className="flex gap-1 mb-3">
-        {SUB_TABS.map(tab => (
+        {visibleTabs.map(tab => (
           <button
             key={tab.id}
             onClick={() => setSubTab(tab.id)}

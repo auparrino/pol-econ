@@ -151,7 +151,7 @@ function computeRenovStats(projects) {
   return { count: projects.length, totalMW: Math.round(totalMW), sorted: Object.entries(byTec).sort((a, b) => b[1] - a[1]).slice(0, 4) };
 }
 
-function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
+function OverlayPanelRaw({ overlays, energyLayers, selectedProvince, compact = false }) {
   const hasMining = overlays.mining;
   const hasYac = energyLayers.includes('yacimientos');
   const hasRef = energyLayers.includes('refinerias');
@@ -184,8 +184,9 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
   }, [hasCen]);
 
   const filteredYac = useMemo(() => selectedProvince ? yacFeatures.filter(f => matchProv(f.properties?.provincia, selectedProvince)) : yacFeatures, [yacFeatures, selectedProvince]);
-  const yacIsFiltered = selectedProvince && yacFeatures.length > 0;
-  const yacCount = yacIsFiltered ? filteredYac.length : YAC_STATS.total;
+  const yacIsFiltered = selectedProvince && filteredYac.length > 0;
+  const yacNoFields = selectedProvince && yacFeatures.length > 0 && filteredYac.length === 0;
+  const yacCount = yacIsFiltered ? filteredYac.length : yacNoFields ? 0 : YAC_STATS.total;
 
   const yacProvStats = useMemo(() => {
     if (!yacIsFiltered || filteredYac.length === 0) return null;
@@ -217,6 +218,184 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
   const stats = useMemo(() => hasMining ? computeMiningStats(filteredProjects) : null, [hasMining, filteredProjects]);
   const isFiltered = hasMining && selectedProvince && filteredProjects.length < miningProjects.length;
 
+  // ── Mobile compact layout ───────────────────────────────────────────────
+  if (compact) {
+    const Chip = ({ value, label, color }) => (
+      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold"
+        style={{ background: `${color}1a`, color }}>
+        <span className="font-mono font-bold">{value}</span>
+        {label && <span className="opacity-70">{label}</span>}
+      </span>
+    );
+    const MiniBar = ({ items, total }) => (
+      <div className="flex h-[5px] w-full rounded-full overflow-hidden">
+        {items.map((it, i) => (
+          <div key={i} title={it.label}
+            style={{ width: `${Math.max((it.val / total) * 100, 1)}%`, background: it.color }} />
+        ))}
+      </div>
+    );
+    const Card = ({ icon, title, province, countColor, count, subtitle, children }) => (
+      <div className="rounded-xl border overflow-hidden" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
+        <div className="flex items-center gap-2 px-3 py-2.5">
+          <span className="text-[15px] shrink-0">{icon}</span>
+          <span className="text-[11px] font-bold uppercase tracking-widest text-[#003049]/60 flex-1 truncate">
+            {title}{province ? <span className="text-[#7d3c98] ml-1">· {province}</span> : ''}
+          </span>
+          <span className="text-[20px] font-extrabold font-mono leading-none shrink-0" style={{ color: countColor }}>{count}</span>
+        </div>
+        <div className="px-3 pb-3 space-y-2 border-t border-[#003049]/8 pt-2">
+          {subtitle && <p className="text-[10px] text-[#003049]/50 -mt-1 pb-0.5">{subtitle}</p>}
+          {children}
+        </div>
+      </div>
+    );
+
+    return (
+      <div className="flex flex-col gap-2">
+
+        {/* ── Mining ── */}
+        {hasMining && stats && (
+          <Card icon="⛏" title="Mining" province={isFiltered ? selectedProvince : null}
+            countColor="#003049" count={stats.total}
+            subtitle={isFiltered ? `of ${miningStatsAll.total} national · ${stats.produccion} in production` : `${stats.produccion} in production`}
+          >
+            <div className="flex flex-wrap gap-1">
+              {stats.byMineral.slice(0, 6).map(([min, cnt]) => (
+                <Chip key={min} value={cnt} label={min.length > 6 ? min.slice(0, 6) + '.' : min}
+                  color={MINERAL_COLORS_BAR[min] || '#669BBC'} />
+              ))}
+            </div>
+            {stats.byEstado.length > 0 && (
+              <MiniBar total={stats.total}
+                items={stats.byEstado.slice(0, 5).map(([, cnt], i) => ({
+                  val: cnt, color: ['#16a34a', '#22c55e', '#3b82f6', '#60a5fa', '#a78bfa'][i],
+                }))}
+              />
+            )}
+            {stats.byPais.length > 0 && (
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5">
+                {stats.byPais.slice(0, 5).map(([country, cnt]) => (
+                  <span key={country} className="flex items-center gap-1 text-[11px] text-[#003049]/65">
+                    <FlagEmoji size={12}>{COUNTRY_FLAGS[country] || '🌐'}</FlagEmoji>
+                    <span className="font-mono font-semibold">{cnt}</span>
+                  </span>
+                ))}
+              </div>
+            )}
+          </Card>
+        )}
+
+        {/* ── HC Fields ── */}
+        {hasYac && (
+          <Card icon="🛢" title="HC Fields" province={(yacIsFiltered || yacNoFields) ? selectedProvince : null}
+            countColor={yacNoFields ? '#003049' : '#10B981'} count={yacCount}
+            subtitle={
+              yacNoFields
+                ? 'No active concessions in this province'
+                : !yacIsFiltered
+                  ? `${YAC_STATS.produccion_kbd.toLocaleString()} kb/d · ${YAC_STATS.produccion_gas_mmm3d} MMm³/d`
+                  : yacProvStats
+                    ? [yacProvStats.oil_kbd > 0 && `${yacProvStats.oil_kbd.toFixed(1)} kb/d`, yacProvStats.gas_mmm3d > 0 && `${yacProvStats.gas_mmm3d.toFixed(1)} MMm³/d`].filter(Boolean).join(' · ') || 'concession areas'
+                    : 'concession areas'
+            }
+          >
+            {!yacIsFiltered && !yacNoFields && (
+              <>
+                <MiniBar total={100} items={YAC_STATS.basin_pct.map(b => ({ val: b.pct, color: b.color, label: b.name }))} />
+                <div className="flex flex-wrap gap-x-2.5 gap-y-0.5">
+                  {YAC_STATS.basin_pct.map(b => (
+                    <span key={b.name} className="flex items-center gap-1 text-[10px] text-[#003049]/55">
+                      <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: b.color }} />
+                      {b.name} {b.pct}%
+                    </span>
+                  ))}
+                </div>
+                <div className="flex flex-wrap gap-1">
+                  <Chip value={`${YAC_STATS.vaca_muerta.oil_pct}%`} label="VM oil" color="#10B981" />
+                  <Chip value={`+${YAC_STATS.vaca_muerta.growth_yoy}%`} label="YoY" color="#10B981" />
+                  <Chip value={`$${YAC_STATS.exports.surplus_bln}B`} label="surplus" color="#10B981" />
+                </div>
+              </>
+            )}
+            {!yacNoFields && (
+              <div className="flex flex-wrap gap-1.5">
+                {(yacProvStats ? yacProvStats.ops.slice(0, 5) : YAC_STATS.operadores.slice(0, 5)).map(op => (
+                  <span key={op.short || op.name} className="flex items-center gap-1 text-[10px] text-[#003049]/60">
+                    <FlagEmoji size={11}>{op.pais}</FlagEmoji>
+                    <span>{op.short || op.name}{op.pct != null ? ` ${op.pct}%` : op.count != null ? ` ×${op.count}` : ''}</span>
+                  </span>
+                ))}
+              </div>
+            )}
+          </Card>
+        )}
+
+        {/* ── Refineries ── */}
+        {hasRef && (
+          <Card icon="🏭" title="Refineries" province={refIsFiltered ? selectedProvince : null}
+            countColor="#F97316" count={refIsFiltered ? filteredRef.length : REF_STATS.total}
+            subtitle={!refIsFiltered ? `${REF_STATS.capacidad_kbd} kb/d capacity` : refIsFiltered ? `of ${REF_STATS.total} national` : null}
+          >
+            {!refIsFiltered ? (
+              <div className="flex flex-wrap gap-1">
+                {REF_STATS.operadores.slice(0, 4).map(op => (
+                  <Chip key={op.name} value={`${op.pct}%`}
+                    label={op.name.length > 8 ? op.name.slice(0, 8) + '.' : op.name}
+                    color={op.tipo === 'estatal' ? '#A855F7' : '#F97316'} />
+                ))}
+              </div>
+            ) : filteredRef.slice(0, 4).map((f, i) => {
+              const p = f.properties || {};
+              const name = p.nombre || p.razon_social || 'Refinería';
+              return (
+                <p key={i} className="text-[11px] text-[#003049]/70 truncate">
+                  {name.length > 22 ? name.slice(0, 22) + '.' : name}
+                  {p.empresa && p.empresa !== name && <span className="text-[#003049]/40 ml-1">· {p.empresa.slice(0, 12)}</span>}
+                </p>
+              );
+            })}
+          </Card>
+        )}
+
+        {/* ── Power Plants ── */}
+        {hasCen && (
+          <Card icon="⚡" title="Power Plants" province={cenIsFiltered ? selectedProvince : null}
+            countColor="#A855F7" count={cenIsFiltered ? (cenStats?.count || 0) : CEN_STATS.total}
+            subtitle={cenIsFiltered
+              ? (cenStats?.hasMW ? `${(cenStats.totalMW / 1000).toFixed(1)} GW installed` : null)
+              : `${CEN_STATS.capacidad_gw} GW installed`}
+          >
+            {(() => {
+              const barItems = cenIsFiltered
+                ? (cenStats?.sorted || []).map(([tec, val]) => ({ val, color: CENTRAL_COLORS_BAR[tec] || CENTRAL_COLORS_BAR.default }))
+                : CEN_STATS.por_tipo.map(t => ({ val: t.gw, color: t.color }));
+              const barTotal = cenIsFiltered ? (cenStats?.totalMW || 1) : CEN_STATS.capacidad_gw;
+              const chips = cenIsFiltered
+                ? (cenStats?.sorted || []).map(([tec, val]) => ({ label: CENTRAL_LABELS_BAR[tec] || tec, value: cenStats.hasMW ? `${(val / 1000).toFixed(1)}GW` : String(val), color: CENTRAL_COLORS_BAR[tec] || '#6B7280' }))
+                : CEN_STATS.por_tipo.map(t => ({ label: t.tipo, value: `${t.gw}GW`, color: t.color }));
+              return (
+                <>
+                  {barItems.length > 0 && <MiniBar total={barTotal} items={barItems} />}
+                  <div className="flex flex-wrap gap-1">
+                    {chips.map(c => <Chip key={c.label} value={c.value} label={c.label} color={c.color} />)}
+                  </div>
+                  {cenIsFiltered && renovStats && (
+                    <p className="text-[10px] text-[#003049]/50">
+                      + {renovStats.count} renew. under development · {renovStats.totalMW >= 100 ? `${(renovStats.totalMW / 1000).toFixed(1)} GW` : `${renovStats.totalMW} MW`} projected
+                    </p>
+                  )}
+                </>
+              );
+            })()}
+          </Card>
+        )}
+
+      </div>
+    );
+  }
+
+  // ── Desktop layout ──────────────────────────────────────────────────────
   return (
     <div className="flex flex-col gap-3 overflow-y-auto overflow-x-hidden">
       {hasMining && (
@@ -299,21 +478,26 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
           {hasMining && <div className="h-[3px] w-full bg-[#003049]/20 shrink-0 rounded-full" />}
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">
-              HC Fields{selectedProvince ? <span className="ml-1 text-[#7d3c98]">· {selectedProvince}</span> : ''}
+              HC Fields{(yacIsFiltered || yacNoFields) ? <span className="ml-1 text-[#7d3c98]">· {selectedProvince}</span> : ''}
             </p>
             <div className="flex items-baseline gap-2">
-              <span className="text-[26px] font-bold font-mono leading-none" style={{ color: '#10B981' }}>{yacCount}</span>
+              <span className="text-[26px] font-bold font-mono leading-none" style={{ color: yacNoFields ? '#003049' : '#10B981' }}>{yacCount}</span>
               <div className="text-[16px] text-[#003049]/60">
-                <div>concession areas</div>
-                {!yacIsFiltered ? (
-                  <><div>{YAC_STATS.produccion_kbd.toLocaleString('en-US')} kb/d oil</div><div>{YAC_STATS.produccion_gas_mmm3d} MMm³/d gas</div></>
-                ) : yacProvStats && (yacProvStats.oil_kbd > 0 || yacProvStats.gas_mmm3d > 0) ? (
-                  <>{yacProvStats.oil_kbd > 0 && <div>{yacProvStats.oil_kbd.toFixed(1)} kb/d oil</div>}{yacProvStats.gas_mmm3d > 0 && <div>{yacProvStats.gas_mmm3d.toFixed(1)} MMm³/d gas</div>}</>
-                ) : null}
+                {yacNoFields
+                  ? <div>no active concessions in this province</div>
+                  : <>
+                      <div>concession areas</div>
+                      {!yacIsFiltered ? (
+                        <><div>{YAC_STATS.produccion_kbd.toLocaleString('en-US')} kb/d oil</div><div>{YAC_STATS.produccion_gas_mmm3d} MMm³/d gas</div></>
+                      ) : yacProvStats && (yacProvStats.oil_kbd > 0 || yacProvStats.gas_mmm3d > 0) ? (
+                        <>{yacProvStats.oil_kbd > 0 && <div>{yacProvStats.oil_kbd.toFixed(1)} kb/d oil</div>}{yacProvStats.gas_mmm3d > 0 && <div>{yacProvStats.gas_mmm3d.toFixed(1)} MMm³/d gas</div>}</>
+                      ) : null}
+                    </>
+                }
               </div>
             </div>
           </div>
-          {!yacIsFiltered && (
+          {!yacIsFiltered && !yacNoFields && (
             <>
               <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
@@ -348,6 +532,7 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
               </div>
             </>
           )}
+          {!yacNoFields && (<>
           <div className="h-px w-full bg-[#003049]/10 shrink-0" />
           <div>
             <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Top operators</p>
@@ -391,6 +576,7 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
               ))}
             </div>
           </div>
+          </>)}
         </>
       )}
 
@@ -490,10 +676,10 @@ function OverlayPanelRaw({ overlays, energyLayers, selectedProvince }) {
             <>
               <div className="h-px w-full bg-[#003049]/10 shrink-0" />
               <div>
-                <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Renew. pipeline</p>
+                <p className="text-[16px] uppercase tracking-widest text-[#003049]/60 mb-1">Renewables under development</p>
                 <div className="flex items-baseline gap-2">
                   <span className="text-[26px] font-bold font-mono leading-none" style={{ color: '#22C55E' }}>{renovStats.count}</span>
-                  <div className="text-[16px] text-[#003049]/60"><div>projects</div><div>{renovStats.totalMW >= 100 ? `${(renovStats.totalMW / 1000).toFixed(1)} GW` : `${renovStats.totalMW} MW`}</div></div>
+                  <div className="text-[16px] text-[#003049]/60"><div>projects</div><div>{renovStats.totalMW >= 100 ? `${(renovStats.totalMW / 1000).toFixed(1)} GW` : `${renovStats.totalMW} MW`} projected</div></div>
                 </div>
               </div>
               <div className="h-px w-full bg-[#003049]/10 shrink-0" />

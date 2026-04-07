@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import ArgentinaMap from '../ArgentinaMap';
 import Legend from '../Legend';
 import ErrorBoundary from '../ErrorBoundary';
 import BottomSheet from './BottomSheet';
 import { ENERGY_LAYER_CONFIGS } from '../EnergyLayers';
+
+const OverlayPanel = lazy(() => import('../panels/OverlayPanel'));
 
 const CHOROPLETH_MODES = [
   { id: 'none', label: 'None' },
@@ -109,7 +111,7 @@ export default function MobileMapTab({
       </div>
 
       {/* Layer sheet */}
-      <BottomSheet open={sheetOpen} onClose={() => setSheetOpen(false)} title="Map Layers">
+      <BottomSheet open={sheetOpen} onClose={() => setSheetOpen(false)} title="Map Layers" maxHeightPct={overlayCount > 0 ? 92 : 80}>
         <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/50 mb-2">
           Color provinces by
         </p>
@@ -173,6 +175,24 @@ export default function MobileMapTab({
             );
           })}
         </div>
+
+        {/* Overlay stats — shown when any layer is active */}
+        {overlayCount > 0 && (
+          <>
+            <div className="h-px w-full my-3" style={{ background: 'rgba(0,48,73,0.12)' }} />
+            <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/50 mb-2">
+              Layer statistics{selectedProvince ? ` · ${selectedProvince}` : ''}
+            </p>
+            <Suspense fallback={<p className="text-[12px] text-[#003049]/60 py-2">Loading stats…</p>}>
+              <OverlayPanel
+                compact
+                overlays={overlays}
+                energyLayers={energyLayers}
+                selectedProvince={selectedProvince}
+              />
+            </Suspense>
+          </>
+        )}
       </BottomSheet>
     </div>
   );
