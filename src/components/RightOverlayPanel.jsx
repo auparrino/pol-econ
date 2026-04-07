@@ -7,6 +7,7 @@ import { lazy, Suspense, useMemo } from 'react';
 import { miningProjects } from '../data/miningProjects';
 import centralesData from '../data/energy/centrales.json';
 import refineriasData from '../data/energy/refinerias.json';
+import cammesaRegions from '../data/energy/cammesa-por-region.json';
 
 const OverlayPanel = lazy(() => import('./panels/OverlayPanel'));
 
@@ -91,6 +92,48 @@ const POWER_NUCLEAR_PLANTS = [
   { name: 'Atucha II', mw: 745 },
   { name: 'Embalse',   mw: 656 },
 ];
+
+// CAMMESA grid regions → provinces they cover (approximate; grid regions don't
+// follow provincial borders perfectly but are the official CAMMESA division).
+const PROV_TO_REGIONS = {
+  'buenos aires':                   ['GRAN BS.AS.', 'BUENOS AIRES'],
+  'ciudad autonoma de buenos aires': ['GRAN BS.AS.'],
+  'neuquen':                        ['COMAHUE'],
+  'rio negro':                      ['COMAHUE'],
+  'mendoza':                        ['CUYO'],
+  'san juan':                       ['CUYO'],
+  'san luis':                       ['CUYO'],
+  'entre rios':                     ['LITORAL'],
+  'corrientes':                     ['LITORAL', 'NORESTE'],
+  'misiones':                       ['NORESTE'],
+  'chaco':                          ['NORESTE'],
+  'formosa':                        ['NORESTE'],
+  'tucuman':                        ['NOROESTE'],
+  'salta':                          ['NOROESTE'],
+  'jujuy':                          ['NOROESTE'],
+  'catamarca':                      ['NOROESTE'],
+  'la rioja':                       ['NOROESTE'],
+  'santiago del estero':            ['NOROESTE'],
+  'chubut':                         ['PATAGONICA'],
+  'santa cruz':                     ['PATAGONICA'],
+  'tierra del fuego':               ['PATAGONICA'],
+  'la pampa':                       ['PATAGONICA'],
+  'cordoba':                        ['CENTRO'],
+  'santa fe':                       ['LITORAL'],
+};
+
+const FUENTE_COLOR = {
+  'Térmica':   '#EF4444',
+  'Hidráulica': '#3B82F6',
+  'Renovable':  '#10B981',
+  'Nuclear':    '#A855F7',
+};
+const FUENTE_EN = {
+  'Térmica':   'Thermal',
+  'Hidráulica': 'Hydro',
+  'Renovable':  'Renewable',
+  'Nuclear':    'Nuclear',
+};
 
 const REFINERY_OPERATORS = [
   { name: 'YPF',           share: '~55%', plants: 3 },
@@ -414,30 +457,14 @@ function RefineriesCard({ active, onToggle, selectedProvince }) {
 function PowerPlantsCard({ active, onToggle, selectedProvince }) {
   const stats = useMemo(() => {
     const features = centralesData.features || [];
-    const list = selectedProvince
-      ? features.filter(f => matchProv(f.properties?.provincia, selectedProvince))
-      : features;
 
-    // Aggregate MW by fuel group from the actual feature list. centrales.json
-    // has gaps in potencia_instalada_mw for many small plants — but for the
-    // per-province view it's still the best signal we have.
-    const byFuel = {};
-    let totalMW = 0;
-    for (const f of list) {
-      const p = f.properties || {};
-      const group = CENTRAL_TYPE_GROUPS[p.tecnologia] || { name: 'Other', color: '#6B7280' };
-      const mw = Number(p.potencia_instalada_mw) || 0;
-      const entry = byFuel[group.name] ||= { name: group.name, color: group.color, mw: 0, count: 0 };
-      entry.mw += mw;
-      entry.count += 1;
-      totalMW += mw;
-    }
-    const fuels = Object.values(byFuel).sort((a, b) => b.mw - a.mw);
+    if (!selectedProvince) return { topPlants: [], regionData: null };
 
-    // Top plants by MW for the per-province list.
+    // Notable plants for this province from centrales.json (has coordinates + province).
+    const list = features.filter(f => matchProv(f.properties?.provincia, selectedProvince));
     const topPlants = list
       .map(f => ({
-        name: f.properties?.nombre || f.properties?.central || '—',
+        name: f.properties?.nombre || '—',
         mw: Number(f.properties?.potencia_instalada_mw) || 0,
         tech: CENTRAL_TYPE_GROUPS[f.properties?.tecnologia]?.name || 'Other',
       }))
@@ -445,8 +472,45 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
       .sort((a, b) => b.mw - a.mw)
       .slice(0, 6);
 
-    return { count: list.length, totalMW, fuels, topPlants };
+    // CAMMESA regional capacity for this province.
+    const provKey = normProv(selectedProvince)
+      .replace(/ciudad autonoma de/i, 'ciudad autonoma de')
+      .trim();
+    const regionKeys = PROV_TO_REGIONS[provKey] || [];
+    let regionTotalMW = 0;
+    const regionByFuente = {};
+    const regionNames = [];
+    for (const rk of regionKeys) {
+      const rd = cammesaRegions.regions[rk];
+      if (!rd) continue;
+      regionNames.push(rk);
+      regionTotalMW += rd.totalMW;
+      for (const [fuente, mw] of Object.entries(rd.byFuente)) {
+        regionByFuente[fuente] = (regionByFuente[fuente] || 0) + mw;
+      }
+    }
+    const regionFuentes = Object.entries(regionByFuente)
+      .sort((a, b) => b[1] - a[1])
+      .map(([fuente, mw]) => ({ fuente, mw }));
+
+    const regionData = regionNames.length > 0
+      ? { regionNames, totalMW: Math.round(regionTotalMW), fuentes: regionFuentes }
+      : null;
+
+    return { topPlants, regionData };
   }, [selectedProvince]);
+
+  // For the header count when province is selected, use regional MW if available.
+  const headerCount = selectedProvince
+    ? stats.regionData
+      ? `${(stats.regionData.totalMW / 1000).toFixed(1)}`
+      : '—'
+    : POWER_TOTAL_GW.toFixed(1);
+  const headerLabel = selectedProvince
+    ? stats.regionData
+      ? `GW in CAMMESA region (2020)`
+      : `no regional data`
+    : `GW installed nationwide (CAMMESA, end-2024)`;
 
   return (
     <div className="rounded-md p-2.5"
@@ -457,11 +521,8 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
     >
       <CardHeader
         id="centrales" label="Power Plants" icon="⚡" color="#A855F7"
-        count={selectedProvince ? stats.count : POWER_TOTAL_GW.toFixed(1)}
-        countLabel={selectedProvince
-          ? `plants in dataset (partial sample)`
-          : `GW installed nationwide (CAMMESA, end-2024)`
-        }
+        count={headerCount}
+        countLabel={headerLabel}
         active={active} onToggle={onToggle}
       />
       {!selectedProvince && (
@@ -498,16 +559,29 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
           </p>
         </>
       )}
-      {selectedProvince && stats.count === 0 && (
-        <p className="text-[10px] text-[#003049]/50 italic">
-          No plants in the partial sample for {selectedProvince}. This does not
-          mean the province has no power plants — the dataset is incomplete.
-        </p>
-      )}
-      {selectedProvince && stats.count > 0 && (
+      {selectedProvince && stats.regionData && (
         <>
+          <MiniSection title={`Grid region: ${stats.regionData.regionNames.join(' + ')}`}>
+            <div className="space-y-0.5">
+              {stats.regionData.fuentes.map(({ fuente, mw }) => {
+                const pct = (mw / stats.regionData.totalMW) * 100;
+                const color = FUENTE_COLOR[fuente] || '#6B7280';
+                return (
+                  <div key={fuente} className="flex items-center gap-1.5 text-[10px]">
+                    <span className="w-[62px] text-[#003049]/65">{FUENTE_EN[fuente] || fuente}</span>
+                    <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
+                      <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: color }} />
+                    </div>
+                    <span className="font-mono text-[#003049]/70 text-right min-w-[42px]">
+                      {mw >= 1000 ? `${(mw / 1000).toFixed(1)} GW` : `${Math.round(mw)} MW`}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </MiniSection>
           {stats.topPlants.length > 0 && (
-            <MiniSection title="Plants in this sample">
+            <MiniSection title="Notable plants (mapped)">
               <ul className="text-[10px] space-y-0.5">
                 {stats.topPlants.map((p, i) => (
                   <li key={`${p.name}_${i}`} className="flex justify-between gap-1 text-[#003049]/70">
@@ -520,10 +594,9 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
               </ul>
             </MiniSection>
           )}
-          <p className="text-[9px] text-[#003049]/45 italic mt-2 leading-snug">
-            ⚠ Partial dataset — only 78 plants nationwide with usable MW data,
-            heavily biased toward Patagonia. Counts and totals here under-
-            represent reality.
+          <p className="text-[9px] text-[#003049]/45 leading-snug mt-2">
+            CAMMESA grid regions span multiple provinces; capacity shown is for the
+            full region. Source: datos.energia.gob.ar, Feb 2020.
           </p>
         </>
       )}

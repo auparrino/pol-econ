@@ -1,0 +1,86 @@
+{
+  "period": "2020-02-01 00:00:00",
+  "generated": "2026-04-07",
+  "regions": {
+    "GRAN BS.AS.": {
+      "totalMW": 7803.3,
+      "plantCount": 23,
+      "byFuente": {
+        "Térmica": 7781.4,
+        "Renovable": 21.9
+      }
+    },
+    "COMAHUE": {
+      "totalMW": 6992.9,
+      "plantCount": 29,
+      "byFuente": {
+        "Hidráulica": 4724.8,
+        "Térmica": 2071.5,
+        "Renovable": 196.6
+      }
+    },
+    "CUYO": {
+      "totalMW": 1988.7,
+      "plantCount": 41,
+      "byFuente": {
+        "Hidráulica": 957.1,
+        "Térmica": 659.3,
+        "Renovable": 372.3
+      }
+    },
+    "BUENOS AIRES": {
+      "totalMW": 7638.4,
+      "plantCount": 51,
+      "byFuente": {
+        "Térmica": 5868.5,
+        "Nuclear": 1107,
+        "Renovable": 662.9
+      }
+    },
+    "NORESTE": {
+      "totalMW": 3061.5,
+      "plantCount": 27,
+      "byFuente": {
+        "Hidráulica": 2745,
+        "Térmica": 316.5
+      }
+    },
+    "PATAGONICA": {
+      "totalMW": 2066,
+      "plantCount": 26,
+      "byFuente": {
+        "Renovable": 955.9,
+        "Térmica": 572.1,
+        "Hidráulica": 538
+      }
+    },
+    "NOROESTE": {
+      "totalMW": 3569.5,
+      "plantCount": 58,
+      "byFuente": {
+        "Térmica": 3093.9,
+        "Renovable": 375.1,
+        "Hidráulica": 100.5
+      }
+    },
+    "LITORAL": {
+      "totalMW": 3733.8,
+      "plantCount": 20,
+      "byFuente": {
+        "Térmica": 2781.1,
+        "Hidráulica": 945,
+        "Renovable": 7.7
+      }
+    },
+    "CENTRO": {
+      "totalMW": 3166.3,
+      "plantCount": 40,
+      "byFuente": {
+        "Térmica": 1404.8,
+        "Hidráulica": 802,
+        "Nuclear": 648,
+        "Renovable": 311.5
+      }
+    }
+  }
+}
