@@ -150,124 +150,157 @@ const EXPORT_CATS = [
   { key: 'cye', label: 'Fuel/Energy', color: '#f97316' },
 ];
 
-function NationalEconomyCard() {
-  const fmtM = v => v >= 1000 ? `$${(v / 1000).toFixed(1)}B` : `$${Math.round(v)}M`;
-  const fmtK = v => v >= 1_000_000 ? `${(v / 1_000_000).toFixed(1)}M` : `${(v / 1000).toFixed(0)}K`;
+const fmtM = v => v >= 1000 ? `$${(v / 1000).toFixed(1)}B` : `$${Math.round(v)}M`;
+const fmtK = v => v >= 1_000_000 ? `${(v / 1_000_000).toFixed(1)}M` : `${(v / 1000).toFixed(0)}K`;
 
+function NationalEmploymentCard() {
   return (
-    <div className="space-y-3">
-      {/* Formal Employment */}
-      <div className="rounded-xl border p-3" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
-        <div className="flex items-baseline justify-between mb-2">
-          <p className="text-[11px] uppercase tracking-widest font-bold text-[#003049]/60">Formal Employment</p>
-          <p className="text-[18px] font-extrabold font-mono text-[#003049]">{fmtK(NAT_EMP.total)}</p>
-        </div>
-        <div className="flex h-[10px] w-full rounded overflow-hidden mb-2">
-          <div style={{ width: `${(NAT_EMP.private / NAT_EMP.total * 100).toFixed(1)}%`, background: '#3b82f6' }} />
-          <div style={{ width: `${(NAT_EMP.public / NAT_EMP.total * 100).toFixed(1)}%`, background: '#a855f7' }} />
-        </div>
-        <div className="space-y-0.5">
-          {[
-            { label: 'Private sector', val: NAT_EMP.private, color: '#3b82f6' },
-            { label: 'Public sector', val: NAT_EMP.public, color: '#a855f7' },
-          ].map(r => (
-            <div key={r.label} className="flex items-center gap-2 text-[12px]">
-              <span className="w-2 h-2 rounded-full shrink-0" style={{ background: r.color }} />
-              <span className="text-[#003049] flex-1">{r.label}</span>
-              <span className="font-mono text-[#003049]">{fmtK(r.val)}</span>
-              <span className="text-[#003049]/40 font-mono w-[34px] text-right">
-                {(r.val / NAT_EMP.total * 100).toFixed(0)}%
-              </span>
-            </div>
-          ))}
-        </div>
-        <p className="text-[9px] text-[#003049]/40 mt-1.5">Source: SIPA/CEP XXI · registered workers</p>
+    <div className="rounded-xl border p-3" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
+      <div className="flex items-baseline justify-between mb-2">
+        <p className="text-[11px] uppercase tracking-widest font-bold text-[#003049]/60">Formal Employment</p>
+        <p className="text-[18px] font-extrabold font-mono text-[#003049]">{fmtK(NAT_EMP.total)}</p>
       </div>
-
-      {/* Exports */}
-      <div className="rounded-xl border p-3" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
-        <div className="flex items-baseline justify-between mb-2">
-          <p className="text-[11px] uppercase tracking-widest font-bold text-[#003049]/60">Exports {NAT_EXPORTS.year}</p>
-          <p className="text-[18px] font-extrabold font-mono text-[#003049]">{fmtM(NAT_EXPORTS.total)}</p>
-        </div>
-        <div className="flex h-[10px] w-full rounded overflow-hidden mb-2">
-          {EXPORT_CATS.map(c => (
-            <div key={c.key} style={{ width: `${(NAT_EXPORTS[c.key] / NAT_EXPORTS.total * 100).toFixed(1)}%`, background: c.color }} />
-          ))}
-        </div>
-        <div className="space-y-0.5">
-          {EXPORT_CATS.map(c => (
-            <div key={c.key} className="flex items-center gap-2 text-[12px]">
-              <span className="w-2 h-2 rounded-full shrink-0" style={{ background: c.color }} />
-              <span className="text-[#003049] flex-1">{c.label}</span>
-              <span className="font-mono text-[#003049]">{fmtM(NAT_EXPORTS[c.key])}</span>
-              <span className="text-[#003049]/40 font-mono w-[34px] text-right">
-                {(NAT_EXPORTS[c.key] / NAT_EXPORTS.total * 100).toFixed(0)}%
-              </span>
-            </div>
-          ))}
-        </div>
-        <p className="text-[9px] text-[#003049]/40 mt-1.5">Source: INDEC · MOA=agro-manuf · MOI=ind-manuf · PP=primary · CyE=fuel</p>
+      <div className="flex h-[10px] w-full rounded overflow-hidden mb-2">
+        <div style={{ width: `${(NAT_EMP.private / NAT_EMP.total * 100).toFixed(1)}%`, background: '#3b82f6' }} />
+        <div style={{ width: `${(NAT_EMP.public / NAT_EMP.total * 100).toFixed(1)}%`, background: '#a855f7' }} />
       </div>
+      <div className="space-y-0.5">
+        {[
+          { label: 'Private sector', val: NAT_EMP.private, color: '#3b82f6' },
+          { label: 'Public sector', val: NAT_EMP.public, color: '#a855f7' },
+        ].map(r => (
+          <div key={r.label} className="flex items-center gap-2 text-[12px]">
+            <span className="w-2 h-2 rounded-full shrink-0" style={{ background: r.color }} />
+            <span className="text-[#003049] flex-1">{r.label}</span>
+            <span className="font-mono text-[#003049]">{fmtK(r.val)}</span>
+            <span className="text-[#003049]/40 font-mono w-[34px] text-right">
+              {(r.val / NAT_EMP.total * 100).toFixed(0)}%
+            </span>
+          </div>
+        ))}
+      </div>
+      <p className="text-[9px] text-[#003049]/40 mt-1.5">Source: SIPA/CEP XXI · registered workers</p>
     </div>
   );
 }
 
+function NationalExportsCard() {
+  return (
+    <div className="rounded-xl border p-3" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
+      <div className="flex items-baseline justify-between mb-2">
+        <p className="text-[11px] uppercase tracking-widest font-bold text-[#003049]/60">Exports {NAT_EXPORTS.year}</p>
+        <p className="text-[18px] font-extrabold font-mono text-[#003049]">{fmtM(NAT_EXPORTS.total)}</p>
+      </div>
+      <div className="flex h-[10px] w-full rounded overflow-hidden mb-2">
+        {EXPORT_CATS.map(c => (
+          <div key={c.key} style={{ width: `${(NAT_EXPORTS[c.key] / NAT_EXPORTS.total * 100).toFixed(1)}%`, background: c.color }} />
+        ))}
+      </div>
+      <div className="space-y-0.5">
+        {EXPORT_CATS.map(c => (
+          <div key={c.key} className="flex items-center gap-2 text-[12px]">
+            <span className="w-2 h-2 rounded-full shrink-0" style={{ background: c.color }} />
+            <span className="text-[#003049] flex-1">{c.label}</span>
+            <span className="font-mono text-[#003049]">{fmtM(NAT_EXPORTS[c.key])}</span>
+            <span className="text-[#003049]/40 font-mono w-[34px] text-right">
+              {(NAT_EXPORTS[c.key] / NAT_EXPORTS.total * 100).toFixed(0)}%
+            </span>
+          </div>
+        ))}
+      </div>
+      <p className="text-[9px] text-[#003049]/40 mt-1.5">Source: INDEC · MOA=agro-manuf · MOI=ind-manuf · PP=primary · CyE=fuel</p>
+    </div>
+  );
+}
+
+const ECONOMY_TABS = [
+  { id: 'employment', label: 'Employment' },
+  { id: 'exports',    label: 'Exports' },
+  { id: 'energy',     label: 'Energy' },
+];
+
 export default function MobileNationTab() {
   const [view, setView] = useState('congress');
+  const [ecoTab, setEcoTab] = useState('employment');
+
   return (
-    <div className="absolute inset-0 flex flex-col">
+    <div className="absolute inset-0 flex flex-col" style={{ fontFamily: 'var(--font-display)' }}>
+      {/* Title bar */}
       <div className="shrink-0 flex items-center" style={{ height: 48, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 16px' }}>
         <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight">Nation</h1>
       </div>
+
+      {/* Top segment: Congress / Economy / Cabinet */}
+      <div
+        className="shrink-0 grid grid-cols-3 gap-1 p-1"
+        style={{ background: 'rgba(0,48,73,0.06)', borderBottom: '1px solid rgba(0,48,73,0.10)' }}
+      >
+        {[{ id: 'congress', label: 'Congress' }, { id: 'economy', label: 'Economy' }, { id: 'cabinet', label: 'Cabinet' }].map(t => {
+          const active = view === t.id;
+          return (
+            <button
+              key={t.id}
+              onClick={() => setView(t.id)}
+              className="text-[12px] font-bold uppercase tracking-wider py-2 rounded-md"
+              style={active ? { background: '#003049', color: '#FDF0D5' } : { background: 'transparent', color: '#003049' }}
+            >
+              {t.label}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Economy sub-tabs (only when Economy is active) */}
+      {view === 'economy' && (
+        <div
+          className="shrink-0 flex gap-2 overflow-x-auto"
+          style={{ padding: '10px 16px', borderBottom: '1px solid rgba(0,48,73,0.10)', background: '#FFF8EB', scrollbarWidth: 'none' }}
+        >
+          {ECONOMY_TABS.map(t => {
+            const active = ecoTab === t.id;
+            return (
+              <button
+                key={t.id}
+                onClick={() => setEcoTab(t.id)}
+                className="shrink-0 text-[11px] font-bold uppercase tracking-wider rounded-full"
+                style={{
+                  padding: '7px 18px',
+                  ...(active ? { background: '#003049', color: '#FDF0D5' } : { background: 'rgba(0,48,73,0.09)', color: '#003049' })
+                }}
+              >
+                {t.label}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
       <div className="flex-1 overflow-y-auto overflow-x-hidden">
-        <div className="space-y-3" style={{ padding: '14px 16px 24px' }}>
-          {/* Segmented control */}
-          <div
-            className="grid grid-cols-3 gap-1 p-1 rounded-lg"
-            style={{ background: 'rgba(0,48,73,0.06)' }}
-          >
-            {[{ id: 'congress', label: 'Congress' }, { id: 'economy', label: 'Economy' }, { id: 'cabinet', label: 'Cabinet' }].map(t => {
-              const active = view === t.id;
-              return (
-                <button
-                  key={t.id}
-                  onClick={() => setView(t.id)}
-                  className="text-[12px] font-bold uppercase tracking-wider py-2 rounded-md"
-                  style={active
-                    ? { background: '#003049', color: '#FDF0D5' }
-                    : { background: 'transparent', color: '#003049' }
-                  }
-                >
-                  {t.label}
-                </button>
-              );
-            })}
-          </div>
+        <div className="space-y-3" style={{ padding: '14px 16px 80px' }}>
 
           {view === 'congress' && (
             <>
               <ChamberCard label="Senate" total={SENATE_TOTAL} blocs={senateBlocs} />
               <ChamberCard label="Deputies" total={DEPUTY_TOTAL} blocs={deputyBlocs} />
               <div>
-                <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/55 mb-1.5">
-                  Key Votes
-                </p>
+                <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/55 mb-1.5">Key Votes</p>
                 <div className="space-y-1.5">
                   {KEY_VOTES.map((v, i) => <VoteCard key={i} v={v} />)}
                 </div>
               </div>
-              <NationalGridCard />
             </>
           )}
 
-          {view === 'economy' && (
-            <>
-              <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/55 mb-1.5">
-                National Economy
-              </p>
-              <NationalEconomyCard />
-            </>
+          {view === 'economy' && ecoTab === 'employment' && (
+            <NationalEmploymentCard />
+          )}
+
+          {view === 'economy' && ecoTab === 'exports' && (
+            <NationalExportsCard />
+          )}
+
+          {view === 'economy' && ecoTab === 'energy' && (
+            <NationalGridCard />
           )}
 
           {view === 'cabinet' && (
