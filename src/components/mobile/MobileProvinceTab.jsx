@@ -178,7 +178,7 @@ function Hero({ province, governor }) {
   return (
     <div
       className="rounded-xl border"
-      style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)', padding: '20px' }}
+      style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)', padding: '14px 16px' }}
     >
       {governor ? (
         <>
@@ -461,11 +461,11 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
   }
 
   return (
-    <div className="absolute inset-0 flex flex-col" style={{ fontFamily: "'Montserrat', system-ui, sans-serif" }}>
+    <div className="absolute inset-0 flex flex-col" style={{ fontFamily: 'var(--font-display)' }}>
       {/* Title bar */}
       <div
         className="shrink-0 flex items-center gap-2"
-        style={{ height: 54, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 16px' }}
+        style={{ height: 48, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 16px' }}
       >
         <button
           onClick={onGoToMap}
@@ -511,7 +511,7 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
 
       {/* Tab content */}
       <div className="flex-1 overflow-y-auto overflow-x-hidden">
-        <div style={{ padding: '20px 18px 96px' }}>
+        <div style={{ padding: '14px 14px 80px' }}>
 
           {tab === 'overview' && (
             <div className="space-y-3">
