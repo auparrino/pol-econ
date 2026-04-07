@@ -9,7 +9,7 @@ const MobileProvinceTab = lazy(() => import('./MobileProvinceTab'));
 const MobileNationTab = lazy(() => import('./MobileNationTab'));
 const MobileMacroTab = lazy(() => import('./MobileMacroTab'));
 
-const TAB_BAR_H = 56;
+const TAB_BAR_H = 68;
 
 
 function PeekCard({ province, governor, miningCount, onOpen, onDismiss }) {
@@ -189,7 +189,7 @@ export default function MobileShell({
               onClick={() => setTab(t.id)}
               role="tab"
               aria-selected={active}
-              className="flex-1 flex flex-col items-center justify-center gap-0.5"
+              className="flex-1 flex flex-col items-center justify-center gap-0.5 py-2.5"
               style={{ color: active ? '#003049' : 'rgba(0,48,73,0.50)' }}
             >
               <span className="text-[18px] leading-none">{t.icon}</span>
