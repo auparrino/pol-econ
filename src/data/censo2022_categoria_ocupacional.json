@@ -1,0 +1,459 @@
+{
+  "source": "INDEC — Censo Nacional de Población, Hogares y Viviendas 2022",
+  "sourceUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165",
+  "datasetUrl": "https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_caracteristicas_economicas.pdf",
+  "table": "Cuadro 4.2 — Población ocupada de 14 años y más por categoría ocupacional, según jurisdicción",
+  "note": "Empleada(o) u obrera(o) combina sector público y privado. Incluye trabajo informal (no solo registrado).",
+  "year": 2022,
+  "national": {
+    "ocupados": 21094987,
+    "patron": 1508897,
+    "empleadaObrera": 11000194,
+    "cuentaPropia": 6167491,
+    "trabajadorFamiliar": 970167,
+    "servicioDomestico": 593051,
+    "ignorado": 855187,
+    "shares": {
+      "patron": 7.2,
+      "empleadaObrera": 52.1,
+      "cuentaPropia": 29.2,
+      "trabajadorFamiliar": 4.6,
+      "servicioDomestico": 2.8,
+      "ignorado": 4.1
+    }
+  },
+  "provinces": [
+    {
+      "province": "Buenos Aires",
+      "ocupados": 8120465,
+      "patron": 604675,
+      "empleadaObrera": 4274055,
+      "cuentaPropia": 2292442,
+      "trabajadorFamiliar": 397592,
+      "servicioDomestico": 212785,
+      "ignorado": 338916,
+      "shares": {
+        "patron": 7.4,
+        "empleadaObrera": 52.6,
+        "cuentaPropia": 28.2,
+        "trabajadorFamiliar": 4.9,
+        "servicioDomestico": 2.6,
+        "ignorado": 4.2
+      }
+    },
+    {
+      "province": "Córdoba",
+      "ocupados": 1829532,
+      "patron": 133566,
+      "empleadaObrera": 929711,
+      "cuentaPropia": 568231,
+      "trabajadorFamiliar": 84321,
+      "servicioDomestico": 51970,
+      "ignorado": 61733,
+      "shares": {
+        "patron": 7.3,
+        "empleadaObrera": 50.8,
+        "cuentaPropia": 31.1,
+        "trabajadorFamiliar": 4.6,
+        "servicioDomestico": 2.8,
+        "ignorado": 3.4
+      }
+    },
+    {
+      "province": "Ciudad de Buenos Aires",
+      "ocupados": 1678783,
+      "patron": 67348,
+      "empleadaObrera": 956417,
+      "cuentaPropia": 481603,
+      "trabajadorFamiliar": 79997,
+      "servicioDomestico": 31013,
+      "ignorado": 62405,
+      "shares": {
+        "patron": 4.0,
+        "empleadaObrera": 57.0,
+        "cuentaPropia": 28.7,
+        "trabajadorFamiliar": 4.8,
+        "servicioDomestico": 1.8,
+        "ignorado": 3.7
+      }
+    },
+    {
+      "province": "Santa Fe",
+      "ocupados": 1667277,
+      "patron": 131307,
+      "empleadaObrera": 850100,
+      "cuentaPropia": 484331,
+      "trabajadorFamiliar": 92618,
+      "servicioDomestico": 46608,
+      "ignorado": 62313,
+      "shares": {
+        "patron": 7.9,
+        "empleadaObrera": 51.0,
+        "cuentaPropia": 29.0,
+        "trabajadorFamiliar": 5.6,
+        "servicioDomestico": 2.8,
+        "ignorado": 3.7
+      }
+    },
+    {
+      "province": "Mendoza",
+      "ocupados": 909742,
+      "patron": 61287,
+      "empleadaObrera": 478445,
+      "cuentaPropia": 276895,
+      "trabajadorFamiliar": 36227,
+      "servicioDomestico": 28059,
+      "ignorado": 28829,
+      "shares": {
+        "patron": 6.7,
+        "empleadaObrera": 52.6,
+        "cuentaPropia": 30.4,
+        "trabajadorFamiliar": 4.0,
+        "servicioDomestico": 3.1,
+        "ignorado": 3.2
+      }
+    },
+    {
+      "province": "Tucumán",
+      "ocupados": 731827,
+      "patron": 49774,
+      "empleadaObrera": 390825,
+      "cuentaPropia": 222774,
+      "trabajadorFamiliar": 23489,
+      "servicioDomestico": 17768,
+      "ignorado": 27197,
+      "shares": {
+        "patron": 6.8,
+        "empleadaObrera": 53.4,
+        "cuentaPropia": 30.4,
+        "trabajadorFamiliar": 3.2,
+        "servicioDomestico": 2.4,
+        "ignorado": 3.7
+      }
+    },
+    {
+      "province": "Entre Ríos",
+      "ocupados": 630861,
+      "patron": 53539,
+      "empleadaObrera": 311424,
+      "cuentaPropia": 189304,
+      "trabajadorFamiliar": 28297,
+      "servicioDomestico": 20762,
+      "ignorado": 27535,
+      "shares": {
+        "patron": 8.5,
+        "empleadaObrera": 49.4,
+        "cuentaPropia": 30.0,
+        "trabajadorFamiliar": 4.5,
+        "servicioDomestico": 3.3,
+        "ignorado": 4.4
+      }
+    },
+    {
+      "province": "Salta",
+      "ocupados": 618815,
+      "patron": 45743,
+      "empleadaObrera": 290167,
+      "cuentaPropia": 215629,
+      "trabajadorFamiliar": 21213,
+      "servicioDomestico": 20541,
+      "ignorado": 25522,
+      "shares": {
+        "patron": 7.4,
+        "empleadaObrera": 46.9,
+        "cuentaPropia": 34.8,
+        "trabajadorFamiliar": 3.4,
+        "servicioDomestico": 3.3,
+        "ignorado": 4.1
+      }
+    },
+    {
+      "province": "Misiones",
+      "ocupados": 544789,
+      "patron": 49609,
+      "empleadaObrera": 241948,
+      "cuentaPropia": 176600,
+      "trabajadorFamiliar": 26840,
+      "servicioDomestico": 22324,
+      "ignorado": 27468,
+      "shares": {
+        "patron": 9.1,
+        "empleadaObrera": 44.4,
+        "cuentaPropia": 32.4,
+        "trabajadorFamiliar": 4.9,
+        "servicioDomestico": 4.1,
+        "ignorado": 5.0
+      }
+    },
+    {
+      "province": "Chaco",
+      "ocupados": 484355,
+      "patron": 39142,
+      "empleadaObrera": 229494,
+      "cuentaPropia": 146099,
+      "trabajadorFamiliar": 23569,
+      "servicioDomestico": 17548,
+      "ignorado": 28503,
+      "shares": {
+        "patron": 8.1,
+        "empleadaObrera": 47.4,
+        "cuentaPropia": 30.2,
+        "trabajadorFamiliar": 4.9,
+        "servicioDomestico": 3.6,
+        "ignorado": 5.9
+      }
+    },
+    {
+      "province": "Corrientes",
+      "ocupados": 476760,
+      "patron": 38433,
+      "empleadaObrera": 227585,
+      "cuentaPropia": 148318,
+      "trabajadorFamiliar": 22443,
+      "servicioDomestico": 18930,
+      "ignorado": 21051,
+      "shares": {
+        "patron": 8.1,
+        "empleadaObrera": 47.7,
+        "cuentaPropia": 31.1,
+        "trabajadorFamiliar": 4.7,
+        "servicioDomestico": 4.0,
+        "ignorado": 4.4
+      }
+    },
+    {
+      "province": "Santiago del Estero",
+      "ocupados": 412640,
+      "patron": 32791,
+      "empleadaObrera": 192070,
+      "cuentaPropia": 142462,
+      "trabajadorFamiliar": 13461,
+      "servicioDomestico": 14291,
+      "ignorado": 17565,
+      "shares": {
+        "patron": 7.9,
+        "empleadaObrera": 46.5,
+        "cuentaPropia": 34.5,
+        "trabajadorFamiliar": 3.3,
+        "servicioDomestico": 3.5,
+        "ignorado": 4.3
+      }
+    },
+    {
+      "province": "Jujuy",
+      "ocupados": 366361,
+      "patron": 22105,
+      "empleadaObrera": 199824,
+      "cuentaPropia": 105632,
+      "trabajadorFamiliar": 9203,
+      "servicioDomestico": 13022,
+      "ignorado": 16575,
+      "shares": {
+        "patron": 6.0,
+        "empleadaObrera": 54.5,
+        "cuentaPropia": 28.8,
+        "trabajadorFamiliar": 2.5,
+        "servicioDomestico": 3.6,
+        "ignorado": 4.5
+      }
+    },
+    {
+      "province": "Río Negro",
+      "ocupados": 357494,
+      "patron": 24804,
+      "empleadaObrera": 190849,
+      "cuentaPropia": 100314,
+      "trabajadorFamiliar": 17441,
+      "servicioDomestico": 10475,
+      "ignorado": 13611,
+      "shares": {
+        "patron": 6.9,
+        "empleadaObrera": 53.4,
+        "cuentaPropia": 28.1,
+        "trabajadorFamiliar": 4.9,
+        "servicioDomestico": 2.9,
+        "ignorado": 3.8
+      }
+    },
+    {
+      "province": "Neuquén",
+      "ocupados": 345172,
+      "patron": 22262,
+      "empleadaObrera": 197989,
+      "cuentaPropia": 85791,
+      "trabajadorFamiliar": 15869,
+      "servicioDomestico": 9117,
+      "ignorado": 14144,
+      "shares": {
+        "patron": 6.4,
+        "empleadaObrera": 57.4,
+        "cuentaPropia": 24.9,
+        "trabajadorFamiliar": 4.6,
+        "servicioDomestico": 2.6,
+        "ignorado": 4.1
+      }
+    },
+    {
+      "province": "San Juan",
+      "ocupados": 339772,
+      "patron": 23419,
+      "empleadaObrera": 176623,
+      "cuentaPropia": 100746,
+      "trabajadorFamiliar": 13439,
+      "servicioDomestico": 11694,
+      "ignorado": 13851,
+      "shares": {
+        "patron": 6.9,
+        "empleadaObrera": 52.0,
+        "cuentaPropia": 29.7,
+        "trabajadorFamiliar": 4.0,
+        "servicioDomestico": 3.4,
+        "ignorado": 4.1
+      }
+    },
+    {
+      "province": "Chubut",
+      "ocupados": 283492,
+      "patron": 17862,
+      "empleadaObrera": 157944,
+      "cuentaPropia": 75438,
+      "trabajadorFamiliar": 12537,
+      "servicioDomestico": 8365,
+      "ignorado": 11346,
+      "shares": {
+        "patron": 6.3,
+        "empleadaObrera": 55.7,
+        "cuentaPropia": 26.6,
+        "trabajadorFamiliar": 4.4,
+        "servicioDomestico": 3.0,
+        "ignorado": 4.0
+      }
+    },
+    {
+      "province": "San Luis",
+      "ocupados": 248488,
+      "patron": 14435,
+      "empleadaObrera": 137302,
+      "cuentaPropia": 69247,
+      "trabajadorFamiliar": 9309,
+      "servicioDomestico": 6885,
+      "ignorado": 11310,
+      "shares": {
+        "patron": 5.8,
+        "empleadaObrera": 55.3,
+        "cuentaPropia": 27.9,
+        "trabajadorFamiliar": 3.7,
+        "servicioDomestico": 2.8,
+        "ignorado": 4.6
+      }
+    },
+    {
+      "province": "Formosa",
+      "ocupados": 241502,
+      "patron": 21832,
+      "empleadaObrera": 99572,
+      "cuentaPropia": 88059,
+      "trabajadorFamiliar": 9338,
+      "servicioDomestico": 9013,
+      "ignorado": 13688,
+      "shares": {
+        "patron": 9.0,
+        "empleadaObrera": 41.2,
+        "cuentaPropia": 36.5,
+        "trabajadorFamiliar": 3.9,
+        "servicioDomestico": 3.7,
+        "ignorado": 5.7
+      }
+    },
+    {
+      "province": "Catamarca",
+      "ocupados": 197548,
+      "patron": 13916,
+      "empleadaObrera": 112100,
+      "cuentaPropia": 52752,
+      "trabajadorFamiliar": 5963,
+      "servicioDomestico": 5297,
+      "ignorado": 7520,
+      "shares": {
+        "patron": 7.0,
+        "empleadaObrera": 56.7,
+        "cuentaPropia": 26.7,
+        "trabajadorFamiliar": 3.0,
+        "servicioDomestico": 2.7,
+        "ignorado": 3.8
+      }
+    },
+    {
+      "province": "La Rioja",
+      "ocupados": 182757,
+      "patron": 12077,
+      "empleadaObrera": 105189,
+      "cuentaPropia": 47111,
+      "trabajadorFamiliar": 6196,
+      "servicioDomestico": 4596,
+      "ignorado": 7588,
+      "shares": {
+        "patron": 6.6,
+        "empleadaObrera": 57.6,
+        "cuentaPropia": 25.8,
+        "trabajadorFamiliar": 3.4,
+        "servicioDomestico": 2.5,
+        "ignorado": 4.2
+      }
+    },
+    {
+      "province": "La Pampa",
+      "ocupados": 176503,
+      "patron": 15667,
+      "empleadaObrera": 89163,
+      "cuentaPropia": 50121,
+      "trabajadorFamiliar": 10152,
+      "servicioDomestico": 5520,
+      "ignorado": 5880,
+      "shares": {
+        "patron": 8.9,
+        "empleadaObrera": 50.5,
+        "cuentaPropia": 28.4,
+        "trabajadorFamiliar": 5.8,
+        "servicioDomestico": 3.1,
+        "ignorado": 3.3
+      }
+    },
+    {
+      "province": "Santa Cruz",
+      "ocupados": 159137,
+      "patron": 8647,
+      "empleadaObrera": 102917,
+      "cuentaPropia": 30011,
+      "trabajadorFamiliar": 6344,
+      "servicioDomestico": 4299,
+      "ignorado": 6919,
+      "shares": {
+        "patron": 5.4,
+        "empleadaObrera": 64.7,
+        "cuentaPropia": 18.9,
+        "trabajadorFamiliar": 4.0,
+        "servicioDomestico": 2.7,
+        "ignorado": 4.3
+      }
+    },
+    {
+      "province": "Tierra del Fuego",
+      "ocupados": 90915,
+      "patron": 4657,
+      "empleadaObrera": 58481,
+      "cuentaPropia": 17581,
+      "trabajadorFamiliar": 4309,
+      "servicioDomestico": 2169,
+      "ignorado": 3718,
+      "shares": {
+        "patron": 5.1,
+        "empleadaObrera": 64.3,
+        "cuentaPropia": 19.3,
+        "trabajadorFamiliar": 4.7,
+        "servicioDomestico": 2.4,
+        "ignorado": 4.1
+      }
+    }
+  ]
+}

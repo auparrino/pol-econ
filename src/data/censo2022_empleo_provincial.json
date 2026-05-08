@@ -1,0 +1,259 @@
+{
+  "source": "INDEC — Censo Nacional de Población, Hogares y Viviendas 2022",
+  "sourceUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165",
+  "datasetUrl": "https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_caracteristicas_economicas.pdf",
+  "methodology": "Población de 14 años y más en viviendas particulares. Tasa de actividad = PEA / 14+; tasa de empleo = ocupados / 14+; tasa de desocupación = desocupados / PEA.",
+  "year": 2022,
+  "denominator": "Población de 14 años y más en viviendas particulares",
+  "national": {
+    "pob14": 36259376,
+    "pea": 23051957,
+    "ocupados": 21094987,
+    "desocupados": 1956970,
+    "activityRate": 63.58,
+    "employmentRate": 58.18,
+    "unemploymentRate": 8.49
+  },
+  "provinces": [
+    {
+      "province": "Ciudad de Buenos Aires",
+      "pob14": 2668924,
+      "pea": 1814325,
+      "ocupados": 1678783,
+      "desocupados": 135542,
+      "activityRate": 67.98,
+      "employmentRate": 62.9,
+      "unemploymentRate": 7.47
+    },
+    {
+      "province": "Tierra del Fuego",
+      "pob14": 145489,
+      "pea": 102095,
+      "ocupados": 90915,
+      "desocupados": 11180,
+      "activityRate": 70.17,
+      "employmentRate": 62.49,
+      "unemploymentRate": 10.95
+    },
+    {
+      "province": "Neuquén",
+      "pob14": 560376,
+      "pea": 371240,
+      "ocupados": 345172,
+      "desocupados": 26068,
+      "activityRate": 66.25,
+      "employmentRate": 61.6,
+      "unemploymentRate": 7.02
+    },
+    {
+      "province": "La Pampa",
+      "pob14": 287006,
+      "pea": 187803,
+      "ocupados": 176503,
+      "desocupados": 11300,
+      "activityRate": 65.44,
+      "employmentRate": 61.5,
+      "unemploymentRate": 6.02
+    },
+    {
+      "province": "Santa Cruz",
+      "pob14": 259629,
+      "pea": 172698,
+      "ocupados": 159137,
+      "desocupados": 13561,
+      "activityRate": 66.52,
+      "employmentRate": 61.29,
+      "unemploymentRate": 7.85
+    },
+    {
+      "province": "Chubut",
+      "pob14": 466627,
+      "pea": 307077,
+      "ocupados": 283492,
+      "desocupados": 23585,
+      "activityRate": 65.81,
+      "employmentRate": 60.75,
+      "unemploymentRate": 7.68
+    },
+    {
+      "province": "La Rioja",
+      "pob14": 303899,
+      "pea": 196650,
+      "ocupados": 182757,
+      "desocupados": 13893,
+      "activityRate": 64.71,
+      "employmentRate": 60.14,
+      "unemploymentRate": 7.06
+    },
+    {
+      "province": "Río Negro",
+      "pob14": 594726,
+      "pea": 387651,
+      "ocupados": 357494,
+      "desocupados": 30157,
+      "activityRate": 65.18,
+      "employmentRate": 60.11,
+      "unemploymentRate": 7.78
+    },
+    {
+      "province": "Córdoba",
+      "pob14": 3062143,
+      "pea": 1990337,
+      "ocupados": 1829532,
+      "desocupados": 160805,
+      "activityRate": 65.0,
+      "employmentRate": 59.75,
+      "unemploymentRate": 8.08
+    },
+    {
+      "province": "Santa Fe",
+      "pob14": 2824215,
+      "pea": 1811923,
+      "ocupados": 1667277,
+      "desocupados": 144646,
+      "activityRate": 64.16,
+      "employmentRate": 59.04,
+      "unemploymentRate": 7.98
+    },
+    {
+      "province": "Buenos Aires",
+      "pob14": 13857399,
+      "pea": 8942700,
+      "ocupados": 8120465,
+      "desocupados": 822235,
+      "activityRate": 64.53,
+      "employmentRate": 58.6,
+      "unemploymentRate": 9.19
+    },
+    {
+      "province": "Catamarca",
+      "pob14": 339304,
+      "pea": 213900,
+      "ocupados": 197548,
+      "desocupados": 16352,
+      "activityRate": 63.04,
+      "employmentRate": 58.22,
+      "unemploymentRate": 7.64
+    },
+    {
+      "province": "San Luis",
+      "pob14": 429112,
+      "pea": 275543,
+      "ocupados": 248488,
+      "desocupados": 27055,
+      "activityRate": 64.21,
+      "employmentRate": 57.91,
+      "unemploymentRate": 9.82
+    },
+    {
+      "province": "Jujuy",
+      "pob14": 633222,
+      "pea": 397889,
+      "ocupados": 366361,
+      "desocupados": 31528,
+      "activityRate": 62.84,
+      "employmentRate": 57.86,
+      "unemploymentRate": 7.92
+    },
+    {
+      "province": "Mendoza",
+      "pob14": 1594198,
+      "pea": 1005661,
+      "ocupados": 909742,
+      "desocupados": 95919,
+      "activityRate": 63.08,
+      "employmentRate": 57.07,
+      "unemploymentRate": 9.54
+    },
+    {
+      "province": "Misiones",
+      "pob14": 954517,
+      "pea": 579086,
+      "ocupados": 544789,
+      "desocupados": 34297,
+      "activityRate": 60.67,
+      "employmentRate": 57.07,
+      "unemploymentRate": 5.92
+    },
+    {
+      "province": "Salta",
+      "pob14": 1096035,
+      "pea": 671930,
+      "ocupados": 618815,
+      "desocupados": 53115,
+      "activityRate": 61.31,
+      "employmentRate": 56.46,
+      "unemploymentRate": 7.9
+    },
+    {
+      "province": "Entre Ríos",
+      "pob14": 1122157,
+      "pea": 684735,
+      "ocupados": 630861,
+      "desocupados": 53874,
+      "activityRate": 61.02,
+      "employmentRate": 56.22,
+      "unemploymentRate": 7.87
+    },
+    {
+      "province": "Chaco",
+      "pob14": 869419,
+      "pea": 518359,
+      "ocupados": 484355,
+      "desocupados": 34004,
+      "activityRate": 59.62,
+      "employmentRate": 55.71,
+      "unemploymentRate": 6.56
+    },
+    {
+      "province": "Tucumán",
+      "pob14": 1353069,
+      "pea": 811238,
+      "ocupados": 731827,
+      "desocupados": 79411,
+      "activityRate": 59.96,
+      "employmentRate": 54.09,
+      "unemploymentRate": 9.79
+    },
+    {
+      "province": "San Juan",
+      "pob14": 630979,
+      "pea": 375905,
+      "ocupados": 339772,
+      "desocupados": 36133,
+      "activityRate": 59.57,
+      "employmentRate": 53.85,
+      "unemploymentRate": 9.61
+    },
+    {
+      "province": "Formosa",
+      "pob14": 462885,
+      "pea": 258808,
+      "ocupados": 241502,
+      "desocupados": 17306,
+      "activityRate": 55.91,
+      "employmentRate": 52.17,
+      "unemploymentRate": 6.69
+    },
+    {
+      "province": "Santiago del Estero",
+      "pob14": 806408,
+      "pea": 449159,
+      "ocupados": 412640,
+      "desocupados": 36519,
+      "activityRate": 55.7,
+      "employmentRate": 51.17,
+      "unemploymentRate": 8.13
+    },
+    {
+      "province": "Corrientes",
+      "pob14": 937638,
+      "pea": 525245,
+      "ocupados": 476760,
+      "desocupados": 48485,
+      "activityRate": 56.02,
+      "employmentRate": 50.85,
+      "unemploymentRate": 9.23
+    }
+  ]
+}

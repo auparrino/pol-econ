@@ -1,25 +1,58 @@
 #!/usr/bin/env python
 """
-Process SIPA registered private employment data (CEP XXI / Min. Desarrollo Productivo).
-Source: https://cdn.produccion.gob.ar/cdn-cep/datos-por-provincia/por-provincia-clae2/puestos/puestos_priv.csv
+Process CEP XXI / SIPA + AFIP registered employment data.
 
-Downloads (if needed) and processes into structured JSON for the dashboard.
+Covers FIVE worker categories (where CSVs are available):
+  - priv        → asalariados privados (SIPA)
+  - pub         → asalariados públicos (SIPA nacional + municipal + provincial adherido)
+  - monotributo → monotributistas
+  - autonomos   → trabajadores autónomos
+  - casas       → trabajadoras de casas particulares (régimen especial)
+
+Limitations (documented in the UI):
+  - NO cubre empleados provinciales de 13 provincias con caja previsional propia
+    (BA, CABA, Córdoba, Santa Fe, Chaco, Entre Ríos, Misiones, Formosa, Neuquén,
+     Chubut, Santa Cruz, TdF, Corrientes).
+  - NO incluye trabajo informal.
+
+Backwards-compatible output:
+  - Always emits `private`, `public`, `total` (same fields as v1) so old UI keeps working.
+  - Adds `categories` object with all 5 categories when available.
+  - `publicSource`: "direct" (from puestos_pub.csv) or "derived" (todos − priv).
 """
 
 import pandas as pd
 import json
 import os
 import urllib.request
+import sys
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_DIR = os.path.join(BASE, "data", "raw")
 OUT_DIR = os.path.join(BASE, "src", "data")
 
-SIPA_URL = "https://cdn.produccion.gob.ar/cdn-cep/datos-por-provincia/por-provincia-clae2/puestos/puestos_priv.csv"
-SIPA_TOTAL_URL = "https://cdn.produccion.gob.ar/cdn-cep/datos-por-provincia/por-provincia-clae2/puestos/puestos_todos.csv"
-CLAE_URL = "https://cdn.produccion.gob.ar/cdn-cep/clae_agg.csv"
+CDN_BASE = "https://cdn.produccion.gob.ar/cdn-cep/datos-por-provincia/por-provincia-clae2"
 
-# SIPA zone names → GeoJSON NAME_1
+# One or more candidate URLs per category. First one that downloads (and parses) wins.
+CATEGORY_URLS = {
+    "priv":        [f"{CDN_BASE}/puestos/puestos_priv.csv"],
+    "todos":       [f"{CDN_BASE}/puestos/puestos_todos.csv"],
+    "pub":         [f"{CDN_BASE}/puestos/puestos_pub.csv",
+                    f"{CDN_BASE}/puestos/puestos_publ.csv",
+                    f"{CDN_BASE}/puestos/puestos_publico.csv"],
+    "monotributo": [f"{CDN_BASE}/monotributo/monotributo.csv",
+                    f"{CDN_BASE}/puestos/monotributo.csv",
+                    f"{CDN_BASE}/monotributistas/monotributistas.csv",
+                    f"{CDN_BASE}/monotributistas/monotributo.csv"],
+    "autonomos":   [f"{CDN_BASE}/autonomos/autonomos.csv",
+                    f"{CDN_BASE}/puestos/autonomos.csv"],
+    "casas":       [f"{CDN_BASE}/casas_particulares/casas_particulares.csv",
+                    f"{CDN_BASE}/puestos/casas_particulares.csv",
+                    f"{CDN_BASE}/casas-particulares/casas_particulares.csv"],
+}
+
+CLAE_URL = f"https://cdn.produccion.gob.ar/cdn-cep/clae_agg.csv"
+
 PROVINCE_MAP = {
     "BUENOS AIRES": "Buenos Aires",
     "CAPITAL FEDERAL": "Ciudad de Buenos Aires",
@@ -47,7 +80,6 @@ PROVINCE_MAP = {
     "TUCUMAN": "Tucumán",
 }
 
-# Sector family classification for coloring
 SECTOR_FAMILY = {
     1: "Primary", 2: "Primary", 3: "Primary", 5: "Primary",
     6: "Mining", 7: "Mining", 8: "Mining", 9: "Mining",
@@ -70,6 +102,7 @@ SECTOR_FAMILY = {
     72: "Prof. Services", 73: "Prof. Services", 74: "Prof. Services", 75: "Prof. Services",
     77: "Admin. Services", 78: "Admin. Services", 79: "Admin. Services",
     80: "Admin. Services", 81: "Admin. Services", 82: "Admin. Services",
+    84: "Public",  # Administración pública y defensa
     85: "Education",
     86: "Health", 87: "Health", 88: "Health",
     90: "Culture", 91: "Culture", 92: "Culture", 93: "Culture",
@@ -80,86 +113,94 @@ SECTOR_FAMILY = {
 
 def download_if_needed(url, dest, force=False):
     if os.path.exists(dest) and not force:
-        print(f"  Using cached: {dest}")
-        return
+        return True
     os.makedirs(os.path.dirname(dest), exist_ok=True)
-    print(f"  Downloading {url}...")
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req) as resp:
-        data = resp.read()
-        with open(dest, "wb") as f:
-            f.write(data)
-    print(f"  Saved {len(data)/1024/1024:.1f} MB")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            data = resp.read()
+            if len(data) < 1000:
+                return False  # probably a 404 HTML page
+            with open(dest, "wb") as f:
+                f.write(data)
+            print(f"  Downloaded {len(data)/1024/1024:.1f} MB from {url}")
+            return True
+    except Exception as e:
+        print(f"  Failed {url}: {e}")
+        return False
+
+
+def try_download_category(cat_name, urls):
+    """Returns path to the CSV if download succeeded OR cached copy exists."""
+    # New canonical naming AND legacy v1 names we might already have cached
+    candidate_caches = [
+        os.path.join(RAW_DIR, f"sipa_{cat_name}_clae2.csv"),
+        os.path.join(RAW_DIR, f"sipa_puestos_{cat_name}_clae2.csv"),
+    ]
+    for c in candidate_caches:
+        if os.path.exists(c) and os.path.getsize(c) > 1000:
+            print(f"  [{cat_name}] using cached: {c}")
+            return c
+    dest = candidate_caches[0]
+    for url in urls:
+        print(f"  [{cat_name}] trying {url}")
+        if download_if_needed(url, dest, force=True):
+            return dest
+    print(f"  [{cat_name}] ALL URLS FAILED — category unavailable")
+    return None
 
 
 def build_clae_dict():
-    """Build CLAE2 code → name mapping."""
+    """CLAE2 code → short description."""
     path = os.path.join(RAW_DIR, "clae_agg.csv")
-    download_if_needed(CLAE_URL, path)
+    if not os.path.exists(path):
+        download_if_needed(CLAE_URL, path)
+    if not os.path.exists(path):
+        return {}
     df = pd.read_csv(path, encoding="utf-8")
     clae2_map = {}
     for _, row in df.iterrows():
         code = int(row["clae2"])
         if code not in clae2_map:
             desc = str(row["clae2_desc"]).strip()
-            # Shorten long names
             if len(desc) > 50:
                 desc = desc[:47] + "..."
             clae2_map[code] = desc
-    # Add fallback
     clae2_map[999] = "Other / Unclassified"
     return clae2_map
 
 
-def process():
-    print("Processing SIPA employment data...")
-
-    # --- Private sector ---
-    sipa_path = os.path.join(RAW_DIR, "sipa_puestos_priv_clae2.csv")
-    download_if_needed(SIPA_URL, sipa_path)
-
-    clae2_names = build_clae_dict()
-
-    df = pd.read_csv(sipa_path)
+def load_category(path):
+    """Read a SIPA/AFIP csv, filter to mapped provinces, return DataFrame."""
+    if not path or not os.path.exists(path):
+        return None
+    df = pd.read_csv(path)
     df = df[df["zona_prov"].isin(PROVINCE_MAP)]
     df["province"] = df["zona_prov"].map(PROVINCE_MAP)
     df["year"] = pd.to_datetime(df["fecha"]).dt.year
+    return df
 
-    latest_date = df["fecha"].max()
-    print(f"  Latest private data: {latest_date}")
 
-    # --- Total (private + public) ---
-    total_path = os.path.join(RAW_DIR, "sipa_puestos_todos_clae2.csv")
-    download_if_needed(SIPA_TOTAL_URL, total_path)
+def latest_sum_by_prov(df):
+    """Return dict province -> sum of puestos at the latest date."""
+    if df is None or df.empty:
+        return {}, None
+    latest = df["fecha"].max()
+    sub = df[df["fecha"] == latest]
+    return sub.groupby("province")["puestos"].sum().to_dict(), latest
 
-    df_total = pd.read_csv(total_path)
-    df_total = df_total[df_total["zona_prov"].isin(PROVINCE_MAP)]
-    df_total["province"] = df_total["zona_prov"].map(PROVINCE_MAP)
-    df_total["year"] = pd.to_datetime(df_total["fecha"]).dt.year
 
-    latest_total_date = df_total["fecha"].max()
-    print(f"  Latest total data: {latest_total_date}")
-
-    # Use latest available month for sector breakdown
-    latest_df = df[df["fecha"] == latest_date].copy()
-    latest_total_df = df_total[df_total["fecha"] == latest_total_date].copy()
-
-    provinces = []
-    for prov_name in sorted(PROVINCE_MAP.values()):
-        prov_data = latest_df[latest_df["province"] == prov_name]
-        if prov_data.empty:
-            continue
-
-        total_private = int(prov_data["puestos"].sum())
-
-        # Public employment from total dataset
-        prov_total = latest_total_df[latest_total_df["province"] == prov_name]
-        total_all = int(prov_total["puestos"].sum()) if len(prov_total) > 0 else total_private
-        total_public = max(0, total_all - total_private)
-
-        # Sector breakdown (private)
+def sector_breakdown(df, clae2_names):
+    """Sector breakdown for the latest month."""
+    if df is None or df.empty:
+        return {}
+    latest = df["fecha"].max()
+    sub = df[df["fecha"] == latest]
+    out = {}
+    for prov, grp in sub.groupby("province"):
+        total = int(grp["puestos"].sum())
         sectors = []
-        for _, row in prov_data.sort_values("puestos", ascending=False).iterrows():
+        for _, row in grp.sort_values("puestos", ascending=False).iterrows():
             code = int(row["clae2"])
             emp = int(row["puestos"])
             if emp <= 0:
@@ -169,50 +210,131 @@ def process():
                 "name": clae2_names.get(code, f"Sector {code}"),
                 "family": SECTOR_FAMILY.get(code, "Other"),
                 "employees": emp,
-                "share_pct": round(emp / total_private * 100, 2) if total_private > 0 else 0,
+                "share_pct": round(emp / total * 100, 2) if total > 0 else 0,
             })
+        out[prov] = sectors[:20]
+    return out
 
-        # HHI = sum of squared shares (0-1 scale)
+
+def process():
+    os.makedirs(RAW_DIR, exist_ok=True)
+    print("Processing CEP XXI / SIPA+AFIP employment data...")
+
+    # ── Download all categories (skip silently on failure) ────────
+    paths = {}
+    for cat, urls in CATEGORY_URLS.items():
+        paths[cat] = try_download_category(cat, urls)
+
+    # ── Load DataFrames ───────────────────────────────────────────
+    dfs = {cat: load_category(p) for cat, p in paths.items()}
+
+    available = [k for k, v in dfs.items() if v is not None]
+    print(f"\n  Categories loaded: {available}")
+    if "priv" not in available:
+        print("  ERROR: priv is required — aborting.")
+        sys.exit(1)
+
+    clae2_names = build_clae_dict()
+
+    # ── Aggregate latest snapshots per category ──────────────────
+    snapshots = {}
+    latest_dates = {}
+    for cat, df in dfs.items():
+        sums, latest = latest_sum_by_prov(df)
+        snapshots[cat] = sums
+        latest_dates[cat] = latest
+
+    # Public: prefer direct `pub` if available, else derive `todos − priv`
+    public_source = "direct" if dfs.get("pub") is not None else "derived"
+    if public_source == "direct":
+        pub_snap = snapshots["pub"]
+    else:
+        pub_snap = {}
+        for prov, todos_val in snapshots.get("todos", {}).items():
+            priv_val = snapshots["priv"].get(prov, 0)
+            pub_snap[prov] = max(0, todos_val - priv_val)
+
+    # Sector breakdown (keep using priv for detailed view, like v1)
+    priv_sectors = sector_breakdown(dfs["priv"], clae2_names)
+
+    # ── Build per-province output ────────────────────────────────
+    provinces_out = []
+    for prov in sorted(PROVINCE_MAP.values()):
+        priv = int(snapshots["priv"].get(prov, 0))
+        pub = int(pub_snap.get(prov, 0))
+        monot = int(snapshots.get("monotributo", {}).get(prov, 0))
+        auton = int(snapshots.get("autonomos", {}).get(prov, 0))
+        casas = int(snapshots.get("casas", {}).get(prov, 0))
+
+        # Total registered (sum of available categories)
+        total = priv + pub + monot + auton + casas
+
+        # Backwards-compat: `total` and `public` match old v1 shape when only priv+todos present
+        if "monotributo" not in available and "autonomos" not in available and "casas" not in available:
+            # Use old definition — total includes pub only
+            total = priv + pub
+
+        sectors = priv_sectors.get(prov, [])
         hhi = sum((s["share_pct"] / 100) ** 2 for s in sectors)
 
-        # Time series: annual totals (private)
-        prov_ts = df[df["province"] == prov_name].groupby("year")["puestos"].sum().reset_index()
-        # Also total time series
-        prov_ts_total = df_total[df_total["province"] == prov_name].groupby("year")["puestos"].sum().reset_index()
-        ts_total_map = dict(zip(prov_ts_total["year"], prov_ts_total["puestos"]))
-
+        # Time series (use priv + todos — same as v1)
+        df_priv = dfs["priv"]
+        prov_ts = df_priv[df_priv["province"] == prov].groupby("year")["puestos"].sum().reset_index()
+        df_todos = dfs.get("todos")
+        ts_total_map = {}
+        if df_todos is not None:
+            ts_total = df_todos[df_todos["province"] == prov].groupby("year")["puestos"].sum().reset_index()
+            ts_total_map = dict(zip(ts_total["year"], ts_total["puestos"]))
         time_series = []
         for _, r in prov_ts.iterrows():
             y = int(r["year"])
-            priv = int(r["puestos"])
-            tot = int(ts_total_map.get(y, priv))
+            pr = int(r["puestos"])
+            tot = int(ts_total_map.get(y, pr))
             time_series.append({
                 "year": y,
-                "private": priv,
-                "public": max(0, tot - priv),
+                "private": pr,
+                "public": max(0, tot - pr),
                 "total": tot,
             })
 
-        provinces.append({
-            "province": prov_name,
-            "private": total_private,
-            "public": total_public,
-            "total": total_all,
+        provinces_out.append({
+            "province": prov,
+            # legacy v1 fields (don't break existing UI)
+            "private": priv,
+            "public": pub,
+            "total": total,
+            # v2 expanded categories
+            "categories": {
+                "asalariadosPrivados": priv,
+                "asalariadosPublicos": pub,
+                "monotributo": monot if "monotributo" in available else None,
+                "autonomos": auton if "autonomos" in available else None,
+                "casasParticulares": casas if "casas" in available else None,
+            },
+            "publicSource": public_source,   # "direct" or "derived"
             "hhi": round(hhi, 4),
-            "sectors": sectors[:20],
+            "sectors": sectors,
             "timeSeries": time_series,
         })
 
     result = {
-        "lastUpdated": latest_date,
-        "source": "CEP XXI / SIPA - Registered private employment",
-        "provinces": provinces,
+        "lastUpdated": latest_dates.get("priv"),
+        "source": "CEP XXI / SIPA + AFIP — 5 categorías de trabajo registrado",
+        "categoriesAvailable": available,
+        "publicSource": public_source,
+        "limitations": [
+            "No incluye empleados provinciales de 13 provincias con caja previsional propia (BA, CABA, Córdoba, Santa Fe, Chaco, Entre Ríos, Misiones, Formosa, Neuquén, Chubut, Santa Cruz, TdF, Corrientes).",
+            "No incluye trabajo informal (EPH estima ~30-40% del empleo urbano).",
+        ],
+        "provinces": provinces_out,
     }
 
     out_path = os.path.join(OUT_DIR, "sipa_employment.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False)
-    print(f"  Wrote {len(provinces)} provinces to {out_path}")
+    print(f"\n  Wrote {len(provinces_out)} provinces to {out_path}")
+    print(f"  publicSource = {public_source}")
+    print(f"  categories available: {available}")
 
 
 if __name__ == "__main__":

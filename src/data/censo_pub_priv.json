@@ -1,0 +1,39 @@
+{
+  "source": "INDEC Censo Nacional de Población, Hogares y Viviendas 2022 (procesado con Redatam 7)",
+  "variable": "P33 · Actividad principal",
+  "notes": "\"public\" = personas con actividad principal en Administración pública, educación o salud pública (incluye nacional + provincial + municipal). \"private\" = suma de todas las demás ramas (Educación/salud privada, Comercio, Industria, Agro/pesca/minería, Construcción, Transporte, Hotel/restaurante, Banco/financiera, Electricidad/gas/agua, Otros servicios). \"mixedEduSalud\" = Educación o salud sin determinar si es pública o privada. \"ignorado\" y \"total\" conservan nombres originales. Las cifras reflejan ocupados declarados (no sólo asalariados registrados).",
+  "year": 2022,
+  "national": {
+    "public": 2459952,
+    "private": 16461649,
+    "mixedEduSalud": 214301,
+    "ignorado": 2459085,
+    "total": 21094987
+  },
+  "provinces": [
+    { "code": "02", "name": "Ciudad de Buenos Aires", "public": 198468,  "private": 1308522, "mixedEduSalud": 25259,  "ignorado": 146534, "total": 1678783 },
+    { "code": "06", "name": "Buenos Aires",        "public": 813400,  "private": 6304322, "mixedEduSalud": 73794,  "ignorado": 928949, "total": 8120465 },
+    { "code": "10", "name": "Catamarca",           "public": 47667,   "private": 124406,  "mixedEduSalud": 1491,   "ignorado": 23984,  "total": 197548 },
+    { "code": "14", "name": "Córdoba",             "public": 153683,  "private": 1482593, "mixedEduSalud": 20084,  "ignorado": 173172, "total": 1829532 },
+    { "code": "18", "name": "Corrientes",          "public": 57007,   "private": 316243,  "mixedEduSalud": 7315,   "ignorado": 96195,  "total": 476760 },
+    { "code": "22", "name": "Chaco",               "public": 72380,   "private": 324840,  "mixedEduSalud": 3760,   "ignorado": 83375,  "total": 484355 },
+    { "code": "26", "name": "Chubut",              "public": 44535,   "private": 202303,  "mixedEduSalud": 1642,   "ignorado": 35012,  "total": 283492 },
+    { "code": "30", "name": "Entre Ríos",          "public": 76009,   "private": 498291,  "mixedEduSalud": 9568,   "ignorado": 46993,  "total": 630861 },
+    { "code": "34", "name": "Formosa",             "public": 38647,   "private": 163112,  "mixedEduSalud": 1556,   "ignorado": 38187,  "total": 241502 },
+    { "code": "38", "name": "Jujuy",               "public": 55772,   "private": 230766,  "mixedEduSalud": 8839,   "ignorado": 70984,  "total": 366361 },
+    { "code": "42", "name": "La Pampa",            "public": 26914,   "private": 134975,  "mixedEduSalud": 1598,   "ignorado": 13016,  "total": 176503 },
+    { "code": "46", "name": "La Rioja",            "public": 43915,   "private": 115315,  "mixedEduSalud": 1337,   "ignorado": 22190,  "total": 182757 },
+    { "code": "50", "name": "Mendoza",             "public": 102522,  "private": 704999,  "mixedEduSalud": 7682,   "ignorado": 94539,  "total": 909742 },
+    { "code": "54", "name": "Misiones",            "public": 69413,   "private": 397759,  "mixedEduSalud": 3891,   "ignorado": 73726,  "total": 544789 },
+    { "code": "58", "name": "Neuquén",             "public": 62800,   "private": 242707,  "mixedEduSalud": 3046,   "ignorado": 36619,  "total": 345172 },
+    { "code": "62", "name": "Río Negro",           "public": 49885,   "private": 265590,  "mixedEduSalud": 3906,   "ignorado": 38113,  "total": 357494 },
+    { "code": "66", "name": "Salta",               "public": 77238,   "private": 450642,  "mixedEduSalud": 6374,   "ignorado": 84561,  "total": 618815 },
+    { "code": "70", "name": "San Juan",            "public": 43773,   "private": 250365,  "mixedEduSalud": 2679,   "ignorado": 42955,  "total": 339772 },
+    { "code": "74", "name": "San Luis",            "public": 43570,   "private": 172067,  "mixedEduSalud": 2326,   "ignorado": 30525,  "total": 248488 },
+    { "code": "78", "name": "Santa Cruz",          "public": 39511,   "private": 100418,  "mixedEduSalud": 1212,   "ignorado": 17996,  "total": 159137 },
+    { "code": "82", "name": "Santa Fe",            "public": 159334,  "private": 1307822, "mixedEduSalud": 15644,  "ignorado": 184477, "total": 1667277 },
+    { "code": "86", "name": "Santiago del Estero", "public": 61093,   "private": 282922,  "mixedEduSalud": 3457,   "ignorado": 65168,  "total": 412640 },
+    { "code": "90", "name": "Tucumán",             "public": 102814,  "private": 519248,  "mixedEduSalud": 7102,   "ignorado": 102663, "total": 731827 },
+    { "code": "94", "name": "Tierra del Fuego",    "public": 19602,   "private": 61422,   "mixedEduSalud": 739,    "ignorado": 9152,   "total": 90915 }
+  ]
+}

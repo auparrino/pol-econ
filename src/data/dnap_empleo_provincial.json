@@ -1,0 +1,4974 @@
+{
+  "source": "DNAP — Ocupación y gastos salariales provinciales",
+  "sourceUrl": "https://www.argentina.gob.ar/economia/sechacienda/coordinacion-fiscal-provincial/ejecucion-presupuestaria-provincial/ocupacion-y-salarios",
+  "fileUrl": "https://www.argentina.gob.ar/sites/default/files/ejec-presupuestaria-ocupacion_salarios_1.xlsx",
+  "year": 2024,
+  "scope": "Cargos ocupados (no personas) en Administración Central + Organismos Descentralizados + Cuentas Especiales provinciales, al mes de diciembre. Incluye los 3 poderes (ejecutivo, legislativo, judicial). Excluye Instituciones de Seguridad Social (cajas), Fondos Fiduciarios, organismos públicos con carácter empresarial, contratos/becas/pasantías imputados a otras partidas, y por construcción no cubre empleo municipal ni nacional.",
+  "scopeDoc": "DAIPEF-DNCFP (2014) 'El Empleo Público en las Provincias Argentinas', nota al pie 2 y §1. https://www.argentina.gob.ar/sites/default/files/el_empleo_publico_en_las_provincias_argentinas.pdf",
+  "populationSource": "INDEC — Proyecciones por jurisdicción 2022-2040",
+  "national": {
+    "employees": 2321510,
+    "ratioPer1000": 50.14,
+    "population": 46301743,
+    "personalSpendingThousandsARS": 38810684783,
+    "avgMonthlySalaryARS": 1285989
+  },
+  "provinces": [
+    {
+      "province": "Córdoba",
+      "employees": 131305,
+      "ratioPer1000": 33.27,
+      "population": 3946289,
+      "personalSpendingThousandsARS": 2562273138,
+      "avgMonthlySalaryARS": 1501070
+    },
+    {
+      "province": "Buenos Aires",
+      "employees": 657328,
+      "ratioPer1000": 37.71,
+      "population": 17431446,
+      "personalSpendingThousandsARS": 10387880359,
+      "avgMonthlySalaryARS": 1215630
+    },
+    {
+      "province": "Santa Fe",
+      "employees": 151850,
+      "ratioPer1000": 41.27,
+      "population": 3679597,
+      "personalSpendingThousandsARS": 3000810400,
+      "avgMonthlySalaryARS": 1520129
+    },
+    {
+      "province": "Mendoza",
+      "employees": 91784,
+      "ratioPer1000": 44.94,
+      "population": 2042241,
+      "personalSpendingThousandsARS": 1230010168,
+      "avgMonthlySalaryARS": 1030857
+    },
+    {
+      "province": "Misiones",
+      "employees": 68183,
+      "ratioPer1000": 51.13,
+      "population": 1333633,
+      "personalSpendingThousandsARS": 909402190,
+      "avgMonthlySalaryARS": 1025974
+    },
+    {
+      "province": "Corrientes",
+      "employees": 61755,
+      "ratioPer1000": 51.5,
+      "population": 1199120,
+      "personalSpendingThousandsARS": 867152280,
+      "avgMonthlySalaryARS": 1080140
+    },
+    {
+      "province": "Santiago del Estero",
+      "employees": 56198,
+      "ratioPer1000": 53.35,
+      "population": 1053409,
+      "personalSpendingThousandsARS": 695117450,
+      "avgMonthlySalaryARS": 951468
+    },
+    {
+      "province": "Tucumán",
+      "employees": 96671,
+      "ratioPer1000": 54.67,
+      "population": 1768368,
+      "personalSpendingThousandsARS": 1354805457,
+      "avgMonthlySalaryARS": 1078046
+    },
+    {
+      "province": "Salta",
+      "employees": 85940,
+      "ratioPer1000": 58.05,
+      "population": 1480327,
+      "personalSpendingThousandsARS": 1281178720,
+      "avgMonthlySalaryARS": 1146756
+    },
+    {
+      "province": "Entre Ríos",
+      "employees": 84550,
+      "ratioPer1000": 58.07,
+      "population": 1456015,
+      "personalSpendingThousandsARS": 1521420324,
+      "avgMonthlySalaryARS": 1384179
+    },
+    {
+      "province": "San Juan",
+      "employees": 49874,
+      "ratioPer1000": 59.01,
+      "population": 845201,
+      "personalSpendingThousandsARS": 842528539,
+      "avgMonthlySalaryARS": 1299472
+    },
+    {
+      "province": "Ciudad de Buenos Aires",
+      "employees": 196898,
+      "ratioPer1000": 63.64,
+      "population": 3093735,
+      "personalSpendingThousandsARS": 4044771759,
+      "avgMonthlySalaryARS": 1580190
+    },
+    {
+      "province": "Formosa",
+      "employees": 41405,
+      "ratioPer1000": 66.31,
+      "population": 624461,
+      "personalSpendingThousandsARS": 579038140,
+      "avgMonthlySalaryARS": 1075749
+    },
+    {
+      "province": "Chaco",
+      "employees": 81834,
+      "ratioPer1000": 68.15,
+      "population": 1200849,
+      "personalSpendingThousandsARS": 1383220088,
+      "avgMonthlySalaryARS": 1300212
+    },
+    {
+      "province": "San Luis",
+      "employees": 38541,
+      "ratioPer1000": 72.25,
+      "population": 533465,
+      "personalSpendingThousandsARS": 458744968,
+      "avgMonthlySalaryARS": 915598
+    },
+    {
+      "province": "Río Negro",
+      "employees": 56796,
+      "ratioPer1000": 72.39,
+      "population": 784591,
+      "personalSpendingThousandsARS": 1047237277,
+      "avgMonthlySalaryARS": 1418352
+    },
+    {
+      "province": "La Pampa",
+      "employees": 29027,
+      "ratioPer1000": 77.23,
+      "population": 375873,
+      "personalSpendingThousandsARS": 503257577,
+      "avgMonthlySalaryARS": 1333659
+    },
+    {
+      "province": "Chubut",
+      "employees": 47533,
+      "ratioPer1000": 79.13,
+      "population": 600674,
+      "personalSpendingThousandsARS": 940752132,
+      "avgMonthlySalaryARS": 1522428
+    },
+    {
+      "province": "Jujuy",
+      "employees": 66173,
+      "ratioPer1000": 82.85,
+      "population": 798673,
+      "personalSpendingThousandsARS": 735656797,
+      "avgMonthlySalaryARS": 855167
+    },
+    {
+      "province": "Catamarca",
+      "employees": 43661,
+      "ratioPer1000": 99.79,
+      "population": 437508,
+      "personalSpendingThousandsARS": 620564127,
+      "avgMonthlySalaryARS": 1093326
+    },
+    {
+      "province": "Santa Cruz",
+      "employees": 36321,
+      "ratioPer1000": 108.5,
+      "population": 334752,
+      "personalSpendingThousandsARS": 758161063,
+      "avgMonthlySalaryARS": 1605685
+    },
+    {
+      "province": "Neuquén",
+      "employees": 77560,
+      "ratioPer1000": 111.05,
+      "population": 698410,
+      "personalSpendingThousandsARS": 2126184600,
+      "avgMonthlySalaryARS": 2108724
+    },
+    {
+      "province": "La Rioja",
+      "employees": 44705,
+      "ratioPer1000": 111.25,
+      "population": 401843,
+      "personalSpendingThousandsARS": 449476249,
+      "avgMonthlySalaryARS": 773406
+    },
+    {
+      "province": "Tierra del Fuego",
+      "employees": 25618,
+      "ratioPer1000": 141.33,
+      "population": 181263,
+      "personalSpendingThousandsARS": 511040980,
+      "avgMonthlySalaryARS": 1534501
+    }
+  ],
+  "timeSeries": {
+    "national": [
+      {
+        "year": 1987,
+        "employees": 1020279,
+        "ratio": 33.06
+      },
+      {
+        "year": 1988,
+        "employees": 1061422,
+        "ratio": 33.95
+      },
+      {
+        "year": 1989,
+        "employees": 1096295,
+        "ratio": 34.63
+      },
+      {
+        "year": 1990,
+        "employees": 1122993,
+        "ratio": 34.52
+      },
+      {
+        "year": 1991,
+        "employees": 1097764,
+        "ratio": 33.29
+      },
+      {
+        "year": 1992,
+        "employees": 1109932,
+        "ratio": 33.21
+      },
+      {
+        "year": 1993,
+        "employees": 1154629,
+        "ratio": 34.09
+      },
+      {
+        "year": 1994,
+        "employees": 1164520,
+        "ratio": 33.93
+      },
+      {
+        "year": 1995,
+        "employees": 1213118,
+        "ratio": 34.89
+      },
+      {
+        "year": 1996,
+        "employees": 1201483,
+        "ratio": 34.11
+      },
+      {
+        "year": 1997,
+        "employees": 1240651,
+        "ratio": 35.04
+      },
+      {
+        "year": 1998,
+        "employees": 1270986,
+        "ratio": 35.18
+      },
+      {
+        "year": 1999,
+        "employees": 1324613,
+        "ratio": 36.21
+      },
+      {
+        "year": 2000,
+        "employees": 1359602,
+        "ratio": 37.17
+      },
+      {
+        "year": 2001,
+        "employees": 1363081,
+        "ratio": 37.83
+      },
+      {
+        "year": 2002,
+        "employees": 1348116,
+        "ratio": 35.93
+      },
+      {
+        "year": 2003,
+        "employees": 1381918,
+        "ratio": 36.49
+      },
+      {
+        "year": 2004,
+        "employees": 1427215,
+        "ratio": 37.34
+      },
+      {
+        "year": 2005,
+        "employees": 1508808,
+        "ratio": 39.1
+      },
+      {
+        "year": 2006,
+        "employees": 1574316,
+        "ratio": 40.4
+      },
+      {
+        "year": 2007,
+        "employees": 1662002,
+        "ratio": 42.23
+      },
+      {
+        "year": 2008,
+        "employees": 1752759,
+        "ratio": 44.1
+      },
+      {
+        "year": 2009,
+        "employees": 1802228,
+        "ratio": 44.9
+      },
+      {
+        "year": 2010,
+        "employees": 1872700,
+        "ratio": 45.91
+      },
+      {
+        "year": 2011,
+        "employees": 1945342,
+        "ratio": 47.15
+      },
+      {
+        "year": 2012,
+        "employees": 2003198,
+        "ratio": 48.0
+      },
+      {
+        "year": 2013,
+        "employees": 2056704,
+        "ratio": 48.73
+      },
+      {
+        "year": 2014,
+        "employees": 2088561,
+        "ratio": 48.95
+      },
+      {
+        "year": 2015,
+        "employees": 2170680,
+        "ratio": 50.33
+      },
+      {
+        "year": 2016,
+        "employees": 2222826,
+        "ratio": 50.99
+      },
+      {
+        "year": 2017,
+        "employees": 2239065,
+        "ratio": 50.84
+      },
+      {
+        "year": 2018,
+        "employees": 2200714,
+        "ratio": 49.46
+      },
+      {
+        "year": 2019,
+        "employees": 2192852,
+        "ratio": 48.8
+      },
+      {
+        "year": 2020,
+        "employees": 2171343,
+        "ratio": 47.85
+      },
+      {
+        "year": 2021,
+        "employees": 2261584,
+        "ratio": 49.37
+      },
+      {
+        "year": 2022,
+        "employees": 2275751,
+        "ratio": 49.33
+      },
+      {
+        "year": 2023,
+        "employees": 2315944,
+        "ratio": 50.11
+      },
+      {
+        "year": 2024,
+        "employees": 2321510,
+        "ratio": 50.14
+      }
+    ],
+    "provinces": {
+      "Córdoba": [
+        {
+          "year": 1987,
+          "employees": 72722,
+          "ratio": 27.57
+        },
+        {
+          "year": 1988,
+          "employees": 76143,
+          "ratio": 28.52
+        },
+        {
+          "year": 1989,
+          "employees": 79036,
+          "ratio": 29.26
+        },
+        {
+          "year": 1990,
+          "employees": 84075,
+          "ratio": 30.42
+        },
+        {
+          "year": 1991,
+          "employees": 79923,
+          "ratio": 28.56
+        },
+        {
+          "year": 1992,
+          "employees": 80224,
+          "ratio": 28.33
+        },
+        {
+          "year": 1993,
+          "employees": 87176,
+          "ratio": 30.43
+        },
+        {
+          "year": 1994,
+          "employees": 85479,
+          "ratio": 29.5
+        },
+        {
+          "year": 1995,
+          "employees": 83288,
+          "ratio": 28.43
+        },
+        {
+          "year": 1996,
+          "employees": 76893,
+          "ratio": 25.96
+        },
+        {
+          "year": 1997,
+          "employees": 75731,
+          "ratio": 25.47
+        },
+        {
+          "year": 1998,
+          "employees": 74369,
+          "ratio": 24.57
+        },
+        {
+          "year": 1999,
+          "employees": 72528,
+          "ratio": 23.71
+        },
+        {
+          "year": 2002,
+          "employees": 86309,
+          "ratio": 27.21
+        },
+        {
+          "year": 2003,
+          "employees": 88914,
+          "ratio": 27.79
+        },
+        {
+          "year": 2004,
+          "employees": 89782,
+          "ratio": 27.83
+        },
+        {
+          "year": 2005,
+          "employees": 95723,
+          "ratio": 29.41
+        },
+        {
+          "year": 2006,
+          "employees": 94199,
+          "ratio": 28.7
+        },
+        {
+          "year": 2007,
+          "employees": 100658,
+          "ratio": 30.4
+        },
+        {
+          "year": 2008,
+          "employees": 106841,
+          "ratio": 31.99
+        },
+        {
+          "year": 2009,
+          "employees": 108468,
+          "ratio": 32.2
+        },
+        {
+          "year": 2010,
+          "employees": 112924,
+          "ratio": 33.48
+        },
+        {
+          "year": 2011,
+          "employees": 116086,
+          "ratio": 34.03
+        },
+        {
+          "year": 2012,
+          "employees": 117844,
+          "ratio": 34.15
+        },
+        {
+          "year": 2013,
+          "employees": 119155,
+          "ratio": 34.15
+        },
+        {
+          "year": 2014,
+          "employees": 121910,
+          "ratio": 34.55
+        },
+        {
+          "year": 2015,
+          "employees": 126438,
+          "ratio": 35.44
+        },
+        {
+          "year": 2016,
+          "employees": 125580,
+          "ratio": 34.82
+        },
+        {
+          "year": 2017,
+          "employees": 127075,
+          "ratio": 34.86
+        },
+        {
+          "year": 2018,
+          "employees": 127727,
+          "ratio": 34.67
+        },
+        {
+          "year": 2019,
+          "employees": 127758,
+          "ratio": 34.32
+        },
+        {
+          "year": 2020,
+          "employees": 125329,
+          "ratio": 33.33
+        },
+        {
+          "year": 2021,
+          "employees": 127462,
+          "ratio": 33.56
+        },
+        {
+          "year": 2022,
+          "employees": 127608,
+          "ratio": 32.53
+        },
+        {
+          "year": 2023,
+          "employees": 132358,
+          "ratio": 33.64
+        },
+        {
+          "year": 2024,
+          "employees": 131305,
+          "ratio": 33.27
+        }
+      ],
+      "Buenos Aires": [
+        {
+          "year": 1987,
+          "employees": 274889,
+          "ratio": 22.9
+        },
+        {
+          "year": 1988,
+          "employees": 279911,
+          "ratio": 23.04
+        },
+        {
+          "year": 1989,
+          "employees": 282480,
+          "ratio": 23.0
+        },
+        {
+          "year": 1990,
+          "employees": 287468,
+          "ratio": 22.87
+        },
+        {
+          "year": 1991,
+          "employees": 282680,
+          "ratio": 22.2
+        },
+        {
+          "year": 1992,
+          "employees": 286255,
+          "ratio": 22.2
+        },
+        {
+          "year": 1993,
+          "employees": 287855,
+          "ratio": 22.05
+        },
+        {
+          "year": 1994,
+          "employees": 287855,
+          "ratio": 21.78
+        },
+        {
+          "year": 1995,
+          "employees": 319667,
+          "ratio": 23.89
+        },
+        {
+          "year": 1996,
+          "employees": 323936,
+          "ratio": 23.92
+        },
+        {
+          "year": 1997,
+          "employees": 348788,
+          "ratio": 25.58
+        },
+        {
+          "year": 1998,
+          "employees": 365939,
+          "ratio": 26.37
+        },
+        {
+          "year": 1999,
+          "employees": 404655,
+          "ratio": 28.81
+        },
+        {
+          "year": 2000,
+          "employees": 428408,
+          "ratio": 30.5
+        },
+        {
+          "year": 2001,
+          "employees": 412984,
+          "ratio": 30.02
+        },
+        {
+          "year": 2002,
+          "employees": 406182,
+          "ratio": 28.42
+        },
+        {
+          "year": 2003,
+          "employees": 426880,
+          "ratio": 29.62
+        },
+        {
+          "year": 2004,
+          "employees": 438649,
+          "ratio": 30.19
+        },
+        {
+          "year": 2005,
+          "employees": 468474,
+          "ratio": 31.97
+        },
+        {
+          "year": 2006,
+          "employees": 492000,
+          "ratio": 33.28
+        },
+        {
+          "year": 2007,
+          "employees": 521807,
+          "ratio": 34.98
+        },
+        {
+          "year": 2008,
+          "employees": 567405,
+          "ratio": 37.7
+        },
+        {
+          "year": 2009,
+          "employees": 583073,
+          "ratio": 38.4
+        },
+        {
+          "year": 2010,
+          "employees": 618815,
+          "ratio": 39.37
+        },
+        {
+          "year": 2011,
+          "employees": 638440,
+          "ratio": 40.13
+        },
+        {
+          "year": 2012,
+          "employees": 654435,
+          "ratio": 40.65
+        },
+        {
+          "year": 2013,
+          "employees": 651272,
+          "ratio": 39.98
+        },
+        {
+          "year": 2014,
+          "employees": 646214,
+          "ratio": 39.22
+        },
+        {
+          "year": 2015,
+          "employees": 677362,
+          "ratio": 40.66
+        },
+        {
+          "year": 2016,
+          "employees": 682112,
+          "ratio": 40.5
+        },
+        {
+          "year": 2017,
+          "employees": 691006,
+          "ratio": 40.6
+        },
+        {
+          "year": 2018,
+          "employees": 645573,
+          "ratio": 37.54
+        },
+        {
+          "year": 2019,
+          "employees": 624685,
+          "ratio": 35.96
+        },
+        {
+          "year": 2020,
+          "employees": 609498,
+          "ratio": 34.75
+        },
+        {
+          "year": 2021,
+          "employees": 640702,
+          "ratio": 36.18
+        },
+        {
+          "year": 2022,
+          "employees": 642688,
+          "ratio": 36.92
+        },
+        {
+          "year": 2023,
+          "employees": 635227,
+          "ratio": 36.47
+        },
+        {
+          "year": 2024,
+          "employees": 657328,
+          "ratio": 37.71
+        }
+      ],
+      "Santa Fe": [
+        {
+          "year": 1987,
+          "employees": 67242,
+          "ratio": 25.16
+        },
+        {
+          "year": 1988,
+          "employees": 70778,
+          "ratio": 26.2
+        },
+        {
+          "year": 1989,
+          "employees": 73955,
+          "ratio": 27.1
+        },
+        {
+          "year": 1990,
+          "employees": 77625,
+          "ratio": 27.74
+        },
+        {
+          "year": 1991,
+          "employees": 82834,
+          "ratio": 29.26
+        },
+        {
+          "year": 1992,
+          "employees": 86178,
+          "ratio": 30.11
+        },
+        {
+          "year": 1993,
+          "employees": 85135,
+          "ratio": 29.45
+        },
+        {
+          "year": 1994,
+          "employees": 84216,
+          "ratio": 28.84
+        },
+        {
+          "year": 1995,
+          "employees": 94959,
+          "ratio": 32.2
+        },
+        {
+          "year": 1996,
+          "employees": 94802,
+          "ratio": 31.82
+        },
+        {
+          "year": 1997,
+          "employees": 94625,
+          "ratio": 31.67
+        },
+        {
+          "year": 1998,
+          "employees": 99792,
+          "ratio": 32.84
+        },
+        {
+          "year": 1999,
+          "employees": 101363,
+          "ratio": 33.03
+        },
+        {
+          "year": 2000,
+          "employees": 104623,
+          "ratio": 34.09
+        },
+        {
+          "year": 2001,
+          "employees": 105692,
+          "ratio": 35.52
+        },
+        {
+          "year": 2002,
+          "employees": 105162,
+          "ratio": 33.75
+        },
+        {
+          "year": 2003,
+          "employees": 98323,
+          "ratio": 31.35
+        },
+        {
+          "year": 2004,
+          "employees": 99890,
+          "ratio": 31.65
+        },
+        {
+          "year": 2005,
+          "employees": 101366,
+          "ratio": 31.9
+        },
+        {
+          "year": 2006,
+          "employees": 102640,
+          "ratio": 32.08
+        },
+        {
+          "year": 2007,
+          "employees": 106800,
+          "ratio": 33.16
+        },
+        {
+          "year": 2008,
+          "employees": 108564,
+          "ratio": 33.48
+        },
+        {
+          "year": 2009,
+          "employees": 108635,
+          "ratio": 33.28
+        },
+        {
+          "year": 2010,
+          "employees": 111382,
+          "ratio": 34.19
+        },
+        {
+          "year": 2011,
+          "employees": 112060,
+          "ratio": 34.11
+        },
+        {
+          "year": 2012,
+          "employees": 118074,
+          "ratio": 35.64
+        },
+        {
+          "year": 2013,
+          "employees": 123685,
+          "ratio": 37.02
+        },
+        {
+          "year": 2014,
+          "employees": 127479,
+          "ratio": 37.83
+        },
+        {
+          "year": 2015,
+          "employees": 132496,
+          "ratio": 39.0
+        },
+        {
+          "year": 2016,
+          "employees": 133821,
+          "ratio": 39.06
+        },
+        {
+          "year": 2017,
+          "employees": 134618,
+          "ratio": 38.98
+        },
+        {
+          "year": 2018,
+          "employees": 134363,
+          "ratio": 38.59
+        },
+        {
+          "year": 2019,
+          "employees": 140303,
+          "ratio": 39.98
+        },
+        {
+          "year": 2020,
+          "employees": 138903,
+          "ratio": 39.28
+        },
+        {
+          "year": 2021,
+          "employees": 140937,
+          "ratio": 39.55
+        },
+        {
+          "year": 2022,
+          "employees": 142625,
+          "ratio": 38.86
+        },
+        {
+          "year": 2023,
+          "employees": 152860,
+          "ratio": 41.6
+        },
+        {
+          "year": 2024,
+          "employees": 151850,
+          "ratio": 41.27
+        }
+      ],
+      "Mendoza": [
+        {
+          "year": 1987,
+          "employees": 38098,
+          "ratio": 28.62
+        },
+        {
+          "year": 1988,
+          "employees": 39668,
+          "ratio": 29.41
+        },
+        {
+          "year": 1989,
+          "employees": 40747,
+          "ratio": 29.82
+        },
+        {
+          "year": 1990,
+          "employees": 42020,
+          "ratio": 29.85
+        },
+        {
+          "year": 1991,
+          "employees": 41674,
+          "ratio": 29.19
+        },
+        {
+          "year": 1992,
+          "employees": 41645,
+          "ratio": 28.76
+        },
+        {
+          "year": 1993,
+          "employees": 46132,
+          "ratio": 31.42
+        },
+        {
+          "year": 1994,
+          "employees": 47180,
+          "ratio": 31.69
+        },
+        {
+          "year": 1995,
+          "employees": 47748,
+          "ratio": 31.64
+        },
+        {
+          "year": 1996,
+          "employees": 45903,
+          "ratio": 30.02
+        },
+        {
+          "year": 1997,
+          "employees": 54830,
+          "ratio": 35.67
+        },
+        {
+          "year": 1998,
+          "employees": 54044,
+          "ratio": 34.46
+        },
+        {
+          "year": 1999,
+          "employees": 60347,
+          "ratio": 38.0
+        },
+        {
+          "year": 2000,
+          "employees": 63257,
+          "ratio": 39.83
+        },
+        {
+          "year": 2001,
+          "employees": 61205,
+          "ratio": 38.89
+        },
+        {
+          "year": 2002,
+          "employees": 61759,
+          "ratio": 38.04
+        },
+        {
+          "year": 2003,
+          "employees": 61281,
+          "ratio": 37.35
+        },
+        {
+          "year": 2004,
+          "employees": 64680,
+          "ratio": 39.02
+        },
+        {
+          "year": 2005,
+          "employees": 64045,
+          "ratio": 38.23
+        },
+        {
+          "year": 2006,
+          "employees": 67618,
+          "ratio": 39.93
+        },
+        {
+          "year": 2007,
+          "employees": 72118,
+          "ratio": 42.14
+        },
+        {
+          "year": 2008,
+          "employees": 74505,
+          "ratio": 43.07
+        },
+        {
+          "year": 2009,
+          "employees": 76698,
+          "ratio": 43.88
+        },
+        {
+          "year": 2010,
+          "employees": 79644,
+          "ratio": 44.88
+        },
+        {
+          "year": 2011,
+          "employees": 86660,
+          "ratio": 48.22
+        },
+        {
+          "year": 2013,
+          "employees": 91040,
+          "ratio": 49.43
+        },
+        {
+          "year": 2016,
+          "employees": 93198,
+          "ratio": 48.87
+        },
+        {
+          "year": 2017,
+          "employees": 93951,
+          "ratio": 48.72
+        },
+        {
+          "year": 2018,
+          "employees": 97796,
+          "ratio": 50.17
+        },
+        {
+          "year": 2019,
+          "employees": 91128,
+          "ratio": 46.26
+        },
+        {
+          "year": 2020,
+          "employees": 89442,
+          "ratio": 44.94
+        },
+        {
+          "year": 2021,
+          "employees": 92210,
+          "ratio": 45.87
+        },
+        {
+          "year": 2022,
+          "employees": 92584,
+          "ratio": 45.55
+        },
+        {
+          "year": 2023,
+          "employees": 93834,
+          "ratio": 46.06
+        },
+        {
+          "year": 2024,
+          "employees": 91784,
+          "ratio": 44.94
+        }
+      ],
+      "Misiones": [
+        {
+          "year": 1987,
+          "employees": 25809,
+          "ratio": 36.31
+        },
+        {
+          "year": 1988,
+          "employees": 29009,
+          "ratio": 39.77
+        },
+        {
+          "year": 1989,
+          "employees": 29407,
+          "ratio": 39.29
+        },
+        {
+          "year": 1990,
+          "employees": 32973,
+          "ratio": 42.37
+        },
+        {
+          "year": 1991,
+          "employees": 32763,
+          "ratio": 41.16
+        },
+        {
+          "year": 1992,
+          "employees": 32950,
+          "ratio": 40.35
+        },
+        {
+          "year": 1993,
+          "employees": 32437,
+          "ratio": 38.66
+        },
+        {
+          "year": 1994,
+          "employees": 33886,
+          "ratio": 39.32
+        },
+        {
+          "year": 1995,
+          "employees": 32609,
+          "ratio": 36.88
+        },
+        {
+          "year": 1996,
+          "employees": 32231,
+          "ratio": 35.57
+        },
+        {
+          "year": 1997,
+          "employees": 33733,
+          "ratio": 36.71
+        },
+        {
+          "year": 1998,
+          "employees": 35577,
+          "ratio": 37.44
+        },
+        {
+          "year": 1999,
+          "employees": 35849,
+          "ratio": 36.86
+        },
+        {
+          "year": 2000,
+          "employees": 35511,
+          "ratio": 36.51
+        },
+        {
+          "year": 2001,
+          "employees": 34558,
+          "ratio": 35.95
+        },
+        {
+          "year": 2002,
+          "employees": 34432,
+          "ratio": 35.01
+        },
+        {
+          "year": 2003,
+          "employees": 36062,
+          "ratio": 36.11
+        },
+        {
+          "year": 2004,
+          "employees": 37336,
+          "ratio": 36.82
+        },
+        {
+          "year": 2005,
+          "employees": 40045,
+          "ratio": 38.89
+        },
+        {
+          "year": 2006,
+          "employees": 41989,
+          "ratio": 40.16
+        },
+        {
+          "year": 2007,
+          "employees": 44980,
+          "ratio": 42.37
+        },
+        {
+          "year": 2008,
+          "employees": 50853,
+          "ratio": 47.17
+        },
+        {
+          "year": 2009,
+          "employees": 48709,
+          "ratio": 44.5
+        },
+        {
+          "year": 2010,
+          "employees": 50494,
+          "ratio": 45.36
+        },
+        {
+          "year": 2011,
+          "employees": 54075,
+          "ratio": 47.9
+        },
+        {
+          "year": 2012,
+          "employees": 53876,
+          "ratio": 47.09
+        },
+        {
+          "year": 2013,
+          "employees": 55457,
+          "ratio": 47.83
+        },
+        {
+          "year": 2014,
+          "employees": 56474,
+          "ratio": 48.08
+        },
+        {
+          "year": 2015,
+          "employees": 60123,
+          "ratio": 50.55
+        },
+        {
+          "year": 2016,
+          "employees": 61143,
+          "ratio": 50.78
+        },
+        {
+          "year": 2017,
+          "employees": 61181,
+          "ratio": 50.2
+        },
+        {
+          "year": 2018,
+          "employees": 58374,
+          "ratio": 47.34
+        },
+        {
+          "year": 2019,
+          "employees": 60124,
+          "ratio": 48.2
+        },
+        {
+          "year": 2020,
+          "employees": 63276,
+          "ratio": 50.17
+        },
+        {
+          "year": 2021,
+          "employees": 69120,
+          "ratio": 54.21
+        },
+        {
+          "year": 2022,
+          "employees": 66455,
+          "ratio": 50.59
+        },
+        {
+          "year": 2023,
+          "employees": 67856,
+          "ratio": 51.29
+        },
+        {
+          "year": 2024,
+          "employees": 68183,
+          "ratio": 51.13
+        }
+      ],
+      "Corrientes": [
+        {
+          "year": 1987,
+          "employees": 35843,
+          "ratio": 48.71
+        },
+        {
+          "year": 1988,
+          "employees": 36440,
+          "ratio": 48.78
+        },
+        {
+          "year": 1989,
+          "employees": 38417,
+          "ratio": 50.67
+        },
+        {
+          "year": 1990,
+          "employees": 40245,
+          "ratio": 50.82
+        },
+        {
+          "year": 1991,
+          "employees": 39354,
+          "ratio": 48.93
+        },
+        {
+          "year": 1992,
+          "employees": 41937,
+          "ratio": 51.3
+        },
+        {
+          "year": 1993,
+          "employees": 41433,
+          "ratio": 49.86
+        },
+        {
+          "year": 1994,
+          "employees": 39440,
+          "ratio": 46.71
+        },
+        {
+          "year": 1995,
+          "employees": 41051,
+          "ratio": 47.86
+        },
+        {
+          "year": 1996,
+          "employees": 39872,
+          "ratio": 45.8
+        },
+        {
+          "year": 1997,
+          "employees": 40576,
+          "ratio": 46.3
+        },
+        {
+          "year": 1998,
+          "employees": 42343,
+          "ratio": 47.24
+        },
+        {
+          "year": 1999,
+          "employees": 41401,
+          "ratio": 45.54
+        },
+        {
+          "year": 2000,
+          "employees": 36967,
+          "ratio": 40.66
+        },
+        {
+          "year": 2001,
+          "employees": 36515,
+          "ratio": 39.39
+        },
+        {
+          "year": 2002,
+          "employees": 36515,
+          "ratio": 38.46
+        },
+        {
+          "year": 2003,
+          "employees": 38519,
+          "ratio": 40.13
+        },
+        {
+          "year": 2004,
+          "employees": 40633,
+          "ratio": 41.88
+        },
+        {
+          "year": 2005,
+          "employees": 44386,
+          "ratio": 45.25
+        },
+        {
+          "year": 2006,
+          "employees": 45940,
+          "ratio": 46.33
+        },
+        {
+          "year": 2007,
+          "employees": 45118,
+          "ratio": 45.01
+        },
+        {
+          "year": 2008,
+          "employees": 46572,
+          "ratio": 45.95
+        },
+        {
+          "year": 2009,
+          "employees": 53680,
+          "ratio": 52.39
+        },
+        {
+          "year": 2010,
+          "employees": 51028,
+          "ratio": 50.14
+        },
+        {
+          "year": 2011,
+          "employees": 52232,
+          "ratio": 50.8
+        },
+        {
+          "year": 2012,
+          "employees": 52098,
+          "ratio": 50.15
+        },
+        {
+          "year": 2013,
+          "employees": 58656,
+          "ratio": 55.9
+        },
+        {
+          "year": 2014,
+          "employees": 59307,
+          "ratio": 55.96
+        },
+        {
+          "year": 2015,
+          "employees": 57517,
+          "ratio": 53.74
+        },
+        {
+          "year": 2016,
+          "employees": 62317,
+          "ratio": 57.67
+        },
+        {
+          "year": 2017,
+          "employees": 62899,
+          "ratio": 57.66
+        },
+        {
+          "year": 2018,
+          "employees": 62972,
+          "ratio": 57.19
+        },
+        {
+          "year": 2019,
+          "employees": 62852,
+          "ratio": 56.57
+        },
+        {
+          "year": 2020,
+          "employees": 59386,
+          "ratio": 52.99
+        },
+        {
+          "year": 2021,
+          "employees": 61953,
+          "ratio": 54.81
+        },
+        {
+          "year": 2022,
+          "employees": 63962,
+          "ratio": 53.79
+        },
+        {
+          "year": 2023,
+          "employees": 68438,
+          "ratio": 57.32
+        },
+        {
+          "year": 2024,
+          "employees": 61755,
+          "ratio": 51.5
+        }
+      ],
+      "Santiago del Estero": [
+        {
+          "year": 1987,
+          "employees": 29973,
+          "ratio": 46.32
+        },
+        {
+          "year": 1988,
+          "employees": 30528,
+          "ratio": 46.73
+        },
+        {
+          "year": 1989,
+          "employees": 30691,
+          "ratio": 46.55
+        },
+        {
+          "year": 1990,
+          "employees": 30565,
+          "ratio": 45.48
+        },
+        {
+          "year": 1991,
+          "employees": 30973,
+          "ratio": 45.62
+        },
+        {
+          "year": 1992,
+          "employees": 35091,
+          "ratio": 51.25
+        },
+        {
+          "year": 1993,
+          "employees": 31561,
+          "ratio": 45.75
+        },
+        {
+          "year": 1994,
+          "employees": 32303,
+          "ratio": 46.48
+        },
+        {
+          "year": 1995,
+          "employees": 31961,
+          "ratio": 45.65
+        },
+        {
+          "year": 1996,
+          "employees": 31535,
+          "ratio": 44.7
+        },
+        {
+          "year": 1997,
+          "employees": 33651,
+          "ratio": 47.73
+        },
+        {
+          "year": 1998,
+          "employees": 34272,
+          "ratio": 47.87
+        },
+        {
+          "year": 1999,
+          "employees": 34454,
+          "ratio": 47.79
+        },
+        {
+          "year": 2000,
+          "employees": 34881,
+          "ratio": 48.38
+        },
+        {
+          "year": 2001,
+          "employees": 34118,
+          "ratio": 42.88
+        },
+        {
+          "year": 2002,
+          "employees": 33937,
+          "ratio": 41.57
+        },
+        {
+          "year": 2003,
+          "employees": 35392,
+          "ratio": 42.96
+        },
+        {
+          "year": 2004,
+          "employees": 36386,
+          "ratio": 43.75
+        },
+        {
+          "year": 2005,
+          "employees": 39253,
+          "ratio": 46.74
+        },
+        {
+          "year": 2006,
+          "employees": 41230,
+          "ratio": 48.61
+        },
+        {
+          "year": 2007,
+          "employees": 42361,
+          "ratio": 49.44
+        },
+        {
+          "year": 2008,
+          "employees": 43948,
+          "ratio": 50.77
+        },
+        {
+          "year": 2009,
+          "employees": 43977,
+          "ratio": 50.29
+        },
+        {
+          "year": 2010,
+          "employees": 46110,
+          "ratio": 52.44
+        },
+        {
+          "year": 2011,
+          "employees": 49474,
+          "ratio": 55.66
+        },
+        {
+          "year": 2012,
+          "employees": 47632,
+          "ratio": 53.01
+        },
+        {
+          "year": 2013,
+          "employees": 49936,
+          "ratio": 54.98
+        },
+        {
+          "year": 2014,
+          "employees": 53510,
+          "ratio": 58.28
+        },
+        {
+          "year": 2015,
+          "employees": 57657,
+          "ratio": 62.12
+        },
+        {
+          "year": 2016,
+          "employees": 59982,
+          "ratio": 63.94
+        },
+        {
+          "year": 2017,
+          "employees": 59150,
+          "ratio": 62.38
+        },
+        {
+          "year": 2018,
+          "employees": 58448,
+          "ratio": 60.99
+        },
+        {
+          "year": 2019,
+          "employees": 59238,
+          "ratio": 61.18
+        },
+        {
+          "year": 2020,
+          "employees": 58742,
+          "ratio": 60.04
+        },
+        {
+          "year": 2021,
+          "employees": 59024,
+          "ratio": 59.73
+        },
+        {
+          "year": 2022,
+          "employees": 58561,
+          "ratio": 56.02
+        },
+        {
+          "year": 2023,
+          "employees": 58647,
+          "ratio": 55.88
+        },
+        {
+          "year": 2024,
+          "employees": 56198,
+          "ratio": 53.35
+        }
+      ],
+      "Tucumán": [
+        {
+          "year": 1987,
+          "employees": 45676,
+          "ratio": 42.0
+        },
+        {
+          "year": 1988,
+          "employees": 47326,
+          "ratio": 42.94
+        },
+        {
+          "year": 1989,
+          "employees": 47548,
+          "ratio": 42.61
+        },
+        {
+          "year": 1990,
+          "employees": 44493,
+          "ratio": 39.08
+        },
+        {
+          "year": 1991,
+          "employees": 44032,
+          "ratio": 38.15
+        },
+        {
+          "year": 1992,
+          "employees": 42082,
+          "ratio": 35.97
+        },
+        {
+          "year": 1993,
+          "employees": 43403,
+          "ratio": 36.61
+        },
+        {
+          "year": 1994,
+          "employees": 46632,
+          "ratio": 38.82
+        },
+        {
+          "year": 1995,
+          "employees": 48191,
+          "ratio": 39.61
+        },
+        {
+          "year": 1996,
+          "employees": 45195,
+          "ratio": 36.68
+        },
+        {
+          "year": 1997,
+          "employees": 45673,
+          "ratio": 36.9
+        },
+        {
+          "year": 1998,
+          "employees": 46107,
+          "ratio": 36.51
+        },
+        {
+          "year": 1999,
+          "employees": 46306,
+          "ratio": 36.23
+        },
+        {
+          "year": 2000,
+          "employees": 46100,
+          "ratio": 36.07
+        },
+        {
+          "year": 2001,
+          "employees": 46745,
+          "ratio": 35.1
+        },
+        {
+          "year": 2002,
+          "employees": 46613,
+          "ratio": 34.01
+        },
+        {
+          "year": 2003,
+          "employees": 49065,
+          "ratio": 35.37
+        },
+        {
+          "year": 2004,
+          "employees": 54462,
+          "ratio": 38.78
+        },
+        {
+          "year": 2005,
+          "employees": 63214,
+          "ratio": 44.46
+        },
+        {
+          "year": 2006,
+          "employees": 67255,
+          "ratio": 46.72
+        },
+        {
+          "year": 2007,
+          "employees": 63253,
+          "ratio": 43.4
+        },
+        {
+          "year": 2008,
+          "employees": 66608,
+          "ratio": 45.15
+        },
+        {
+          "year": 2009,
+          "employees": 69766,
+          "ratio": 46.71
+        },
+        {
+          "year": 2010,
+          "employees": 71899,
+          "ratio": 48.28
+        },
+        {
+          "year": 2011,
+          "employees": 74629,
+          "ratio": 49.43
+        },
+        {
+          "year": 2012,
+          "employees": 75634,
+          "ratio": 49.41
+        },
+        {
+          "year": 2013,
+          "employees": 77422,
+          "ratio": 49.9
+        },
+        {
+          "year": 2014,
+          "employees": 79322,
+          "ratio": 50.45
+        },
+        {
+          "year": 2015,
+          "employees": 81050,
+          "ratio": 50.88
+        },
+        {
+          "year": 2016,
+          "employees": 86235,
+          "ratio": 53.45
+        },
+        {
+          "year": 2017,
+          "employees": 90150,
+          "ratio": 55.17
+        },
+        {
+          "year": 2018,
+          "employees": 90365,
+          "ratio": 54.62
+        },
+        {
+          "year": 2019,
+          "employees": 89184,
+          "ratio": 53.26
+        },
+        {
+          "year": 2020,
+          "employees": 90516,
+          "ratio": 53.41
+        },
+        {
+          "year": 2021,
+          "employees": 93083,
+          "ratio": 54.29
+        },
+        {
+          "year": 2022,
+          "employees": 94381,
+          "ratio": 53.68
+        },
+        {
+          "year": 2023,
+          "employees": 95937,
+          "ratio": 54.41
+        },
+        {
+          "year": 2024,
+          "employees": 96671,
+          "ratio": 54.67
+        }
+      ],
+      "Salta": [
+        {
+          "year": 1987,
+          "employees": 40860,
+          "ratio": 51.94
+        },
+        {
+          "year": 1988,
+          "employees": 44273,
+          "ratio": 54.96
+        },
+        {
+          "year": 1989,
+          "employees": 45899,
+          "ratio": 55.66
+        },
+        {
+          "year": 1990,
+          "employees": 48479,
+          "ratio": 56.64
+        },
+        {
+          "year": 1991,
+          "employees": 42940,
+          "ratio": 49.17
+        },
+        {
+          "year": 1992,
+          "employees": 42797,
+          "ratio": 47.91
+        },
+        {
+          "year": 1993,
+          "employees": 41567,
+          "ratio": 45.45
+        },
+        {
+          "year": 1994,
+          "employees": 41680,
+          "ratio": 44.51
+        },
+        {
+          "year": 1995,
+          "employees": 40721,
+          "ratio": 42.5
+        },
+        {
+          "year": 1996,
+          "employees": 38916,
+          "ratio": 39.73
+        },
+        {
+          "year": 1997,
+          "employees": 39240,
+          "ratio": 39.54
+        },
+        {
+          "year": 1998,
+          "employees": 38094,
+          "ratio": 37.24
+        },
+        {
+          "year": 1999,
+          "employees": 36238,
+          "ratio": 34.68
+        },
+        {
+          "year": 2000,
+          "employees": 37564,
+          "ratio": 35.95
+        },
+        {
+          "year": 2001,
+          "employees": 38633,
+          "ratio": 36.27
+        },
+        {
+          "year": 2002,
+          "employees": 38633,
+          "ratio": 35.02
+        },
+        {
+          "year": 2003,
+          "employees": 38633,
+          "ratio": 34.42
+        },
+        {
+          "year": 2004,
+          "employees": 40897,
+          "ratio": 35.82
+        },
+        {
+          "year": 2005,
+          "employees": 41043,
+          "ratio": 35.34
+        },
+        {
+          "year": 2006,
+          "employees": 46453,
+          "ratio": 39.3
+        },
+        {
+          "year": 2007,
+          "employees": 48492,
+          "ratio": 40.32
+        },
+        {
+          "year": 2008,
+          "employees": 51757,
+          "ratio": 42.28
+        },
+        {
+          "year": 2009,
+          "employees": 56367,
+          "ratio": 45.25
+        },
+        {
+          "year": 2010,
+          "employees": 57171,
+          "ratio": 46.14
+        },
+        {
+          "year": 2011,
+          "employees": 57978,
+          "ratio": 46.08
+        },
+        {
+          "year": 2012,
+          "employees": 62869,
+          "ratio": 49.23
+        },
+        {
+          "year": 2013,
+          "employees": 64298,
+          "ratio": 49.61
+        },
+        {
+          "year": 2014,
+          "employees": 67653,
+          "ratio": 51.46
+        },
+        {
+          "year": 2015,
+          "employees": 71167,
+          "ratio": 53.37
+        },
+        {
+          "year": 2016,
+          "employees": 70689,
+          "ratio": 52.29
+        },
+        {
+          "year": 2017,
+          "employees": 70807,
+          "ratio": 51.67
+        },
+        {
+          "year": 2018,
+          "employees": 70511,
+          "ratio": 50.78
+        },
+        {
+          "year": 2019,
+          "employees": 71836,
+          "ratio": 51.07
+        },
+        {
+          "year": 2020,
+          "employees": 69667,
+          "ratio": 48.91
+        },
+        {
+          "year": 2021,
+          "employees": 70364,
+          "ratio": 48.8
+        },
+        {
+          "year": 2022,
+          "employees": 74585,
+          "ratio": 50.83
+        },
+        {
+          "year": 2023,
+          "employees": 76752,
+          "ratio": 52.08
+        },
+        {
+          "year": 2024,
+          "employees": 85940,
+          "ratio": 58.05
+        }
+      ],
+      "Entre Ríos": [
+        {
+          "year": 1987,
+          "employees": 34780,
+          "ratio": 35.52
+        },
+        {
+          "year": 1988,
+          "employees": 36285,
+          "ratio": 36.67
+        },
+        {
+          "year": 1989,
+          "employees": 40805,
+          "ratio": 40.8
+        },
+        {
+          "year": 1990,
+          "employees": 41855,
+          "ratio": 41.0
+        },
+        {
+          "year": 1991,
+          "employees": 43247,
+          "ratio": 41.91
+        },
+        {
+          "year": 1992,
+          "employees": 42077,
+          "ratio": 40.39
+        },
+        {
+          "year": 1993,
+          "employees": 40034,
+          "ratio": 38.09
+        },
+        {
+          "year": 1994,
+          "employees": 46885,
+          "ratio": 44.23
+        },
+        {
+          "year": 1995,
+          "employees": 46745,
+          "ratio": 43.72
+        },
+        {
+          "year": 1996,
+          "employees": 47850,
+          "ratio": 44.38
+        },
+        {
+          "year": 1997,
+          "employees": 49249,
+          "ratio": 45.64
+        },
+        {
+          "year": 1998,
+          "employees": 49595,
+          "ratio": 45.25
+        },
+        {
+          "year": 1999,
+          "employees": 50283,
+          "ratio": 45.51
+        },
+        {
+          "year": 2000,
+          "employees": 54159,
+          "ratio": 49.02
+        },
+        {
+          "year": 2001,
+          "employees": 54103,
+          "ratio": 46.96
+        },
+        {
+          "year": 2002,
+          "employees": 54103,
+          "ratio": 45.67
+        },
+        {
+          "year": 2003,
+          "employees": 56736,
+          "ratio": 47.46
+        },
+        {
+          "year": 2004,
+          "employees": 58502,
+          "ratio": 48.5
+        },
+        {
+          "year": 2005,
+          "employees": 60418,
+          "ratio": 49.64
+        },
+        {
+          "year": 2006,
+          "employees": 64136,
+          "ratio": 52.17
+        },
+        {
+          "year": 2007,
+          "employees": 65169,
+          "ratio": 52.45
+        },
+        {
+          "year": 2008,
+          "employees": 67561,
+          "ratio": 53.8
+        },
+        {
+          "year": 2009,
+          "employees": 68595,
+          "ratio": 54.06
+        },
+        {
+          "year": 2010,
+          "employees": 68933,
+          "ratio": 54.9
+        },
+        {
+          "year": 2011,
+          "employees": 70588,
+          "ratio": 55.64
+        },
+        {
+          "year": 2012,
+          "employees": 72282,
+          "ratio": 56.39
+        },
+        {
+          "year": 2013,
+          "employees": 73224,
+          "ratio": 56.54
+        },
+        {
+          "year": 2014,
+          "employees": 76184,
+          "ratio": 58.23
+        },
+        {
+          "year": 2015,
+          "employees": 77620,
+          "ratio": 58.74
+        },
+        {
+          "year": 2016,
+          "employees": 79374,
+          "ratio": 59.48
+        },
+        {
+          "year": 2017,
+          "employees": 87452,
+          "ratio": 64.9
+        },
+        {
+          "year": 2018,
+          "employees": 86637,
+          "ratio": 63.68
+        },
+        {
+          "year": 2019,
+          "employees": 86179,
+          "ratio": 62.75
+        },
+        {
+          "year": 2020,
+          "employees": 86719,
+          "ratio": 62.57
+        },
+        {
+          "year": 2021,
+          "employees": 90780,
+          "ratio": 64.91
+        },
+        {
+          "year": 2022,
+          "employees": 85845,
+          "ratio": 59.21
+        },
+        {
+          "year": 2023,
+          "employees": 84812,
+          "ratio": 58.38
+        },
+        {
+          "year": 2024,
+          "employees": 84550,
+          "ratio": 58.07
+        }
+      ],
+      "San Juan": [
+        {
+          "year": 1987,
+          "employees": 18836,
+          "ratio": 37.08
+        },
+        {
+          "year": 1988,
+          "employees": 19459,
+          "ratio": 37.94
+        },
+        {
+          "year": 1989,
+          "employees": 20837,
+          "ratio": 40.26
+        },
+        {
+          "year": 1990,
+          "employees": 23087,
+          "ratio": 43.69
+        },
+        {
+          "year": 1991,
+          "employees": 23418,
+          "ratio": 43.82
+        },
+        {
+          "year": 1992,
+          "employees": 28925,
+          "ratio": 53.56
+        },
+        {
+          "year": 1993,
+          "employees": 34173,
+          "ratio": 62.68
+        },
+        {
+          "year": 1994,
+          "employees": 33331,
+          "ratio": 60.58
+        },
+        {
+          "year": 1995,
+          "employees": 29569,
+          "ratio": 53.26
+        },
+        {
+          "year": 1996,
+          "employees": 28851,
+          "ratio": 51.51
+        },
+        {
+          "year": 1997,
+          "employees": 28393,
+          "ratio": 50.82
+        },
+        {
+          "year": 1998,
+          "employees": 27866,
+          "ratio": 48.93
+        },
+        {
+          "year": 1999,
+          "employees": 29161,
+          "ratio": 50.8
+        },
+        {
+          "year": 2000,
+          "employees": 28452,
+          "ratio": 49.56
+        },
+        {
+          "year": 2001,
+          "employees": 27569,
+          "ratio": 44.65
+        },
+        {
+          "year": 2002,
+          "employees": 27569,
+          "ratio": 43.24
+        },
+        {
+          "year": 2003,
+          "employees": 27392,
+          "ratio": 42.33
+        },
+        {
+          "year": 2004,
+          "employees": 27392,
+          "ratio": 41.71
+        },
+        {
+          "year": 2005,
+          "employees": 29655,
+          "ratio": 44.5
+        },
+        {
+          "year": 2006,
+          "employees": 30446,
+          "ratio": 45.03
+        },
+        {
+          "year": 2007,
+          "employees": 29876,
+          "ratio": 43.56
+        },
+        {
+          "year": 2008,
+          "employees": 29252,
+          "ratio": 42.05
+        },
+        {
+          "year": 2009,
+          "employees": 30376,
+          "ratio": 43.06
+        },
+        {
+          "year": 2010,
+          "employees": 31243,
+          "ratio": 44.88
+        },
+        {
+          "year": 2011,
+          "employees": 31594,
+          "ratio": 44.84
+        },
+        {
+          "year": 2012,
+          "employees": 32198,
+          "ratio": 45.14
+        },
+        {
+          "year": 2013,
+          "employees": 36547,
+          "ratio": 50.63
+        },
+        {
+          "year": 2014,
+          "employees": 37460,
+          "ratio": 51.29
+        },
+        {
+          "year": 2015,
+          "employees": 35559,
+          "ratio": 48.12
+        },
+        {
+          "year": 2016,
+          "employees": 38156,
+          "ratio": 51.05
+        },
+        {
+          "year": 2017,
+          "employees": 40045,
+          "ratio": 52.97
+        },
+        {
+          "year": 2018,
+          "employees": 41214,
+          "ratio": 53.91
+        },
+        {
+          "year": 2019,
+          "employees": 43521,
+          "ratio": 56.31
+        },
+        {
+          "year": 2020,
+          "employees": 43630,
+          "ratio": 55.85
+        },
+        {
+          "year": 2021,
+          "employees": 45412,
+          "ratio": 57.52
+        },
+        {
+          "year": 2022,
+          "employees": 46531,
+          "ratio": 55.58
+        },
+        {
+          "year": 2023,
+          "employees": 49654,
+          "ratio": 59.03
+        },
+        {
+          "year": 2024,
+          "employees": 49874,
+          "ratio": 59.01
+        }
+      ],
+      "Ciudad de Buenos Aires": [
+        {
+          "year": 1987,
+          "employees": 84292,
+          "ratio": 28.71
+        },
+        {
+          "year": 1988,
+          "employees": 87552,
+          "ratio": 29.77
+        },
+        {
+          "year": 1989,
+          "employees": 87585,
+          "ratio": 29.72
+        },
+        {
+          "year": 1990,
+          "employees": 89308,
+          "ratio": 29.86
+        },
+        {
+          "year": 1991,
+          "employees": 88567,
+          "ratio": 29.43
+        },
+        {
+          "year": 1992,
+          "employees": 86415,
+          "ratio": 28.63
+        },
+        {
+          "year": 1993,
+          "employees": 108573,
+          "ratio": 35.92
+        },
+        {
+          "year": 1994,
+          "employees": 105176,
+          "ratio": 34.78
+        },
+        {
+          "year": 1995,
+          "employees": 110025,
+          "ratio": 36.34
+        },
+        {
+          "year": 1996,
+          "employees": 106339,
+          "ratio": 35.06
+        },
+        {
+          "year": 1997,
+          "employees": 109318,
+          "ratio": 36.62
+        },
+        {
+          "year": 1998,
+          "employees": 110847,
+          "ratio": 36.46
+        },
+        {
+          "year": 1999,
+          "employees": 114312,
+          "ratio": 37.56
+        },
+        {
+          "year": 2000,
+          "employees": 112466,
+          "ratio": 36.95
+        },
+        {
+          "year": 2001,
+          "employees": 111424,
+          "ratio": 40.82
+        },
+        {
+          "year": 2002,
+          "employees": 111424,
+          "ratio": 37.13
+        },
+        {
+          "year": 2003,
+          "employees": 111721,
+          "ratio": 37.16
+        },
+        {
+          "year": 2004,
+          "employees": 111721,
+          "ratio": 37.1
+        },
+        {
+          "year": 2005,
+          "employees": 123960,
+          "ratio": 41.07
+        },
+        {
+          "year": 2006,
+          "employees": 129067,
+          "ratio": 42.66
+        },
+        {
+          "year": 2007,
+          "employees": 139463,
+          "ratio": 45.96
+        },
+        {
+          "year": 2008,
+          "employees": 142167,
+          "ratio": 46.73
+        },
+        {
+          "year": 2009,
+          "employees": 139832,
+          "ratio": 45.84
+        },
+        {
+          "year": 2010,
+          "employees": 145548,
+          "ratio": 48.06
+        },
+        {
+          "year": 2011,
+          "employees": 153532,
+          "ratio": 50.61
+        },
+        {
+          "year": 2012,
+          "employees": 156342,
+          "ratio": 51.45
+        },
+        {
+          "year": 2013,
+          "employees": 162045,
+          "ratio": 53.23
+        },
+        {
+          "year": 2014,
+          "employees": 163052,
+          "ratio": 53.47
+        },
+        {
+          "year": 2015,
+          "employees": 169671,
+          "ratio": 55.55
+        },
+        {
+          "year": 2016,
+          "employees": 187858,
+          "ratio": 61.41
+        },
+        {
+          "year": 2017,
+          "employees": 176161,
+          "ratio": 57.5
+        },
+        {
+          "year": 2018,
+          "employees": 177470,
+          "ratio": 63.13
+        },
+        {
+          "year": 2019,
+          "employees": 178777,
+          "ratio": 63.58
+        },
+        {
+          "year": 2020,
+          "employees": 183558,
+          "ratio": 59.68
+        },
+        {
+          "year": 2021,
+          "employees": 197714,
+          "ratio": 64.22
+        },
+        {
+          "year": 2022,
+          "employees": 194301,
+          "ratio": 62.25
+        },
+        {
+          "year": 2023,
+          "employees": 198847,
+          "ratio": 63.98
+        },
+        {
+          "year": 2024,
+          "employees": 196898,
+          "ratio": 63.64
+        }
+      ],
+      "Formosa": [
+        {
+          "year": 1987,
+          "employees": 28990,
+          "ratio": 85.59
+        },
+        {
+          "year": 1988,
+          "employees": 30060,
+          "ratio": 87.18
+        },
+        {
+          "year": 1989,
+          "employees": 32810,
+          "ratio": 93.5
+        },
+        {
+          "year": 1990,
+          "employees": 34436,
+          "ratio": 87.67
+        },
+        {
+          "year": 1991,
+          "employees": 30699,
+          "ratio": 76.39
+        },
+        {
+          "year": 1992,
+          "employees": 31151,
+          "ratio": 75.54
+        },
+        {
+          "year": 1993,
+          "employees": 32015,
+          "ratio": 75.53
+        },
+        {
+          "year": 1994,
+          "employees": 32493,
+          "ratio": 74.59
+        },
+        {
+          "year": 1995,
+          "employees": 32415,
+          "ratio": 72.5
+        },
+        {
+          "year": 1996,
+          "employees": 32572,
+          "ratio": 71.07
+        },
+        {
+          "year": 1997,
+          "employees": 32050,
+          "ratio": 68.84
+        },
+        {
+          "year": 1998,
+          "employees": 32909,
+          "ratio": 68.42
+        },
+        {
+          "year": 1999,
+          "employees": 33440,
+          "ratio": 67.9
+        },
+        {
+          "year": 2000,
+          "employees": 33697,
+          "ratio": 68.42
+        },
+        {
+          "year": 2001,
+          "employees": 33443,
+          "ratio": 68.35
+        },
+        {
+          "year": 2002,
+          "employees": 33629,
+          "ratio": 67.73
+        },
+        {
+          "year": 2003,
+          "employees": 34296,
+          "ratio": 68.13
+        },
+        {
+          "year": 2004,
+          "employees": 33374,
+          "ratio": 65.39
+        },
+        {
+          "year": 2005,
+          "employees": 35963,
+          "ratio": 69.49
+        },
+        {
+          "year": 2006,
+          "employees": 37270,
+          "ratio": 71.02
+        },
+        {
+          "year": 2007,
+          "employees": 39204,
+          "ratio": 73.66
+        },
+        {
+          "year": 2008,
+          "employees": 35699,
+          "ratio": 66.12
+        },
+        {
+          "year": 2009,
+          "employees": 35920,
+          "ratio": 65.58
+        },
+        {
+          "year": 2010,
+          "employees": 36237,
+          "ratio": 65.69
+        },
+        {
+          "year": 2011,
+          "employees": 37610,
+          "ratio": 67.5
+        },
+        {
+          "year": 2012,
+          "employees": 37288,
+          "ratio": 66.26
+        },
+        {
+          "year": 2013,
+          "employees": 38191,
+          "ratio": 67.2
+        },
+        {
+          "year": 2014,
+          "employees": 38889,
+          "ratio": 67.77
+        },
+        {
+          "year": 2015,
+          "employees": 39477,
+          "ratio": 68.15
+        },
+        {
+          "year": 2016,
+          "employees": 39187,
+          "ratio": 67.03
+        },
+        {
+          "year": 2017,
+          "employees": 37935,
+          "ratio": 64.31
+        },
+        {
+          "year": 2018,
+          "employees": 37875,
+          "ratio": 63.64
+        },
+        {
+          "year": 2019,
+          "employees": 37949,
+          "ratio": 63.22
+        },
+        {
+          "year": 2020,
+          "employees": 38044,
+          "ratio": 62.86
+        },
+        {
+          "year": 2021,
+          "employees": 38906,
+          "ratio": 63.78
+        },
+        {
+          "year": 2022,
+          "employees": 40410,
+          "ratio": 65.12
+        },
+        {
+          "year": 2023,
+          "employees": 41770,
+          "ratio": 67.11
+        },
+        {
+          "year": 2024,
+          "employees": 41405,
+          "ratio": 66.31
+        }
+      ],
+      "Chaco": [
+        {
+          "year": 1987,
+          "employees": 38523,
+          "ratio": 50.04
+        },
+        {
+          "year": 1988,
+          "employees": 38318,
+          "ratio": 49.26
+        },
+        {
+          "year": 1989,
+          "employees": 41776,
+          "ratio": 53.19
+        },
+        {
+          "year": 1990,
+          "employees": 38404,
+          "ratio": 45.94
+        },
+        {
+          "year": 1991,
+          "employees": 35596,
+          "ratio": 41.98
+        },
+        {
+          "year": 1992,
+          "employees": 36897,
+          "ratio": 42.91
+        },
+        {
+          "year": 1993,
+          "employees": 37903,
+          "ratio": 43.46
+        },
+        {
+          "year": 1994,
+          "employees": 37067,
+          "ratio": 41.92
+        },
+        {
+          "year": 1995,
+          "employees": 39150,
+          "ratio": 43.7
+        },
+        {
+          "year": 1996,
+          "employees": 39344,
+          "ratio": 43.36
+        },
+        {
+          "year": 1997,
+          "employees": 38960,
+          "ratio": 42.76
+        },
+        {
+          "year": 1998,
+          "employees": 40637,
+          "ratio": 43.7
+        },
+        {
+          "year": 1999,
+          "employees": 41776,
+          "ratio": 44.4
+        },
+        {
+          "year": 2000,
+          "employees": 42119,
+          "ratio": 44.76
+        },
+        {
+          "year": 2001,
+          "employees": 41241,
+          "ratio": 42.13
+        },
+        {
+          "year": 2002,
+          "employees": 40968,
+          "ratio": 40.98
+        },
+        {
+          "year": 2003,
+          "employees": 41416,
+          "ratio": 41.09
+        },
+        {
+          "year": 2004,
+          "employees": 44689,
+          "ratio": 43.98
+        },
+        {
+          "year": 2005,
+          "employees": 46616,
+          "ratio": 45.48
+        },
+        {
+          "year": 2006,
+          "employees": 46114,
+          "ratio": 44.6
+        },
+        {
+          "year": 2007,
+          "employees": 51005,
+          "ratio": 48.91
+        },
+        {
+          "year": 2008,
+          "employees": 50863,
+          "ratio": 48.34
+        },
+        {
+          "year": 2009,
+          "employees": 54738,
+          "ratio": 51.56
+        },
+        {
+          "year": 2010,
+          "employees": 57513,
+          "ratio": 53.25
+        },
+        {
+          "year": 2011,
+          "employees": 61830,
+          "ratio": 56.59
+        },
+        {
+          "year": 2012,
+          "employees": 67124,
+          "ratio": 60.73
+        },
+        {
+          "year": 2013,
+          "employees": 75041,
+          "ratio": 67.12
+        },
+        {
+          "year": 2014,
+          "employees": 77525,
+          "ratio": 68.57
+        },
+        {
+          "year": 2015,
+          "employees": 83594,
+          "ratio": 73.12
+        },
+        {
+          "year": 2016,
+          "employees": 88236,
+          "ratio": 76.35
+        },
+        {
+          "year": 2017,
+          "employees": 85175,
+          "ratio": 72.91
+        },
+        {
+          "year": 2018,
+          "employees": 86611,
+          "ratio": 73.37
+        },
+        {
+          "year": 2019,
+          "employees": 84917,
+          "ratio": 71.2
+        },
+        {
+          "year": 2020,
+          "employees": 81093,
+          "ratio": 67.32
+        },
+        {
+          "year": 2021,
+          "employees": 79376,
+          "ratio": 65.26
+        },
+        {
+          "year": 2022,
+          "employees": 82011,
+          "ratio": 68.87
+        },
+        {
+          "year": 2023,
+          "employees": 84282,
+          "ratio": 70.55
+        },
+        {
+          "year": 2024,
+          "employees": 81834,
+          "ratio": 68.15
+        }
+      ],
+      "San Luis": [
+        {
+          "year": 1987,
+          "employees": 16109,
+          "ratio": 63.02
+        },
+        {
+          "year": 1988,
+          "employees": 15929,
+          "ratio": 60.61
+        },
+        {
+          "year": 1989,
+          "employees": 15676,
+          "ratio": 57.99
+        },
+        {
+          "year": 1990,
+          "employees": 15556,
+          "ratio": 55.04
+        },
+        {
+          "year": 1991,
+          "employees": 15359,
+          "ratio": 53.11
+        },
+        {
+          "year": 1992,
+          "employees": 15529,
+          "ratio": 52.32
+        },
+        {
+          "year": 1993,
+          "employees": 16569,
+          "ratio": 54.31
+        },
+        {
+          "year": 1994,
+          "employees": 17142,
+          "ratio": 54.67
+        },
+        {
+          "year": 1995,
+          "employees": 18462,
+          "ratio": 57.35
+        },
+        {
+          "year": 1996,
+          "employees": 18113,
+          "ratio": 54.88
+        },
+        {
+          "year": 1997,
+          "employees": 17001,
+          "ratio": 50.65
+        },
+        {
+          "year": 1998,
+          "employees": 16899,
+          "ratio": 48.76
+        },
+        {
+          "year": 1999,
+          "employees": 16652,
+          "ratio": 46.91
+        },
+        {
+          "year": 2000,
+          "employees": 16738,
+          "ratio": 47.15
+        },
+        {
+          "year": 2001,
+          "employees": 18693,
+          "ratio": 50.92
+        },
+        {
+          "year": 2002,
+          "employees": 18693,
+          "ratio": 48.95
+        },
+        {
+          "year": 2003,
+          "employees": 18693,
+          "ratio": 47.82
+        },
+        {
+          "year": 2004,
+          "employees": 18693,
+          "ratio": 46.73
+        },
+        {
+          "year": 2005,
+          "employees": 16209,
+          "ratio": 39.6
+        },
+        {
+          "year": 2006,
+          "employees": 16948,
+          "ratio": 40.48
+        },
+        {
+          "year": 2007,
+          "employees": 17806,
+          "ratio": 41.6
+        },
+        {
+          "year": 2009,
+          "employees": 19737,
+          "ratio": 44.14
+        },
+        {
+          "year": 2010,
+          "employees": 20304,
+          "ratio": 45.74
+        },
+        {
+          "year": 2011,
+          "employees": 20519,
+          "ratio": 45.55
+        },
+        {
+          "year": 2012,
+          "employees": 21009,
+          "ratio": 45.98
+        },
+        {
+          "year": 2013,
+          "employees": 23248,
+          "ratio": 50.17
+        },
+        {
+          "year": 2014,
+          "employees": 23561,
+          "ratio": 50.14
+        },
+        {
+          "year": 2015,
+          "employees": 23884,
+          "ratio": 50.14
+        },
+        {
+          "year": 2016,
+          "employees": 24075,
+          "ratio": 49.87
+        },
+        {
+          "year": 2017,
+          "employees": 26142,
+          "ratio": 53.44
+        },
+        {
+          "year": 2018,
+          "employees": 28434,
+          "ratio": 57.37
+        },
+        {
+          "year": 2019,
+          "employees": 34476,
+          "ratio": 68.68
+        },
+        {
+          "year": 2020,
+          "employees": 34997,
+          "ratio": 68.85
+        },
+        {
+          "year": 2021,
+          "employees": 34997,
+          "ratio": 68.01
+        },
+        {
+          "year": 2022,
+          "employees": 37044,
+          "ratio": 70.22
+        },
+        {
+          "year": 2023,
+          "employees": 37541,
+          "ratio": 70.73
+        },
+        {
+          "year": 2024,
+          "employees": 38541,
+          "ratio": 72.25
+        }
+      ],
+      "Río Negro": [
+        {
+          "year": 1987,
+          "employees": 23691,
+          "ratio": 51.19
+        },
+        {
+          "year": 1988,
+          "employees": 25256,
+          "ratio": 53.3
+        },
+        {
+          "year": 1989,
+          "employees": 27402,
+          "ratio": 56.53
+        },
+        {
+          "year": 1990,
+          "employees": 28031,
+          "ratio": 56.04
+        },
+        {
+          "year": 1991,
+          "employees": 29213,
+          "ratio": 57.23
+        },
+        {
+          "year": 1992,
+          "employees": 29061,
+          "ratio": 55.65
+        },
+        {
+          "year": 1993,
+          "employees": 29798,
+          "ratio": 55.73
+        },
+        {
+          "year": 1994,
+          "employees": 30541,
+          "ratio": 55.8
+        },
+        {
+          "year": 1995,
+          "employees": 30353,
+          "ratio": 54.24
+        },
+        {
+          "year": 1996,
+          "employees": 31451,
+          "ratio": 55.05
+        },
+        {
+          "year": 1997,
+          "employees": 30760,
+          "ratio": 53.17
+        },
+        {
+          "year": 1998,
+          "employees": 28430,
+          "ratio": 47.8
+        },
+        {
+          "year": 1999,
+          "employees": 28548,
+          "ratio": 47.06
+        },
+        {
+          "year": 2000,
+          "employees": 29295,
+          "ratio": 48.3
+        },
+        {
+          "year": 2001,
+          "employees": 30054,
+          "ratio": 54.72
+        },
+        {
+          "year": 2002,
+          "employees": 30053,
+          "ratio": 52.08
+        },
+        {
+          "year": 2003,
+          "employees": 33298,
+          "ratio": 57.36
+        },
+        {
+          "year": 2004,
+          "employees": 35413,
+          "ratio": 60.64
+        },
+        {
+          "year": 2005,
+          "employees": 36740,
+          "ratio": 62.54
+        },
+        {
+          "year": 2006,
+          "employees": 38364,
+          "ratio": 64.93
+        },
+        {
+          "year": 2007,
+          "employees": 39627,
+          "ratio": 66.69
+        },
+        {
+          "year": 2008,
+          "employees": 40948,
+          "ratio": 68.53
+        },
+        {
+          "year": 2009,
+          "employees": 41423,
+          "ratio": 68.96
+        },
+        {
+          "year": 2010,
+          "employees": 43687,
+          "ratio": 67.39
+        },
+        {
+          "year": 2011,
+          "employees": 48142,
+          "ratio": 73.11
+        },
+        {
+          "year": 2012,
+          "employees": 51018,
+          "ratio": 76.3
+        },
+        {
+          "year": 2013,
+          "employees": 52331,
+          "ratio": 77.09
+        },
+        {
+          "year": 2014,
+          "employees": 53363,
+          "ratio": 77.46
+        },
+        {
+          "year": 2015,
+          "employees": 55660,
+          "ratio": 79.64
+        },
+        {
+          "year": 2016,
+          "employees": 56580,
+          "ratio": 79.83
+        },
+        {
+          "year": 2017,
+          "employees": 58017,
+          "ratio": 80.73
+        },
+        {
+          "year": 2018,
+          "employees": 57889,
+          "ratio": 79.47
+        },
+        {
+          "year": 2019,
+          "employees": 59004,
+          "ratio": 79.94
+        },
+        {
+          "year": 2020,
+          "employees": 59535,
+          "ratio": 79.63
+        },
+        {
+          "year": 2021,
+          "employees": 63369,
+          "ratio": 83.7
+        },
+        {
+          "year": 2022,
+          "employees": 63516,
+          "ratio": 81.81
+        },
+        {
+          "year": 2023,
+          "employees": 63672,
+          "ratio": 81.58
+        },
+        {
+          "year": 2024,
+          "employees": 56796,
+          "ratio": 72.39
+        }
+      ],
+      "La Pampa": [
+        {
+          "year": 1987,
+          "employees": 14405,
+          "ratio": 60.08
+        },
+        {
+          "year": 1988,
+          "employees": 14483,
+          "ratio": 59.19
+        },
+        {
+          "year": 1989,
+          "employees": 14892,
+          "ratio": 59.64
+        },
+        {
+          "year": 1990,
+          "employees": 14423,
+          "ratio": 55.92
+        },
+        {
+          "year": 1991,
+          "employees": 14184,
+          "ratio": 54.06
+        },
+        {
+          "year": 1992,
+          "employees": 14453,
+          "ratio": 54.09
+        },
+        {
+          "year": 1993,
+          "employees": 16119,
+          "ratio": 59.2
+        },
+        {
+          "year": 1994,
+          "employees": 16192,
+          "ratio": 58.37
+        },
+        {
+          "year": 1995,
+          "employees": 15552,
+          "ratio": 55.08
+        },
+        {
+          "year": 1996,
+          "employees": 15648,
+          "ratio": 54.49
+        },
+        {
+          "year": 1997,
+          "employees": 16620,
+          "ratio": 57.35
+        },
+        {
+          "year": 1998,
+          "employees": 17098,
+          "ratio": 57.62
+        },
+        {
+          "year": 1999,
+          "employees": 17177,
+          "ratio": 56.98
+        },
+        {
+          "year": 2000,
+          "employees": 17174,
+          "ratio": 56.97
+        },
+        {
+          "year": 2001,
+          "employees": 17228,
+          "ratio": 57.66
+        },
+        {
+          "year": 2002,
+          "employees": 17228,
+          "ratio": 55.58
+        },
+        {
+          "year": 2003,
+          "employees": 17228,
+          "ratio": 54.9
+        },
+        {
+          "year": 2004,
+          "employees": 17228,
+          "ratio": 54.23
+        },
+        {
+          "year": 2005,
+          "employees": 16554,
+          "ratio": 51.47
+        },
+        {
+          "year": 2006,
+          "employees": 17332,
+          "ratio": 53.23
+        },
+        {
+          "year": 2007,
+          "employees": 17641,
+          "ratio": 53.53
+        },
+        {
+          "year": 2009,
+          "employees": 20821,
+          "ratio": 61.69
+        },
+        {
+          "year": 2010,
+          "employees": 21693,
+          "ratio": 66.33
+        },
+        {
+          "year": 2011,
+          "employees": 22213,
+          "ratio": 67.26
+        },
+        {
+          "year": 2012,
+          "employees": 22524,
+          "ratio": 67.54
+        },
+        {
+          "year": 2013,
+          "employees": 23029,
+          "ratio": 68.39
+        },
+        {
+          "year": 2014,
+          "employees": 23397,
+          "ratio": 68.84
+        },
+        {
+          "year": 2015,
+          "employees": 23820,
+          "ratio": 69.43
+        },
+        {
+          "year": 2016,
+          "employees": 24651,
+          "ratio": 71.21
+        },
+        {
+          "year": 2017,
+          "employees": 26107,
+          "ratio": 74.74
+        },
+        {
+          "year": 2018,
+          "employees": 26201,
+          "ratio": 74.35
+        },
+        {
+          "year": 2019,
+          "employees": 26416,
+          "ratio": 74.32
+        },
+        {
+          "year": 2020,
+          "employees": 26441,
+          "ratio": 73.77
+        },
+        {
+          "year": 2021,
+          "employees": 26570,
+          "ratio": 73.52
+        },
+        {
+          "year": 2022,
+          "employees": 26656,
+          "ratio": 71.28
+        },
+        {
+          "year": 2023,
+          "employees": 28861,
+          "ratio": 76.97
+        },
+        {
+          "year": 2024,
+          "employees": 29027,
+          "ratio": 77.23
+        }
+      ],
+      "Chubut": [
+        {
+          "year": 1987,
+          "employees": 16231,
+          "ratio": 50.57
+        },
+        {
+          "year": 1988,
+          "employees": 20753,
+          "ratio": 62.95
+        },
+        {
+          "year": 1989,
+          "employees": 20502,
+          "ratio": 60.57
+        },
+        {
+          "year": 1990,
+          "employees": 20312,
+          "ratio": 57.73
+        },
+        {
+          "year": 1991,
+          "employees": 18338,
+          "ratio": 50.97
+        },
+        {
+          "year": 1992,
+          "employees": 18075,
+          "ratio": 48.98
+        },
+        {
+          "year": 1993,
+          "employees": 18507,
+          "ratio": 48.83
+        },
+        {
+          "year": 1994,
+          "employees": 20551,
+          "ratio": 52.8
+        },
+        {
+          "year": 1995,
+          "employees": 23013,
+          "ratio": 57.66
+        },
+        {
+          "year": 1996,
+          "employees": 22673,
+          "ratio": 55.46
+        },
+        {
+          "year": 1997,
+          "employees": 21036,
+          "ratio": 50.67
+        },
+        {
+          "year": 1998,
+          "employees": 22349,
+          "ratio": 52.17
+        },
+        {
+          "year": 1999,
+          "employees": 22921,
+          "ratio": 52.3
+        },
+        {
+          "year": 2000,
+          "employees": 23408,
+          "ratio": 53.41
+        },
+        {
+          "year": 2001,
+          "employees": 24357,
+          "ratio": 59.67
+        },
+        {
+          "year": 2002,
+          "employees": 23632,
+          "ratio": 54.9
+        },
+        {
+          "year": 2003,
+          "employees": 24906,
+          "ratio": 57.2
+        },
+        {
+          "year": 2004,
+          "employees": 26027,
+          "ratio": 59.1
+        },
+        {
+          "year": 2005,
+          "employees": 27450,
+          "ratio": 61.62
+        },
+        {
+          "year": 2006,
+          "employees": 27808,
+          "ratio": 61.72
+        },
+        {
+          "year": 2007,
+          "employees": 28506,
+          "ratio": 62.57
+        },
+        {
+          "year": 2008,
+          "employees": 31333,
+          "ratio": 68.01
+        },
+        {
+          "year": 2009,
+          "employees": 34869,
+          "ratio": 74.87
+        },
+        {
+          "year": 2010,
+          "employees": 36660,
+          "ratio": 71.4
+        },
+        {
+          "year": 2011,
+          "employees": 38738,
+          "ratio": 73.9
+        },
+        {
+          "year": 2012,
+          "employees": 40130,
+          "ratio": 75.02
+        },
+        {
+          "year": 2013,
+          "employees": 41239,
+          "ratio": 75.58
+        },
+        {
+          "year": 2014,
+          "employees": 42942,
+          "ratio": 77.19
+        },
+        {
+          "year": 2015,
+          "employees": 44417,
+          "ratio": 78.35
+        },
+        {
+          "year": 2016,
+          "employees": 44902,
+          "ratio": 77.76
+        },
+        {
+          "year": 2017,
+          "employees": 44605,
+          "ratio": 75.86
+        },
+        {
+          "year": 2018,
+          "employees": 44429,
+          "ratio": 74.25
+        },
+        {
+          "year": 2019,
+          "employees": 45985,
+          "ratio": 75.54
+        },
+        {
+          "year": 2020,
+          "employees": 44671,
+          "ratio": 72.17
+        },
+        {
+          "year": 2021,
+          "employees": 45690,
+          "ratio": 72.62
+        },
+        {
+          "year": 2022,
+          "employees": 45386,
+          "ratio": 75.98
+        },
+        {
+          "year": 2023,
+          "employees": 46963,
+          "ratio": 78.41
+        },
+        {
+          "year": 2024,
+          "employees": 47533,
+          "ratio": 79.13
+        }
+      ],
+      "Jujuy": [
+        {
+          "year": 1987,
+          "employees": 31846,
+          "ratio": 66.69
+        },
+        {
+          "year": 1988,
+          "employees": 36499,
+          "ratio": 75.0
+        },
+        {
+          "year": 1989,
+          "employees": 36748,
+          "ratio": 74.14
+        },
+        {
+          "year": 1990,
+          "employees": 36748,
+          "ratio": 72.33
+        },
+        {
+          "year": 1991,
+          "employees": 27489,
+          "ratio": 53.2
+        },
+        {
+          "year": 1992,
+          "employees": 26222,
+          "ratio": 49.86
+        },
+        {
+          "year": 1993,
+          "employees": 27175,
+          "ratio": 50.74
+        },
+        {
+          "year": 1994,
+          "employees": 27075,
+          "ratio": 49.64
+        },
+        {
+          "year": 1995,
+          "employees": 27217,
+          "ratio": 49.03
+        },
+        {
+          "year": 1996,
+          "employees": 25111,
+          "ratio": 44.46
+        },
+        {
+          "year": 1997,
+          "employees": 28480,
+          "ratio": 49.99
+        },
+        {
+          "year": 1998,
+          "employees": 29133,
+          "ratio": 49.86
+        },
+        {
+          "year": 1999,
+          "employees": 28938,
+          "ratio": 48.71
+        },
+        {
+          "year": 2000,
+          "employees": 29622,
+          "ratio": 49.86
+        },
+        {
+          "year": 2001,
+          "employees": 29619,
+          "ratio": 48.63
+        },
+        {
+          "year": 2002,
+          "employees": 31353,
+          "ratio": 50.09
+        },
+        {
+          "year": 2003,
+          "employees": 32869,
+          "ratio": 51.78
+        },
+        {
+          "year": 2004,
+          "employees": 35661,
+          "ratio": 55.41
+        },
+        {
+          "year": 2005,
+          "employees": 37213,
+          "ratio": 57.02
+        },
+        {
+          "year": 2006,
+          "employees": 38515,
+          "ratio": 58.21
+        },
+        {
+          "year": 2007,
+          "employees": 41838,
+          "ratio": 62.37
+        },
+        {
+          "year": 2008,
+          "employees": 45146,
+          "ratio": 66.39
+        },
+        {
+          "year": 2009,
+          "employees": 47585,
+          "ratio": 69.04
+        },
+        {
+          "year": 2010,
+          "employees": 50536,
+          "ratio": 73.94
+        },
+        {
+          "year": 2011,
+          "employees": 56828,
+          "ratio": 82.08
+        },
+        {
+          "year": 2012,
+          "employees": 56706,
+          "ratio": 80.86
+        },
+        {
+          "year": 2013,
+          "employees": 59602,
+          "ratio": 83.93
+        },
+        {
+          "year": 2014,
+          "employees": 61457,
+          "ratio": 85.48
+        },
+        {
+          "year": 2015,
+          "employees": 64767,
+          "ratio": 88.99
+        },
+        {
+          "year": 2016,
+          "employees": 63808,
+          "ratio": 86.63
+        },
+        {
+          "year": 2017,
+          "employees": 64285,
+          "ratio": 86.26
+        },
+        {
+          "year": 2018,
+          "employees": 62484,
+          "ratio": 82.88
+        },
+        {
+          "year": 2019,
+          "employees": 62328,
+          "ratio": 81.75
+        },
+        {
+          "year": 2020,
+          "employees": 63228,
+          "ratio": 82.02
+        },
+        {
+          "year": 2021,
+          "employees": 66377,
+          "ratio": 85.19
+        },
+        {
+          "year": 2022,
+          "employees": 65363,
+          "ratio": 82.18
+        },
+        {
+          "year": 2023,
+          "employees": 66133,
+          "ratio": 82.99
+        },
+        {
+          "year": 2024,
+          "employees": 66173,
+          "ratio": 82.85
+        }
+      ],
+      "Catamarca": [
+        {
+          "year": 1987,
+          "employees": 22185,
+          "ratio": 91.71
+        },
+        {
+          "year": 1988,
+          "employees": 21517,
+          "ratio": 86.96
+        },
+        {
+          "year": 1989,
+          "employees": 22615,
+          "ratio": 89.35
+        },
+        {
+          "year": 1990,
+          "employees": 23971,
+          "ratio": 91.62
+        },
+        {
+          "year": 1991,
+          "employees": 22480,
+          "ratio": 84.35
+        },
+        {
+          "year": 1992,
+          "employees": 22752,
+          "ratio": 83.68
+        },
+        {
+          "year": 1993,
+          "employees": 25656,
+          "ratio": 92.42
+        },
+        {
+          "year": 1994,
+          "employees": 25175,
+          "ratio": 88.82
+        },
+        {
+          "year": 1995,
+          "employees": 23237,
+          "ratio": 80.35
+        },
+        {
+          "year": 1996,
+          "employees": 22456,
+          "ratio": 76.15
+        },
+        {
+          "year": 1997,
+          "employees": 21844,
+          "ratio": 73.24
+        },
+        {
+          "year": 1998,
+          "employees": 22145,
+          "ratio": 72.27
+        },
+        {
+          "year": 1999,
+          "employees": 22963,
+          "ratio": 73.54
+        },
+        {
+          "year": 2000,
+          "employees": 23784,
+          "ratio": 76.17
+        },
+        {
+          "year": 2001,
+          "employees": 23995,
+          "ratio": 72.49
+        },
+        {
+          "year": 2002,
+          "employees": 23995,
+          "ratio": 69.92
+        },
+        {
+          "year": 2003,
+          "employees": 23995,
+          "ratio": 68.47
+        },
+        {
+          "year": 2004,
+          "employees": 29025,
+          "ratio": 81.12
+        },
+        {
+          "year": 2005,
+          "employees": 26849,
+          "ratio": 73.49
+        },
+        {
+          "year": 2006,
+          "employees": 27218,
+          "ratio": 72.98
+        },
+        {
+          "year": 2007,
+          "employees": 31656,
+          "ratio": 83.17
+        },
+        {
+          "year": 2008,
+          "employees": 35310,
+          "ratio": 90.91
+        },
+        {
+          "year": 2009,
+          "employees": 35248,
+          "ratio": 88.94
+        },
+        {
+          "year": 2010,
+          "employees": 36412,
+          "ratio": 96.41
+        },
+        {
+          "year": 2011,
+          "employees": 35733,
+          "ratio": 93.65
+        },
+        {
+          "year": 2012,
+          "employees": 39510,
+          "ratio": 102.51
+        },
+        {
+          "year": 2013,
+          "employees": 40391,
+          "ratio": 103.76
+        },
+        {
+          "year": 2014,
+          "employees": 40163,
+          "ratio": 102.17
+        },
+        {
+          "year": 2015,
+          "employees": 41587,
+          "ratio": 104.78
+        },
+        {
+          "year": 2016,
+          "employees": 42802,
+          "ratio": 106.82
+        },
+        {
+          "year": 2017,
+          "employees": 42145,
+          "ratio": 104.21
+        },
+        {
+          "year": 2018,
+          "employees": 44010,
+          "ratio": 107.83
+        },
+        {
+          "year": 2019,
+          "employees": 45083,
+          "ratio": 109.47
+        },
+        {
+          "year": 2020,
+          "employees": 44858,
+          "ratio": 107.98
+        },
+        {
+          "year": 2021,
+          "employees": 44409,
+          "ratio": 105.99
+        },
+        {
+          "year": 2022,
+          "employees": 44187,
+          "ratio": 101.64
+        },
+        {
+          "year": 2023,
+          "employees": 43966,
+          "ratio": 100.82
+        },
+        {
+          "year": 2024,
+          "employees": 43661,
+          "ratio": 99.79
+        }
+      ],
+      "Santa Cruz": [
+        {
+          "year": 1987,
+          "employees": 14285,
+          "ratio": 100.54
+        },
+        {
+          "year": 1988,
+          "employees": 15086,
+          "ratio": 103.09
+        },
+        {
+          "year": 1989,
+          "employees": 15521,
+          "ratio": 102.99
+        },
+        {
+          "year": 1990,
+          "employees": 15498,
+          "ratio": 98.62
+        },
+        {
+          "year": 1991,
+          "employees": 17070,
+          "ratio": 105.97
+        },
+        {
+          "year": 1992,
+          "employees": 15791,
+          "ratio": 95.28
+        },
+        {
+          "year": 1993,
+          "employees": 13635,
+          "ratio": 79.82
+        },
+        {
+          "year": 1994,
+          "employees": 15436,
+          "ratio": 87.67
+        },
+        {
+          "year": 1995,
+          "employees": 15488,
+          "ratio": 85.48
+        },
+        {
+          "year": 1996,
+          "employees": 16412,
+          "ratio": 88.14
+        },
+        {
+          "year": 1997,
+          "employees": 16941,
+          "ratio": 89.31
+        },
+        {
+          "year": 1998,
+          "employees": 17728,
+          "ratio": 90.25
+        },
+        {
+          "year": 1999,
+          "employees": 17765,
+          "ratio": 88.1
+        },
+        {
+          "year": 2000,
+          "employees": 17365,
+          "ratio": 86.12
+        },
+        {
+          "year": 2002,
+          "employees": 17365,
+          "ratio": 85.95
+        },
+        {
+          "year": 2003,
+          "employees": 17365,
+          "ratio": 84.32
+        },
+        {
+          "year": 2004,
+          "employees": 17365,
+          "ratio": 82.75
+        },
+        {
+          "year": 2005,
+          "employees": 18386,
+          "ratio": 85.98
+        },
+        {
+          "year": 2006,
+          "employees": 18444,
+          "ratio": 84.67
+        },
+        {
+          "year": 2007,
+          "employees": 22812,
+          "ratio": 102.82
+        },
+        {
+          "year": 2008,
+          "employees": 23903,
+          "ratio": 105.8
+        },
+        {
+          "year": 2009,
+          "employees": 24885,
+          "ratio": 108.19
+        },
+        {
+          "year": 2010,
+          "employees": 25395,
+          "ratio": 92.19
+        },
+        {
+          "year": 2011,
+          "employees": 26144,
+          "ratio": 91.92
+        },
+        {
+          "year": 2012,
+          "employees": 27323,
+          "ratio": 93.12
+        },
+        {
+          "year": 2013,
+          "employees": 31698,
+          "ratio": 104.81
+        },
+        {
+          "year": 2014,
+          "employees": 33436,
+          "ratio": 107.36
+        },
+        {
+          "year": 2015,
+          "employees": 35256,
+          "ratio": 110.01
+        },
+        {
+          "year": 2016,
+          "employees": 35936,
+          "ratio": 109.06
+        },
+        {
+          "year": 2017,
+          "employees": 34482,
+          "ratio": 101.85
+        },
+        {
+          "year": 2018,
+          "employees": 34287,
+          "ratio": 98.64
+        },
+        {
+          "year": 2019,
+          "employees": 34669,
+          "ratio": 97.21
+        },
+        {
+          "year": 2020,
+          "employees": 34548,
+          "ratio": 94.47
+        },
+        {
+          "year": 2021,
+          "employees": 35665,
+          "ratio": 95.17
+        },
+        {
+          "year": 2022,
+          "employees": 38126,
+          "ratio": 114.01
+        },
+        {
+          "year": 2023,
+          "employees": 38126,
+          "ratio": 113.97
+        },
+        {
+          "year": 2024,
+          "employees": 36321,
+          "ratio": 108.5
+        }
+      ],
+      "Neuquén": [
+        {
+          "year": 1987,
+          "employees": 22842,
+          "ratio": 69.48
+        },
+        {
+          "year": 1988,
+          "employees": 24492,
+          "ratio": 71.53
+        },
+        {
+          "year": 1989,
+          "employees": 25994,
+          "ratio": 72.93
+        },
+        {
+          "year": 1990,
+          "employees": 26708,
+          "ratio": 70.67
+        },
+        {
+          "year": 1991,
+          "employees": 28101,
+          "ratio": 71.87
+        },
+        {
+          "year": 1992,
+          "employees": 27108,
+          "ratio": 66.57
+        },
+        {
+          "year": 1993,
+          "employees": 30449,
+          "ratio": 71.58
+        },
+        {
+          "year": 1994,
+          "employees": 29846,
+          "ratio": 67.15
+        },
+        {
+          "year": 1995,
+          "employees": 32340,
+          "ratio": 69.81
+        },
+        {
+          "year": 1996,
+          "employees": 32755,
+          "ratio": 67.98
+        },
+        {
+          "year": 1997,
+          "employees": 33753,
+          "ratio": 67.97
+        },
+        {
+          "year": 1998,
+          "employees": 34549,
+          "ratio": 66.39
+        },
+        {
+          "year": 1999,
+          "employees": 36177,
+          "ratio": 66.95
+        },
+        {
+          "year": 2000,
+          "employees": 36543,
+          "ratio": 67.62
+        },
+        {
+          "year": 2001,
+          "employees": 36909,
+          "ratio": 78.23
+        },
+        {
+          "year": 2002,
+          "employees": 36909,
+          "ratio": 74.49
+        },
+        {
+          "year": 2003,
+          "employees": 36909,
+          "ratio": 73.22
+        },
+        {
+          "year": 2004,
+          "employees": 36909,
+          "ratio": 71.99
+        },
+        {
+          "year": 2005,
+          "employees": 40914,
+          "ratio": 78.46
+        },
+        {
+          "year": 2006,
+          "employees": 45410,
+          "ratio": 85.64
+        },
+        {
+          "year": 2007,
+          "employees": 49347,
+          "ratio": 91.56
+        },
+        {
+          "year": 2008,
+          "employees": 53092,
+          "ratio": 96.93
+        },
+        {
+          "year": 2009,
+          "employees": 54118,
+          "ratio": 97.24
+        },
+        {
+          "year": 2010,
+          "employees": 53806,
+          "ratio": 94.08
+        },
+        {
+          "year": 2011,
+          "employees": 53587,
+          "ratio": 92.12
+        },
+        {
+          "year": 2012,
+          "employees": 56309,
+          "ratio": 95.21
+        },
+        {
+          "year": 2013,
+          "employees": 56254,
+          "ratio": 93.6
+        },
+        {
+          "year": 2014,
+          "employees": 59164,
+          "ratio": 96.92
+        },
+        {
+          "year": 2015,
+          "employees": 61197,
+          "ratio": 98.75
+        },
+        {
+          "year": 2016,
+          "employees": 64729,
+          "ratio": 102.92
+        },
+        {
+          "year": 2017,
+          "employees": 66911,
+          "ratio": 104.89
+        },
+        {
+          "year": 2018,
+          "employees": 68004,
+          "ratio": 105.14
+        },
+        {
+          "year": 2019,
+          "employees": 66601,
+          "ratio": 101.6
+        },
+        {
+          "year": 2020,
+          "employees": 65615,
+          "ratio": 98.81
+        },
+        {
+          "year": 2021,
+          "employees": 71594,
+          "ratio": 106.47
+        },
+        {
+          "year": 2022,
+          "employees": 74545,
+          "ratio": 108.16
+        },
+        {
+          "year": 2023,
+          "employees": 77651,
+          "ratio": 111.9
+        },
+        {
+          "year": 2024,
+          "employees": 77560,
+          "ratio": 111.05
+        }
+      ],
+      "La Rioja": [
+        {
+          "year": 1987,
+          "employees": 18344,
+          "ratio": 93.04
+        },
+        {
+          "year": 1988,
+          "employees": 17511,
+          "ratio": 86.36
+        },
+        {
+          "year": 1989,
+          "employees": 20430,
+          "ratio": 97.95
+        },
+        {
+          "year": 1990,
+          "employees": 20613,
+          "ratio": 94.78
+        },
+        {
+          "year": 1991,
+          "employees": 21122,
+          "ratio": 94.94
+        },
+        {
+          "year": 1992,
+          "employees": 21178,
+          "ratio": 92.76
+        },
+        {
+          "year": 1993,
+          "employees": 21805,
+          "ratio": 92.94
+        },
+        {
+          "year": 1994,
+          "employees": 22747,
+          "ratio": 94.33
+        },
+        {
+          "year": 1995,
+          "employees": 22031,
+          "ratio": 88.99
+        },
+        {
+          "year": 1996,
+          "employees": 25989,
+          "ratio": 102.36
+        },
+        {
+          "year": 1997,
+          "employees": 22522,
+          "ratio": 87.22
+        },
+        {
+          "year": 1998,
+          "employees": 23253,
+          "ratio": 87.14
+        },
+        {
+          "year": 1999,
+          "employees": 23581,
+          "ratio": 86.23
+        },
+        {
+          "year": 2000,
+          "employees": 23258,
+          "ratio": 85.05
+        },
+        {
+          "year": 2001,
+          "employees": 23140,
+          "ratio": 80.37
+        },
+        {
+          "year": 2002,
+          "employees": 23438,
+          "ratio": 77.88
+        },
+        {
+          "year": 2003,
+          "employees": 23617,
+          "ratio": 76.83
+        },
+        {
+          "year": 2004,
+          "employees": 24102,
+          "ratio": 76.78
+        },
+        {
+          "year": 2005,
+          "employees": 22695,
+          "ratio": 70.79
+        },
+        {
+          "year": 2006,
+          "employees": 25427,
+          "ratio": 77.67
+        },
+        {
+          "year": 2007,
+          "employees": 27252,
+          "ratio": 81.54
+        },
+        {
+          "year": 2008,
+          "employees": 28152,
+          "ratio": 82.51
+        },
+        {
+          "year": 2009,
+          "employees": 29221,
+          "ratio": 83.91
+        },
+        {
+          "year": 2010,
+          "employees": 29081,
+          "ratio": 84.89
+        },
+        {
+          "year": 2011,
+          "employees": 29520,
+          "ratio": 84.95
+        },
+        {
+          "year": 2012,
+          "employees": 34032,
+          "ratio": 96.55
+        },
+        {
+          "year": 2013,
+          "employees": 35380,
+          "ratio": 98.96
+        },
+        {
+          "year": 2014,
+          "employees": 36222,
+          "ratio": 99.89
+        },
+        {
+          "year": 2015,
+          "employees": 38249,
+          "ratio": 104.01
+        },
+        {
+          "year": 2016,
+          "employees": 39022,
+          "ratio": 104.65
+        },
+        {
+          "year": 2017,
+          "employees": 39394,
+          "ratio": 104.2
+        },
+        {
+          "year": 2018,
+          "employees": 40083,
+          "ratio": 104.6
+        },
+        {
+          "year": 2019,
+          "employees": 40834,
+          "ratio": 105.14
+        },
+        {
+          "year": 2020,
+          "employees": 40015,
+          "ratio": 101.68
+        },
+        {
+          "year": 2021,
+          "employees": 43647,
+          "ratio": 109.49
+        },
+        {
+          "year": 2022,
+          "employees": 43947,
+          "ratio": 110.28
+        },
+        {
+          "year": 2023,
+          "employees": 46623,
+          "ratio": 116.53
+        },
+        {
+          "year": 2024,
+          "employees": 44705,
+          "ratio": 111.25
+        }
+      ],
+      "Tierra del Fuego": [
+        {
+          "year": 1987,
+          "employees": 3808,
+          "ratio": 75.25
+        },
+        {
+          "year": 1988,
+          "employees": 4146,
+          "ratio": 75.47
+        },
+        {
+          "year": 1989,
+          "employees": 4522,
+          "ratio": 75.97
+        },
+        {
+          "year": 1990,
+          "employees": 6100,
+          "ratio": 94.05
+        },
+        {
+          "year": 1991,
+          "employees": 5708,
+          "ratio": 83.26
+        },
+        {
+          "year": 1992,
+          "employees": 5139,
+          "ratio": 70.01
+        },
+        {
+          "year": 1993,
+          "employees": 5519,
+          "ratio": 69.94
+        },
+        {
+          "year": 1994,
+          "employees": 6192,
+          "ratio": 73.18
+        },
+        {
+          "year": 1995,
+          "employees": 7326,
+          "ratio": 81.41
+        },
+        {
+          "year": 1996,
+          "employees": 6636,
+          "ratio": 69.88
+        },
+        {
+          "year": 1997,
+          "employees": 6878,
+          "ratio": 60.26
+        },
+        {
+          "year": 1998,
+          "employees": 7010,
+          "ratio": 66.87
+        },
+        {
+          "year": 1999,
+          "employees": 7777,
+          "ratio": 70.7
+        },
+        {
+          "year": 2000,
+          "employees": 8129,
+          "ratio": 73.9
+        },
+        {
+          "year": 2001,
+          "employees": 8215,
+          "ratio": 81.89
+        },
+        {
+          "year": 2002,
+          "employees": 8215,
+          "ratio": 78.45
+        },
+        {
+          "year": 2003,
+          "employees": 8408,
+          "ratio": 77.7
+        },
+        {
+          "year": 2004,
+          "employees": 8398,
+          "ratio": 75.17
+        },
+        {
+          "year": 2005,
+          "employees": 11637,
+          "ratio": 100.94
+        },
+        {
+          "year": 2006,
+          "employees": 12493,
+          "ratio": 105.07
+        },
+        {
+          "year": 2007,
+          "employees": 15213,
+          "ratio": 124.16
+        },
+        {
+          "year": 2008,
+          "employees": 15326,
+          "ratio": 121.43
+        },
+        {
+          "year": 2009,
+          "employees": 15487,
+          "ratio": 119.2
+        },
+        {
+          "year": 2010,
+          "employees": 16185,
+          "ratio": 122.93
+        },
+        {
+          "year": 2011,
+          "employees": 17130,
+          "ratio": 126.2
+        },
+        {
+          "year": 2012,
+          "employees": 17681,
+          "ratio": 126.43
+        },
+        {
+          "year": 2013,
+          "employees": 17563,
+          "ratio": 121.98
+        },
+        {
+          "year": 2014,
+          "employees": 18277,
+          "ratio": 123.37
+        },
+        {
+          "year": 2015,
+          "employees": 18442,
+          "ratio": 121.08
+        },
+        {
+          "year": 2016,
+          "employees": 18432,
+          "ratio": 117.77
+        },
+        {
+          "year": 2017,
+          "employees": 19371,
+          "ratio": 120.53
+        },
+        {
+          "year": 2018,
+          "employees": 18958,
+          "ratio": 114.94
+        },
+        {
+          "year": 2019,
+          "employees": 19004,
+          "ratio": 112.33
+        },
+        {
+          "year": 2020,
+          "employees": 19632,
+          "ratio": 113.2
+        },
+        {
+          "year": 2021,
+          "employees": 22223,
+          "ratio": 125.06
+        },
+        {
+          "year": 2022,
+          "employees": 24435,
+          "ratio": 136.02
+        },
+        {
+          "year": 2023,
+          "employees": 25134,
+          "ratio": 139.2
+        },
+        {
+          "year": 2024,
+          "employees": 25618,
+          "ratio": 141.33
+        }
+      ]
+    }
+  }
+}
