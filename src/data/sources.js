@@ -55,8 +55,14 @@ export const SOURCES = {
   cepxxiSipa: {
     name: 'CEP XXI / SIPA — Puestos de trabajo por provincia y sector',
     url: 'https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-registrados-por-provincia-y-sector-de-actividad',
-    updated: 'Late 2023',
-    notes: 'Sistema Integrado Previsional Argentino — puestos de trabajo asalariados registrados por provincia × sector (CLAE a letra), publicado por CEP XXI.',
+    updated: 'Nov 2023 (discontinuado)',
+    notes: 'Sistema Integrado Previsional Argentino — puestos asalariados registrados por provincia × CLAE2 (por ubicación del establecimiento). Dataset descontinuado en nov 2023.',
+  },
+  sipaDeptoPubPriv: {
+    name: 'CEP XXI / SIPA — Puestos por departamento (pub + priv)',
+    url: 'https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-por-departamento-partido-y-sector-de-actividad',
+    updated: 'Nov 2023 (discontinuado)',
+    notes: 'Agregado por provincia (residencia del trabajador). En las 13 provincias con caja propia, SIPA-pub no incluye los provinciales → DNAP complementa.',
   },
   minTrabajo: {
     name: 'Min. Trabajo — OEDE provincial',

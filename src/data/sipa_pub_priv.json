@@ -1,0 +1,247 @@
+{
+  "source": "CEP-XXI / SIPA-AFIP",
+  "sourceUrl": "https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-por-departamento-partido-y-sector-de-actividad",
+  "vintage": "2023-11",
+  "scope": "Puestos asalariados registrados (SIPA), agregado por provincia desde archivos per-departamento (residencia del trabajador). Universo: trabajo formal registrado.",
+  "discontinuedNote": "El dataset CEP-XXI fue discontinuado en nov 2023. Nov 2023 es el último mes publicado.",
+  "cajaPropiaNote": "En las 13 provincias con caja previsional propia (BA, Cba, Chaco, Chubut, Corrientes, Entre Ríos, Formosa, La Pampa, Misiones, Neuquén, Santa Cruz, Santa Fe, Tierra del Fuego), SIPA-público excluye los empleados provinciales (cotizan en la caja provincial, no en ANSES). El dataset DNAP complementa esos números.",
+  "national": {
+    "private": 6612937,
+    "public": 3940274,
+    "total": 10553211,
+    "publicPct": 37.3
+  },
+  "cajaPropiaProvinces": [
+    "Buenos Aires",
+    "Chaco",
+    "Chubut",
+    "Corrientes",
+    "Córdoba",
+    "Entre Ríos",
+    "Formosa",
+    "La Pampa",
+    "Misiones",
+    "Neuquén",
+    "Santa Cruz",
+    "Santa Fe",
+    "Tierra del Fuego"
+  ],
+  "provinces": [
+    {
+      "code": "34",
+      "province": "Formosa",
+      "private": 34302,
+      "public": 69308,
+      "total": 103610,
+      "publicPct": 66.9,
+      "cajaPropia": true
+    },
+    {
+      "code": "46",
+      "province": "La Rioja",
+      "private": 32625,
+      "public": 64424,
+      "total": 97049,
+      "publicPct": 66.4,
+      "cajaPropia": false
+    },
+    {
+      "code": "10",
+      "province": "Catamarca",
+      "private": 38378,
+      "public": 67415,
+      "total": 105793,
+      "publicPct": 63.7,
+      "cajaPropia": false
+    },
+    {
+      "code": "38",
+      "province": "Jujuy",
+      "private": 69381,
+      "public": 100517,
+      "total": 169898,
+      "publicPct": 59.2,
+      "cajaPropia": false
+    },
+    {
+      "code": "22",
+      "province": "Chaco",
+      "private": 88161,
+      "public": 116669,
+      "total": 204830,
+      "publicPct": 57.0,
+      "cajaPropia": true
+    },
+    {
+      "code": "86",
+      "province": "Santiago del Estero",
+      "private": 72807,
+      "public": 91826,
+      "total": 164633,
+      "publicPct": 55.8,
+      "cajaPropia": false
+    },
+    {
+      "code": "54",
+      "province": "Misiones",
+      "private": 119250,
+      "public": 137568,
+      "total": 256818,
+      "publicPct": 53.6,
+      "cajaPropia": true
+    },
+    {
+      "code": "18",
+      "province": "Corrientes",
+      "private": 97380,
+      "public": 99006,
+      "total": 196386,
+      "publicPct": 50.4,
+      "cajaPropia": true
+    },
+    {
+      "code": "74",
+      "province": "San Luis",
+      "private": 59599,
+      "public": 58590,
+      "total": 118189,
+      "publicPct": 49.6,
+      "cajaPropia": false
+    },
+    {
+      "code": "70",
+      "province": "San Juan",
+      "private": 87908,
+      "public": 85340,
+      "total": 173248,
+      "publicPct": 49.3,
+      "cajaPropia": false
+    },
+    {
+      "code": "42",
+      "province": "La Pampa",
+      "private": 43232,
+      "public": 39374,
+      "total": 82606,
+      "publicPct": 47.7,
+      "cajaPropia": true
+    },
+    {
+      "code": "58",
+      "province": "Neuquén",
+      "private": 107112,
+      "public": 96226,
+      "total": 203338,
+      "publicPct": 47.3,
+      "cajaPropia": true
+    },
+    {
+      "code": "30",
+      "province": "Entre Ríos",
+      "private": 157334,
+      "public": 140221,
+      "total": 297555,
+      "publicPct": 47.1,
+      "cajaPropia": true
+    },
+    {
+      "code": "90",
+      "province": "Tucumán",
+      "private": 188707,
+      "public": 162646,
+      "total": 351353,
+      "publicPct": 46.3,
+      "cajaPropia": false
+    },
+    {
+      "code": "94",
+      "province": "Tierra del Fuego",
+      "private": 34491,
+      "public": 28563,
+      "total": 63054,
+      "publicPct": 45.3,
+      "cajaPropia": true
+    },
+    {
+      "code": "66",
+      "province": "Salta",
+      "private": 142381,
+      "public": 115119,
+      "total": 257500,
+      "publicPct": 44.7,
+      "cajaPropia": false
+    },
+    {
+      "code": "62",
+      "province": "Río Negro",
+      "private": 123545,
+      "public": 81252,
+      "total": 204797,
+      "publicPct": 39.7,
+      "cajaPropia": false
+    },
+    {
+      "code": "26",
+      "province": "Chubut",
+      "private": 98183,
+      "public": 64343,
+      "total": 162526,
+      "publicPct": 39.6,
+      "cajaPropia": true
+    },
+    {
+      "code": "50",
+      "province": "Mendoza",
+      "private": 269208,
+      "public": 170872,
+      "total": 440080,
+      "publicPct": 38.8,
+      "cajaPropia": false
+    },
+    {
+      "code": "06",
+      "province": "Buenos Aires",
+      "private": 2773415,
+      "public": 1291766,
+      "total": 4065181,
+      "publicPct": 31.8,
+      "cajaPropia": true
+    },
+    {
+      "code": "82",
+      "province": "Santa Fe",
+      "private": 552197,
+      "public": 257359,
+      "total": 809556,
+      "publicPct": 31.8,
+      "cajaPropia": true
+    },
+    {
+      "code": "78",
+      "province": "Santa Cruz",
+      "private": 52352,
+      "public": 24202,
+      "total": 76554,
+      "publicPct": 31.6,
+      "cajaPropia": true
+    },
+    {
+      "code": "14",
+      "province": "Córdoba",
+      "private": 542796,
+      "public": 237178,
+      "total": 779974,
+      "publicPct": 30.4,
+      "cajaPropia": true
+    },
+    {
+      "code": "02",
+      "province": "Ciudad de Buenos Aires",
+      "private": 828193,
+      "public": 340490,
+      "total": 1168683,
+      "publicPct": 29.1,
+      "cajaPropia": false
+    }
+  ]
+}
