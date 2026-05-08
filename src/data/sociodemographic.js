@@ -1,6 +1,12 @@
 // Sociodemographic data by province
 // Sources:
-//   Poverty: INDEC EPH H2 2024 (urban agglomerates, % persons). National: 38.1%
+//   Poverty: INDEC EPH H2 2024 (% persons) — values map each province to the
+//     poverty rate of its EPH urban agglomerate(s). Provinces with multiple
+//     agglomerates use a population-weighted average. National aglomerado
+//     urbano total: 38.1%. Caveat: INDEC does NOT publish province-wide
+//     poverty — rural populations are not covered. Cross-checked against the
+//     INDEC press release "Incidencia de la pobreza y la indigencia en 31
+//     aglomerados urbanos" (marzo 2025, Segundo semestre 2024).
 //   Unemployment: INDEC EPH Q3 2025 (total urbano, %). National: 6.3%
 //   PBG per capita: Fundar/Argendata 2022, USD PPP (base 2021)
 //   Schooling: INDEC Censo 2022 (average years, population 25+)
@@ -10,7 +16,7 @@
 export const sociodemographic = [
   {
     provincia: 'Buenos Aires',
-    pobreza: 38.9,
+    pobreza: 40.6,
     desempleo: 7.7,
     pbg_per_capita_usd: 23517,
     escolaridad: 11.0,
@@ -19,7 +25,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Ciudad de Buenos Aires',
-    pobreza: 17.9,
+    pobreza: 16.7,
     desempleo: 3.9,
     pbg_per_capita_usd: 79898,
     escolaridad: 13.6,
@@ -46,7 +52,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Chubut',
-    pobreza: 29.0,
+    pobreza: 35.5,
     desempleo: 4.8,
     pbg_per_capita_usd: 40783,
     escolaridad: 11.3,
@@ -64,7 +70,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Corrientes',
-    pobreza: 44.0,
+    pobreza: 36.0,
     desempleo: 4.6,
     pbg_per_capita_usd: 13291,
     escolaridad: 10.4,
@@ -73,7 +79,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Entre Ríos',
-    pobreza: 40.0,
+    pobreza: 45.1,
     desempleo: 4.1,
     pbg_per_capita_usd: 22000,
     escolaridad: 10.8,
@@ -91,7 +97,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Jujuy',
-    pobreza: 42.0,
+    pobreza: 40.0,
     desempleo: 3.9,
     pbg_per_capita_usd: 16500,
     escolaridad: 10.6,
@@ -118,7 +124,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Mendoza',
-    pobreza: 39.0,
+    pobreza: 42.2,
     desempleo: 5.4,
     pbg_per_capita_usd: 24000,
     escolaridad: 11.1,
@@ -145,7 +151,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Río Negro',
-    pobreza: 35.0,
+    pobreza: 39.4,
     desempleo: 3.0,
     pbg_per_capita_usd: 26000,
     escolaridad: 11.1,
@@ -154,7 +160,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Salta',
-    pobreza: 45.0,
+    pobreza: 41.2,
     desempleo: 5.4,
     pbg_per_capita_usd: 15500,
     escolaridad: 10.5,
@@ -181,7 +187,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Santa Cruz',
-    pobreza: 34.0,
+    pobreza: 30.0,
     desempleo: 10.7,
     pbg_per_capita_usd: 52400,
     escolaridad: 11.2,
@@ -199,7 +205,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Santiago del Estero',
-    pobreza: 47.0,
+    pobreza: 48.6,
     desempleo: 3.7,
     pbg_per_capita_usd: 15000,
     escolaridad: 9.7,
@@ -208,7 +214,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Tierra del Fuego',
-    pobreza: 30.0,
+    pobreza: 31.8,
     desempleo: 6.8,
     pbg_per_capita_usd: 65967,
     escolaridad: 12.0,
@@ -217,7 +223,7 @@ export const sociodemographic = [
   },
   {
     provincia: 'Tucumán',
-    pobreza: 43.0,
+    pobreza: 40.8,
     desempleo: 6.6,
     pbg_per_capita_usd: 14400,
     escolaridad: 10.6,
