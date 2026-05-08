@@ -81,10 +81,8 @@ function PublicCompositeBlock({ provinceName, t }) {
   const ranked = sipaPubPriv.provinces.slice().sort((a, b) => b.publicPct - a.publicPct);
   const pubRank = ranked.findIndex(p => p.province === sipaRec.province) + 1;
 
-  const combinedPub = cajaPropia && dnapRec ? pub + dnapRec.employees : null;
-  const combinedPer1000 = combinedPub && dnapRec?.population
-    ? (combinedPub / dnapRec.population) * 1000
-    : null;
+  // No combination: SIPA-pub and DNAP have unclear scope-overlap; we present
+  // them as two separate facts and let the reader draw their own conclusions.
 
   return (
     <div className="bg-[#003049]/6 rounded-lg p-2.5 border border-[#003049]/10">
@@ -118,9 +116,6 @@ function PublicCompositeBlock({ provinceName, t }) {
             <span className="w-2 h-2 rounded-full shrink-0" style={{ background: '#7d3c98' }} />
             <span className="text-[10px] text-[#003049]/60 uppercase tracking-wider">
               {t('employment.formalPublic')}
-              {cajaPropia && (
-                <span className="text-[#C1121F]/70 ml-1" title={t('employment.cajaPropiaTooltip')}>⚠</span>
-              )}
             </span>
           </div>
           <p className="text-[16px] font-bold text-[#003049] font-mono leading-tight mt-0.5">
@@ -134,12 +129,12 @@ function PublicCompositeBlock({ provinceName, t }) {
         <span className="font-mono">{fmtNum(total)}</span>
       </div>
 
-      {/* DNAP integrated as subsection */}
+      {/* DNAP as a separate fact, no math relationship implied */}
       {dnapRec && (
         <div className="pt-2">
           <div className="flex items-baseline justify-between mb-1">
             <span className="text-[10px] text-[#003049]/55 uppercase tracking-wider inline-flex items-center gap-1">
-              {cajaPropia ? t('employment.dnapAddsToSipa') : t('employment.dnapSubsetOfSipa')}
+              {t('employment.provincialCabinet')}
               <SourceInfo src={['dnapEmpleoProvincial']} size={9} />
             </span>
             <span className="text-[9px] font-mono text-[#003049]/45">DNAP {dnapEmpleo.year}</span>
@@ -162,19 +157,6 @@ function PublicCompositeBlock({ provinceName, t }) {
               </p>
             </div>
           </div>
-
-          {combinedPub != null && (
-            <div className="mt-2 px-2 py-1.5 bg-[#7d3c98]/8 rounded">
-              <div className="flex items-baseline justify-between text-[11px]">
-                <span className="text-[#003049]/75 inline-flex items-center gap-1">
-                  ≈ {t('employment.combinedPublic')} <span className="text-[9px] text-[#003049]/45">(SIPA + DNAP)</span>
-                </span>
-                <span className="font-mono font-bold text-[#003049]">
-                  {fmtNum(combinedPub)} <span className="text-[10px] font-normal text-[#003049]/55">· {combinedPer1000.toFixed(0)}{t('employment.per1000Short')}</span>
-                </span>
-              </div>
-            </div>
-          )}
         </div>
       )}
     </div>

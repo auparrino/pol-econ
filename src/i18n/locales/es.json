@@ -399,7 +399,7 @@
     "evolutionTitle": "Planta provincial cada 1.000 hab.",
     "evolutionNote": "Línea punteada = promedio nacional 2024 ({{avg}} / 1.000). Fuente: DNAP, serie anual 1987–2024.",
     "ratioShort": "cada 1.000",
-    "footer": "EPH Q3-25 (INDEC, urbano). SIPA per-departamento Nov-23 (CEP-XXI, puestos formales por residencia — descontinuado). DNAP (cargos provinciales en AC + descentralizados + cuentas especiales). En las 13 provincias con caja propia (marcadas con ⚠), el total público real ≈ SIPA-pub + DNAP."
+    "footer": "EPH Q3-25 (INDEC, urbano). SIPA per-departamento Nov-23 (CEP-XXI, puestos formales por residencia — descontinuado). DNAP (cargos provinciales en AC + descentralizados + cuentas especiales). SIPA y DNAP usan metodologías distintas (puestos vs cargos) y se solapan de modo desigual — se muestran como hechos separados, no se suman."
   },
   "exportsSec": {
     "desc": "Exportaciones provinciales en USD millones. PP: productos primarios, MOA: manufacturas de origen agropecuario, MOI: manufacturas de origen industrial, CyE: combustibles y energía. Fuente: INDEC.",
@@ -519,6 +519,12 @@
     "private": "Privado",
     "public": "Público",
     "monotributistasNote": "Sumar {{count}}M monotributistas + autónomos (Min. Trabajo) para el universo registrado completo: ~{{total}}M trabajadores registrados en Argentina.",
+    "publicBreakdown": "Sector público · por nivel de gobierno",
+    "totalPublicSector": "Total empleo público",
+    "level_national": "Nacional (incl. militar + universidades + empresas)",
+    "level_provincial": "Provincial (24 jurisdicciones)",
+    "level_municipal": "Municipal",
+    "biepVsSipaNote": "Fuente: BIEP / Sec. Gestión y Empleo Público (mid-2023). Para referencia, SIPA reporta {{sipa}} puestos públicos formales en {{vintage}} — metodología distinta (puestos/jobs, incluye doble cargo y empresas estatales).",
     "bySectorFamily": "Por familia de sectores",
     "topProvinces": "Provincias principales",
     "dependentTotal": "Total asalariados",

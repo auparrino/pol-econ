@@ -62,7 +62,13 @@ export const SOURCES = {
     name: 'CEP XXI / SIPA — Puestos por departamento (pub + priv)',
     url: 'https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-por-departamento-partido-y-sector-de-actividad',
     updated: 'Nov 2023 (discontinuado)',
-    notes: 'Agregado por provincia (residencia del trabajador). En las 13 provincias con caja propia, SIPA-pub no incluye los provinciales → DNAP complementa.',
+    notes: 'Puestos asalariados registrados (puestos, no personas), agregados por provincia desde archivos per-departamento (residencia del trabajador). Métrica distinta a la BIEP/CIPPEC — SIPA cuenta puestos vía registros AFIP del empleador; BIEP cuenta trabajadores.',
+  },
+  biep: {
+    name: 'BIEP / Sec. Gestión y Empleo Público — Empleo público total',
+    url: 'https://www.argentina.gob.ar/jefatura/gestion-y-empleo-publico/empleo-publico/biep',
+    updated: 'mid-2023',
+    notes: 'Base Integrada de Empleo Público y Salarios. Total empleo público en los 3 niveles de gobierno (3,39M en mid-2023): 711k nacional (incl. APN civil, FFAA/FFSS, universidades, empresas públicas, bancos), 2,2M provincial (DNAP), 441k municipal. Cuenta personas/cargos (no puestos como SIPA). Cifra citada por Chequeado, CIPPEC, INAP webinar "Mitos del empleo público" (jun-23).',
   },
   minTrabajo: {
     name: 'Min. Trabajo — OEDE provincial',

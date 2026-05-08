@@ -399,7 +399,7 @@
     "evolutionTitle": "Provincial public headcount, per 1,000 hab.",
     "evolutionNote": "Dashed line = 2024 national average ({{avg}} / 1,000). Source: DNAP annual series 1987–2024.",
     "ratioShort": "per 1,000",
-    "footer": "EPH Q3-25 (INDEC, urban). SIPA per-departamento Nov-23 (CEP-XXI, formal registered jobs by residence — discontinued). DNAP (provincial-cabinet posts, AC + decentralized + special accounts). 13 provinces (incl. caja-propia ones marked ⚠) keep their own pension cajas — for those, total public ≈ SIPA-pub + DNAP."
+    "footer": "EPH Q3-25 (INDEC, urban). SIPA per-departamento Nov-23 (CEP-XXI, formal jobs by residence — discontinued). DNAP (provincial-cabinet posts, AC + decentralized + special accounts). SIPA and DNAP use different methodologies (jobs vs filled posts) and overlap unevenly — they're shown as two separate facts, not added together."
   },
   "exportsSec": {
     "desc": "Provincial exports in USD millions. PP: primary products, MOA: agricultural manufactures, MOI: industrial manufactures, F&E: fuels & energy. Source: INDEC.",
@@ -519,6 +519,12 @@
     "private": "Private",
     "public": "Public",
     "monotributistasNote": "Add {{count}}M monotributistas + autónomos (Min. Trabajo) for the full registered universe: ~{{total}}M registered workers in Argentina.",
+    "publicBreakdown": "Public sector · by level of government",
+    "totalPublicSector": "Total public sector workers",
+    "level_national": "National (incl. mil. + universities + state cos.)",
+    "level_provincial": "Provincial (24 jurisdictions)",
+    "level_municipal": "Municipal",
+    "biepVsSipaNote": "Source: BIEP / Sec. Gestión y Empleo Público (mid-2023). For reference, SIPA reports {{sipa}} formal public jobs in {{vintage}} — different methodology (puestos/jobs, includes double-tenured workers and SOEs).",
     "bySectorFamily": "By sector family",
     "topProvinces": "Top provinces",
     "dependentTotal": "Dependent total",

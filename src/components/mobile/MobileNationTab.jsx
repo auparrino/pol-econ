@@ -2,6 +2,8 @@ import { useState, lazy, Suspense, useMemo } from 'react';
 import { senateBlocs, deputyBlocs, SENATE_TOTAL, DEPUTY_TOTAL } from '../../data/congressBlocs';
 import { POWER_BY_FUEL, POWER_TOTAL_GW, POWER_NUCLEAR_PLANTS } from '../../data/energy/powerConstants';
 import sipaRaw from '../../data/sipa_employment.json';
+import sipaPubPrivRaw from '../../data/sipa_pub_priv.json';
+import biepRaw from '../../data/biep_breakdown.json';
 import exportsCatRaw from '../../data/exports_by_category.json';
 
 const CabinetPanel = lazy(() => import('../panels/CabinetPanel'));
@@ -127,12 +129,13 @@ function NationalGridCard() {
   );
 }
 
-// Pre-compute national aggregates (static, runs once at module load)
-const NAT_EMP = (() => {
-  let priv = 0, pub = 0;
-  for (const p of sipaRaw.provinces) { priv += p.private || 0; pub += p.public || 0; }
-  return { total: priv + pub, private: priv, public: pub };
-})();
+// Pre-compute national aggregates from sipa_pub_priv.json (real per-depto, no derivation)
+const NAT_EMP = {
+  total: sipaPubPrivRaw.national.total,
+  private: sipaPubPrivRaw.national.private,
+  public: sipaPubPrivRaw.national.public,
+  vintage: sipaPubPrivRaw.vintage,
+};
 
 const NAT_EXPORTS = (() => {
   const latest = Math.max(...exportsCatRaw.map(r => r.year));
@@ -179,7 +182,50 @@ function NationalEmploymentCard() {
           </div>
         ))}
       </div>
-      <p className="text-[9px] text-[#003049]/40 mt-1.5">Source: SIPA/CEP XXI · registered workers</p>
+      <p className="text-[9px] text-[#003049]/40 mt-1.5">Source: SIPA/CEP XXI Nov-23 · registered jobs (puestos)</p>
+    </div>
+  );
+}
+
+const LEVEL_COLORS = { national: '#7d3c98', provincial: '#003049', municipal: '#669BBC' };
+
+function PublicSectorCard() {
+  return (
+    <div className="rounded-xl border p-3" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
+      <div className="flex items-baseline justify-between mb-2">
+        <p className="text-[11px] uppercase tracking-widest font-bold text-[#003049]/60">Public sector · by level</p>
+        <p className="text-[18px] font-extrabold font-mono text-[#003049]">{fmtK(biepRaw.total)}</p>
+      </div>
+      <div className="flex h-[10px] w-full rounded overflow-hidden mb-2">
+        {biepRaw.levels.map(l => (
+          <div key={l.key} style={{ width: `${l.pct}%`, background: LEVEL_COLORS[l.key] }} />
+        ))}
+      </div>
+      <div className="space-y-1">
+        {biepRaw.levels.map(l => (
+          <div key={l.key}>
+            <div className="flex items-center gap-2 text-[12px]">
+              <span className="w-2 h-2 rounded-full shrink-0" style={{ background: LEVEL_COLORS[l.key] }} />
+              <span className="text-[#003049] flex-1">
+                {l.key === 'national' ? 'National' : l.key === 'provincial' ? 'Provincial (24)' : 'Municipal'}
+              </span>
+              <span className="font-mono text-[#003049]">{fmtK(l.value)}</span>
+              <span className="text-[#003049]/40 font-mono w-[34px] text-right">{l.pct.toFixed(0)}%</span>
+            </div>
+            {l.detail && l.detail.length > 1 && (
+              <div className="ml-4 mt-0.5 mb-1 space-y-[1px]">
+                {l.detail.map(d => (
+                  <div key={d.label} className="flex items-baseline gap-1.5 text-[10px] text-[#003049]/55">
+                    <span className="flex-1 leading-tight">↳ {d.label}</span>
+                    <span className="font-mono">{fmtK(d.value)}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+      <p className="text-[9px] text-[#003049]/40 mt-1.5">Source: BIEP / Sec. Gestión Pública · mid-2023 · personas (incluye empresas estatales y militar)</p>
     </div>
   );
 }
@@ -292,7 +338,10 @@ export default function MobileNationTab() {
           )}
 
           {view === 'economy' && ecoTab === 'employment' && (
-            <NationalEmploymentCard />
+            <div className="space-y-3">
+              <NationalEmploymentCard />
+              <PublicSectorCard />
+            </div>
           )}
 
           {view === 'economy' && ecoTab === 'exports' && (

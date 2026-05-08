@@ -1,0 +1,44 @@
+{
+  "source": "INAP — \"Mitos del empleo público\" (8 jun 2023) · BIEP / Sec. Gestión y Empleo Público",
+  "sourceUrl": "https://www.argentina.gob.ar/jefatura/gestion-y-empleo-publico/empleo-publico/biep",
+  "vintage": "mid-2023",
+  "scope": "Trabajadores en el sector público — Base Integrada de Empleo Público y Salarios (BIEP). Cuenta personas/cargos, no puestos.",
+  "total": 3389900,
+  "levels": [
+    {
+      "key": "national",
+      "label": "Nacional",
+      "value": 711000,
+      "pct": 21.0,
+      "detail": [
+        { "label": "Adm. Pública Nacional civil", "value": 193346 },
+        { "label": "FFAA + FFSS", "value": 201857 },
+        { "label": "Univ. nacionales + empresas públicas + bancos + otros organismos", "value": 315797 }
+      ]
+    },
+    {
+      "key": "provincial",
+      "label": "Provincial",
+      "value": 2237900,
+      "pct": 66.0,
+      "detail": [
+        { "label": "AC + Organismos Descentralizados (DNAP, 24 provincias)", "value": 2237900 }
+      ]
+    },
+    {
+      "key": "municipal",
+      "label": "Municipal",
+      "value": 441000,
+      "pct": 13.0,
+      "detail": [
+        { "label": "Empleados municipales (todos los municipios)", "value": 441000 }
+      ]
+    }
+  ],
+  "sipaContext": {
+    "label": "Comparación con SIPA",
+    "sipaTotal": 3966336,
+    "sipaVintage": "Nov 2023",
+    "note": "SIPA cuenta puestos asalariados registrados (un trabajador con doble cargo cuenta 2 veces) e incluye empresas públicas y monotributo público que BIEP puede no captar. SIPA y BIEP no son comparables 1:1."
+  }
+}
