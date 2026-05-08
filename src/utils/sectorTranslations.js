@@ -58,6 +58,12 @@ const SECTOR_EN = {
   '96': 'Other personal services',
 };
 
-export function translateSector(clae2, spanishName) {
+export function translateSector(clae2, spanishName, lang) {
+  // If caller passes a BCP47 code (e.g. 'en', 'es', 'es-AR'), respect it; otherwise fall back
+  // to the <html lang> attribute, which i18next keeps in sync with the active language.
+  const active = (lang || (typeof document !== 'undefined' ? document.documentElement.lang : 'en') || 'en')
+    .toLowerCase()
+    .slice(0, 2);
+  if (active === 'es') return spanishName;
   return SECTOR_EN[clae2] || spanishName;
 }
