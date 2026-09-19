@@ -2,6 +2,7 @@ import { memo } from 'react';
 import { politicalContext } from '../../data/politicalContext';
 import { gabinetesProvinciales } from '../../data/gabinetesProvinciales';
 import { matchProvince, getAlignColor } from '../shared/helpers';
+import EditorialMark from '../shared/EditorialMark';
 
 function ProvincialCabinetPanelRaw({ selectedProvince, governors }) {
   const gov = matchProvince(governors || [], selectedProvince);
@@ -16,7 +17,11 @@ function ProvincialCabinetPanelRaw({ selectedProvince, governors }) {
     infoCards.push({ role: 'Governor', name: gov.gobernador, detail: gov.partido, tier: 'exec', color: alignColor });
     infoCards.push({ role: 'Vice', name: gov.vicegobernador || '—', detail: gov.coalicion || '', tier: 'exec', color: alignColor });
     infoCards.push({ role: 'Term', name: `${startY} → ${endY}`, detail: `Next: ${gov.proxima_eleccion}`, tier: 'info' });
-    infoCards.push({ role: 'Alignment', name: gov.alineamiento_nacion || '—', detail: '', tier: 'info' });
+    // Alignment is a call this tool makes, not a published figure — say so.
+    infoCards.push({
+      role: 'Alignment', name: gov.alineamiento_nacion || '—', detail: '', tier: 'info',
+      editorial: true, confidence: pol?.confianza,
+    });
   }
 
   const MINING_STANCE_EN = {
@@ -31,6 +36,7 @@ function ProvincialCabinetPanelRaw({ selectedProvince, governors }) {
     'Neuquén': 'Focus on Vaca Muerta hydrocarbons; metallic mining secondary; uranium in exploration',
   };
   const miningStanceRaw = pol?.posicion_mineria || null;
+  const miningConfidence = pol?.confianza;
   const miningStance = miningStanceRaw ? (MINING_STANCE_EN[selectedProvince] || miningStanceRaw) : null;
 
   const ministers = (gabData?.gabinete || []).filter(m => m.tier !== 'exec');
@@ -56,6 +62,9 @@ function ProvincialCabinetPanelRaw({ selectedProvince, governors }) {
           style={{ background: getBg(p.tier), borderColor: getBorder(p.tier) }}>
           <p className="text-[10px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
           <p className="text-[13px] font-bold text-[#003049] leading-snug">{p.name}</p>
+          {p.editorial && (
+            <p className="mt-0.5"><EditorialMark confidence={p.confidence} /></p>
+          )}
           {p.detail && <p className="text-[11px] leading-tight" style={{ color: p.color || '#669BBC' }}>{p.detail}</p>}
         </div>
       ))}
@@ -76,7 +85,9 @@ function ProvincialCabinetPanelRaw({ selectedProvince, governors }) {
       {miningStance && (
         <div className="w-full rounded px-3 py-2 border mt-1 text-center"
           style={{ background: 'rgba(243,156,18,0.07)', borderColor: 'rgba(243,156,18,0.25)' }}>
-          <p className="text-[10px] uppercase tracking-widest text-[#003049]/50 leading-tight">Mining Stance</p>
+          <p className="text-[10px] uppercase tracking-widest text-[#003049]/50 leading-tight inline-flex items-center gap-1.5">
+            Mining Stance <EditorialMark confidence={miningConfidence} />
+          </p>
           <p className="text-[13px] font-semibold text-[#003049] leading-snug">{miningStance}</p>
         </div>
       )}

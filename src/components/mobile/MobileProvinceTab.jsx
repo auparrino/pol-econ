@@ -5,6 +5,7 @@ import { officialSenators } from '../../data/officialSenators';
 import { officialDeputies } from '../../data/officialDeputies';
 import { politicalContext } from '../../data/politicalContext';
 import votacionesRaw from '../../data/votaciones.json';
+import { records } from '../../utils/dataset';
 import { FiscalTriptych } from '../shared/FiscalTriptych';
 import { RigiPanel } from '../shared/RigiPanel';
 import cammesaByRegion from '../../data/energy/cammesa-por-region.json';
@@ -19,7 +20,7 @@ import ProductionSection from '../economy/ProductionSection';
 const ProvincialCabinetPanel = lazy(() => import('../panels/ProvincialCabinetPanel'));
 const ProvinceNews = lazy(() => import('../ProvinceNews'));
 
-const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
+const votacionesList = records(votacionesRaw);
 const votacionesByLastName = (() => {
   const m = {};
   for (const l of votacionesList) {

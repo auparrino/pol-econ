@@ -9,6 +9,7 @@ import alignmentScores from '../data/alignmentScores.json';
 import EconomySummary from './economy/EconomySummary';
 import { FiscalTriptych } from './shared/FiscalTriptych';
 import { RigiPanel } from './shared/RigiPanel';
+import EditorialMark from './shared/EditorialMark';
 // ProvinceNews moved to left sidebar (BottomBar tabs)
 
 
@@ -609,7 +610,7 @@ export default function ProvincePanel({ province, governors, onClose, width = 32
                   <span className="text-[16px] font-bold text-[#003049]">{gov.gobernador}</span>
                   <p className="text-[14px] text-steel mt-0.5">{gov.partido}</p>
                 </div>
-                <AlignmentBadge alignment={gov.alineamiento_nacion} />
+                <span className="inline-flex items-center gap-1.5"><AlignmentBadge alignment={gov.alineamiento_nacion} /><EditorialMark /></span>
               </div>
             </div>
 

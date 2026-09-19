@@ -13,6 +13,7 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { records } from '../src/utils/dataset.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (rel) => JSON.parse(readFileSync(path.join(ROOT, rel), 'utf8'));
@@ -492,7 +493,7 @@ group('congress');
 }
 {
   const vot = read('src/data/votaciones.json');
-  const legs = Array.isArray(vot) ? vot : Object.values(vot);
+  const legs = records(vot);
   const names = legs.map(l => l.n);
   check('votaciones — no duplicated legislator names',
     new Set(names).size === names.length,
@@ -912,6 +913,38 @@ group('provenance');
   }
 }
 
+/* ── 7i. measured vs editorial ──────────────────────────────────── */
+
+group('editorial');
+{
+  // Every field in the political datasets is either a measurement (sourced,
+  // dated, re-derivable) or this tool's own judgement. The registry declares
+  // which; this check makes sure a new field cannot appear unclassified, which
+  // is how an opinion ends up rendered like an INDEC figure.
+  const { EDITORIAL_FIELDS, MEASURED_FIELDS } = await import('../src/data/editorialFields.js');
+  const gov = (await import('../src/data/governors.js')).governors;
+  const pol = (await import('../src/data/politicalContext.js')).politicalContext;
+
+  const audit = (label, rows, file) => {
+    const declared = new Set([...(EDITORIAL_FIELDS[file] || []), ...(MEASURED_FIELDS[file] || [])]);
+    const present = [...new Set(rows.flatMap(r => Object.keys(r)))];
+    const undeclared = present.filter(f => !declared.has(f));
+    check(`${label} — every field is classified as measured or editorial`,
+      undeclared.length === 0, undeclared.join(', '));
+  };
+  audit('governors', gov, 'governors.js');
+  audit('politicalContext', pol, 'politicalContext.js');
+
+  // The self-assessment exists for every record that carries judgements.
+  const noConfidence = pol.filter(p => !p.confianza).map(p => p.provincia);
+  check('politicalContext — every record declares its confidence',
+    noConfidence.length === 0, noConfidence.join(', '));
+
+  const editorialCount = Object.values(EDITORIAL_FIELDS).flat().length;
+  console.log(`  note  ${editorialCount} fields are declared editorial judgements, ` +
+    `rendered with an "our call" marker rather than as measurements`);
+}
+
 /* ── 8. population sanity ───────────────────────────────────────── */
 
 group('population');
@@ -983,16 +1016,68 @@ group('orphan datasets');
   };
   walk(path.join(ROOT, 'src'));
   const blob = srcFiles.join('\n');
+  // Sidecars describe another file rather than being consumed themselves, and
+  // scripts/ counts as a consumer — editorialFields.js is read by this validator.
+  // add-provenance.mjs names every dataset by construction, so counting it as a
+  // consumer would mark all of them used and the check would never fire again.
+  const scriptBlob = readdirSync(path.join(ROOT, 'scripts'))
+    .filter(f => /\.(mjs|js)$/.test(f) && f !== 'add-provenance.mjs')
+    .map(f => readFileSync(path.join(ROOT, 'scripts', f), 'utf8'))
+    .join('\n');
   const orphans = readdirSync(path.join(ROOT, 'src/data'))
-    .filter(f => /\.(json|js)$/.test(f))
+    .filter(f => /\.(json|js)$/.test(f) && !f.endsWith('.meta.json'))
     .map(f => f.replace(/\.(json|js)$/, ''))
-    .filter(stem => !blob.includes(stem));
+    .filter(stem => !blob.includes(stem) && !scriptBlob.includes(stem));
   // Informational: a dataset nothing imports is dead weight in the repo, but it
   // is not a correctness failure, so it warns rather than fails.
   if (orphans.length) {
     console.log(`  warn  ${orphans.length} dataset(s) built but never imported: ${orphans.join(', ')}`);
   } else {
     check('every dataset under src/data is imported somewhere', true);
+  }
+}
+
+/* ── 10. the pipeline manifest ──────────────────────────────────── */
+
+group('pipelines');
+{
+  // scripts/pipelines.json is the only record of which script produces which
+  // dataset. It is useful exactly as long as it is complete, and nothing stops
+  // someone adding a build script without registering it — so check here.
+  const { pipelines } = JSON.parse(readFileSync(path.join(ROOT, 'scripts/pipelines.json'), 'utf8'));
+  const entries = Object.entries(pipelines);
+
+  // Every registered script exists.
+  const missingScripts = entries
+    .map(([name, p]) => [name, p.script.replace(/^(node|python3?) /, '').split(' ')[0]])
+    .filter(([, f]) => !existsSync(path.join(ROOT, f)));
+  check('every pipeline points at a script that exists', missingScripts.length === 0,
+    missingScripts.map(([n, f]) => `${n} -> ${f}`).join(', '));
+
+  // Every script that writes into src/data is registered.
+  const registered = new Set(entries.flatMap(([, p]) =>
+    [p.script, p.postprocess].filter(Boolean).map(c => c.replace(/^(node|python3?) /, '').split(' ')[0])));
+  const writers = readdirSync(path.join(ROOT, 'scripts'))
+    .filter(f => /\.(mjs|py)$/.test(f))
+    .filter(f => /src[/\\]data|OUT_FILE|OUT_PATH/.test(readFileSync(path.join(ROOT, 'scripts', f), 'utf8')))
+    .map(f => `scripts/${f}`)
+    .filter(f => !registered.has(f) && !f.endsWith('validate-data.mjs'));
+  check('every script that writes a dataset is in the manifest', writers.length === 0,
+    writers.join(', '));
+
+  // Every declared output is a path that a build could plausibly have written.
+  const badOutputs = entries.flatMap(([name, p]) =>
+    (p.outputs || []).filter(o => !o.includes('*') && !o.endsWith('/') && !existsSync(path.join(ROOT, o)))
+      .map(o => `${name} -> ${o}`));
+  check('every declared output exists on disk', badOutputs.length === 0, badOutputs.join(', '));
+
+  // A pipeline whose inputs are absent cannot be re-run. Not a failure — the
+  // raw files are deliberately not committed — but it is the reason several
+  // findings sit OPEN, so name them rather than let it be a surprise.
+  const blocked = entries.filter(([, p]) => (p.inputs || []).some(f => !existsSync(path.join(ROOT, f))));
+  if (blocked.length) {
+    console.log(`  note  ${blocked.length} pipeline(s) cannot be re-run without a missing raw input: ` +
+      blocked.map(([n]) => n).join(', '));
   }
 }
 

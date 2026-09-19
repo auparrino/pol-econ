@@ -1,6 +1,8 @@
-import { useState, lazy, Suspense } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import ProvinceNews from './ProvinceNews';
+import ErrorBoundary from './ErrorBoundary';
 import { useEconomyData } from '../hooks/useEconomyData';
+import { tabFromUrl, syncUrl } from '../utils/deepLink';
 
 import { FiscalTriptych } from './shared/FiscalTriptych';
 
@@ -73,12 +75,16 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
     ? BASE_TABS
     : BASE_TABS.filter(t => !t.needsProvince);
 
-  const [storedTab, setStoredTab] = useState('congress');
+  const [storedTab, setStoredTab] = useState(
+    () => tabFromUrl(BASE_TABS.map(t => t.id)) ?? 'congress');
 
   // When a province is selected, jump to Overview automatically. Adjusting
   // state during render rather than in an effect avoids a frame showing the
   // previous tab.
-  const [lastProvince, setLastProvince] = useState(selectedProvince);
+  // A ?tab= in the link is the reader's explicit choice, so it survives the
+  // initial province selection that would otherwise jump them to Overview.
+  const [lastProvince, setLastProvince] = useState(
+    tabFromUrl(BASE_TABS.map(t => t.id)) ? selectedProvince : null);
   if (selectedProvince !== lastProvince) {
     setLastProvince(selectedProvince);
     if (selectedProvince) setStoredTab('overview');
@@ -88,6 +94,9 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
   // to congress. Derived, so there is no transient render on an invalid tab.
   const activeTab = tabs.some(t => t.id === storedTab) ? storedTab : 'congress';
   const setActiveTab = setStoredTab;
+
+  // The province half of the link is owned by App; only touch ?tab= here.
+  useEffect(() => { syncUrl({ tab: activeTab }); }, [activeTab]);
 
   return (
     <aside
@@ -166,6 +175,16 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
 
       {/* Panel content */}
       <div id={`panel-${activeTab}`} role="tabpanel" className="flex-1 overflow-y-auto overflow-x-hidden min-h-0" style={{ padding: '12px 16px' }}>
+        {/*
+          One boundary per panel, keyed by tab.
+
+          The only boundary used to be around this whole component, so a crash
+          inside any panel unmounted the tab strip with it: the reader lost the
+          navigation and had no way back except reloading. Keying by `activeTab`
+          also resets the boundary on a tab change, so a panel that threw once
+          does not leave "Something went wrong" stuck over its neighbours.
+        */}
+        <ErrorBoundary key={activeTab}>
         <Suspense fallback={<PanelFallback />}>
           {activeTab === 'overview' && <OverviewPanel selectedProvince={selectedProvince} governors={governors} onClose={onClearProvince} />}
           {activeTab === 'congress' && (selectedProvince
@@ -188,6 +207,7 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
                 </div>
           )}
         </Suspense>
+        </ErrorBoundary>
       </div>
     </aside>
   );

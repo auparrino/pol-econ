@@ -13,6 +13,8 @@ import SourceInfo from '../shared/SourceInfo';
 import DataAge from '../shared/DataAge';
 import sipaPubPriv from '../../data/sipa_pub_priv.json';
 import dnapEmpleo from '../../data/dnap_empleo_provincial.json';
+import censoEmpleo from '../../data/censo2022_empleo_provincial.json';
+import censoCategoria from '../../data/censo2022_categoria_ocupacional.json';
 import { sociodemographic, EPH_UNEMPLOYMENT_NATIONAL, EPH_VINTAGE_SHORT } from '../../data/sociodemographic';
 
 import { fold as normalize, findByProvince } from '../../utils/provinces';
@@ -51,6 +53,89 @@ function SnapshotStrip({ provinceName, t }) {
       <span className={`text-[10px] font-mono ${delta <= 0 ? 'text-[#17a589]' : 'text-[#C1121F]/70'}`}>
         {delta > 0 ? '+' : ''}{delta.toFixed(1)} · #{rank}/{ranked.length} · {EPH_VINTAGE_SHORT}
       </span>
+    </div>
+  );
+}
+
+/* ── Census 2022: province-level rates (EPH only covers agglomerates) ── */
+
+function CensusBlock({ provinceName, t }) {
+  const rec = useMemo(
+    () => findByProvince(censoEmpleo.provinces, provinceName, 'province'),
+    [provinceName],
+  );
+  const cat = useMemo(
+    () => findByProvince(censoCategoria.provinces, provinceName, 'province'),
+    [provinceName],
+  );
+  if (!rec) return null;
+
+  const nat = censoEmpleo.national;
+  const rates = [
+    { key: 'activityRate',     value: rec.activityRate,     natl: nat.activityRate,     formula: t('employment.fActivity') },
+    { key: 'employmentRate',   value: rec.employmentRate,   natl: nat.employmentRate,   formula: t('employment.fEmployment') },
+    { key: 'unemploymentRate', value: rec.unemploymentRate, natl: nat.unemploymentRate, formula: t('employment.fUnemployment') },
+  ];
+
+  const CATEGORY_KEYS = [
+    ['empleadaObrera',     'catEmployees',   '#0f766e'],
+    ['cuentaPropia',       'catSelfEmployed', '#669BBC'],
+    ['patron',             'catEmployer',    '#7d3c98'],
+    ['servicioDomestico',  'catDomestic',    '#d4a800'],
+    ['trabajadorFamiliar', 'catFamily',      '#17a589'],
+    ['ignorado',           'catUnknown',     '#a8a29e'],
+  ];
+
+  return (
+    <div className="bg-[#003049]/6 rounded-lg p-2.5 border border-[#003049]/10">
+      <div className="flex items-start justify-between mb-1.5">
+        <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider inline-flex items-center gap-1">
+          {t('employment.laborMarket')}
+          <SourceInfo src={['censo2022Empleo']} size={10} />
+        </p>
+        <DataAge meta={censoEmpleo._meta} size={9} />
+      </div>
+
+      <div className="grid grid-cols-3 gap-2">
+        {rates.map(r => (
+          <div key={r.key}>
+            <p className="text-[10px] text-[#003049]/60 uppercase tracking-wider">{t(`employment.${r.key}`)}</p>
+            <p className="text-[16px] font-bold text-[#003049] font-mono leading-tight">
+              {r.value.toFixed(1)}<span className="text-[10px] text-[#003049]/55">%</span>
+            </p>
+            <p className="text-[9px] text-[#003049]/40" title={r.formula}>
+              {t('employment.natlShort')} {r.natl.toFixed(1)}%
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {cat && (
+        <div className="mt-2 pt-2 border-t border-[#003049]/10">
+          <div className="flex items-baseline justify-between mb-1">
+            <p className="text-[10px] text-[#003049]/55 uppercase tracking-wider">{t('employment.compositionTitle')}</p>
+            <span className="text-[10px] font-mono text-[#003049]/50">
+              {fmtNum(cat.ocupados)} {t('employment.totalOccupied').toLowerCase()}
+            </span>
+          </div>
+          <div className="flex h-[8px] rounded-sm overflow-hidden mb-1.5" style={{ background: 'rgba(0,48,73,0.10)' }}>
+            {CATEGORY_KEYS.map(([field, , color]) => (
+              <div key={field} style={{ width: `${cat.shares[field]}%`, background: color }}
+                   title={`${t(`employment.${CATEGORY_KEYS.find(c => c[0] === field)[1]}`)}: ${cat.shares[field]}%`} />
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-x-2.5 gap-y-0.5">
+            {CATEGORY_KEYS.map(([field, labelKey, color]) => (
+              <span key={field} className="text-[10px] text-[#003049]/60 inline-flex items-center gap-1">
+                <span className="w-1.5 h-1.5 rounded-full" style={{ background: color }} />
+                {t(`employment.${labelKey}`)} {cat.shares[field]}%
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <p className="text-[9px] text-[#003049]/40 leading-snug mt-1.5">{t('employment.censoNote')}</p>
     </div>
   );
 }
@@ -304,6 +389,7 @@ export default function EmploymentSection({ sipa, provinceName }) {
   return (
     <div className="space-y-2.5">
       <SnapshotStrip provinceName={name} t={t} />
+      <CensusBlock provinceName={name} t={t} />
       <PublicCompositeBlock provinceName={name} t={t} />
       <EvolutionBlock provinceName={name} t={t} />
       {sipa && <PrivateSectorsBlock sipa={sipa} t={t} />}

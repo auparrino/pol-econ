@@ -671,5 +671,11 @@
   },
   "bloc": {
     "seats": "seats"
+  },
+  "editorial": {
+    "badge": "our call",
+    "confidence": "confidence",
+    "tooltip": "This is a judgement made by this tool, not a figure published by any official source. Measurements carry a source and a period; this does not.",
+    "sectionNote": "Fields marked as our call are editorial judgements, not measurements. Nobody publishes them — they are decided here."
   }
 }

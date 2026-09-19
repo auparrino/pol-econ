@@ -7,6 +7,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 import LoadingSpinner from './components/LoadingSpinner';
 import { governors } from './data/governors';
 import useCongressData from './hooks/useCongressData';
+import { provinceFromUrl, syncUrl } from './utils/deepLink';
 
 const RightOverlayPanel = lazy(() => import('./components/RightOverlayPanel'));
 const BottomBar = lazy(() => import('./components/BottomBar'));
@@ -31,9 +32,13 @@ export default function App() {
   const [choroplethMode, setChoroplethMode] = useState('region');
   const [overlays, setOverlays] = useState({ mining: false });
   const [energyLayers, setEnergyLayers] = useState([]);
-  const [selectedProvince, setSelectedProvince] = useState(null);
+  const [selectedProvince, setSelectedProvince] = useState(provinceFromUrl);
   const { congress } = useCongressData();
   const isMobile = useIsMobile();
+
+  // Keep ?province= in step with the selection so the view stays linkable.
+  // The tab half of the link is owned by BottomBar, which holds that state.
+  useEffect(() => { syncUrl({ province: selectedProvince }); }, [selectedProvince]);
 
   // Right panel always reserves space — it carries the overlay summary
   // (when nothing is active) or the detail (when something is on).

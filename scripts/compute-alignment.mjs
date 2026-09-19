@@ -14,6 +14,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { records } from '../src/utils/dataset.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(__filename), '..');
@@ -52,7 +53,7 @@ const votacionesRaw = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/votac
 const positions = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/executivePositions.json'), 'utf8'));
 
 // votaciones.json shape: { "0": {n, b, p, c, v: {vote_id: "A"|"N"|"ABS"|undefined}}, "1": {...} }
-const legList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
+const legList = records(votacionesRaw);
 
 const execByVote = Object.fromEntries(positions.positions.map(p => [p.vote_id, p.executive_position]));
 const listedVotes = Object.keys(execByVote);

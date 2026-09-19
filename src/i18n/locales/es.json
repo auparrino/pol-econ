@@ -671,5 +671,11 @@
   },
   "bloc": {
     "seats": "bancas"
+  },
+  "editorial": {
+    "badge": "criterio propio",
+    "confidence": "confianza",
+    "tooltip": "Es una valoración de esta herramienta, no un dato publicado por ninguna fuente oficial. Las mediciones llevan su fuente y su período; esto no.",
+    "sectionNote": "Los campos marcados como criterio propio son valoraciones editoriales, no mediciones. Nadie los publica: se deciden acá."
   }
 }

@@ -4,6 +4,7 @@
 // other deep sections live in their own dedicated BottomBar tabs.
 
 import { sociodemographic } from '../../data/sociodemographic';
+import EditorialMark from '../shared/EditorialMark';
 
 const ALIGNMENT_LABELS = {
   oficialismo:      'Ruling Coalition',
@@ -175,7 +176,7 @@ export default function OverviewPanel({ selectedProvince, governors, onClose }) 
             <div className="text-[14px] font-bold text-[#003049] truncate">{gov.gobernador}</div>
             <div className="text-[12px] text-[#003049]/60 truncate">{gov.partido}</div>
           </div>
-          <AlignmentBadge alignment={gov.alineamiento_nacion} />
+          <span className="inline-flex items-center gap-1.5"><AlignmentBadge alignment={gov.alineamiento_nacion} /><EditorialMark /></span>
         </div>
       </div>
 

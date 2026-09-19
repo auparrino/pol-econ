@@ -2,11 +2,12 @@ import { memo } from 'react';
 import { officialSenators } from '../../data/officialSenators';
 import { officialDeputies } from '../../data/officialDeputies';
 import votacionesRaw from '../../data/votaciones.json';
+import { records } from '../../utils/dataset';
 import VoteDots from '../shared/VoteDots';
 import { blocColor } from '../shared/helpers';
 
 // Convert votaciones.json (object or array) to array
-const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
+const votacionesList = records(votacionesRaw);
 
 // Topics per chamber (must match scrape-votes.mjs output)
 const OFICIALISMO_BLOCS = ['la libertad avanza'];

@@ -18,7 +18,7 @@
 //
 // Run: node scripts/add-provenance.mjs
 
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -38,7 +38,6 @@ const PROVENANCE = {
   'executivePositions.json':              { period: '2025-08/2026-02',  source: 'congresoSenado', note: 'Posición pública del Ejecutivo en cada votación; curaduría manual.' },
   'exports_by_category.json':             { period: '1993/2024',        source: 'indecExports' },
   'exports_by_destination.json':          { period: '1993/2024',        source: 'indecExports' },
-  'fiscalSeries.json':                    { period: '2005/2024',        source: 'meconDnap' },
   'livestock.json':                       { period: '2022/2024',        source: 'senasaSigsa',    note: 'Bovinos, porcinos y equinos 2024; ovinos y caprinos, caracterización marzo 2022.' },
   'oilgas_production.json':               { period: '2025',             source: 'secEnergiaOilGas' },
   'rigiProjects.json':                    { period: '2026-04',          source: 'rigiOfficial',   note: 'Curaduría manual; refleja el estado de los expedientes a esa fecha.' },
@@ -91,7 +90,12 @@ for (const [rel, prov] of Object.entries(PROVENANCE)) {
   const encode = (o) => (minified ? JSON.stringify(o) : JSON.stringify(o, null, 2) + '\n');
 
   if (Array.isArray(parsed)) {
-    writeFileSync(file.replace(/\.json$/, '.meta.json'), JSON.stringify(meta, null, 2) + '\n');
+    // The sidecar has no _meta key of its own to test, so compare contents:
+    // otherwise every run reports these three as freshly written.
+    const sidecar = file.replace(/\.json$/, '.meta.json');
+    const body = JSON.stringify(meta, null, 2) + '\n';
+    if (existsSync(sidecar) && readFileSync(sidecar, 'utf8') === body) continue;
+    writeFileSync(sidecar, body);
   } else {
     writeFileSync(file, encode({ _meta: meta, ...parsed }));
   }
