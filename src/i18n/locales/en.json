@@ -402,7 +402,11 @@
     "footer": "EPH Q3-25 (INDEC, urban). SIPA per-departamento Nov-23 (CEP-XXI, formal jobs by residence — discontinued). DNAP (provincial-cabinet posts, AC + decentralized + special accounts). SIPA and DNAP use different methodologies (jobs vs filled posts) and overlap unevenly — they're shown as two separate facts, not added together.",
     "byResidence": "by residence",
     "byEstablishment": "by workplace",
-    "universeWarning": "The two SIPA figures on this tab measure different universes: the public/private split is by worker residence, the sectors by workplace location. They agree nationally but can differ sharply by province (CABA +92%, Buenos Aires −24%)."
+    "universeWarning": "The two SIPA figures on this tab measure different universes: the public/private split is by worker residence, the sectors by workplace location. They agree nationally but can differ sharply by province (CABA +92%, Buenos Aires −24%).",
+    "scopeSipaPublic": "all 3 levels of government · by residence",
+    "scopeDnap": "provincial government only · by jurisdiction",
+    "noSubtractNote": "These do not subtract. SIPA attributes a post to the province the worker lives in and DNAP to the one that employs them, so someone living in one province and employed by another counts in both. They are also different periods ({{sipaVintage}} and {{dnapYear}}).",
+    "dnapExceedsSipa": "Here DNAP exceeds SIPA-public, which happens in no other province (the rest run 50–90%). It is an unresolved anomaly, not a figure to read into."
   },
   "exportsSec": {
     "desc": "Provincial exports in USD millions. PP: primary products, MOA: agricultural manufactures, MOI: industrial manufactures, F&E: fuels & energy. Source: INDEC.",

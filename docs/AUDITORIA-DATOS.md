@@ -454,6 +454,35 @@ se cumpla el orden Censo < BIEP < SIPA, y que BIEP-provincial y DNAP no se
 separen más de 10 %. De paso, `censo_pub_priv.json` deja de ser un dataset
 huérfano: ahora ancla el piso de la escalera.
 
+### 7c.1 Por qué la vista provincial no lleva la misma escalera
+
+La pestaña provincial muestra SIPA-público y los cargos provinciales de DNAP
+uno al lado del otro. Copiar ahí el bloque de la vista nacional habría sido un
+error, porque las dos cifras se diferencian en **dos ejes a la vez**:
+
+| eje | SIPA-público | DNAP | ¿contiene? |
+|---|---|---|---|
+| nivel de gobierno | nacional + provincial + municipal | solo provincial | sí |
+| atribución a la provincia | residencia del trabajador | jurisdicción empleadora | **no** |
+
+El segundo eje rompe la contención: un residente bonaerense empleado por el
+gobierno de CABA suma en el SIPA de Buenos Aires y en el DNAP de CABA. Por eso
+no se restan, y por eso una escalera —que afirma anidamiento— habría dicho algo
+falso. El cociente DNAP/SIPA-público lo confirma: va de **50 % a 150 %** con
+mediana 65 %, una dispersión incompatible con una relación de subconjunto.
+
+Tampoco se muestra ese cociente, justamente porque invitaría a la resta que la
+nota desaconseja.
+
+Lo que sí se agregó: cada cifra lleva su alcance escrito al lado (*3 niveles de
+gobierno · por residencia* y *solo gobierno provincial · por jurisdicción*), y
+debajo una línea que explica por qué no se combinan.
+
+**Santa Cruz** es la única provincia donde DNAP supera a SIPA-público (150 %,
+contra 50–90 % del resto). Ahí la pestaña muestra además un aviso: es una
+anomalía sin resolver, no un dato para interpretar. Está seguida como `OPEN` en
+el validador.
+
 ## 8. Red de regresión: `npm run validate`
 
 `scripts/validate-data.mjs` codifica **87 invariantes** sobre los datasets.

@@ -117,10 +117,13 @@ function PublicCompositeBlock({ provinceName, t }) {
         </div>
       </div>
 
-      <div className="flex items-baseline justify-between text-[10px] text-[#003049]/55 pb-2 border-b border-[#003049]/10">
+      <div className="flex items-baseline justify-between text-[10px] text-[#003049]/55">
         <span>{t('employment.formalTotal')}</span>
         <span className="font-mono">{fmtNum(total)}</span>
       </div>
+      <p className="text-[9px] text-[#003049]/40 leading-snug pb-2 border-b border-[#003049]/10">
+        {t('employment.scopeSipaPublic')}
+      </p>
 
       {/* DNAP as a separate fact, no math relationship implied */}
       {dnapRec && (
@@ -150,6 +153,25 @@ function PublicCompositeBlock({ provinceName, t }) {
               </p>
             </div>
           </div>
+
+          <p className="text-[9px] text-[#003049]/40 leading-snug mt-1">
+            {t('employment.scopeDnap')}
+          </p>
+
+          {/* The two figures above overlap on one axis (DNAP's level of government
+              sits inside SIPA's) and cross on another (residence vs employing
+              jurisdiction), so they neither nest nor subtract. Saying so is the
+              whole point of putting them next to each other. */}
+          <p className="text-[9px] text-[#003049]/45 leading-snug mt-1.5 pt-1.5 border-t border-[#003049]/10">
+            {t('employment.noSubtractNote', { sipaVintage: sipaPubPriv.vintage, dnapYear: dnapEmpleo.year })}
+          </p>
+
+          {dnapRec.employees > pub && (
+            <p className="text-[9px] leading-snug mt-1 px-1.5 py-1 rounded"
+               style={{ background: 'rgba(193,18,31,0.06)', border: '1px solid rgba(193,18,31,0.20)', color: '#8a1017' }}>
+              {t('employment.dnapExceedsSipa')}
+            </p>
+          )}
         </div>
       )}
     </div>

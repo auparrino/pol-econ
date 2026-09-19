@@ -402,7 +402,11 @@
     "footer": "EPH Q3-25 (INDEC, urbano). SIPA per-departamento Nov-23 (CEP-XXI, puestos formales por residencia — descontinuado). DNAP (cargos provinciales en AC + descentralizados + cuentas especiales). SIPA y DNAP usan metodologías distintas (puestos vs cargos) y se solapan de modo desigual — se muestran como hechos separados, no se suman.",
     "byResidence": "por residencia",
     "byEstablishment": "por establecimiento",
-    "universeWarning": "Las dos cifras de SIPA de esta pestaña miden universos distintos: el split público/privado va por residencia del trabajador y los sectores por ubicación del establecimiento. A nivel nacional coinciden; por provincia pueden diferir mucho (CABA +92%, Buenos Aires −24%)."
+    "universeWarning": "Las dos cifras de SIPA de esta pestaña miden universos distintos: el split público/privado va por residencia del trabajador y los sectores por ubicación del establecimiento. A nivel nacional coinciden; por provincia pueden diferir mucho (CABA +92%, Buenos Aires −24%).",
+    "scopeSipaPublic": "3 niveles de gobierno · por residencia",
+    "scopeDnap": "solo gobierno provincial · por jurisdicción",
+    "noSubtractNote": "No se restan. SIPA atribuye el puesto a la provincia donde vive el trabajador y DNAP a la que lo emplea, así que un residente de una provincia empleado por otra suma en las dos. Además son períodos distintos ({{sipaVintage}} y {{dnapYear}}).",
+    "dnapExceedsSipa": "Acá DNAP supera a SIPA-público, cosa que no pasa en ninguna otra provincia (el resto va de 50 % a 90 %). Es una anomalía sin resolver, no un dato a interpretar."
   },
   "exportsSec": {
     "desc": "Exportaciones provinciales en USD millones. PP: productos primarios, MOA: manufacturas de origen agropecuario, MOI: manufacturas de origen industrial, CyE: combustibles y energía. Fuente: INDEC.",
