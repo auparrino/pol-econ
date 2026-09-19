@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
   AreaChart, Area, CartesianGrid,
@@ -23,6 +24,7 @@ function ExportBar({ label, value, max, color }) {
 }
 
 export default function ExportsSection({ exports, exportDest, mobile }) {
+  const { t } = useTranslation();
   // Hooks must run on every render — `exports` goes from [] to populated as the
   // user selects a province, so nothing may short-circuit above this point.
   const rows = exports?.length ? exports : null;
@@ -69,7 +71,7 @@ export default function ExportsSection({ exports, exportDest, mobile }) {
             <p className="text-[18px] font-bold text-[#003049] font-mono">USD {fmtNum(Math.round(total))}M</p>
           </div>
           <div className="text-right">
-            <p className="text-[11px] text-[#003049]/50">Main category</p>
+            <p className="text-[11px] text-[#003049]/50">{t('exportsSec.mainCategory')}</p>
             <p className="text-[13px] font-bold text-[#003049]">{categories[0]?.label}</p>
             <p className="text-[11px] text-[#003049]/50">{(categories[0]?.value / total * 100).toFixed(0)}% of total</p>
           </div>
@@ -119,7 +121,7 @@ export default function ExportsSection({ exports, exportDest, mobile }) {
       {/* Time series */}
       {tsData.length > 2 && !mobile && (
         <div>
-          <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Export evolution (USD M)</p>
+          <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">{t('exportsSec.evolution')}</p>
           <div style={{ width: '100%', height: 130 }}>
             <ResponsiveContainer minWidth={0} minHeight={0}>
               <AreaChart data={tsData} margin={{ top: 4, right: 4, bottom: 0, left: -10 }}>

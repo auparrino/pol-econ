@@ -7,13 +7,17 @@ import ErrorBoundary from './components/ErrorBoundary';
 import LoadingSpinner from './components/LoadingSpinner';
 import { governors } from './data/governors';
 import useCongressData from './hooks/useCongressData';
-import { provinceFromUrl, syncUrl } from './utils/deepLink';
+import { provinceFromUrl, modeFromUrl, layersFromUrl, syncUrl } from './utils/deepLink';
+import { ENERGY_LAYER_CONFIGS } from './components/energyLayerConfigs';
 
 const RightOverlayPanel = lazy(() => import('./components/RightOverlayPanel'));
 const BottomBar = lazy(() => import('./components/BottomBar'));
 const MobileShell = lazy(() => import('./components/mobile/MobileShell'));
 
 /* Layout constants — desktop */
+const ENERGY_IDS = ENERGY_LAYER_CONFIGS.map(l => l.id);
+const CHOROPLETH_MODES = ['none', 'region', 'partido', 'alineamiento', 'score_executive', 'pobreza', 'poblacion', 'fiscal'];
+
 const HEADER_H = 56;
 const SIDEBAR_W = 340;
 const LAYER_BAR_H = 100;
@@ -29,9 +33,12 @@ function useIsMobile() {
 }
 
 export default function App() {
-  const [choroplethMode, setChoroplethMode] = useState('region');
-  const [overlays, setOverlays] = useState({ mining: false });
-  const [energyLayers, setEnergyLayers] = useState([]);
+  const [choroplethMode, setChoroplethMode] = useState(
+    () => modeFromUrl(CHOROPLETH_MODES) ?? 'region');
+  const [overlays, setOverlays] = useState(
+    () => ({ mining: layersFromUrl(ENERGY_IDS)?.mining ?? false }));
+  const [energyLayers, setEnergyLayers] = useState(
+    () => layersFromUrl(ENERGY_IDS)?.energy ?? []);
   const [selectedProvince, setSelectedProvince] = useState(provinceFromUrl);
   const { congress } = useCongressData();
   const isMobile = useIsMobile();
@@ -39,6 +46,15 @@ export default function App() {
   // Keep ?province= in step with the selection so the view stays linkable.
   // The tab half of the link is owned by BottomBar, which holds that state.
   useEffect(() => { syncUrl({ province: selectedProvince }); }, [selectedProvince]);
+
+  // The map's own state: which colouring and which layers are on.
+  useEffect(() => {
+    const layers = [...(overlays.mining ? ['mining'] : []), ...energyLayers];
+    syncUrl({
+      mode: choroplethMode === 'region' ? null : choroplethMode,   // the default needs no parameter
+      layers: layers.length ? layers.join(',') : null,
+    });
+  }, [choroplethMode, overlays.mining, energyLayers]);
 
   // Right panel always reserves space — it carries the overlay summary
   // (when nothing is active) or the detail (when something is on).

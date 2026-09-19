@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import useNewsSummary from '../hooks/useNewsSummary';
 
 function formatInline(text) {
@@ -64,6 +65,7 @@ const TIMEFRAMES = [
 ];
 
 export default function ProvinceNews({ province }) {
+  const { t } = useTranslation();
   const [activeTimeframe, setActiveTimeframe] = useState(null);
   const { summary, loading, error, articleCount, snapshotDate, generate } = useNewsSummary();
 
@@ -95,7 +97,7 @@ export default function ProvinceNews({ province }) {
         <div className="flex items-start gap-2">
           <span className="text-[13px] leading-none mt-0.5" aria-hidden>⚠</span>
           <div className="space-y-1">
-            <div className="font-bold">Beta — AI-generated summary</div>
+            <div className="font-bold">{t('news.betaLabel')}</div>
             <p className="text-[#003049]/75">
               Articles are a scraper snapshot (not a live feed), condensed by an LLM.
               Output may contain hallucinations, omissions, mistranslations, or
@@ -127,7 +129,7 @@ export default function ProvinceNews({ province }) {
       {loading && (
         <div className="flex items-center gap-2 py-3">
           <div className="w-4 h-4 border-2 border-[#003049]/20 border-t-[#003049]/60 rounded-full animate-spin" />
-          <span className="text-[13px] text-[#003049]/60">Loading summary...</span>
+          <span className="text-[13px] text-[#003049]/60">{t('news.loadingSummary')}</span>
         </div>
       )}
 

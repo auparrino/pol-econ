@@ -16,6 +16,29 @@ export function provinceFromUrl() {
   return raw ? canonicalProvince(raw) : null;
 }
 
+/** The choropleth mode named in ?mode=, if it is one of `allowed`. */
+export function modeFromUrl(allowed) {
+  const raw = new URLSearchParams(window.location.search).get('mode');
+  return raw && allowed.includes(raw) ? raw : null;
+}
+
+/**
+ * The map layers named in ?layers=, as {mining, energy}.
+ *
+ * "mining" is an overlay flag; everything else is an energy layer id. Splitting
+ * them here keeps the two pieces of state the map already had, rather than
+ * inventing a third representation just for links.
+ */
+export function layersFromUrl(energyIds) {
+  const raw = new URLSearchParams(window.location.search).get('layers');
+  if (!raw) return null;
+  const names = raw.split(',').map(x => x.trim()).filter(Boolean);
+  return {
+    mining: names.includes('mining'),
+    energy: names.filter(n => energyIds.includes(n)),
+  };
+}
+
 /** The tab named in ?tab=, if it is one of `allowed`. */
 export function tabFromUrl(allowed) {
   const raw = new URLSearchParams(window.location.search).get('tab');
@@ -34,7 +57,7 @@ export function tabFromUrl(allowed) {
  */
 export function syncUrl(view) {
   const params = new URLSearchParams(window.location.search);
-  for (const key of ['province', 'tab']) {
+  for (const key of ['province', 'tab', 'mode', 'layers']) {
     if (!(key in view)) continue;
     if (view[key]) params.set(key, view[key]); else params.delete(key);
   }

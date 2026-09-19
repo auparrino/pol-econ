@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
   XAxis, YAxis, Tooltip, ResponsiveContainer,
   AreaChart, Area, CartesianGrid,
@@ -39,6 +40,7 @@ function Metric({ label, value, sub, color }) {
 }
 
 export function FiscalTriptych({ provinceName }) {
+  const { t } = useTranslation();
   const prov = lookupProvince(provinceName);
   if (!prov) {
     return (
@@ -83,13 +85,13 @@ export function FiscalTriptych({ provinceName }) {
     <div className="mt-2">
       <div className="grid grid-cols-2 gap-1.5">
         <Metric
-          label="Fed. transfers"
+          label={t('fiscal.fedTransfers')}
           value={`${depLatest?.toFixed(1) ?? '—'}%`}
           sub={`of own-source + transfers · ${prov.year}`}
           color={depColor}
         />
         <Metric
-          label="Δ vs 2019"
+          label={t('fiscal.deltaVs2019')}
           value={delta != null ? `${delta >= 0 ? '+' : ''}${delta.toFixed(1)}pp` : '—'}
           sub={delta == null ? '' : delta > 0 ? 'more dependent' : 'less dependent'}
         />
@@ -119,7 +121,7 @@ export function FiscalTriptych({ provinceName }) {
           </div>
           <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-[9px]">
             <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#003049' }} /><span className="text-[#003049]/70">Own-source</span></span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#17a589' }} /><span className="text-[#003049]/70">National transfers</span></span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#17a589' }} /><span className="text-[#003049]/70">{t('fiscal.federalDep')}</span></span>
           </div>
 
           {autoPctLatest != null && (
@@ -143,7 +145,7 @@ export function FiscalTriptych({ provinceName }) {
       <div className="text-[9px] text-[#003049]/40 mt-1.5 leading-snug">
         Source: Mecon DNAP (APNF 2005–{prov.year}). Each year normalized to 100% — invariant to inflation.
         <br />
-        <b>Non-automatic</b> = transfers outside the coparticipación law (ATN, convenios, fondos compensadores, obra pública nacional). The dataset only carries this split for {prov.year}, so it is shown for that year alone rather than projected back over the series.
+        <b>{t('fiscal.nonAutomatic')}</b> = transfers outside the coparticipación law (ATN, convenios, fondos compensadores, obra pública nacional). The dataset only carries this split for {prov.year}, so it is shown for that year alone rather than projected back over the series.
       </div>
     </div>
   );

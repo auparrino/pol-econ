@@ -1,109 +1,117 @@
+import { useTranslation } from 'react-i18next';
+
+// Every string below is a translation key, not text. LegendBox resolves them,
+// so adding a legend entry means adding a key to both locale files — which the
+// validator checks for parity. It also caught that this legend still said
+// "Fiscal Dependency" after the rest of the app had moved to the neutral
+// "National transfers": the key was already correct and nothing read it.
 const LEGENDS = {
   partido: {
-    title: 'Governor Party',
+    title: 'legend.governorParty',
     items: [
-      { color: '#1a6fa3', label: 'PJ / Peronism' },
-      { color: '#c0392b', label: 'UCR / Radicalism' },
-      { color: '#d4a800', label: 'PRO' },
-      { color: '#7d3c98', label: 'La Libertad Avanza' },
-      { color: '#1e8449', label: 'Provincial Parties' },
-      { color: '#d35400', label: 'Hacemos por Córdoba' },
-      { color: '#7f8c8d', label: 'Other' },
+      { color: '#1a6fa3', label: 'legend.pj' },
+      { color: '#c0392b', label: 'legend.ucr' },
+      { color: '#d4a800', label: 'legend.pro' },
+      { color: '#7d3c98', label: 'legend.lla' },
+      { color: '#1e8449', label: 'legend.provincialParties' },
+      { color: '#d35400', label: 'legend.hacemos' },
+      { color: '#7f8c8d', label: 'legend.other' },
     ],
   },
   alineamiento: {
-    title: "Governor's stance",
-    subtitle: "Editorial label of the sitting governor's relation to the national Executive",
+    title: 'legend.governorStance',
+    subtitle: 'legend.governorStanceDesc',
     items: [
-      { color: '#7d3c98', label: 'Ruling coalition' },
-      { color: '#17a589', label: 'Allied' },
-      { color: '#d4a800', label: 'Negotiator' },
-      { color: '#C1121F', label: 'Opposition' },
-      { color: '#780000', label: 'Hard opposition' },
+      { color: '#7d3c98', label: 'legend.rulingCoalition' },
+      { color: '#17a589', label: 'legend.allied' },
+      { color: '#d4a800', label: 'legend.negotiator' },
+      { color: '#C1121F', label: 'legend.opposition' },
+      { color: '#780000', label: 'legend.hardOpposition' },
     ],
   },
   score_executive: {
-    title: 'Legislators score',
-    subtitle: "Avg % of votes matching the Executive, across the province's national legislators",
+    title: 'legend.legislatorsScore',
+    subtitle: 'legend.legislatorsScoreDesc',
     items: [
-      { color: '#780000', label: '< 20% (hard opp.)' },
-      { color: '#C1121F', label: '20–40%' },
-      { color: '#d4a800', label: '40–60%' },
-      { color: '#17a589', label: '60–80%' },
-      { color: '#7d3c98', label: '> 80% (with exec.)' },
+      { color: '#780000', label: 'legend.score20' },
+      { color: '#C1121F', label: 'legend.score40' },
+      { color: '#d4a800', label: 'legend.score60' },
+      { color: '#17a589', label: 'legend.score80' },
+      { color: '#7d3c98', label: 'legend.score100' },
     ],
   },
   poblacion: {
-    title: 'Population (Census 2022)',
+    title: 'legend.population',
     items: [
-      { color: '#1a3a5c', label: '< 100K' },
-      { color: '#2a5a7c', label: '100K–500K' },
-      { color: '#3a7a9c', label: '500K–1M' },
-      { color: '#4a9abc', label: '1M–2M' },
-      { color: '#669BBC', label: '2M–5M' },
-      { color: '#FDF0D5', label: '> 5M' },
+      { color: '#1a3a5c', label: 'legend.pop100k' },
+      { color: '#2a5a7c', label: 'legend.pop500k' },
+      { color: '#3a7a9c', label: 'legend.pop1m' },
+      { color: '#4a9abc', label: 'legend.pop2m' },
+      { color: '#669BBC', label: 'legend.pop5m' },
+      { color: '#FDF0D5', label: 'legend.pop5mPlus' },
     ],
   },
   pobreza: {
-    title: 'Poverty (EPH urban, H2 2024)',
-    subtitle: 'GBA + provincial capitals only — not province-wide',
+    title: 'legend.poverty',
+    subtitle: 'legend.povertyDesc',
     items: [
-      { color: '#27ae60', label: '< 25%' },
-      { color: '#f39c12', label: '25–35%' },
-      { color: '#e67e22', label: '35–45%' },
-      { color: '#C1121F', label: '45–55%' },
-      { color: '#780000', label: '> 55%' },
+      { color: '#27ae60', label: 'legend.pov25' },
+      { color: '#f39c12', label: 'legend.pov35' },
+      { color: '#e67e22', label: 'legend.pov45' },
+      { color: '#C1121F', label: 'legend.pov55' },
+      { color: '#780000', label: 'legend.pov55Plus' },
     ],
   },
   fiscal: {
-    title: 'Fiscal Dependency (2024)',
+    title: 'legend.fiscalDep',
     items: [
-      { color: '#27ae60', label: '< 30% (low depend.)' },
-      { color: '#2ecc71', label: '30–50%' },
-      { color: '#669BBC', label: '50–70%' },
-      { color: '#d4a800', label: '70–85%' },
-      { color: '#C1121F', label: '> 85% (high depend.)' },
+      { color: '#27ae60', label: 'legend.fd30' },
+      { color: '#2ecc71', label: 'legend.fd50' },
+      { color: '#669BBC', label: 'legend.fd70' },
+      { color: '#d4a800', label: 'legend.fd85' },
+      { color: '#C1121F', label: 'legend.fd85Plus' },
     ],
   },
   region: {
-    title: 'Geographic Region',
+    title: 'legend.region',
     items: [
-      { color: '#e67e22', label: 'NOA' },
-      { color: '#27ae60', label: 'NEA' },
-      { color: '#8e44ad', label: 'Cuyo' },
-      { color: '#3498db', label: 'Pampeana' },
-      { color: '#1abc9c', label: 'Patagonia' },
-      { color: '#f1c40f', label: 'CABA' },
+      { color: '#e67e22', label: 'legend.noa' },
+      { color: '#27ae60', label: 'legend.nea' },
+      { color: '#8e44ad', label: 'legend.cuyo' },
+      { color: '#3498db', label: 'legend.pampeana' },
+      { color: '#1abc9c', label: 'legend.patagonia' },
+      { color: '#f1c40f', label: 'legend.caba' },
     ],
   },
 };
 
 const ENERGY_LEGEND = {
-  title: 'Energy (datos.energia.gob.ar)',
+  title: 'legend.energyTitle',
   items: [
-    { color: '#10B981', label: 'HC Fields (879)' },
-    { color: '#F97316', label: 'Refineries (15)', shape: 'circle' },
-    { color: '#EF4444', label: 'Thermal', shape: 'circle' },
-    { color: '#3B82F6', label: 'Hydro', shape: 'circle' },
-    { color: '#A855F7', label: 'Nuclear', shape: 'circle' },
-    { color: '#10B981', label: 'Wind', shape: 'circle' },
-    { color: '#FBBF24', label: 'Solar', shape: 'circle' },
+    { color: '#10B981', label: 'legend.hcFields' },
+    { color: '#F97316', label: 'legend.refineries', shape: 'circle' },
+    { color: '#EF4444', label: 'legend.thermal', shape: 'circle' },
+    { color: '#3B82F6', label: 'legend.hydro', shape: 'circle' },
+    { color: '#A855F7', label: 'legend.nuclear', shape: 'circle' },
+    { color: '#10B981', label: 'legend.wind', shape: 'circle' },
+    { color: '#FBBF24', label: 'legend.solar', shape: 'circle' },
   ],
 };
 
 const MINERAL_LEGEND = {
-  title: 'Mining (SIACAM Metalliferous)',
+  title: 'legend.miningTitle',
   items: [
-    { color: '#00d4ff', label: 'Lithium', shape: 'circle' },
-    { color: '#ffd700', label: 'Gold', shape: 'circle' },
-    { color: '#c0c0c0', label: 'Silver', shape: 'circle' },
-    { color: '#b87333', label: 'Copper', shape: 'circle' },
-    { color: '#7fff00', label: 'Uranium', shape: 'circle' },
-    { color: '#7a7a7a', label: 'Lead / Other', shape: 'circle' },
+    { color: '#00d4ff', label: 'legend.lithium', shape: 'circle' },
+    { color: '#ffd700', label: 'legend.gold', shape: 'circle' },
+    { color: '#c0c0c0', label: 'legend.silver', shape: 'circle' },
+    { color: '#b87333', label: 'legend.copper', shape: 'circle' },
+    { color: '#7fff00', label: 'legend.uranium', shape: 'circle' },
+    { color: '#7a7a7a', label: 'legend.leadOther', shape: 'circle' },
   ],
 };
 
 function LegendBox({ title, subtitle, items, useCircles = false, mobile = false }) {
+  const { t } = useTranslation();
   return (
     <div
       className="backdrop-blur-sm rounded-md shadow-sm"
@@ -118,14 +126,14 @@ function LegendBox({ title, subtitle, items, useCircles = false, mobile = false 
         className="font-bold tracking-[1.4px] uppercase"
         style={{ color: 'rgba(0,48,73,0.55)', fontSize: mobile ? 8 : 10, marginBottom: subtitle ? 2 : (mobile ? 4 : 8) }}
       >
-        {title}
+        {t(title)}
       </p>
       {subtitle && (
         <p
           className="italic"
           style={{ color: 'rgba(0,48,73,0.45)', fontSize: mobile ? 8 : 9, marginBottom: mobile ? 4 : 6, lineHeight: 1.2 }}
         >
-          {subtitle}
+          {t(subtitle)}
         </p>
       )}
       <div className="flex flex-col" style={{ gap: mobile ? 2 : 4 }}>
@@ -147,7 +155,7 @@ function LegendBox({ title, subtitle, items, useCircles = false, mobile = false 
                 style={{ backgroundColor: item.color, width: mobile ? 10 : 14, height: mobile ? 8 : 12 }}
               />
             )}
-            <span style={{ color: 'rgba(0,48,73,0.72)', fontSize: mobile ? 10 : 12, lineHeight: 1.15 }}>{item.label}</span>
+            <span style={{ color: 'rgba(0,48,73,0.72)', fontSize: mobile ? 10 : 12, lineHeight: 1.15 }}>{t(item.label)}</span>
           </div>
         ))}
       </div>
@@ -156,6 +164,7 @@ function LegendBox({ title, subtitle, items, useCircles = false, mobile = false 
 }
 
 export default function Legend({ choroplethMode, showMining = false, showEnergy = false, mobile = false }) {
+  const { t } = useTranslation();
   const legend = LEGENDS[choroplethMode];
   const hasContent = legend || showMining || showEnergy;
 
@@ -172,7 +181,7 @@ export default function Legend({ choroplethMode, showMining = false, showEnergy 
         overflowY: mobile ? 'auto' : 'visible',
       }}
       role="complementary"
-      aria-label="Map legend"
+      aria-label={t('legend.mapLegend')}
     >
       {legend && <LegendBox title={legend.title} subtitle={legend.subtitle} items={legend.items} mobile={mobile} />}
       {showMining && <LegendBox title={MINERAL_LEGEND.title} items={MINERAL_LEGEND.items} useCircles mobile={mobile} />}

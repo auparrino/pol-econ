@@ -1,4 +1,5 @@
 import { memo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { officialSenators } from '../../data/officialSenators';
 import { officialDeputies } from '../../data/officialDeputies';
 import votacionesRaw from '../../data/votaciones.json';
@@ -84,6 +85,7 @@ function computeAlla(name, chamber) {
 }
 
 function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
+  const { t } = useTranslation();
   const pn = selectedProvince?.toLowerCase();
   const isCABA = pn?.includes('ciudad') || pn === 'caba';
 
@@ -154,7 +156,7 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
         <div className="space-y-0">
           {senators.length > 0 ? senators.map((l, i) => (
             <LegRow key={i} l={l} />
-          )) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
+          )) : <p className="text-[11px] text-[#003049]/40 italic">{t('common.noData')}</p>}
         </div>
       </div>
 
@@ -192,7 +194,7 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
               ))}
             </div>
           </>
-        ) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
+        ) : <p className="text-[11px] text-[#003049]/40 italic">{t('common.noData')}</p>}
       </div>
     </div>
   );

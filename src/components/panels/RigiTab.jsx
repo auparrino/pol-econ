@@ -3,6 +3,7 @@
 // the curated list of national RIGI projects in this province + a short
 // explainer about how the two interact.
 
+import { useTranslation } from 'react-i18next';
 import { politicalContext } from '../../data/politicalContext';
 import { RigiPanel, RigiNationalOverview } from '../shared/RigiPanel';
 
@@ -92,6 +93,7 @@ function NationalRigi() {
 }
 
 export default function RigiTab({ selectedProvince }) {
+  const { t } = useTranslation();
   if (!selectedProvince) return <NationalRigi />;
 
   const pol = findPolContext(selectedProvince);
@@ -123,9 +125,9 @@ export default function RigiTab({ selectedProvince }) {
             {adhesion.detail ? (
               <p className="text-[12px] text-[#003049] leading-snug">{adhesion.detail}</p>
             ) : adhesion.status === 'unknown' ? (
-              <p className="text-[11px] text-[#003049]/55 italic">No record on provincial adhesion.</p>
+              <p className="text-[11px] text-[#003049]/55 italic">{t('rigi.noProvAdhRecord')}</p>
             ) : (
-              <p className="text-[11px] text-[#003049]/55 italic">No additional detail.</p>
+              <p className="text-[11px] text-[#003049]/55 italic">{t('rigi.noAddDetail')}</p>
             )}
           </div>
           <span

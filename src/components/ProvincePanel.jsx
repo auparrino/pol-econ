@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { createPortal } from 'react-dom';
 import { politicalContext } from '../data/politicalContext';
 import { sociodemographic } from '../data/sociodemographic';
@@ -15,12 +16,12 @@ import EditorialMark from './shared/EditorialMark';
 
 // Voting topics metadata
 const VOTE_TOPICS = {
-  presupuesto_2026:      { label: 'Budget 2026',        short: 'Pre' },
-  inocencia_fiscal:      { label: 'Tax Innocence',      short: 'IF'  },
-  modernizacion_laboral: { label: 'Labor Reform',       short: 'ML'  },
-  regimen_penal_juv:     { label: 'Juvenile Penal',     short: 'PJ'  },
-  mercosur_ue:           { label: 'Mercosur-EU',        short: 'MUE' },
-  ley_glaciares:         { label: 'Glacier Law',        short: 'LG'  },
+  presupuesto_2026:      { label: 'votes.budget2026',        short: 'Pre' },
+  inocencia_fiscal:      { label: 'votes.taxInnocence',      short: 'IF'  },
+  modernizacion_laboral: { label: 'votes.laborReform',       short: 'ML'  },
+  regimen_penal_juv:     { label: 'votes.juvenilePenal',     short: 'PJ'  },
+  mercosur_ue:           { label: 'votes.mercosurEU',        short: 'MUE' },
+  ley_glaciares:         { label: 'votes.glacierLaw',        short: 'LG'  },
 };
 
 // Build lookup: "APELLIDO" -> legislator record
@@ -192,6 +193,7 @@ function HBar({ value, max, color = '#669BBC', label, info }) {
 }
 
 function SocioSection({ province }) {
+  const { t } = useTranslation();
   const provName = province?.toLowerCase();
   const isCABA = provName?.includes('ciudad de buenos aires') || provName === 'caba';
 
@@ -208,15 +210,15 @@ function SocioSection({ province }) {
   const unemployColor = data.desempleo > 8 ? '#C1121F' : data.desempleo > 6 ? '#e67e22' : '#27ae60';
 
   return (
-    <Section title="Socioeconomic">
+    <Section title={t('province.socioeconomic')}>
       <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10 space-y-1.5">
         <HBar value={data.pobreza} max={65} color={povertyColor} label="Poverty" info="% of population below the poverty line. EPH urban aggregates (GBA + provincial capitals). NOT province-wide. Source: INDEC EPH H2 2024." />
-        <HBar value={data.desempleo} max={12} color={unemployColor} label="Unemploy." info="Open unemployment rate (%). EPH urban only. Source: INDEC EPH 2024 Q2." />
+        <HBar value={data.desempleo} max={12} color={unemployColor} label={t('overview.unemployment')} info="Open unemployment rate (%). EPH urban only. Source: INDEC EPH 2024 Q2." />
       </div>
       <div className="mt-2">
-        <DataRow label="PBG/cap (PPP)" value={`$${data.pbg_per_capita_usd?.toLocaleString('en-US')}`} color="text-success" info="CEPAL 2022 estimate. Source: CEPAL provincial accounts." />
-        <DataRow label="Schooling" value={`${data.escolaridad} yrs`} info="Census 2022." />
-        <DataRow label="Literacy" value={`${data.alfabetismo}%`} info="Census 2022." />
+        <DataRow label={t('province.pbgPpp')} value={`$${data.pbg_per_capita_usd?.toLocaleString('en-US')}`} color="text-success" info="CEPAL 2022 estimate. Source: CEPAL provincial accounts." />
+        <DataRow label={t('province.schooling')} value={`${data.escolaridad} yrs`} info="Census 2022." />
+        <DataRow label={t('province.literacy')} value={`${data.alfabetismo}%`} info="Census 2022." />
       </div>
     </Section>
   );
@@ -289,6 +291,7 @@ function MiniMetric({ label, value }) {
 }
 
 function LegislatorCard({ leg }) {
+  const { t } = useTranslation();
   const coColor = COALITION_COLORS[leg.co] || COALITION_COLORS.OTROS;
 
   // Look up vote data from xlsx
@@ -331,9 +334,9 @@ function LegislatorCard({ leg }) {
           style={{ background: 'rgba(0,48,73,0.05)', minWidth: 104 }}
           title={tooltipTxt}
         >
-          <MiniMetric label="w/Exec" value={scoreExecutive} />
-          <MiniMetric label="w/Bloc" value={scoreBloc} />
-          <MiniMetric label="Absent" value={rateAbsent} />
+          <MiniMetric label={t('province.wExec')} value={scoreExecutive} />
+          <MiniMetric label={t('province.wBloc')} value={scoreBloc} />
+          <MiniMetric label={t('votes.absent')} value={rateAbsent} />
         </div>
       </div>
       {hasAnyVote && (
@@ -361,6 +364,7 @@ const DEPUTY_SEATS_BY_PROV = {
 };
 
 function LegislatorsSection({ province, congress }) {
+  const { t } = useTranslation();
   const provName = province?.toLowerCase();
   const isCABA = provName?.includes('ciudad de buenos aires') || provName === 'caba';
 
@@ -470,12 +474,12 @@ function LegislatorsSection({ province, congress }) {
       )}
       {(senators.length > 0 || deputies.length > 0) && (
         <p className="mb-1.5 text-[10px] text-[#003049]/55 leading-tight">
-          <span className="font-semibold text-[#003049]/70">Gov. align</span> = % of all roll-call votes (n) where the legislator sided with the LLA bloc, since Dec 2023. Dots below show key topic samples only — they do not feed the %.
+          <span className="font-semibold text-[#003049]/70">{t('province.govAlign')}</span> {t('province.govAlignDesc')}
         </p>
       )}
       {(senators.length > 0 || deputies.length > 0) && (
         <div className="mb-2 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[10px] text-[#003049]/70">
-          <span className="uppercase tracking-wider font-semibold text-[#003049]/45">Vote:</span>
+          <span className="uppercase tracking-wider font-semibold text-[#003049]/45">{t('province.vote')}</span>
           <span className="inline-flex items-center gap-1">
             <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold text-[10px]"
               style={{ backgroundColor: '#27ae6022', color: '#27ae60', border: '1px solid #27ae6066' }}>A</span>
@@ -528,6 +532,7 @@ function LegislatorsSection({ province, congress }) {
 // EconomicSection replaced by EconomySummary component (economy/EconomySummary.jsx)
 
 export default function ProvincePanel({ province, governors, onClose, width = 320, mobile = false }) {
+  const { t } = useTranslation();
   if (!province) {
     if (mobile) return null;
     return (
@@ -615,10 +620,10 @@ export default function ProvincePanel({ province, governors, onClose, width = 32
             </div>
 
             {/* Demographics */}
-            <Section title="Demographics">
+            <Section title={t('province.demographics')}>
               <DataRow label="Population" value={gov.poblacion_censo_2022?.toLocaleString('es-AR')} />
-              <DataRow label="Density" value={gov.densidad ? `${gov.densidad} hab/km²` : null} />
-              <DataRow label="Area" value={`${gov.superficie_km2?.toLocaleString('es-AR')} km²`} />
+              <DataRow label={t('province.density')} value={gov.densidad ? `${gov.densidad} hab/km²` : null} />
+              <DataRow label={t('province.area')} value={`${gov.superficie_km2?.toLocaleString('es-AR')} km²`} />
               <DataRow label="Region" value={gov.region} />
             </Section>
 

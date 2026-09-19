@@ -28,7 +28,7 @@ import { spawn, spawnSync } from 'node:child_process';
 import { chromium } from 'playwright';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { existsSync, readdirSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = '/pol-econ/';          // vite.config.js `base`
@@ -37,6 +37,35 @@ const ORIGIN = `http://localhost:${PORT}${BASE}`;
 
 const PROVINCES = ['Buenos Aires', 'Ciudad de Buenos Aires', 'Tierra del Fuego', 'Neuquén'];
 const TABS = ['overview', 'congress', 'cabinet', 'employment', 'fiscal', 'exports', 'production', 'rigi', 'news'];
+
+// Both languages. The Spanish strings existed in full for months and almost
+// none of them were wired to anything, so "the translation file is complete" is
+// not evidence that the translated UI renders — only rendering it is.
+const LANGS = ['es', 'en'];
+
+// The top-level namespaces in the locale files. A rendered string that looks
+// like "legend.pj" is a key that reached the screen because someone moved text
+// into a config object and forgot the t() at the render site — which is exactly
+// how this refactor could quietly make the UI worse than the English it
+// replaced. Built from the locale file so it cannot drift.
+const NAMESPACES = Object.keys(
+  JSON.parse(readFileSync(new URL('../src/i18n/locales/en.json', import.meta.url), 'utf8')));
+const RAW_KEY = new RegExp(`\\b(${NAMESPACES.join('|')})\\.[a-zA-Z][a-zA-Z0-9_]*\\b`, 'g');
+
+// Map states worth rendering. The overlay and legend panels hold most of the
+// remaining text in the app and none of it is reachable from a bare page load,
+// so without these rows the suite would report a clean run over a UI it never
+// looked at. Each is ?mode=&layers= on the overview tab.
+const MAP_STATES = [
+  { mode: 'partido',         layers: '' },
+  { mode: 'alineamiento',    layers: '' },
+  { mode: 'score_executive', layers: '' },
+  { mode: 'pobreza',         layers: '' },
+  { mode: 'poblacion',       layers: '' },
+  { mode: 'fiscal',          layers: '' },
+  { mode: 'region',          layers: 'mining' },
+  { mode: 'region',          layers: 'yacimientos,refinerias,centrales' },
+];
 
 // Console noise that is not a defect.
 //
@@ -85,6 +114,10 @@ const headed = process.argv.includes('--headed');
 const keep = process.argv.includes('--keep');
 
 const failures = [];
+// Panel text per view for the first language, so the second can be compared to
+// it. Rendering both without crashing proves nothing about whether ?lng= is
+// wired: this is what catches a tab that is still hardcoded English.
+const firstLangText = new Map();
 function fail(where, what) {
   failures.push(`${where}: ${what}`);
   console.log(`  \x1b[31mFAIL\x1b[0m ${where} — ${what}`);
@@ -128,9 +161,10 @@ async function main() {
   });
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
 
+  for (const lng of LANGS) {
   for (const province of PROVINCES) {
     for (const tab of TABS) {
-      const where = `${province} · ${tab}`;
+      const where = `${lng} · ${province} · ${tab}`;
       const page = await ctx.newPage();
       const logged = [];
       page.on('console', m => {
@@ -141,7 +175,7 @@ async function main() {
       });
       page.on('pageerror', e => logged.push(`uncaught: ${e.message}`));
 
-      const url = `${ORIGIN}?province=${encodeURIComponent(province)}&tab=${tab}`;
+      const url = `${ORIGIN}?province=${encodeURIComponent(province)}&tab=${tab}&lng=${lng}`;
       try {
         await page.goto(url, { waitUntil: 'networkidle', timeout: 30_000 });
         // Lazy panels resolve after the first paint.
@@ -161,6 +195,23 @@ async function main() {
         const body = await page.locator('aside').first().innerText();
         if (body.replace(/\s+/g, ' ').trim().length < 120) {
           fail(where, `panel is effectively empty (${body.trim().length} chars)`);
+        }
+
+        // No untranslated key reached the screen — the whole page, not just the
+        // panel: the legend and the overlay panel are outside <aside>.
+        const pageText = await page.locator('body').innerText();
+        const leaked = [...new Set(pageText.match(RAW_KEY) || [])];
+        if (leaked.length) fail(where, `untranslated key(s) rendered: ${leaked.slice(0, 4).join(', ')}`);
+
+        // The same view in the other language has to actually read differently.
+        const viewKey = `${province}|${tab}`;
+        if (lng === LANGS[0]) {
+          firstLangText.set(viewKey, body);
+        } else {
+          const other = firstLangText.get(viewKey);
+          if (other && other === body) {
+            fail(where, `identical to ${LANGS[0]} — this view is not translated`);
+          }
         }
 
         // 4. Every chart that was asked for actually has pixels. Recharts fails
@@ -184,10 +235,49 @@ async function main() {
       }
     }
   }
+  }
+
+  // Map states, once per language: they do not vary by province.
+  for (const lng of LANGS) {
+    for (const st of MAP_STATES) {
+      const where = `${lng} · map ${st.mode}${st.layers ? ' + ' + st.layers : ''}`;
+      const page = await ctx.newPage();
+      const logged = [];
+      page.on('console', m => {
+        if (m.type() !== 'error' && m.type() !== 'warning') return;
+        const text = m.text();
+        if (!IGNORE.some(re => re.test(text))) logged.push(text);
+      });
+      page.on('pageerror', e => logged.push(`uncaught: ${e.message}`));
+      try {
+        await page.goto(
+          `${ORIGIN}?tab=overview&mode=${st.mode}&layers=${st.layers}&lng=${lng}`,
+          { waitUntil: 'networkidle', timeout: 30_000 });
+        await page.waitForTimeout(1200);
+
+        const pageText = await page.locator('body').innerText();
+        const leaked = [...new Set(pageText.match(RAW_KEY) || [])];
+        if (leaked.length) fail(where, `untranslated key(s) rendered: ${leaked.slice(0, 4).join(', ')}`);
+
+        // The legend is the thing a choropleth mode is for.
+        if (st.mode !== 'region') {
+          const legend = await page.locator('[role="complementary"]').first().innerText();
+          if (legend.trim().length < 20) fail(where, 'legend is empty');
+        }
+        if (logged.length) fail(where, logged.slice(0, 3).join(' | '));
+        if (!failures.some(f => f.startsWith(where))) console.log(`  \x1b[32mok\x1b[0m   ${where}`);
+      } catch (e) {
+        fail(where, e.message.split('\n')[0]);
+      } finally {
+        await page.close();
+      }
+    }
+  }
 
   await browser.close();
 
-  console.log(`\n${PROVINCES.length * TABS.length - failures.length}/${PROVINCES.length * TABS.length} renders clean`);
+  const total = LANGS.length * (PROVINCES.length * TABS.length + MAP_STATES.length);
+  console.log(`\n${total - failures.length}/${total} renders clean`);
   if (failures.length) {
     console.log(`\n\x1b[31m${failures.length} failure(s)\x1b[0m`);
     for (const f of failures) console.log(`  ${f}`);

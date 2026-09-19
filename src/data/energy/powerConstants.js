@@ -1,11 +1,12 @@
 // Shared energy constants used by desktop RightOverlayPanel and mobile components.
 // Source: CAMMESA end-2024 validated totals.
 
+// `name` is a translation key; whoever renders it calls t().
 export const POWER_BY_FUEL = [
-  { name: 'Thermal',    gw: 25.5, color: '#EF4444' },
-  { name: 'Hydro',      gw: 10.1, color: '#3B82F6' },
-  { name: 'Renewables', gw: 6.8,  color: '#10B981' },
-  { name: 'Nuclear',    gw: 1.8,  color: '#A855F7' },
+  { name: 'energy.thermal',   gw: 25.5, color: '#EF4444' },
+  { name: 'energy.hydro',     gw: 10.1, color: '#3B82F6' },
+  { name: 'energy.renewable', gw: 6.8,  color: '#10B981' },
+  { name: 'energy.nuclear',   gw: 1.8,  color: '#A855F7' },
 ];
 
 export const POWER_TOTAL_GW = POWER_BY_FUEL.reduce((s, x) => s + x.gw, 0);

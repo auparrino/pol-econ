@@ -1,4 +1,5 @@
 import { useState, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import ArgentinaMap from '../ArgentinaMap';
 import Legend from '../Legend';
 import ErrorBoundary from '../ErrorBoundary';
@@ -33,6 +34,7 @@ export default function MobileMapTab({
   onProvinceSelect,
   hasPeekCard,
 }) {
+  const { t } = useTranslation();
   const [sheetOpen, setSheetOpen] = useState(false);
 
   const toggleOverlay = (id) => setOverlays(prev => ({ ...prev, [id]: !prev[id] }));
@@ -49,15 +51,15 @@ export default function MobileMapTab({
         className="shrink-0 flex items-center justify-between gap-3"
         style={{ height: 48, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 14px' }}
       >
-        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight truncate min-w-0">Argentina Atlas</h1>
+        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight truncate min-w-0">{t('mobile.argentinaAtlas')}</h1>
         <button
           onClick={() => setSheetOpen(true)}
           className="shrink-0 inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider rounded-lg"
           style={{ background: '#003049', color: '#FDF0D5', padding: '7px 12px' }}
-          aria-label="Open layers and color settings"
+          aria-label={t('mobile.openLayers')}
         >
           <span>⚙</span>
-          <span>Layers</span>
+          <span>{t('mobile.layers')}</span>
           {overlayCount > 0 && (
             <span className="text-[9px] px-1.5 rounded-full ml-0.5" style={{ background: '#FDF0D5', color: '#003049' }}>
               {overlayCount}
@@ -103,7 +105,7 @@ export default function MobileMapTab({
             }}
             aria-label={`Change color mode (current: ${activeModeLabel})`}
           >
-            <span style={{ opacity: 0.55 }}>Color:</span>
+            <span style={{ opacity: 0.55 }}>{t('mobile.color')}</span>
             <span>{activeModeLabel}</span>
             <span className="text-[8px]">▾</span>
           </button>
@@ -111,7 +113,7 @@ export default function MobileMapTab({
       </div>
 
       {/* Layer sheet */}
-      <BottomSheet open={sheetOpen} onClose={() => setSheetOpen(false)} title="Map Layers" maxHeightPct={overlayCount > 0 ? 92 : 80}>
+      <BottomSheet open={sheetOpen} onClose={() => setSheetOpen(false)} title={t('mobile.mapLayers')} maxHeightPct={overlayCount > 0 ? 92 : 80}>
         <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/50 mb-2">
           Color provinces by
         </p>
@@ -183,7 +185,7 @@ export default function MobileMapTab({
             <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/50 mb-2">
               Layer statistics{selectedProvince ? ` · ${selectedProvince}` : ''}
             </p>
-            <Suspense fallback={<p className="text-[12px] text-[#003049]/60 py-2">Loading stats…</p>}>
+            <Suspense fallback={<p className="text-[12px] text-[#003049]/60 py-2">{t('mobile.loadingStats')}</p>}>
               <OverlayPanel
                 compact
                 overlays={overlays}

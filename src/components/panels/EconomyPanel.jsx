@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useEconomyData, sipaData } from '../../hooks/useEconomyData';
 import EmploymentSection from '../economy/EmploymentSection';
 import FiscalSection from '../economy/FiscalSection';
@@ -13,6 +14,7 @@ const SUB_TABS = [
 ];
 
 export default function EconomyPanel({ selectedProvince, mobile = false }) {
+  const { t } = useTranslation();
   // On mobile, Fiscal is already shown in the standalone "Fiscal Dependency" accordion
   const visibleTabs = mobile ? SUB_TABS.filter(t => t.id !== 'fiscal') : SUB_TABS;
   const [subTab, setSubTab] = useState('employment');
@@ -57,7 +59,7 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
       {subTab === 'employment' && (
         sipa
           ? <EmploymentSection sipa={sipa} mobile={mobile} />
-          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No employment data available for this province.</p>
+          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">{t('bottomBar.noEmploymentData')}</p>
       )}
 
       {subTab === 'fiscal' && (
@@ -69,7 +71,7 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
       {subTab === 'exports' && (
         exports?.length > 0
           ? <ExportsSection exports={exports} exportDest={exportDest} mobile={mobile} />
-          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No export data available for this province.</p>
+          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">{t('bottomBar.noExportData')}</p>
       )}
 
       {subTab === 'production' && (

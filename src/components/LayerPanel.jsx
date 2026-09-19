@@ -1,18 +1,19 @@
+import { useTranslation } from 'react-i18next';
 import { ENERGY_LAYER_CONFIGS } from './energyLayerConfigs';
 
 const CHOROPLETH_MODES = [
-  { id: 'none', label: 'None' },
-  { id: 'region', label: 'Region' },
-  { id: 'partido', label: 'Gov. Party' },
-  { id: 'alineamiento', label: 'Governor stance' },
-  { id: 'score_executive', label: 'Legislators score' },
-  { id: 'pobreza', label: 'Poverty' },
-  { id: 'poblacion', label: 'Population' },
-  { id: 'fiscal', label: 'Fiscal Dep.' },
+  { id: 'none', label: 'layerPanel.none' },
+  { id: 'region', label: 'layerPanel.region' },
+  { id: 'partido', label: 'layerPanel.govParty' },
+  { id: 'alineamiento', label: 'layerPanel.governorStance' },
+  { id: 'score_executive', label: 'layerPanel.legislatorsScore' },
+  { id: 'pobreza', label: 'layerPanel.poverty' },
+  { id: 'poblacion', label: 'layerPanel.population' },
+  { id: 'fiscal', label: 'layerPanel.fiscalDep' },
 ];
 
 const OVERLAY_LAYERS = [
-  { id: 'mining', label: 'Mining', icon: '⛏️', color: '#ffd700' },
+  { id: 'mining', label: 'layerPanel.mining', icon: '⛏️', color: '#ffd700' },
 ];
 
 function Pill({ active, onClick, children, icon, color }) {
@@ -41,6 +42,7 @@ export default function LayerPanel({
   setEnergyLayers,
   mobile = false,
 }) {
+  const { t } = useTranslation();
   const toggleOverlay = (id) => {
     setOverlays(prev => ({ ...prev, [id]: !prev[id] }));
   };
@@ -73,7 +75,7 @@ export default function LayerPanel({
               active={choroplethMode === mode.id}
               onClick={() => setChoroplethMode(mode.id)}
             >
-              {mode.label}
+              {t(mode.label)}
             </Pill>
           ))}
         </div>
@@ -94,7 +96,7 @@ export default function LayerPanel({
               icon={layer.icon}
               color={layer.color}
             >
-              {layer.label}
+              {t(layer.label)}
             </Pill>
           ))}
           {ENERGY_LAYER_CONFIGS.map(layer => (
@@ -105,7 +107,7 @@ export default function LayerPanel({
               icon={layer.icon}
               color={layer.color}
             >
-              {layer.label}
+              {t(layer.label)}
             </Pill>
           ))}
         </div>

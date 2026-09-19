@@ -1,4 +1,5 @@
 import { useState, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import { sociodemographic } from '../../data/sociodemographic';
 import { fiscalData } from '../../data/fiscalData';
 import { officialSenators } from '../../data/officialSenators';
@@ -38,12 +39,12 @@ const COALITION_COLOR = {
 
 // ── Vote topic metadata (mirrors ProvincePanel) ────────────────────────────
 const VOTE_TOPICS = {
-  presupuesto_2026:      { label: 'Budget 2026',    short: 'Pre' },
-  inocencia_fiscal:      { label: 'Tax Innocence',  short: 'IF'  },
-  modernizacion_laboral: { label: 'Labor Reform',   short: 'ML'  },
-  regimen_penal_juv:     { label: 'Juvenile Penal', short: 'PJ'  },
-  mercosur_ue:           { label: 'Mercosur-EU',    short: 'MUE' },
-  ley_glaciares:         { label: 'Glacier Law',    short: 'LG'  },
+  presupuesto_2026:      { label: 'votes.budget2026',    short: 'Pre' },
+  inocencia_fiscal:      { label: 'votes.taxInnocence',  short: 'IF'  },
+  modernizacion_laboral: { label: 'votes.laborReform',   short: 'ML'  },
+  regimen_penal_juv:     { label: 'votes.juvenilePenal', short: 'PJ'  },
+  mercosur_ue:           { label: 'votes.mercosurEU',    short: 'MUE' },
+  ley_glaciares:         { label: 'votes.glacierLaw',    short: 'LG'  },
 };
 const SENATE_TOPICS  = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
 const DEPUTY_TOPICS  = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
@@ -77,15 +78,15 @@ function VoteDot({ topic, vote }) {
 }
 
 const PROVINCE_TABS = [
-  { id: 'overview',    label: 'Overview' },
-  { id: 'congress',   label: 'Congress' },
+  { id: 'overview',    label: 'bottomBar.overview' },
+  { id: 'congress',   label: 'bottomBar.congress' },
   { id: 'employment', label: 'Employment' },
-  { id: 'fiscal',     label: 'Fiscal' },
+  { id: 'fiscal',     label: 'bottomBar.fiscal' },
   { id: 'exports',    label: 'Exports' },
   { id: 'production', label: 'Production' },
-  { id: 'cabinet',    label: 'Cabinet' },
+  { id: 'cabinet',    label: 'bottomBar.cabinet' },
   { id: 'rigi',       label: 'RIGI' },
-  { id: 'news',       label: 'News' },
+  { id: 'news',       label: 'bottomBar.news' },
 ];
 
 // ── Helpers ────────────────────────────────────────────────────────────────
@@ -168,7 +169,8 @@ function NoData({ text = 'No data available.' }) {
 }
 
 function Loading() {
-  return <p className="text-[12px] text-[#003049]/60 py-2">Loading…</p>;
+  const { t } = useTranslation();
+  return <p className="text-[12px] text-[#003049]/60 py-2">{t('mobile.loadingEllipsis')}</p>;
 }
 
 // ── Overview sub-components ────────────────────────────────────────────────
@@ -211,10 +213,10 @@ function KeyFactsStrip({ province }) {
   const socio = findByProvince(sociodemographic, province);
   const fiscal = findByProvince(fiscalData, province);
   const facts = [
-    { label: 'Pov', value: socio?.pobreza != null ? `${socio.pobreza}%` : '—' },
-    { label: 'Unemp', value: socio?.desempleo != null ? `${socio.desempleo}%` : '—' },
-    { label: 'PBG/cap', value: socio?.pbg_per_capita_usd ? `$${(socio.pbg_per_capita_usd / 1000).toFixed(0)}K` : '—' },
-    { label: 'Fed.dep', value: fiscal?.transferencias_pct != null ? `${fiscal.transferencias_pct}%` : '—' },
+    { label: 'mobile.pov', value: socio?.pobreza != null ? `${socio.pobreza}%` : '—' },
+    { label: 'mobile.unemp', value: socio?.desempleo != null ? `${socio.desempleo}%` : '—' },
+    { label: 'mobile.pbgPerCap', value: socio?.pbg_per_capita_usd ? `$${(socio.pbg_per_capita_usd / 1000).toFixed(0)}K` : '—' },
+    { label: 'mobile.fedDep', value: fiscal?.transferencias_pct != null ? `${fiscal.transferencias_pct}%` : '—' },
   ];
   return (
     <div
@@ -232,17 +234,18 @@ function KeyFactsStrip({ province }) {
 }
 
 function DemographicsContent({ province, governor }) {
+  const { t } = useTranslation();
   const pw = getProvincePower(province);
   if (!governor) return <NoData />;
   return (
     <div className="rounded-xl border p-4 text-[12px] space-y-1.5" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
       <div className="flex justify-between"><span className="text-[#003049]/60">Population</span><span className="font-mono text-[#003049]">{governor.poblacion_censo_2022?.toLocaleString('es-AR')}</span></div>
-      <div className="flex justify-between"><span className="text-[#003049]/60">Density</span><span className="font-mono text-[#003049]">{governor.densidad ? `${governor.densidad} hab/km²` : '—'}</span></div>
-      <div className="flex justify-between"><span className="text-[#003049]/60">Area</span><span className="font-mono text-[#003049]">{governor.superficie_km2?.toLocaleString('es-AR')} km²</span></div>
+      <div className="flex justify-between"><span className="text-[#003049]/60">{t('province.density')}</span><span className="font-mono text-[#003049]">{governor.densidad ? `${governor.densidad} hab/km²` : '—'}</span></div>
+      <div className="flex justify-between"><span className="text-[#003049]/60">{t('province.area')}</span><span className="font-mono text-[#003049]">{governor.superficie_km2?.toLocaleString('es-AR')} km²</span></div>
       <div className="flex justify-between"><span className="text-[#003049]/60">Region</span><span className="text-[#003049]">{governor.region}</span></div>
       {pw && (
         <div className="flex justify-between pt-1 border-t border-[#003049]/10 mt-1">
-          <span className="text-[#003049]/60">Power capacity</span>
+          <span className="text-[#003049]/60">{t('mobile.powerCapacity')}</span>
           <span className="font-mono text-[#003049] text-right">
             {pw.gw} GW · {pw.dominant}
             {pw.regions && <span className="text-[#003049]/45 ml-1">({pw.regions})</span>}
@@ -268,6 +271,7 @@ function SocioBar({ label, value, max, color }) {
 }
 
 function SocioContent({ province }) {
+  const { t } = useTranslation();
   const socio = findByProvince(sociodemographic, province);
   const fiscal = findByProvince(fiscalData, province);
   if (!socio) return <NoData />;
@@ -278,12 +282,12 @@ function SocioContent({ province }) {
   return (
     <div className="rounded-xl border p-4 space-y-2" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
       <SocioBar label="Poverty" value={socio.pobreza} max={65} color={povColor} />
-      <SocioBar label="Unemployment" value={socio.desempleo} max={12} color={unColor} />
+      <SocioBar label={t('employment.unemploymentRate')} value={socio.desempleo} max={12} color={unColor} />
       {fiscal && <SocioBar label="Federal transfers" value={fiscal.transferencias_pct} max={100} color="#669BBC" />}
       <div className="pt-2 border-t border-[#003049]/10 text-[12px] space-y-0.5">
-        <div className="flex justify-between"><span className="text-[#003049]/60">PBG/cap (PPP)</span><span className="font-mono text-[#27ae60]">${socio.pbg_per_capita_usd?.toLocaleString('en-US')}</span></div>
-        <div className="flex justify-between"><span className="text-[#003049]/60">Schooling</span><span className="font-mono text-[#003049]">{socio.escolaridad} yrs</span></div>
-        <div className="flex justify-between"><span className="text-[#003049]/60">Literacy</span><span className="font-mono text-[#003049]">{socio.alfabetismo}%</span></div>
+        <div className="flex justify-between"><span className="text-[#003049]/60">{t('province.pbgPpp')}</span><span className="font-mono text-[#27ae60]">${socio.pbg_per_capita_usd?.toLocaleString('en-US')}</span></div>
+        <div className="flex justify-between"><span className="text-[#003049]/60">{t('province.schooling')}</span><span className="font-mono text-[#003049]">{socio.escolaridad} yrs</span></div>
+        <div className="flex justify-between"><span className="text-[#003049]/60">{t('province.literacy')}</span><span className="font-mono text-[#003049]">{socio.alfabetismo}%</span></div>
       </div>
     </div>
   );
@@ -328,6 +332,7 @@ function LegislatorRow({ leg, chamberKey }) {
 }
 
 function CongressContent({ province, congress }) {
+  const { t } = useTranslation();
   const provNorm = normProv(province);
   const isCABA = provNorm.includes('ciudad') || provNorm === 'caba';
 
@@ -374,8 +379,8 @@ function CongressContent({ province, congress }) {
       </p>
       {/* Vote legend */}
       <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[10px] text-[#003049]/70">
-        <span className="uppercase tracking-wider font-semibold text-[#003049]/45 text-[9px]">Vote:</span>
-        {[{ v: 'A', label: 'In favour' }, { v: 'N', label: 'Against' }, { v: 'ABS', label: 'Abstain' }].map(({ v, label }) => (
+        <span className="uppercase tracking-wider font-semibold text-[#003049]/45 text-[9px]">{t('province.vote')}</span>
+        {[{ v: 'A', label: 'votes.inFavour' }, { v: 'N', label: 'votes.against' }, { v: 'ABS', label: 'mobile.abstain' }].map(({ v, label }) => (
           <span key={v} className="inline-flex items-center gap-1">
             <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold text-[9px]"
               style={{ backgroundColor: `${VOTE_COLOR[v]}22`, color: VOTE_COLOR[v], border: `1px solid ${VOTE_COLOR[v]}66` }}
@@ -425,6 +430,7 @@ function CongressContent({ province, congress }) {
 // ── Main export ────────────────────────────────────────────────────────────
 
 export default function MobileProvinceTab({ province, governors, congress, onGoToMap }) {
+  const { t } = useTranslation();
   const [tab, setTab] = useState('overview');
 
   // Reset to overview when the province changes. Adjusting state during render
@@ -456,7 +462,7 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
         </div>
         <div className="flex-1 flex flex-col items-center justify-center text-center px-8">
           <div className="text-5xl opacity-30 mb-3">🗺</div>
-          <p className="text-[13px] text-[#003049]/60 mb-4">No province selected</p>
+          <p className="text-[13px] text-[#003049]/60 mb-4">{t('mobile.noProvinceSelected')}</p>
           <button
             onClick={onGoToMap}
             className="text-[12px] font-bold uppercase tracking-wider rounded-lg py-2.5 px-5"
@@ -526,9 +532,9 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
             <div className="space-y-5">
               <Hero province={province} governor={governor} />
               <KeyFactsStrip province={province} />
-              <SectionHead>Demographics</SectionHead>
+              <SectionHead>{t('province.demographics')}</SectionHead>
               <DemographicsContent province={province} governor={governor} />
-              <SectionHead>Socioeconomic</SectionHead>
+              <SectionHead>{t('province.socioeconomic')}</SectionHead>
               <SocioContent province={province} />
             </div>
           )}

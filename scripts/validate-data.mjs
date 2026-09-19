@@ -815,9 +815,14 @@ group('external references');
   check('powerConstants — installed capacity matches CAMMESA end-2024 (±3%)',
     near(totalGw, ref('cammesaTotalGw2024'), ref('cammesaTotalGw2024') * 0.03),
     `${totalGw.toFixed(1)} GW vs ${ref('cammesaTotalGw2024')} — ${REFERENCE.cammesaTotalGw2024.source}`);
+  // `name` is a translation key, so this reads 'energy.renewable' and not the
+  // English word. Keyed by whatever the file says, so the check follows a
+  // rename instead of silently reading `undefined`, which is what it did the
+  // first time these names became keys.
+  const renewGw = fuels['energy.renewable'];
   check('powerConstants — renewables match CAMMESA end-2024 (±5%)',
-    near(fuels.Renewables, ref('cammesaRenewGw2024'), ref('cammesaRenewGw2024') * 0.05),
-    `${fuels.Renewables} GW vs ${ref('cammesaRenewGw2024')} — ${REFERENCE.cammesaRenewGw2024.source}`);
+    renewGw !== undefined && near(renewGw, ref('cammesaRenewGw2024'), ref('cammesaRenewGw2024') * 0.05),
+    `${renewGw ?? 'no energy.renewable entry'} GW vs ${ref('cammesaRenewGw2024')} — ${REFERENCE.cammesaRenewGw2024.source}`);
 
   // Published 2024/25 national output. Institutions differ by a few percent
   // between cuts, so the band is wide; what it catches is the dataset sitting

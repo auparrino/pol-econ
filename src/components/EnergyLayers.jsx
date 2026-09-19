@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 /**
  * Energy Infrastructure Layers for Leaflet Map
  * Data: datos.energia.gob.ar (CKAN API)
@@ -52,6 +53,7 @@ async function loadLayerData(layerId) {
 
 /* ─── Yacimientos (polygon fill) ─── */
 function YacimientosLayer() {
+  const { t } = useTranslation();
   const [data, setData] = useState(null);
   useEffect(() => { loadLayerData('yacimientos').then(setData); }, []);
   if (!data) return null;
@@ -78,7 +80,7 @@ function YacimientosLayer() {
         const gasStr = p.gas_mm3d ? (p.gas_mm3d / 1000).toFixed(1) : null; // Mm³/d → MMm³/d
         const prodLine = (oilKbd || gasStr)
           ? `<div style="margin-top:2px;color:#10B981;font-weight:600">${oilKbd ? oilKbd + ' kb/d oil' : ''}${oilKbd && gasStr ? ' · ' : ''}${gasStr ? gasStr + ' MMm³/d gas' : ''}</div>`
-          : '<div style="margin-top:2px;color:#94A3B8;font-size:10px">No production data</div>';
+          : `<div style="margin-top:2px;color:#94A3B8;font-size:10px">${t('energy.noProductionData')}</div>`;
         const cuencaLine = p.cuenca ? `<div style="color:#94A3B8;font-size:10px">${p.cuenca} · ${p.provincia || ''}</div>` : '';
         layer.bindTooltip(
           `<div class="font-display text-xs">

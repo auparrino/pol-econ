@@ -1,4 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import ProvinceNews from './ProvinceNews';
 import ErrorBoundary from './ErrorBoundary';
 import { useEconomyData } from '../hooks/useEconomyData';
@@ -24,19 +25,22 @@ const PanelFallback = () => (
   </div>
 );
 
+// Module-level, so the label is a key rather than text: the string itself is
+// resolved at render time by whoever draws the tab.
 const BASE_TABS = [
-  { id: 'overview',   label: 'Overview',   needsProvince: true  },
-  { id: 'congress',   label: 'Congress',   needsProvince: false },
-  { id: 'cabinet',    label: 'Cabinet',    needsProvince: false },
-  { id: 'employment', label: 'Employment', needsProvince: false },
-  { id: 'fiscal',     label: 'Fiscal',     needsProvince: false },
-  { id: 'exports',    label: 'Exports',    needsProvince: false },
-  { id: 'production', label: 'Production', needsProvince: false },
-  { id: 'rigi',       label: 'RIGI',       needsProvince: false },
-  { id: 'news',       label: 'News',       needsProvince: true, beta: true },
+  { id: 'overview',   needsProvince: true  },
+  { id: 'congress',   needsProvince: false },
+  { id: 'cabinet',    needsProvince: false },
+  { id: 'employment', needsProvince: false },
+  { id: 'fiscal',     needsProvince: false },
+  { id: 'exports',    needsProvince: false },
+  { id: 'production', needsProvince: false },
+  { id: 'rigi',       needsProvince: false },
+  { id: 'news',       needsProvince: true, beta: true },
 ];
 
 function EconomySectionWrapper({ section, selectedProvince, mobile }) {
+  const { t } = useTranslation();
   const { sipa, fiscal, exports, exportDest } = useEconomyData(selectedProvince);
   if (!selectedProvince) {
     // National-level fallback aggregating all provinces.
@@ -45,7 +49,7 @@ function EconomySectionWrapper({ section, selectedProvince, mobile }) {
   if (section === 'employment') {
     return sipa
       ? <EmploymentSection sipa={sipa} mobile={mobile} />
-      : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No employment data available for this province.</p>;
+      : <p className="text-[12px] text-[#003049]/50 py-4 text-center">{t('bottomBar.noEmploymentData')}</p>;
   }
   if (section === 'fiscal') {
     return (
@@ -53,7 +57,7 @@ function EconomySectionWrapper({ section, selectedProvince, mobile }) {
         <FiscalTriptych provinceName={selectedProvince} />
         {fiscal
           ? <FiscalSection fiscal={fiscal} provinceName={selectedProvince} mobile={mobile} />
-          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No fiscal detail data available for this province.</p>
+          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">{t('bottomBar.noFiscalData')}</p>
         }
       </div>
     );
@@ -61,7 +65,7 @@ function EconomySectionWrapper({ section, selectedProvince, mobile }) {
   if (section === 'exports') {
     return exports?.length > 0
       ? <ExportsSection exports={exports} exportDest={exportDest} mobile={mobile} />
-      : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No export data available for this province.</p>;
+      : <p className="text-[12px] text-[#003049]/50 py-4 text-center">{t('bottomBar.noExportData')}</p>;
   }
   if (section === 'production') {
     return <ProductionSection provinceName={selectedProvince} />;
@@ -70,6 +74,7 @@ function EconomySectionWrapper({ section, selectedProvince, mobile }) {
 }
 
 export default function BottomBar({ congress, selectedProvince, governors, onClearProvince, mobile = false }) {
+  const { t } = useTranslation();
   // Overlays are owned by the right-side RightOverlayPanel — not duplicated here.
   const tabs = selectedProvince
     ? BASE_TABS
@@ -109,7 +114,7 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
         borderRight: '1px solid #d4c4a0',
       }}
       role="tablist"
-      aria-label="Dashboard panels"
+      aria-label={t('bottomBar.dashboardPanels')}
     >
       {/* Selected province pill — visible from every tab */}
       {selectedProvince && (
@@ -129,8 +134,8 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
             <button
               onClick={onClearProvince}
               className="shrink-0 text-[#003049]/50 hover:text-[#003049] hover:bg-[#003049]/10 transition-colors text-[16px] leading-none w-6 h-6 rounded flex items-center justify-center"
-              aria-label="Clear province selection"
-              title="Clear selection — back to full map"
+              aria-label={t('bottomBar.clearProvince')}
+              title={t('bottomBar.clearProvinceTitle')}
             >
               ×
             </button>
@@ -156,7 +161,7 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
                 : { color: 'rgba(0,48,73,0.50)', background: 'rgba(0,48,73,0.04)' }
               }
             >
-              <span>{tab.label}</span>
+              <span>{t(`bottomBar.${tab.id}`)}</span>
               {tab.beta && (
                 <span
                   className="text-[8px] font-bold uppercase tracking-wider px-1 py-px rounded leading-none"
@@ -203,7 +208,7 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
             selectedProvince
               ? <ProvinceNews province={selectedProvince} />
               : <div className="flex flex-col items-center justify-center py-8 text-center">
-                  <p className="text-[13px] text-[#003049]/50">Select a province on the map to view provincial news summaries.</p>
+                  <p className="text-[13px] text-[#003049]/50">{t('bottomBar.selectForNews')}</p>
                 </div>
           )}
         </Suspense>
