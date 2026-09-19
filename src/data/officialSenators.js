@@ -1,4 +1,7 @@
 // Total: 72
+// El Senado se renueva por tercios: las 3 bancas de cada provincia pertenecen
+// siempre a la misma clase (2021-2027, 2023-2029 o 2025-2031). `desde`/`hasta`
+// son los años del mandato, no necesariamente los de la asunción.
 // Buenos Aires: 3
 // Catamarca: 3
 // Chaco: 3
@@ -378,12 +381,13 @@ export const officialSenators = [
     "hasta": "2027"
   },
   {
+    // Mandato de la clase 2021-2027 (Tucumán renovó en 2021); asumió la banca en 2023.
     "n": "Manzur, Juan Luis",
     "p": "Tucumán",
     "b": "JUSTICIALISTA",
     "co": "PJ",
-    "desde": "2023",
-    "hasta": "2029"
+    "desde": "2021",
+    "hasta": "2027"
   },
   {
     "n": "Marks, Ana Inés",
@@ -546,12 +550,13 @@ export const officialSenators = [
     "hasta": "2031"
   },
   {
+    // Mandato de la clase 2021-2027 (Mendoza renovó en 2021); asumió la banca en 2023.
     "n": "Suárez, Rodolfo Alejandro",
     "p": "Mendoza",
     "b": "UCR - UNIÓN CÍVICA RADICAL",
     "co": "UCR",
-    "desde": "2023",
-    "hasta": "2029"
+    "desde": "2021",
+    "hasta": "2027"
   },
   {
     "n": "Terenzi, Edith Elizabeth",

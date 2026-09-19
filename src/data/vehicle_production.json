@@ -1,7 +1,7 @@
 {
   "year": 2024,
   "source": "ADEFA, company reports, press (2024 annual data)",
-  "notes": "Production fell 17.1% vs 2023 (610,715). ADEFA does not publish per-brand breakdowns until 7 months after year-end; plant-level figures are estimates from press reports and company announcements.",
+  "notes": "Production fell 17.1% vs 2023 (610,715). ADEFA does not publish per-brand breakdowns until 7 months after year-end; plant-level figures are estimates from press reports and company announcements, and do not sum exactly to the ADEFA national total.",
   "total_vehicles": 506571,
   "plants": [
     {
@@ -143,20 +143,6 @@
       "share_pct": 0.8,
       "employees": 800,
       "notes": "FPT engine plant produced 200,000th engine Mar 2024. First CNG-powered buses in Nov 2024. Estimate ~4k."
-    },
-    {
-      "company": "Iveco",
-      "plant": "Ferreyra",
-      "province": "Córdoba",
-      "locality": "Ferreyra",
-      "lat": -31.4900,
-      "lon": -64.0950,
-      "vehicles": ["Tector", "Cursor", "Stralis", "Trakker", "Daily", "Eurocargo"],
-      "type": "trucks / bus chassis",
-      "production": 4000,
-      "share_pct": 0.8,
-      "employees": 800,
-      "notes": "Commercial vehicles only (trucks and bus chassis). Not passenger cars. FPT engine plant."
     }
   ],
   "motorcycles": {
