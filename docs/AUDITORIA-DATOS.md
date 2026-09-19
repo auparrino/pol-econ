@@ -1,6 +1,6 @@
 # Auditoría de datos y revisión de la herramienta
 
-Revisión completa de los 50 datasets bajo `src/data/`, los scripts de
+Revisión completa de los 49 datasets bajo `src/data/`, los scripts de
 construcción bajo `scripts/`, y el código que los consume.
 
 Cada hallazgo está clasificado como:
@@ -227,22 +227,30 @@ resultados definitivos del INDEC, y **inventar los valores sería peor que
 dejarlos marcados**. Queda como `OPEN` en `npm run validate`, con la nota de
 qué cuadro hay que reimportar.
 
-### 5.2 Cobertura de i18n ≈ 20 %
+### 5.2 Cobertura de i18n — parcialmente cerrado
 
-`react-i18next` está cableado y los dos locales tienen las mismas 611 claves,
-pero solo hay **121 llamadas a `t()`** en 5 componentes. La mayor parte de la UI
-—`ExportsSection`, `ProductionSection`, `ProvincePanel`, `Legend`,
-`RigiTab`…— tiene el texto en inglés hardcodeado. Es una herramienta sobre
-Argentina: el idioma por defecto debería ser el español y el resto de las
-cadenas deberían pasar por `t()`.
+Era ≈20 %: 121 llamadas a `t()` en 5 componentes, con el resto de la UI en
+inglés hardcodeado. Hoy son **360 de 679 claves en uso, en 26 de 42
+componentes**, y el idioma por defecto es el español (ver §9.3).
 
-### 5.3 Datasets construidos y nunca usados
+Sigue abierto para aproximadamente la mitad del texto, concentrado en
+`OverlayPanel`, `ProvincePanel` y las pestañas móviles. Ya no es un riesgo
+silencioso: `npm test` falla si una clave sin resolver llega a la pantalla, así
+que lo que queda se puede completar de a un componente por vez sin romper nada.
 
-Cinco datasets se generan y se versionan pero ningún componente los importa:
-`censo2022_categoria_ocupacional`, `censo2022_empleo_provincial`,
-`censo_pub_priv`, `fiscalSeries`, `vab_provincial`. Dos de ellos
-(`censo_pub_priv`, `vab_provincial`) ni siquiera tienen script generador. O se
-conectan a la UI o se sacan. El validador los reporta como `warn`.
+### 5.3 Datasets construidos y nunca usados — casi cerrado
+
+Eran cinco. Hoy queda **uno**: `vab_provincial`. Los dos del Censo 2022 se
+conectaron en el bloque `CensusBlock` de la pestaña de empleo (usando claves de
+i18n que ya existían y nadie leía), `censo_pub_priv` entró en la escalera de
+reconciliación del empleo público, y `fiscalSeries` se borró junto con su script
+—era una serie fabricada, no una medición.
+
+`vab_provincial` sigue sin poder conectarse: su campo `sector_dominante` es la
+suma de una *familia* de sectores (Santa Cruz: Petróleo y Gas 24,39 + Minería
+Metalífera 14,10 = 38,49) y ningún campo registra qué sectores componen cada
+familia, así que el agregado no se puede verificar desde adentro. El validador
+lo reporta como `warn`.
 
 ### 5.4 Noticias congeladas en 2026-04-01
 
@@ -644,7 +652,7 @@ que se aleja de lo que a alguien le pareció razonable.
 
 ## 8. Red de regresión: `npm run validate`
 
-`scripts/validate-data.mjs` codifica **87 invariantes** sobre los datasets.
+`scripts/validate-data.mjs` codifica **128 invariantes** sobre los datasets.
 Cada uno corresponde a un defecto que este repositorio tuvo al menos una vez:
 
 ```
@@ -662,4 +670,136 @@ Los defectos confirmados pero no corregibles desde este repositorio se reportan
 como `OPEN` y no hacen fallar la corrida. La entrada correspondiente en
 `KNOWN_OPEN` debe borrarse en el mismo commit que arregle el dato.
 
-Estado actual: **110/118 OK · 8 abiertos · 1 warning** (datasets huérfanos).
+Estado actual: **120/128 OK · 8 abiertos · 1 warning** (datasets huérfanos).
+
+---
+
+## 9. Mejoras de infraestructura
+
+Ocho mejoras propuestas y aplicadas. Las seis primeras están descritas arriba
+en los hallazgos que produjeron; las dos últimas son nuevas y se detallan acá,
+porque cada una encontró defectos reales en cuanto se puso a correr.
+
+### 9.1 Pipelines re-ejecutables — `npm run refresh`
+
+Ningún archivo registraba qué script producía qué dataset. Actualizar cualquier
+cosa significaba leer los veinte scripts de `scripts/` para encontrar el que
+escribía el archivo, y después adivinar qué insumo crudo esperaba y dónde
+ponerlo. Ése es exactamente el motivo por el que varios hallazgos siguen
+abiertos: se sabe cuál es el arreglo, el archivo que necesita no está en disco,
+y no había forma de saber qué script lo iba a consumir.
+
+`scripts/pipelines.json` es ese registro: script, salidas, insumos, si necesita
+red, qué variable de entorno hace falta y la clave de `sources.js` que dice de
+dónde se baja. `npm run refresh` lo lee y:
+
+```
+npm run refresh              # lista las 15 pipelines con su estado
+npm run refresh alignment    # corre una
+npm run refresh <x> --dry    # muestra el comando sin ejecutarlo
+npm run refresh --all        # corre las que no tocan la red
+```
+
+Cuando una pipeline no puede correr, nombra **el archivo exacto que falta** y la
+entrada de `sources.js` que dice dónde conseguirlo, en vez de fallar con un
+ENOENT. `--all` nunca corre las que usan red o una API key: reemplazarían un
+snapshot versionado con una descarga en vivo sin que nadie lo haya pedido.
+
+El validador chequea que el manifiesto esté completo —que todo script que
+escribe en `src/data` esté registrado— así que no se puede pudrir en silencio.
+
+**Lo que encontró al primer intento:**
+
+- **`_meta` se estaba leyendo como si fuera un dato.** El script de procedencia
+  agregó `_meta` a los datasets indexados por clave, y cada
+  `Object.values(dataset)` del repo empezó a devolverlo como un registro más:
+  `compute-alignment.mjs` lo puntuó como el legislador 329 y el mapa dibujó una
+  provincia llamada `—`. Se ve en el diff de `alignmentScores.json` la primera
+  vez que la pipeline se volvió a correr. `src/utils/dataset.js` es ahora la
+  única forma de leer las filas de un dataset, usada por los scripts y por los
+  cuatro componentes que lo hacían a mano.
+
+- **Dos scripts escribían `dnap_empleo_provincial.json`.** El `.py` lee el xlsx
+  de DNAP; el `.mjs` multiplicaba población por ratios transcritos a mano de un
+  gráfico y no tenía las columnas salariales en absoluto. El archivo versionado
+  venía del `.py`, así que un `refresh` apuntando al `.mjs` habría degradado el
+  dataset en silencio. El `.mjs` está borrado.
+
+- **`optimize_geojson.py` tiene ramas muertas** que escriben `ductos.json`,
+  `lineas_electricas.json` y `produccion.json`: ninguno está en el repo. Esas
+  capas se dieron de baja y el código quedó.
+
+### 9.2 Tests de render — `npm test`
+
+El repositorio no tenía ningún test. Los bugs que llegó a publicar no eran
+errores sutiles de datos: eran **paneles en blanco**. Una violación de las
+reglas de hooks que tiraba abajo la pestaña de empleo, un problema de acentos
+que dejaba el gabinete de CABA vacío, una búsqueda de provincia que devolvía las
+centrales de Chubut para Tierra del Fuego. Los tres se ven en el primer segundo
+de un render, y los tres pasaron la revisión porque nadie renderizó la página.
+
+`scripts/smoke.mjs` levanta el build, abre las nueve pestañas para cuatro
+provincias en los dos idiomas, más ocho estados del mapa: **88 renders**. Falla
+si el error boundary aparece, si el panel queda vacío, si un gráfico se dibuja
+con altura cero, si una clave de traducción llega a la pantalla, o si el browser
+loguea cualquier cosa que no sea ruido de red del sandbox.
+
+Las cuatro provincias no son una muestra. Buenos Aires tiene datos en todos
+lados; CABA es la que anida dentro de "Buenos Aires" y es ciudad, no provincia;
+Tierra del Fuego es la del nombre legal largo que rompía el matcheo; Neuquén es
+la única con acento.
+
+**Verificado que falla cuando debe:** se inyectó un crash en `EmploymentSection`
+(lo detecta, nombrando el error) y una altura cero en el gráfico de
+`FiscalTriptych` (lo detecta, 1 de 1 gráficos sin altura). También se probó
+quitar el plegado de acentos de `utils/provinces.js`: **eso no lo detecta**, y
+no es un fallo del test — los datasets ya son canónicos, así que el plegado sólo
+importa en el borde scrapeado y quitarlo no cambia ningún panel.
+
+**Lo que encontró:**
+
+- **Un crash en cualquier panel desmontaba la barra de pestañas entera.** El
+  único error boundary envolvía todo `BottomBar`, así que el lector perdía la
+  navegación y no tenía vuelta más que recargar. Ahora cada panel tiene el suyo,
+  indexado por pestaña para que se resetee al navegar.
+
+- **Cuatro claves de traducción sin resolver en `LayerPanel`**, en cuanto el
+  chequeo se amplió más allá de `<aside>`. Y tres más al agregar los estados del
+  mapa, que ningún page load normal alcanza.
+
+- **`RightOverlayPanel` tenía su propia copia de `POWER_BY_FUEL`**, tapando el
+  `powerConstants.js` que existe justamente para eso.
+
+Para poder manejar la app desde afuera hubo que hacerla direccionable, que es
+una mejora por derecho propio: `?province=`, `?tab=`, `?mode=`, `?layers=` y
+`?lng=`. Antes, llegar a la pestaña fiscal de Tierra del Fuego eran cuatro
+clicks y no se podía compartir con un link — la gente saca una captura.
+
+### 9.3 i18n: de 75 a 360 claves en uso
+
+El repo traía **627 claves** en español y en inglés, bien escritas, con formas
+rioplatenses ("Hacé click"). Cuatro componentes las leían. Todo lo demás estaba
+hardcodeado en inglés, en un dashboard sobre política provincial argentina con
+fuentes de INDEC y Mecon.
+
+Así que esto fue cableado, no traducción. Hoy 26 de 42 componentes resuelven sus
+strings, las barras de pestañas y la leyenda del mapa guardan claves en vez de
+texto, y el idioma de fallback es el español — un browser en inglés sigue viendo
+inglés, esto sólo decide qué pasa con uno que no se reconoce.
+
+Los nombres de cultivos, frutas y especies son **datos, no código**:
+`agriculture.json` guarda "Soybeans" y los filtros matchean contra eso.
+`utils/dataLabel.js` los mapea al revés — el locale inglés ya contiene esos
+strings como valores, así que el valor es la búsqueda, y un nombre que no
+coincide cae de vuelta en sí mismo. Faltaban 46 nombres de frutas/hortalizas y
+5 especies en los locales; se agregaron en ambos idiomas.
+
+**Un hallazgo real de datos salió de acá:** la leyenda del mapa seguía diciendo
+"Fiscal Dependency" mucho después de que el resto de la app pasara al neutral
+"National transfers". La clave ya estaba corregida y nadie la leía.
+
+Queda alrededor de la mitad del texto sin cablear, concentrada en
+`OverlayPanel`, `ProvincePanel` y las pestañas móviles. El chequeo de claves
+filtradas del smoke test hace que completarlo sea seguro de a poco: si alguien
+mueve texto a un objeto de configuración y se olvida del `t()` en el render, el
+test lo dice con el nombre de la clave.
