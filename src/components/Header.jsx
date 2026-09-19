@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useMacroData } from '../hooks/useMacroData';
 import { commodityPrices } from '../data/commodityPrices';
 
@@ -37,6 +38,7 @@ const latestCommodities = (() => {
 })();
 
 export default function Header() {
+  const { t } = useTranslation();
   const macro = useMacroData();
   const cmp = macro.comparisons;
 
@@ -61,10 +63,10 @@ export default function Header() {
     >
       <div className="shrink-0 absolute" style={{ left: 16 }}>
         <h1 className="text-[14px] font-extrabold tracking-tight text-navy leading-tight">
-          ARGENTINA
+          {t('header.title')}
         </h1>
         <p className="text-[8px] font-medium tracking-[1.4px] uppercase text-steel -mt-0.5">
-          Political & Economic Atlas
+          {t('header.subtitle')}
         </p>
       </div>
 

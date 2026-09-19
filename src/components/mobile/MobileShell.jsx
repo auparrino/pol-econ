@@ -67,7 +67,7 @@ function PeekCard({ province, governor, miningCount, onOpen, onDismiss }) {
         style={{ background: '#003049', color: '#FDF0D5' }}
         aria-label={`View ${province} full details`}
       >
-        View full details →
+        {t('mobile.viewFullDetails')}
       </button>
     </div>
   );

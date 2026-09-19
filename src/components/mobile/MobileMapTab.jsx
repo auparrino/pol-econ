@@ -115,7 +115,7 @@ export default function MobileMapTab({
       {/* Layer sheet */}
       <BottomSheet open={sheetOpen} onClose={() => setSheetOpen(false)} title={t('mobile.mapLayers')} maxHeightPct={overlayCount > 0 ? 92 : 80}>
         <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/50 mb-2">
-          Color provinces by
+          {t('mobile.colorProvincesBy')}
         </p>
         <div className="grid grid-cols-2 gap-1.5 mb-4">
           {CHOROPLETH_MODES.map(mode => {
@@ -137,7 +137,7 @@ export default function MobileMapTab({
         </div>
 
         <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/50 mb-2">
-          Overlays
+          {t('layerPanel.overlays')}
         </p>
         <div className="space-y-1.5">
           {OVERLAY_LAYERS.map(layer => {

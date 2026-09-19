@@ -170,7 +170,7 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
                     : { background: '#d4a80022', color: '#b58500', border: '1px solid #d4a80055' }
                   }
                 >
-                  Beta
+                  {t('common.beta')}
                 </span>
               )}
             </button>

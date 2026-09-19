@@ -454,7 +454,7 @@ function LegislatorsSection({ province, congress }) {
           tooltip="Measures how often each legislator votes the same way as the LLA ruling bloc across all congressional votes (147+ Diputados, 154+ Senado since Dec 2023). Source: comovoto.dev.ar (updated weekly from votaciones.hcdn.gob.ar and senado.gob.ar)."
         >
           <p className="text-[12px] text-[#003049]/50 mb-1.5 leading-tight">
-            % of all congressional votes aligned with the LLA ruling bloc. Source: comovoto.dev.ar
+            {t('province.allaDesc')}
           </p>
           <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10">
             <div className="flex items-center justify-between mb-1">
@@ -483,22 +483,22 @@ function LegislatorsSection({ province, congress }) {
           <span className="inline-flex items-center gap-1">
             <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold text-[10px]"
               style={{ backgroundColor: '#27ae6022', color: '#27ae60', border: '1px solid #27ae6066' }}>A</span>
-            In favour
+            {t('votes.inFavour')}
           </span>
           <span className="inline-flex items-center gap-1">
             <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold text-[10px]"
               style={{ backgroundColor: '#C1121F22', color: '#C1121F', border: '1px solid #C1121F66' }}>N</span>
-            Against
+            {t('votes.against')}
           </span>
           <span className="inline-flex items-center gap-1">
             <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold"
               style={{ backgroundColor: '#d4a80022', color: '#d4a800', border: '1px solid #d4a80066', fontSize: 7 }}>ABS</span>
-            Abstention
+            {t('votes.abstention')}
           </span>
           <span className="inline-flex items-center gap-1">
             <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold text-[9px]"
               style={{ background: 'transparent', color: 'rgba(0,48,73,0.35)', border: '1px dashed rgba(0,48,73,0.35)' }}>AUS</span>
-            Absent
+            {t('votes.absent')}
           </span>
         </div>
       )}
@@ -655,7 +655,7 @@ export default function ProvincePanel({ province, governors, onClose, width = 32
           </>
         ) : (
           <p className="text-[10px] text-[#003049]/60 italic">
-            Data not yet loaded for this province.
+            {t('province.dataNotLoaded')}
           </p>
         )}
       </div>

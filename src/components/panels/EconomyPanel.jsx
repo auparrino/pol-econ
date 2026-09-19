@@ -25,12 +25,12 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
       <div className="flex flex-col items-center justify-center py-8 text-center">
         <div className="text-3xl mb-2 opacity-30">📊</div>
         <p className="text-[13px] text-[#003049]/50">
-          Select a province on the map to view its economic profile.
+          {t('economy.selectForProfile')}
         </p>
         <p className="text-[11px] text-[#003049]/40 mt-2">
           Employment data: SIPA ({sipaData.lastUpdated})<br />
-          Fiscal data: DNAP/Sec. Hacienda (2024)<br />
-          Export data: INDEC (2024)
+          {t('economy.fiscalSrc')}<br />
+          {t('economy.exportSrc')}
         </p>
       </div>
     );
@@ -80,7 +80,7 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
 
       {/* Source footer */}
       <p className="text-[10px] text-[#003049]/30 mt-4 leading-relaxed">
-        Sources: CEP XXI/SIPA (employment), Sec. Hacienda TOP/EAIF (fiscal), INDEC (exports), MAGyP/Sec. Energía/SENASA/ADEFA (production)
+        {t('economy.allSources')}
       </p>
     </div>
   );

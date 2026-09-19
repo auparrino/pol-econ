@@ -95,7 +95,7 @@ export default function EconomySummary({ province }) {
         </div>
 
         <p className="text-[10px] text-[#003049]/30 italic">
-          Full analysis in Economy tab
+          {t('economy.fullAnalysis')}
         </p>
       </div>
     </Section>

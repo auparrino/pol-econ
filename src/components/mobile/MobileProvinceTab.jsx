@@ -375,7 +375,7 @@ function CongressContent({ province, congress }) {
   return (
     <div className="space-y-3">
       <p className="text-[10px] text-[#003049]/55 leading-tight">
-        % = share of all roll-call votes aligned with the LLA ruling bloc, since Dec 2023. Source: comovoto.dev.ar. Vote dots show key topic samples only.
+        {t('mobile.congressAlignmentHint')}
       </p>
       {/* Vote legend */}
       <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[10px] text-[#003049]/70">
@@ -392,7 +392,7 @@ function CongressContent({ province, congress }) {
           <span className="inline-flex items-center justify-center w-[16px] h-[16px] rounded-sm font-bold text-[8px]"
             style={{ color: 'rgba(0,48,73,0.35)', border: '1px dashed rgba(0,48,73,0.35)' }}
           >—</span>
-          Absent
+          {t('votes.absent')}
         </span>
       </div>
       {avg != null && (
@@ -468,7 +468,7 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
             className="text-[12px] font-bold uppercase tracking-wider rounded-lg py-2.5 px-5"
             style={{ background: '#003049', color: '#FDF0D5' }}
           >
-            Open map to pick
+            {t('mobile.openMapToPick')}
           </button>
         </div>
       </div>
@@ -488,7 +488,7 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
           style={{ background: 'rgba(0,48,73,0.07)' }}
           aria-label="Back to map"
         >
-          ← Back to map
+          {t('mobile.backToMap')}
         </button>
         <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight truncate flex-1 min-w-0">{province}</h1>
       </div>
@@ -575,7 +575,7 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
               {polCtx?.rigi_adhesion_provincial && (
                 <div className="rounded-xl border p-3" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
                   <p className="text-[10px] text-[#003049]/55 leading-snug mb-1">
-                    Provincial adhesion law (separate from national project approval — adds provincial tax benefits on top):
+                    {t('mobile.provAdhLabelShort')}
                   </p>
                   <p className="text-[12px] text-[#003049]">{polCtx.rigi_adhesion_provincial}</p>
                 </div>

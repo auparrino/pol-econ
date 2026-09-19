@@ -382,8 +382,7 @@ function RefineriesCard({ active, onToggle, selectedProvince }) {
       {!selectedProvince && (
         <>
           <p className="text-[10px] text-[#003049]/65 leading-snug">
-            ~640 kbpd installed capacity. Highly concentrated: top 3 operators
-            run more than 85%. La Plata + Luján de Cuyo + San Lorenzo dominate.
+            {t('overlay.refineriesDesc')}
           </p>
           <MiniSection title={t('overlay.byOperator')}>
             <ul className="text-[10px] space-y-0.5">
@@ -556,8 +555,7 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
             </ul>
           </MiniSection>
           <p className="text-[10px] text-[#003049]/55 leading-snug mt-2">
-            Thermal still dominates (~59% of capacity, gas the main fuel).
-            Renewables passed nuclear in 2018 and now triple it.
+            {t('overlay.thermalDominates')}
           </p>
         </>
       )}
@@ -689,8 +687,7 @@ export default function RightOverlayPanel({
               selectedProvince={selectedProvince}
             />
             <p className="text-[9px] text-[#003049]/40 italic mt-2 leading-snug">
-              Sources: SIACAM (mining), datos.energia.gob.ar (HC fields, refineries),
-              CAMMESA end-2024 + manual additions (power plants).
+              {t('overlay.sourcesLine')}
             </p>
           </div>
         )}

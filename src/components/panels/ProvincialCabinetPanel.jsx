@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { politicalContext } from '../../data/politicalContext';
 import { gabinetesProvinciales } from '../../data/gabinetesProvinciales';
@@ -5,6 +6,7 @@ import { matchProvince, getAlignColor } from '../shared/helpers';
 import EditorialMark from '../shared/EditorialMark';
 
 function ProvincialCabinetPanelRaw({ selectedProvince, governors }) {
+  const { t } = useTranslation();
   const gov = matchProvince(governors || [], selectedProvince);
   const pol = matchProvince(politicalContext, selectedProvince);
   const gabData = matchProvince(gabinetesProvinciales, selectedProvince);
@@ -86,7 +88,7 @@ function ProvincialCabinetPanelRaw({ selectedProvince, governors }) {
         <div className="w-full rounded px-3 py-2 border mt-1 text-center"
           style={{ background: 'rgba(243,156,18,0.07)', borderColor: 'rgba(243,156,18,0.25)' }}>
           <p className="text-[10px] uppercase tracking-widest text-[#003049]/50 leading-tight inline-flex items-center gap-1.5">
-            Mining Stance <EditorialMark confidence={miningConfidence} />
+            {t('cabinet.miningStance')} <EditorialMark confidence={miningConfidence} />
           </p>
           <p className="text-[13px] font-semibold text-[#003049] leading-snug">{miningStance}</p>
         </div>

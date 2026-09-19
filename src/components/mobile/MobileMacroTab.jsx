@@ -86,7 +86,7 @@ export default function MobileMacroTab() {
           </div>
 
           <p className="text-[9px] text-[#003049]/40 text-center pt-2">
-            Sources: dolarapi · BCRA · argentinadatos · Mar 2026
+            {t('mobile.macroSources')}
           </p>
         </div>
       </div>

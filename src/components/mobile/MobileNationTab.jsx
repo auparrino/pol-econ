@@ -115,7 +115,7 @@ function NationalGridCard() {
       {/* Nuclear plants */}
       <div className="pt-2 border-t border-[#003049]/10">
         <p className="text-[9px] uppercase tracking-wider text-[#003049]/50 font-semibold mb-1">
-          Nuclear plants
+          {t('overlay.nuclearPlants')}
         </p>
         <div className="space-y-0.5">
           {POWER_NUCLEAR_PLANTS.map(p => (

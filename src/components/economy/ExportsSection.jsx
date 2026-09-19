@@ -60,7 +60,7 @@ export default function ExportsSection({ exports, exportDest, mobile }) {
     <div className="space-y-3">
       {/* Explanation */}
       <p className="text-[11px] text-[#003049]/40 leading-relaxed">
-        Provincial exports in USD millions. PP: primary products, MOA: agricultural manufactures, MOI: industrial manufactures, F&E: fuels & energy. Source: INDEC.
+        {t('exportsSec.desc')}
       </p>
 
       {/* Header */}

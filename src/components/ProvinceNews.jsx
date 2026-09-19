@@ -80,12 +80,12 @@ export default function ProvinceNews({ province }) {
         className="text-[15px] font-bold tracking-[1.5px] uppercase text-steel mb-2 border-b pb-1 flex items-center gap-2"
         style={{ borderColor: 'rgba(0,48,73,0.12)' }}
       >
-        Provincial News
+        {t('news.provincialNews')}
         <span
           className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded"
           style={{ background: '#d4a80022', color: '#b58500', border: '1px solid #d4a80055' }}
         >
-          Beta
+          {t('common.beta')}
         </span>
       </h3>
 
@@ -156,7 +156,7 @@ export default function ProvinceNews({ province }) {
       {/* Empty state */}
       {!activeTimeframe && !loading && !summary && !error && (
         <p className="text-[12px] text-[#003049]/40 italic py-2">
-          Select a timeframe to generate an AI summary of provincial news.
+          {t('news.selectTimeframe')}
         </p>
       )}
     </div>
