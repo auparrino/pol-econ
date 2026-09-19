@@ -7,8 +7,8 @@
   ],
   "publicSource": "derived",
   "limitations": [
-    "No incluye empleados provinciales de 13 provincias con caja previsional propia (BA, CABA, Córdoba, Santa Fe, Chaco, Entre Ríos, Misiones, Formosa, Neuquén, Chubut, Santa Cruz, TdF, Corrientes).",
-    "No incluye trabajo informal (EPH estima ~30-40% del empleo urbano)."
+    "Este dataset conserva solo el campo `private`; el split público/privado está en sipa_pub_priv.json, que también mantiene la lista canónica de provincias con caja previsional propia (la lista que este campo tenía antes incluía CABA y omitía La Pampa, y contradecía a ese archivo).",
+    "No incluye trabajo informal (EPH estima ~30-40% del empleo urbano).", "Medido por UBICACIÓN DEL ESTABLECIMIENTO, no por residencia del trabajador. No es comparable 1:1 con sipa_pub_priv.json, que usa residencia: para el mismo mes, CABA marca 1.593.973 privados acá y 828.193 allá (+92%), y Buenos Aires 2.111.440 contra 2.773.415 (-24%). A nivel nacional los dos coinciden (0,5%): la diferencia es conmutación entre jurisdicciones."
   ],
   "provinces": [
     {

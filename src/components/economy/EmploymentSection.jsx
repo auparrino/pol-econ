@@ -12,9 +12,7 @@ import { translateSector } from '../../utils/sectorTranslations';
 import SourceInfo from '../shared/SourceInfo';
 import sipaPubPriv from '../../data/sipa_pub_priv.json';
 import dnapEmpleo from '../../data/dnap_empleo_provincial.json';
-import { sociodemographic } from '../../data/sociodemographic';
-
-const EPH_NATIONAL_UNEMPLOYMENT = 6.3;
+import { sociodemographic, EPH_UNEMPLOYMENT_NATIONAL, EPH_VINTAGE_SHORT } from '../../data/sociodemographic';
 
 const normalize = (s) =>
   (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
@@ -40,7 +38,7 @@ function SnapshotStrip({ provinceName, t }) {
   if (!record || record.desempleo == null) return null;
 
   const rate = record.desempleo;
-  const delta = rate - EPH_NATIONAL_UNEMPLOYMENT;
+  const delta = rate - EPH_UNEMPLOYMENT_NATIONAL;
   const ranked = sociodemographic.filter(p => p.desempleo != null);
   const rank = ranked.slice().sort((a, b) => a.desempleo - b.desempleo)
     .findIndex(p => p.provincia === record.provincia) + 1;
@@ -57,7 +55,7 @@ function SnapshotStrip({ provinceName, t }) {
         </span>
       </div>
       <span className={`text-[10px] font-mono ${delta <= 0 ? 'text-[#17a589]' : 'text-[#C1121F]/70'}`}>
-        {delta > 0 ? '+' : ''}{delta.toFixed(1)} · #{rank}/{ranked.length} · Q3-25
+        {delta > 0 ? '+' : ''}{delta.toFixed(1)} · #{rank}/{ranked.length} · {EPH_VINTAGE_SHORT}
       </span>
     </div>
   );
@@ -87,7 +85,7 @@ function PublicCompositeBlock({ provinceName, t }) {
           <SourceInfo src={['sipaDeptoPubPriv']} size={10} />
         </p>
         <span className="text-[10px] font-mono text-[#003049]/50">
-          #{pubRank}/{ranked.length} pub · SIPA {sipaPubPriv.vintage}
+          #{pubRank}/{ranked.length} pub · SIPA {sipaPubPriv.vintage} · {t('employment.byResidence')}
         </span>
       </div>
 
@@ -243,7 +241,7 @@ function PrivateSectorsBlock({ sipa, t }) {
           <SourceInfo src={['cepxxiSipa']} size={10} />
         </p>
         <span className="text-[10px] font-mono text-[#003049]/50">
-          {fmtNum(sipa.private)} {t('employment.jobsShort')}
+          {fmtNum(sipa.private)} {t('employment.jobsShort')} · {t('employment.byEstablishment')}
         </span>
       </div>
 
@@ -293,6 +291,9 @@ export default function EmploymentSection({ sipa, provinceName }) {
       <EvolutionBlock provinceName={name} t={t} />
       {sipa && <PrivateSectorsBlock sipa={sipa} t={t} />}
       <p className="text-[10px] text-[#003049]/45 leading-snug pt-1">
+        {t('employment.universeWarning')}
+      </p>
+      <p className="text-[10px] text-[#003049]/45 leading-snug">
         {t('employment.footer')}
       </p>
     </div>

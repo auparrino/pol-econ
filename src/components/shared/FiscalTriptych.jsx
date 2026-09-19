@@ -73,20 +73,25 @@ export function FiscalTriptych({ provinceName }) {
 
   // Display
   const depColor = depLatest > 85 ? '#C1121F' : depLatest > 65 ? '#e67e22' : depLatest > 40 ? '#f39c12' : '#27ae60';
-  // Build the 3-stack composition series. The dataset only carries `own` and
-  // `transfers` per year (no per-year automatic vs non-automatic split), so we
-  // apply the latest-year coparticipación / nationalTransfers ratio as a
-  // constant approximation across history.
-  const autoRatio = transfersLatest > 0 ? coparticipation / transfersLatest : 0;
+  // The per-year series only carries `own` and `transfers`, so that is all the
+  // chart plots. It used to show a third band by applying the LATEST year's
+  // coparticipación / transfers ratio to every year back to 2010 — the band
+  // moved with total transfers, never with the actual automatic/discretionary
+  // mix, so it read as history while carrying no year-by-year information.
+  // The real split exists for the latest year only, and is shown as such below.
   const compositionData = series
     .filter(r => r.year >= 2010 && (r.own || 0) + (r.transfers || 0) > 0)
     .map(r => {
       const total = (r.own || 0) + (r.transfers || 0);
-      const ownPct = (r.own / total) * 100;
-      const autoPct = ((r.transfers || 0) * autoRatio / total) * 100;
-      const discPct = ((r.transfers || 0) * (1 - autoRatio) / total) * 100;
-      return { year: r.year, ownPct, autoPct, discPct };
+      return {
+        year: r.year,
+        ownPct: (r.own / total) * 100,
+        transfersPct: ((r.transfers || 0) / total) * 100,
+      };
     });
+
+  // Latest-year split of national transfers — this one is in the data.
+  const autoPctLatest = transfersLatest > 0 ? (coparticipation / transfersLatest) * 100 : null;
 
   return (
     <div className="mt-2">
@@ -94,7 +99,7 @@ export function FiscalTriptych({ provinceName }) {
         <Metric
           label="Fed. transfers"
           value={`${depLatest?.toFixed(1) ?? '—'}%`}
-          sub={`of total revenue · ${prov.year}`}
+          sub={`of own-source + transfers · ${prov.year}`}
           color={depColor}
         />
         <Metric
@@ -120,24 +125,38 @@ export function FiscalTriptych({ provinceName }) {
                   domain={[0, 1]}
                 />
                 <Tooltip content={<CompositionTooltip />} />
-                <Area type="monotone" dataKey="ownPct"  stackId="1" name="Own"            fill="#003049" fillOpacity={0.85} stroke="#003049" />
-                <Area type="monotone" dataKey="autoPct" stackId="1" name="Automatic"      fill="#17a589" fillOpacity={0.85} stroke="#17a589" />
-                <Area type="monotone" dataKey="discPct" stackId="1" name="Non-automatic"  fill="#d4a800" fillOpacity={0.85} stroke="#d4a800" />
+                <Area type="monotone" dataKey="ownPct"       stackId="1" name="Own"               fill="#003049" fillOpacity={0.85} stroke="#003049" />
+                <Area type="monotone" dataKey="transfersPct" stackId="1" name="National transfers" fill="#17a589" fillOpacity={0.85} stroke="#17a589" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
           <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-[9px]">
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#003049' }} /><span className="text-[#003049]/70">Own</span></span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#17a589' }} /><span className="text-[#003049]/70">Automatic (coparticipación)</span></span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#d4a800' }} /><span className="text-[#003049]/70">Non-automatic</span></span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#003049' }} /><span className="text-[#003049]/70">Own-source</span></span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#17a589' }} /><span className="text-[#003049]/70">National transfers</span></span>
           </div>
+
+          {autoPctLatest != null && (
+            <div className="mt-2">
+              <div className="text-[9px] uppercase tracking-wider text-[#003049]/50 mb-0.5">
+                Of those transfers, {prov.year}
+              </div>
+              <div className="flex h-[8px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.10)' }}>
+                <div style={{ width: `${autoPctLatest}%`, background: '#17a589' }} title={`Automatic (coparticipación): ${autoPctLatest.toFixed(1)}%`} />
+                <div style={{ width: `${100 - autoPctLatest}%`, background: '#d4a800' }} title={`Non-automatic: ${(100 - autoPctLatest).toFixed(1)}%`} />
+              </div>
+              <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-[9px]">
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#17a589' }} /><span className="text-[#003049]/70">Automatic (coparticipación) {autoPctLatest.toFixed(0)}%</span></span>
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#d4a800' }} /><span className="text-[#003049]/70">Non-automatic {(100 - autoPctLatest).toFixed(0)}%</span></span>
+              </div>
+            </div>
+          )}
         </div>
       )}
 
       <div className="text-[9px] text-[#003049]/40 mt-1.5 leading-snug">
         Source: Mecon DNAP (APNF 2005–{prov.year}). Each year normalized to 100% — invariant to inflation.
         <br />
-        <b>Non-automatic</b> = transfers outside the coparticipación law (ATN, convenios, fondos compensadores, obra pública nacional). Historical automatic/non-automatic split estimated using the latest year's ratio.
+        <b>Non-automatic</b> = transfers outside the coparticipación law (ATN, convenios, fondos compensadores, obra pública nacional). The dataset only carries this split for {prov.year}, so it is shown for that year alone rather than projected back over the series.
       </div>
     </div>
   );

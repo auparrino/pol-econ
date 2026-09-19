@@ -1,66 +1,6 @@
 import { useMemo } from 'react';
-import { TAX_COLORS, TAX_LABELS } from './chartTheme';
 import { getAllFiscal } from '../../hooks/useEconomyData';
 import { fmtMoney } from '../../utils/formatNumber';
-
-function DependencyBar({ dependency, year }) {
-  if (dependency == null) return null;
-  const color = dependency <= 30 ? '#27ae60' : dependency <= 50 ? '#2ecc71' : dependency <= 70 ? '#d4a800' : dependency <= 85 ? '#f97316' : '#C1121F';
-  const label = dependency <= 30 ? 'Low dependency' : dependency <= 50 ? 'Moderate' : dependency <= 70 ? 'High' : 'Very high dependency';
-  return (
-    <div className="bg-[#003049]/6 rounded-lg p-2.5 border border-[#003049]/10">
-      <div className="flex justify-between items-center mb-1">
-        <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider">Federal dependency</p>
-        <p className="text-[14px] font-bold font-mono" style={{ color }}>{dependency.toFixed(1)}%</p>
-      </div>
-      <div className="h-[8px] bg-[#003049]/10 rounded-full overflow-hidden">
-        <div className="h-full rounded-full" style={{ width: `${Math.min(dependency, 100)}%`, backgroundColor: color }} />
-      </div>
-      <p className="text-[11px] text-[#003049]/40 mt-1">
-        {label} — national transfers / total revenues ({year})
-      </p>
-    </div>
-  );
-}
-
-function TaxStructure({ taxDetail }) {
-  if (!taxDetail) return null;
-  const data = Object.entries(taxDetail)
-    .filter(([, v]) => v > 0)
-    .map(([k, v]) => ({
-      name: TAX_LABELS[k] || k,
-      value: v,
-      color: TAX_COLORS[k] || '#94a3b8',
-    }))
-    .sort((a, b) => b.value - a.value);
-
-  const total = data.reduce((s, d) => s + d.value, 0);
-  if (total === 0) return null;
-
-  return (
-    <div>
-      <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Own tax structure</p>
-      <div className="h-[10px] bg-[#003049]/10 rounded-full overflow-hidden flex mb-1.5">
-        {data.map(d => (
-          <div
-            key={d.name}
-            className="h-full"
-            style={{ width: `${d.value / total * 100}%`, backgroundColor: d.color }}
-            title={`${d.name}: ${(d.value / total * 100).toFixed(1)}%`}
-          />
-        ))}
-      </div>
-      <div className="flex flex-wrap gap-x-3 gap-y-0.5">
-        {data.map(d => (
-          <span key={d.name} className="text-[11px] text-[#003049]/60 flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full inline-block" style={{ backgroundColor: d.color }} />
-            {d.name} {(d.value / total * 100).toFixed(0)}%
-          </span>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 function DependencyRanking({ currentProvince }) {
   const allFiscal = getAllFiscal();
@@ -120,8 +60,6 @@ export default function FiscalSection({ fiscal, provinceName }) {
           Includes <strong>royalties: {fmtMoney(fiscal.royalties)}</strong> (oil, gas, mining)
         </p>
       )}
-
-      <TaxStructure taxDetail={fiscal.taxDetail} />
 
       <DependencyRanking currentProvince={provinceName} />
 

@@ -58,6 +58,10 @@ const KNOWN_OPEN = new Map([
     'needs a re-import from INDEC Cuadro P1 before this can pass'],
   ['governors — population is consistent with the Censo 2022 14+ table',
     'same root cause as above'],
+  ['sipa — public employment covers at least the DNAP provincial posts',
+    'Santa Cruz is the one province where SIPA-public falls below the provincial ' +
+    'headcount alone (0.67x); every other province sits at 1.1-2.0x. Needs a ' +
+    'check against the CEP-XXI per-department files before it can pass'],
 ]);
 
 function check(label, ok, detail = '') {
@@ -174,6 +178,58 @@ group('employment');
     bad.map(l => l.key).join(', '));
 }
 
+{
+  // The two SIPA datasets measure the same universe nationally but different
+  // ones per province: sipa_pub_priv is by worker residence, sipa_employment by
+  // workplace location. They must agree at the national level; where they do
+  // not, one of them has been rebuilt with the wrong filter.
+  const pp = read('src/data/sipa_pub_priv.json');
+  const emp = read('src/data/sipa_employment.json');
+  const byProv = new Map(emp.provinces.map(p => [p.province, p]));
+  const missing = pp.provinces.filter(p => !byProv.has(p.province)).map(p => p.province);
+  check('sipa — both datasets cover the same 24 provinces', missing.length === 0, missing.join(', '));
+
+  const natPP = sum(pp.provinces, p => p.private);
+  const natEmp = sum(emp.provinces, p => p.private);
+  check('sipa — national private totals agree across the two datasets (±2%)',
+    near(natPP, natEmp, natPP * 0.02),
+    `by residence ${fmt(natPP)} vs by workplace ${fmt(natEmp)} (${((natEmp / natPP - 1) * 100).toFixed(1)}%)`);
+
+  check('sipa — vintages match', pp.vintage === emp.vintage, `${pp.vintage} vs ${emp.vintage}`);
+
+  // Sector employees never exceed the province's private total, and the shares
+  // are computed against that same total.
+  const sectorBad = emp.provinces.filter(p => {
+    const e = sum(p.sectors, x => x.employees);
+    const sh = sum(p.sectors, x => x.share_pct);
+    return e > p.private + 1 || !near(sh, e / p.private * 100, 0.6);
+  });
+  check('sipa — sector employees and shares are consistent with `private`',
+    sectorBad.length === 0, sectorBad.map(p => p.province).join(', '));
+}
+{
+  // SIPA-public counts national + provincial + municipal posts, so it must be at
+  // least as large as DNAP's provincial-only headcount. This is the test that
+  // disproved the old "SIPA excludes provincial staff in the 13 caja-propia
+  // provinces" caveat: the ratio is ~1.5x for both groups, not <1 for those 13.
+  const pp = read('src/data/sipa_pub_priv.json');
+  const dnap = read('src/data/dnap_empleo_provincial.json');
+  const posts = new Map(dnap.provinces.map(p => [p.province, p.employees]));
+  const below = pp.provinces
+    .filter(p => p.public < posts.get(p.province))
+    .map(p => `${p.province} (${(p.public / posts.get(p.province)).toFixed(2)}x)`);
+  check('sipa — public employment covers at least the DNAP provincial posts',
+    below.length === 0, below.join(', '));
+
+  const cajaSet = new Set(pp.cajaPropiaProvinces);
+  const unknown = [...cajaSet].filter(p => !CANONICAL_SET.has(p));
+  check('sipa — cajaPropiaProvinces are canonical province names', unknown.length === 0, unknown.join(', '));
+  check('sipa — cajaPropiaProvinces has 13 entries', cajaSet.size === 13, `got ${cajaSet.size}`);
+  const flagBad = pp.provinces.filter(p => p.cajaPropia !== cajaSet.has(p.province));
+  check('sipa — the per-province cajaPropia flag matches cajaPropiaProvinces',
+    flagBad.length === 0, flagBad.map(p => p.province).join(', '));
+}
+
 /* ── 3. fiscal ──────────────────────────────────────────────────── */
 
 group('fiscal');
@@ -196,6 +252,22 @@ group('fiscal');
   }
   check('dnap_fiscal — revenue components, dependency and time series are self-consistent',
     bad.length === 0, bad.slice(0, 8).join('; '));
+}
+
+{
+  // `dependency` divides by ownTotal + nationalTransfers, which is NOT the
+  // province's total revenue — totalCurrentRevenue is larger. The UI has to say
+  // which denominator it means, so keep the relationship asserted.
+  const d = read('src/data/dnap_fiscal.json');
+  const bad = d.provinces.filter(p => p.totalRevenue > p.totalCurrentRevenue + 1);
+  check('dnap_fiscal — own + transfers never exceeds total current revenue',
+    bad.length === 0, bad.map(p => p.province).join(', '));
+  const spendBad = d.provinces.filter(p => p.personnel > p.totalCurrentExpenditure + 1);
+  check('dnap_fiscal — personnel spending never exceeds current expenditure',
+    spendBad.length === 0, spendBad.map(p => p.province).join(', '));
+  const cover = sum(d.provinces, p => p.totalRevenue) / sum(d.provinces, p => p.totalCurrentRevenue);
+  console.log(`  note  own + transfers is ${(cover * 100).toFixed(1)}% of total current revenue nationally ` +
+    `(min ${Math.min(...d.provinces.map(p => p.totalRevenue / p.totalCurrentRevenue * 100)).toFixed(1)}%)`);
 }
 
 /* ── 4. exports ─────────────────────────────────────────────────── */
@@ -440,6 +512,38 @@ group('provincial lookups');
     });
   check('news — every file carries an `updated` stamp and at least one summary',
     newsBad.length === 0, newsBad.join(', '));
+}
+
+/* ── 7b. i18n ───────────────────────────────────────────────────── */
+
+group('i18n');
+{
+  const flatten = (o, prefix = '') => Object.entries(o).reduce((acc, [k, v]) => {
+    const key = prefix ? `${prefix}.${k}` : k;
+    if (v && typeof v === 'object' && !Array.isArray(v)) Object.assign(acc, flatten(v, key));
+    else acc[key] = v;
+    return acc;
+  }, {});
+  const es = flatten(read('src/i18n/locales/es.json'));
+  const en = flatten(read('src/i18n/locales/en.json'));
+  const onlyEs = Object.keys(es).filter(k => !(k in en));
+  const onlyEn = Object.keys(en).filter(k => !(k in es));
+  check('locales carry the same key set', onlyEs.length === 0 && onlyEn.length === 0,
+    [onlyEs.length ? `only es: ${onlyEs.join(', ')}` : '', onlyEn.length ? `only en: ${onlyEn.join(', ')}` : '']
+      .filter(Boolean).join(' · '));
+
+  const src = [];
+  const walk = (dir) => {
+    for (const e of readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) { if (e.name !== 'data' && e.name !== 'i18n') walk(full); }
+      else if (/\.jsx?$/.test(e.name)) src.push(readFileSync(full, 'utf8'));
+    }
+  };
+  walk(path.join(ROOT, 'src'));
+  const blob = src.join('\n');
+  const used = Object.keys(en).filter(k => blob.includes(k));
+  console.log(`  note  ${used.length}/${Object.keys(en).length} translation keys are referenced in components`);
 }
 
 /* ── 8. population sanity ───────────────────────────────────────── */

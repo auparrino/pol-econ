@@ -4,7 +4,7 @@
   "vintage": "2023-11",
   "scope": "Puestos asalariados registrados (SIPA), agregado por provincia desde archivos per-departamento (residencia del trabajador). Universo: trabajo formal registrado.",
   "discontinuedNote": "El dataset CEP-XXI fue discontinuado en nov 2023. Nov 2023 es el último mes publicado.",
-  "cajaPropiaNote": "En las 13 provincias con caja previsional propia (BA, Cba, Chaco, Chubut, Corrientes, Entre Ríos, Formosa, La Pampa, Misiones, Neuquén, Santa Cruz, Santa Fe, Tierra del Fuego), SIPA-público excluye los empleados provinciales (cotizan en la caja provincial, no en ANSES). El dataset DNAP complementa esos números.",
+  "cajaPropiaNote": "Las 13 provincias listadas en cajaPropiaProvinces tienen caja previsional propia. Se creía que por eso SIPA-público las subregistraba, pero los datos no lo sostienen: el cociente entre SIPA-público y los cargos provinciales de DNAP es 1,51x en promedio para esas 13 y 1,58x para las otras 11 — prácticamente igual. Si SIPA excluyera a los empleados provinciales, el cociente estaría muy por debajo de 1 en las 13. El dataset se arma con registros de empleador de AFIP, y los gobiernos provinciales figuran ahí aunque su personal aporte a la caja provincial. La única excepción real es Santa Cruz (0,67x), que queda como anomalía a revisar contra la fuente.",
   "national": {
     "private": 6612937,
     "public": 3940274,
