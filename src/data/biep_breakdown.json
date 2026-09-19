@@ -11,9 +11,18 @@
       "value": 711000,
       "pct": 21.0,
       "detail": [
-        { "label": "Adm. Pública Nacional civil", "value": 193346 },
-        { "label": "FFAA + FFSS", "value": 201857 },
-        { "label": "Univ. nacionales + empresas públicas + bancos + otros organismos", "value": 315797 }
+        {
+          "label": "Adm. Pública Nacional civil",
+          "value": 193346
+        },
+        {
+          "label": "FFAA + FFSS",
+          "value": 201857
+        },
+        {
+          "label": "Univ. nacionales + empresas públicas + bancos + otros organismos",
+          "value": 315797
+        }
       ]
     },
     {
@@ -22,7 +31,10 @@
       "value": 2237900,
       "pct": 66.0,
       "detail": [
-        { "label": "AC + Organismos Descentralizados (DNAP, 24 provincias)", "value": 2237900 }
+        {
+          "label": "AC + Organismos Descentralizados (DNAP, 24 provincias)",
+          "value": 2237900
+        }
       ]
     },
     {
@@ -31,14 +43,17 @@
       "value": 441000,
       "pct": 13.0,
       "detail": [
-        { "label": "Empleados municipales (todos los municipios)", "value": 441000 }
+        {
+          "label": "Empleados municipales (todos los municipios)",
+          "value": 441000
+        }
       ]
     }
   ],
   "sipaContext": {
     "label": "Comparación con SIPA",
-    "sipaTotal": 3966336,
     "sipaVintage": "Nov 2023",
-    "note": "SIPA cuenta puestos asalariados registrados (un trabajador con doble cargo cuenta 2 veces) e incluye empresas públicas y monotributo público que BIEP puede no captar. SIPA y BIEP no son comparables 1:1."
+    "note": "SIPA cuenta puestos asalariados registrados (un trabajador con doble cargo cuenta 2 veces) e incluye empresas públicas y monotributo público que BIEP puede no captar. SIPA y BIEP no son comparables 1:1. La cifra de SIPA se toma de sipa_pub_priv.json y no se replica acá: este campo llevaba 3,966,336 mientras ese dataset dice 3.940.274, y la app mostraba las dos en la misma pantalla.",
+    "sipaSource": "src/data/sipa_pub_priv.json → national.public"
   }
 }

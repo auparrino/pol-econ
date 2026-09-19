@@ -422,6 +422,38 @@ Los **niveles** del APNF (los montos, no las proporciones), las cifras de BIEP
 y DNAP, y los totales de SIPA por provincia. Todos viven en xlsx que hay que
 descargar, y la búsqueda web no los expone.
 
+## 7c. Empleo público: tres cifras que parecían contradecirse
+
+El repo reporta empleo público con tres instrumentos y los muestra en la misma
+pantalla sin decir en qué se diferencian. El resultado es que el lector ve
+2,5 M, 3,4 M y 3,9 M para "empleo público" y no puede usar ninguno.
+
+Las tres son correctas. Cada una incluye algo que la anterior deja afuera:
+
+| | cifra | qué cuenta |
+|---|---|---|
+| **Censo 2022** | 2.459.952 | personas que declaran su ocupación principal en administración pública, educación o salud. No aísla empresas públicas y deja 2,46 M de casos sin clasificar. |
+| **BIEP mid-2023** | 3.389.900 | personas en los tres niveles de gobierno. Suma FFAA y fuerzas de seguridad, universidades nacionales, bancos y empresas públicas. |
+| **SIPA nov-2023** | 3.940.274 | puestos registrados, no personas: quien tiene doble cargo cuenta dos veces. Es la más alta por construcción. |
+
+Dos controles internos respaldan que la escalera es metodológica y no un error:
+el nivel provincial de BIEP (2.237.900) y los cargos provinciales de DNAP
+(2.321.510) coinciden dentro del 4 %, y el orden Censo < BIEP < SIPA se cumple.
+
+**Esto sí era un error**: `biep_breakdown.json` llevaba su propia copia del total
+de SIPA público — **3.966.336** — mientras `sipa_pub_priv.json` decía
+**3.940.274**, y `NationalEconomy.jsx` mostraba las dos en la misma pantalla: la
+primera en la nota que compara contra BIEP, la segunda en el recuadro del split
+público/privado. Mismo concepto, mismo mes, 26.062 de diferencia. El campo
+duplicado se eliminó y la nota ahora deriva la cifra del dataset que la app ya
+usa, así que hay un solo número.
+
+Se agregó a la UI el bloque de reconciliación con la tabla de arriba, y tres
+checks al validador: que ningún dataset duplique el total de SIPA público, que
+se cumpla el orden Censo < BIEP < SIPA, y que BIEP-provincial y DNAP no se
+separen más de 10 %. De paso, `censo_pub_priv.json` deja de ser un dataset
+huérfano: ahora ancla el piso de la escalera.
+
 ## 8. Red de regresión: `npm run validate`
 
 `scripts/validate-data.mjs` codifica **87 invariantes** sobre los datasets.
@@ -442,4 +474,4 @@ Los defectos confirmados pero no corregibles desde este repositorio se reportan
 como `OPEN` y no hacen fallar la corrida. La entrada correspondiente en
 `KNOWN_OPEN` debe borrarse en el mismo commit que arregle el dato.
 
-Estado actual: **95/100 OK · 5 abiertos · 1 warning** (datasets huérfanos).
+Estado actual: **98/103 OK · 5 abiertos · 1 warning** (datasets huérfanos).

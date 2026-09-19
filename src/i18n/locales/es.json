@@ -569,7 +569,12 @@
     "exportAggDesc": "Exportaciones nacionales {{year}} — INDEC, sumadas por provincia y categoría de producto (USD millones).",
     "goodsExports": "exportaciones de bienes",
     "primaryAgro": "primarios + agroindustriales",
-    "prodNatDesc": "Agregados nacionales de producción en los cuatro principales sectores físicos."
+    "prodNatDesc": "Agregados nacionales de producción en los cuatro principales sectores físicos.",
+    "ladderTitle": "Por qué hay tres cifras de empleo público",
+    "ladderIntro": "Las tres son correctas. Miden cosas distintas, y cada una incluye algo que la anterior deja afuera:",
+    "ladderCenso": "personas que declaran su ocupación principal en administración pública, educación o salud pública. No separa empresas públicas y deja {{ignorado}} de casos sin clasificar.",
+    "ladderBiep": "personas en los tres niveles de gobierno. Suma FFAA y fuerzas de seguridad, universidades nacionales, bancos y empresas públicas.",
+    "ladderSipa": "puestos registrados, no personas: quien tiene doble cargo cuenta dos veces. Es la más alta por construcción."
   },
   "rigi": {
     "nationalOverview": "RIGI · Resumen nacional",

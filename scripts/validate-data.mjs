@@ -238,6 +238,42 @@ group('employment');
     flagBad.length === 0, flagBad.map(p => p.province).join(', '));
 }
 
+{
+  // Public employment is reported by three instruments that legitimately differ,
+  // and the dashboard shows all three. What is NOT legitimate is the same
+  // concept carrying two different values: biep_breakdown.json used to hold its
+  // own copy of the SIPA public total (3,966,336) while sipa_pub_priv.json said
+  // 3,940,274, and both appeared on the same screen.
+  const pp = read('src/data/sipa_pub_priv.json');
+  const biep = read('src/data/biep_breakdown.json');
+  const censo = read('src/data/censo_pub_priv.json');
+  const dnap = read('src/data/dnap_empleo_provincial.json');
+
+  check('biep_breakdown does not duplicate the SIPA public total',
+    !('sipaTotal' in biep.sipaContext),
+    'sipaContext.sipaTotal shadows sipa_pub_priv.json → national.public');
+
+  // The ladder has to hold in this order, by construction:
+  //   Censo (declared main occupation) < BIEP (people, 3 levels) < SIPA (posts).
+  const censoPub = censo.national.public;
+  const biepTotal = biep.total;
+  const sipaPub = pp.national.public;
+  check('public-employment figures sit in the expected order',
+    censoPub < biepTotal && biepTotal < sipaPub,
+    `Censo ${fmt(censoPub)} · BIEP ${fmt(biepTotal)} · SIPA ${fmt(sipaPub)}`);
+
+  // BIEP's provincial level and DNAP's provincial posts measure nearly the same
+  // thing a year apart, so they should land within ~10% of each other.
+  const biepProv = biep.levels.find(l => l.key === 'provincial')?.value;
+  const dnapProv = dnap.national.employees;
+  check('BIEP provincial level agrees with DNAP provincial posts (±10%)',
+    near(biepProv, dnapProv, dnapProv * 0.10),
+    `BIEP ${fmt(biepProv)} vs DNAP ${fmt(dnapProv)} (${((biepProv / dnapProv - 1) * 100).toFixed(1)}%)`);
+
+  console.log(`  note  public employment: Censo ${fmt(censoPub)} < BIEP ${fmt(biepTotal)} < ` +
+    `SIPA ${fmt(sipaPub)} — declared occupation, then people across 3 levels, then registered posts`);
+}
+
 /* ── 3. fiscal ──────────────────────────────────────────────────── */
 
 group('fiscal');

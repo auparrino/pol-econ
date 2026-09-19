@@ -569,7 +569,12 @@
     "exportAggDesc": "National exports {{year}} — INDEC, summed across provinces and product categories (USD millions).",
     "goodsExports": "goods exports",
     "primaryAgro": "primary + agro-industrial",
-    "prodNatDesc": "National production aggregates across the four main physical-output sectors."
+    "prodNatDesc": "National production aggregates across the four main physical-output sectors.",
+    "ladderTitle": "Why there are three public-employment figures",
+    "ladderIntro": "All three are correct. They measure different things, and each one includes something the previous one leaves out:",
+    "ladderCenso": "people who report their main occupation as public administration, education or health. It does not isolate state enterprises and leaves {{ignorado}} unclassified.",
+    "ladderBiep": "people across the three levels of government. Adds the armed and security forces, national universities, state banks and enterprises.",
+    "ladderSipa": "registered posts, not people: anyone holding two appointments counts twice. It is the highest by construction."
   },
   "rigi": {
     "nationalOverview": "RIGI · National overview",

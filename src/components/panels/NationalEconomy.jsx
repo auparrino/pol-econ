@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import sipa from '../../data/sipa_employment.json';
 import sipaPubPriv from '../../data/sipa_pub_priv.json';
 import biep from '../../data/biep_breakdown.json';
+import censoPubPriv from '../../data/censo_pub_priv.json';
 import dnap from '../../data/dnap_fiscal.json';
 import exportsByCategory from '../../data/exports_by_category.json';
 import exportsByDestination from '../../data/exports_by_destination.json';
@@ -170,8 +171,46 @@ function EmploymentNational() {
           ))}
         </div>
         <p className="text-[9px] text-[#003049]/45 leading-snug mt-2 pt-2 border-t border-[#003049]/10">
-          {t('national.biepVsSipaNote', { sipa: fmtN(biep.sipaContext.sipaTotal), vintage: biep.sipaContext.sipaVintage })}
+          {t('national.biepVsSipaNote', { sipa: fmtN(sipaPubPriv.national.public), vintage: biep.sipaContext.sipaVintage })}
         </p>
+      </div>
+
+      {/* Three sources put public employment at 2.5M, 3.4M and 3.9M. All three are
+          right; they count different things. Spelling the ladder out is the only
+          way the reader can use any of them. */}
+      <div className="rounded-md p-3 border mt-2" style={{ background: 'rgba(0,48,73,0.03)', borderColor: 'rgba(0,48,73,0.12)' }}>
+        <p className="text-[10px] uppercase tracking-wider text-[#003049]/60 mb-1">
+          {t('national.ladderTitle')}
+        </p>
+        <p className="text-[10px] text-[#003049]/55 leading-snug mb-1.5">{t('national.ladderIntro')}</p>
+        <div className="space-y-1.5">
+          {[
+            {
+              k: 'censo',
+              value: censoPubPriv.national.public,
+              label: `Censo ${censoPubPriv.year}`,
+              body: t('national.ladderCenso', { ignorado: fmtN(censoPubPriv.national.ignorado) }),
+            },
+            {
+              k: 'biep',
+              value: biep.total,
+              label: `BIEP ${biep.vintage}`,
+              body: t('national.ladderBiep'),
+            },
+            {
+              k: 'sipa',
+              value: sipaPubPriv.national.public,
+              label: `SIPA ${sipaPubPriv.vintage}`,
+              body: t('national.ladderSipa'),
+            },
+          ].map(row => (
+            <div key={row.k} className="flex items-baseline gap-2 text-[10px]">
+              <span className="font-mono font-bold text-[#003049] w-[54px] shrink-0 text-right">{fmtN(row.value)}</span>
+              <span className="text-[#003049]/70 w-[74px] shrink-0 uppercase tracking-wider text-[9px]">{row.label}</span>
+              <span className="text-[#003049]/55 flex-1 leading-snug">{row.body}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       <SectionTitle>{t('national.bySectorFamily')}</SectionTitle>
