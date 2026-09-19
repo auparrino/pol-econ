@@ -578,6 +578,70 @@ Hoy no molesta porque el dataset está huérfano. Es una condición a resolver
 - **`sociodemographic.js`** — los rangos son plausibles y la dispersión también:
   PBG per cápita 6,2× entre CABA y Misiones, escolaridad 1,4×, alfabetismo 1,03×.
 
+## 7e. Tercera pasada: contra fuentes externas, no contra lo plausible
+
+Las secciones anteriores mezclaban dos cosas que no son lo mismo. Los cruces
+entre datasets del repo son válidos —encontraron el ausentismo inflado, los
+universos mezclados, la nota falsa de caja previsional—. Pero los "rangos de
+rinde", las "densidades coherentes" y los "totales que cierran" eran
+**plausibilidad inventada**: una banda solo atrapa lo que alguien ya imaginó que
+podía fallar. Esta pasada compara contra lo que la fuente citada efectivamente
+publica.
+
+### Coincide exacto
+
+- **ADEFA 2024.** 506.571 vehículos, caída de 17,1 % contra 610.715 en 2023.
+  Los tres valores del dataset, clavados.
+- **Secretaría de Energía, petróleo 2025.** 46,4 millones de m³; el dataset
+  tiene 46.438.524.
+- **CAMMESA fin-2024.** 43.351 MW operativos y 6.673 MW renovables; las
+  constantes del repo dicen 44,2 GW y 6,8 GW — dentro del 2 % en cada
+  componente, con la diferencia que cabe esperar entre "instalada" y "operativa".
+
+### El dataset tiene razón y la prensa no
+
+Las notas sobre el récord petrolero citan "860.000 barriles diarios de promedio
+2025" junto a los 46,4 millones de m³. Los dos números no pueden convivir:
+46,4 Mm³/año ÷ 365 × 6,28981 = **800.000 bbl/d**, que es exactamente lo que
+calcula el dataset. Los 860.000 son el ritmo de fin de año (diciembre 2025 marcó
+868.712 bbl/d), no el promedio anual. Quedó un check que fija esa conversión.
+
+### No coincide
+
+- **Ganado bovino.** SENASA informa **51.626.909** cabezas al 31-dic-2024; el
+  dataset tiene **51.624.909**. Exactamente 2.000, un dígito. Las filas
+  provinciales suman el total del dataset, así que la corrección tiene que venir
+  de la tabla de SENASA y no se puede deducir desde adentro.
+
+- **Campaña agrícola.** Soja 51,1 Mt contra 50,0 publicadas (+2,2 %), maíz 51,7
+  contra 49,0 (+5,5 %), trigo 18,5 contra 17,6 (+5,2 %). Cada una pasa una banda
+  del 6 % —las instituciones difieren entre cortes—, pero **las tres caen del
+  mismo lado**. Una dispersión de un solo signo es lo que parece un vintage
+  equivocado, y el propio campo `campaign` del dataset dice
+  `"2023/2024 / 2024/2025"`. El validador imprime las tres desviaciones en cada
+  corrida.
+
+### Corrección a lo que yo mismo había marcado
+
+En la pasada anterior marqué como sospechoso el salto de la plata de 47,7 % en
+2026M01, porque el oro y el cobre se movían ~10 % ese mes. **Estaba
+equivocado.** La plata rompió los US$ 100/onza por primera vez en la historia el
+23 de enero de 2026 y tocó un máximo de 121,62 el día 29, tras cerrar 2025 en
+~71,66. El dato del repo es correcto; mi umbral del 40 % reportaba un rally real
+como defecto.
+
+El check quedó reescrito a un factor de 2 y renombrado a lo que de verdad hace:
+atrapar un decimal corrido o una fila en otra unidad, no juzgar si un movimiento
+de mercado fue raro.
+
+### Qué cambió en el validador
+
+Se agregó un bloque `external references` donde cada valor lleva su procedencia
+escrita al lado, de modo que el próximo que lo lea pueda re-verificarlo en vez de
+confiar en este archivo. La diferencia con una banda de plausibilidad es que
+estos checks detectan que el dataset **se aleja de lo que la fuente dice**, no
+que se aleja de lo que a alguien le pareció razonable.
+
 ## 8. Red de regresión: `npm run validate`
 
 `scripts/validate-data.mjs` codifica **87 invariantes** sobre los datasets.
@@ -598,4 +662,4 @@ Los defectos confirmados pero no corregibles desde este repositorio se reportan
 como `OPEN` y no hacen fallar la corrida. La entrada correspondiente en
 `KNOWN_OPEN` debe borrarse en el mismo commit que arregle el dato.
 
-Estado actual: **103/111 OK · 8 abiertos · 1 warning** (datasets huérfanos).
+Estado actual: **110/118 OK · 8 abiertos · 1 warning** (datasets huérfanos).

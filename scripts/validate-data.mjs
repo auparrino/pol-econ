@@ -74,11 +74,10 @@ const KNOWN_OPEN = new Map([
     'P.E. Vientos Olavarría plots at lon -66.8 when Olavarría sits at ~-60.3, so ' +
     'the coordinate is wrong rather than the province; Salto Dique Ballester ' +
     'straddles the Neuquén/Río Negro border'],
-  ['commodityPrices — no single month moves more than 40%',
-    'silver jumps 47.7% in 2026M01 while gold and copper move ~10% in the same ' +
-    'month, taking the gold/silver ratio from 69 to 52; it is also the only ' +
-    'month carrying a lithium value, which points at that row coming from a ' +
-    'different source'],
+  ['livestock — bovine stock matches SENASA',
+    'the dataset carries 51,624,909 against SENASA\'s 51,626,909 at 31-Dec-2024 — ' +
+    'exactly 2,000 head, one digit, and the provincial rows sum to the dataset\'s ' +
+    'own total, so the correction has to come from the SENASA table'],
   ['sipa — public employment covers at least the DNAP provincial posts',
     'Santa Cruz is the one province where SIPA-public falls below the provincial ' +
     'headcount alone (0.67x); every other province sits at 1.1-2.0x. Needs a ' +
@@ -739,8 +738,11 @@ group('single source of truth');
 
 group('commodities');
 {
-  // A month that moves far more than its neighbours is usually a transcription
-  // slip or a row pulled from a different source, not a market event.
+  // This threshold catches transcription slips — a misplaced decimal, a row in
+  // the wrong unit — and nothing else. It is deliberately NOT tuned to flag
+  // unusual market moves: silver really did run 47.7% in 2026M01, breaking $100
+  // an ounce for the first time on 23 January and peaking at $121.62 on the
+  // 29th, so a tighter bound reported a genuine rally as a data defect.
   const { commodityPrices } = await import('../src/data/commodityPrices.js');
   const spikes = [];
   for (const metal of ['oro', 'plata', 'cobre']) {
@@ -750,16 +752,101 @@ group('commodities');
     for (let i = 1; i < series.length; i++) {
       const prev = series[i - 1][1], now = series[i][1];
       const move = (now - prev) / prev;
-      if (Math.abs(move) > 0.40) {
+      if (Math.abs(move) > 1.0) {
         spikes.push(`${metal} ${series[i][0]}: ${prev} → ${now} (${(move * 100).toFixed(0)}%)`);
       }
     }
   }
-  check('commodityPrices — no single month moves more than 40%',
+  check('commodityPrices — no single month doubles or halves (decimal-slip guard)',
     spikes.length === 0, spikes.join('; '));
 
   const withLithium = commodityPrices.filter(r => typeof r.litio === 'number').length;
   console.log(`  note  lithium has ${withLithium} of ${commodityPrices.length} months populated`);
+}
+
+/* ── 7g. external reference values ──────────────────────────────── */
+
+group('external references');
+{
+  // Everything here is a figure published by the source the dataset cites, not a
+  // range invented to look reasonable. A plausibility band only ever catches
+  // what someone already imagined going wrong; these catch the dataset drifting
+  // from what the source actually says. Each entry carries its provenance so the
+  // next person can re-check it instead of trusting this file.
+  const REFERENCE = {
+    adefaVehicles2024:   { value: 506_571,    source: 'ADEFA, 2024 close: 506,571 units, -17.1% vs 610,715 in 2023' },
+    senasaCattle2024:    { value: 51_626_909, source: 'SENASA, bovine stock at 31-Dec-2024, -2.2% y/y' },
+    secEnergiaOil2025M3: { value: 46_400_000, source: 'Sec. Energía, 2025 crude output 46.4 million m3' },
+    cammesaTotalGw2024:  { value: 43.351,     source: 'CAMMESA, operational MEM capacity end-2024: 43,351 MW' },
+    cammesaRenewGw2024:  { value: 6.673,      source: 'CAMMESA, Ley 27.191 renewables operational end-2024: 6,673 MW' },
+  };
+  const ref = (k) => REFERENCE[k].value;
+
+  const veh = read('src/data/vehicle_production.json');
+  check('vehicle_production — national total matches ADEFA',
+    veh.total_vehicles === ref('adefaVehicles2024'),
+    `${fmt(veh.total_vehicles)} vs ${fmt(ref('adefaVehicles2024'))} — ${REFERENCE.adefaVehicles2024.source}`);
+
+  const cattle = read('src/data/livestock.json').species.find(s => s.id === 'bovine');
+  check('livestock — bovine stock matches SENASA',
+    cattle.total === ref('senasaCattle2024'),
+    `${fmt(cattle.total)} vs ${fmt(ref('senasaCattle2024'))} ` +
+    `(${fmt(cattle.total - ref('senasaCattle2024'))}) — ${REFERENCE.senasaCattle2024.source}`);
+
+  const og = read('src/data/oilgas_production.json');
+  check('oilgas — national crude volume matches Sec. Energía (±1%)',
+    near(og.national.oil_m3, ref('secEnergiaOil2025M3'), ref('secEnergiaOil2025M3') * 0.01),
+    `${fmt(og.national.oil_m3)} m3 vs ${fmt(ref('secEnergiaOil2025M3'))} — ${REFERENCE.secEnergiaOil2025M3.source}`);
+
+  // Press coverage of that same release quotes ~860,000 bbl/day as the 2025
+  // average, which cannot follow from 46.4 million m3 a year: that volume works
+  // out to ~800,000 bbl/day. The 860,000 figure is the December record rate.
+  // The dataset's own conversion is the arithmetically correct one.
+  const impliedBpd = og.national.oil_m3 / 365 * 6.28981;
+  check('oilgas — bbl/day is the conversion of the annual volume, not the year-end rate',
+    near(og.national.oil_bbl_day, impliedBpd, impliedBpd * 0.005),
+    `${fmt(og.national.oil_bbl_day)} vs ${fmt(Math.round(impliedBpd))} implied`);
+
+  const pcSrc = readFileSync(path.join(ROOT, 'src/data/energy/powerConstants.js'), 'utf8');
+  const fuels = Object.fromEntries([...pcSrc.matchAll(/name:\s*'([^']+)',\s*gw:\s*([\d.]+)/g)]
+    .map(m => [m[1], Number(m[2])]));
+  const totalGw = sum(Object.values(fuels));
+  check('powerConstants — installed capacity matches CAMMESA end-2024 (±3%)',
+    near(totalGw, ref('cammesaTotalGw2024'), ref('cammesaTotalGw2024') * 0.03),
+    `${totalGw.toFixed(1)} GW vs ${ref('cammesaTotalGw2024')} — ${REFERENCE.cammesaTotalGw2024.source}`);
+  check('powerConstants — renewables match CAMMESA end-2024 (±5%)',
+    near(fuels.Renewables, ref('cammesaRenewGw2024'), ref('cammesaRenewGw2024') * 0.05),
+    `${fuels.Renewables} GW vs ${ref('cammesaRenewGw2024')} — ${REFERENCE.cammesaRenewGw2024.source}`);
+
+  // Published 2024/25 national output. Institutions differ by a few percent
+  // between cuts, so the band is wide; what it catches is the dataset sitting
+  // outside every published figure, which is what it currently does.
+  const CROPS_2024_25 = {
+    Soybeans: { value: 50.0, source: 'Bolsa de Cereales, 2024/25 final: 50.0-50.1 Mt' },
+    Corn:     { value: 49.0, source: 'Bolsa de Cereales, 2024/25: 49 Mt' },
+    Wheat:    { value: 17.6, source: 'MAGyP, Campaña Trigo 2024/25 cierre: 17.6 Mt' },
+  };
+  const agri = read('src/data/agriculture.json');
+  const national = {};
+  for (const p of agri.provinces) {
+    for (const c of p.crops || []) national[c.crop_en] = (national[c.crop_en] || 0) + (c.tons || 0);
+  }
+  const cropOff = Object.entries(CROPS_2024_25)
+    .filter(([crop, { value }]) => Math.abs(national[crop] / 1e6 - value) > value * 0.06)
+    .map(([crop, { value, source }]) =>
+      `${crop}: ${(national[crop] / 1e6).toFixed(1)} Mt vs ${value} Mt ` +
+      `(${((national[crop] / 1e6 / value - 1) * 100).toFixed(0)}%) — ${source}`);
+  check('agriculture — national crop output is within 6% of published 2024/25 figures',
+    cropOff.length === 0, cropOff.join('; '));
+
+  // It passes the band, but all three land on the same side of it. Institutions
+  // differ by a few percent between cuts, so this is not a failure — it is worth
+  // printing because a one-sided spread is what a wrong vintage looks like, and
+  // the dataset's own `campaign` field reads "2023/2024 / 2024/2025".
+  const drift = Object.entries(CROPS_2024_25)
+    .map(([crop, { value }]) => `${crop} ${((national[crop] / 1e6 / value - 1) * 100).toFixed(1)}%`);
+  console.log(`  note  crop output vs published 2024/25: ${drift.join(' · ')} ` +
+    `(campaign field: "${agri.campaign}")`);
 }
 
 /* ── 8. population sanity ───────────────────────────────────────── */
