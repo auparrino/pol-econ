@@ -5,17 +5,17 @@
 // Chaco: 7
 // Chubut: 5
 // Ciudad de Buenos Aires: 25
-// Cordoba: 18
+// Córdoba: 18
 // Corrientes: 7
-// Entre Rios: 9
+// Entre Ríos: 9
 // Formosa: 5
 // Jujuy: 6
 // La Pampa: 5
 // La Rioja: 5
 // Mendoza: 10
 // Misiones: 7
-// Neuquen: 5
-// Rio Negro: 5
+// Neuquén: 5
+// Río Negro: 5
 // Salta: 7
 // San Juan: 6
 // San Luis: 5
@@ -23,7 +23,7 @@
 // Santa Fe: 19
 // Santiago del Estero: 7
 // Tierra del Fuego: 5
-// Tucuman: 9
+// Tucumán: 9
 
 export const officialDeputies = [
   {
@@ -164,7 +164,7 @@ export const officialDeputies = [
   },
   {
     "n": "Avico, Belén",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -220,7 +220,7 @@ export const officialDeputies = [
   },
   {
     "n": "Basualdo, Carolina",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "PROVINCIAS UNIDAS",
     "co": "OTROS",
     "desde": "2025",
@@ -236,7 +236,7 @@ export const officialDeputies = [
   },
   {
     "n": "Benedit, Beltrán",
-    "p": "Entre Rios",
+    "p": "Entre Ríos",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -284,7 +284,7 @@ export const officialDeputies = [
   },
   {
     "n": "Bordet, Gustavo",
-    "p": "Entre Rios",
+    "p": "Entre Ríos",
     "b": "UNIÓN POR LA PATRIA",
     "co": "PJ",
     "desde": "2023",
@@ -300,7 +300,7 @@ export const officialDeputies = [
   },
   {
     "n": "Bornoroni, Gabriel",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -324,7 +324,7 @@ export const officialDeputies = [
   },
   {
     "n": "Brügge, Juan Fernando",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "PROVINCIAS UNIDAS",
     "co": "OTROS",
     "desde": "2023",
@@ -348,7 +348,7 @@ export const officialDeputies = [
   },
   {
     "n": "Campero, Mariano",
-    "p": "Tucuman",
+    "p": "Tucumán",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -380,7 +380,7 @@ export const officialDeputies = [
   },
   {
     "n": "Capozzi, Sergio Eduardo",
-    "p": "Rio Negro",
+    "p": "Río Negro",
     "b": "PROVINCIAS UNIDAS",
     "co": "OTROS",
     "desde": "2023",
@@ -452,7 +452,7 @@ export const officialDeputies = [
   },
   {
     "n": "Cisneros, Carlos",
-    "p": "Tucuman",
+    "p": "Tucumán",
     "b": "UNIÓN POR LA PATRIA",
     "co": "PJ",
     "desde": "2023",
@@ -500,7 +500,7 @@ export const officialDeputies = [
   },
   {
     "n": "de la Sota, Natalia",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "DEFENDAMOS CÓRDOBA",
     "co": "OTROS",
     "desde": "2025",
@@ -564,7 +564,7 @@ export const officialDeputies = [
   },
   {
     "n": "Estévez, Gabriela Beatriz",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "UNIÓN POR LA PATRIA",
     "co": "PJ",
     "desde": "2023",
@@ -612,7 +612,7 @@ export const officialDeputies = [
   },
   {
     "n": "Fernández, Elia Marina",
-    "p": "Tucuman",
+    "p": "Tucumán",
     "b": "INDEPENDENCIA",
     "co": "OTROS",
     "desde": "2023",
@@ -684,7 +684,7 @@ export const officialDeputies = [
   },
   {
     "n": "Fregonese, Alicia",
-    "p": "Entre Rios",
+    "p": "Entre Ríos",
     "b": "PRO",
     "co": "PRO",
     "desde": "2025",
@@ -724,7 +724,7 @@ export const officialDeputies = [
   },
   {
     "n": "García Aresca, Ignacio",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "PROVINCIAS UNIDAS",
     "co": "OTROS",
     "desde": "2025",
@@ -868,7 +868,7 @@ export const officialDeputies = [
   },
   {
     "n": "Gutiérrez, Carlos",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "PROVINCIAS UNIDAS",
     "co": "OTROS",
     "desde": "2023",
@@ -932,7 +932,7 @@ export const officialDeputies = [
   },
   {
     "n": "Huesen, Gerardo",
-    "p": "Tucuman",
+    "p": "Tucumán",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -956,7 +956,7 @@ export const officialDeputies = [
   },
   {
     "n": "Ibañez, María Cecilia",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -996,7 +996,7 @@ export const officialDeputies = [
   },
   {
     "n": "Laumann, Andrés Ariel",
-    "p": "Entre Rios",
+    "p": "Entre Ríos",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1036,7 +1036,7 @@ export const officialDeputies = [
   },
   {
     "n": "Lluch, Enrique",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1092,7 +1092,7 @@ export const officialDeputies = [
   },
   {
     "n": "Mango, Marcelo",
-    "p": "Rio Negro",
+    "p": "Río Negro",
     "b": "UNIÓN POR LA PATRIA",
     "co": "PJ",
     "desde": "2023",
@@ -1108,7 +1108,7 @@ export const officialDeputies = [
   },
   {
     "n": "Marclay, Marianela",
-    "p": "Entre Rios",
+    "p": "Entre Ríos",
     "b": "UNIÓN POR LA PATRIA",
     "co": "PJ",
     "desde": "2025",
@@ -1156,7 +1156,7 @@ export const officialDeputies = [
   },
   {
     "n": "Maureira, Karina",
-    "p": "Neuquen",
+    "p": "Neuquén",
     "b": "LA NEUQUINIDAD",
     "co": "OTROS",
     "desde": "2025",
@@ -1172,7 +1172,7 @@ export const officialDeputies = [
   },
   {
     "n": "Medina, Gladys",
-    "p": "Tucuman",
+    "p": "Tucumán",
     "b": "INDEPENDENCIA",
     "co": "OTROS",
     "desde": "2025",
@@ -1196,7 +1196,7 @@ export const officialDeputies = [
   },
   {
     "n": "Michel, Guillermo",
-    "p": "Entre Rios",
+    "p": "Entre Ríos",
     "b": "UNIÓN POR LA PATRIA",
     "co": "PJ",
     "desde": "2025",
@@ -1220,7 +1220,7 @@ export const officialDeputies = [
   },
   {
     "n": "Molinuevo, Soledad",
-    "p": "Tucuman",
+    "p": "Tucumán",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1236,7 +1236,7 @@ export const officialDeputies = [
   },
   {
     "n": "Mondaca, Soledad",
-    "p": "Neuquen",
+    "p": "Neuquén",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1276,7 +1276,7 @@ export const officialDeputies = [
   },
   {
     "n": "Morchio, Francisco",
-    "p": "Entre Rios",
+    "p": "Entre Ríos",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -1316,7 +1316,7 @@ export const officialDeputies = [
   },
   {
     "n": "Muñoz, Gabriela Luciana",
-    "p": "Neuquen",
+    "p": "Neuquén",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -1356,7 +1356,7 @@ export const officialDeputies = [
   },
   {
     "n": "Noguera, Javier",
-    "p": "Tucuman",
+    "p": "Tucumán",
     "b": "INDEPENDENCIA",
     "co": "OTROS",
     "desde": "2025",
@@ -1388,7 +1388,7 @@ export const officialDeputies = [
   },
   {
     "n": "Osuna, Blanca Inés",
-    "p": "Entre Rios",
+    "p": "Entre Ríos",
     "b": "UNIÓN POR LA PATRIA",
     "co": "PJ",
     "desde": "2023",
@@ -1444,7 +1444,7 @@ export const officialDeputies = [
   },
   {
     "n": "Patiño Brizuela, Marcos",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1484,7 +1484,7 @@ export const officialDeputies = [
   },
   {
     "n": "Pelli, Federico Agustín",
-    "p": "Tucuman",
+    "p": "Tucumán",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1524,7 +1524,7 @@ export const officialDeputies = [
   },
   {
     "n": "Picat, Luis Albino",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -1572,7 +1572,7 @@ export const officialDeputies = [
   },
   {
     "n": "Ponce, María Celeste",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -1644,7 +1644,7 @@ export const officialDeputies = [
   },
   {
     "n": "Riesco, Gastón",
-    "p": "Neuquen",
+    "p": "Neuquén",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1676,7 +1676,7 @@ export const officialDeputies = [
   },
   {
     "n": "Roca, Gonzalo",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1684,7 +1684,7 @@ export const officialDeputies = [
   },
   {
     "n": "Rodríguez Machado, Laura Elena",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1764,7 +1764,7 @@ export const officialDeputies = [
   },
   {
     "n": "Schiaretti, Juan",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "PROVINCIAS UNIDAS",
     "co": "OTROS",
     "desde": "2025",
@@ -1772,7 +1772,7 @@ export const officialDeputies = [
   },
   {
     "n": "Schneider, Darío",
-    "p": "Entre Rios",
+    "p": "Entre Ríos",
     "b": "UCR - UNIÓN CÍVICA RADICAL",
     "co": "UCR",
     "desde": "2025",
@@ -1788,7 +1788,7 @@ export const officialDeputies = [
   },
   {
     "n": "Serquis, Adriana Cristina",
-    "p": "Rio Negro",
+    "p": "Río Negro",
     "b": "UNIÓN POR LA PATRIA",
     "co": "PJ",
     "desde": "2025",
@@ -1812,7 +1812,7 @@ export const officialDeputies = [
   },
   {
     "n": "Soldano, Laura",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1860,7 +1860,7 @@ export const officialDeputies = [
   },
   {
     "n": "Todero, Pablo",
-    "p": "Neuquen",
+    "p": "Neuquén",
     "b": "UNIÓN POR LA PATRIA",
     "co": "PJ",
     "desde": "2023",
@@ -1884,7 +1884,7 @@ export const officialDeputies = [
   },
   {
     "n": "Torres, Alejandra",
-    "p": "Cordoba",
+    "p": "Córdoba",
     "b": "PROVINCIAS UNIDAS",
     "co": "OTROS",
     "desde": "2023",
@@ -1900,7 +1900,7 @@ export const officialDeputies = [
   },
   {
     "n": "Tortoriello, Aníbal",
-    "p": "Rio Negro",
+    "p": "Río Negro",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1996,7 +1996,7 @@ export const officialDeputies = [
   },
   {
     "n": "Villaverde, Lorena",
-    "p": "Rio Negro",
+    "p": "Río Negro",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2023",
@@ -2028,7 +2028,7 @@ export const officialDeputies = [
   },
   {
     "n": "Yedlin, Pablo Raúl",
-    "p": "Tucuman",
+    "p": "Tucumán",
     "b": "UNIÓN POR LA PATRIA",
     "co": "PJ",
     "desde": "2023",

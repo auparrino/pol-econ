@@ -1,18 +1,19 @@
-import { ENERGY_LAYER_CONFIGS } from './EnergyLayers';
+import { useTranslation } from 'react-i18next';
+import { ENERGY_LAYER_CONFIGS } from './energyLayerConfigs';
 
 const CHOROPLETH_MODES = [
-  { id: 'none', label: 'None' },
-  { id: 'region', label: 'Region' },
-  { id: 'partido', label: 'Gov. Party' },
-  { id: 'alineamiento', label: 'Governor stance' },
-  { id: 'score_executive', label: 'Legislators score' },
-  { id: 'pobreza', label: 'Poverty' },
-  { id: 'poblacion', label: 'Population' },
-  { id: 'fiscal', label: 'Fiscal Dep.' },
+  { id: 'none', label: 'layerPanel.none' },
+  { id: 'region', label: 'layerPanel.region' },
+  { id: 'partido', label: 'layerPanel.govParty' },
+  { id: 'alineamiento', label: 'layerPanel.governorStance' },
+  { id: 'score_executive', label: 'layerPanel.legislatorsScore' },
+  { id: 'pobreza', label: 'layerPanel.poverty' },
+  { id: 'poblacion', label: 'layerPanel.population' },
+  { id: 'fiscal', label: 'layerPanel.fiscalDep' },
 ];
 
 const OVERLAY_LAYERS = [
-  { id: 'mining', label: 'Mining', icon: '⛏️', color: '#ffd700' },
+  { id: 'mining', label: 'layerPanel.mining', icon: '⛏️', color: '#ffd700' },
 ];
 
 function Pill({ active, onClick, children, icon, color }) {
@@ -41,6 +42,7 @@ export default function LayerPanel({
   setEnergyLayers,
   mobile = false,
 }) {
+  const { t } = useTranslation();
   const toggleOverlay = (id) => {
     setOverlays(prev => ({ ...prev, [id]: !prev[id] }));
   };
@@ -64,7 +66,7 @@ export default function LayerPanel({
       <div className="flex items-center gap-2">
         <span className="text-[12px] font-semibold uppercase tracking-wider shrink-0 w-[65px]"
           style={{ color: 'rgba(0,48,73,0.45)' }}>
-          Color by
+          {t('layerPanel.colorBy')}
         </span>
         <div className="flex items-center gap-1.5 flex-wrap">
           {CHOROPLETH_MODES.map(mode => (
@@ -73,7 +75,7 @@ export default function LayerPanel({
               active={choroplethMode === mode.id}
               onClick={() => setChoroplethMode(mode.id)}
             >
-              {mode.label}
+              {t(mode.label)}
             </Pill>
           ))}
         </div>
@@ -83,7 +85,7 @@ export default function LayerPanel({
       <div className="flex items-center gap-2">
         <span className="text-[12px] font-semibold uppercase tracking-wider shrink-0 w-[65px]"
           style={{ color: 'rgba(0,48,73,0.45)' }}>
-          Overlays
+          {t('layerPanel.overlays')}
         </span>
         <div className="flex items-center gap-1.5 flex-wrap">
           {OVERLAY_LAYERS.map(layer => (
@@ -94,7 +96,7 @@ export default function LayerPanel({
               icon={layer.icon}
               color={layer.color}
             >
-              {layer.label}
+              {t(layer.label)}
             </Pill>
           ))}
           {ENERGY_LAYER_CONFIGS.map(layer => (
@@ -105,13 +107,13 @@ export default function LayerPanel({
               icon={layer.icon}
               color={layer.color}
             >
-              {layer.label}
+              {t(layer.label)}
             </Pill>
           ))}
         </div>
         {/* Sources */}
         <div className="ml-auto shrink-0 text-[9px]" style={{ color: 'rgba(0,48,73,0.35)' }}>
-          INDEC · BCRA · SIACAM · IGN · Mar 2026
+          {t('layerPanel.sourcesLine')}
         </div>
       </div>
     </div>

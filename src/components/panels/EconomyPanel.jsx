@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useEconomyData, sipaData } from '../../hooks/useEconomyData';
 import EmploymentSection from '../economy/EmploymentSection';
 import FiscalSection from '../economy/FiscalSection';
@@ -13,6 +14,7 @@ const SUB_TABS = [
 ];
 
 export default function EconomyPanel({ selectedProvince, mobile = false }) {
+  const { t } = useTranslation();
   // On mobile, Fiscal is already shown in the standalone "Fiscal Dependency" accordion
   const visibleTabs = mobile ? SUB_TABS.filter(t => t.id !== 'fiscal') : SUB_TABS;
   const [subTab, setSubTab] = useState('employment');
@@ -23,12 +25,12 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
       <div className="flex flex-col items-center justify-center py-8 text-center">
         <div className="text-3xl mb-2 opacity-30">📊</div>
         <p className="text-[13px] text-[#003049]/50">
-          Select a province on the map to view its economic profile.
+          {t('economy.selectForProfile')}
         </p>
         <p className="text-[11px] text-[#003049]/40 mt-2">
           Employment data: SIPA ({sipaData.lastUpdated})<br />
-          Fiscal data: DNAP/Sec. Hacienda (2024)<br />
-          Export data: INDEC (2024)
+          {t('economy.fiscalSrc')}<br />
+          {t('economy.exportSrc')}
         </p>
       </div>
     );
@@ -57,7 +59,7 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
       {subTab === 'employment' && (
         sipa
           ? <EmploymentSection sipa={sipa} mobile={mobile} />
-          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No employment data available for this province.</p>
+          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">{t('bottomBar.noEmploymentData')}</p>
       )}
 
       {subTab === 'fiscal' && (
@@ -69,7 +71,7 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
       {subTab === 'exports' && (
         exports?.length > 0
           ? <ExportsSection exports={exports} exportDest={exportDest} mobile={mobile} />
-          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">No export data available for this province.</p>
+          : <p className="text-[12px] text-[#003049]/50 py-4 text-center">{t('bottomBar.noExportData')}</p>
       )}
 
       {subTab === 'production' && (
@@ -78,7 +80,7 @@ export default function EconomyPanel({ selectedProvince, mobile = false }) {
 
       {/* Source footer */}
       <p className="text-[10px] text-[#003049]/30 mt-4 leading-relaxed">
-        Sources: CEP XXI/SIPA (employment), Sec. Hacienda TOP/EAIF (fiscal), INDEC (exports), MAGyP/Sec. Energía/SENASA/ADEFA (production)
+        {t('economy.allSources')}
       </p>
     </div>
   );

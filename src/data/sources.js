@@ -234,6 +234,14 @@ export const SOURCES = {
     updated: '2024–2026',
   },
 
+  // ─── Provincial news ──────────────────────────────────────────
+  provincialNews: {
+    name: 'Medios provinciales — RSS público',
+    url: null,
+    updated: 'snapshot',
+    notes: 'Artículos scrapeados de feeds RSS provinciales y condensados por un LLM. Es un snapshot del scraper, no un feed en vivo: la fecha está en _meta.period de cada archivo.',
+  },
+
   // ─── Governors / Cabinet ──────────────────────────────────────
   govOfficial: {
     name: 'Sitios oficiales provinciales + medios',

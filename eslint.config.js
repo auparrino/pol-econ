@@ -23,6 +23,11 @@ export default defineConfig([
       },
     },
     rules: {
+      // Components are only referenced from JSX, and detecting that needs
+      // eslint-plugin-react's jsx-uses-vars, which this config does not load —
+      // so PascalCase has to stay ignored or every component reads as unused.
+      // The cost is that a component nobody renders is invisible here; two of
+      // them (DependencyBar, TaxStructure) had to be found by reading the code.
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },

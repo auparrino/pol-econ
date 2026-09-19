@@ -1,27 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import {
   XAxis, YAxis, Tooltip, ResponsiveContainer,
   AreaChart, Area, CartesianGrid,
 } from 'recharts';
 import dnapFiscal from '../../data/dnap_fiscal.json';
+import DataAge from './DataAge';
 
-function normKey(s) {
-  return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
-}
+import { findByProvince } from '../../utils/provinces';
 
-function lookupProvince(provinceName) {
-  const target = normKey(provinceName);
-  const isCABA = target.includes('ciudad') || target === 'caba';
-  for (const p of dnapFiscal.provinces) {
-    const k = normKey(p.province);
-    if (isCABA) {
-      if (k.includes('ciudad') || k === 'caba') return p;
-      continue;
-    }
-    if (k.includes('ciudad')) continue;
-    if (k === target || k.includes(target) || target.includes(k)) return p;
-  }
-  return null;
-}
+const lookupProvince = (provinceName) => findByProvince(dnapFiscal.provinces, provinceName);
 
 function CompositionTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null;
@@ -53,6 +40,7 @@ function Metric({ label, value, sub, color }) {
 }
 
 export function FiscalTriptych({ provinceName }) {
+  const { t } = useTranslation();
   const prov = lookupProvince(provinceName);
   if (!prov) {
     return (
@@ -64,18 +52,8 @@ export function FiscalTriptych({ provinceName }) {
 
   // Latest snapshot values (ARS millions)
   const depLatest = prov.dependency;                   // %
-  const ownLatest = prov.ownTotal || 0;
   const transfersLatest = prov.nationalTransfers || 0;
   const coparticipation = prov.coparticipation || 0;
-  const discrecional = Math.max(0, transfersLatest - coparticipation);
-  const totalRevenue = ownLatest + transfersLatest;
-  // "Political lever": discretionary transfers as % of the province's TOTAL revenue.
-  // That is what the Executive can turn on/off at will.
-  const discOfTotalPct = totalRevenue > 0 ? (discrecional / totalRevenue) * 100 : null;
-  // Within-transfers split (for the bar below)
-  const autoShare = transfersLatest > 0 ? coparticipation / transfersLatest : null;
-  const discShare = transfersLatest > 0 ? discrecional / transfersLatest : null;
-
   // Baseline: 2019 series value
   const series = prov.timeSeries || [];
   const base = series.find(r => r.year === 2019);
@@ -83,37 +61,37 @@ export function FiscalTriptych({ provinceName }) {
 
   // Display
   const depColor = depLatest > 85 ? '#C1121F' : depLatest > 65 ? '#e67e22' : depLatest > 40 ? '#f39c12' : '#27ae60';
-  const discColor = discOfTotalPct == null ? '#003049'
-    : discOfTotalPct > 15 ? '#C1121F'
-    : discOfTotalPct > 8 ? '#e67e22'
-    : discOfTotalPct > 3 ? '#d4a800'
-    : '#17a589';
-  // Build the 3-stack composition series. The dataset only carries `own` and
-  // `transfers` per year (no per-year automatic vs non-automatic split), so we
-  // apply the latest-year coparticipación / nationalTransfers ratio as a
-  // constant approximation across history.
-  const autoRatio = transfersLatest > 0 ? coparticipation / transfersLatest : 0;
+  // The per-year series only carries `own` and `transfers`, so that is all the
+  // chart plots. It used to show a third band by applying the LATEST year's
+  // coparticipación / transfers ratio to every year back to 2010 — the band
+  // moved with total transfers, never with the actual automatic/discretionary
+  // mix, so it read as history while carrying no year-by-year information.
+  // The real split exists for the latest year only, and is shown as such below.
   const compositionData = series
     .filter(r => r.year >= 2010 && (r.own || 0) + (r.transfers || 0) > 0)
     .map(r => {
       const total = (r.own || 0) + (r.transfers || 0);
-      const ownPct = (r.own / total) * 100;
-      const autoPct = ((r.transfers || 0) * autoRatio / total) * 100;
-      const discPct = ((r.transfers || 0) * (1 - autoRatio) / total) * 100;
-      return { year: r.year, ownPct, autoPct, discPct };
+      return {
+        year: r.year,
+        ownPct: (r.own / total) * 100,
+        transfersPct: ((r.transfers || 0) / total) * 100,
+      };
     });
+
+  // Latest-year split of national transfers — this one is in the data.
+  const autoPctLatest = transfersLatest > 0 ? (coparticipation / transfersLatest) * 100 : null;
 
   return (
     <div className="mt-2">
       <div className="grid grid-cols-2 gap-1.5">
         <Metric
-          label="Fed. transfers"
+          label={t('fiscal.fedTransfers')}
           value={`${depLatest?.toFixed(1) ?? '—'}%`}
-          sub={`of total revenue · ${prov.year}`}
+          sub={`of own-source + transfers · ${prov.year}`}
           color={depColor}
         />
         <Metric
-          label="Δ vs 2019"
+          label={t('fiscal.deltaVs2019')}
           value={delta != null ? `${delta >= 0 ? '+' : ''}${delta.toFixed(1)}pp` : '—'}
           sub={delta == null ? '' : delta > 0 ? 'more dependent' : 'less dependent'}
         />
@@ -121,8 +99,9 @@ export function FiscalTriptych({ provinceName }) {
 
       {compositionData.length >= 2 && (
         <div className="mt-3">
-          <div className="text-[9px] uppercase tracking-wider text-[#003049]/50 mb-0.5">
-            Revenue composition — {compositionData[0].year}–{compositionData[compositionData.length - 1].year}
+          <div className="text-[9px] uppercase tracking-wider text-[#003049]/50 mb-0.5 flex items-center gap-1.5">
+            <span>Revenue composition — {compositionData[0].year}–{compositionData[compositionData.length - 1].year}</span>
+            <DataAge meta={dnapFiscal._meta} size={9} />
           </div>
           <div style={{ width: '100%', height: 130 }}>
             <ResponsiveContainer minWidth={0} minHeight={0}>
@@ -135,24 +114,38 @@ export function FiscalTriptych({ provinceName }) {
                   domain={[0, 1]}
                 />
                 <Tooltip content={<CompositionTooltip />} />
-                <Area type="monotone" dataKey="ownPct"  stackId="1" name="Own"            fill="#003049" fillOpacity={0.85} stroke="#003049" />
-                <Area type="monotone" dataKey="autoPct" stackId="1" name="Automatic"      fill="#17a589" fillOpacity={0.85} stroke="#17a589" />
-                <Area type="monotone" dataKey="discPct" stackId="1" name="Non-automatic"  fill="#d4a800" fillOpacity={0.85} stroke="#d4a800" />
+                <Area type="monotone" dataKey="ownPct"       stackId="1" name="Own"               fill="#003049" fillOpacity={0.85} stroke="#003049" />
+                <Area type="monotone" dataKey="transfersPct" stackId="1" name="National transfers" fill="#17a589" fillOpacity={0.85} stroke="#17a589" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
           <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-[9px]">
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#003049' }} /><span className="text-[#003049]/70">Own</span></span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#17a589' }} /><span className="text-[#003049]/70">Automatic (coparticipación)</span></span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#d4a800' }} /><span className="text-[#003049]/70">Non-automatic</span></span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#003049' }} /><span className="text-[#003049]/70">Own-source</span></span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#17a589' }} /><span className="text-[#003049]/70">{t('fiscal.federalDep')}</span></span>
           </div>
+
+          {autoPctLatest != null && (
+            <div className="mt-2">
+              <div className="text-[9px] uppercase tracking-wider text-[#003049]/50 mb-0.5">
+                Of those transfers, {prov.year}
+              </div>
+              <div className="flex h-[8px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.10)' }}>
+                <div style={{ width: `${autoPctLatest}%`, background: '#17a589' }} title={`Automatic (coparticipación): ${autoPctLatest.toFixed(1)}%`} />
+                <div style={{ width: `${100 - autoPctLatest}%`, background: '#d4a800' }} title={`Non-automatic: ${(100 - autoPctLatest).toFixed(1)}%`} />
+              </div>
+              <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-[9px]">
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#17a589' }} /><span className="text-[#003049]/70">Automatic (coparticipación) {autoPctLatest.toFixed(0)}%</span></span>
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#d4a800' }} /><span className="text-[#003049]/70">Non-automatic {(100 - autoPctLatest).toFixed(0)}%</span></span>
+              </div>
+            </div>
+          )}
         </div>
       )}
 
       <div className="text-[9px] text-[#003049]/40 mt-1.5 leading-snug">
         Source: Mecon DNAP (APNF 2005–{prov.year}). Each year normalized to 100% — invariant to inflation.
         <br />
-        <b>Non-automatic</b> = transfers outside the coparticipación law (ATN, convenios, fondos compensadores, obra pública nacional). Historical automatic/non-automatic split estimated using the latest year's ratio.
+        <b>{t('fiscal.nonAutomatic')}</b> = transfers outside the coparticipación law (ATN, convenios, fondos compensadores, obra pública nacional). The dataset only carries this split for {prov.year}, so it is shown for that year alone rather than projected back over the series.
       </div>
     </div>
   );

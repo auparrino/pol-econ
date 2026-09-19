@@ -36,6 +36,24 @@ PROVINCE_MAP = {
     "tucuman": "Tucumán",
 }
 
+# The two INDEC OPEX exports use different column prefixes for the same two
+# jurisdictions: the "rubro" file spells them out (buenos_aires_/
+# ciudad_de_buenos_aires_) while the "pais de destino" file abbreviates them
+# (pba_/caba_).  Without these aliases both provinces silently produced empty
+# destination lists — i.e. no destination data for ~35% of national exports.
+PREFIX_ALIASES = {
+    "pba": "Buenos Aires",
+    "caba": "Ciudad de Buenos Aires",
+}
+
+
+def prefix_map():
+    """All accepted CSV column prefixes → canonical province name."""
+    m = dict(PROVINCE_MAP)
+    m.update(PREFIX_ALIASES)
+    return m
+
+
 CATEGORY_LABELS = {
     "pp": "Primary Products",
     "moa": "Agricultural Manufactures",
@@ -84,15 +102,19 @@ def parse_destinations():
     cols = list(df.columns)
     cols.remove("indice_tiempo")
 
-    # Build mapping: prefix → list of (country_slug, col_name)
-    prov_countries = {}
+    prefixes = prefix_map()
+
+    # Build mapping: province → list of (country_slug, col_name).  Keying by
+    # province (not by prefix) means the aliases above merge into the same
+    # province instead of emitting a second, empty row for it.
+    prov_countries = {province: [] for province in PROVINCE_MAP.values()}
     for col in cols:
-        for prefix in sorted(PROVINCE_MAP.keys(), key=len, reverse=True):
+        for prefix in sorted(prefixes.keys(), key=len, reverse=True):
             if col.startswith(prefix + "_"):
                 rest = col[len(prefix) + 1:]
                 if rest.startswith("total_"):
                     break
-                prov_countries.setdefault(prefix, []).append((rest, col))
+                prov_countries[prefixes[prefix]].append((rest, col))
                 break
 
     # Country slug prettifier
@@ -122,8 +144,8 @@ def parse_destinations():
     rows = []
     for _, row in df.iterrows():
         year = int(str(row["indice_tiempo"])[:4])
-        for prefix, province in PROVINCE_MAP.items():
-            countries = prov_countries.get(prefix, [])
+        for province in PROVINCE_MAP.values():
+            countries = prov_countries.get(province, [])
             dests = []
             for country_slug, col in countries:
                 val = float(row.get(col, 0) or 0)

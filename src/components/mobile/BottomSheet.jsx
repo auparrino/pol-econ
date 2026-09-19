@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 /**
  * Minimal bottom sheet primitive for mobile.
@@ -6,6 +7,7 @@ import { useEffect } from 'react';
  * Closes on backdrop tap or × button.
  */
 export default function BottomSheet({ open, onClose, title, children, maxHeightPct = 80 }) {
+  const { t } = useTranslation();
   useEffect(() => {
     if (!open) return;
     const onKey = (e) => { if (e.key === 'Escape') onClose?.(); };
@@ -43,7 +45,7 @@ export default function BottomSheet({ open, onClose, title, children, maxHeightP
             <button
               onClick={onClose}
               className="text-[#003049]/40 hover:text-[#003049] text-2xl leading-none p-1"
-              aria-label="Close"
+              aria-label={t('common.close')}
             >
               ×
             </button>

@@ -1,4 +1,5 @@
 import { useState, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import ErrorBoundary from '../ErrorBoundary';
 import LoadingSpinner from '../LoadingSpinner';
 import MobileMapTab from './MobileMapTab';
@@ -13,6 +14,7 @@ const TAB_BAR_H = 68;
 
 
 function PeekCard({ province, governor, miningCount, onOpen, onDismiss }) {
+  const { t } = useTranslation();
   if (!province) return null;
   const align = governor?.alineamiento_nacion;
   const color = alignColorOf(align);
@@ -35,7 +37,7 @@ function PeekCard({ province, governor, miningCount, onOpen, onDismiss }) {
               {governor.gobernador} · {governor.partido}
             </p>
           ) : (
-            <p className="text-[12px] text-[#003049]/50 italic">No data</p>
+            <p className="text-[12px] text-[#003049]/50 italic">{t('common.noData')}</p>
           )}
           {align && (
             <span
@@ -65,17 +67,18 @@ function PeekCard({ province, governor, miningCount, onOpen, onDismiss }) {
         style={{ background: '#003049', color: '#FDF0D5' }}
         aria-label={`View ${province} full details`}
       >
-        View full details →
+        {t('mobile.viewFullDetails')}
       </button>
     </div>
   );
 }
 
+// Labels are keys under `mobile.`, resolved where the tab is drawn.
 const TABS = [
-  { id: 'map',      label: 'Map',      icon: '🗺' },
-  { id: 'province', label: 'Province', icon: '📍' },
-  { id: 'nation',   label: 'Nation',   icon: '🏛' },
-  { id: 'macro',    label: 'Macro',    icon: '📊' },
+  { id: 'map',      icon: '🗺' },
+  { id: 'province', icon: '📍' },
+  { id: 'nation',   icon: '🏛' },
+  { id: 'macro',    icon: '📊' },
 ];
 
 export default function MobileShell({
@@ -91,6 +94,7 @@ export default function MobileShell({
   setSelectedProvince,
 }) {
   const [tab, setTab] = useState('map');
+  const { t } = useTranslation();
 
   // Resolve governor for the peek card.
   const peekGovernor = selectedProvince
@@ -181,23 +185,23 @@ export default function MobileShell({
         role="tablist"
         aria-label="Atlas sections"
       >
-        {TABS.map(t => {
-          const active = tab === t.id;
+        {TABS.map(item => {
+          const active = tab === item.id;
           return (
             <button
-              key={t.id}
-              onClick={() => setTab(t.id)}
+              key={item.id}
+              onClick={() => setTab(item.id)}
               role="tab"
               aria-selected={active}
               className="flex-1 flex flex-col items-center justify-center gap-0.5 py-2.5"
               style={{ color: active ? '#003049' : 'rgba(0,48,73,0.50)' }}
             >
-              <span className="text-[18px] leading-none">{t.icon}</span>
+              <span className="text-[18px] leading-none">{item.icon}</span>
               <span
                 className="text-[9px] uppercase tracking-wider"
                 style={{ fontWeight: active ? 800 : 600 }}
               >
-                {t.label}
+                {t(`mobile.${item.id}`)}
               </span>
               <span
                 className="block h-[2px] w-6 rounded-full mt-0.5"

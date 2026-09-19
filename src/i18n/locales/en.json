@@ -365,7 +365,7 @@
     "privateShort": "Priv",
     "publicShort": "Pub",
     "gapInformal": "Informal / uncovered",
-    "compositionNote": "Private and public: SIPA-registered salaried 2023. Gap: informal + not covered (includes 13 provinces with their own pension funds, whose provincial employees don't appear in SIPA).",
+    "compositionNote": "Private and public: SIPA-registered salaried workers, 2023. The gap is informal and unregistered work.",
     "splitTitle": "Employed: private vs public",
     "splitPrivate": "Private",
     "splitPublic": "Public",
@@ -373,7 +373,7 @@
     "formalPrivate": "Private",
     "formalPublic": "Public",
     "formalTotal": "Total formal jobs",
-    "cajaPropiaTooltip": "Province has own pension fund (caja propia) — SIPA-public excludes provincial workers; DNAP below covers them.",
+    "cajaPropiaTooltip": "Province has its own pension fund. This was thought to make SIPA under-count its public employment, but its SIPA-public / DNAP-posts ratio matches the other provinces, so the dataset does capture provincial staff.",
     "provincialCabinet": "Provincial cabinet",
     "dnapAddsToSipa": "Provincial cabinet · adds to SIPA-pub",
     "dnapSubsetOfSipa": "Provincial cabinet · subset of SIPA-pub",
@@ -399,7 +399,14 @@
     "evolutionTitle": "Provincial public headcount, per 1,000 hab.",
     "evolutionNote": "Dashed line = 2024 national average ({{avg}} / 1,000). Source: DNAP annual series 1987–2024.",
     "ratioShort": "per 1,000",
-    "footer": "EPH Q3-25 (INDEC, urban). SIPA per-departamento Nov-23 (CEP-XXI, formal jobs by residence — discontinued). DNAP (provincial-cabinet posts, AC + decentralized + special accounts). SIPA and DNAP use different methodologies (jobs vs filled posts) and overlap unevenly — they're shown as two separate facts, not added together."
+    "footer": "EPH Q3-25 (INDEC, urban). SIPA per-departamento Nov-23 (CEP-XXI, formal jobs by residence — discontinued). DNAP (provincial-cabinet posts, AC + decentralized + special accounts). SIPA and DNAP use different methodologies (jobs vs filled posts) and overlap unevenly — they're shown as two separate facts, not added together.",
+    "byResidence": "by residence",
+    "byEstablishment": "by workplace",
+    "universeWarning": "The two SIPA figures on this tab measure different universes: the public/private split is by worker residence, the sectors by workplace location. They agree nationally but can differ sharply by province (CABA +92%, Buenos Aires −24%).",
+    "scopeSipaPublic": "all 3 levels of government · by residence",
+    "scopeDnap": "provincial government only · by jurisdiction",
+    "noSubtractNote": "These do not subtract. SIPA attributes a post to the province the worker lives in and DNAP to the one that employs them, so someone living in one province and employed by another counts in both. They are also different periods ({{sipaVintage}} and {{dnapYear}}).",
+    "dnapExceedsSipa": "Here DNAP exceeds SIPA-public, which happens in no other province (the rest run 50–90%). It is an unresolved anomaly, not a figure to read into."
   },
   "exportsSec": {
     "desc": "Provincial exports in USD millions. PP: primary products, MOA: agricultural manufactures, MOI: industrial manufactures, F&E: fuels & energy. Source: INDEC.",
@@ -483,7 +490,8 @@
     "provinceTotal": "Province total",
     "units": "units",
     "plants": "Plants",
-    "natTotalVehicles": "National total: {{count}} vehicles (ADEFA {{year}})"
+    "natTotalVehicles": "National total: {{count}} vehicles (ADEFA {{year}})",
+    "ofNationally": "of {{total}} heads nationally"
   },
   "crops": {
     "soybeans": "Soybeans",
@@ -566,7 +574,12 @@
     "exportAggDesc": "National exports {{year}} — INDEC, summed across provinces and product categories (USD millions).",
     "goodsExports": "goods exports",
     "primaryAgro": "primary + agro-industrial",
-    "prodNatDesc": "National production aggregates across the four main physical-output sectors."
+    "prodNatDesc": "National production aggregates across the four main physical-output sectors.",
+    "ladderTitle": "Why there are three public-employment figures",
+    "ladderIntro": "All three are correct. They measure different things, and each one includes something the previous one leaves out:",
+    "ladderCenso": "people who report their main occupation as public administration, education or health. It does not isolate state enterprises and leaves {{ignorado}} unclassified.",
+    "ladderBiep": "people across the three levels of government. Adds the armed and security forces, national universities, state banks and enterprises.",
+    "ladderSipa": "registered posts, not people: anyone holding two appointments counts twice. It is the highest by construction."
   },
   "rigi": {
     "nationalOverview": "RIGI · National overview",
@@ -659,5 +672,66 @@
   },
   "bloc": {
     "seats": "seats"
+  },
+  "editorial": {
+    "badge": "our call",
+    "confidence": "confidence",
+    "tooltip": "This is a judgement made by this tool, not a figure published by any official source. Measurements carry a source and a period; this does not.",
+    "sectionNote": "Fields marked as our call are editorial judgements, not measurements. Nobody publishes them — they are decided here."
+  },
+  "livestock": {
+    "bovine": "Cattle",
+    "sheep": "Sheep",
+    "pigs": "Pigs",
+    "goats": "Goats",
+    "horses": "Horses"
+  },
+  "produce": {
+    "Apple": "Apple",
+    "Apricot": "Apricot",
+    "Avocado": "Avocado",
+    "Banana": "Banana",
+    "Bean": "Bean",
+    "Berries": "Berries",
+    "Blueberry": "Blueberry",
+    "Cherry": "Cherry",
+    "Citrus": "Citrus",
+    "Grapes": "Grapes",
+    "Lemon": "Lemon",
+    "Mandarin": "Mandarin",
+    "Mango": "Mango",
+    "Melon": "Melon",
+    "Olive": "Olive",
+    "Orange": "Orange",
+    "Peach": "Peach",
+    "Pear": "Pear",
+    "Pecan nut": "Pecan nut",
+    "Plum": "Plum",
+    "Pomelo": "Pomelo",
+    "Strawberry": "Strawberry",
+    "Tobacco": "Tobacco",
+    "Walnut": "Walnut",
+    "Andean potatoes": "Andean potatoes",
+    "Cassava": "Cassava",
+    "Garlic": "Garlic",
+    "Lettuce": "Lettuce",
+    "Onion": "Onion",
+    "Pepper": "Pepper",
+    "Potato": "Potato",
+    "Tomato": "Tomato",
+    "Bioethanol": "Bioethanol",
+    "Cotton": "Cotton",
+    "Olive oil": "Olive oil",
+    "Peanut": "Peanut",
+    "Poultry": "Poultry",
+    "Raisins": "Raisins",
+    "Rice": "Rice",
+    "Sugar": "Sugar",
+    "Tea": "Tea",
+    "Wine": "Wine",
+    "Wine (high altitude)": "Wine (high altitude)",
+    "Wood pulp": "Wood pulp",
+    "Wool": "Wool",
+    "Yerba Mate": "Yerba Mate"
   }
 }

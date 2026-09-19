@@ -1,6 +1,12 @@
 {
-  "version": "2026-04-06",
-  "methodology": "score_executive = matches / votes_cast across curated executive-position list. score_bloc = matches with own-bloc majority (>=60%) / votes_cast. rate_absent = absences / listed_total. Source positions: src/data/executivePositions.json",
+  "_meta": {
+    "period": "2025-08/2026-02",
+    "retrieved": "2026-09-19",
+    "source": "comovoto",
+    "note": "Ventana de las votaciones nominales puntuadas."
+  },
+  "version": "2026-09-19",
+  "methodology": "score_executive = matches / votes_cast across curated executive-position list. score_bloc = matches with own-bloc majority (>=60%) / votes_cast. rate_absent = absences / listed_total. Only votes actually held by the legislator's own chamber count towards the denominators (see listed_votes_by_chamber); a vote the other chamber held is recorded as N/A, not as an absence. Source positions: src/data/executivePositions.json",
   "listed_votes": [
     "presupuesto_2026",
     "inocencia_fiscal",
@@ -9,6 +15,31 @@
     "mercosur_ue",
     "ley_glaciares"
   ],
+  "listed_votes_by_chamber": {
+    "presupuesto_2026": [
+      "D",
+      "S"
+    ],
+    "inocencia_fiscal": [
+      "D",
+      "S"
+    ],
+    "modernizacion_laboral": [
+      "D",
+      "S"
+    ],
+    "regimen_penal_juv": [
+      "D",
+      "S"
+    ],
+    "mercosur_ue": [
+      "D",
+      "S"
+    ],
+    "ley_glaciares": [
+      "S"
+    ]
+  },
   "per_legislator": {
     "AGUERO, GUILLERMO CESAR": {
       "name": "AGUERO, GUILLERMO CESAR",
@@ -18,16 +49,16 @@
       "bloc_raw": "Ucr - Union Civica Radical",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "AGUIRRE, HILDA": {
@@ -38,16 +69,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "AJMECHET, SABRINA": {
@@ -58,16 +89,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ALI, ERNESTO &quot;PIPI&quot;": {
@@ -78,16 +109,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ALMENA, CARLOS ALBERTO": {
@@ -98,16 +129,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ALMIRON, LISANDRO": {
@@ -118,16 +149,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ALVAREZ, CLAUDIO": {
@@ -138,16 +169,16 @@
       "bloc_raw": "Pais Federal",
       "score_executive": 0.8,
       "score_bloc": 0.6,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ANDINO, CRISTIAN": {
@@ -158,16 +189,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ANDRADE, JAVIER": {
@@ -178,16 +209,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ANDREUSSI, BARBARA": {
@@ -198,16 +229,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ANSALONI, PABLO": {
@@ -218,16 +249,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ARABIA, DAMIAN": {
@@ -238,16 +269,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ARAUJO HERNANDEZ, JORGE NERI": {
@@ -258,16 +289,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ARDOHAIN, MARTIN": {
@@ -278,16 +309,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ARRIETA, LOURDES MICAELA": {
@@ -298,16 +329,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.4,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ARRUA, ALBERTO": {
@@ -318,16 +349,16 @@
       "bloc_raw": "Innovacion Federal",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "AVEIRO, MARTIN": {
@@ -338,16 +369,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.3333333333333333,
       "score_bloc": 0.6666666666666666,
-      "rate_absent": 0.5,
+      "rate_absent": 0.4,
       "sample_cast": 3,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "ABSENT",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "AVICO, BELEN": {
@@ -358,16 +389,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "AVILA, FERNANDA": {
@@ -378,16 +409,16 @@
       "bloc_raw": "Elijo Catamarca",
       "score_executive": 0.6,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "AVILA, JORGE ANTONIO": {
@@ -398,16 +429,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.5,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BANFI, KARINA": {
@@ -418,16 +449,16 @@
       "bloc_raw": "Adelante Buenos Aires",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BARBUR, MARCELO": {
@@ -438,16 +469,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BASTERRA, LUIS EUGENIO": {
@@ -458,16 +489,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BASUALDO, ATILIO": {
@@ -478,16 +509,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BASUALDO, CAROLINA": {
@@ -498,16 +529,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.6,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BECERRA, MONICA": {
@@ -518,16 +549,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BENEDIT, BELTRAN": {
@@ -538,16 +569,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BENEGAS LYNCH, BERTIE": {
@@ -558,16 +589,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BIANCHETTI, EMMANUEL": {
@@ -578,16 +609,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BIELLA, BERNARDO": {
@@ -598,16 +629,16 @@
       "bloc_raw": "Innovacion Federal",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BONACCI, ROCIO": {
@@ -618,16 +649,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BONGIOVANNI, ALEJANDRO": {
@@ -638,16 +669,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BORDET, GUSTAVO": {
@@ -658,16 +689,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BORGATTA, ALEJANDRINA": {
@@ -678,16 +709,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BORNORONI, GABRIEL": {
@@ -698,16 +729,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BREGMAN, MYRIAM": {
@@ -718,16 +749,16 @@
       "bloc_raw": "Frente De Izquierda Y De Trabajadores Unidad",
       "score_executive": 0,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BRIZUELA, ADRIAN": {
@@ -738,16 +769,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BRUGGE, JUAN FERNANDO": {
@@ -758,16 +789,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.4,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "BRUNO, ELIANA": {
@@ -778,16 +809,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CAFIERO, SANTIAGO": {
@@ -798,16 +829,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CAMPERO, MARIANO": {
@@ -818,16 +849,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CAMPITELLI, CELIA": {
@@ -838,16 +869,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CAMPO, JULIETA MARISOL": {
@@ -858,16 +889,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CAMPORA, LUCIA": {
@@ -878,16 +909,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CAPOZZI, SERGIO EDUARDO": {
@@ -898,16 +929,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.8,
       "score_bloc": 0.6,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CARIGNANO, FLORENCIA": {
@@ -918,16 +949,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CARRANCIO, ALEJANDRO": {
@@ -938,16 +969,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CASAS, SERGIO GUILLERMO": {
@@ -958,16 +989,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.25,
       "score_bloc": 0.75,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "ABSENT",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CASTAGNETO, CARLOS DANIEL": {
@@ -978,16 +1009,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CASTELNUOVO, GISELLE": {
@@ -998,16 +1029,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CHICA, JORGE": {
@@ -1018,16 +1049,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CHICONI, ABEL": {
@@ -1038,16 +1069,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CIPOLINI, GERARDO": {
@@ -1058,16 +1089,16 @@
       "bloc_raw": "Ucr - Union Civica Radical",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CISNEROS, CARLOS": {
@@ -1078,16 +1109,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 1,
-      "rate_absent": 0.5,
+      "rate_absent": 0.4,
       "sample_cast": 3,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "ABSENT",
         "mercosur_ue": "ABSENT",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "COLETTA, MARIELA": {
@@ -1098,16 +1129,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.4,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "CORREA LLANO, FACUNDO": {
@@ -1118,16 +1149,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "DAIVES, RICARDO": {
@@ -1138,16 +1169,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.3333333333333333,
       "score_bloc": 0.6666666666666666,
-      "rate_absent": 0.5,
+      "rate_absent": 0.4,
       "sample_cast": 3,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "ABSENT",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "DE ANDREIS, FERNANDO": {
@@ -1158,16 +1189,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "DE LA ROSA, MARIA GRACIELA": {
@@ -1178,16 +1209,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "DE LA SOTA, NATALIA": {
@@ -1198,16 +1229,16 @@
       "bloc_raw": "Defendamos Cordoba",
       "score_executive": 0.2,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "DE SENSI, MARIA FLORENCIA": {
@@ -1218,16 +1249,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "DEL CAÑO, NICOLAS": {
@@ -1238,16 +1269,16 @@
       "bloc_raw": "Frente De Izquierda Y De Trabajadores Unidad",
       "score_executive": 0,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "DEL PLA, ROMINA": {
@@ -1258,16 +1289,16 @@
       "bloc_raw": "Frente De Izquierda Y De Trabajadores Unidad",
       "score_executive": 0,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "DIAZ, FERNANDA": {
@@ -1278,16 +1309,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "DIEZ, ROMINA": {
@@ -1298,16 +1329,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "DOLCE, SERGIO": {
@@ -1318,16 +1349,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "EMMA, NICOLAS": {
@@ -1338,16 +1369,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ESTEVEZ, GABRIELA BEATRIZ": {
@@ -1358,16 +1389,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FALCONE, EDUARDO": {
@@ -1378,16 +1409,16 @@
       "bloc_raw": "Mid - Movimiento De Integracion Y Desarrollo",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FARGOSI, ALEJANDRO": {
@@ -1398,16 +1429,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FARIAS, PABLO": {
@@ -1418,16 +1449,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.5,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FELIX, EMIR": {
@@ -1438,16 +1469,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FERNANDEZ, ELIA MARINA": {
@@ -1458,16 +1489,16 @@
       "bloc_raw": "Independencia",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FERNANDEZ, JORGE": {
@@ -1478,16 +1509,16 @@
       "bloc_raw": "Primero San Luis",
       "score_executive": 0.2,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "X",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FERNANDEZ MOLERO, DAIANA": {
@@ -1498,16 +1529,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.5,
+      "rate_absent": 0.4,
       "sample_cast": 3,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "ABSENT",
         "mercosur_ue": "ABSENT",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FERRAN, ABELARDO": {
@@ -1518,16 +1549,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FERRARO, MAXIMILIANO": {
@@ -1538,16 +1569,16 @@
       "bloc_raw": "Coalicion Civica",
       "score_executive": 0.4,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FERREYRA, ALIDA": {
@@ -1558,16 +1589,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FIGLIUOLO, SERGIO": {
@@ -1578,16 +1609,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FINOCCHIARO, ALEJANDRO": {
@@ -1598,16 +1629,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FLORES, MARIA GABRIELA": {
@@ -1618,16 +1649,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FRADE, MONICA": {
@@ -1638,16 +1669,16 @@
       "bloc_raw": "Coalicion Civica",
       "score_executive": 0.3333333333333333,
       "score_bloc": 1,
-      "rate_absent": 0.5,
+      "rate_absent": 0.4,
       "sample_cast": 3,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "ABSENT",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FREGONESE, ALICIA": {
@@ -1658,16 +1689,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FREITES, ANDREA": {
@@ -1678,16 +1709,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.75,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "FRIAS, MAIRA": {
@@ -1698,16 +1729,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GALLARDO, MARIA VIRGINIA": {
@@ -1718,16 +1749,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GALMARINI, SEBASTIAN": {
@@ -1738,16 +1769,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GARCIA, MARIA TERESA": {
@@ -1758,16 +1789,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GARCIA, ALVARO": {
@@ -1778,16 +1809,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GARCIA, CARLOS": {
@@ -1798,16 +1829,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GARCIA ARESCA, IGNACIO": {
@@ -1818,16 +1849,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.5,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "ABSENT",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GARRIDO, JOSE LUIS": {
@@ -1838,16 +1869,16 @@
       "bloc_raw": "Por Santa Cruz",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GIAMPIERI, ANTONELA": {
@@ -1858,16 +1889,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GIUDICI, SILVANA": {
@@ -1878,16 +1909,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GIULIANO, DIEGO A.": {
@@ -1898,16 +1929,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GLINSKI, JOSE": {
@@ -1918,16 +1949,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GOITIA, ROSARIO": {
@@ -1938,16 +1969,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GOMEZ, JOSE": {
@@ -1958,16 +1989,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.3333333333333333,
       "score_bloc": 0.6666666666666666,
-      "rate_absent": 0.5,
+      "rate_absent": 0.4,
       "sample_cast": 3,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "ABSENT",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GONZALES, ALFREDO": {
@@ -1978,16 +2009,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GONZALEZ, DIOGENES IGNACIO": {
@@ -1998,16 +2029,16 @@
       "bloc_raw": "Ucr - Union Civica Radical",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GONZALEZ, GERARDO GUSTAVO": {
@@ -2018,16 +2049,16 @@
       "bloc_raw": "Pais Federal",
       "score_executive": 1,
       "score_bloc": 0.6666666666666666,
-      "rate_absent": 0.5,
+      "rate_absent": 0.4,
       "sample_cast": 3,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "ABSENT",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GONZALEZ, ALVARO": {
@@ -2038,16 +2069,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GONZALEZ ESTEVARENA, MARIA LUISA": {
@@ -2058,16 +2089,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GRABOIS, JUAN": {
@@ -2078,16 +2109,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GRUBER, MAURA": {
@@ -2098,16 +2129,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GUTIERREZ, CARLOS": {
@@ -2118,16 +2149,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.6,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GUTIERREZ, RAMIRO": {
@@ -2138,16 +2169,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "GUZMAN, JAIRO": {
@@ -2158,16 +2189,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "HADAD, RAUL": {
@@ -2178,16 +2209,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "X",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "HAGMAN, ITAI": {
@@ -2198,16 +2229,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "HARTFIELD, DIEGO": {
@@ -2218,16 +2249,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "HERRERA, OSCAR": {
@@ -2238,16 +2269,16 @@
       "bloc_raw": "Innovacion Federal",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "HOLZMAN, PATRICIA": {
@@ -2258,16 +2289,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "HUESEN, GERARDO": {
@@ -2278,16 +2309,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "HUMENUK, GLADYS": {
@@ -2298,16 +2329,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "IANNI, ANA MARIA": {
@@ -2318,16 +2349,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "IBAÑEZ, MARIA CECILIA": {
@@ -2338,16 +2369,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "JAIME QUIROGA, CARLOS GUSTAVO": {
@@ -2358,16 +2389,16 @@
       "bloc_raw": "Produccion Y Trabajo",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "JULIANO, PABLO": {
@@ -2378,16 +2409,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.4,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "KIRCHNER, MAXIMO CARLOS": {
@@ -2398,16 +2429,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LANESAN SANCHO, MOIRA": {
@@ -2418,16 +2449,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LAUMANN, ANDRES ARIEL": {
@@ -2438,16 +2469,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LEIVA, ALDO": {
@@ -2458,16 +2489,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LEMOINE, LILIA": {
@@ -2478,16 +2509,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LEONE, ANDRES": {
@@ -2498,16 +2529,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LLANO, MERCEDES": {
@@ -2518,16 +2549,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LLUCH, ENRIQUE": {
@@ -2538,16 +2569,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LONGO, JOHANNA SABRINA": {
@@ -2558,16 +2589,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LOPEZ, JIMENA": {
@@ -2578,16 +2609,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LOPEZ PASQUALI, CECILIA": {
@@ -2598,16 +2629,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LOUSTEAU, MARTIN": {
@@ -2618,16 +2649,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.4,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "LUQUE, JUAN PABLO": {
@@ -2638,16 +2669,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MACYSZYN, LORENA": {
@@ -2658,16 +2689,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MANGO, MARCELO": {
@@ -2678,16 +2709,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MANRIQUE, MARIO": {
@@ -2698,16 +2729,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "ABSENT",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MARCLAY, MARIANELA": {
@@ -2718,16 +2749,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MARIN, VARINIA LIS": {
@@ -2738,16 +2769,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MARINO, JUAN": {
@@ -2758,16 +2789,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MARTINEZ, ALVARO": {
@@ -2778,16 +2809,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MARTINEZ, GERMAN PEDRO": {
@@ -2798,16 +2829,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MASSOT, NICOLAS": {
@@ -2818,16 +2849,16 @@
       "bloc_raw": "Encuentro Federal",
       "score_executive": 0.25,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "ABSENT",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MAUREIRA, KARINA": {
@@ -2838,16 +2869,16 @@
       "bloc_raw": "La Neuquinidad",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MAYORAZ, NICOLAS": {
@@ -2858,16 +2889,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MEDINA, GLADYS": {
@@ -2878,16 +2909,16 @@
       "bloc_raw": "Independencia",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "METRAL ASENSIO, JULIETA": {
@@ -2898,16 +2929,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MICHEL, GUILLERMO": {
@@ -2918,16 +2949,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MIÑO, FERNANDA": {
@@ -2938,16 +2969,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MOLINA, JUAN CARLOS": {
@@ -2958,16 +2989,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MOLINUEVO, SOLEDAD": {
@@ -2978,16 +3009,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MOLLE, MATIAS": {
@@ -2998,16 +3029,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MONDACA, SOLEDAD": {
@@ -3018,16 +3049,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MONGUILLOT, FERNANDO": {
@@ -3038,16 +3069,16 @@
       "bloc_raw": "Elijo Catamarca",
       "score_executive": 0.6,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MONTENEGRO, GUILLERMO": {
@@ -3058,16 +3089,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MONTENEGRO, JUAN PABLO": {
@@ -3078,16 +3109,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MONZON, ROXANA": {
@@ -3098,16 +3129,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 1,
-      "rate_absent": 0.5,
+      "rate_absent": 0.4,
       "sample_cast": 3,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "ABSENT",
         "mercosur_ue": "ABSENT",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MORCHIO, FRANCISCO": {
@@ -3118,16 +3149,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MOREAU, CECILIA": {
@@ -3138,16 +3169,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MORENO OVALLE, JULIO": {
@@ -3158,16 +3189,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MOYANO, HUGO ANTONIO": {
@@ -3178,16 +3209,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MUKDISE, JORGE": {
@@ -3198,16 +3229,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MUÑOZ, GABRIELA LUCIANA": {
@@ -3218,16 +3249,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "NEDER, ESTELA MARY": {
@@ -3238,16 +3269,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "NIERI, LISANDRO": {
@@ -3258,16 +3289,16 @@
       "bloc_raw": "Ucr - Union Civica Radical",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "NIVEYRO, MIRIAM": {
@@ -3278,16 +3309,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "NOBLEGA, SEBASTIAN": {
@@ -3298,16 +3329,16 @@
       "bloc_raw": "Elijo Catamarca",
       "score_executive": 0.6,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "NOGUERA, JAVIER": {
@@ -3318,16 +3349,16 @@
       "bloc_raw": "Independencia",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.6666666666666666,
+      "rate_absent": 0.6,
       "sample_cast": 2,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "ABSENT",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "ABSENT",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "NUÑEZ, JOSE": {
@@ -3338,16 +3369,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.6,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "OJEDA, JOAQUIN": {
@@ -3358,16 +3389,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "OLMOS, KELLY": {
@@ -3378,16 +3409,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "OSUNA, BLANCA INES": {
@@ -3398,16 +3429,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "OUTES, PABLO": {
@@ -3418,16 +3449,16 @@
       "bloc_raw": "Innovacion Federal",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PAGANO, MARCELA MARINA": {
@@ -3438,16 +3469,16 @@
       "bloc_raw": "Pais Federal",
       "score_executive": 0,
       "score_bloc": 0.3333333333333333,
-      "rate_absent": 0.5,
+      "rate_absent": 0.4,
       "sample_cast": 3,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "ABSENT",
         "mercosur_ue": "ABSENT",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PALAZZO, SERGIO OMAR": {
@@ -3458,16 +3489,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PALLADINO, CLAUDIA MARIA": {
@@ -3478,16 +3509,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PAREJA, SEBASTIAN": {
@@ -3498,16 +3529,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PAROLA, MARIA GRACIELA": {
@@ -3518,16 +3549,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PATIÑO BRIZUELA, MARCOS": {
@@ -3538,16 +3569,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PAULI, SANTIAGO": {
@@ -3558,16 +3589,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PAULON, ESTEBAN": {
@@ -3578,16 +3609,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.4,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PEDRALI, GABRIELA": {
@@ -3598,16 +3629,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PELLEGRINI, AGUSTIN": {
@@ -3618,16 +3649,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PELLI, FEDERICO AGUSTIN": {
@@ -3638,16 +3669,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PELUC, JOSE": {
@@ -3658,16 +3689,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PENACCA, PAULA ANDREA": {
@@ -3678,16 +3709,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PETRI, LUIS": {
@@ -3698,16 +3729,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PETROVICH, MARIA LORENA": {
@@ -3718,16 +3749,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PICAT, LUIS ALBINO": {
@@ -3738,16 +3769,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PICHETTO, MIGUEL ANGEL": {
@@ -3758,16 +3789,16 @@
       "bloc_raw": "Encuentro Federal",
       "score_executive": 0.5,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PICON MARTINEZ, NANCY VIVIANA": {
@@ -3778,16 +3809,16 @@
       "bloc_raw": "Produccion Y Trabajo",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PIETRAGALLA CORTI, HORACIO": {
@@ -3798,16 +3829,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PITROLA, NESTOR": {
@@ -3818,16 +3849,16 @@
       "bloc_raw": "Frente De Izquierda Y De Trabajadores Unidad",
       "score_executive": 0,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "POKOIK, LORENA": {
@@ -3838,16 +3869,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PONCE, MARIA CELESTE": {
@@ -3858,16 +3889,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "POTENZA, LUCIANA": {
@@ -3878,16 +3909,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "PROPATO, AGUSTINA LUCRECIA": {
@@ -3898,16 +3929,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "QUINTAR, MANUEL": {
@@ -3918,16 +3949,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "RAUSCHENBERGER, ARIEL": {
@@ -3938,16 +3969,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "RAVERA, VALENTINA": {
@@ -3958,16 +3989,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "RAVIER, ADRIAN": {
@@ -3978,16 +4009,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "RAZZINI, VERONICA": {
@@ -3998,16 +4029,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "REICHARDT, KAREN": {
@@ -4018,16 +4049,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "RIESCO, GASTON": {
@@ -4038,16 +4069,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "RITONDO, CRISTIAN A.": {
@@ -4058,16 +4089,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "RIZZOTTI, JORGE": {
@@ -4078,16 +4109,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.5,
       "score_bloc": 0.75,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "ABSENT",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ROBERTO, SANTIAGO LUIS": {
@@ -4098,16 +4129,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ROCA, GONZALO": {
@@ -4118,16 +4149,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "RODRIGUEZ, MIGUEL": {
@@ -4138,16 +4169,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "RODRIGUEZ MACHADO, LAURA ELENA": {
@@ -4158,16 +4189,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ROSSI, AGUSTIN OSCAR": {
@@ -4178,16 +4209,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "RUIZ, YAMILA": {
@@ -4198,16 +4229,16 @@
       "bloc_raw": "Innovacion Federal",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SALZMANN, MARINA DOROTEA": {
@@ -4218,16 +4249,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SANCHEZ WRBA, JAVIER": {
@@ -4238,16 +4269,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SAND, NANCY": {
@@ -4258,16 +4289,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "X",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SANTILLAN JUAREZ BRAHIM, JULIANA": {
@@ -4278,16 +4309,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SANTURIO, SANTIAGO": {
@@ -4298,16 +4329,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SCAGLIA, GISELA": {
@@ -4318,16 +4349,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.6,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SCHNEIDER, DARIO": {
@@ -4338,16 +4369,16 @@
       "bloc_raw": "Ucr - Union Civica Radical",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SELVA, SABRINA": {
@@ -4358,16 +4389,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SERQUIS, ADRIANA CRISTINA": {
@@ -4378,16 +4409,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SILEY, VANESA RAQUEL": {
@@ -4398,16 +4429,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SNOPEK, GUILLERMO": {
@@ -4418,16 +4449,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.25,
       "score_bloc": 0.75,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SOLDANO, LAURA": {
@@ -4438,16 +4469,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "STRADA, JULIA": {
@@ -4458,16 +4489,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "X",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TAIANA, JORGE": {
@@ -4478,16 +4509,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TAILHADE, RODOLFO": {
@@ -4498,16 +4529,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.6666666666666666,
-      "rate_absent": 0.5,
+      "rate_absent": 0.4,
       "sample_cast": 3,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "ABSENT",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TEPP, CAREN": {
@@ -4518,16 +4549,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TITA, PAULO AGUSTIN": {
@@ -4538,16 +4569,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.5,
       "score_bloc": 0.5,
-      "rate_absent": 0.6666666666666666,
+      "rate_absent": 0.6,
       "sample_cast": 2,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "ABSENT",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "ABSENT",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TODERO, PABLO": {
@@ -4558,16 +4589,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TOLOSA PAZ, VICTORIA": {
@@ -4578,16 +4609,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TOMASSONI, YAMILE": {
@@ -4598,16 +4629,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TORRES, RUBEN DARIO": {
@@ -4618,16 +4649,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TORRES, ALEJANDRA": {
@@ -4638,16 +4669,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.5,
       "score_bloc": 0.75,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "X",
         "modernizacion_laboral": "ABSENT",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TORTORIELLO, ANIBAL": {
@@ -4658,16 +4689,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TOURNIER, JOSE FEDERICO": {
@@ -4678,16 +4709,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TREFFINGER, CESAR": {
@@ -4698,16 +4729,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "TROTTA, NICOLAS ALFREDO": {
@@ -4718,16 +4749,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "URIEN, HERNAN": {
@@ -4738,16 +4769,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "VALDES, EDUARDO FELIX": {
@@ -4758,16 +4789,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "VANCSIK, DANIEL": {
@@ -4778,16 +4809,16 @@
       "bloc_raw": "Innovacion Federal",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "VASQUEZ, PATRICIA": {
@@ -4798,16 +4829,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "VEGA, YOLANDA": {
@@ -4818,16 +4849,16 @@
       "bloc_raw": "Innovacion Federal",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "VELAZQUEZ, M. ELENA": {
@@ -4838,16 +4869,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "ABSENT",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "VERA, ANDREA FERNANDA": {
@@ -4858,16 +4889,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "VERASAY, PAMELA FERNANDA": {
@@ -4878,16 +4909,16 @@
       "bloc_raw": "Ucr - Union Civica Radical",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "VILLAVERDE, LORENA": {
@@ -4898,16 +4929,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "VISCONTI, GINO": {
@@ -4918,16 +4949,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "VOLNOVICH, LUANA": {
@@ -4938,16 +4969,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "YASKY, HUGO": {
@@ -4958,16 +4989,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "YEDLIN, PABLO RAUL": {
@@ -4978,16 +5009,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0.2,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "YEZA, MARTIN": {
@@ -4998,16 +5029,16 @@
       "bloc_raw": "Pro",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ZAGO, OSCAR": {
@@ -5018,16 +5049,16 @@
       "bloc_raw": "Mid - Movimiento De Integracion Y Desarrollo",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ZAPATA, CARLOS RAUL": {
@@ -5038,16 +5069,16 @@
       "bloc_raw": "La Libertad Avanza",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "A",
         "inocencia_fiscal": "A",
         "modernizacion_laboral": "A",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ZARACHO, NATALIA": {
@@ -5058,16 +5089,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "N",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ZIGARAN, MARIA INES": {
@@ -5078,16 +5109,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 0.25,
       "score_bloc": 1,
-      "rate_absent": 0.3333333333333333,
+      "rate_absent": 0.2,
       "sample_cast": 4,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "X",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "ABSENT",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "ZULLI, CHRISTIAN ALEJANDRO": {
@@ -5098,16 +5129,16 @@
       "bloc_raw": "Union Por La Patria",
       "score_executive": 0,
       "score_bloc": 0.8,
-      "rate_absent": 0.16666666666666666,
+      "rate_absent": 0,
       "sample_cast": 5,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "N",
         "inocencia_fiscal": "N",
         "modernizacion_laboral": "N",
         "regimen_penal_juv": "N",
         "mercosur_ue": "X",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "SCHIARETTI, JUAN": {
@@ -5118,16 +5149,16 @@
       "bloc_raw": "Provincias Unidas",
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.6666666666666666,
+      "rate_absent": 0.6,
       "sample_cast": 2,
-      "listed_total": 6,
+      "listed_total": 5,
       "breakdown": {
         "presupuesto_2026": "ABSENT",
         "inocencia_fiscal": "ABSENT",
         "modernizacion_laboral": "ABSENT",
         "regimen_penal_juv": "A",
         "mercosur_ue": "A",
-        "ley_glaciares": "ABSENT"
+        "ley_glaciares": "N/A"
       }
     },
     "MENDOZA, SANDRA MARIELA": {
@@ -5152,7 +5183,7 @@
     },
     "MOISES, MARÍA CAROLINA": {
       "name": "MOISES, MARÍA CAROLINA",
-      "province": "JUJUY",
+      "province": "Jujuy",
       "chamber": "S",
       "bloc": "ConviccióN Federal",
       "bloc_raw": "CONVICCIÓN FEDERAL",
@@ -5172,7 +5203,7 @@
     },
     "ANDRADA, GUILLERMO EDUARDO": {
       "name": "ANDRADA, GUILLERMO EDUARDO",
-      "province": "CATAMARCA",
+      "province": "Catamarca",
       "chamber": "S",
       "bloc": "ConviccióN Federal",
       "bloc_raw": "CONVICCIÓN FEDERAL",
@@ -5192,7 +5223,7 @@
     },
     "TERENZI, EDITH ELIZABETH": {
       "name": "TERENZI, EDITH ELIZABETH",
-      "province": "CHUBUT",
+      "province": "Chubut",
       "chamber": "S",
       "bloc": "Despierta Chubut",
       "bloc_raw": "DESPIERTA CHUBUT",
@@ -5252,7 +5283,7 @@
     },
     "GOERLING LARA, ENRIQUE MARTÍN": {
       "name": "GOERLING LARA, ENRIQUE MARTÍN",
-      "province": "MISIONES",
+      "province": "Misiones",
       "chamber": "S",
       "bloc": "Frente Pro",
       "bloc_raw": "FRENTE PRO",
@@ -5272,7 +5303,7 @@
     },
     "HUALA, MARÍA VICTORIA": {
       "name": "HUALA, MARÍA VICTORIA",
-      "province": "LA PAMPA",
+      "province": "La Pampa",
       "chamber": "S",
       "bloc": "Frente Pro",
       "bloc_raw": "FRENTE PRO",
@@ -5292,7 +5323,7 @@
     },
     "CRISTINA, ANDREA MARCELA": {
       "name": "CRISTINA, ANDREA MARCELA",
-      "province": "CHUBUT",
+      "province": "Chubut",
       "chamber": "S",
       "bloc": "Frente Pro",
       "bloc_raw": "FRENTE PRO",
@@ -5312,7 +5343,7 @@
     },
     "ARCE, CARLOS OMAR": {
       "name": "ARCE, CARLOS OMAR",
-      "province": "MISIONES",
+      "province": "Misiones",
       "chamber": "S",
       "bloc": "Frente Renovador De La Concordia Social",
       "bloc_raw": "FRENTE RENOVADOR DE LA CONCORDIA SOCIAL",
@@ -5332,7 +5363,7 @@
     },
     "ROJAS DECUT, SONIA ELIZABETH": {
       "name": "ROJAS DECUT, SONIA ELIZABETH",
-      "province": "MISIONES",
+      "province": "Misiones",
       "chamber": "S",
       "bloc": "Frente Renovador De La Concordia Social",
       "bloc_raw": "FRENTE RENOVADOR DE LA CONCORDIA SOCIAL",
@@ -5372,7 +5403,7 @@
     },
     "REJAL, JESÚS FERNANDO": {
       "name": "REJAL, JESÚS FERNANDO",
-      "province": "LA RIOJA",
+      "province": "La Rioja",
       "chamber": "S",
       "bloc": "Justicia Social Federal",
       "bloc_raw": "JUSTICIA SOCIAL FEDERAL",
@@ -5392,7 +5423,7 @@
     },
     "SALINO, FERNANDO ALDO": {
       "name": "SALINO, FERNANDO ALDO",
-      "province": "SAN LUIS",
+      "province": "San Luis",
       "chamber": "S",
       "bloc": "Justicia Social Federal",
       "bloc_raw": "JUSTICIA SOCIAL FEDERAL",
@@ -5452,7 +5483,7 @@
     },
     "LEWANDOWSKI, MARCELO NÉSTOR": {
       "name": "LEWANDOWSKI, MARCELO NÉSTOR",
-      "province": "SANTA FE",
+      "province": "Santa Fe",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5472,7 +5503,7 @@
     },
     "RECALDE, MARIANO": {
       "name": "RECALDE, MARIANO",
-      "province": "CIUDAD AUTÓNOMA DE BUENOS AIRES",
+      "province": "Ciudad de Buenos Aires",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5492,7 +5523,7 @@
     },
     "BENSUSÁN, DANIEL PABLO": {
       "name": "BENSUSÁN, DANIEL PABLO",
-      "province": "LA PAMPA",
+      "province": "La Pampa",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5512,7 +5543,7 @@
     },
     "MAYANS, JOSÉ MIGUEL ÁNGEL": {
       "name": "MAYANS, JOSÉ MIGUEL ÁNGEL",
-      "province": "FORMOSA",
+      "province": "Formosa",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5532,7 +5563,7 @@
     },
     "GONZÁLEZ, MARÍA TERESA MARGARITA": {
       "name": "GONZÁLEZ, MARÍA TERESA MARGARITA",
-      "province": "FORMOSA",
+      "province": "Formosa",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5552,7 +5583,7 @@
     },
     "CAPITANICH, JORGE MILTON": {
       "name": "CAPITANICH, JORGE MILTON",
-      "province": "CHACO",
+      "province": "Chaco",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5572,7 +5603,7 @@
     },
     "UÑAC, SERGIO MAURICIO": {
       "name": "UÑAC, SERGIO MAURICIO",
-      "province": "SAN JUAN",
+      "province": "San Juan",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5592,7 +5623,7 @@
     },
     "GIMÉNEZ NAVARRO, MARÍA CELESTE": {
       "name": "GIMÉNEZ NAVARRO, MARÍA CELESTE",
-      "province": "SAN JUAN",
+      "province": "San Juan",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5612,7 +5643,7 @@
     },
     "LÓPEZ, MARÍA FLORENCIA": {
       "name": "LÓPEZ, MARÍA FLORENCIA",
-      "province": "LA RIOJA",
+      "province": "La Rioja",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5632,7 +5663,7 @@
     },
     "KIRCHNER, ALICIA MARGARITA ANTONIA": {
       "name": "KIRCHNER, ALICIA MARGARITA ANTONIA",
-      "province": "SANTA CRUZ",
+      "province": "Santa Cruz",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5652,7 +5683,7 @@
     },
     "LINARES, CARLOS ALBERTO": {
       "name": "LINARES, CARLOS ALBERTO",
-      "province": "CHUBUT",
+      "province": "Chubut",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5712,7 +5743,7 @@
     },
     "LÓPEZ, CÁNDIDA CRISTINA": {
       "name": "LÓPEZ, CÁNDIDA CRISTINA",
-      "province": "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
+      "province": "Tierra del Fuego",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5732,7 +5763,7 @@
     },
     "CORPACCI, LUCÍA BENIGNA": {
       "name": "CORPACCI, LUCÍA BENIGNA",
-      "province": "CATAMARCA",
+      "province": "Catamarca",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5812,7 +5843,7 @@
     },
     "FERNÁNDEZ SAGASTI, ANABEL": {
       "name": "FERNÁNDEZ SAGASTI, ANABEL",
-      "province": "MENDOZA",
+      "province": "Mendoza",
       "chamber": "S",
       "bloc": "Justicialista",
       "bloc_raw": "JUSTICIALISTA",
@@ -5872,7 +5903,7 @@
     },
     "ATAUCHE, EZEQUIEL": {
       "name": "ATAUCHE, EZEQUIEL",
-      "province": "JUJUY",
+      "province": "Jujuy",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -5892,7 +5923,7 @@
     },
     "BEDIA, VILMA FACUNDA": {
       "name": "BEDIA, VILMA FACUNDA",
-      "province": "JUJUY",
+      "province": "Jujuy",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -5952,7 +5983,7 @@
     },
     "BULLRICH, PATRICIA": {
       "name": "BULLRICH, PATRICIA",
-      "province": "CIUDAD AUTÓNOMA DE BUENOS AIRES",
+      "province": "Ciudad de Buenos Aires",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -5972,7 +6003,7 @@
     },
     "MONTEVERDE, AGUSTÍN ANÍBAL": {
       "name": "MONTEVERDE, AGUSTÍN ANÍBAL",
-      "province": "CIUDAD AUTÓNOMA DE BUENOS AIRES",
+      "province": "Ciudad de Buenos Aires",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -5992,7 +6023,7 @@
     },
     "GUZMÁN CORAITA, GONZALO": {
       "name": "GUZMÁN CORAITA, GONZALO",
-      "province": "SALTA",
+      "province": "Salta",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -6012,7 +6043,7 @@
     },
     "OROZCO, MARÍA EMILIA": {
       "name": "OROZCO, MARÍA EMILIA",
-      "province": "SALTA",
+      "province": "Salta",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -6032,7 +6063,7 @@
     },
     "PAOLTRONI, FRANCISCO MANUEL": {
       "name": "PAOLTRONI, FRANCISCO MANUEL",
-      "province": "FORMOSA",
+      "province": "Formosa",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -6052,7 +6083,7 @@
     },
     "GODOY, JUAN CRUZ": {
       "name": "GODOY, JUAN CRUZ",
-      "province": "CHACO",
+      "province": "Chaco",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -6072,7 +6103,7 @@
     },
     "OLIVERA LUCERO, BRUNO ANTONIO": {
       "name": "OLIVERA LUCERO, BRUNO ANTONIO",
-      "province": "SAN JUAN",
+      "province": "San Juan",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -6092,7 +6123,7 @@
     },
     "PAGOTTO, JUAN CARLOS": {
       "name": "PAGOTTO, JUAN CARLOS",
-      "province": "LA RIOJA",
+      "province": "La Rioja",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -6172,7 +6203,7 @@
     },
     "COTO, AGUSTÍN PEDRO": {
       "name": "COTO, AGUSTÍN PEDRO",
-      "province": "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
+      "province": "Tierra del Fuego",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -6192,7 +6223,7 @@
     },
     "MONTE DE OCA, MARÍA BELÉN": {
       "name": "MONTE DE OCA, MARÍA BELÉN",
-      "province": "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR",
+      "province": "Tierra del Fuego",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -6212,7 +6243,7 @@
     },
     "ABDALA, BARTOLOMÉ ESTEBAN": {
       "name": "ABDALA, BARTOLOMÉ ESTEBAN",
-      "province": "SAN LUIS",
+      "province": "San Luis",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -6232,7 +6263,7 @@
     },
     "ARRASCAETA, IVANNA MARCELA": {
       "name": "ARRASCAETA, IVANNA MARCELA",
-      "province": "SAN LUIS",
+      "province": "San Luis",
       "chamber": "S",
       "bloc": "La Libertad Avanza",
       "bloc_raw": "LA LIBERTAD AVANZA",
@@ -6272,7 +6303,7 @@
     },
     "CARAMBIA, JOSÉ MARÍA": {
       "name": "CARAMBIA, JOSÉ MARÍA",
-      "province": "SANTA CRUZ",
+      "province": "Santa Cruz",
       "chamber": "S",
       "bloc": "Movere Por Santa Cruz",
       "bloc_raw": "MOVERE POR SANTA CRUZ",
@@ -6292,7 +6323,7 @@
     },
     "GADANO, NATALIA ELENA": {
       "name": "GADANO, NATALIA ELENA",
-      "province": "SANTA CRUZ",
+      "province": "Santa Cruz",
       "chamber": "S",
       "bloc": "Movere Por Santa Cruz",
       "bloc_raw": "MOVERE POR SANTA CRUZ",
@@ -6312,7 +6343,7 @@
     },
     "ROYON, FLAVIA GABRIELA": {
       "name": "ROYON, FLAVIA GABRIELA",
-      "province": "SALTA",
+      "province": "Salta",
       "chamber": "S",
       "bloc": "Primero Los SalteñOs",
       "bloc_raw": "PRIMERO LOS SALTEÑOS",
@@ -6352,7 +6383,7 @@
     },
     "ESPÍNOLA, CARLOS MAURICIO": {
       "name": "ESPÍNOLA, CARLOS MAURICIO",
-      "province": "CORRIENTES",
+      "province": "Corrientes",
       "chamber": "S",
       "bloc": "Provincias Unidas",
       "bloc_raw": "PROVINCIAS UNIDAS",
@@ -6372,7 +6403,7 @@
     },
     "GALARETTO, EDUARDO HORACIO": {
       "name": "GALARETTO, EDUARDO HORACIO",
-      "province": "SANTA FE",
+      "province": "Santa Fe",
       "chamber": "S",
       "bloc": "UCR",
       "bloc_raw": "UCR - UNIÓN CÍVICA RADICAL",
@@ -6392,7 +6423,7 @@
     },
     "LOSADA, CAROLINA": {
       "name": "LOSADA, CAROLINA",
-      "province": "SANTA FE",
+      "province": "Santa Fe",
       "chamber": "S",
       "bloc": "UCR",
       "bloc_raw": "UCR - UNIÓN CÍVICA RADICAL",
@@ -6412,7 +6443,7 @@
     },
     "VISCHI, EDUARDO ALEJANDRO": {
       "name": "VISCHI, EDUARDO ALEJANDRO",
-      "province": "CORRIENTES",
+      "province": "Corrientes",
       "chamber": "S",
       "bloc": "UCR",
       "bloc_raw": "UCR - UNIÓN CÍVICA RADICAL",
@@ -6432,7 +6463,7 @@
     },
     "VALENZUELA, MERCEDES GABRIELA": {
       "name": "VALENZUELA, MERCEDES GABRIELA",
-      "province": "CORRIENTES",
+      "province": "Corrientes",
       "chamber": "S",
       "bloc": "UCR",
       "bloc_raw": "UCR - UNIÓN CÍVICA RADICAL",
@@ -6452,7 +6483,7 @@
     },
     "KRONEBERGER, DANIEL RICARDO": {
       "name": "KRONEBERGER, DANIEL RICARDO",
-      "province": "LA PAMPA",
+      "province": "La Pampa",
       "chamber": "S",
       "bloc": "UCR",
       "bloc_raw": "UCR - UNIÓN CÍVICA RADICAL",
@@ -6472,7 +6503,7 @@
     },
     "SCHNEIDER, SILVANA LORENA": {
       "name": "SCHNEIDER, SILVANA LORENA",
-      "province": "CHACO",
+      "province": "Chaco",
       "chamber": "S",
       "bloc": "UCR",
       "bloc_raw": "UCR - UNIÓN CÍVICA RADICAL",
@@ -6492,7 +6523,7 @@
     },
     "FAMA, FLAVIO SERGIO": {
       "name": "FAMA, FLAVIO SERGIO",
-      "province": "CATAMARCA",
+      "province": "Catamarca",
       "chamber": "S",
       "bloc": "UCR",
       "bloc_raw": "UCR - UNIÓN CÍVICA RADICAL",
@@ -6532,7 +6563,7 @@
     },
     "JURI, MARIANA": {
       "name": "JURI, MARIANA",
-      "province": "MENDOZA",
+      "province": "Mendoza",
       "chamber": "S",
       "bloc": "UCR",
       "bloc_raw": "UCR - UNIÓN CÍVICA RADICAL",
@@ -6552,7 +6583,7 @@
     },
     "SUÁREZ, RODOLFO ALEJANDRO": {
       "name": "SUÁREZ, RODOLFO ALEJANDRO",
-      "province": "MENDOZA",
+      "province": "Mendoza",
       "chamber": "S",
       "bloc": "UCR",
       "bloc_raw": "UCR - UNIÓN CÍVICA RADICAL",
@@ -6573,250 +6604,148 @@
   },
   "per_province": {
     "Chaco": {
-      "score_executive": 0.6285714285714286,
-      "score_bloc": 0.9142857142857143,
-      "rate_absent": 0.16666666666666666,
-      "sample_cast": 35
+      "score_executive": 0.660377358490566,
+      "score_bloc": 0.9433962264150944,
+      "rate_absent": 0,
+      "sample_cast": 53
     },
     "La Rioja": {
-      "score_executive": 0.42105263157894735,
-      "score_bloc": 0.8421052631578947,
-      "rate_absent": 0.20833333333333334,
-      "sample_cast": 19
+      "score_executive": 0.43243243243243246,
+      "score_bloc": 0.918918918918919,
+      "rate_absent": 0.02631578947368421,
+      "sample_cast": 37
     },
     "Ciudad de Buenos Aires": {
-      "score_executive": 0.5655737704918032,
-      "score_bloc": 0.9344262295081968,
-      "rate_absent": 0.18666666666666668,
-      "sample_cast": 122
+      "score_executive": 0.5857142857142857,
+      "score_bloc": 0.9428571428571428,
+      "rate_absent": 0.02097902097902098,
+      "sample_cast": 140
     },
     "San Luis": {
-      "score_executive": 0.64,
-      "score_bloc": 0.88,
-      "rate_absent": 0.16666666666666666,
-      "sample_cast": 25
+      "score_executive": 0.6744186046511628,
+      "score_bloc": 0.9302325581395349,
+      "rate_absent": 0,
+      "sample_cast": 43
     },
     "Corrientes": {
-      "score_executive": 0.5714285714285714,
-      "score_bloc": 0.9142857142857143,
-      "rate_absent": 0.16666666666666666,
-      "sample_cast": 35
+      "score_executive": 0.7169811320754716,
+      "score_bloc": 0.8867924528301887,
+      "rate_absent": 0,
+      "sample_cast": 53
     },
     "San Juan": {
-      "score_executive": 0.7333333333333333,
-      "score_bloc": 0.9333333333333333,
-      "rate_absent": 0.16666666666666666,
-      "sample_cast": 30
+      "score_executive": 0.6595744680851063,
+      "score_bloc": 0.9361702127659575,
+      "rate_absent": 0.020833333333333332,
+      "sample_cast": 47
     },
     "Jujuy": {
-      "score_executive": 0.7037037037037037,
-      "score_bloc": 0.9259259259259259,
-      "rate_absent": 0.25,
-      "sample_cast": 27
+      "score_executive": 0.7555555555555555,
+      "score_bloc": 0.9555555555555556,
+      "rate_absent": 0.0625,
+      "sample_cast": 45
     },
     "Buenos Aires": {
       "score_executive": 0.47191011235955055,
       "score_bloc": 0.9044943820224719,
-      "rate_absent": 0.1872146118721461,
+      "rate_absent": 0.03260869565217391,
       "sample_cast": 356
     },
     "Tierra del Fuego": {
-      "score_executive": 0.5714285714285714,
-      "score_bloc": 0.8571428571428571,
-      "rate_absent": 0.3,
-      "sample_cast": 21
+      "score_executive": 0.6153846153846154,
+      "score_bloc": 0.8974358974358975,
+      "rate_absent": 0.09302325581395349,
+      "sample_cast": 39
     },
     "La Pampa": {
-      "score_executive": 0.52,
-      "score_bloc": 0.88,
-      "rate_absent": 0.16666666666666666,
-      "sample_cast": 25
+      "score_executive": 0.5581395348837209,
+      "score_bloc": 0.9069767441860465,
+      "rate_absent": 0,
+      "sample_cast": 43
     },
     "Mendoza": {
-      "score_executive": 0.8125,
-      "score_bloc": 0.9583333333333334,
-      "rate_absent": 0.2,
-      "sample_cast": 48
+      "score_executive": 0.7878787878787878,
+      "score_bloc": 0.9696969696969697,
+      "rate_absent": 0.029411764705882353,
+      "sample_cast": 66
     },
     "Misiones": {
       "score_executive": 1,
-      "score_bloc": 1,
-      "rate_absent": 0.16666666666666666,
-      "sample_cast": 35
+      "score_bloc": 0.9811320754716981,
+      "rate_absent": 0,
+      "sample_cast": 53
     },
     "Córdoba": {
       "score_executive": 0.7745098039215687,
       "score_bloc": 0.9313725490196079,
-      "rate_absent": 0.19047619047619047,
+      "rate_absent": 0.05555555555555555,
       "sample_cast": 102
     },
     "Catamarca": {
-      "score_executive": 0.6,
-      "score_bloc": 0.96,
-      "rate_absent": 0.16666666666666666,
-      "sample_cast": 25
+      "score_executive": 0.6190476190476191,
+      "score_bloc": 0.9523809523809523,
+      "rate_absent": 0.023255813953488372,
+      "sample_cast": 42
     },
     "Chubut": {
-      "score_executive": 0.5833333333333334,
-      "score_bloc": 0.9166666666666666,
-      "rate_absent": 0.2,
-      "sample_cast": 24
+      "score_executive": 0.5952380952380952,
+      "score_bloc": 0.9523809523809523,
+      "rate_absent": 0.023255813953488372,
+      "sample_cast": 42
     },
     "Santiago del Estero": {
       "score_executive": 0.20408163265306123,
       "score_bloc": 0.8571428571428571,
-      "rate_absent": 0.18333333333333332,
+      "rate_absent": 0.07547169811320754,
       "sample_cast": 49
     },
     "Formosa": {
-      "score_executive": 0.4782608695652174,
-      "score_bloc": 0.8260869565217391,
-      "rate_absent": 0.23333333333333334,
-      "sample_cast": 23
+      "score_executive": 0.4634146341463415,
+      "score_bloc": 0.9024390243902439,
+      "rate_absent": 0.046511627906976744,
+      "sample_cast": 41
     },
     "Entre Ríos": {
       "score_executive": 0.6507936507936508,
       "score_bloc": 0.9365079365079365,
-      "rate_absent": 0.125,
+      "rate_absent": 0,
       "sample_cast": 63
     },
     "Salta": {
       "score_executive": 1,
       "score_bloc": 1,
-      "rate_absent": 0.21428571428571427,
-      "sample_cast": 33
+      "rate_absent": 0.03773584905660377,
+      "sample_cast": 51
     },
     "Santa Fe": {
-      "score_executive": 0.6276595744680851,
-      "score_bloc": 0.9148936170212766,
-      "rate_absent": 0.17543859649122806,
-      "sample_cast": 94
+      "score_executive": 0.6428571428571429,
+      "score_bloc": 0.9285714285714286,
+      "rate_absent": 0.008849557522123894,
+      "sample_cast": 112
     },
     "Tucumán": {
       "score_executive": 0.7586206896551724,
       "score_bloc": 0.9655172413793104,
-      "rate_absent": 0.19444444444444445,
+      "rate_absent": 0.07936507936507936,
       "sample_cast": 58
     },
     "Río Negro": {
       "score_executive": 0.5116279069767442,
       "score_bloc": 0.9069767441860465,
-      "rate_absent": 0.10416666666666667,
+      "rate_absent": 0,
       "sample_cast": 43
     },
     "Santa Cruz": {
-      "score_executive": 0.44,
-      "score_bloc": 0.88,
-      "rate_absent": 0.16666666666666666,
-      "sample_cast": 25
+      "score_executive": 0.46511627906976744,
+      "score_bloc": 0.9302325581395349,
+      "rate_absent": 0,
+      "sample_cast": 43
     },
     "Neuquén": {
       "score_executive": 0.8837209302325582,
       "score_bloc": 0.9767441860465116,
-      "rate_absent": 0.10416666666666667,
+      "rate_absent": 0,
       "sample_cast": 43
-    },
-    "JUJUY": {
-      "score_executive": 0.8333333333333334,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "CATAMARCA": {
-      "score_executive": 0.6470588235294118,
-      "score_bloc": 0.9411764705882353,
-      "rate_absent": 0.05555555555555555,
-      "sample_cast": 17
-    },
-    "CHUBUT": {
-      "score_executive": 0.6111111111111112,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "MISIONES": {
-      "score_executive": 1,
-      "score_bloc": 0.9444444444444444,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "LA PAMPA": {
-      "score_executive": 0.6111111111111112,
-      "score_bloc": 0.9444444444444444,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "LA RIOJA": {
-      "score_executive": 0.4444444444444444,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "SAN LUIS": {
-      "score_executive": 0.7222222222222222,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "SANTA FE": {
-      "score_executive": 0.7222222222222222,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "CIUDAD AUTÓNOMA DE BUENOS AIRES": {
-      "score_executive": 0.7222222222222222,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "FORMOSA": {
-      "score_executive": 0.4444444444444444,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "CHACO": {
-      "score_executive": 0.7222222222222222,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "SAN JUAN": {
-      "score_executive": 0.5294117647058824,
-      "score_bloc": 0.9411764705882353,
-      "rate_absent": 0.05555555555555555,
-      "sample_cast": 17
-    },
-    "SANTA CRUZ": {
-      "score_executive": 0.5,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR": {
-      "score_executive": 0.6666666666666666,
-      "score_bloc": 0.9444444444444444,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "MENDOZA": {
-      "score_executive": 0.7222222222222222,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "SALTA": {
-      "score_executive": 1,
-      "score_bloc": 1,
-      "rate_absent": 0,
-      "sample_cast": 18
-    },
-    "CORRIENTES": {
-      "score_executive": 1,
-      "score_bloc": 0.8333333333333334,
-      "rate_absent": 0,
-      "sample_cast": 18
     }
   }
 }

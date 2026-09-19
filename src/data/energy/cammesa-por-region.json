@@ -1,4 +1,9 @@
 {
+  "_meta": {
+    "period": "2020-02",
+    "retrieved": "2026-04-07",
+    "source": "cammesa"
+  },
   "period": "2020-02-01 00:00:00",
   "generated": "2026-04-07",
   "regions": {

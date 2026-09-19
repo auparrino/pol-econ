@@ -5,7 +5,10 @@ import 'leaflet/dist/leaflet.css';
 import { miningProjects } from '../data/miningProjects';
 import EnergyLayers from './EnergyLayers';
 import { sociodemographic } from '../data/sociodemographic';
-import { getAllFiscal } from '../hooks/useEconomyData';
+// Imported directly rather than through hooks/useEconomyData: that module also
+// pulls in the provincial export datasets (~430 KB of JSON), which would land
+// in the entry chunk just to colour the fiscal choropleth.
+import fiscalData from '../data/dnap_fiscal.json';
 import alignmentScores from '../data/alignmentScores.json';
 
 const PARTY_COLORS = {
@@ -118,8 +121,7 @@ function getRegionColor(governor) {
 function getFiscalColor(provinceName) {
   const pn = (provinceName || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   const isCABA = pn.includes('ciudad') || pn === 'caba';
-  const allFiscal = getAllFiscal();
-  const entry = allFiscal.find(d => {
+  const entry = fiscalData.provinces.find(d => {
     const dn = d.province.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     if (isCABA) return dn.includes('ciudad') || dn === 'caba';
     if (dn.includes('ciudad')) return false;
@@ -197,11 +199,6 @@ function CreatePanes() {
       mp.style.zIndex = 440;
     }
   }, [map]);
-  return null;
-}
-
-function MapEvents({ onProvinceClick }) {
-  // Empty — events handled via GeoJSON
   return null;
 }
 
@@ -347,9 +344,12 @@ export default function ArgentinaMap({
     };
   }, [getColor, selectedProvince]);
 
-  // Store the latest callback in a ref so GeoJSON event handlers always call current version
+  // Store the latest callback in a ref so GeoJSON event handlers always call the
+  // current version. Written in an effect, not during render — Leaflet only
+  // invokes these handlers after commit, so the committed value is always the
+  // one the user's click sees.
   const onProvinceSelectRef = useRef(onProvinceSelect);
-  onProvinceSelectRef.current = onProvinceSelect;
+  useEffect(() => { onProvinceSelectRef.current = onProvinceSelect; }, [onProvinceSelect]);
 
   const onEachFeature = useCallback((feature, layer) => {
     const name = feature.properties.NAME_1;

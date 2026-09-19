@@ -13,6 +13,16 @@
 //   Literacy: INDEC Censo 2022 (population 10+)
 //   Sectors: Min. de Economía informes productivos
 
+// EPH national reference values, exported so the components that compare a
+// province against "the national figure" cannot drift from the vintage these
+// provincial values were taken at. INDEC publishes the national figure for the
+// 31-agglomerate urban total; it is NOT the population-weighted average of the
+// provincial values below (that comes out at 6.1), so it has to be carried
+// explicitly rather than derived.
+export const EPH_UNEMPLOYMENT_NATIONAL = 6.3;   // total urbano, Q3 2025
+export const EPH_POVERTY_NATIONAL = 38.1;       // 31 aglomerados, H2 2024
+export const EPH_VINTAGE_SHORT = 'Q3-25';
+
 export const sociodemographic = [
   {
     provincia: 'Buenos Aires',

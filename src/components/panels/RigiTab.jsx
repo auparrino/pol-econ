@@ -3,13 +3,13 @@
 // the curated list of national RIGI projects in this province + a short
 // explainer about how the two interact.
 
+import { useTranslation } from 'react-i18next';
 import { politicalContext } from '../../data/politicalContext';
 import { RigiPanel, RigiNationalOverview } from '../shared/RigiPanel';
 
 function findPolContext(provinceName) {
   if (!provinceName) return null;
   const s = provinceName.toLowerCase();
-  const isCABA = s.includes('ciudad') || s === 'caba';
   const exact = politicalContext.find(p => p.provincia?.toLowerCase() === s);
   if (exact) return exact;
   return politicalContext.find(p => {
@@ -72,27 +72,27 @@ function parseAdhesion(value) {
 }
 
 function NationalRigi() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="pb-2 border-b mb-3" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
         <h2 className="text-[16px] font-black text-[#003049] tracking-tight leading-tight">
-          RIGI · National overview
+          {t('rigi.nationalOverview')}
         </h2>
         <p className="text-[11px] text-[#003049]/60 mt-0.5 leading-snug">
-          Régimen de Incentivo para Grandes Inversiones — national tax / FX
-          benefits for large projects, optionally layered with provincial benefits.
+          {t('rigi.nationalDesc')}
         </p>
       </div>
       <RigiNationalOverview />
       <p className="text-[9px] text-[#003049]/45 italic mt-3 leading-snug">
-        Click a province on the map to see its RIGI adhesion status and the
-        projects filed in that jurisdiction.
+        {t('rigi.clickForProvince')}
       </p>
     </div>
   );
 }
 
 export default function RigiTab({ selectedProvince }) {
+  const { t } = useTranslation();
   if (!selectedProvince) return <NationalRigi />;
 
   const pol = findPolContext(selectedProvince);
@@ -106,8 +106,7 @@ export default function RigiTab({ selectedProvince }) {
           {selectedProvince} · RIGI
         </h2>
         <p className="text-[11px] text-[#003049]/60 mt-0.5 leading-snug">
-          Régimen de Incentivo para Grandes Inversiones — national tax / FX
-          benefits for large projects, optionally layered with provincial benefits.
+          {t('rigi.nationalDesc')}
         </p>
       </div>
 
@@ -124,9 +123,9 @@ export default function RigiTab({ selectedProvince }) {
             {adhesion.detail ? (
               <p className="text-[12px] text-[#003049] leading-snug">{adhesion.detail}</p>
             ) : adhesion.status === 'unknown' ? (
-              <p className="text-[11px] text-[#003049]/55 italic">No record on provincial adhesion.</p>
+              <p className="text-[11px] text-[#003049]/55 italic">{t('rigi.noProvAdhRecord')}</p>
             ) : (
-              <p className="text-[11px] text-[#003049]/55 italic">No additional detail.</p>
+              <p className="text-[11px] text-[#003049]/55 italic">{t('rigi.noAddDetail')}</p>
             )}
           </div>
           <span
@@ -137,10 +136,7 @@ export default function RigiTab({ selectedProvince }) {
           </span>
         </div>
         <p className="text-[9px] text-[#003049]/45 italic mt-1.5 leading-snug">
-          Whether the province has passed its own RIGI adhesion law, which adds
-          provincial-level tax benefits on top of the national regime. Independent
-          from national project approval — a province without an adhesion law can
-          still host approved RIGI projects.
+          {t('rigi.provAdhDesc')}
         </p>
       </div>
 

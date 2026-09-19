@@ -3,7 +3,9 @@
 // demographics, and core socioeconomic indicators. Fiscal, RIGI and the
 // other deep sections live in their own dedicated BottomBar tabs.
 
+import { useTranslation } from 'react-i18next';
 import { sociodemographic } from '../../data/sociodemographic';
+import EditorialMark from '../shared/EditorialMark';
 
 const ALIGNMENT_LABELS = {
   oficialismo:      'Ruling Coalition',
@@ -105,6 +107,7 @@ function EmptyState() {
 }
 
 export default function OverviewPanel({ selectedProvince, governors, onClose }) {
+  const { t } = useTranslation();
   if (!selectedProvince) return <EmptyState />;
 
   const gov = findGovernor(governors, selectedProvince);
@@ -120,13 +123,13 @@ export default function OverviewPanel({ selectedProvince, governors, onClose }) 
               onClick={onClose}
               className="text-[#003049]/40 hover:text-[#003049] transition-colors text-lg leading-none p-1"
               aria-label="Clear selection"
-              title="Clear selection — back to full map"
+              title={t('bottomBar.clearProvinceTitle')}
             >
               ×
             </button>
           )}
         </div>
-        <p className="text-[11px] text-[#003049]/50 italic mt-2">No governor data loaded for this province.</p>
+        <p className="text-[11px] text-[#003049]/50 italic mt-2">{t('overview.noGovernor')}</p>
       </div>
     );
   }
@@ -158,7 +161,7 @@ export default function OverviewPanel({ selectedProvince, governors, onClose }) 
             onClick={onClose}
             className="text-[#003049]/40 hover:text-[#003049] transition-colors text-xl leading-none p-1 -mt-1 -mr-1 shrink-0"
             aria-label="Clear selection"
-            title="Clear selection — back to full map"
+            title={t('bottomBar.clearProvinceTitle')}
           >
             ×
           </button>
@@ -175,21 +178,21 @@ export default function OverviewPanel({ selectedProvince, governors, onClose }) 
             <div className="text-[14px] font-bold text-[#003049] truncate">{gov.gobernador}</div>
             <div className="text-[12px] text-[#003049]/60 truncate">{gov.partido}</div>
           </div>
-          <AlignmentBadge alignment={gov.alineamiento_nacion} />
+          <span className="inline-flex items-center gap-1.5"><AlignmentBadge alignment={gov.alineamiento_nacion} /><EditorialMark /></span>
         </div>
       </div>
 
       {/* Demographics */}
-      <SectionTitle>Demographics</SectionTitle>
+      <SectionTitle>{t('province.demographics')}</SectionTitle>
       <div className="space-y-0">
         <DataRow label="Population" value={gov.poblacion_censo_2022?.toLocaleString('es-AR')} />
-        <DataRow label="Density" value={gov.densidad ? `${gov.densidad} hab/km²` : null} />
-        <DataRow label="Area" value={`${gov.superficie_km2?.toLocaleString('es-AR')} km²`} />
+        <DataRow label={t('province.density')} value={gov.densidad ? `${gov.densidad} hab/km²` : null} />
+        <DataRow label={t('province.area')} value={`${gov.superficie_km2?.toLocaleString('es-AR')} km²`} />
         <DataRow label="Region" value={gov.region} />
       </div>
 
       {/* Socioeconomic */}
-      <SectionTitle>Socioeconomic</SectionTitle>
+      <SectionTitle>{t('province.socioeconomic')}</SectionTitle>
       {socio ? (
         <>
           <div
@@ -204,7 +207,7 @@ export default function OverviewPanel({ selectedProvince, governors, onClose }) 
               info="EPH urban aggregates (GBA + provincial capitals). Not province-wide. Source: INDEC EPH H2 2024."
             />
             <HBar
-              label="Unemploy."
+              label={t('overview.unemployment')}
               value={socio.desempleo}
               max={12}
               color={unempColor}
@@ -213,16 +216,16 @@ export default function OverviewPanel({ selectedProvince, governors, onClose }) 
           </div>
           <div className="mt-2 space-y-0">
             <DataRow
-              label="PBG/cap (PPP)"
+              label={t('province.pbgPpp')}
               value={socio.pbg_per_capita_usd ? `$${socio.pbg_per_capita_usd.toLocaleString('en-US')}` : null}
               color="text-[#27ae60]"
             />
-            <DataRow label="Schooling" value={socio.escolaridad ? `${socio.escolaridad} yrs` : null} />
-            <DataRow label="Literacy" value={socio.alfabetismo != null ? `${socio.alfabetismo}%` : null} />
+            <DataRow label={t('province.schooling')} value={socio.escolaridad ? `${socio.escolaridad} yrs` : null} />
+            <DataRow label={t('province.literacy')} value={socio.alfabetismo != null ? `${socio.alfabetismo}%` : null} />
           </div>
         </>
       ) : (
-        <p className="text-[11px] text-[#003049]/50 italic">No socioeconomic data.</p>
+        <p className="text-[11px] text-[#003049]/50 italic">{t('overview.noSocioData')}</p>
       )}
 
       {/* Footer hint about other tabs */}

@@ -1,11 +1,21 @@
 import { useState, useCallback } from 'react';
 
+// The scraper writes CABA's file as caba.json, but the map hands us the
+// geojson spelling ("Ciudad de Buenos Aires") — which slugifies to
+// ciudad-de-buenos-aires and used to make CABA's news silently unreachable.
+const SLUG_OVERRIDES = {
+  'ciudad-de-buenos-aires': 'caba',
+  'ciudad-autonoma-de-buenos-aires': 'caba',
+  'c-a-b-a': 'caba',
+};
+
 function slugify(str) {
-  return str
+  const slug = str
     .toLowerCase()
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
+  return SLUG_OVERRIDES[slug] || slug;
 }
 
 /**
@@ -18,12 +28,14 @@ export default function useNewsSummary() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [articleCount, setArticleCount] = useState(0);
+  const [snapshotDate, setSnapshotDate] = useState(null);
 
   const generate = useCallback(async (province, timeframe) => {
     setSummary(null);
     setError(null);
     setLoading(true);
     setArticleCount(0);
+    setSnapshotDate(null);
 
     try {
       const slug = slugify(province);
@@ -36,6 +48,10 @@ export default function useNewsSummary() {
         setLoading(false);
         return;
       }
+
+      // The news files are a scraper snapshot, not a live feed — surface the
+      // date so "Hoy"/"Today" is read against the snapshot, not against now.
+      setSnapshotDate(newsData.updated || null);
 
       const summaries = newsData.summaries || {};
       const entry = summaries[timeframe];
@@ -58,5 +74,5 @@ export default function useNewsSummary() {
     }
   }, []);
 
-  return { summary, loading, error, articleCount, generate };
+  return { summary, loading, error, articleCount, snapshotDate, generate };
 }

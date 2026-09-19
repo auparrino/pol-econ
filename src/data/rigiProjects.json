@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "period": "2026-04",
+    "retrieved": "2026-04-06",
+    "source": "rigiOfficial",
+    "note": "Curaduría manual; refleja el estado de los expedientes a esa fecha."
+  },
   "version": "2026-04-06",
   "methodology": "Manually curated list of RIGI projects. Amounts in USD millions. 'aprobado' = officially approved under RIGI. 'en_revision' = filed and under review.",
   "last_curation": "2026-04-06",

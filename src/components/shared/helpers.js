@@ -1,26 +1,13 @@
-// Shared utility functions used across panels
+// Shared utility functions used across panels.
+// Province matching lives in utils/provinces.js — the one implementation.
 
-export function normProv(s) {
-  return (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
-}
+import { fold, sameProvince, findByProvince } from '../../utils/provinces';
 
-export function matchProv(featureProv, sel) {
-  if (!sel || !featureProv) return false;
-  const fp = normProv(featureProv);
-  const sp = normProv(sel);
-  return fp === sp || fp.includes(sp) || sp.includes(fp);
-}
+export const normProv = fold;
+export const matchProv = sameProvince;
 
 export function matchProvince(list, pn) {
-  if (!pn) return null;
-  const s = pn.toLowerCase();
-  return list.find(g => g.provincia?.toLowerCase() === s)
-    || list.find(g => {
-      const gp = g.provincia?.toLowerCase();
-      if (!gp) return false;
-      if (s.includes('ciudad') !== gp.includes('ciudad')) return false;
-      return gp.includes(s) || s.includes(gp);
-    });
+  return findByProvince(list, pn, 'provincia');
 }
 
 export function blocColor(bloc) {

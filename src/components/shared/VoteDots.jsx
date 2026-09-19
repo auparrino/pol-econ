@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import votacionesRaw from '../../data/votaciones.json';
+import { records } from '../../utils/dataset';
 
 const SEN_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
 const DIP_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
@@ -8,7 +9,7 @@ const VOTE_COLOR_BB = { A: '#27ae60', N: '#C1121F', X: '#d4a800' };
 const VOTE_LBL  = { A: 'A', N: 'N', X: '~' };
 const VOTE_NAME = { A: 'Affirmative', N: 'Negative', X: 'Abstention' };
 
-const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
+const votacionesList = records(votacionesRaw);
 const normName = s => s?.split(',')[0]?.trim().toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') || '';
 
 const votesByName = (() => {

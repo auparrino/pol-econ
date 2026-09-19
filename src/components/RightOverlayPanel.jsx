@@ -3,12 +3,15 @@
 //   - inactive: shows a summary of available overlays (counts + click-to-enable)
 //   - active:  renders OverlayPanel with details for whatever is on
 
+import { useTranslation } from 'react-i18next';
 import { lazy, Suspense, useMemo } from 'react';
 import { miningProjects } from '../data/miningProjects';
 import centralesData from '../data/energy/centrales.json';
 import refineriasData from '../data/energy/refinerias.json';
 import cammesaRegions from '../data/energy/cammesa-por-region.json';
 import cammesaProvData from '../data/energy/cammesa-por-provincia.json';
+import { PROV_TO_REGIONS, POWER_BY_FUEL, POWER_TOTAL_GW, POWER_NUCLEAR_PLANTS } from '../data/energy/powerConstants';
+import DataAge from './shared/DataAge';
 
 const OverlayPanel = lazy(() => import('./panels/OverlayPanel'));
 
@@ -37,25 +40,25 @@ function toTitleCase(s) {
 //   SO = Solar
 //   BI = Biomasa
 const CENTRAL_TYPE_GROUPS = {
-  TV: { name: 'Thermal',     color: '#EF4444' },
-  TG: { name: 'Thermal',     color: '#EF4444' },
-  DI: { name: 'Thermal',     color: '#EF4444' },
-  CC: { name: 'Thermal',     color: '#EF4444' },
-  TE: { name: 'Thermal',     color: '#EF4444' },
-  HI: { name: 'Hydro',       color: '#3B82F6' },
-  NU: { name: 'Nuclear',     color: '#A855F7' },
-  EO: { name: 'Wind',        color: '#10B981' },
-  SO: { name: 'Solar',       color: '#FBBF24' },
-  BI: { name: 'Biomass',     color: '#84CC16' },
+  TV: { name: 'energy.thermal',     color: '#EF4444' },
+  TG: { name: 'energy.thermal',     color: '#EF4444' },
+  DI: { name: 'energy.thermal',     color: '#EF4444' },
+  CC: { name: 'energy.thermal',     color: '#EF4444' },
+  TE: { name: 'energy.thermal',     color: '#EF4444' },
+  HI: { name: 'energy.hydro',       color: '#3B82F6' },
+  NU: { name: 'energy.nuclear',     color: '#A855F7' },
+  EO: { name: 'energy.wind',        color: '#10B981' },
+  SO: { name: 'energy.solar',       color: '#FBBF24' },
+  BI: { name: 'energy.biomass',     color: '#84CC16' },
 };
 
 const MINING_TOP_MINERALS = [
-  { name: 'Copper',    count: 76, color: '#b87333' },
-  { name: 'Lithium',   count: 66, color: '#00d4ff' },
-  { name: 'Gold',      count: 58, color: '#ffd700' },
-  { name: 'Silver',    count: 42, color: '#c0c0c0' },
-  { name: 'Lead',      count: 37, color: '#7a7a7a' },
-  { name: 'Uranium',   count: 21, color: '#7fff00' },
+  { name: 'mineral.copper',    count: 76, color: '#b87333' },
+  { name: 'mineral.lithium',   count: 66, color: '#00d4ff' },
+  { name: 'mineral.gold',      count: 58, color: '#ffd700' },
+  { name: 'mineral.silver',    count: 42, color: '#c0c0c0' },
+  { name: 'mineral.lead',      count: 37, color: '#7a7a7a' },
+  { name: 'mineral.uranium',   count: 21, color: '#7fff00' },
 ];
 const MINING_TOP_COUNTRIES = [
   { name: 'Canada',    count: 80 },
@@ -72,27 +75,13 @@ const MINING_TOP_PROVINCES = [
   { name: 'Santa Cruz', count: 26 },
 ];
 const MINING_BY_STAGE = [
-  { name: 'Initial exploration', count: 131, color: '#94a3b8' },
-  { name: 'Advanced exploration', count: 73, color: '#669BBC' },
-  { name: 'Prospection',         count: 61, color: '#cbd5e1' },
-  { name: 'Production',          count: 26, color: '#17a589' },
-  { name: 'Pre-feasibility/Eval', count: 21, color: '#f59e0b' },
+  { name: 'stage.initialExploration', count: 131, color: '#94a3b8' },
+  { name: 'stage.advancedExploration', count: 73, color: '#669BBC' },
+  { name: 'stage.prospection',         count: 61, color: '#cbd5e1' },
+  { name: 'stage.production',    count: 26, color: '#17a589' },
+  { name: 'stage.preFeasibility', count: 21, color: '#f59e0b' },
 ];
 
-// CAMMESA installed capacity end-2024 (validated; centrales.json carries
-// only a partial sample so we use the canonical totals here).
-const POWER_BY_FUEL = [
-  { name: 'Thermal',     gw: 25.5, color: '#EF4444' },
-  { name: 'Hydro',       gw: 10.1, color: '#3B82F6' },
-  { name: 'Renewables',  gw: 6.8,  color: '#10B981' },
-  { name: 'Nuclear',     gw: 1.8,  color: '#A855F7' },
-];
-const POWER_TOTAL_GW = POWER_BY_FUEL.reduce((s, x) => s + x.gw, 0);
-const POWER_NUCLEAR_PLANTS = [
-  { name: 'Atucha I',  mw: 362 },
-  { name: 'Atucha II', mw: 745 },
-  { name: 'Embalse',   mw: 656 },
-];
 
 // Pre-built normed lookup for per-province CAMMESA data (real plant assignments).
 // Keys are normProv(provinceName) so they match normProv(selectedProvince).
@@ -100,34 +89,6 @@ const PROV_DATA_NORMED = Object.fromEntries(
   Object.entries(cammesaProvData.provinces).map(([k, v]) => [normProv(k), v])
 );
 
-// CAMMESA grid regions → provinces they cover (approximate; grid regions don't
-// follow provincial borders perfectly but are the official CAMMESA division).
-const PROV_TO_REGIONS = {
-  'buenos aires':                   ['GRAN BS.AS.', 'BUENOS AIRES'],
-  'ciudad autonoma de buenos aires': ['GRAN BS.AS.'],
-  'neuquen':                        ['COMAHUE'],
-  'rio negro':                      ['COMAHUE'],
-  'mendoza':                        ['CUYO'],
-  'san juan':                       ['CUYO'],
-  'san luis':                       ['CUYO'],
-  'entre rios':                     ['LITORAL'],
-  'corrientes':                     ['LITORAL', 'NORESTE'],
-  'misiones':                       ['NORESTE'],
-  'chaco':                          ['NORESTE'],
-  'formosa':                        ['NORESTE'],
-  'tucuman':                        ['NOROESTE'],
-  'salta':                          ['NOROESTE'],
-  'jujuy':                          ['NOROESTE'],
-  'catamarca':                      ['NOROESTE'],
-  'la rioja':                       ['NOROESTE'],
-  'santiago del estero':            ['NOROESTE'],
-  'chubut':                         ['PATAGONICA'],
-  'santa cruz':                     ['PATAGONICA'],
-  'tierra del fuego':               ['PATAGONICA'],
-  'la pampa':                       ['PATAGONICA'],
-  'cordoba':                        ['CENTRO'],
-  'santa fe':                       ['LITORAL'],
-};
 
 const FUENTE_COLOR = {
   'Térmica':   '#EF4444',
@@ -173,7 +134,7 @@ function toggleLayer(id, { setOverlays, setEnergyLayers }) {
   );
 }
 
-function CardHeader({ id, label, icon, color, count, countLabel, active, onToggle }) {
+function CardHeader({ label, icon, color, count, countLabel, active, onToggle }) {
   return (
     <div className="flex items-center justify-between gap-2 mb-2">
       <div className="flex items-center gap-2 min-w-0">
@@ -207,6 +168,7 @@ function CardHeader({ id, label, icon, color, count, countLabel, active, onToggl
 }
 
 function StatBars({ items, total, valueKey = 'count', maxItems = 6 }) {
+  const { t } = useTranslation();
   const max = Math.max(...items.map(i => i[valueKey]));
   return (
     <div className="space-y-0.5">
@@ -214,8 +176,8 @@ function StatBars({ items, total, valueKey = 'count', maxItems = 6 }) {
         const v = item[valueKey];
         const pct = (v / max) * 100;
         return (
-          <div key={item.name} className="flex items-center gap-1.5 text-[10px]">
-            <span className="w-[60px] text-[#003049]/65 truncate">{item.name}</span>
+          <div key={t(item.name)} className="flex items-center gap-1.5 text-[10px]">
+            <span className="w-[60px] text-[#003049]/65 truncate">{t(item.name)}</span>
             <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
               <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: item.color || '#669BBC' }} />
             </div>
@@ -246,6 +208,7 @@ const MINERAL_COLOR = {
 };
 
 function MiningCard({ active, onToggle, selectedProvince }) {
+  const { t } = useTranslation();
   const stats = useMemo(() => {
     const list = selectedProvince
       ? miningProjects.filter(p => matchProv(p.provincia, selectedProvince))
@@ -283,19 +246,19 @@ function MiningCard({ active, onToggle, selectedProvince }) {
       }}
     >
       <CardHeader
-        id="mining" label="Mining" icon="⛏" color="#ffd700"
+        id="mining" label={t('layerPanel.mining')} icon="⛏" color="#ffd700"
         count={stats.total}
         countLabel={selectedProvince ? `projects in ${selectedProvince}` : 'metalliferous & lithium projects (SIACAM)'}
         active={active} onToggle={onToggle}
       />
       {stats.total === 0 ? (
-        <p className="text-[10px] text-[#003049]/50 italic">No SIACAM projects in this province.</p>
+        <p className="text-[10px] text-[#003049]/50 italic">{t('overlay.noSiacamProjects')}</p>
       ) : (
         <>
-          <MiniSection title="Top minerals">
+          <MiniSection title={t('overlay.topMinerals')}>
             <StatBars items={stats.topMinerals} total={stats.total} />
           </MiniSection>
-          <MiniSection title="By stage">
+          <MiniSection title={t('overlay.byStage')}>
             <StatBars
               items={stats.topStages.map((s, i) => ({ ...s, color: ['#94a3b8','#669BBC','#cbd5e1','#17a589','#f59e0b'][i] || '#94a3b8' }))}
               total={stats.total}
@@ -303,7 +266,7 @@ function MiningCard({ active, onToggle, selectedProvince }) {
             />
           </MiniSection>
           <div className="grid grid-cols-2 gap-2 mt-2">
-            <MiniSection title="Operators (origin)">
+            <MiniSection title={t('overlay.operatorsOrigin')}>
               <ul className="text-[10px] text-[#003049]/70 space-y-0.5">
                 {stats.topCountries.map(([name, count]) => (
                   <li key={name} className="flex justify-between gap-1">
@@ -345,6 +308,7 @@ const PROVINCE_BASINS = {
 };
 
 function HcFieldsCard({ active, onToggle, selectedProvince }) {
+  const { t } = useTranslation();
   const basinsForProv = selectedProvince ? PROVINCE_BASINS[selectedProvince] || null : null;
   // Three states:
   //   - no province selected         → show every basin
@@ -363,7 +327,7 @@ function HcFieldsCard({ active, onToggle, selectedProvince }) {
       }}
     >
       <CardHeader
-        id="yacimientos" label="HC Fields" icon="🛢" color="#10B981"
+        id="yacimientos" label={t('energy.hcFields')} icon="🛢" color="#10B981"
         count={879}
         countLabel={selectedProvince ? `national areas · click to filter map` : 'hydrocarbon concession areas'}
         active={active} onToggle={onToggle}
@@ -394,6 +358,7 @@ function HcFieldsCard({ active, onToggle, selectedProvince }) {
 }
 
 function RefineriesCard({ active, onToggle, selectedProvince }) {
+  const { t } = useTranslation();
   const list = useMemo(() => {
     const features = refineriasData.features || [];
     if (!selectedProvince) return features;
@@ -409,7 +374,7 @@ function RefineriesCard({ active, onToggle, selectedProvince }) {
       }}
     >
       <CardHeader
-        id="refinerias" label="Refineries" icon="🏭" color="#F97316"
+        id="refinerias" label={t('energy.refineries')} icon="🏭" color="#F97316"
         count={selectedProvince ? list.length : total}
         countLabel={selectedProvince ? `plants in ${selectedProvince}` : 'crude refining plants'}
         active={active} onToggle={onToggle}
@@ -417,10 +382,9 @@ function RefineriesCard({ active, onToggle, selectedProvince }) {
       {!selectedProvince && (
         <>
           <p className="text-[10px] text-[#003049]/65 leading-snug">
-            ~640 kbpd installed capacity. Highly concentrated: top 3 operators
-            run more than 85%. La Plata + Luján de Cuyo + San Lorenzo dominate.
+            {t('overlay.refineriesDesc')}
           </p>
-          <MiniSection title="By operator">
+          <MiniSection title={t('overlay.byOperator')}>
             <ul className="text-[10px] space-y-0.5">
               {REFINERY_OPERATORS.map(op => (
                 <li key={op.name} className="flex justify-between text-[#003049]/70">
@@ -462,6 +426,7 @@ function RefineriesCard({ active, onToggle, selectedProvince }) {
 }
 
 function PowerPlantsCard({ active, onToggle, selectedProvince }) {
+  const { t } = useTranslation();
   const stats = useMemo(() => {
     if (!selectedProvince) return { topPlants: [], capacityData: null, isAssigned: false };
 
@@ -549,20 +514,27 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
       }}
     >
       <CardHeader
-        id="centrales" label="Power Plants" icon="⚡" color="#A855F7"
+        label={t('energy.powerPlants')} icon="⚡" color="#A855F7"
         count={headerCount}
         countLabel={headerLabel}
         active={active} onToggle={onToggle}
       />
+      {/* The provincial breakdown is CAMMESA's February 2020 registry while the
+          national headline is their end-2024 total. Six years apart, same card. */}
+      {selectedProvince && (
+        <div className="mb-1.5">
+          <DataAge meta={cammesaProvData._meta} size={9} />
+        </div>
+      )}
       {!selectedProvince && (
         <>
-          <MiniSection title="By fuel (GW installed)">
+          <MiniSection title={t('overlay.byFuel')}>
             <div className="space-y-0.5">
               {POWER_BY_FUEL.map(f => {
                 const pct = (f.gw / POWER_TOTAL_GW) * 100;
                 return (
                   <div key={f.name} className="flex items-center gap-1.5 text-[10px]">
-                    <span className="w-[60px] text-[#003049]/65">{f.name}</span>
+                    <span className="w-[60px] text-[#003049]/65">{t(f.name)}</span>
                     <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
                       <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: f.color }} />
                     </div>
@@ -572,7 +544,7 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
               })}
             </div>
           </MiniSection>
-          <MiniSection title="Nuclear plants">
+          <MiniSection title={t('overlay.nuclearPlants')}>
             <ul className="text-[10px] space-y-0.5">
               {POWER_NUCLEAR_PLANTS.map(p => (
                 <li key={p.name} className="flex justify-between text-[#003049]/70">
@@ -583,8 +555,7 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
             </ul>
           </MiniSection>
           <p className="text-[10px] text-[#003049]/55 leading-snug mt-2">
-            Thermal still dominates (~59% of capacity, gas the main fuel).
-            Renewables passed nuclear in 2018 and now triple it.
+            {t('overlay.thermalDominates')}
           </p>
         </>
       )}
@@ -649,6 +620,7 @@ export default function RightOverlayPanel({
   topOffset = 56,
   bottomOffset = 100,
 }) {
+  const { t } = useTranslation();
   const hasOverlay = overlays?.mining || (energyLayers?.length || 0) > 0;
   const handlers = { overlays, setOverlays, energyLayers, setEnergyLayers };
 
@@ -674,13 +646,13 @@ export default function RightOverlayPanel({
           <p className="text-[10px] text-[#003049]/55 mt-0.5">Filtered to {selectedProvince}</p>
         )}
         {!hasOverlay && (
-          <p className="text-[10px] text-[#003049]/55 mt-0.5">Click any layer to plot it on the map.</p>
+          <p className="text-[10px] text-[#003049]/55 mt-0.5">{t('overlay.clickToPlot')}</p>
         )}
       </div>
 
       <div style={{ padding: '12px 14px' }}>
         {hasOverlay ? (
-          <Suspense fallback={<div className="text-[11px] text-[#003049]/50">Loading…</div>}>
+          <Suspense fallback={<div className="text-[11px] text-[#003049]/50">{t('mobile.loadingEllipsis')}</div>}>
             <OverlayPanel
               overlays={overlays}
               energyLayers={energyLayers}
@@ -715,8 +687,7 @@ export default function RightOverlayPanel({
               selectedProvince={selectedProvince}
             />
             <p className="text-[9px] text-[#003049]/40 italic mt-2 leading-snug">
-              Sources: SIACAM (mining), datos.energia.gob.ar (HC fields, refineries),
-              CAMMESA end-2024 + manual additions (power plants).
+              {t('overlay.sourcesLine')}
             </p>
           </div>
         )}

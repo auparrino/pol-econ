@@ -24,7 +24,7 @@ export const gabinetesProvinciales = [
     ],
   },
   {
-    provincia: 'Ciudad Autónoma de Buenos Aires',
+    provincia: 'Ciudad de Buenos Aires',
     gabinete: [
       { role: 'Jefe de Gobierno', name: 'Jorge Macri', tier: 'exec' },
       { role: 'Vicejefa', name: 'Clara Muzzio', tier: 'exec' },

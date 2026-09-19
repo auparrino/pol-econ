@@ -1,13 +1,14 @@
 import { memo } from 'react';
-import { politicalContext } from '../../data/politicalContext';
+import { useTranslation } from 'react-i18next';
 import { officialSenators } from '../../data/officialSenators';
 import { officialDeputies } from '../../data/officialDeputies';
 import votacionesRaw from '../../data/votaciones.json';
+import { records } from '../../utils/dataset';
 import VoteDots from '../shared/VoteDots';
-import { matchProvince, blocColor } from '../shared/helpers';
+import { blocColor } from '../shared/helpers';
 
 // Convert votaciones.json (object or array) to array
-const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
+const votacionesList = records(votacionesRaw);
 
 // Topics per chamber (must match scrape-votes.mjs output)
 const OFICIALISMO_BLOCS = ['la libertad avanza'];
@@ -84,7 +85,7 @@ function computeAlla(name, chamber) {
 }
 
 function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
-  const pol = matchProvince(politicalContext, selectedProvince);
+  const { t } = useTranslation();
   const pn = selectedProvince?.toLowerCase();
   const isCABA = pn?.includes('ciudad') || pn === 'caba';
 
@@ -101,7 +102,6 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
     return result;
   })();
 
-  const comovotoSens = comovotoLegs.filter(l => l.c === 'senadores');
   const officialProvSens = officialSenators.filter(s => {
     const sp = s.p?.toLowerCase();
     if (isCABA) return sp === 'ciudad de buenos aires';
@@ -110,8 +110,6 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
   });
   const normalizeN = (s) => s?.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().trim() || '';
   const senators = officialProvSens.map(official => {
-    const lastName = normalizeN(official.n?.split(',')[0]);
-    const match = comovotoSens.find(cv => normalizeN(cv.n?.split(',')[0]) === lastName);
     // Use our votaciones.json alla, not comovoto's
     const alla = computeAlla(official.n, 'S');
     return { n: official.n, b: official.b, alla, c: 'senadores' };
@@ -158,7 +156,7 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
         <div className="space-y-0">
           {senators.length > 0 ? senators.map((l, i) => (
             <LegRow key={i} l={l} />
-          )) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
+          )) : <p className="text-[11px] text-[#003049]/40 italic">{t('common.noData')}</p>}
         </div>
       </div>
 
@@ -196,7 +194,7 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
               ))}
             </div>
           </>
-        ) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
+        ) : <p className="text-[11px] text-[#003049]/40 italic">{t('common.noData')}</p>}
       </div>
     </div>
   );

@@ -2,12 +2,14 @@
  * Compact economy summary for ProvincePanel.
  * Shows key metrics from SIPA, DNAP fiscal, and export data.
  */
+import { useTranslation } from 'react-i18next';
 import { useEconomyData } from '../../hooks/useEconomyData';
 import { FAMILY_COLORS } from './chartTheme';
 import { fmtNum } from '../../utils/formatNumber';
 import { translateSector } from '../../utils/sectorTranslations';
 
-export default function EconomySummary({ province, Section, DataRow }) {
+export default function EconomySummary({ province }) {
+  const { t } = useTranslation();
   const { sipa, fiscal, exports } = useEconomyData(province);
 
   if (!sipa && !fiscal && (!exports || exports.length === 0)) return null;
@@ -22,21 +24,21 @@ export default function EconomySummary({ province, Section, DataRow }) {
     : '#C1121F';
 
   return (
-    <Section title="Provincial Economy" tooltip="Summary: registered employment (SIPA/CEP XXI), provincial finances (Sec. Hacienda TOP+RON), exports (INDEC). See Economy tab for full analysis.">
+    <Section title={t('economy.provincialEconomy')} tooltip="Summary: registered employment (SIPA/CEP XXI), provincial finances (Sec. Hacienda TOP+RON), exports (INDEC). See Economy tab for full analysis.">
       <div className="bg-[#003049]/6 rounded-md p-2.5 border border-[#003049]/10 space-y-2">
         {/* Top sector */}
         {sipa?.sectors?.[0] && (
           <div>
             <div className="flex justify-between items-start">
               <div>
-                <p className="text-[11px] text-[#003049]/50">Leading sector (SIPA)</p>
+                <p className="text-[11px] text-[#003049]/50">{t('economy.leadingSector')}</p>
                 <p className="text-[14px] font-bold text-[#003049]">{translateSector(sipa.sectors[0].clae2, sipa.sectors[0].name)}</p>
                 <p className="text-[12px] text-[#003049]/50">
                   {fmtNum(sipa.sectors[0].employees)} jobs ({sipa.sectors[0].share_pct}%)
                 </p>
               </div>
               <div className="text-right">
-                <p className="text-[11px] text-[#003049]/50">Registered employment</p>
+                <p className="text-[11px] text-[#003049]/50">{t('economy.registeredEmployment')}</p>
                 <p className="text-[16px] font-bold font-mono text-[#003049]">
                   {fmtNum(sipa.total || sipa.private)}
                 </p>
@@ -75,11 +77,11 @@ export default function EconomySummary({ province, Section, DataRow }) {
         <div className="flex gap-2 border-t border-[#003049]/10 pt-2">
           {fiscal?.dependency != null && (
             <div className="flex-1">
-              <p className="text-[11px] text-[#003049]/50">Fiscal dep.</p>
+              <p className="text-[11px] text-[#003049]/50">{t('economy.fiscalDep')}</p>
               <p className="text-[15px] font-bold font-mono" style={{ color: depColor }}>
                 {fiscal.dependency.toFixed(1)}%
               </p>
-              <p className="text-[10px] text-[#003049]/40">nat. transfers / total</p>
+              <p className="text-[10px] text-[#003049]/40">{t('economy.natTransfers')}</p>
             </div>
           )}
           {latestExport && (
@@ -93,7 +95,7 @@ export default function EconomySummary({ province, Section, DataRow }) {
         </div>
 
         <p className="text-[10px] text-[#003049]/30 italic">
-          Full analysis in Economy tab
+          {t('economy.fullAnalysis')}
         </p>
       </div>
     </Section>

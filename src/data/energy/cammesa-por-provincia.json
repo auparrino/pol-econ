@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "period": "2020-02",
+    "retrieved": "2026-04-07",
+    "source": "cammesa",
+    "note": "Registro de potencia instalada de CAMMESA. El campo `generated` es la fecha de build, no del dato."
+  },
   "generated": "2026-04-07",
   "source": "CAMMESA potencia-instalada Feb-2020",
   "note": "Plants with ambiguous province assigned to unassigned region bucket",

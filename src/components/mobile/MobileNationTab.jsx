@@ -1,7 +1,7 @@
-import { useState, lazy, Suspense, useMemo } from 'react';
+import { useState, lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import { senateBlocs, deputyBlocs, SENATE_TOTAL, DEPUTY_TOTAL } from '../../data/congressBlocs';
 import { POWER_BY_FUEL, POWER_TOTAL_GW, POWER_NUCLEAR_PLANTS } from '../../data/energy/powerConstants';
-import sipaRaw from '../../data/sipa_employment.json';
 import sipaPubPrivRaw from '../../data/sipa_pub_priv.json';
 import biepRaw from '../../data/biep_breakdown.json';
 import exportsCatRaw from '../../data/exports_by_category.json';
@@ -9,14 +9,14 @@ import exportsCatRaw from '../../data/exports_by_category.json';
 const CabinetPanel = lazy(() => import('../panels/CabinetPanel'));
 
 const KEY_VOTES = [
-  { name: 'Budget 2026', ch: 'Senate', a: 46, n: 25, r: 'A', date: 'Mar 2026' },
-  { name: 'Labor Reform', ch: 'Senate', a: 42, n: 28, r: 'A', date: 'Feb 2026' },
+  { name: 'votes.budget2026', ch: 'Senate', a: 46, n: 25, r: 'A', date: 'Mar 2026' },
+  { name: 'votes.laborReform', ch: 'Senate', a: 42, n: 28, r: 'A', date: 'Feb 2026' },
   { name: 'Mercosur–EU', ch: 'Senate', a: 69, n: 3, r: 'A', date: 'Feb 2026' },
-  { name: 'Juvenile Penal', ch: 'Senate', a: 44, n: 27, r: 'A', date: 'Jan 2026', note: 'Min. age 14' },
-  { name: 'Glacier Law', ch: 'Senate', a: 40, n: 31, r: 'A', date: 'Jan 2026', note: '1st chamber' },
-  { name: 'Univ. Funding', ch: 'Deputies', a: 174, n: 67, r: 'A', date: 'Sep 2025', note: 'Veto overridden' },
-  { name: 'Pensions', ch: 'Deputies', a: 160, n: 83, r: 'R', date: 'Aug 2025', note: 'Veto upheld' },
-  { name: 'Ley Bases', ch: 'Senate', a: 36, n: 36, r: 'A', date: 'Jun 2024', note: 'VP tiebreak' },
+  { name: 'votes.juvenilePenal', ch: 'Senate', a: 44, n: 27, r: 'A', date: 'Jan 2026', note: 'Min. age 14' },
+  { name: 'votes.glacierLaw', ch: 'Senate', a: 40, n: 31, r: 'A', date: 'Jan 2026', note: '1st chamber' },
+  { name: 'votes.univFunding', ch: 'Deputies', a: 174, n: 67, r: 'A', date: 'Sep 2025', note: 'Veto overridden' },
+  { name: 'votes.pensions', ch: 'Deputies', a: 160, n: 83, r: 'R', date: 'Aug 2025', note: 'Veto upheld' },
+  { name: 'votes.leyBases', ch: 'Senate', a: 36, n: 36, r: 'A', date: 'Jun 2024', note: 'VP tiebreak' },
 ];
 
 function ChamberCard({ label, total, blocs }) {
@@ -79,6 +79,7 @@ function VoteCard({ v }) {
 }
 
 function NationalGridCard() {
+  const { t } = useTranslation();
   return (
     <div
       className="rounded-xl border p-3"
@@ -93,7 +94,7 @@ function NationalGridCard() {
         {POWER_BY_FUEL.map(f => (
           <div
             key={f.name}
-            title={`${f.name} ${f.gw} GW`}
+            title={`${t(f.name)} ${f.gw} GW`}
             style={{ width: `${(f.gw / POWER_TOTAL_GW) * 100}%`, background: f.color }}
           />
         ))}
@@ -103,7 +104,7 @@ function NationalGridCard() {
         {POWER_BY_FUEL.map(f => (
           <div key={f.name} className="flex items-center gap-2 text-[12px]">
             <span className="w-2 h-2 rounded-full shrink-0" style={{ background: f.color }} />
-            <span className="text-[#003049] flex-1">{f.name}</span>
+            <span className="text-[#003049] flex-1">{t(f.name)}</span>
             <span className="font-mono text-[#003049]">{f.gw} GW</span>
             <span className="text-[#003049]/40 font-mono w-[34px] text-right">
               {((f.gw / POWER_TOTAL_GW) * 100).toFixed(0)}%
@@ -114,7 +115,7 @@ function NationalGridCard() {
       {/* Nuclear plants */}
       <div className="pt-2 border-t border-[#003049]/10">
         <p className="text-[9px] uppercase tracking-wider text-[#003049]/50 font-semibold mb-1">
-          Nuclear plants
+          {t('overlay.nuclearPlants')}
         </p>
         <div className="space-y-0.5">
           {POWER_NUCLEAR_PLANTS.map(p => (
@@ -266,6 +267,7 @@ const ECONOMY_TABS = [
 ];
 
 export default function MobileNationTab() {
+  const { t } = useTranslation();
   const [view, setView] = useState('congress');
   const [ecoTab, setEcoTab] = useState('employment');
 
@@ -273,7 +275,7 @@ export default function MobileNationTab() {
     <div className="absolute inset-0 flex flex-col" style={{ fontFamily: 'var(--font-display)' }}>
       {/* Title bar */}
       <div className="shrink-0 flex items-center" style={{ height: 48, background: '#FFF8EB', borderBottom: '1px solid rgba(0,48,73,0.10)', padding: '0 16px' }}>
-        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight">Nation</h1>
+        <h1 className="text-[15px] font-extrabold text-[#003049] tracking-tight">{t('mobile.nation')}</h1>
       </div>
 
       {/* Top segment: Congress / Economy / Cabinet */}
@@ -281,7 +283,7 @@ export default function MobileNationTab() {
         className="shrink-0 grid grid-cols-3 gap-1 p-1"
         style={{ background: 'rgba(0,48,73,0.06)', borderBottom: '1px solid rgba(0,48,73,0.10)' }}
       >
-        {[{ id: 'congress', label: 'Congress' }, { id: 'economy', label: 'Economy' }, { id: 'cabinet', label: 'Cabinet' }].map(t => {
+        {[{ id: 'congress', label: 'bottomBar.congress' }, { id: 'economy', label: 'Economy' }, { id: 'cabinet', label: 'bottomBar.cabinet' }].map(t => {
           const active = view === t.id;
           return (
             <button
@@ -326,7 +328,7 @@ export default function MobileNationTab() {
 
           {view === 'congress' && (
             <>
-              <ChamberCard label="Senate" total={SENATE_TOTAL} blocs={senateBlocs} />
+              <ChamberCard label={t('votes.senate')} total={SENATE_TOTAL} blocs={senateBlocs} />
               <ChamberCard label="Deputies" total={DEPUTY_TOTAL} blocs={deputyBlocs} />
               <div>
                 <p className="text-[10px] uppercase tracking-widest font-semibold text-[#003049]/55 mb-1.5">Key Votes</p>
@@ -353,7 +355,7 @@ export default function MobileNationTab() {
           )}
 
           {view === 'cabinet' && (
-            <Suspense fallback={<p className="text-[12px] text-[#003049]/60">Loading…</p>}>
+            <Suspense fallback={<p className="text-[12px] text-[#003049]/60">{t('mobile.loadingEllipsis')}</p>}>
               <CabinetPanel />
             </Suspense>
           )}

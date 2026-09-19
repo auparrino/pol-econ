@@ -1,7 +1,12 @@
 {
+  "_meta": {
+    "period": "2024",
+    "retrieved": "2026-04-07",
+    "source": "adefa"
+  },
   "year": 2024,
   "source": "ADEFA, company reports, press (2024 annual data)",
-  "notes": "Production fell 17.1% vs 2023 (610,715). ADEFA does not publish per-brand breakdowns until 7 months after year-end; plant-level figures are estimates from press reports and company announcements.",
+  "notes": "Production fell 17.1% vs 2023 (610,715). ADEFA does not publish per-brand breakdowns until 7 months after year-end; plant-level figures are estimates from press reports and company announcements, and do not sum exactly to the ADEFA national total.",
   "total_vehicles": 506571,
   "plants": [
     {
@@ -11,7 +16,11 @@
       "locality": "Zárate",
       "lat": -34.0953,
       "lon": -59.0284,
-      "vehicles": ["Hilux", "SW4", "Hiace"],
+      "vehicles": [
+        "Hilux",
+        "SW4",
+        "Hiace"
+      ],
       "type": "pickup / SUV / van",
       "production": 170330,
       "share_pct": 33.6,
@@ -25,7 +34,9 @@
       "locality": "Ferreyra",
       "lat": -31.4833,
       "lon": -64.0975,
-      "vehicles": ["Fiat Cronos"],
+      "vehicles": [
+        "Fiat Cronos"
+      ],
       "type": "sedan",
       "production": 83200,
       "share_pct": 16.4,
@@ -39,7 +50,12 @@
       "locality": "El Palomar",
       "lat": -34.6036,
       "lon": -58.5989,
-      "vehicles": ["Peugeot 208", "Peugeot 2008", "Peugeot Partner", "Citroën Berlingo"],
+      "vehicles": [
+        "Peugeot 208",
+        "Peugeot 2008",
+        "Peugeot Partner",
+        "Citroën Berlingo"
+      ],
       "type": "hatchback / SUV / van",
       "production": 72224,
       "share_pct": 14.3,
@@ -53,10 +69,12 @@
       "locality": "General Pacheco",
       "lat": -34.4536,
       "lon": -58.6353,
-      "vehicles": ["Ranger"],
+      "vehicles": [
+        "Ranger"
+      ],
       "type": "pickup",
       "production": 61000,
-      "share_pct": 12.0,
+      "share_pct": 12,
       "employees": 3800,
       "notes": "Estimated from 2025 target of 70,000 (+15%). US$660M investment. V6 Lion 3.0L engine since Jun 2024. ~70% exported."
     },
@@ -67,7 +85,10 @@
       "locality": "General Pacheco",
       "lat": -34.4617,
       "lon": -58.6281,
-      "vehicles": ["Amarok", "Taos"],
+      "vehicles": [
+        "Amarok",
+        "Taos"
+      ],
       "type": "pickup / SUV",
       "production": 40000,
       "share_pct": 7.9,
@@ -81,7 +102,12 @@
       "locality": "Santa Isabel",
       "lat": -31.4016,
       "lon": -64.2647,
-      "vehicles": ["Kangoo", "Logan", "Sandero", "Alaskan"],
+      "vehicles": [
+        "Kangoo",
+        "Logan",
+        "Sandero",
+        "Alaskan"
+      ],
       "type": "van / sedan / pickup",
       "production": 25000,
       "share_pct": 4.9,
@@ -95,7 +121,9 @@
       "locality": "Alvear",
       "lat": -33.0283,
       "lon": -60.6828,
-      "vehicles": ["Tracker"],
+      "vehicles": [
+        "Tracker"
+      ],
       "type": "SUV",
       "production": 20000,
       "share_pct": 3.9,
@@ -109,7 +137,9 @@
       "locality": "Santa Isabel",
       "lat": -31.4016,
       "lon": -64.2647,
-      "vehicles": ["Frontier"],
+      "vehicles": [
+        "Frontier"
+      ],
       "type": "pickup",
       "production": 17500,
       "share_pct": 3.5,
@@ -123,10 +153,14 @@
       "locality": "Virrey del Pino",
       "lat": -34.7983,
       "lon": -58.7025,
-      "vehicles": ["Sprinter", "Accelo", "Atego"],
+      "vehicles": [
+        "Sprinter",
+        "Accelo",
+        "Atego"
+      ],
       "type": "van / truck",
       "production": 10000,
-      "share_pct": 2.0,
+      "share_pct": 2,
       "employees": 2200,
       "notes": "400,000th Sprinter Dec 2023. 70% exported. Plant sold to Grupo ST (through 2029). Estimate ~10k total."
     },
@@ -135,28 +169,21 @@
       "plant": "Ferreyra",
       "province": "Córdoba",
       "locality": "Ferreyra",
-      "lat": -31.4900,
-      "lon": -64.0950,
-      "vehicles": ["Tector", "Cursor", "Stralis", "Trakker", "Daily", "Eurocargo"],
+      "lat": -31.49,
+      "lon": -64.095,
+      "vehicles": [
+        "Tector",
+        "Cursor",
+        "Stralis",
+        "Trakker",
+        "Daily",
+        "Eurocargo"
+      ],
       "type": "truck / bus chassis",
       "production": 4000,
       "share_pct": 0.8,
       "employees": 800,
       "notes": "FPT engine plant produced 200,000th engine Mar 2024. First CNG-powered buses in Nov 2024. Estimate ~4k."
-    },
-    {
-      "company": "Iveco",
-      "plant": "Ferreyra",
-      "province": "Córdoba",
-      "locality": "Ferreyra",
-      "lat": -31.4900,
-      "lon": -64.0950,
-      "vehicles": ["Tector", "Cursor", "Stralis", "Trakker", "Daily", "Eurocargo"],
-      "type": "trucks / bus chassis",
-      "production": 4000,
-      "share_pct": 0.8,
-      "employees": 800,
-      "notes": "Commercial vehicles only (trucks and bus chassis). Not passenger cars. FPT engine plant."
     }
   ],
   "motorcycles": {
@@ -168,15 +195,33 @@
     "plants_by_province": [
       {
         "province": "Buenos Aires",
-        "companies": ["Honda (Campana)", "Yamaha", "Beta", "Gilera", "Hero", "Zanella", "KTM", "TVS (Cardales)"]
+        "companies": [
+          "Honda (Campana)",
+          "Yamaha",
+          "Beta",
+          "Gilera",
+          "Hero",
+          "Zanella",
+          "KTM",
+          "TVS (Cardales)"
+        ]
       },
       {
         "province": "Santa Fe",
-        "companies": ["Corven (Venado Tuerto)", "Guerrero", "Bajaj (via Corven)"]
+        "companies": [
+          "Corven (Venado Tuerto)",
+          "Guerrero",
+          "Bajaj (via Corven)"
+        ]
       },
       {
         "province": "Córdoba",
-        "companies": ["Kymco", "Keller", "Okinoi", "Appia"]
+        "companies": [
+          "Kymco",
+          "Keller",
+          "Okinoi",
+          "Appia"
+        ]
       }
     ]
   }

@@ -64,10 +64,15 @@ export default function SourceInfo({ src, inline = true, size = 11 }) {
     setPos({ top, left, placement: placeBelow ? 'below' : 'above' });
   };
 
-  // Recompute on open, and on scroll/resize while open.
+  // Recompute on open, and on scroll/resize while open. There is no reset on
+  // close: the popover is not rendered when closed, and this layout effect runs
+  // before paint on the next open, so a stale position is never visible.
   useLayoutEffect(() => {
-    if (!open) { setPos(null); return; }
-    computePos();
+    // Measuring the trigger's box and storing the result is what a layout
+    // effect is for: it runs after the popover mounts and before paint, so the
+    // extra render it causes is never visible.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (open) computePos();
   }, [open]);
 
   useEffect(() => {

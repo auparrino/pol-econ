@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import rigi from '../../data/rigiProjects.json';
 
 const SECTOR_COLOR = {
@@ -46,11 +47,12 @@ function fmtUSD(m) {
 }
 
 export function RigiPanel({ provinceName }) {
+  const { t } = useTranslation();
   const projects = rigi.projects.filter(p => matchProvince(p.provincia, provinceName));
   if (projects.length === 0) {
     return (
       <div className="text-[11px] text-[#003049]/50 italic">
-        No RIGI projects recorded for this province.
+        {t('rigi.noProjects')}
       </div>
     );
   }

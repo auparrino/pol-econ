@@ -1,0 +1,205 @@
+{
+  "_comment": [
+    "Which script produces which dataset, and what it needs to run.",
+    "",
+    "Every dataset in this repo was built by a script that nobody recorded, from",
+    "an input nobody kept. That is why six audit findings sit OPEN: the fix is",
+    "known, the file it needs is not on disk, and there was no way to tell which",
+    "script would consume it or where to put it. This manifest is that record.",
+    "",
+    "inputs  — files the build needs before it can run, relative to the repo root",
+    "network — true when the script fetches from the source itself",
+    "env     — environment variables the script needs",
+    "source  — the key in src/data/sources.js that documents where to get it"
+  ],
+  "pipelines": {
+    "exports": {
+      "script": "python3 scripts/parse_exports.py",
+      "outputs": [
+        "src/data/exports_by_category.json",
+        "src/data/exports_by_destination.json"
+      ],
+      "inputs": [
+        "exportaciones-provincia-rubro.csv",
+        "exportaciones-por-provincia-por-pais-de-destino-valores-anuales.csv"
+      ],
+      "network": false,
+      "source": "indecExports"
+    },
+    "alignment": {
+      "script": "node scripts/compute-alignment.mjs",
+      "outputs": [
+        "src/data/alignmentScores.json"
+      ],
+      "inputs": [
+        "src/data/votaciones.json",
+        "src/data/executivePositions.json"
+      ],
+      "network": false,
+      "source": "comovoto"
+    },
+    "votes": {
+      "script": "node scripts/scrape-votes.mjs",
+      "outputs": [
+        "src/data/votaciones.json"
+      ],
+      "inputs": [],
+      "network": true,
+      "source": "congresoSenado",
+      "note": "Scrapes votaciones.hcdn.gob.ar and senado.gob.ar. Vote ids are hard-coded in the script; add new ones there before re-running."
+    },
+    "news": {
+      "script": "node scripts/scrape-news.mjs",
+      "outputs": [
+        "src/data/news/"
+      ],
+      "inputs": [
+        "scripts/news-sources.json"
+      ],
+      "network": true,
+      "source": "provincialNews",
+      "note": "The shipped snapshot is from 2026-04-01. Re-running replaces it.",
+      "env": [
+        "CEREBRAS_API_KEY"
+      ]
+    },
+    "agriculture": {
+      "script": "node scripts/process-agriculture.mjs",
+      "outputs": [
+        "src/data/agriculture.json"
+      ],
+      "inputs": [
+        "scripts/raw/estimaciones-agricolas.csv"
+      ],
+      "network": false,
+      "source": "magypEstimates"
+    },
+    "oilgas": {
+      "script": "node scripts/process-oilgas.mjs",
+      "outputs": [
+        "src/data/oilgas_production.json"
+      ],
+      "inputs": [
+        "scripts/raw/oilgas_2025.csv"
+      ],
+      "network": false,
+      "source": "secEnergiaOilGas",
+      "note": "~989k rows of well-level production. Not in the repo: too large to commit."
+    },
+    "power-plants-region": {
+      "script": "node scripts/process-power-plants.mjs",
+      "outputs": [
+        "src/data/energy/cammesa-por-region.json"
+      ],
+      "inputs": [
+        "scripts/raw/cammesa-potencia-instalada.csv"
+      ],
+      "network": false,
+      "source": "cammesa"
+    },
+    "power-plants-province": {
+      "script": "node scripts/assign-province-to-plants.mjs",
+      "outputs": [
+        "src/data/energy/cammesa-por-provincia.json"
+      ],
+      "inputs": [
+        "scripts/raw/cammesa-potencia-instalada.csv"
+      ],
+      "network": false,
+      "source": "cammesa"
+    },
+    "energy-overlays": {
+      "script": "node scripts/update-energy-overlays.mjs",
+      "outputs": [
+        "src/data/energy/yacimientos.json",
+        "src/data/energy/refinerias.json",
+        "src/data/energy/centrales.json"
+      ],
+      "inputs": [],
+      "network": true,
+      "source": "datosEnergia",
+      "postprocess": "node scripts/normalize-energy-overlays.mjs",
+      "note": "Downloads the four datos.energia.gob.ar CSVs itself. Always run the postprocess step: it rounds coordinates and canonicalises province names. Skipping it triples the size of yacimientos.json."
+    },
+    "censo-empleo": {
+      "script": "python3 scripts/build_censo2022_empleo.py",
+      "outputs": [
+        "src/data/censo2022_empleo_provincial.json"
+      ],
+      "inputs": [
+        "scripts/raw/censo2022_caracteristicas_economicas.pdf"
+      ],
+      "network": false,
+      "source": "censo2022Empleo",
+      "note": "Reads INDEC's censo2022_caracteristicas_economicas.pdf, cuadro 4.1. The PDF is not in the repo; sources.js has the URL."
+    },
+    "censo-categoria": {
+      "script": "python3 scripts/build_censo2022_categoria.py",
+      "outputs": [
+        "src/data/censo2022_categoria_ocupacional.json"
+      ],
+      "inputs": [
+        "scripts/raw/censo2022_caracteristicas_economicas.pdf"
+      ],
+      "network": false,
+      "source": "census2022",
+      "note": "Reads INDEC's censo2022_caracteristicas_economicas.pdf, cuadro 4.2. The PDF is not in the repo; sources.js has the URL."
+    },
+    "dnap-empleo": {
+      "script": "python3 scripts/build_dnap_empleo.py",
+      "outputs": [
+        "src/data/dnap_empleo_provincial.json"
+      ],
+      "inputs": [
+        "scripts/raw/dnap_ocupacion_salarios.xlsx"
+      ],
+      "network": false,
+      "source": "dnapEmpleoProvincial",
+      "note": "Reads the DNAP xlsx directly (Administración Central + Organismos Descentralizados + Cuentas Especiales, cargos ocupados al 31/12). A build_dnap_empleo.mjs used to write the same file from ratios transcribed by hand off the 2024 chart; it was deleted because it silently overwrote the xlsx figures — including the salary columns, which it never had — with rounded approximations."
+    },
+    "sipa-pub-priv": {
+      "script": "python3 scripts/build_sipa_pub_priv.py",
+      "outputs": [
+        "src/data/sipa_pub_priv.json"
+      ],
+      "inputs": [
+        "scripts/raw/sipa_pub/puestos_depto_pub.csv",
+        "scripts/raw/sipa_pub/puestos_depto_priv.csv"
+      ],
+      "network": false,
+      "source": "sipaDeptoPubPriv",
+      "note": "Dataset discontinued November 2023; these files will not get newer."
+    },
+    "provincial-economy": {
+      "script": "python3 scripts/run_provincial_economy.py",
+      "outputs": [
+        "src/data/dnap_fiscal.json",
+        "src/data/sipa_employment.json"
+      ],
+      "inputs": [],
+      "network": true,
+      "source": "meconDnap",
+      "note": "Orchestrates process_sipa and the DNAP fiscal build; both download their own raw files."
+    },
+    "provenance": {
+      "script": "node scripts/add-provenance.mjs",
+      "outputs": [
+        "src/data/**/_meta"
+      ],
+      "inputs": [],
+      "network": false,
+      "source": null,
+      "note": "Idempotent. Run after any build that writes a new dataset file."
+    },
+    "geojson": {
+      "script": "python3 scripts/optimize_geojson.py",
+      "outputs": [
+        "src/data/energy/gasoductos.json"
+      ],
+      "inputs": [],
+      "network": false,
+      "source": "datosEnergia",
+      "note": "Simplifies the raw energy GeoJSON down to what the map can load (ductos 99 MB, gasoductos 9.7 MB). It also has branches writing ductos.json, lineas_electricas.json and produccion.json, none of which are in the repo — those layers were dropped and the code was left behind. gasoductos.json is the one output nothing else produces. It can also overwrite yacimientos.json, which update-energy-overlays.mjs builds from the CSV API: prefer that pipeline for yacimientos and run this one only for the pipeline layers."
+    }
+  }
+}

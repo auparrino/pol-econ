@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "period": "2025-08/2026-02",
+    "retrieved": "2026-04-06",
+    "source": "congresoSenado",
+    "note": "Posición pública del Ejecutivo en cada votación; curaduría manual."
+  },
   "version": "2026-04-06",
   "methodology": "Executive positions are the vote the national Executive publicly requested on each topic. Vote IDs match keys inside src/data/votaciones.json. Vote coding: A = affirmative, N = negative, ABS = abstention, undefined/null = absent.",
   "source": "Public record — presidential vetoes, official communications, ministerial statements, Casa Rosada press releases.",
@@ -14,7 +20,7 @@
     {
       "vote_id": "inocencia_fiscal",
       "topic": "Tax Innocence",
-      "chamber": "deputies",
+      "chamber": "both",
       "date": "2025-09",
       "executive_position": "A",
       "note": "Executive-backed reform."
@@ -30,7 +36,7 @@
     {
       "vote_id": "regimen_penal_juv",
       "topic": "Juvenile Penal Regime",
-      "chamber": "deputies",
+      "chamber": "both",
       "date": "2025-10",
       "executive_position": "A",
       "note": "Executive-backed bill."
@@ -46,10 +52,11 @@
     {
       "vote_id": "ley_glaciares",
       "topic": "Glacier Law Reform",
-      "chamber": "both",
+      "chamber": "senate",
       "date": "2025-08",
       "executive_position": "A",
       "note": "Executive-backed modification."
     }
-  ]
+  ],
+  "note": "El campo `chamber` refleja en qué cámaras se registró la votación nominal en src/data/votaciones.json. scripts/compute-alignment.mjs deriva esa aplicabilidad de los datos, no de este campo."
 }

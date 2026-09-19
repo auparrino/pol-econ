@@ -1,4 +1,9 @@
 {
+  "_meta": {
+    "period": "2022-05-18",
+    "retrieved": "2026-04-07",
+    "source": "census2022"
+  },
   "source": "INDEC — Censo Nacional de Población, Hogares y Viviendas 2022",
   "sourceUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165",
   "datasetUrl": "https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_caracteristicas_economicas.pdf",
@@ -101,7 +106,7 @@
       "pea": 1990337,
       "ocupados": 1829532,
       "desocupados": 160805,
-      "activityRate": 65.0,
+      "activityRate": 65,
       "employmentRate": 59.75,
       "unemploymentRate": 8.08
     },

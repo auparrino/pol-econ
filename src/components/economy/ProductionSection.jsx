@@ -1,4 +1,6 @@
 import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
+import { dataLabel, dataLabels } from '../../utils/dataLabel';
 import { fmtNum } from '../../utils/formatNumber';
 import agriData from '../../data/agriculture.json';
 import oilgasData from '../../data/oilgas_production.json';
@@ -7,21 +9,7 @@ import vehicleData from '../../data/vehicle_production.json';
 
 /* ── helpers ─────────────────────────────────────────────────────── */
 
-/** Normalize string for accent-insensitive matching */
-const norm = (s) =>
-  (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
-function findByProvince(list, provinceName) {
-  if (!provinceName || !list) return null;
-  const n = norm(provinceName);
-  const isCABA = n.includes('ciudad') || n === 'caba';
-  return list.find((p) => {
-    const d = norm(p.province);
-    if (isCABA) return d.includes('ciudad') || d === 'caba';
-    if (d.includes('ciudad') || d === 'caba') return false;
-    return d === n || d.includes(n) || n.includes(d);
-  });
-}
+import { findByProvince, sameProvince } from '../../utils/provinces';
 
 /* ── section colors ──────────────────────────────────────────────── */
 
@@ -51,11 +39,12 @@ function SectionCard({ title, subtitle, color, children }) {
 }
 
 function CropBar({ name, tons, yieldKg, color, maxTons }) {
+  const { t } = useTranslation();
   const barW = maxTons > 0 ? (tons / maxTons) * 100 : 0;
   return (
     <div className="py-[2px]">
       <div className="flex items-center justify-between mb-[1px]">
-        <span className="text-[11px] text-[#003049]/70">{name}</span>
+        <span className="text-[11px] text-[#003049]/70">{dataLabel(t, 'crops', name)}</span>
         <span className="text-[11px] font-mono text-[#003049]/60">
           {fmtNum(tons)} t
           {yieldKg > 0 && (
@@ -87,6 +76,7 @@ function StatChip({ label, value, unit, color }) {
 /* ── main component ──────────────────────────────────────────────── */
 
 export default function ProductionSection({ provinceName }) {
+  const { t } = useTranslation();
   const agri = useMemo(
     () => findByProvince(agriData.provinces, provinceName),
     [provinceName],
@@ -107,20 +97,12 @@ export default function ProductionSection({ provinceName }) {
   }, [provinceName]);
   const plants = useMemo(() => {
     if (!provinceName) return [];
-    const n = norm(provinceName);
-    return vehicleData.plants.filter((p) => {
-      const d = norm(p.province);
-      return d === n || d.includes(n) || n.includes(d);
-    });
+    return vehicleData.plants.filter(p => sameProvince(p.province, provinceName));
   }, [provinceName]);
 
   const motoCompanies = useMemo(() => {
     if (!provinceName || !vehicleData.motorcycles?.plants_by_province) return [];
-    const n = norm(provinceName);
-    const match = vehicleData.motorcycles.plants_by_province.find(p => {
-      const d = norm(p.province);
-      return d === n || d.includes(n) || n.includes(d);
-    });
+    const match = vehicleData.motorcycles.plants_by_province.find(p => sameProvince(p.province, provinceName));
     return match?.companies || [];
   }, [provinceName]);
 
@@ -131,7 +113,7 @@ export default function ProductionSection({ provinceName }) {
   if (!hasData) {
     return (
       <p className="text-[12px] text-[#003049]/50 py-4 text-center">
-        No production data available for this province.
+        {t('production.none')}
       </p>
     );
   }
@@ -139,7 +121,7 @@ export default function ProductionSection({ provinceName }) {
   return (
     <div className="space-y-3">
       <p className="text-[11px] text-[#003049]/40 leading-relaxed">
-        Physical production indicators from national sources.
+        {t('production.physicalDesc')}
       </p>
 
       {/* ── Cereals & oilseeds ───────────────────────────────── */}
@@ -175,6 +157,7 @@ const CEREALS_OILSEEDS = new Set([
 const INDUSTRIAL_HARD_DATA = new Set(['Yerba Mate', 'Tea', 'Sugar', 'Tobacco', 'Cotton', 'Grapes', 'Peanuts']);
 
 function AgricultureCard({ data, campaign }) {
+  const { t } = useTranslation();
   const allCrops = data.crops || [];
   // Show only crops with hard production data (cereals/oilseeds + main industrial)
   const crops = allCrops
@@ -185,14 +168,14 @@ function AgricultureCard({ data, campaign }) {
   if (crops.length === 0) return null;
 
   return (
-    <SectionCard title="Cereals & oilseeds" subtitle={campaign} color="#16a34a">
+    <SectionCard title={t('production.cerealsOilseeds')} subtitle={campaign} color="#16a34a">
       <div className="flex gap-4 mb-2">
         <div>
-          <p className="text-[10px] text-[#003049]/40 uppercase">Total harvest</p>
+          <p className="text-[10px] text-[#003049]/40 uppercase">{t('production.totalHarvest')}</p>
           <p className="text-[13px] font-bold text-[#003049] font-mono">{fmtNum(data.total_tons)} t</p>
         </div>
         <div>
-          <p className="text-[10px] text-[#003049]/40 uppercase">Area harvested</p>
+          <p className="text-[10px] text-[#003049]/40 uppercase">{t('production.areaHarvested')}</p>
           <p className="text-[13px] font-bold text-[#003049] font-mono">{fmtNum(data.total_area_ha)} ha</p>
         </div>
       </div>
@@ -209,7 +192,7 @@ function AgricultureCard({ data, campaign }) {
         ))}
       </div>
       <p className="text-[9px] text-[#003049]/30 mt-1.5">
-        Sources: MAGyP estimates 2024/25, IPAAT (sugar), INV (grapes).
+        {t('production.magypSources')}
       </p>
     </SectionCard>
   );
@@ -218,35 +201,36 @@ function AgricultureCard({ data, campaign }) {
 /* ── Regional specialties card (qualitative) ─────────────────────── */
 
 function SpecialtiesCard({ specialties }) {
+  const { t } = useTranslation();
   const fruits = specialties?.fruits || [];
   const vegetables = specialties?.vegetables || [];
   const industrial = specialties?.industrial || [];
   if (!fruits.length && !vegetables.length && !industrial.length) return null;
 
   return (
-    <SectionCard title="Regional specialties" subtitle="known production" color="#84cc16">
+    <SectionCard title={t('production.regionalSpecialties')} subtitle={t('production.knownProduction')} color="#84cc16">
       <div className="space-y-1">
         {fruits.length > 0 && (
           <div className="flex gap-2">
-            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">Fruits</span>
-            <span className="text-[11px] text-[#003049]/80 leading-tight">{fruits.join(', ')}</span>
+            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">{t('production.fruits')}</span>
+            <span className="text-[11px] text-[#003049]/80 leading-tight">{dataLabels(t, 'produce', fruits)}</span>
           </div>
         )}
         {vegetables.length > 0 && (
           <div className="flex gap-2">
-            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">Vegetables</span>
-            <span className="text-[11px] text-[#003049]/80 leading-tight">{vegetables.join(', ')}</span>
+            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">{t('production.vegetables')}</span>
+            <span className="text-[11px] text-[#003049]/80 leading-tight">{dataLabels(t, 'produce', vegetables)}</span>
           </div>
         )}
         {industrial.length > 0 && (
           <div className="flex gap-2">
-            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">Industrial</span>
-            <span className="text-[11px] text-[#003049]/80 leading-tight">{industrial.join(', ')}</span>
+            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">{t('production.industrial')}</span>
+            <span className="text-[11px] text-[#003049]/80 leading-tight">{dataLabels(t, 'produce', industrial)}</span>
           </div>
         )}
       </div>
       <p className="text-[9px] text-[#003049]/30 mt-1.5">
-        Sources: CNA 2018, sector reports. Qualitative — no tonnage available.
+        {t('production.cnaSources')}
       </p>
     </SectionCard>
   );
@@ -255,12 +239,13 @@ function SpecialtiesCard({ specialties }) {
 /* ── Motorcycle plants card (qualitative) ────────────────────────── */
 
 function MotorcyclesCard({ companies }) {
+  const { t } = useTranslation();
   if (!companies || companies.length === 0) return null;
   return (
-    <SectionCard title="Motorcycle plants" subtitle="2024" color="#f59e0b">
+    <SectionCard title={t('production.motorcyclePlants')} subtitle="2024" color="#f59e0b">
       <p className="text-[11px] text-[#003049]/70 leading-tight">{companies.join(', ')}</p>
       <p className="text-[9px] text-[#003049]/30 mt-1.5">
-        Source: CAFAM / press. ~12 plants nationally produce 491K motorcycles/year.
+        {t('production.motorcycleSource')}
       </p>
     </SectionCard>
   );
@@ -269,6 +254,7 @@ function MotorcyclesCard({ companies }) {
 /* ── Oil & Gas card ──────────────────────────────────────────────── */
 
 function OilGasCard({ data, year, national }) {
+  const { t } = useTranslation();
   const oilPct = national.oil_bbl_day > 0
     ? ((data.oil_bbl_day / national.oil_bbl_day) * 100).toFixed(1)
     : null;
@@ -277,27 +263,27 @@ function OilGasCard({ data, year, national }) {
     : null;
 
   return (
-    <SectionCard title="Oil & Gas Production" subtitle={year} color="#3b82f6">
+    <SectionCard title={t('production.oilGas')} subtitle={year} color="#3b82f6">
       <div className="space-y-1">
-        <StatChip label="Oil" value={fmtNum(Math.round(data.oil_bbl_day))} unit="bbl/day" color={OILGAS_OIL} />
+        <StatChip label={t('production.oil')} value={fmtNum(Math.round(data.oil_bbl_day))} unit={t('production.bblDay')} color={OILGAS_OIL} />
         {oilPct && (
-          <p className="text-[10px] text-[#003049]/35 ml-[14px]">{oilPct}% of national output</p>
+          <p className="text-[10px] text-[#003049]/35 ml-[14px]">{oilPct}% {t('production.ofNational')}</p>
         )}
         <StatChip
-          label="Gas"
+          label={t('production.gas')}
           value={data.gas_mm3_day.toFixed(1).replace('.', ',')}
           unit="MMm\u00B3/day"
           color={OILGAS_GAS}
         />
         {gasPct && (
-          <p className="text-[10px] text-[#003049]/35 ml-[14px]">{gasPct}% of national output</p>
+          <p className="text-[10px] text-[#003049]/35 ml-[14px]">{gasPct}% {t('production.ofNational')}</p>
         )}
-        <StatChip label="Wells" value={fmtNum(data.wells)} />
+        <StatChip label={t('production.wells')} value={fmtNum(data.wells)} />
       </div>
 
       {data.basins && data.basins.length > 1 && (
         <div className="mt-2 pt-1.5 border-t border-[#003049]/8">
-          <p className="text-[10px] text-[#003049]/40 uppercase mb-1">Basin breakdown</p>
+          <p className="text-[10px] text-[#003049]/40 uppercase mb-1">{t('production.basinBreakdown')}</p>
           {data.basins.map((b) => (
             <div key={b.basin} className="flex items-center justify-between text-[11px] text-[#003049]/60 py-[1px]">
               <span>{b.basin.charAt(0) + b.basin.slice(1).toLowerCase()}</span>
@@ -317,8 +303,9 @@ function OilGasCard({ data, year, national }) {
 const SPECIES_COLORS = { bovine: '#d97706', sheep: '#8b5cf6', pigs: '#ec4899', goats: '#06b6d4', horses: '#84cc16' };
 
 function LivestockCard({ species }) {
+  const { t } = useTranslation();
   return (
-    <SectionCard title="Livestock" subtitle="share of national stock" color="#d97706">
+    <SectionCard title={t('production.livestock')} subtitle={t('production.shareNational')} color="#d97706">
       <div className="space-y-2">
         {species.map(sp => {
           const color = SPECIES_COLORS[sp.id] || '#94a3b8';
@@ -328,12 +315,12 @@ function LivestockCard({ species }) {
               <div className="flex items-center justify-between mb-1">
                 <div className="flex items-center gap-1.5">
                   <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: color }} />
-                  <span className="text-[13px] font-semibold text-[#003049]">{sp.name_en}</span>
+                  <span className="text-[13px] font-semibold text-[#003049]">{t(`livestock.${sp.id}`, sp.name_en)}</span>
                   {sp.year < 2024 && <span className="text-[10px] text-[#003049]/40">({sp.year})</span>}
                 </div>
                 <span className="text-[12px] font-mono text-[#003049]">
                   {fmtNum(sp.data.heads)}
-                  <span className="text-[#003049]/40 ml-1">heads</span>
+                  <span className="text-[#003049]/40 ml-1">{t('production.headsUnit')}</span>
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -343,14 +330,14 @@ function LivestockCard({ species }) {
                 <span className="text-[11px] font-mono font-bold w-[44px] text-right" style={{ color }}>{sp.pct.toFixed(1)}%</span>
               </div>
               <p className="text-[9px] text-[#003049]/35 mt-0.5">
-                of {fmtNum(sp.total)} heads nationally
+                {t('production.ofNationally', { total: fmtNum(sp.total) })}
               </p>
             </div>
           );
         })}
       </div>
       <p className="text-[10px] text-[#003049]/30 mt-2 pt-1.5 border-t border-[#003049]/8">
-        Bars show province share of Argentina's national stock per species. Sources: MAGyP, SENASA.
+        {t('production.livestockDesc')}
       </p>
     </SectionCard>
   );
@@ -359,17 +346,18 @@ function LivestockCard({ species }) {
 /* ── Vehicles card ───────────────────────────────────────────────── */
 
 function VehicleCard({ plants, year, totalNational }) {
+  const { t } = useTranslation();
   const totalProv = plants.reduce((s, p) => s + (p.production || 0), 0);
 
   return (
-    <SectionCard title="Vehicle Manufacturing" subtitle={String(year)} color="#9333ea">
+    <SectionCard title={t('production.vehicleManufacturing')} subtitle={String(year)} color="#9333ea">
       <div className="flex gap-4 mb-2">
         <div>
-          <p className="text-[10px] text-[#003049]/40 uppercase">Province total</p>
+          <p className="text-[10px] text-[#003049]/40 uppercase">{t('production.provinceTotal')}</p>
           <p className="text-[13px] font-bold text-[#003049] font-mono">{fmtNum(totalProv)} units</p>
         </div>
         <div>
-          <p className="text-[10px] text-[#003049]/40 uppercase">Plants</p>
+          <p className="text-[10px] text-[#003049]/40 uppercase">{t('production.plants')}</p>
           <p className="text-[13px] font-bold text-[#003049] font-mono">{plants.length}</p>
         </div>
       </div>
