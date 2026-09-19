@@ -57,6 +57,29 @@ const legList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(vot
 const execByVote = Object.fromEntries(positions.positions.map(p => [p.vote_id, p.executive_position]));
 const listedVotes = Object.keys(execByVote);
 
+// Which chambers actually held each listed vote.  Derived from the roll-call
+// records rather than from executivePositions.json's `chamber` field, so the
+// scores can never drift from the data they are computed on.
+//
+// This matters: ley_glaciares was a Senate-only vote, but it used to be scored
+// against all 257 deputies, who therefore all showed up as absent for it.  That
+// alone put every deputy's rate_absent at >= 1/6 (16.7%) and pushed the average
+// deputy absence rate from ~3.5% to ~19.6%.
+const chambersByVote = {};
+for (const voteId of listedVotes) chambersByVote[voteId] = new Set();
+for (const leg of legList) {
+  const chamber = leg.c || '—';
+  for (const voteId of listedVotes) {
+    if (leg.v?.[voteId] !== undefined) chambersByVote[voteId].add(chamber);
+  }
+}
+for (const voteId of listedVotes) {
+  if (chambersByVote[voteId].size === 0) {
+    console.warn(`  ! listed vote with no roll-call records: ${voteId}`);
+  }
+}
+const voteAppliesTo = (voteId, chamber) => chambersByVote[voteId].has(chamber);
+
 // Compute bloc-majority position per (chamber, normBloc, vote) using >=60% of present bloc members.
 // Normalizing the bloc collapses "La Libertad Avanza" and "LA LIBERTAD AVANZA" into the same group.
 const blocMajority = {}; // key: `${chamber}|${normBloc}|${voteId}` -> "A"|"N"|"ABS"|null
@@ -66,6 +89,7 @@ for (const leg of legList) {
   for (const voteId of listedVotes) {
     const key = `${chamber}|${bloc}|${voteId}`;
     if (blocMajority[key] !== undefined) continue;
+    if (!voteAppliesTo(voteId, chamber)) { blocMajority[key] = null; continue; }
     const blocMembers = legList.filter(l => l.c === chamber && normalizeBloc(l.b) === bloc);
     const counts = {};
     let present = 0;
@@ -88,25 +112,40 @@ for (const leg of legList) {
 const perLegislator = {};
 const perProvinceAgg = {}; // province -> { execMatch, blocMatch, cast, absent, total }
 
+// The 24 jurisdictions, spelled as in public/argentina-provinces.geojson (NAME_1).
+// Every consumer of alignmentScores.json joins on these strings.
+const CANONICAL_PROVINCES = [
+  'Buenos Aires', 'Catamarca', 'Chaco', 'Chubut', 'Ciudad de Buenos Aires',
+  'Córdoba', 'Corrientes', 'Entre Ríos', 'Formosa', 'Jujuy', 'La Pampa',
+  'La Rioja', 'Mendoza', 'Misiones', 'Neuquén', 'Río Negro', 'Salta',
+  'San Juan', 'San Luis', 'Santa Cruz', 'Santa Fe', 'Santiago del Estero',
+  'Tierra del Fuego', 'Tucumán',
+];
+
+const foldProvince = (s) =>
+  String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+
+const CANONICAL_BY_FOLD = new Map(CANONICAL_PROVINCES.map(p => [foldProvince(p), p]));
+
+// The HCDN scraper emits Title Case ("Jujuy") and the Senado scraper emits
+// UPPERCASE with the long legal names ("JUJUY", "CIUDAD AUTÓNOMA DE BUENOS
+// AIRES", "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR").  Folding
+// on an accent-insensitive key collapses both into one canonical entry; before
+// this, 17 provinces ended up split across two keys so each province aggregate
+// covered only its deputies *or* only its senators.
 function normProvince(p) {
-  if (!p) return '—';
-  const s = p.trim();
-  // Map common variants to a canonical spelling
-  const lower = s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  const map = {
-    'c.a.b.a.': 'Ciudad de Buenos Aires',
-    'caba': 'Ciudad de Buenos Aires',
-    'ciudad de buenos aires': 'Ciudad de Buenos Aires',
-    'buenos aires': 'Buenos Aires',
-    'cordoba': 'Córdoba',
-    'entre rios': 'Entre Ríos',
-    'neuquen': 'Neuquén',
-    'rio negro': 'Río Negro',
-    'tucuman': 'Tucumán',
-    'santiago del estero': 'Santiago del Estero',
-    'tierra del fuego': 'Tierra del Fuego',
-  };
-  return map[lower] || s;
+  const folded = foldProvince(p);
+  if (!folded) return '—';
+  const exact = CANONICAL_BY_FOLD.get(folded);
+  if (exact) return exact;
+  if (folded === 'caba' || folded === 'c.a.b.a.' || folded.startsWith('ciudad autonoma de buenos aires')) {
+    return 'Ciudad de Buenos Aires';
+  }
+  // Long legal names such as "TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR".
+  const prefixed = CANONICAL_PROVINCES.find(c => folded.startsWith(foldProvince(c)));
+  if (prefixed) return prefixed;
+  console.warn(`  ! unmapped province: ${JSON.stringify(p)}`);
+  return String(p).trim();
 }
 
 for (let i = 0; i < legList.length; i++) {
@@ -119,6 +158,8 @@ for (let i = 0; i < legList.length; i++) {
   const breakdown = {};
 
   for (const voteId of listedVotes) {
+    // A vote the legislator's chamber never held is not an absence.
+    if (!voteAppliesTo(voteId, chamber)) { breakdown[voteId] = 'N/A'; continue; }
     const execPos = execByVote[voteId];
     const v = leg.v?.[voteId];
     total += 1;
@@ -142,8 +183,8 @@ for (let i = 0; i < legList.length; i++) {
     score_bloc: cast > 0 ? blocMatch / cast : null,
     rate_absent: total > 0 ? absent / total : null,
     sample_cast: cast,
-    listed_total: total,
-    breakdown,
+    listed_total: total,   // listed votes that this legislator's chamber held
+    breakdown,             // 'A'|'N'|'X' = cast, 'ABSENT' = missed, 'N/A' = other chamber
   };
 
   if (!perProvinceAgg[province]) perProvinceAgg[province] = { execMatch: 0, blocMatch: 0, cast: 0, absent: 0, total: 0 };
@@ -171,8 +212,14 @@ const out = {
     'score_executive = matches / votes_cast across curated executive-position list. ' +
     'score_bloc = matches with own-bloc majority (>=60%) / votes_cast. ' +
     'rate_absent = absences / listed_total. ' +
+    'Only votes actually held by the legislator\'s own chamber count towards the ' +
+    'denominators (see listed_votes_by_chamber); a vote the other chamber held is ' +
+    'recorded as N/A, not as an absence. ' +
     'Source positions: src/data/executivePositions.json',
   listed_votes: listedVotes,
+  listed_votes_by_chamber: Object.fromEntries(
+    listedVotes.map(v => [v, [...chambersByVote[v]].sort()]),
+  ),
   per_legislator: perLegislator,
   per_province: perProvince,
 };
