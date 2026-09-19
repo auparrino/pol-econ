@@ -344,6 +344,84 @@ No todo estaba roto. Lo siguiente pasó cada control:
 
 ---
 
+## 7b. Contraste contra fuentes oficiales (búsqueda web)
+
+El entorno bloquea el egreso a `indec.gob.ar`, `argentina.gob.ar` y al resto de
+los `.gob.ar`, tanto por `curl` como por fetch directo. Lo único disponible es
+búsqueda web, que devuelve síntesis de resultados y no las tablas fuente. Eso
+alcanza para **confirmar defectos**, no para **redactar reemplazos**: dos
+búsquedas devolvieron tablas "definitivas" distintas para las mismas
+provincias, y una presentó cantidad de viviendas como si fuera población. Por
+eso nada de lo de abajo se escribió en los datasets — se codificó como
+checklist en `npm run validate`.
+
+### Confirmado correcto
+
+- **Pobreza 38,1 % de personas, 31 aglomerados, 2.º semestre 2024.** Coincide
+  exactamente con lo que tiene el repo, y con el universo bien etiquetado.
+- **Estructura fiscal provincial.** El agregado del repo da 55,5 % de
+  transferencias nacionales sobre propios + transferencias, contra el "casi
+  60 %" que reportan los informes del sector; el grupo de mayor dependencia
+  (Formosa, Santiago del Estero, La Rioja, Chaco, Corrientes, todos por encima
+  del 84 %) coincide con las provincias que las fuentes ubican cerca del 90 %; y
+  CABA aparece como la más independiente en ambos. **La pestaña fiscal es
+  sólida en los números** — lo que estaba mal ahí era la presentación, ya
+  corregida.
+
+### Confirmado incorrecto
+
+- **46.044.703 es el total provisional del Censo 2022, no el definitivo.** El
+  definitivo es **45.892.285**, y cierra contra la propia apertura por sexo de
+  INDEC (22.186.791 + 23.705.494). El validador comparaba contra el provisional
+  y lo etiquetaba como definitivo; corregido.
+- **Seis provincias verificadas contra el dato definitivo, y las seis
+  difieren:**
+
+  | provincia | governors.js | Censo 2022 definitivo | error |
+  |---|---|---|---|
+  | Santa Cruz | 365.698 | 337.226 | +8,4 % |
+  | Santiago del Estero | 978.313 | 1.060.906 | −7,8 % |
+  | Corrientes | 1.120.801 | 1.212.696 | −7,6 % |
+  | Neuquén | 664.604 | 710.814 | −6,5 % |
+  | San Luis | 508.328 | 542.069 | −6,2 % |
+  | San Juan | 781.217 | 822.853 | −5,1 % |
+
+  Es exactamente el patrón que había predicho el cruce interno contra el cuadro
+  de población de 14 años y más: con 337.226, el cociente de Santa Cruz pasa de
+  71,0 % a 77,0 % y entra en la banda del resto. **No las parcheé una por una**
+  — dejar seis valores definitivos entre dieciocho provisionales deja un campo
+  con dos vintages mezclados que nada aguas abajo puede distinguir. Van como
+  checklist para una reimportación única.
+
+- **Desocupación EPH en provincias de un solo aglomerado.** Cuando una
+  provincia tiene un único aglomerado EPH el mapeo es 1:1 y el valor tiene que
+  ser idéntico al publicado. Dos de tres no lo son:
+
+  | provincia | repo | aglomerado (Q3-2025 oficial) | dif |
+  |---|---|---|---|
+  | Chaco | 7,4 % | Gran Resistencia **9,7 %** | −2,3 pp |
+  | Ciudad de Buenos Aires | 3,9 % | CABA **4,4 %** | −0,5 pp |
+  | Santa Cruz | 10,7 % | Río Gallegos 10,8 % | −0,1 pp ✓ |
+
+  Gran Resistencia 9,7 % está corroborado en dos búsquedas independientes (es
+  el segundo más alto del país después de Río Gallegos). Con 7,4 % el dashboard
+  muestra a Chaco por debajo del promedio y mal ubicado en el ranking.
+
+- **Hay dos nacionales de desocupación para el mismo trimestre.** INDEC publica
+  **6,3 %** para total urbano y **6,9 %** para los 31 aglomerados en Q3-2025.
+  `EPH_UNEMPLOYMENT_NATIONAL` usa el primero, mientras que los valores
+  provinciales salen de la serie de 31 aglomerados: el delta "+1,4 vs nacional"
+  que muestra cada provincia compara universos distintos. No cambié la
+  constante porque las fuentes secundarias además hacen circular un tercer
+  número (6,6 %) y no puedo determinar cuál serie alimentó los valores
+  provinciales sin la tabla de INDEC. Queda anotado en el validador.
+
+### Sigue sin poder verificarse
+
+Los **niveles** del APNF (los montos, no las proporciones), las cifras de BIEP
+y DNAP, y los totales de SIPA por provincia. Todos viven en xlsx que hay que
+descargar, y la búsqueda web no los expone.
+
 ## 8. Red de regresión: `npm run validate`
 
 `scripts/validate-data.mjs` codifica **87 invariantes** sobre los datasets.
@@ -364,4 +442,4 @@ Los defectos confirmados pero no corregibles desde este repositorio se reportan
 como `OPEN` y no hacen fallar la corrida. La entrada correspondiente en
 `KNOWN_OPEN` debe borrarse en el mismo commit que arregle el dato.
 
-Estado actual: **85/87 OK · 2 abiertos · 1 warning** (datasets huérfanos).
+Estado actual: **95/100 OK · 5 abiertos · 1 warning** (datasets huérfanos).

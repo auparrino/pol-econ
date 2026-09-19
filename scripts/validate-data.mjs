@@ -58,6 +58,14 @@ const KNOWN_OPEN = new Map([
     'needs a re-import from INDEC Cuadro P1 before this can pass'],
   ['governors — population is consistent with the Censo 2022 14+ table',
     'same root cause as above'],
+  ['sociodemographic — single-agglomerate provinces match their published EPH rate',
+    'Chaco and CABA disagree with the published Q3-2025 rate for their only ' +
+    'agglomerate; needs the INDEC EPH table to settle whether the values are ' +
+    'from another quarter or were mis-transcribed'],
+  ['governors — populations match the confirmed Censo 2022 definitive values',
+    'six provinces verified against the definitive release and all six disagree; ' +
+    'substituting them one by one would leave the field a mix of vintages, so ' +
+    'they are listed here as the checklist for a single coherent re-import'],
   ['sipa — public employment covers at least the DNAP provincial posts',
     'Santa Cruz is the one province where SIPA-public falls below the provincial ' +
     'headcount alone (0.67x); every other province sits at 1.1-2.0x. Needs a ' +
@@ -546,6 +554,41 @@ group('i18n');
   console.log(`  note  ${used.length}/${Object.keys(en).length} translation keys are referenced in components`);
 }
 
+/* ── 7c. EPH provincial rates ───────────────────────────────────── */
+
+group('EPH');
+{
+  // sociodemographic.js maps each province to the rate of its EPH agglomerate(s),
+  // with a population-weighted average where a province has more than one. For a
+  // province with a single agglomerate the mapping is 1:1, so the value must
+  // equal the published agglomerate rate exactly — no weighting can move it.
+  //
+  // Rates below are INDEC's Q3-2025 EPH figures, each corroborated from more
+  // than one source. Like the Censo checklist, this exists to pin down which
+  // cells disagree, not to authorise patching them from secondary sources.
+  const SINGLE_AGGLOMERATE_Q3_2025 = {
+    'Ciudad de Buenos Aires': { agglomerate: 'Ciudad de Buenos Aires', rate: 4.4 },
+    'Chaco':                  { agglomerate: 'Gran Resistencia',       rate: 9.7 },
+    'Santa Cruz':             { agglomerate: 'Río Gallegos',           rate: 10.8 },
+  };
+  const src = readFileSync(path.join(ROOT, 'src/data/sociodemographic.js'), 'utf8');
+  const rates = Object.fromEntries([...src.matchAll(
+    /provincia:\s*'([^']+)'[\s\S]*?desempleo:\s*([\d.]+)/g)].map(m => [m[1], Number(m[2])]));
+  const off = Object.entries(SINGLE_AGGLOMERATE_Q3_2025)
+    .filter(([prov, { rate }]) => Math.abs(rates[prov] - rate) > 0.15)
+    .map(([prov, { agglomerate, rate }]) =>
+      `${prov}: ${rates[prov]}% vs ${agglomerate} ${rate}% (${(rates[prov] - rate).toFixed(1)}pp)`);
+  check('sociodemographic — single-agglomerate provinces match their published EPH rate',
+    off.length === 0, off.join('; '));
+
+  // INDEC publishes two national unemployment figures for the same quarter:
+  // 6.3% for total urbano and 6.9% for the 31 agglomerates. The provincial
+  // values here come from the 31-agglomerate series, so the constant the UI
+  // compares them against decides whether the deltas are like-for-like.
+  console.log('  note  EPH_UNEMPLOYMENT_NATIONAL is the total-urbano figure (6.3); the ' +
+    '31-agglomerate figure for the same quarter is 6.9');
+}
+
 /* ── 8. population sanity ───────────────────────────────────────── */
 
 group('population');
@@ -559,10 +602,40 @@ group('population');
     /["']?provincia["']?:\s*["']([^"']+)["'][\s\S]*?["']?poblacion_censo_2022["']?:\s*(\d+)/g)]
     .map(m => [m[1], Number(m[2])]));
   const total = sum(Object.values(pops));
-  const CENSO_2022_TOTAL = 46_044_703;  // INDEC, resultados definitivos
+  // 46,044,703 is the PROVISIONAL total INDEC released in January 2023, which is
+  // what this check used to compare against. The definitive Censo 2022 total is
+  // 45,892,285 — it checks out against INDEC's own sex breakdown for the same
+  // release (22,186,791 + 23,705,494 = 45,892,285).
+  const CENSO_2022_TOTAL = 45_892_285;      // resultados definitivos
+  const CENSO_2022_PROVISIONAL = 46_044_703;
   check('governors — provincial populations sum to the Censo 2022 national total',
     near(total, CENSO_2022_TOTAL, CENSO_2022_TOTAL * 0.002),
-    `sum ${fmt(total)} vs ${fmt(CENSO_2022_TOTAL)} (${((total / CENSO_2022_TOTAL - 1) * 100).toFixed(2)}%)`);
+    `sum ${fmt(total)} vs ${fmt(CENSO_2022_TOTAL)} definitive ` +
+    `(${((total / CENSO_2022_TOTAL - 1) * 100).toFixed(2)}%), ` +
+    `vs ${fmt(CENSO_2022_PROVISIONAL)} provisional ` +
+    `(${((total / CENSO_2022_PROVISIONAL - 1) * 100).toFixed(2)}%)`);
+
+  // Per-province values confirmed against INDEC's definitive Censo 2022 release.
+  // Only provinces verified from more than one independent source are listed —
+  // this is deliberately partial, and exists so the re-import has a checklist
+  // rather than so the field can be patched cell by cell. Mixing definitive and
+  // provisional values inside one field would be worse than the current state,
+  // because nothing downstream could tell which vintage a province carries.
+  const CENSO_2022_CONFIRMED = {
+    'Santa Cruz': 337_226,
+    'Corrientes': 1_212_696,
+    'Santiago del Estero': 1_060_906,
+    'Neuquén': 710_814,
+    'San Luis': 542_069,
+    'San Juan': 822_853,
+  };
+  const offBy = Object.entries(CENSO_2022_CONFIRMED)
+    .filter(([prov, official]) => pops[prov] !== official)
+    .map(([prov, official]) =>
+      `${prov}: ${fmt(pops[prov])} vs ${fmt(official)} ` +
+      `(${((pops[prov] / official - 1) * 100).toFixed(1)}%)`);
+  check('governors — populations match the confirmed Censo 2022 definitive values',
+    offBy.length === 0, offBy.join('; '));
 
   const c = read('src/data/censo2022_empleo_provincial.json');
   const outliers = c.provinces
