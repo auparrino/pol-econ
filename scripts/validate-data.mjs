@@ -849,6 +849,69 @@ group('external references');
     `(campaign field: "${agri.campaign}")`);
 }
 
+/* ── 7h. provenance ─────────────────────────────────────────────── */
+
+group('provenance');
+{
+  // Every shipped dataset declares one `_meta` block: what the data measures
+  // (`period`), when it was fetched (`retrieved`), and which entry in sources.js
+  // it came from. Before this there were 11 different vintage conventions across
+  // 26 files and six files with none, and several conflated the build date with
+  // the measurement date — cammesa-por-provincia.json announced 2026-04-07 for
+  // data measured in February 2020.
+  const srcText = readFileSync(path.join(ROOT, 'src/data/sources.js'), 'utf8');
+  const sourceKeys = new Set([...srcText.matchAll(/^\s{2}([a-zA-Z][a-zA-Z0-9]*):\s*\{/gm)].map(m => m[1]));
+
+  const files = [];
+  const walk = (dir, prefix = '') => {
+    for (const e of readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) walk(full, `${prefix}${e.name}/`);
+      else if (e.name.endsWith('.json') && !e.name.endsWith('.meta.json')) files.push(prefix + e.name);
+    }
+  };
+  walk(path.join(ROOT, 'src/data'));
+
+  const missing = [], badSource = [], badPeriod = [], stale = [];
+  // A period is a year, a month, a date, or a range of those joined by "/".
+  const PERIOD = /^\d{4}(-\d{2}(-\d{2})?)?(\/\d{2,4}(-\d{2})?)?$/;
+  const endOf = (period) => {
+    const last = String(period).split('/').pop();
+    return last.length <= 2 ? `${String(period).slice(0, 2)}${last}` : last;
+  };
+
+  for (const rel of files) {
+    const sidecar = path.join(ROOT, 'src/data', rel.replace(/\.json$/, '.meta.json'));
+    const meta = existsSync(sidecar)
+      ? JSON.parse(readFileSync(sidecar, 'utf8'))
+      : read(`src/data/${rel}`)?._meta;
+    if (!meta) { missing.push(rel); continue; }
+    if (!sourceKeys.has(meta.source)) badSource.push(`${rel} → ${meta.source}`);
+    if (!PERIOD.test(meta.period)) badPeriod.push(`${rel} → ${meta.period}`);
+    else if (meta.retrieved && endOf(meta.period).slice(0, 4) > meta.retrieved.slice(0, 4)) {
+      stale.push(`${rel}: period ${meta.period} is after retrieved ${meta.retrieved}`);
+    }
+  }
+  check('every dataset declares _meta', missing.length === 0, missing.join(', '));
+  check('_meta.source resolves to an entry in sources.js', badSource.length === 0, badSource.join('; '));
+  check('_meta.period is a parseable period', badPeriod.length === 0, badPeriod.join('; '));
+  check('_meta.period never post-dates _meta.retrieved', stale.length === 0, stale.join('; '));
+
+  // Age is now computable, which is the entire point of the block.
+  const thisYear = new Date().getUTCFullYear();
+  const ages = files.map(rel => {
+    const sidecar = path.join(ROOT, 'src/data', rel.replace(/\.json$/, '.meta.json'));
+    const meta = existsSync(sidecar)
+      ? JSON.parse(readFileSync(sidecar, 'utf8'))
+      : read(`src/data/${rel}`)?._meta;
+    return { rel, years: thisYear - Number(endOf(meta?.period || '').slice(0, 4) || thisYear) };
+  }).filter(a => a.years >= 3).sort((a, b) => b.years - a.years);
+  if (ages.length) {
+    console.log(`  note  ${ages.length} dataset(s) measure something 3+ years old: ` +
+      ages.slice(0, 6).map(a => `${a.rel} (${a.years}y)`).join(', '));
+  }
+}
+
 /* ── 8. population sanity ───────────────────────────────────────── */
 
 group('population');

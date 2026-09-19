@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "period": "2023-11",
+    "retrieved": "2026-04-07",
+    "source": "sipaDeptoPubPriv",
+    "note": "Último mes publicado antes de discontinuarse el dataset."
+  },
   "source": "CEP-XXI / SIPA-AFIP",
   "sourceUrl": "https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-por-departamento-partido-y-sector-de-actividad",
   "vintage": "2023-11",
@@ -69,7 +75,7 @@
       "private": 88161,
       "public": 116669,
       "total": 204830,
-      "publicPct": 57.0,
+      "publicPct": 57,
       "cajaPropia": true
     },
     {

@@ -1,4 +1,9 @@
 {
+  "_meta": {
+    "period": "2023-06",
+    "retrieved": "2026-04-07",
+    "source": "biep"
+  },
   "source": "INAP — \"Mitos del empleo público\" (8 jun 2023) · BIEP / Sec. Gestión y Empleo Público",
   "sourceUrl": "https://www.argentina.gob.ar/jefatura/gestion-y-empleo-publico/empleo-publico/biep",
   "vintage": "mid-2023",
@@ -9,7 +14,7 @@
       "key": "national",
       "label": "Nacional",
       "value": 711000,
-      "pct": 21.0,
+      "pct": 21,
       "detail": [
         {
           "label": "Adm. Pública Nacional civil",
@@ -29,7 +34,7 @@
       "key": "provincial",
       "label": "Provincial",
       "value": 2237900,
-      "pct": 66.0,
+      "pct": 66,
       "detail": [
         {
           "label": "AC + Organismos Descentralizados (DNAP, 24 provincias)",
@@ -41,7 +46,7 @@
       "key": "municipal",
       "label": "Municipal",
       "value": 441000,
-      "pct": 13.0,
+      "pct": 13,
       "detail": [
         {
           "label": "Empleados municipales (todos los municipios)",

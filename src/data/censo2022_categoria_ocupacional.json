@@ -1,4 +1,9 @@
 {
+  "_meta": {
+    "period": "2022-05-18",
+    "retrieved": "2026-04-07",
+    "source": "census2022"
+  },
   "source": "INDEC — Censo Nacional de Población, Hogares y Viviendas 2022",
   "sourceUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165",
   "datasetUrl": "https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_caracteristicas_economicas.pdf",
@@ -69,8 +74,8 @@
       "servicioDomestico": 31013,
       "ignorado": 62405,
       "shares": {
-        "patron": 4.0,
-        "empleadaObrera": 57.0,
+        "patron": 4,
+        "empleadaObrera": 57,
         "cuentaPropia": 28.7,
         "trabajadorFamiliar": 4.8,
         "servicioDomestico": 1.8,
@@ -88,8 +93,8 @@
       "ignorado": 62313,
       "shares": {
         "patron": 7.9,
-        "empleadaObrera": 51.0,
-        "cuentaPropia": 29.0,
+        "empleadaObrera": 51,
+        "cuentaPropia": 29,
         "trabajadorFamiliar": 5.6,
         "servicioDomestico": 2.8,
         "ignorado": 3.7
@@ -108,7 +113,7 @@
         "patron": 6.7,
         "empleadaObrera": 52.6,
         "cuentaPropia": 30.4,
-        "trabajadorFamiliar": 4.0,
+        "trabajadorFamiliar": 4,
         "servicioDomestico": 3.1,
         "ignorado": 3.2
       }
@@ -143,7 +148,7 @@
       "shares": {
         "patron": 8.5,
         "empleadaObrera": 49.4,
-        "cuentaPropia": 30.0,
+        "cuentaPropia": 30,
         "trabajadorFamiliar": 4.5,
         "servicioDomestico": 3.3,
         "ignorado": 4.4
@@ -182,7 +187,7 @@
         "cuentaPropia": 32.4,
         "trabajadorFamiliar": 4.9,
         "servicioDomestico": 4.1,
-        "ignorado": 5.0
+        "ignorado": 5
       }
     },
     {
@@ -217,7 +222,7 @@
         "empleadaObrera": 47.7,
         "cuentaPropia": 31.1,
         "trabajadorFamiliar": 4.7,
-        "servicioDomestico": 4.0,
+        "servicioDomestico": 4,
         "ignorado": 4.4
       }
     },
@@ -249,7 +254,7 @@
       "servicioDomestico": 13022,
       "ignorado": 16575,
       "shares": {
-        "patron": 6.0,
+        "patron": 6,
         "empleadaObrera": 54.5,
         "cuentaPropia": 28.8,
         "trabajadorFamiliar": 2.5,
@@ -304,9 +309,9 @@
       "ignorado": 13851,
       "shares": {
         "patron": 6.9,
-        "empleadaObrera": 52.0,
+        "empleadaObrera": 52,
         "cuentaPropia": 29.7,
-        "trabajadorFamiliar": 4.0,
+        "trabajadorFamiliar": 4,
         "servicioDomestico": 3.4,
         "ignorado": 4.1
       }
@@ -325,8 +330,8 @@
         "empleadaObrera": 55.7,
         "cuentaPropia": 26.6,
         "trabajadorFamiliar": 4.4,
-        "servicioDomestico": 3.0,
-        "ignorado": 4.0
+        "servicioDomestico": 3,
+        "ignorado": 4
       }
     },
     {
@@ -357,7 +362,7 @@
       "servicioDomestico": 9013,
       "ignorado": 13688,
       "shares": {
-        "patron": 9.0,
+        "patron": 9,
         "empleadaObrera": 41.2,
         "cuentaPropia": 36.5,
         "trabajadorFamiliar": 3.9,
@@ -375,10 +380,10 @@
       "servicioDomestico": 5297,
       "ignorado": 7520,
       "shares": {
-        "patron": 7.0,
+        "patron": 7,
         "empleadaObrera": 56.7,
         "cuentaPropia": 26.7,
-        "trabajadorFamiliar": 3.0,
+        "trabajadorFamiliar": 3,
         "servicioDomestico": 2.7,
         "ignorado": 3.8
       }
@@ -432,7 +437,7 @@
         "patron": 5.4,
         "empleadaObrera": 64.7,
         "cuentaPropia": 18.9,
-        "trabajadorFamiliar": 4.0,
+        "trabajadorFamiliar": 4,
         "servicioDomestico": 2.7,
         "ignorado": 4.3
       }

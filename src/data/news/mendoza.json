@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "period": "2026-04-01",
+    "retrieved": "2026-04-01",
+    "source": "provincialNews",
+    "note": "Snapshot del scraper de RSS; no es un feed en vivo."
+  },
   "province": "Mendoza",
   "slug": "mendoza",
   "updated": "2026-04-01T20:36:52.258Z",

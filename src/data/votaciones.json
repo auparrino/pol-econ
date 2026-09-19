@@ -4476,5 +4476,11 @@
       "regimen_penal_juv": "A",
       "modernizacion_laboral_dip": "A"
     }
+  },
+  "_meta": {
+    "period": "2025-08/2026-02",
+    "retrieved": "2026-04-07",
+    "source": "congresoSenado",
+    "note": "Actas nominales scrapeadas de HCDN y Senado."
   }
 }

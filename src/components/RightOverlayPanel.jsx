@@ -10,6 +10,7 @@ import refineriasData from '../data/energy/refinerias.json';
 import cammesaRegions from '../data/energy/cammesa-por-region.json';
 import cammesaProvData from '../data/energy/cammesa-por-provincia.json';
 import { PROV_TO_REGIONS } from '../data/energy/powerConstants';
+import DataAge from './shared/DataAge';
 
 const OverlayPanel = lazy(() => import('./panels/OverlayPanel'));
 
@@ -522,11 +523,18 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
       }}
     >
       <CardHeader
-        id="centrales" label="Power Plants" icon="⚡" color="#A855F7"
+        label="Power Plants" icon="⚡" color="#A855F7"
         count={headerCount}
         countLabel={headerLabel}
         active={active} onToggle={onToggle}
       />
+      {/* The provincial breakdown is CAMMESA's February 2020 registry while the
+          national headline is their end-2024 total. Six years apart, same card. */}
+      {selectedProvince && (
+        <div className="mb-1.5">
+          <DataAge meta={cammesaProvData._meta} size={9} />
+        </div>
+      )}
       {!selectedProvince && (
         <>
           <MiniSection title="By fuel (GW installed)">

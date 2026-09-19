@@ -3,25 +3,11 @@ import {
   AreaChart, Area, CartesianGrid,
 } from 'recharts';
 import dnapFiscal from '../../data/dnap_fiscal.json';
+import DataAge from './DataAge';
 
-function normKey(s) {
-  return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
-}
+import { findByProvince } from '../../utils/provinces';
 
-function lookupProvince(provinceName) {
-  const target = normKey(provinceName);
-  const isCABA = target.includes('ciudad') || target === 'caba';
-  for (const p of dnapFiscal.provinces) {
-    const k = normKey(p.province);
-    if (isCABA) {
-      if (k.includes('ciudad') || k === 'caba') return p;
-      continue;
-    }
-    if (k.includes('ciudad')) continue;
-    if (k === target || k.includes(target) || target.includes(k)) return p;
-  }
-  return null;
-}
+const lookupProvince = (provinceName) => findByProvince(dnapFiscal.provinces, provinceName);
 
 function CompositionTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null;
@@ -111,8 +97,9 @@ export function FiscalTriptych({ provinceName }) {
 
       {compositionData.length >= 2 && (
         <div className="mt-3">
-          <div className="text-[9px] uppercase tracking-wider text-[#003049]/50 mb-0.5">
-            Revenue composition — {compositionData[0].year}–{compositionData[compositionData.length - 1].year}
+          <div className="text-[9px] uppercase tracking-wider text-[#003049]/50 mb-0.5 flex items-center gap-1.5">
+            <span>Revenue composition — {compositionData[0].year}–{compositionData[compositionData.length - 1].year}</span>
+            <DataAge meta={dnapFiscal._meta} size={9} />
           </div>
           <div style={{ width: '100%', height: 130 }}>
             <ResponsiveContainer minWidth={0} minHeight={0}>

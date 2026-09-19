@@ -10,20 +10,14 @@ import { CustomTooltip } from './ChartTooltip';
 import { fmtNum, fmtK } from '../../utils/formatNumber';
 import { translateSector } from '../../utils/sectorTranslations';
 import SourceInfo from '../shared/SourceInfo';
+import DataAge from '../shared/DataAge';
 import sipaPubPriv from '../../data/sipa_pub_priv.json';
 import dnapEmpleo from '../../data/dnap_empleo_provincial.json';
 import { sociodemographic, EPH_UNEMPLOYMENT_NATIONAL, EPH_VINTAGE_SHORT } from '../../data/sociodemographic';
 
-const normalize = (s) =>
-  (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+import { fold as normalize, findByProvince } from '../../utils/provinces';
 
-function matchProvince(list, name) {
-  if (!name) return null;
-  const t = normalize(name);
-  return list.find(p => normalize(p.province) === t) ||
-         list.find(p => normalize(p.province).includes(t) || t.includes(normalize(p.province))) ||
-         null;
-}
+const matchProvince = (list, name) => findByProvince(list, name, 'province');
 
 /* ── Header strip: unemployment + rank · 1 line ───────────────────── */
 
@@ -83,9 +77,10 @@ function PublicCompositeBlock({ provinceName, t }) {
         <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider inline-flex items-center gap-1">
           {t('employment.formalSplitTitle')}
           <SourceInfo src={['sipaDeptoPubPriv']} size={10} />
+          <DataAge meta={sipaPubPriv._meta} size={9} />
         </p>
         <span className="text-[10px] font-mono text-[#003049]/50">
-          #{pubRank}/{ranked.length} pub · SIPA {sipaPubPriv.vintage} · {t('employment.byResidence')}
+          #{pubRank}/{ranked.length} pub · {t('employment.byResidence')}
         </span>
       </div>
 
@@ -133,7 +128,7 @@ function PublicCompositeBlock({ provinceName, t }) {
               {t('employment.provincialCabinet')}
               <SourceInfo src={['dnapEmpleoProvincial']} size={9} />
             </span>
-            <span className="text-[9px] font-mono text-[#003049]/45">DNAP {dnapEmpleo.year}</span>
+            <DataAge meta={dnapEmpleo._meta} size={9} />
           </div>
 
           <div className="grid grid-cols-2 gap-2 text-[11px]">

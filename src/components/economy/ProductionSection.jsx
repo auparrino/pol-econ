@@ -7,21 +7,7 @@ import vehicleData from '../../data/vehicle_production.json';
 
 /* ── helpers ─────────────────────────────────────────────────────── */
 
-/** Normalize string for accent-insensitive matching */
-const norm = (s) =>
-  (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
-function findByProvince(list, provinceName) {
-  if (!provinceName || !list) return null;
-  const n = norm(provinceName);
-  const isCABA = n.includes('ciudad') || n === 'caba';
-  return list.find((p) => {
-    const d = norm(p.province);
-    if (isCABA) return d.includes('ciudad') || d === 'caba';
-    if (d.includes('ciudad') || d === 'caba') return false;
-    return d === n || d.includes(n) || n.includes(d);
-  });
-}
+import { findByProvince, sameProvince } from '../../utils/provinces';
 
 /* ── section colors ──────────────────────────────────────────────── */
 
@@ -107,20 +93,12 @@ export default function ProductionSection({ provinceName }) {
   }, [provinceName]);
   const plants = useMemo(() => {
     if (!provinceName) return [];
-    const n = norm(provinceName);
-    return vehicleData.plants.filter((p) => {
-      const d = norm(p.province);
-      return d === n || d.includes(n) || n.includes(d);
-    });
+    return vehicleData.plants.filter(p => sameProvince(p.province, provinceName));
   }, [provinceName]);
 
   const motoCompanies = useMemo(() => {
     if (!provinceName || !vehicleData.motorcycles?.plants_by_province) return [];
-    const n = norm(provinceName);
-    const match = vehicleData.motorcycles.plants_by_province.find(p => {
-      const d = norm(p.province);
-      return d === n || d.includes(n) || n.includes(d);
-    });
+    const match = vehicleData.motorcycles.plants_by_province.find(p => sameProvince(p.province, provinceName));
     return match?.companies || [];
   }, [provinceName]);
 

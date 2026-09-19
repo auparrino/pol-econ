@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "period": "2024-12",
+    "retrieved": "2026-04-07",
+    "source": "dnapEmpleoProvincial",
+    "note": "Cargos ocupados al mes de diciembre."
+  },
   "source": "DNAP — Ocupación y gastos salariales provinciales",
   "sourceUrl": "https://www.argentina.gob.ar/economia/sechacienda/coordinacion-fiscal-provincial/ejecucion-presupuestaria-provincial/ocupacion-y-salarios",
   "fileUrl": "https://www.argentina.gob.ar/sites/default/files/ejec-presupuestaria-ocupacion_salarios_1.xlsx",
@@ -337,7 +343,7 @@
       {
         "year": 2012,
         "employees": 2003198,
-        "ratio": 48.0
+        "ratio": 48
       },
       {
         "year": 2013,
@@ -597,7 +603,7 @@
         {
           "year": 1989,
           "employees": 282480,
-          "ratio": 23.0
+          "ratio": 23
         },
         {
           "year": 1990,
@@ -919,7 +925,7 @@
         {
           "year": 2015,
           "employees": 132496,
-          "ratio": 39.0
+          "ratio": 39
         },
         {
           "year": 2016,
@@ -1031,7 +1037,7 @@
         {
           "year": 1999,
           "employees": 60347,
-          "ratio": 38.0
+          "ratio": 38
         },
         {
           "year": 2000,
@@ -1724,7 +1730,7 @@
         {
           "year": 1987,
           "employees": 45676,
-          "ratio": 42.0
+          "ratio": 42
         },
         {
           "year": 1988,
@@ -2123,7 +2129,7 @@
         {
           "year": 1990,
           "employees": 41855,
-          "ratio": 41.0
+          "ratio": 41
         },
         {
           "year": 1991,
@@ -3831,7 +3837,7 @@
         {
           "year": 1988,
           "employees": 36499,
-          "ratio": 75.0
+          "ratio": 75
         },
         {
           "year": 1989,

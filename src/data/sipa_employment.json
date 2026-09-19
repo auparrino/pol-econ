@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "period": "2023-11",
+    "retrieved": "2023-11-01",
+    "source": "cepxxiSipa",
+    "note": "Último mes publicado antes de discontinuarse el dataset."
+  },
   "lastUpdated": "2023-11-01",
   "source": "CEP XXI / SIPA + AFIP — 5 categorías de trabajo registrado",
   "categoriesAvailable": [
@@ -8,7 +14,8 @@
   "publicSource": "derived",
   "limitations": [
     "Este dataset conserva solo el campo `private`; el split público/privado está en sipa_pub_priv.json, que también mantiene la lista canónica de provincias con caja previsional propia (la lista que este campo tenía antes incluía CABA y omitía La Pampa, y contradecía a ese archivo).",
-    "No incluye trabajo informal (EPH estima ~30-40% del empleo urbano).", "Medido por UBICACIÓN DEL ESTABLECIMIENTO, no por residencia del trabajador. No es comparable 1:1 con sipa_pub_priv.json, que usa residencia: para el mismo mes, CABA marca 1.593.973 privados acá y 828.193 allá (+92%), y Buenos Aires 2.111.440 contra 2.773.415 (-24%). A nivel nacional los dos coinciden (0,5%): la diferencia es conmutación entre jurisdicciones."
+    "No incluye trabajo informal (EPH estima ~30-40% del empleo urbano).",
+    "Medido por UBICACIÓN DEL ESTABLECIMIENTO, no por residencia del trabajador. No es comparable 1:1 con sipa_pub_priv.json, que usa residencia: para el mismo mes, CABA marca 1.593.973 privados acá y 828.193 allá (+92%), y Buenos Aires 2.111.440 contra 2.773.415 (-24%). A nivel nacional los dos coinciden (0,5%): la diferencia es conmutación entre jurisdicciones."
   ],
   "provinces": [
     {
@@ -500,7 +507,7 @@
           "name": "Construcción de edificios y partes",
           "family": "Construction",
           "employees": 3238,
-          "share_pct": 4.0
+          "share_pct": 4
         },
         {
           "clae2": "86",
@@ -591,7 +598,7 @@
           "name": "Juegos de azar y apuestas",
           "family": "Culture",
           "employees": 810,
-          "share_pct": 1.0
+          "share_pct": 1
         }
       ],
       "timeSeries": [
@@ -1238,7 +1245,7 @@
           "name": "Servicios de alojamiento",
           "family": "Hospitality",
           "employees": 822,
-          "share_pct": 1.0
+          "share_pct": 1
         },
         {
           "clae2": "96",
@@ -1379,7 +1386,7 @@
           "name": "Actividades administrativas y de apoyo a oficin...",
           "family": "Admin. Services",
           "employees": 22020,
-          "share_pct": 4.0
+          "share_pct": 4
         },
         {
           "clae2": "56",
@@ -1984,7 +1991,7 @@
           "name": "Agricultura, ganadería, caza y servicios relaci...",
           "family": "Primary",
           "employees": 8339,
-          "share_pct": 13.0
+          "share_pct": 13
         },
         {
           "clae2": "10",
@@ -2680,7 +2687,7 @@
           "name": "Elaboración de productos alimenticios",
           "family": "Industry",
           "employees": 12875,
-          "share_pct": 5.0
+          "share_pct": 5
         },
         {
           "clae2": "82",
@@ -4431,7 +4438,7 @@
           "name": "Servicios de asociaciones",
           "family": "Other Services",
           "employees": 21945,
-          "share_pct": 4.0
+          "share_pct": 4
         },
         {
           "clae2": "41",
@@ -4614,7 +4621,7 @@
           "name": "Agricultura, ganadería, caza y servicios relaci...",
           "family": "Primary",
           "employees": 4530,
-          "share_pct": 8.0
+          "share_pct": 8
         },
         {
           "clae2": "42",
@@ -5155,7 +5162,7 @@
           "name": "Elaboración de productos textiles",
           "family": "Industry",
           "employees": 1726,
-          "share_pct": 1.0
+          "share_pct": 1
         },
         {
           "clae2": "43",

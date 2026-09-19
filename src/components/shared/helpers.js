@@ -1,40 +1,13 @@
-// Shared utility functions used across panels
+// Shared utility functions used across panels.
+// Province matching lives in utils/provinces.js — the one implementation.
 
-export function normProv(s) {
-  return (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
-}
+import { fold, sameProvince, findByProvince } from '../../utils/provinces';
 
-export function matchProv(featureProv, sel) {
-  if (!sel || !featureProv) return false;
-  const fp = normProv(featureProv);
-  const sp = normProv(sel);
-  return fp === sp || fp.includes(sp) || sp.includes(fp);
-}
-
-// Buenos Aires province and CABA are two different jurisdictions whose names
-// contain one another, so they get a dedicated bucket instead of relying on
-// substring matching.
-function provinceKey(name) {
-  const n = normProv(name);
-  if (!n) return '';
-  if (n === 'caba' || n === 'c.a.b.a.' || n.includes('ciudad')) return 'caba';
-  return n;
-}
+export const normProv = fold;
+export const matchProv = sameProvince;
 
 export function matchProvince(list, pn) {
-  if (!pn || !list) return null;
-  const key = provinceKey(pn);
-  if (!key) return null;
-  // Exact (accent-insensitive) first, so 'Ciudad Autónoma de Buenos Aires' and
-  // 'Ciudad de Buenos Aires' resolve to the same entry.
-  return list.find(g => provinceKey(g.provincia) === key)
-    || list.find(g => {
-      const gk = provinceKey(g.provincia);
-      if (!gk) return false;
-      if ((gk === 'caba') !== (key === 'caba')) return false;
-      return gk.includes(key) || key.includes(gk);
-    })
-    || null;
+  return findByProvince(list, pn, 'provincia');
 }
 
 export function blocColor(bloc) {

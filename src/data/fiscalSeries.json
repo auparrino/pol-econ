@@ -1,4 +1,9 @@
 {
+  "_meta": {
+    "period": "2005/2024",
+    "retrieved": "2026-04-06",
+    "source": "meconDnap"
+  },
   "version": "2026-04-06",
   "methodology": "Empty seed — no source CSVs found in scripts/raw/fiscal/. Add Mecon DNAP files and re-run to populate.",
   "provinces": {

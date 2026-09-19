@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "period": "2025-08/2026-02",
+    "retrieved": "2026-09-19",
+    "source": "comovoto",
+    "note": "Ventana de las votaciones nominales puntuadas."
+  },
   "version": "2026-09-19",
   "methodology": "score_executive = matches / votes_cast across curated executive-position list. score_bloc = matches with own-bloc majority (>=60%) / votes_cast. rate_absent = absences / listed_total. Only votes actually held by the legislator's own chamber count towards the denominators (see listed_votes_by_chamber); a vote the other chamber held is recorded as N/A, not as an absence. Source positions: src/data/executivePositions.json",
   "listed_votes": [

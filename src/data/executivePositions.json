@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "period": "2025-08/2026-02",
+    "retrieved": "2026-04-06",
+    "source": "congresoSenado",
+    "note": "Posición pública del Ejecutivo en cada votación; curaduría manual."
+  },
   "version": "2026-04-06",
   "methodology": "Executive positions are the vote the national Executive publicly requested on each topic. Vote IDs match keys inside src/data/votaciones.json. Vote coding: A = affirmative, N = negative, ABS = abstention, undefined/null = absent.",
   "source": "Public record — presidential vetoes, official communications, ministerial statements, Casa Rosada press releases.",

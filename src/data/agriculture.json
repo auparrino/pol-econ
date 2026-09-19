@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "period": "2024/25",
+    "retrieved": "2026-04-07",
+    "source": "magypEstimates",
+    "note": "Campaña agrícola. Azúcar (IPAAT) y uva (INV) son 2024; especialidades son cualitativas del CNA 2018."
+  },
   "campaign": "2023/2024 / 2024/2025",
   "source": "MAGyP - Estimaciones Agrícolas",
   "provinces": [
