@@ -66,6 +66,19 @@ const KNOWN_OPEN = new Map([
     'six provinces verified against the definitive release and all six disagree; ' +
     'substituting them one by one would leave the field a mix of vintages, so ' +
     'they are listed here as the checklist for a single coherent re-import'],
+  ['miningProjects — coordinates fall inside the province they name',
+    'Altos Sapitos is labelled La Rioja but plots in San Juan, and El Bagual is ' +
+    'labelled Río Negro but plots ~9 degrees south in Santa Cruz. Which half of ' +
+    'each pair is wrong needs the SIACAM registry'],
+  ['renovablesProjects — coordinates fall inside the province they name',
+    'P.E. Vientos Olavarría plots at lon -66.8 when Olavarría sits at ~-60.3, so ' +
+    'the coordinate is wrong rather than the province; Salto Dique Ballester ' +
+    'straddles the Neuquén/Río Negro border'],
+  ['commodityPrices — no single month moves more than 40%',
+    'silver jumps 47.7% in 2026M01 while gold and copper move ~10% in the same ' +
+    'month, taking the gold/silver ratio from 69 to 52; it is also the only ' +
+    'month carrying a lithium value, which points at that row coming from a ' +
+    'different source'],
   ['sipa — public employment covers at least the DNAP provincial posts',
     'Santa Cruz is the one province where SIPA-public falls below the provincial ' +
     'headcount alone (0.67x); every other province sits at 1.1-2.0x. Needs a ' +
@@ -623,6 +636,130 @@ group('EPH');
   // compares them against decides whether the deltas are like-for-like.
   console.log('  note  EPH_UNEMPLOYMENT_NATIONAL is the total-urbano figure (6.3); the ' +
     '31-agglomerate figure for the same quarter is 6.9');
+}
+
+/* ── 7d. geography: coordinates vs the province they claim ──────── */
+
+group('geography');
+{
+  // Every geolocated record names a province AND carries a point. Those two can
+  // disagree, and nothing else in the pipeline would notice: the panels filter
+  // by the name and the map plots the point, so a wrong pair shows the record
+  // in one province's list and draws it inside another.
+  const gj = read('public/argentina-provinces.geojson');
+
+  const inRing = (x, y, ring) => {
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const [xi, yi] = ring[i], [xj, yj] = ring[j];
+      if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
+    }
+    return inside;
+  };
+  const inPolygon = (x, y, rings) =>
+    inRing(x, y, rings[0]) && !rings.slice(1).some(h => inRing(x, y, h));
+  const polysOf = (geom) => geom.type === 'Polygon' ? [geom.coordinates] : geom.coordinates;
+
+  const PROVINCE_SHAPES = gj.features.map(f => ({
+    name: f.properties.NAME_1,
+    polys: polysOf(f.geometry),
+  }));
+  const locate = (lon, lat) => PROVINCE_SHAPES.find(p => p.polys.some(rings => inPolygon(lon, lat, rings)))?.name || null;
+
+  const fold = (x) => String(x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+
+  async function checkPoints(label, rows, { allowMulti = false } = {}) {
+    const off = [];
+    for (const { name, province, lon, lat } of rows) {
+      if (typeof lon !== 'number' || typeof lat !== 'number') continue;
+      // A label naming two provinces is a deliberate border straddle.
+      if (allowMulti && String(province).includes(' - ')) continue;
+      const got = locate(lon, lat);
+      // null means the point is offshore or just outside a border — coastlines in
+      // the geojson are simplified, so that alone is not a finding.
+      if (got && fold(got) !== fold(province)) {
+        off.push(`${name} → says ${province}, falls in ${got}`);
+      }
+    }
+    check(`${label} — coordinates fall inside the province they name`,
+      off.length === 0, off.join('; '));
+  }
+
+  const mining = (await import('../src/data/miningProjects.js')).miningProjects;
+  await checkPoints('miningProjects', mining.map(m => (
+    { name: m.nombre, province: m.provincia, lon: m.lon, lat: m.lat })), { allowMulti: true });
+
+  const renov = (await import('../src/data/renovablesProjects.js')).renovablesProjects;
+  await checkPoints('renovablesProjects', renov.map(r => (
+    { name: r.nombre, province: r.provincia, lon: r.lon, lat: r.lat })));
+
+  const veh = read('src/data/vehicle_production.json');
+  await checkPoints('vehicle_production', veh.plants.map(p => (
+    { name: `${p.company}/${p.plant}`, province: p.province, lon: p.lon, lat: p.lat })));
+
+  for (const layer of ['centrales', 'refinerias']) {
+    const d = read(`src/data/energy/${layer}.json`);
+    await checkPoints(`energy/${layer}`, (d.features || [])
+      .filter(f => f.geometry?.type === 'Point')
+      .map(f => ({
+        name: f.properties?.nombre || f.properties?.empresa || '—',
+        province: f.properties?.provincia,
+        lon: f.geometry.coordinates[0],
+        lat: f.geometry.coordinates[1],
+      })));
+  }
+}
+
+/* ── 7e. datasets that must not duplicate each other ────────────── */
+
+group('single source of truth');
+{
+  // politicalContext.js used to carry its own gobernador / partido / mandate
+  // fields. The copy drifted a full term: Corrientes still named the previous
+  // governor while the same record's prose said the succession had happened,
+  // and Catamarca and Salta held impossible 8-year terms.
+  const pol = (await import('../src/data/politicalContext.js')).politicalContext;
+  const gov = (await import('../src/data/governors.js')).governors;
+  const owned = new Set(Object.keys(gov[0]).filter(k => k !== 'provincia'));
+  const leaked = [...new Set(pol.flatMap(p => Object.keys(p)))].filter(k => owned.has(k));
+  check('politicalContext does not restate fields governors.js owns',
+    leaked.length === 0, leaked.join(', '));
+
+  // Every governor's term must be four years and line up with the next election.
+  const termBad = gov.filter(g => {
+    const start = Number(String(g.inicio_mandato).slice(0, 4));
+    const end = Number(String(g.fin_mandato).slice(0, 4));
+    return end - start !== 4 || Number(g.proxima_eleccion) !== end;
+  }).map(g => `${g.provincia} ${g.inicio_mandato}→${g.fin_mandato}/${g.proxima_eleccion}`);
+  check('governors — terms are four years and match the next election',
+    termBad.length === 0, termBad.join('; '));
+}
+
+/* ── 7f. commodity series ───────────────────────────────────────── */
+
+group('commodities');
+{
+  // A month that moves far more than its neighbours is usually a transcription
+  // slip or a row pulled from a different source, not a market event.
+  const { commodityPrices } = await import('../src/data/commodityPrices.js');
+  const spikes = [];
+  for (const metal of ['oro', 'plata', 'cobre']) {
+    const series = commodityPrices
+      .map(r => [r.fecha, r[metal]])
+      .filter(([, v]) => typeof v === 'number' && v > 0);
+    for (let i = 1; i < series.length; i++) {
+      const prev = series[i - 1][1], now = series[i][1];
+      const move = (now - prev) / prev;
+      if (Math.abs(move) > 0.40) {
+        spikes.push(`${metal} ${series[i][0]}: ${prev} → ${now} (${(move * 100).toFixed(0)}%)`);
+      }
+    }
+  }
+  check('commodityPrices — no single month moves more than 40%',
+    spikes.length === 0, spikes.join('; '));
+
+  const withLithium = commodityPrices.filter(r => typeof r.litio === 'number').length;
+  console.log(`  note  lithium has ${withLithium} of ${commodityPrices.length} months populated`);
 }
 
 /* ── 8. population sanity ───────────────────────────────────────── */

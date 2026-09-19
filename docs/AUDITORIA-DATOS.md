@@ -483,6 +483,101 @@ contra 50–90 % del resto). Ahí la pestaña muestra además un aviso: es una
 anomalía sin resolver, no un dato para interpretar. Está seguida como `OPEN` en
 el validador.
 
+## 7d. Segunda pasada: lente semántica sobre el resto de los datos
+
+La primera pasada fue estructural —esquemas, sumas, nombres, duplicados—. Lo que
+encontró los defectos que importaban fue otra lente: **qué mide realmente este
+número, el rótulo dice lo que el dato hace, estas dos cosas juntas pertenecen
+juntas, la magnitud es plausible**. Esta sección aplica esa lente al resto.
+
+### Coordenadas contra la provincia declarada
+
+Cada registro geolocalizado lleva un nombre de provincia **y** un punto, y los
+dos pueden discrepar sin que nada lo note: los paneles filtran por el nombre y
+el mapa dibuja el punto, así que un par mal casado aparece en la lista de una
+provincia y se dibuja dentro de otra. Nunca se había chequeado. Sobre 567
+puntos:
+
+| dataset | puntos | discrepancias |
+|---|---|---|
+| `miningProjects` | 328 | **2** |
+| `renovablesProjects` | 136 | **2** |
+| `vehicle_production` | 10 | 0 |
+| `energy/centrales` | 78 | 0 |
+| `energy/refinerias` | 15 | 0 |
+
+- **Altos Sapitos** dice La Rioja y cae en San Juan.
+- **El Bagual** dice Río Negro y cae en Santa Cruz, unos 9 grados de latitud al sur.
+- **P.E. Vientos Olavarría** dice Buenos Aires y cae en La Pampa. Acá el error es
+  la coordenada, no la provincia: Olavarría está en longitud ~−60,3 y el
+  registro tiene −66,8.
+- **Salto Dique Ballester** dice Río Negro y cae en Neuquén — está sobre el límite.
+
+Los dos de minería con provincia `"Catamarca - Salta"` no cuentan: es una etiqueta
+de yacimiento a caballo del límite, y el check la exceptúa a propósito.
+
+### `politicalContext.js` estaba un mandato entero atrasado
+
+Duplicaba cinco campos de `governors.js` —`gobernador`, `partido`,
+`inicio_mandato`, `fin_mandato`, `proxima_eleccion_gobernador`— y la copia se
+había desfasado:
+
+- **Corrientes** seguía nombrando a Gustavo Valdés con mandato 2021-2025, cuando
+  `governors.js` ya tenía a Juan Pablo Valdés en 2025-2029. Y el mismo registro,
+  en sus campos de texto, **ya decía** *"Valdés deja el cargo por límite
+  constitucional"* y *"Sucesor de Valdés asume dic-2025"*: se contradecía a sí mismo.
+- **Catamarca** y **Salta** llevaban mandatos de **8 años** (2019-12 → 2027-12),
+  que no existen.
+
+Nada de eso se renderizaba —de `politicalContext` la UI solo lee
+`rigi_adhesion_provincial`—, así que no llegó a la pantalla. **Arreglo**: se
+eliminaron los cinco campos duplicados. `governors.js` es la fuente única y pasa
+el control de coherencia de mandatos en las 24 provincias. Un check nuevo impide
+que vuelvan a aparecer.
+
+### Plata: un salto de 47,7 % en un mes
+
+En `commodityPrices.js`, 2026M01 lleva la plata de 62,34 a 92,06 mientras el oro
+y el cobre se mueven ~10 % ese mismo mes. El ratio oro/plata pasa de 69 a 52 en
+un salto. Es además **el único mes de los 97 que trae valor de litio**, lo que
+apunta a que esa fila vino de otra fuente. No lo corregí porque no puedo
+verificar el valor correcto; queda como `OPEN` con un check que marca cualquier
+mes que se mueva más de 40 %.
+
+### `vab_provincial.json`: un agregado que no se puede reconciliar con su detalle
+
+`sector_dominante` / `share_dominante_pct` son una **familia** de sectores, no un
+sector: Santa Cruz declara "Minería e Hidrocarburos 38,48 %" y en su detalle
+Oil & Gas 24,39 + Metal Mining 14,10 = 38,49. Correcto.
+
+El problema es que **el dataset no tiene ningún campo que diga qué filas forman
+cada familia**. Los colores son por sector (44 colores para 47 filas), así que la
+composición no es derivable desde adentro. En 16 de 24 provincias el titular
+choca de frente con el detalle a primera vista: Buenos Aires anuncia "Industria
+29,45 %" sobre una lista cuya fila más alta es Commerce 16,09 %.
+
+Hoy no molesta porque el dataset está huérfano. Es una condición a resolver
+**antes** de conectarlo a la UI, no después.
+
+### Lo que pasó la lente sin observaciones
+
+- **`agriculture.json`** — ningún cultivo en provincia inverosímil (los tres que
+  saltaron —algodón en Catamarca, cebada en Santiago, maíz en Chaco— son zonas
+  marginales reales), y todos los rindes dentro de rango físico.
+- **`livestock.json`** — densidades coherentes en las cinco especies: máximo
+  63 bovinos/km² en Buenos Aires, 14,8 ovinos/km² en Tierra del Fuego, mínimos en
+  Santa Cruz.
+- **`oilgas_production.json`** — cada cuenca declarada corresponde a la provincia
+  que la declara, y los `oil_pct` de cada una suman 100.
+- **Energía** — el nuclear cierra por tres caminos: constante 1,8 GW, suma de
+  centrales 1,763 GW, CAMMESA 1,755 GW. La brecha de 44,2 vs 40,0 GW del total es
+  el desfase de vintage ya documentado (2024 vs 2020), no un error.
+- **`rigiProjects.json`** — 17 proyectos, sin ids duplicados, US$ 65.711 M que
+  cierran entre aprobados (18.211) y en revisión (47.500).
+- **Noticias** — los 685 artículos tienen fecha y clasificación.
+- **`sociodemographic.js`** — los rangos son plausibles y la dispersión también:
+  PBG per cápita 6,2× entre CABA y Misiones, escolaridad 1,4×, alfabetismo 1,03×.
+
 ## 8. Red de regresión: `npm run validate`
 
 `scripts/validate-data.mjs` codifica **87 invariantes** sobre los datasets.
@@ -503,4 +598,4 @@ Los defectos confirmados pero no corregibles desde este repositorio se reportan
 como `OPEN` y no hacen fallar la corrida. La entrada correspondiente en
 `KNOWN_OPEN` debe borrarse en el mismo commit que arregle el dato.
 
-Estado actual: **98/103 OK · 5 abiertos · 1 warning** (datasets huérfanos).
+Estado actual: **103/111 OK · 8 abiertos · 1 warning** (datasets huérfanos).
