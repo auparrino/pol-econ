@@ -1,4 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import { sociodemographic } from '../../data/sociodemographic';
 import { fiscalData } from '../../data/fiscalData';
 import { officialSenators } from '../../data/officialSenators';
@@ -206,7 +206,7 @@ function Hero({ province, governor }) {
   );
 }
 
-function KeyFactsStrip({ province, governor }) {
+function KeyFactsStrip({ province }) {
   const socio = findByProvince(sociodemographic, province);
   const fiscal = findByProvince(fiscalData, province);
   const facts = [
@@ -252,12 +252,8 @@ function DemographicsContent({ province, governor }) {
   );
 }
 
-function SocioContent({ province }) {
-  const socio = findByProvince(sociodemographic, province);
-  const fiscal = findByProvince(fiscalData, province);
-  if (!socio) return <NoData />;
-
-  const Bar = ({ label, value, max, color }) => (
+function SocioBar({ label, value, max, color }) {
+  return (
     <div className="py-1">
       <div className="flex justify-between text-[12px] mb-0.5">
         <span className="text-[#003049]/60">{label}</span>
@@ -268,15 +264,21 @@ function SocioContent({ province }) {
       </div>
     </div>
   );
+}
+
+function SocioContent({ province }) {
+  const socio = findByProvince(sociodemographic, province);
+  const fiscal = findByProvince(fiscalData, province);
+  if (!socio) return <NoData />;
 
   const povColor = socio.pobreza > 50 ? '#C1121F' : socio.pobreza > 40 ? '#e67e22' : socio.pobreza > 30 ? '#f39c12' : '#27ae60';
   const unColor = socio.desempleo > 8 ? '#C1121F' : socio.desempleo > 6 ? '#e67e22' : '#27ae60';
 
   return (
     <div className="rounded-xl border p-4 space-y-2" style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.14)' }}>
-      <Bar label="Poverty" value={socio.pobreza} max={65} color={povColor} />
-      <Bar label="Unemployment" value={socio.desempleo} max={12} color={unColor} />
-      {fiscal && <Bar label="Federal transfers" value={fiscal.transferencias_pct} max={100} color="#669BBC" />}
+      <SocioBar label="Poverty" value={socio.pobreza} max={65} color={povColor} />
+      <SocioBar label="Unemployment" value={socio.desempleo} max={12} color={unColor} />
+      {fiscal && <SocioBar label="Federal transfers" value={fiscal.transferencias_pct} max={100} color="#669BBC" />}
       <div className="pt-2 border-t border-[#003049]/10 text-[12px] space-y-0.5">
         <div className="flex justify-between"><span className="text-[#003049]/60">PBG/cap (PPP)</span><span className="font-mono text-[#27ae60]">${socio.pbg_per_capita_usd?.toLocaleString('en-US')}</span></div>
         <div className="flex justify-between"><span className="text-[#003049]/60">Schooling</span><span className="font-mono text-[#003049]">{socio.escolaridad} yrs</span></div>
@@ -424,8 +426,14 @@ function CongressContent({ province, congress }) {
 export default function MobileProvinceTab({ province, governors, congress, onGoToMap }) {
   const [tab, setTab] = useState('overview');
 
-  // Reset to overview when province changes
-  useEffect(() => { setTab('overview'); }, [province]);
+  // Reset to overview when the province changes. Adjusting state during render
+  // (rather than in an effect) avoids the extra commit that would briefly show
+  // the previous province's tab.
+  const [lastProvince, setLastProvince] = useState(province);
+  if (province !== lastProvince) {
+    setLastProvince(province);
+    setTab('overview');
+  }
 
   const governor = governors.find(g => {
     const p = g.provincia?.toLowerCase();
@@ -516,7 +524,7 @@ export default function MobileProvinceTab({ province, governors, congress, onGoT
           {tab === 'overview' && (
             <div className="space-y-5">
               <Hero province={province} governor={governor} />
-              <KeyFactsStrip province={province} governor={governor} />
+              <KeyFactsStrip province={province} />
               <SectionHead>Demographics</SectionHead>
               <DemographicsContent province={province} governor={governor} />
               <SectionHead>Socioeconomic</SectionHead>

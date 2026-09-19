@@ -1,9 +1,5 @@
 import { useMemo } from 'react';
-import {
-  XAxis, YAxis, Tooltip, ResponsiveContainer,
-  AreaChart, Area, CartesianGrid,
-} from 'recharts';
-import { TAX_COLORS, TAX_LABELS, CustomTooltip, AXIS_STYLE, GRID_STYLE, formatMillions } from './chartTheme';
+import { TAX_COLORS, TAX_LABELS } from './chartTheme';
 import { getAllFiscal } from '../../hooks/useEconomyData';
 import { fmtMoney } from '../../utils/formatNumber';
 
@@ -113,23 +109,8 @@ function DependencyRanking({ currentProvince }) {
   );
 }
 
-export default function FiscalSection({ fiscal, provinceName, mobile }) {
+export default function FiscalSection({ fiscal, provinceName }) {
   if (!fiscal) return null;
-
-  // Composition over time as % share — invariant to inflation, unlike nominal ARS values.
-  const tsData = useMemo(() => {
-    if (!fiscal.timeSeries) return [];
-    return fiscal.timeSeries
-      .filter(t => t.year >= 2010)
-      .map(t => {
-        const total = (t.own || 0) + (t.transfers || 0);
-        return {
-          year: t.year,
-          ownPct: total > 0 ? (t.own / total) * 100 : 0,
-          transfersPct: total > 0 ? (t.transfers / total) * 100 : 0,
-        };
-      });
-  }, [fiscal]);
 
   return (
     <div className="space-y-3">

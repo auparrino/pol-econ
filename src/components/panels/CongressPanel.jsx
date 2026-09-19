@@ -2,7 +2,9 @@ import { memo } from 'react';
 import BlocBar from '../shared/BlocBar';
 import { senateBlocs, deputyBlocs, SENATE_TOTAL, DEPUTY_TOTAL } from '../../data/congressBlocs';
 
-function CongressPanelRaw({ congress }) {
+// Seat counts come from the audited congressBlocs snapshot rather than the
+// live comovoto feed, which is filtered heuristically and can be incomplete.
+function CongressPanelRaw() {
   return (
     <div className="flex flex-col gap-3">
       <BlocBar blocs={senateBlocs} total={SENATE_TOTAL} label="Senate" />

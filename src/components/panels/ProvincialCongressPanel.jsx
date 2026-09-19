@@ -1,10 +1,9 @@
 import { memo } from 'react';
-import { politicalContext } from '../../data/politicalContext';
 import { officialSenators } from '../../data/officialSenators';
 import { officialDeputies } from '../../data/officialDeputies';
 import votacionesRaw from '../../data/votaciones.json';
 import VoteDots from '../shared/VoteDots';
-import { matchProvince, blocColor } from '../shared/helpers';
+import { blocColor } from '../shared/helpers';
 
 // Convert votaciones.json (object or array) to array
 const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
@@ -84,7 +83,6 @@ function computeAlla(name, chamber) {
 }
 
 function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
-  const pol = matchProvince(politicalContext, selectedProvince);
   const pn = selectedProvince?.toLowerCase();
   const isCABA = pn?.includes('ciudad') || pn === 'caba';
 
@@ -101,7 +99,6 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
     return result;
   })();
 
-  const comovotoSens = comovotoLegs.filter(l => l.c === 'senadores');
   const officialProvSens = officialSenators.filter(s => {
     const sp = s.p?.toLowerCase();
     if (isCABA) return sp === 'ciudad de buenos aires';
@@ -110,8 +107,6 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
   });
   const normalizeN = (s) => s?.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().trim() || '';
   const senators = officialProvSens.map(official => {
-    const lastName = normalizeN(official.n?.split(',')[0]);
-    const match = comovotoSens.find(cv => normalizeN(cv.n?.split(',')[0]) === lastName);
     // Use our votaciones.json alla, not comovoto's
     const alla = computeAlla(official.n, 'S');
     return { n: official.n, b: official.b, alla, c: 'senadores' };

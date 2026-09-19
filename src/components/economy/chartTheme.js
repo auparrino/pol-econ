@@ -53,26 +53,6 @@ export const TAX_LABELS = {
   otros: 'Other',
 };
 
-// Recharts shared tooltip style
-export function CustomTooltip({ active, payload, label, formatter }) {
-  if (!active || !payload?.length) return null;
-  return (
-    <div style={{
-      background: '#003049', color: '#FDF0D5', padding: '8px 12px',
-      borderRadius: 6, fontSize: 12, lineHeight: 1.5,
-      boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
-    }}>
-      {label && <p style={{ fontWeight: 600, marginBottom: 4 }}>{label}</p>}
-      {payload.map((p, i) => (
-        <p key={i} style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-          <span style={{ width: 8, height: 8, borderRadius: '50%', background: p.color, flexShrink: 0 }} />
-          <span>{p.name}: {formatter ? formatter(p.value) : p.value?.toLocaleString()}</span>
-        </p>
-      ))}
-    </div>
-  );
-}
-
 export const AXIS_STYLE = {
   tick: { fontSize: 11, fill: 'rgba(0,48,73,0.5)' },
   axisLine: { stroke: 'rgba(0,48,73,0.1)' },
@@ -82,14 +62,3 @@ export const GRID_STYLE = {
   strokeDasharray: '3 3',
   stroke: 'rgba(0,48,73,0.08)',
 };
-
-export function formatMillions(v) {
-  if (v >= 1000) return `${(v / 1000).toFixed(1)}B`;
-  return `${v.toFixed(0)}M`;
-}
-
-export function formatThousands(v) {
-  if (v >= 1000000) return `${(v / 1000000).toFixed(1)}M`;
-  if (v >= 1000) return `${(v / 1000).toFixed(0)}K`;
-  return v.toLocaleString();
-}

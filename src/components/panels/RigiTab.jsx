@@ -9,7 +9,6 @@ import { RigiPanel, RigiNationalOverview } from '../shared/RigiPanel';
 function findPolContext(provinceName) {
   if (!provinceName) return null;
   const s = provinceName.toLowerCase();
-  const isCABA = s.includes('ciudad') || s === 'caba';
   const exact = politicalContext.find(p => p.provincia?.toLowerCase() === s);
   if (exact) return exact;
   return politicalContext.find(p => {

@@ -64,18 +64,8 @@ export function FiscalTriptych({ provinceName }) {
 
   // Latest snapshot values (ARS millions)
   const depLatest = prov.dependency;                   // %
-  const ownLatest = prov.ownTotal || 0;
   const transfersLatest = prov.nationalTransfers || 0;
   const coparticipation = prov.coparticipation || 0;
-  const discrecional = Math.max(0, transfersLatest - coparticipation);
-  const totalRevenue = ownLatest + transfersLatest;
-  // "Political lever": discretionary transfers as % of the province's TOTAL revenue.
-  // That is what the Executive can turn on/off at will.
-  const discOfTotalPct = totalRevenue > 0 ? (discrecional / totalRevenue) * 100 : null;
-  // Within-transfers split (for the bar below)
-  const autoShare = transfersLatest > 0 ? coparticipation / transfersLatest : null;
-  const discShare = transfersLatest > 0 ? discrecional / transfersLatest : null;
-
   // Baseline: 2019 series value
   const series = prov.timeSeries || [];
   const base = series.find(r => r.year === 2019);
@@ -83,11 +73,6 @@ export function FiscalTriptych({ provinceName }) {
 
   // Display
   const depColor = depLatest > 85 ? '#C1121F' : depLatest > 65 ? '#e67e22' : depLatest > 40 ? '#f39c12' : '#27ae60';
-  const discColor = discOfTotalPct == null ? '#003049'
-    : discOfTotalPct > 15 ? '#C1121F'
-    : discOfTotalPct > 8 ? '#e67e22'
-    : discOfTotalPct > 3 ? '#d4a800'
-    : '#17a589';
   // Build the 3-stack composition series. The dataset only carries `own` and
   // `transfers` per year (no per-year automatic vs non-automatic split), so we
   // apply the latest-year coparticipación / nationalTransfers ratio as a

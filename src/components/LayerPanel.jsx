@@ -1,4 +1,4 @@
-import { ENERGY_LAYER_CONFIGS } from './EnergyLayers';
+import { ENERGY_LAYER_CONFIGS } from './energyLayerConfigs';
 
 const CHOROPLETH_MODES = [
   { id: 'none', label: 'None' },

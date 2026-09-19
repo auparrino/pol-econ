@@ -1,7 +1,6 @@
-import { useState, lazy, Suspense, useMemo } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import { senateBlocs, deputyBlocs, SENATE_TOTAL, DEPUTY_TOTAL } from '../../data/congressBlocs';
 import { POWER_BY_FUEL, POWER_TOTAL_GW, POWER_NUCLEAR_PLANTS } from '../../data/energy/powerConstants';
-import sipaRaw from '../../data/sipa_employment.json';
 import sipaPubPrivRaw from '../../data/sipa_pub_priv.json';
 import biepRaw from '../../data/biep_breakdown.json';
 import exportsCatRaw from '../../data/exports_by_category.json';

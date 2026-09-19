@@ -30,3 +30,16 @@ export function fmtK(v) {
   if (v >= 1000) return `${(v / 1000).toFixed(1).replace('.', ',')}K`;
   return fmtNum(v);
 }
+
+/** Axis tick formatter for series already denominated in USD millions. */
+export function fmtAxisMillions(v) {
+  if (v >= 1000) return `${(v / 1000).toFixed(1)}B`;
+  return `${v.toFixed(0)}M`;
+}
+
+/** Axis tick formatter for raw counts (jobs, people, heads). */
+export function fmtAxisThousands(v) {
+  if (v >= 1_000_000) return `${(v / 1_000_000).toFixed(1)}M`;
+  if (v >= 1000) return `${(v / 1000).toFixed(0)}K`;
+  return v.toLocaleString();
+}

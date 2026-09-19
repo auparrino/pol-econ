@@ -6,7 +6,6 @@ import { officialSenators } from '../data/officialSenators';
 import { officialDeputies } from '../data/officialDeputies';
 import votacionesRaw from '../data/votaciones.json';
 import alignmentScores from '../data/alignmentScores.json';
-import { fiscalData } from '../data/fiscalData';
 import EconomySummary from './economy/EconomySummary';
 import { FiscalTriptych } from './shared/FiscalTriptych';
 import { RigiPanel } from './shared/RigiPanel';
@@ -41,31 +40,6 @@ for (const leg of votacionesList) {
 const OFICIALISMO_BLOCS = ['la libertad avanza'];
 const SENATE_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
 const DEPUTY_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
-
-function computeBlocPosition(chamber, topics) {
-  const positions = {};
-  const llaLegs = votacionesList.filter(
-    l => l.c === chamber && OFICIALISMO_BLOCS.includes(l.b?.toLowerCase())
-  );
-  for (const topic of topics) {
-    const voteCounts = {};
-    let totalPresent = 0;
-    for (const l of llaLegs) {
-      const v = l.v?.[topic];
-      if (v) { voteCounts[v] = (voteCounts[v] || 0) + 1; totalPresent++; }
-    }
-    if (totalPresent === 0) { positions[topic] = null; continue; }
-    // Find the vote cast by >=90% of present bloc members
-    for (const [vote, count] of Object.entries(voteCounts)) {
-      if (count / totalPresent >= 0.9) { positions[topic] = vote; break; }
-    }
-    if (!positions[topic]) positions[topic] = null; // no clear >=90% majority
-  }
-  return positions;
-}
-
-const senateBlocPos = computeBlocPosition('S', SENATE_TOPICS);
-const deputyBlocPos = computeBlocPosition('D', DEPUTY_TOPICS);
 
 function InfoTooltip({ text }) {
   const [rect, setRect] = useState(null);
@@ -227,23 +201,10 @@ function SocioSection({ province }) {
     return sn === provName || sn?.includes(provName) || provName?.includes(sn);
   });
 
-  const fiscal = fiscalData.find(f => {
-    const fn = f.provincia?.toLowerCase();
-    if (isCABA) return fn === 'ciudad de buenos aires';
-    if (fn === 'ciudad de buenos aires') return false;
-    return fn === provName || fn?.includes(provName) || provName?.includes(fn);
-  });
-
   if (!data) return null;
 
   const povertyColor = data.pobreza > 50 ? '#C1121F' : data.pobreza > 40 ? '#e67e22' : data.pobreza > 30 ? '#f39c12' : '#27ae60';
   const unemployColor = data.desempleo > 8 ? '#C1121F' : data.desempleo > 6 ? '#e67e22' : '#27ae60';
-  const fiscalColor = fiscal
-    ? fiscal.transferencias_pct > 85 ? '#C1121F'
-      : fiscal.transferencias_pct > 65 ? '#e67e22'
-      : fiscal.transferencias_pct > 40 ? '#f39c12'
-      : '#27ae60'
-    : '#669BBC';
 
   return (
     <Section title="Socioeconomic">
@@ -565,7 +526,7 @@ function LegislatorsSection({ province, congress }) {
 
 // EconomicSection replaced by EconomySummary component (economy/EconomySummary.jsx)
 
-export default function ProvincePanel({ province, governors, congress, onClose, width = 320, mobile = false }) {
+export default function ProvincePanel({ province, governors, onClose, width = 320, mobile = false }) {
   if (!province) {
     if (mobile) return null;
     return (

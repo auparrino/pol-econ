@@ -90,7 +90,7 @@ function filterCurrent(legislators) {
   return [...senators, ...deputies];
 }
 
-function computeBlocs(legislators, chamber, totalSeats) {
+function computeBlocs(legislators, chamber) {
   const chamberLeg = legislators.filter(l => l.c === chamber);
   const byCo = {};
 
@@ -122,24 +122,29 @@ function groupByProvince(legislators) {
   return byProv;
 }
 
+// Returns the cached roll-call payload if it is still fresh, else null.
+function readCache() {
+  try {
+    const cached = localStorage.getItem(CACHE_KEY);
+    if (!cached) return null;
+    const { data, ts } = JSON.parse(cached);
+    if (Date.now() - ts < CACHE_TTL && data?.length > 0) return data;
+  } catch {
+    // Private mode / quota / corrupt entry — fall through to the network.
+  }
+  return null;
+}
+
 export default function useCongressData() {
-  const [raw, setRaw] = useState(null);
-  const [loading, setLoading] = useState(true);
+  // Hydrating from cache in the initialiser means the first paint already has
+  // the data, instead of rendering empty and then setting state from an effect.
+  const [raw, setRaw] = useState(readCache);
+  const [loading, setLoading] = useState(() => raw == null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Check cache
-    try {
-      const cached = localStorage.getItem(CACHE_KEY);
-      if (cached) {
-        const { data, ts } = JSON.parse(cached);
-        if (Date.now() - ts < CACHE_TTL && data?.length > 0) {
-          setRaw(data);
-          setLoading(false);
-          return;
-        }
-      }
-    } catch {}
+    if (raw != null) return;
+    let cancelled = false;
 
     fetch('https://comovoto.dev.ar/data/legislators.json')
       .then(r => {
@@ -147,16 +152,24 @@ export default function useCongressData() {
         return r.json();
       })
       .then(data => {
+        if (cancelled) return;
         setRaw(data);
         try {
           localStorage.setItem(CACHE_KEY, JSON.stringify({ data, ts: Date.now() }));
-        } catch {}
+        } catch {
+          // Cache is best-effort; the data is already in state.
+        }
       })
       .catch(err => {
+        if (cancelled) return;
         console.error('Congress data fetch failed:', err);
         setError(err.message);
       })
-      .finally(() => setLoading(false));
+      .finally(() => { if (!cancelled) setLoading(false); });
+
+    return () => { cancelled = true; };
+    // Intentionally runs once: `raw` is only read to skip a redundant fetch.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const processed = useMemo(() => {

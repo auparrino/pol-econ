@@ -5,7 +5,8 @@ import {
   XAxis, YAxis, Tooltip, ResponsiveContainer,
   LineChart, Line, CartesianGrid, ReferenceLine,
 } from 'recharts';
-import { FAMILY_COLORS, CustomTooltip, AXIS_STYLE, GRID_STYLE } from './chartTheme';
+import { FAMILY_COLORS, AXIS_STYLE, GRID_STYLE } from './chartTheme';
+import { CustomTooltip } from './ChartTooltip';
 import { fmtNum, fmtK } from '../../utils/formatNumber';
 import { translateSector } from '../../utils/sectorTranslations';
 import SourceInfo from '../shared/SourceInfo';
@@ -17,12 +18,6 @@ const EPH_NATIONAL_UNEMPLOYMENT = 6.3;
 
 const normalize = (s) =>
   (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
-
-function fmtSalary(v) {
-  if (v >= 1_000_000) return `$${(v / 1_000_000).toFixed(2)}M`;
-  if (v >= 1_000) return `$${Math.round(v / 1000)}K`;
-  return `$${v}`;
-}
 
 function matchProvince(list, name) {
   if (!name) return null;
@@ -75,7 +70,7 @@ function PublicCompositeBlock({ provinceName, t }) {
   const dnapRec = useMemo(() => matchProvince(dnapEmpleo.provinces, provinceName), [provinceName]);
   if (!sipaRec) return null;
 
-  const { private: priv, public: pub, total, publicPct, cajaPropia } = sipaRec;
+  const { private: priv, public: pub, total, publicPct } = sipaRec;
   const privPct = 100 - publicPct;
 
   const ranked = sipaPubPriv.provinces.slice().sort((a, b) => b.publicPct - a.publicPct);

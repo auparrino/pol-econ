@@ -23,7 +23,6 @@ function fmtN(n) {
   if (n >= 1e3) return `${(n / 1e3).toFixed(1)}k`;
   return n.toString();
 }
-function fmtUSD(m) { return m == null ? '—' : `US$${fmtN(m)}`; }
 
 function SectionTitle({ children }) {
   return (
@@ -309,7 +308,7 @@ function ExportsNational() {
         .sort((a, b) => b[1] - a[1])
         .slice(0, 6)
         .map(([name, value]) => ({ name, value, display: `US$${fmtN(value)}M` }));
-    } catch (e) { /* destinations optional */ }
+    } catch { /* destinations optional */ }
 
     return { latestYear, pp, moa, moi, cye, total, topProv, destinations };
   }, []);

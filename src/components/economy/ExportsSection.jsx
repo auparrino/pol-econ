@@ -3,8 +3,9 @@ import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
   AreaChart, Area, CartesianGrid,
 } from 'recharts';
-import { CATEGORY_COLORS, CATEGORY_LABELS, CustomTooltip, AXIS_STYLE, GRID_STYLE, formatMillions } from './chartTheme';
-import { fmtNum } from '../../utils/formatNumber';
+import { CATEGORY_COLORS, CATEGORY_LABELS, AXIS_STYLE, GRID_STYLE } from './chartTheme';
+import { CustomTooltip } from './ChartTooltip';
+import { fmtNum, fmtAxisMillions } from '../../utils/formatNumber';
 
 function ExportBar({ label, value, max, color }) {
   const pct = max > 0 ? (value / max * 100) : 0;
@@ -22,16 +23,15 @@ function ExportBar({ label, value, max, color }) {
 }
 
 export default function ExportsSection({ exports, exportDest, mobile }) {
-  if (!exports || exports.length === 0) return null;
-
-  // Latest year data
-  const latestYear = Math.max(...exports.map(r => r.year));
-  const latest = exports.find(r => r.year === latestYear);
-  const latestDest = exportDest?.find(r => r.year === latestYear);
+  // Hooks must run on every render — `exports` goes from [] to populated as the
+  // user selects a province, so nothing may short-circuit above this point.
+  const rows = exports?.length ? exports : null;
+  const latestYear = rows ? Math.max(...rows.map(r => r.year)) : null;
 
   // Time series (last 15 years)
-  const tsData = useMemo(() =>
-    exports
+  const tsData = useMemo(() => {
+    if (!rows) return [];
+    return rows
       .filter(r => r.year >= latestYear - 14)
       .sort((a, b) => a.year - b.year)
       .map(r => ({
@@ -40,17 +40,19 @@ export default function ExportsSection({ exports, exportDest, mobile }) {
         moa: r.moa,
         moi: r.moi,
         cye: r.cye,
-      })),
-    [exports, latestYear]
-  );
+      }));
+  }, [rows, latestYear]);
 
+  if (!rows) return null;
+
+  const latest = rows.find(r => r.year === latestYear);
+  const latestDest = exportDest?.find(r => r.year === latestYear);
   if (!latest) return null;
 
   const total = latest.total || 0;
   const categories = ['pp', 'moa', 'moi', 'cye']
     .map(k => ({ key: k, label: CATEGORY_LABELS[k], value: latest[k], color: CATEGORY_COLORS[k] }))
     .sort((a, b) => b.value - a.value);
-  const maxCat = Math.max(...categories.map(c => c.value));
 
   return (
     <div className="space-y-3">
@@ -123,7 +125,7 @@ export default function ExportsSection({ exports, exportDest, mobile }) {
               <AreaChart data={tsData} margin={{ top: 4, right: 4, bottom: 0, left: -10 }}>
                 <CartesianGrid {...GRID_STYLE} />
                 <XAxis dataKey="year" {...AXIS_STYLE} />
-                <YAxis {...AXIS_STYLE} tickFormatter={v => `$${formatMillions(v)}`} />
+                <YAxis {...AXIS_STYLE} tickFormatter={v => `$${fmtAxisMillions(v)}`} />
                 <Tooltip content={<CustomTooltip formatter={v => `$${fmtNum(Math.round(v))}M`} />} />
                 <Area type="monotone" dataKey="pp" stackId="1" fill={CATEGORY_COLORS.pp} fillOpacity={0.7} stroke={CATEGORY_COLORS.pp} name={CATEGORY_LABELS.pp} />
                 <Area type="monotone" dataKey="moa" stackId="1" fill={CATEGORY_COLORS.moa} fillOpacity={0.7} stroke={CATEGORY_COLORS.moa} name={CATEGORY_LABELS.moa} />

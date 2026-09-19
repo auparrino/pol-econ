@@ -7,7 +7,7 @@ import { FAMILY_COLORS } from './chartTheme';
 import { fmtNum } from '../../utils/formatNumber';
 import { translateSector } from '../../utils/sectorTranslations';
 
-export default function EconomySummary({ province, Section, DataRow }) {
+export default function EconomySummary({ province }) {
   const { sipa, fiscal, exports } = useEconomyData(province);
 
   if (!sipa && !fiscal && (!exports || exports.length === 0)) return null;

@@ -1,6 +1,6 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import ProvinceNews from './ProvinceNews';
-import { useEconomyData, sipaData } from '../hooks/useEconomyData';
+import { useEconomyData } from '../hooks/useEconomyData';
 
 import { FiscalTriptych } from './shared/FiscalTriptych';
 
@@ -73,17 +73,21 @@ export default function BottomBar({ congress, selectedProvince, governors, onCle
     ? BASE_TABS
     : BASE_TABS.filter(t => !t.needsProvince);
 
-  const [activeTab, setActiveTab] = useState('congress');
+  const [storedTab, setStoredTab] = useState('congress');
 
-  // When a province is selected, jump to Overview automatically.
-  useEffect(() => {
-    if (selectedProvince) setActiveTab('overview');
-  }, [selectedProvince]);
+  // When a province is selected, jump to Overview automatically. Adjusting
+  // state during render rather than in an effect avoids a frame showing the
+  // previous tab.
+  const [lastProvince, setLastProvince] = useState(selectedProvince);
+  if (selectedProvince !== lastProvince) {
+    setLastProvince(selectedProvince);
+    if (selectedProvince) setStoredTab('overview');
+  }
 
-  // If active tab becomes unavailable (e.g. province cleared), fall back to congress.
-  useEffect(() => {
-    if (!tabs.find(t => t.id === activeTab)) setActiveTab('congress');
-  }, [tabs, activeTab]);
+  // If the stored tab is unavailable (e.g. the province was cleared), fall back
+  // to congress. Derived, so there is no transient render on an invalid tab.
+  const activeTab = tabs.some(t => t.id === storedTab) ? storedTab : 'congress';
+  const setActiveTab = setStoredTab;
 
   return (
     <aside

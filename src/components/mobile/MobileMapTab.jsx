@@ -3,7 +3,7 @@ import ArgentinaMap from '../ArgentinaMap';
 import Legend from '../Legend';
 import ErrorBoundary from '../ErrorBoundary';
 import BottomSheet from './BottomSheet';
-import { ENERGY_LAYER_CONFIGS } from '../EnergyLayers';
+import { ENERGY_LAYER_CONFIGS } from '../energyLayerConfigs';
 
 const OverlayPanel = lazy(() => import('../panels/OverlayPanel'));
 
