@@ -11,16 +11,30 @@ export function matchProv(featureProv, sel) {
   return fp === sp || fp.includes(sp) || sp.includes(fp);
 }
 
+// Buenos Aires province and CABA are two different jurisdictions whose names
+// contain one another, so they get a dedicated bucket instead of relying on
+// substring matching.
+function provinceKey(name) {
+  const n = normProv(name);
+  if (!n) return '';
+  if (n === 'caba' || n === 'c.a.b.a.' || n.includes('ciudad')) return 'caba';
+  return n;
+}
+
 export function matchProvince(list, pn) {
-  if (!pn) return null;
-  const s = pn.toLowerCase();
-  return list.find(g => g.provincia?.toLowerCase() === s)
+  if (!pn || !list) return null;
+  const key = provinceKey(pn);
+  if (!key) return null;
+  // Exact (accent-insensitive) first, so 'Ciudad Autónoma de Buenos Aires' and
+  // 'Ciudad de Buenos Aires' resolve to the same entry.
+  return list.find(g => provinceKey(g.provincia) === key)
     || list.find(g => {
-      const gp = g.provincia?.toLowerCase();
-      if (!gp) return false;
-      if (s.includes('ciudad') !== gp.includes('ciudad')) return false;
-      return gp.includes(s) || s.includes(gp);
-    });
+      const gk = provinceKey(g.provincia);
+      if (!gk) return false;
+      if ((gk === 'caba') !== (key === 'caba')) return false;
+      return gk.includes(key) || key.includes(gk);
+    })
+    || null;
 }
 
 export function blocColor(bloc) {

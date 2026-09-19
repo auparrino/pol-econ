@@ -18,9 +18,16 @@ export const POWER_NUCLEAR_PLANTS = [
 
 // CAMMESA grid regions → provinces they cover (approximate; grid regions don't
 // follow provincial borders perfectly but are the official CAMMESA division).
+// Keys are normProv() output — accent-stripped lowercase of the geojson NAME_1.
+// Only consulted as a fallback for provinces absent from
+// cammesa-por-provincia.json, and the UI labels the result as a *region* total.
+// Tierra del Fuego is deliberately absent: it is not part of the MEM/SADI
+// (isolated system), so PATAGONICA — essentially Chubut and Santa Cruz — is not
+// a stand-in for it.  It used to be mapped here and showed ~2.1 GW for a
+// province with roughly a tenth of that.
 export const PROV_TO_REGIONS = {
   'buenos aires':                    ['GRAN BS.AS.', 'BUENOS AIRES'],
-  'ciudad autonoma de buenos aires': ['GRAN BS.AS.'],
+  'ciudad de buenos aires':          ['GRAN BS.AS.'],
   'neuquen':                         ['COMAHUE'],
   'rio negro':                       ['COMAHUE'],
   'mendoza':                         ['CUYO'],
@@ -39,7 +46,6 @@ export const PROV_TO_REGIONS = {
   'santiago del estero':             ['NOROESTE'],
   'chubut':                          ['PATAGONICA'],
   'santa cruz':                      ['PATAGONICA'],
-  'tierra del fuego':                ['PATAGONICA'],
   'la pampa':                        ['PATAGONICA'],
   'cordoba':                         ['CENTRO'],
   'santa fe':                        ['LITORAL'],

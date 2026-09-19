@@ -9,6 +9,7 @@ import centralesData from '../data/energy/centrales.json';
 import refineriasData from '../data/energy/refinerias.json';
 import cammesaRegions from '../data/energy/cammesa-por-region.json';
 import cammesaProvData from '../data/energy/cammesa-por-provincia.json';
+import { PROV_TO_REGIONS } from '../data/energy/powerConstants';
 
 const OverlayPanel = lazy(() => import('./panels/OverlayPanel'));
 
@@ -100,34 +101,6 @@ const PROV_DATA_NORMED = Object.fromEntries(
   Object.entries(cammesaProvData.provinces).map(([k, v]) => [normProv(k), v])
 );
 
-// CAMMESA grid regions → provinces they cover (approximate; grid regions don't
-// follow provincial borders perfectly but are the official CAMMESA division).
-const PROV_TO_REGIONS = {
-  'buenos aires':                   ['GRAN BS.AS.', 'BUENOS AIRES'],
-  'ciudad autonoma de buenos aires': ['GRAN BS.AS.'],
-  'neuquen':                        ['COMAHUE'],
-  'rio negro':                      ['COMAHUE'],
-  'mendoza':                        ['CUYO'],
-  'san juan':                       ['CUYO'],
-  'san luis':                       ['CUYO'],
-  'entre rios':                     ['LITORAL'],
-  'corrientes':                     ['LITORAL', 'NORESTE'],
-  'misiones':                       ['NORESTE'],
-  'chaco':                          ['NORESTE'],
-  'formosa':                        ['NORESTE'],
-  'tucuman':                        ['NOROESTE'],
-  'salta':                          ['NOROESTE'],
-  'jujuy':                          ['NOROESTE'],
-  'catamarca':                      ['NOROESTE'],
-  'la rioja':                       ['NOROESTE'],
-  'santiago del estero':            ['NOROESTE'],
-  'chubut':                         ['PATAGONICA'],
-  'santa cruz':                     ['PATAGONICA'],
-  'tierra del fuego':               ['PATAGONICA'],
-  'la pampa':                       ['PATAGONICA'],
-  'cordoba':                        ['CENTRO'],
-  'santa fe':                       ['LITORAL'],
-};
 
 const FUENTE_COLOR = {
   'Térmica':   '#EF4444',
@@ -173,7 +146,7 @@ function toggleLayer(id, { setOverlays, setEnergyLayers }) {
   );
 }
 
-function CardHeader({ id, label, icon, color, count, countLabel, active, onToggle }) {
+function CardHeader({ label, icon, color, count, countLabel, active, onToggle }) {
   return (
     <div className="flex items-center justify-between gap-2 mb-2">
       <div className="flex items-center gap-2 min-w-0">
