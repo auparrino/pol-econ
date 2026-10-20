@@ -8,8 +8,7 @@ Resumen visible para el público: pestaña **Fuentes y método** del tablero (`s
 
 ## Pendientes conocidos
 
-- `scripts/process_fiscal.py`, `scripts/build_dnap_empleo.py` y `scripts/process-fiscal-series.mjs` usan la fórmula/archivos anteriores: si se vuelven a correr, pisan los datos corregidos.
-- `scripts/build_censo2022_categoria.py` tiene el mismo intercambio de columnas que se corrigió en `censo2022_categoria_ocupacional.json`.
+- Resuelto: `scripts/process_fiscal.py`, `scripts/build_dnap_empleo.py` y `scripts/build_censo2022_categoria.py` reproducen los archivos corregidos (verificado contra `src/data`). Insumos DNAP en `scripts/raw/`.
 - `votaciones.json` no tiene la votación final de la Ley de Glaciares en Diputados (9-abr-2026) ni Inocencia Fiscal II (ago-2026).
 - `escolaridad` y `alfabetismo` en `sociodemographic.js` no son indicadores publicados por INDEC; se retiraron de rankings y comparador.
 - Stock de deuda provincial (`meconDnapDeuda`): hay datos al 2T-2026 sin incorporar.
