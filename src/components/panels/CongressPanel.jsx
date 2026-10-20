@@ -23,6 +23,7 @@ function CongressPanelRaw({ congress }) {
           { name: 'Mercosur-UE', ch: 'S', a: 69, n: 3, r: 'A' },
           { name: 'Régimen penal juvenil', ch: 'S', a: 44, n: 27, r: 'A', note: 'edad 14' },
           { name: 'Ley de Glaciares', ch: 'D', a: 137, n: 111, r: 'A', note: 'sanción abr-26' },
+          { name: 'Inocencia Fiscal II', ch: 'S', a: 44, n: 23, r: 'A', note: 'sanción sep-26' },
         ]},
       ].map((col) => (
         <div key={col.title}>

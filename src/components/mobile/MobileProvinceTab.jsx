@@ -38,15 +38,16 @@ const COALITION_COLOR = {
 
 // ── Vote topic metadata (mirrors ProvincePanel) ────────────────────────────
 const VOTE_TOPICS = {
-  presupuesto_2026:      { label: 'Budget 2026',    short: 'Pre' },
-  inocencia_fiscal:      { label: 'Tax Innocence',  short: 'IF'  },
-  modernizacion_laboral: { label: 'Labor Reform',   short: 'ML'  },
-  regimen_penal_juv:     { label: 'Juvenile Penal', short: 'PJ'  },
-  mercosur_ue:           { label: 'Mercosur-EU',    short: 'MUE' },
-  ley_glaciares:         { label: 'Glacier Law',    short: 'LG'  },
+  presupuesto_2026:      { label: 'Presupuesto 2026', short: 'Pre' },
+  inocencia_fiscal:      { label: 'Inocencia Fiscal', short: 'IF'  },
+  modernizacion_laboral: { label: 'Reforma laboral',  short: 'ML'  },
+  regimen_penal_juv:     { label: 'Régimen penal juvenil', short: 'PJ'  },
+  mercosur_ue:           { label: 'Mercosur-UE',     short: 'MUE' },
+  ley_glaciares:         { label: 'Ley de Glaciares', short: 'LG'  },
+  inocencia_fiscal_2:    { label: 'Inocencia Fiscal II', short: 'IF2' },
 };
-const SENATE_TOPICS  = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
-const DEPUTY_TOPICS  = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
+const SENATE_TOPICS  = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv', 'inocencia_fiscal_2'];
+const DEPUTY_TOPICS  = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue', 'ley_glaciares', 'inocencia_fiscal_2'];
 const VOTE_COLOR = { A: '#27ae60', N: '#C0392B', ABS: '#d4a800' };
 const VOTE_LABEL = { A: 'A', N: 'N', ABS: 'ABS' };
 

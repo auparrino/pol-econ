@@ -9,7 +9,8 @@ Resumen visible para el público: pestaña **Fuentes y método** del tablero (`s
 ## Pendientes conocidos
 
 - Resuelto: `scripts/process_fiscal.py`, `scripts/build_dnap_empleo.py` y `scripts/build_censo2022_categoria.py` reproducen los archivos corregidos (verificado contra `src/data`). Insumos DNAP en `scripts/raw/`.
-- `votaciones.json` no tiene la votación final de la Ley de Glaciares en Diputados (9-abr-2026) ni Inocencia Fiscal II (ago-2026).
+- Resuelto: votaciones de Ley de Glaciares (Diputados) e Inocencia Fiscal II incorporadas. Los nominales de Diputados vienen de listados de prensa cotejados (el sitio oficial no respondió).
+- Resuelto en `compute-alignment.mjs`: ya no cuenta como ausencias las votaciones previas a la jura de un reemplazo, y los senadores (provincia en mayúsculas) ahora se suman al puntaje de su provincia; antes el indicador provincial sólo reflejaba a los diputados.
 - `escolaridad` y `alfabetismo` en `sociodemographic.js` no son indicadores publicados por INDEC; se retiraron de rankings y comparador.
 - Stock de deuda provincial (`meconDnapDeuda`): hay datos al 2T-2026; el tablero hoy no muestra deuda.
 - `scripts/parse_exports.py`: corregido el prefijo `pba_`/`caba_` de destinos.
@@ -448,3 +449,50 @@ Status values: OK / CORRECTED / UPDATED / UNVERIFIABLE
 | commodityPrices.js | extend 2026M02–2026M09 | ended 2026M01 | added (2026M09: Au 4,319, Ag 64.6, Cu 14,474) | same + SIACAM file | UPDATED |
 | commodityPrices.js | litio series | all "" except 2026M01 = 10,500 (unsourced) | lithium carbonate 99.5% CIF Asia, USD/t LCE (Fastmarkets via SIACAM), filled 2018M11–2026M09. 2026M01 corrected from 10,500 to 18,755; 2026M09 = 18,080 | https://www.mecon.gob.ar/dataset/precios-internacionales-minerales.xlsx | CORRECTED |
 | sources.js | indecExports, magypEstimates, secEnergiaOilGas, senasaEquinos, adefa, cammesa, rigiOfficial, lme (now the SIACAM/WB prices file) | — | notes, dates and URLs updated | — | UPDATED |
+
+## Audit: roll-call votes and provincial cabinets (2026-10-20)
+
+## Task 1: Roll-call votes
+
+Note: votaciones.hcdn.gob.ar could not be reached from this environment (curl timeouts and TLS resets; WebFetch returned 503; web.archive.org is blocked). The Diputados roll calls therefore come from press nominal lists. Each was cross-checked against a second independent list, and the totals match the official tallies. The Senate roll call comes from the official acta.
+
+| file | entity | old | new | source | status |
+|---|---|---|---|---|---|
+| src/data/votaciones.json | `ley_glaciares`, Diputados (9-Apr-2026) | not present (Senate only) | 256 deputies coded: A 137 / N 111 / X 3 / U 5 (Bonacci, Finocchiaro, García Aresca, G.G. González, Yedlin). Menem (presiding) not in roster | Perfil "Reforma de la Ley de Glaciares: cómo votó cada uno de los Diputados" (HCDN acta format); cross-check Parlamentario.com 9-Apr-2026 | Verified: the two lists agree on all 256 deputies, totals = 137-111-3 |
+| src/data/votaciones.json | `inocencia_fiscal_2`, Diputados (26-Aug-2026) | n/a | A 139 / N 110 / X 2 (Arrieta, Torres) / U 5 (Farías, Frade, Gómez J., Lanesan Sancho, Pichetto). Pitrola and Ravier have no key (they had left their seats) | Perfil "Uno por uno… Inocencia Fiscal II" (27-Aug-2026); affirmative list cross-checked against MDZ (identical 139) | Verified: totals = 139-110-2. The negative list rests on one source only |
+| src/data/votaciones.json | `inocencia_fiscal_2`, Senado (17-Sep-2026) | n/a | A 44 / N 23 / X 0 / U 5, all 72 senators | senado.gob.ar/votaciones/detalleActa/2808 (Acta 4, en general, O.D. 372/2026) | Verified against the official acta |
+| src/data/votaciones.json | new entry MATZKIN, MARTIN (LLA, La Pampa, D) | n/a | added. Sworn in 24-Jun-2026 to replace Ravier | hcdn.gob.ar/diputados roster | Verified |
+| src/data/votaciones.json | new entry GIORDANO, JUAN CARLOS (FIT-U, Buenos Aires, D) | n/a | added. Sworn in 26-Aug-2026 to replace Pitrola | hcdn.gob.ar/diputados roster | Verified |
+| src/data/executivePositions.json | `ley_glaciares` note | "deputies roll call not yet in votaciones.json" | tallies plus the sources used | as above | Updated |
+| src/data/executivePositions.json | `inocencia_fiscal_2` | n/a | new: topic "Tax Innocence II", 2026-08, exec "A", note with both chambers' tallies and sources | as above | Added |
+| src/data/alignmentScores.json | regenerated | 6 listed votes | 7 listed votes (adds `inocencia_fiscal_2`; `ley_glaciares` now has deputy data); 330 legislators | `node scripts/compute-alignment.mjs` | Done |
+| src/components/shared/VoteDots.jsx, panels/ProvincialCongressPanel.jsx, mobile/MobileProvinceTab.jsx | topic lists | DIP without glaciares | DIP += `ley_glaciares`, `inocencia_fiscal_2`; SEN += `inocencia_fiscal_2`; label "Tax Innocence II"/IF2 | n/a | Done (English labels to match the existing UI) |
+| src/components/mobile/MobileNationTab.jsx | KEY_VOTES | Glacier Law Senate dated "Jan 2026" | Feb 2026; added Glacier Law Deputies 137-111 (Apr 2026) and Tax Innocence II Senate 44-23 (Sep 2026) | as above | Done |
+| scripts/scrape-votes.mjs | vote config | n/a | Senate 2808 added; TODO noting that the HCDN acta ids are unconfirmed | n/a | Done |
+
+Code note: compute-alignment counts every listed vote as an absence for anyone who was not seated at the time. Matzkin and Giordano show rate_absent 0.86, and Pitrola and Ravier are marked absent on IF2. The methodology was left unchanged.
+
+## Task 2: Provincial cabinets (src/data/gabinetesProvinciales.js)
+
+| file | entity | old | new | source | status |
+|---|---|---|---|---|---|
+| gabinetesProvinciales.js | Mendoza, Gobierno | Lisandro Nieri | "Sin confirmar (Nieri, diputado nacional desde 10-12-2025)" | HCDN roster; Nieri voted in Diputados | Outdated. Successor not found |
+| gabinetesProvinciales.js | Catamarca, Gobierno, Seg. y Justicia | Fernando Monguillot | Alberto Natella | El Ancasti 2-Dec-2025 | Fixed |
+| gabinetesProvinciales.js | Catamarca, Educación | Nicolás Rosales Matienzo | Verónica Soria (Educación absorbed Trabajo) | El Ancasti 11-Apr-2026 and Aug-2026 | Fixed; separate Trabajo row removed |
+| gabinetesProvinciales.js | Misiones, Educación | Miguel Sedoff | Ramiro Aranda | misiones.gob.ar (10-Dec-2023 jura); Misiones Online 2026 | Fixed |
+| gabinetesProvinciales.js | Misiones, Sec. Energía | Paolo Quintana | removed (now a subsecretaría of Hacienda from 1-Aug-2026); added Acción Cooperativa: Matías Vilchez | Dec. 1317 and 1319/2026 (La Data Mix, La Voz de Misiones) | Fixed |
+| gabinetesProvinciales.js | Misiones, Coord. Gabinete Sartori; Hacienda Safrán | unchanged | unchanged | Misiones Online Oct-2026; Dec. 1325/2026 | Verified |
+| gabinetesProvinciales.js | Chaco, Producción | Víctor Zimmerman | Oscar Dudik | Letra P (Zdero's speech opening the legislative session, 2026) | Fixed |
+| gabinetesProvinciales.js | Chubut, Coord. Gabinete | Jennifer Contardi | Andrés Arbeletche (secretario) | Diario Jornada, 4-May-2026 | Fixed |
+| gabinetesProvinciales.js | Chubut, Economía | Miguel Arnaudo | Gustavo Martín Paz | Diario Jornada, 4-May-2026 | Fixed |
+| gabinetesProvinciales.js | Santa Cruz, Des. Social | Luisa Cárdenas | Sebastián Georgion | santacruz.gob.ar/gobierno/autoridades | Fixed |
+| gabinetesProvinciales.js | Santa Cruz, Trabajo | Juan Eduardo Mata | Vacante (official page shows "-") | same | Fixed. The vacancy may be a stale page |
+| gabinetesProvinciales.js | Tierra del Fuego, Producción y Ambiente | Karina Fernández | Francisco Devita | tierradelfuego.gob.ar/ministerios | Fixed |
+| gabinetesProvinciales.js | La Pampa, Obras Públicas | Julio Rojo | Alfredo Intronati | Letra P, 9-Sep-2024 | Fixed |
+| gabinetesProvinciales.js | Jujuy, Seguridad | Guillermo Corro | "Sin confirmar (Pulleiro, sec. a cargo, renunció 11-03-2026)" | TodoJujuy; Letra P 11-Mar-2026 | Outdated. Successor not found |
+| gabinetesProvinciales.js | San Luis, Ciencia e Innovación | Pedro Canali | removed (ministry eliminated) | ANSL 20-May-2026 (Ley de Ministerios) | Fixed. Other San Luis holders unconfirmed after the cabinet-wide resignation in May 2026 |
+| gabinetesProvinciales.js | Santiago del Estero, Economía | Atilio Chara | Jorge Gustavo Murad | sde.gob.ar 14-Oct-2026; Diario Panorama | Fixed |
+| gabinetesProvinciales.js | Neuquén (all 10) | n/a | unchanged | neuquen.gob.ar/organigrama-de-autoridades | Verified (official) |
+| gabinetesProvinciales.js | Río Negro (all, incl. Sec. Energía Confini) | n/a | unchanged | rionegro.gov.ar/autoridades | Verified (official) |
+| gabinetesProvinciales.js | Santa Cruz (others) / TdF (others) / La Rioja (all) | n/a | unchanged | official authorities pages | Verified (official) |
+| gabinetesProvinciales.js | Corrientes, Formosa, San Juan, and the remaining names in Chaco/Chubut/La Pampa/Jujuy/Misiones/San Luis/Santiago | n/a | unchanged | no official roster reachable; no 2026 change found in press | Unverified (noted in the file header comment) |

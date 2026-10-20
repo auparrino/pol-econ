@@ -88,6 +88,13 @@ for (const leg of legList) {
 const perLegislator = {};
 const perProvinceAgg = {}; // province -> { execMatch, blocMatch, cast, absent, total }
 
+const CANONICAL_PROVINCES = [
+  'Buenos Aires', 'Ciudad de Buenos Aires', 'Catamarca', 'Chaco', 'Chubut', 'Córdoba', 'Corrientes',
+  'Entre Ríos', 'Formosa', 'Jujuy', 'La Pampa', 'La Rioja', 'Mendoza', 'Misiones', 'Neuquén',
+  'Río Negro', 'Salta', 'San Juan', 'San Luis', 'Santa Cruz', 'Santa Fe', 'Santiago del Estero',
+  'Tierra del Fuego', 'Tucumán',
+];
+
 function normProvince(p) {
   if (!p) return '—';
   const s = p.trim();
@@ -106,8 +113,16 @@ function normProvince(p) {
     'santiago del estero': 'Santiago del Estero',
     'tierra del fuego': 'Tierra del Fuego',
   };
-  return map[lower] || s;
+  if (map[lower]) return map[lower];
+  if (lower.startsWith('ciudad')) return 'Ciudad de Buenos Aires';
+  if (lower.startsWith('tierra del fuego')) return 'Tierra del Fuego';
+  // Senate rosters spell provinces in upper case: match against the canonical list.
+  const canonical = CANONICAL_PROVINCES.find(c => c.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') === lower);
+  return canonical || s;
 }
+
+const dateByVote = Object.fromEntries((positions.positions || positions).map(p => [p.vote_id, p.date || '']));
+const votesByDate = [...listedVotes].sort((a, b) => (dateByVote[a] || '').localeCompare(dateByVote[b] || ''));
 
 for (let i = 0; i < legList.length; i++) {
   const leg = legList[i];
@@ -118,7 +133,12 @@ for (let i = 0; i < legList.length; i++) {
   let execMatch = 0, blocMatch = 0, cast = 0, absent = 0, total = 0;
   const breakdown = {};
 
-  for (const voteId of listedVotes) {
+  // Votes held before a legislator was sworn in (e.g. mid-term replacements)
+  // are not absences: only count from their first recorded vote onwards.
+  const firstVoted = votesByDate.findIndex(id => leg.v?.[id] && leg.v[id] !== 'U');
+  const seatedVotes = firstVoted === -1 ? votesByDate : votesByDate.slice(firstVoted);
+
+  for (const voteId of seatedVotes) {
     const execPos = execByVote[voteId];
     const v = leg.v?.[voteId];
     total += 1;
@@ -170,7 +190,7 @@ const out = {
   methodology:
     'score_executive = matches / votes_cast across curated executive-position list. ' +
     'score_bloc = matches with own-bloc majority (>=60%) / votes_cast. ' +
-    'rate_absent = absences / listed_total. ' +
+    'rate_absent = absences / listed_total, counting only votes from the legislator\'s first recorded vote onwards (mid-term replacements are not penalised). ' +
     'Source positions: src/data/executivePositions.json',
   listed_votes: listedVotes,
   per_legislator: perLegislator,

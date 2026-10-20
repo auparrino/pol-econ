@@ -9,14 +9,16 @@ import exportsCatRaw from '../../data/exports_by_category.json';
 const CabinetPanel = lazy(() => import('../panels/CabinetPanel'));
 
 const KEY_VOTES = [
-  { name: 'Budget 2026', ch: 'Senate', a: 46, n: 25, r: 'A', date: 'Mar 2026' },
-  { name: 'Labor Reform', ch: 'Senate', a: 42, n: 28, r: 'A', date: 'Feb 2026' },
-  { name: 'Mercosur–EU', ch: 'Senate', a: 69, n: 3, r: 'A', date: 'Feb 2026' },
-  { name: 'Juvenile Penal', ch: 'Senate', a: 44, n: 27, r: 'A', date: 'Jan 2026', note: 'Min. age 14' },
-  { name: 'Glacier Law', ch: 'Senate', a: 40, n: 31, r: 'A', date: 'Jan 2026', note: '1st chamber' },
-  { name: 'Univ. Funding', ch: 'Deputies', a: 174, n: 67, r: 'A', date: 'Sep 2025', note: 'Veto overridden' },
-  { name: 'Pensions', ch: 'Deputies', a: 160, n: 83, r: 'R', date: 'Aug 2025', note: 'Veto upheld' },
-  { name: 'Ley Bases', ch: 'Senate', a: 36, n: 36, r: 'A', date: 'Jun 2024', note: 'VP tiebreak' },
+  { name: 'Presupuesto 2026', ch: 'Senado', a: 46, n: 25, r: 'A', date: 'dic 2025' },
+  { name: 'Reforma laboral', ch: 'Senado', a: 42, n: 28, r: 'A', date: 'feb 2026' },
+  { name: 'Mercosur–UE', ch: 'Senado', a: 69, n: 3, r: 'A', date: 'feb 2026' },
+  { name: 'Régimen penal juvenil', ch: 'Senado', a: 44, n: 27, r: 'A', date: 'feb 2026', note: 'edad mínima 14' },
+  { name: 'Inocencia Fiscal II', ch: 'Senado', a: 44, n: 23, r: 'A', date: 'sep 2026', note: 'sanción; Diputados 139-110' },
+  { name: 'Ley de Glaciares', ch: 'Diputados', a: 137, n: 111, r: 'A', date: 'abr 2026', note: 'sanción final' },
+  { name: 'Ley de Glaciares', ch: 'Senado', a: 40, n: 31, r: 'A', date: 'feb 2026', note: 'media sanción' },
+  { name: 'Financ. universitario', ch: 'Diputados', a: 174, n: 67, r: 'A', date: 'sep 2025', note: 'veto rechazado' },
+  { name: 'Jubilaciones', ch: 'Diputados', a: 160, n: 83, r: 'R', date: 'sep 2024', note: 'veto sostenido' },
+  { name: 'Ley Bases', ch: 'Senado', a: 36, n: 36, r: 'A', date: 'jun 2024', note: 'desempate VP' },
 ];
 
 function ChamberCard({ label, total, blocs }) {

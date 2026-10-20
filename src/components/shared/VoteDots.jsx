@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import votacionesRaw from '../../data/votaciones.json';
 
-const SEN_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
-const DIP_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
+const SEN_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv', 'inocencia_fiscal_2'];
+const DIP_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue', 'ley_glaciares', 'inocencia_fiscal_2'];
 // Vote codes used in votaciones.json: A=Afirmativo, N=Negativo, X=Abstención, U=Ausente.
 const VOTE_COLOR_BB = { A: '#27ae60', N: '#C0392B', X: '#d4a800' };
 const VOTE_LBL  = { A: 'A', N: 'N', X: '~' };

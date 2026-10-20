@@ -9,10 +9,10 @@ import { matchProvince, blocColor } from '../shared/helpers';
 // Convert votaciones.json (object or array) to array
 const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
 
-// Topics per chamber (must match scrape-votes.mjs output)
+// Topics per chamber (vote ids in votaciones.json / executivePositions.json)
 const OFICIALISMO_BLOCS = ['la libertad avanza'];
-const SENATE_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
-const DEPUTY_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
+const SENATE_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv', 'inocencia_fiscal_2'];
+const DEPUTY_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue', 'ley_glaciares', 'inocencia_fiscal_2'];
 
 // Pre-compute LLA bloc majority position per topic
 function computeBlocPosition(chamber, topics) {

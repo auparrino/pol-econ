@@ -27,6 +27,9 @@ const DIPUTADOS_VOTES = [
   { id: 5847, slug: 'regimen_penal_juv', label: 'Régimen Penal Juvenil (12/02/26)' },
   { id: 5849, slug: 'mercosur_ue', label: 'Acuerdo Mercosur-UE (12/02/26)' },
   { id: 5853, slug: 'modernizacion_laboral', label: 'Modernización Laboral (20/02/26)' },
+  // TODO: ley_glaciares (09/04/26, 137-111-3) and inocencia_fiscal_2 (26/08/26, 139-110-2):
+  // HCDN acta ids not confirmed — votaciones.hcdn.gob.ar was unreachable on 2026-10-20; these
+  // roll calls were loaded into votaciones.json from press nominal lists (see executivePositions.json notes).
 ];
 
 // Key general votes - Senado — only post 10/12/2025
@@ -39,6 +42,7 @@ const SENADO_VOTES = [
   { id: 2657, slug: 'ley_glaciares', label: 'Ley de Glaciares (26/02/26)' },
   { id: 2665, slug: 'regimen_penal_juv', label: 'Régimen Penal Juvenil (27/02/26)' },
   { id: 2678, slug: 'modernizacion_laboral_dip', label: 'Mod. Laboral - cambios Diputados (27/02/26)' },
+  { id: 2808, slug: 'inocencia_fiscal_2', label: 'Inocencia Fiscal II - en general (17/09/26)' },
 ];
 
 function sleep(ms) {
