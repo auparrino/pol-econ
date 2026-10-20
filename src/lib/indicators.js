@@ -10,7 +10,7 @@ import { governors } from '../data/governors';
 import { sociodemographic, sociodemographicMeta } from '../data/sociodemographic';
 import dnapFiscal from '../data/dnap_fiscal.json';
 import dnapEmpleo from '../data/dnap_empleo_provincial.json';
-import sipaPubPriv from '../data/sipa_pub_priv.json';
+import sipaEmployment from '../data/sipa_employment.json';
 import exportsByCategory from '../data/exports_by_category.json';
 import alignmentScores from '../data/alignmentScores.json';
 import { PROVINCES, provinceKey, indexBy } from './provinces';
@@ -50,10 +50,14 @@ const exportsPerCapita = collect(exportsLatest, 'province', r => {
 });
 const exportsTotal = exportsLatest.reduce((a, r) => a + (r.total || 0), 0);
 
-const privPer1000 = collect(sipaPubPriv.provinces, 'province', r => {
+// Latest registered private employment (Secretaría de Trabajo, SIPA/ARCA).
+const sipaLatest = sipaEmployment.stLatest;
+const privRows = Object.entries(sipaLatest.provinces).map(([province, v]) => ({ province, ...v }));
+const privPer1000 = collect(privRows, 'province', r => {
   const pop = population[provinceKey(r.province)];
-  return pop ? (r.private / pop) * 1000 : null;
+  return pop ? (r.jul2026 / pop) * 1000 : null;
 });
+const privVarPct = collect(privRows, 'province', r => r.varPct);
 
 const scoreByProvince = {};
 for (const [k, v] of Object.entries(alignmentScores.per_province || {})) {
@@ -144,13 +148,27 @@ const raw = [
     id: 'empleo_privado',
     group: 'economia',
     label: 'Empleo privado registrado',
-    unit: 'puestos cada 1.000 hab.',
+    unit: 'asalariados cada 1.000 hab.',
     better: 'high',
     fmt: v => `${fmtInt(v)} c/1.000`,
     values: privPer1000,
-    source: 'CEP XXI / SIPA',
-    vintage: `SIPA · ${sipaPubPriv.vintage}`,
-    what: 'Puestos asalariados privados en blanco por cada mil habitantes: una medida directa de formalidad laboral.',
+    source: 'Secretaría de Trabajo — SIPA/ARCA',
+    vintage: 'SIPA · jul. 2026 (provisorio)',
+    what: 'Personas con empleo asalariado privado en blanco por cada mil habitantes: una medida directa de formalidad laboral.',
+    caveat: 'Dato provisorio, con estacionalidad. El denominador es la población del Censo 2022. Las empresas con participación estatal se cuentan como privadas.',
+  },
+  {
+    id: 'empleo_privado_var',
+    group: 'economia',
+    label: 'Variación del empleo privado registrado',
+    unit: '% nov. 2023 → jul. 2026',
+    better: 'high',
+    fmt: v => `${v > 0 ? '+' : ''}${v.toLocaleString('es-AR', { maximumFractionDigits: 1 })} %`,
+    values: privVarPct,
+    source: 'Secretaría de Trabajo — SIPA/ARCA',
+    vintage: 'SIPA · jul. 2026 (provisorio)',
+    what: 'Cuánto creció o cayó el número de asalariados privados registrados desde noviembre de 2023.',
+    caveat: 'Ambos meses incluyen estacionalidad (noviembre y julio no son meses equivalentes).',
   },
   {
     id: 'dependencia',
