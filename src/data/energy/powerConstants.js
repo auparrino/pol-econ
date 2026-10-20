@@ -1,10 +1,12 @@
 // Shared energy constants used by desktop RightOverlayPanel and mobile components.
-// Source: CAMMESA end-2024 validated totals.
+// Source: CAMMESA Base Informe Mensual sep-2026, "Potencia Instalada" (MEM, 1-sep-2026;
+// FUENTE GENERACION classification — small hydro <50 MW counted as Renewable; Yacyretá at
+// 1,550 MW Argentine share). Total 44.66 GW. End-2025: 25.1 / 9.6 / 7.7 / 1.8 = 44.18 GW.
 
 export const POWER_BY_FUEL = [
-  { name: 'Thermal',    gw: 25.5, color: '#EF4444' },
-  { name: 'Hydro',      gw: 10.1, color: '#3B82F6' },
-  { name: 'Renewables', gw: 6.8,  color: '#10B981' },
+  { name: 'Thermal',    gw: 24.9, color: '#EF4444' },
+  { name: 'Hydro',      gw: 9.6,  color: '#3B82F6' },
+  { name: 'Renewables', gw: 8.3,  color: '#10B981' },
   { name: 'Nuclear',    gw: 1.8,  color: '#A855F7' },
 ];
 
