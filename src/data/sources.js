@@ -121,7 +121,7 @@ export const SOURCES = {
     name: 'INDEC — Origen provincial de las exportaciones (OPEX)',
     url: 'https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-79',
     updated: '2025',
-    notes: 'OPEX — asigna el origen provincial de los bienes exportados. Serie histórica 1993–2025 por provincia y grandes rubros.',
+    notes: 'OPEX — asigna el origen provincial de los bienes exportados. Serie histórica 1993–2025 por provincia y grandes rubros. 1993–2021: datos.gob.ar (SSPM dataset 350/357); 2022–2025: INDEC opex_anexo_cuadros_10_03_26.xls (hoja OP-Rubros 2022-2025, revisado; total país 2025 = US$ 87.111 M, de los cuales US$ 1.771 M son Extranjero/Plataforma/Indeterminado y no se asignan a provincias). Destinos 2025: base anual INDEC COMEX exports_2025_Y.zip (Datos_origen_2002_2025), top 10 países + Resto; esa base asigna el crudo por provincia con otro criterio (p. ej. Neuquén 6.301 vs 4.534 M en el cuadro oficial).',
   },
 
   // ─── Production ───────────────────────────────────────────────
@@ -129,6 +129,7 @@ export const SOURCES = {
     name: 'MAGyP — Estimaciones agrícolas',
     url: 'https://datosestimaciones.magyp.gob.ar',
     updated: '2024/25',
+    notes: 'estimaciones-agricolas-2026-03.csv (datos.magyp.gob.ar): última campaña completa 2024/25 para cereales y oleaginosas (2025/26 aún no publicada por departamento); yerba mate y té: 2023/24.',
   },
   inv: {
     name: 'INV — Instituto Nacional de Vitivinicultura',
@@ -143,7 +144,8 @@ export const SOURCES = {
   secEnergiaOilGas: {
     name: 'Sec. Energía — Producción de petróleo y gas',
     url: 'http://datos.energia.gob.ar/dataset/produccion-de-petroleo-y-gas-por-pozo',
-    updated: '2024',
+    updated: '2025',
+    notes: 'Capítulo IV, producción por pozo 2025 (oilgas_production.json). Contrastado con EITI/argentina.gob.ar (trimestres 2025) y prensa (promedio 2025 ≈ 800 mil bbl/d).',
   },
   senasaSigsa: {
     name: 'SENASA — Estadísticas animales (hub)',
@@ -178,13 +180,13 @@ export const SOURCES = {
   senasaEquinos: {
     name: 'SENASA — Existencias equinas',
     url: 'https://www.argentina.gob.ar/senasa/mercados-y-estadisticas/estadisticas/animal-estadisticas/equinos/equinos-sector-primario',
-    updated: '2024',
-    notes: 'Stock equino por provincia y departamento.',
+    updated: '2025 (31-mar-2025)',
+    notes: 'Stock de équidos por provincia: "Informe Existencias Équidos 2025" (SAGyP Coordinación de Equinos, base SIGSA-SENASA), total 2.714.067 incl. CABA 4.367.',
   },
   adefa: {
     name: 'ADEFA — Asociación de Fábricas de Automotores',
     url: 'https://www.adefa.org.ar/es/estadisticas-mensuales',
-    updated: '2024',
+    updated: '2024 (plantas) · 2025 (total 490.876)',
   },
   cafam: {
     name: 'CAFAM — Cámara de Fabricantes de Motovehículos',
@@ -207,8 +209,9 @@ export const SOURCES = {
   },
   cammesa: {
     name: 'CAMMESA — Variables relevantes del MEM (resumen anual)',
-    url: 'https://cammesaweb.cammesa.com/variables-relevantes-del-mem-resumen-anual/',
-    updated: 'End-2024',
+    url: 'https://cammesaweb.cammesa.com/informe-sintesis-mensual/',
+    updated: 'Sep 2026',
+    notes: 'Base Informe Mensual sep-2026, "Potencia Instalada.xlsx" (por máquina y provincia, excl. autogeneradores): total MEM 44.662 MW (térmica 24.918, hidráulica >50 MW 9.639, renovable 8.342 incl. PAH <50 MW, nuclear 1.763). Fin 2025: 44.177 MW. Yacyretá a 1.550 MW (potencia firme Argentina) y Salto Grande a 945 MW.',
   },
   enargas: {
     name: 'ENARGAS — Ente Nacional Regulador del Gas',
@@ -249,8 +252,8 @@ export const SOURCES = {
   rigiOfficial: {
     name: 'RIGI — Régimen de Incentivo para Grandes Inversiones (Ley 27.742)',
     url: 'https://www.argentina.gob.ar/normativa/nacional/ley-27742-401266/texto',
-    updated: 'Mar 2026',
-    notes: 'Texto completo de Ley 27.742 (Ley de Bases). RIGI está en Título VII.',
+    updated: 'Oct 2026',
+    notes: 'Texto completo de Ley 27.742 (Ley de Bases). RIGI está en Título VII. rigiProjects.json curado al 20-oct-2026: 25 proyectos aprobados y publicados en BO por US$ 68.438 M (cifra oficial comunicada el 19-oct-2026) + 4 aprobados por el Comité Evaluador pendientes de BO (MARA, Toyota, TGS x2) ≈ US$ 76.979 M.',
   },
 
   // ─── Geography / Maps ─────────────────────────────────────────
@@ -262,9 +265,9 @@ export const SOURCES = {
 
   // ─── Commodities ──────────────────────────────────────────────
   lme: {
-    name: 'LME / Market data',
-    url: 'https://www.lme.com',
-    updated: '2026',
-    notes: 'Metal reference prices (Au, Cu, Li).',
+    name: 'SIACAM — Precios internacionales de minerales (Banco Mundial Pink Sheet + Fastmarkets)',
+    url: 'https://www.mecon.gob.ar/dataset/precios-internacionales-minerales.xlsx',
+    updated: 'Sep 2026',
+    notes: 'commodityPrices.js: oro y plata US$/oz troy, cobre US$/t (Banco Mundial Pink Sheet, act. 2-oct-2026); litio = carbonato de litio 99,5% CIF Asia, US$/t LCE (Fastmarkets vía SIACAM), desde 2018M11.',
   },
 };

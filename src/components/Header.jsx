@@ -94,6 +94,7 @@ export default function Header({ onExplore, onMethod, onShare, height = 64 }) {
           <div className="hidden 2xl:flex items-center divide-x divide-[#E4E0D6]">
             <Stat label={`Oro · ${commodityMonth}`} value={usd(lastCommodity.oro)} title="Promedio mensual, US$/oz troy (Banco Mundial)" />
             <Stat label={`Cobre · ${commodityMonth}`} value={usd(lastCommodity.cobre)} title="Promedio mensual, US$/tonelada (Banco Mundial)" />
+            <Stat label={`Litio · ${commodityMonth}`} value={usd(lastCommodity.litio)} title="Carbonato de litio 99,5 %, CIF Asia, US$/tonelada (Sec. de Minería / Fastmarkets)" />
           </div>
         </div>
       </div>

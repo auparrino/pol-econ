@@ -9,6 +9,7 @@ import centralesData from '../data/energy/centrales.json';
 import refineriasData from '../data/energy/refinerias.json';
 import cammesaRegions from '../data/energy/cammesa-por-region.json';
 import cammesaProvData from '../data/energy/cammesa-por-provincia.json';
+import { POWER_BY_FUEL as POWER_BY_FUEL_EN, POWER_TOTAL_GW, POWER_NUCLEAR_PLANTS } from '../data/energy/powerConstants';
 
 const OverlayPanel = lazy(() => import('./panels/OverlayPanel'));
 
@@ -79,20 +80,8 @@ const MINING_BY_STAGE = [
   { name: 'Prefactibilidad / eval.', count: 21, color: '#f59e0b' },
 ];
 
-// CAMMESA installed capacity end-2024 (validated; centrales.json carries
-// only a partial sample so we use the canonical totals here).
-const POWER_BY_FUEL = [
-  { name: 'Thermal',     gw: 25.5, color: '#EF4444' },
-  { name: 'Hydro',       gw: 10.1, color: '#3B82F6' },
-  { name: 'Renewables',  gw: 6.8,  color: '#10B981' },
-  { name: 'Nuclear',     gw: 1.8,  color: '#A855F7' },
-];
-const POWER_TOTAL_GW = POWER_BY_FUEL.reduce((s, x) => s + x.gw, 0);
-const POWER_NUCLEAR_PLANTS = [
-  { name: 'Atucha I',  mw: 362 },
-  { name: 'Atucha II', mw: 745 },
-  { name: 'Embalse',   mw: 656 },
-];
+const FUEL_ES = { Thermal: 'Térmica', Hydro: 'Hidráulica', Renewables: 'Renovables', Nuclear: 'Nuclear' };
+const POWER_BY_FUEL = POWER_BY_FUEL_EN.map(f => ({ ...f, name: FUEL_ES[f.name] || f.name }));
 
 // Pre-built normed lookup for per-province CAMMESA data (real plant assignments).
 // Keys are normProv(provinceName) so they match normProv(selectedProvince).
@@ -536,10 +525,10 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
   const headerLabel = selectedProvince
     ? stats.capacityData
       ? stats.isAssigned
-        ? `GW instalados · dato provincial (2020)`
-        : `GW en la región CAMMESA (2020)`
+        ? `GW instalados · dato provincial (sep. 2026)`
+        : `GW en la región CAMMESA (sep. 2026)`
       : `sin datos de potencia`
-    : `GW instalados en el país (CAMMESA, fin de 2024)`;
+    : `GW instalados en el país (CAMMESA, sep. 2026)`;
 
   return (
     <div className="rounded-md p-2.5"
@@ -629,8 +618,8 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
           )}
           <p className="text-[9px] text-[#14213D]/45 leading-snug mt-2">
             {stats.isAssigned
-              ? `Asignación de centrales por provincia. Fuente: datos.energia.gob.ar, feb. 2020.`
-              : `Las regiones de CAMMESA abarcan varias provincias; la potencia es la de toda la región. Fuente: datos.energia.gob.ar, feb. 2020.`
+              ? `Asignación de centrales por provincia. Fuente: CAMMESA, sep. 2026.`
+              : `Las regiones de CAMMESA abarcan varias provincias; la potencia es la de toda la región. Fuente: CAMMESA, sep. 2026.`
             }
           </p>
         </>
@@ -716,7 +705,7 @@ export default function RightOverlayPanel({
             />
             <p className="text-[9px] text-[#14213D]/40 italic mt-2 leading-snug">
               Fuentes: SIACAM (minería), datos.energia.gob.ar (hidrocarburos, refinerías),
-              CAMMESA fin de 2024 y agregados manuales (centrales).
+              CAMMESA sep. 2026 (centrales).
             </p>
           </div>
         )}

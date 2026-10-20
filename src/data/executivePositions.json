@@ -49,7 +49,15 @@
       "chamber": "both",
       "date": "2026-02",
       "executive_position": "A",
-      "note": "Executive-backed modification. Senado 26-Feb-2026 (40-31-1); Diputados final 9-Apr-2026 (137-111-3, deputies roll call not yet in votaciones.json)."
+      "note": "Executive-backed modification of Ley 26.639. Senado 26-Feb-2026 (40-31-1, acta senado.gob.ar 2657); Diputados final passage 9-Apr-2026 (137-111-3, 5 absent). Deputies roll call: votaciones.hcdn.gob.ar unreachable at audit time (2026-10-20); nominal list taken from Perfil 'Reforma de la Ley de Glaciares: cómo votó cada uno de los Diputados' and cross-checked 1:1 against Parlamentario.com (9-Apr-2026)."
+    },
+    {
+      "vote_id": "inocencia_fiscal_2",
+      "topic": "Tax Innocence II",
+      "chamber": "both",
+      "date": "2026-08",
+      "executive_position": "A",
+      "note": "Executive bill (Inocencia Fiscal II: removes income/asset caps for the simplified Ganancias regime, excludes public officials, redefines 'discrepancia significativa'; amends Leyes 11.683, 27.799, 25.191). Diputados media sanción 26-Aug-2026 (139-110-2, 5 absent); Senado sanción definitiva sin cambios 17-Sep-2026, en general (44-23-0, 5 absent; acta senado.gob.ar/votaciones/detalleActa/2808, O.D. 372/2026). Deputies roll call from Perfil (27-Aug-2026), affirmative list cross-checked against MDZ; votaciones.hcdn.gob.ar unreachable at audit time."
     }
   ]
 }

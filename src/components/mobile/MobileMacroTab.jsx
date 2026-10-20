@@ -42,7 +42,7 @@ function MiniCard({ label, value, prefix = '$' }) {
     >
       <p className="text-[10px] uppercase tracking-widest font-semibold text-[#14213D]/55">{label}</p>
       <p className="text-[15px] font-bold font-mono text-[#14213D] mt-0.5">
-        {value != null ? `${prefix}${typeof value === 'number' ? value.toLocaleString('en-US') : value}` : '—'}
+        {value != null && value !== '' ? `${prefix}${Number(value).toLocaleString('es-AR', { maximumFractionDigits: 0 })}` : '—'}
       </p>
     </div>
   );
@@ -70,21 +70,21 @@ export default function MobileMacroTab() {
           </div>
 
           <div>
-            <p className="text-[10px] uppercase tracking-widest font-semibold text-[#14213D]/55 mb-1.5">Country Risk</p>
+            <p className="text-[10px] uppercase tracking-widest font-semibold text-[#14213D]/55 mb-1.5">Riesgo país</p>
             <BigCard label="Riesgo País" value={macro.riesgoPais} delta={cmp?.riesgoPais?.d1} />
           </div>
 
           <div>
-            <p className="text-[10px] uppercase tracking-widest font-semibold text-[#14213D]/55 mb-1.5">Commodities</p>
+            <p className="text-[10px] uppercase tracking-widest font-semibold text-[#14213D]/55 mb-1.5">Commodities · prom. mensual</p>
             <div className="grid grid-cols-3 gap-2">
-              <MiniCard label="Au (gold)" value={latestCommodities.oro} />
-              <MiniCard label="Cu (copper)" value={latestCommodities.cobre} />
-              <MiniCard label="Li (lithium)" value={latestCommodities.litio} />
+              <MiniCard label="Oro (US$/oz)" value={latestCommodities.oro} />
+              <MiniCard label="Cobre (US$/t)" value={latestCommodities.cobre} />
+              <MiniCard label="Litio (US$/t)" value={latestCommodities.litio} />
             </div>
           </div>
 
           <p className="text-[9px] text-[#14213D]/40 text-center pt-2">
-            Sources: dolarapi · BCRA · argentinadatos · Mar 2026
+            Fuentes: dolarapi · argentinadatos (en vivo) · Banco Mundial y Sec. de Minería (commodities, sep. 2026)
           </p>
         </div>
       </div>
