@@ -1,235 +1,154 @@
-// OverviewPanel — left-panel tab showing the high-level province snapshot:
-// hero (province name + region + area), governor card with alignment badge,
-// demographics, and core socioeconomic indicators. Fiscal, RIGI and the
-// other deep sections live in their own dedicated BottomBar tabs.
+// OverviewPanel — province snapshot: governor, and where the province stands
+// against the other 23 jurisdictions on every comparable indicator. Deep
+// sections (Congress, Fiscal, Exports, …) live in their own tabs.
 
-import { sociodemographic } from '../../data/sociodemographic';
+import { politicalContext } from '../../data/politicalContext';
+import { GROUPS, INDICATORS, rankOf } from '../../lib/indicators';
+import { indexBy, provinceKey } from '../../lib/provinces';
+import { alignColor, alignLabel } from '../../utils/alignmentHelpers';
+import { DotStrip } from '../explore/shared';
 
-const ALIGNMENT_LABELS = {
-  oficialismo:      'Ruling Coalition',
-  aliado:           'Allied',
-  negociador:       'Pragmatic',
-  'oposición dura': 'Hard Opposition',
-  'oposición':      'Opposition',
-};
-
-function alignmentBadgeStyle(alignment) {
-  const a = (alignment || '').toLowerCase();
-  if (a.includes('oficialismo'))                        return { bg: 'rgba(125,60,152,0.15)', color: '#7d3c98', label: ALIGNMENT_LABELS.oficialismo };
-  if (a.includes('aliado'))                             return { bg: 'rgba(23,165,137,0.15)', color: '#17a589', label: ALIGNMENT_LABELS.aliado };
-  if (a.includes('negociador') || a.includes('pragmát')) return { bg: 'rgba(212,168,0,0.20)', color: '#b58500', label: ALIGNMENT_LABELS.negociador };
-  if (a.includes('oposición dura'))                     return { bg: 'rgba(120,0,0,0.15)', color: '#780000', label: ALIGNMENT_LABELS['oposición dura'] };
-  if (a.includes('oposición'))                          return { bg: 'rgba(193,18,31,0.15)', color: '#C1121F', label: ALIGNMENT_LABELS['oposición'] };
-  return { bg: 'rgba(127,140,141,0.15)', color: '#7f8c8d', label: alignment || 'N/A' };
-}
-
-function AlignmentBadge({ alignment }) {
-  const s = alignmentBadgeStyle(alignment);
-  return (
-    <span
-      className="inline-block text-[11px] font-bold px-3 py-1 rounded uppercase tracking-wider whitespace-nowrap shrink-0"
-      style={{ background: s.bg, color: s.color, letterSpacing: '0.05em' }}
-    >
-      {s.label}
-    </span>
-  );
-}
-
-function findGovernor(governors, province) {
-  if (!province || !governors) return null;
-  const s = province.toLowerCase();
-  const exact = governors.find(g => g.provincia?.toLowerCase() === s);
-  if (exact) return exact;
-  return governors.find(g => {
-    const p = g.provincia?.toLowerCase();
-    if (!p) return false;
-    if (s.includes('ciudad') !== p.includes('ciudad')) return false;
-    return p.includes(s) || s.includes(p);
-  });
-}
-
-function findSocio(province) {
-  if (!province) return null;
-  const s = province.toLowerCase();
-  const isCABA = s.includes('ciudad de buenos aires') || s === 'caba';
-  return sociodemographic.find(d => {
-    const dn = d.provincia?.toLowerCase();
-    if (isCABA) return dn === 'ciudad de buenos aires' || dn === 'caba';
-    if (dn === 'ciudad de buenos aires' || dn === 'caba') return false;
-    return dn === s || dn?.includes(s) || s?.includes(dn);
-  });
-}
-
-function SectionTitle({ children }) {
-  return (
-    <h3 className="text-[11px] font-bold tracking-[1.5px] uppercase text-[#003049]/55 mb-1.5 mt-3">
-      {children}
-    </h3>
-  );
-}
-
-function DataRow({ label, value, color }) {
-  if (value == null || value === '') return null;
-  return (
-    <div className="flex justify-between items-baseline py-0.5">
-      <span className="text-[12px] text-[#003049]/60">{label}</span>
-      <span className={`text-[13px] font-mono ${color || 'text-[#003049]'}`}>{value}</span>
-    </div>
-  );
-}
-
-function HBar({ label, value, max, color, info }) {
-  const pct = Math.min((value / max) * 100, 100);
-  return (
-    <div className="py-1">
-      <div className="flex justify-between text-[11px] mb-0.5">
-        <span className="text-[#003049]/60" title={info}>{label}</span>
-        <span className="font-mono text-[#003049]">{value}%</span>
-      </div>
-      <div className="h-[5px] rounded-full overflow-hidden" style={{ background: 'rgba(0,48,73,0.10)' }}>
-        <div className="h-full rounded-full" style={{ width: `${pct}%`, background: color }} />
-      </div>
-    </div>
-  );
-}
+const ctxIdx = indexBy(politicalContext, 'provincia');
 
 function EmptyState() {
   return (
-    <div className="flex flex-col items-center justify-center text-center py-12 px-4">
-      <div className="text-4xl mb-3 opacity-30">🗺</div>
-      <p className="text-[12px] text-[#003049]/55 leading-snug">
-        Click a province on the map<br />to view its overview.
-      </p>
+    <div className="flex flex-col items-center justify-center text-center py-10 px-4">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" className="mb-3 opacity-40" aria-hidden>
+        <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" stroke="#14213D" strokeWidth="1.5" />
+        <circle cx="12" cy="9.5" r="2.5" stroke="#14213D" strokeWidth="1.5" />
+      </svg>
+      <p className="text-[13px] text-[#24365C] leading-snug">Elegí una provincia en el mapa<br />para ver cómo se ubica frente al resto.</p>
     </div>
   );
 }
 
-export default function OverviewPanel({ selectedProvince, governors, onClose }) {
-  if (!selectedProvince) return <EmptyState />;
+function rankTone(ind, r) {
+  if (!ind.better || !r) return '#6B7385';
+  const q = r.rank / r.of;
+  if (q <= 0.25) return '#1E8E5A';
+  if (q > 0.75) return '#C0392B';
+  return '#6B7385';
+}
 
-  const gov = findGovernor(governors, selectedProvince);
-  const socio = findSocio(selectedProvince);
-
-  if (!gov) {
-    return (
-      <div className="p-4">
-        <div className="flex items-start justify-between gap-2">
-          <h2 className="text-[16px] font-black text-[#003049]">{selectedProvince}</h2>
-          {onClose && (
-            <button
-              onClick={onClose}
-              className="text-[#003049]/40 hover:text-[#003049] transition-colors text-lg leading-none p-1"
-              aria-label="Clear selection"
-              title="Clear selection — back to full map"
-            >
-              ×
-            </button>
-          )}
-        </div>
-        <p className="text-[11px] text-[#003049]/50 italic mt-2">No governor data loaded for this province.</p>
+function Highlights({ province }) {
+  const ranked = INDICATORS
+    .filter(i => i.better)
+    .map(i => ({ ind: i, r: rankOf(i, province) }))
+    .filter(x => x.r);
+  if (ranked.length < 3) return null;
+  const best = [...ranked].sort((a, b) => a.r.rank - b.r.rank)[0];
+  const worst = [...ranked].sort((a, b) => b.r.rank - a.r.rank)[0];
+  return (
+    <div className="grid grid-cols-2 gap-2 mb-4">
+      <div className="rounded-xl p-3" style={{ background: 'rgba(30,142,90,0.08)' }}>
+        <p className="text-[10px] font-bold uppercase tracking-wide text-[#1E8E5A]">Mejor posición</p>
+        <p className="text-[13px] font-semibold text-[#14213D] mt-1 leading-tight">{best.ind.label}</p>
+        <p className="text-[11.5px] text-[#24365C] tnum">puesto {best.r.rank} de {best.r.of}</p>
       </div>
-    );
-  }
+      <div className="rounded-xl p-3" style={{ background: 'rgba(192,57,43,0.07)' }}>
+        <p className="text-[10px] font-bold uppercase tracking-wide text-[#C0392B]">Peor posición</p>
+        <p className="text-[13px] font-semibold text-[#14213D] mt-1 leading-tight">{worst.ind.label}</p>
+        <p className="text-[11.5px] text-[#24365C] tnum">puesto {worst.r.rank} de {worst.r.of}</p>
+      </div>
+    </div>
+  );
+}
 
-  const povertyColor = !socio ? '#669BBC'
-    : socio.pobreza > 50 ? '#C1121F'
-    : socio.pobreza > 40 ? '#e67e22'
-    : socio.pobreza > 30 ? '#f39c12'
-    : '#27ae60';
-  const unempColor = !socio ? '#669BBC'
-    : socio.desempleo > 8 ? '#C1121F'
-    : socio.desempleo > 6 ? '#e67e22'
-    : '#27ae60';
+export default function OverviewPanel({ selectedProvince, governors, onClose, onOpenExplore }) {
+  if (!selectedProvince) return <EmptyState />;
+  const name = provinceKey(selectedProvince);
+  const gov = indexBy(governors, 'provincia')[name];
+  const ctx = ctxIdx[name];
 
   return (
-    <div>
-      {/* Hero */}
-      <div className="pb-2 border-b mb-2 flex items-start justify-between gap-2" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
+    <div className="atlas-fade-in">
+      <div className="flex items-start justify-between gap-2 mb-3">
         <div className="min-w-0">
-          <h2 className="text-[18px] font-black text-[#003049] tracking-tight leading-tight">
-            {selectedProvince}
-          </h2>
-          <p className="text-[12px] text-[#003049]/60 mt-0.5">
-            {gov.region} · {gov.superficie_km2?.toLocaleString('es-AR')} km²
-          </p>
+          <h2 className="font-serif text-[24px] font-semibold text-[#14213D] leading-tight">{name}</h2>
+          {gov && (
+            <p className="text-[12px] text-[#6B7385] mt-0.5 tnum">
+              {gov.region} · {gov.superficie_km2?.toLocaleString('es-AR')} km² · {gov.poblacion_censo_2022?.toLocaleString('es-AR')} hab.
+            </p>
+          )}
         </div>
         {onClose && (
-          <button
-            onClick={onClose}
-            className="text-[#003049]/40 hover:text-[#003049] transition-colors text-xl leading-none p-1 -mt-1 -mr-1 shrink-0"
-            aria-label="Clear selection"
-            title="Clear selection — back to full map"
-          >
-            ×
-          </button>
+          <button onClick={onClose} className="w-7 h-7 rounded-full hover:bg-[#F1EEE7] text-[#6B7385] shrink-0" aria-label="Quitar selección" title="Volver al mapa completo">✕</button>
         )}
       </div>
 
-      {/* Governor card */}
-      <div
-        className="rounded-md border mb-3"
-        style={{ background: 'rgba(0,48,73,0.06)', borderColor: 'rgba(0,48,73,0.10)', padding: '10px 12px' }}
-      >
-        <div className="flex items-start justify-between gap-3">
-          <div className="min-w-0 flex-1">
-            <div className="text-[14px] font-bold text-[#003049] truncate">{gov.gobernador}</div>
-            <div className="text-[12px] text-[#003049]/60 truncate">{gov.partido}</div>
+      {gov && (
+        <div className="rounded-xl border border-[#E4E0D6] bg-white p-3 mb-3">
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0">
+              <p className="atlas-eyebrow">Gobierno provincial</p>
+              <p className="text-[15px] font-semibold text-[#14213D] mt-1 truncate">{gov.gobernador}</p>
+              <p className="text-[12px] text-[#24365C] truncate">{gov.partido}</p>
+            </div>
+            <span className="text-[10.5px] font-bold uppercase tracking-wide px-2 py-1 rounded shrink-0" style={{ background: `${alignColor(gov.alineamiento_nacion)}1c`, color: alignColor(gov.alineamiento_nacion) }}>
+              {alignLabel(gov.alineamiento_nacion)}
+            </span>
           </div>
-          <AlignmentBadge alignment={gov.alineamiento_nacion} />
+          <p className="text-[11.5px] text-[#6B7385] mt-2 leading-snug">{gov.posicion_ideologica}</p>
+          <p className="text-[11px] text-[#6B7385] mt-1.5 tnum">
+            Mandato {gov.inicio_mandato?.slice(0, 4)}–{gov.fin_mandato?.slice(0, 4)} · próxima elección {gov.proxima_eleccion}
+            {ctx?.rigi_adhesion_provincial ? ` · RIGI: ${ctx.rigi_adhesion_provincial}` : ''}
+          </p>
         </div>
-      </div>
-
-      {/* Demographics */}
-      <SectionTitle>Demographics</SectionTitle>
-      <div className="space-y-0">
-        <DataRow label="Population" value={gov.poblacion_censo_2022?.toLocaleString('es-AR')} />
-        <DataRow label="Density" value={gov.densidad ? `${gov.densidad} hab/km²` : null} />
-        <DataRow label="Area" value={`${gov.superficie_km2?.toLocaleString('es-AR')} km²`} />
-        <DataRow label="Region" value={gov.region} />
-      </div>
-
-      {/* Socioeconomic */}
-      <SectionTitle>Socioeconomic</SectionTitle>
-      {socio ? (
-        <>
-          <div
-            className="rounded-md p-2 border"
-            style={{ background: 'rgba(0,48,73,0.04)', borderColor: 'rgba(0,48,73,0.08)' }}
-          >
-            <HBar
-              label="Poverty"
-              value={socio.pobreza}
-              max={65}
-              color={povertyColor}
-              info="EPH urban aggregates (GBA + provincial capitals). Not province-wide. Source: INDEC EPH H2 2024."
-            />
-            <HBar
-              label="Unemploy."
-              value={socio.desempleo}
-              max={12}
-              color={unempColor}
-              info="EPH urban only. Source: INDEC EPH 2024 Q2."
-            />
-          </div>
-          <div className="mt-2 space-y-0">
-            <DataRow
-              label="PBG/cap (PPP)"
-              value={socio.pbg_per_capita_usd ? `$${socio.pbg_per_capita_usd.toLocaleString('en-US')}` : null}
-              color="text-[#27ae60]"
-            />
-            <DataRow label="Schooling" value={socio.escolaridad ? `${socio.escolaridad} yrs` : null} />
-            <DataRow label="Literacy" value={socio.alfabetismo != null ? `${socio.alfabetismo}%` : null} />
-          </div>
-        </>
-      ) : (
-        <p className="text-[11px] text-[#003049]/50 italic">No socioeconomic data.</p>
       )}
 
-      {/* Footer hint about other tabs */}
-      <div className="mt-4 pt-2 border-t text-[9px] text-[#003049]/45 leading-snug" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
-        Deep data lives in other tabs:
-        <br />Congress · Cabinet · Employment · Fiscal · Exports · Production · RIGI · News
+      <Highlights province={name} />
+
+      <div className="flex items-baseline justify-between mb-1">
+        <p className="atlas-eyebrow">Cómo se ubica entre las 24</p>
+        {onOpenExplore && (
+          <button onClick={() => onOpenExplore('comparar')} className="text-[11.5px] font-semibold text-[#1B4F86] hover:underline">Comparar →</button>
+        )}
       </div>
+
+      {GROUPS.map(g => {
+        const items = INDICATORS.filter(i => i.group === g.id && i.values[name] != null);
+        if (!items.length) return null;
+        return (
+          <section key={g.id} className="mb-3">
+            <p className="text-[11px] font-semibold text-[#6B7385] mt-2 mb-1">{g.label}</p>
+            <div className="flex flex-col divide-y divide-[#F1EEE7]">
+              {items.map(ind => {
+                const v = ind.values[name];
+                const r = rankOf(ind, name);
+                return (
+                  <button
+                    key={ind.id}
+                    onClick={() => onOpenExplore?.('ranking', ind.id)}
+                    className="text-left py-2 group"
+                    title={`${ind.what}\nFuente: ${ind.source} · ${ind.vintage}`}
+                  >
+                    <div className="flex items-baseline justify-between gap-2">
+                      <span className="text-[12.5px] text-[#24365C] group-hover:text-[#14213D]">{ind.label}</span>
+                      <span className="text-[13px] font-semibold text-[#14213D] tnum">{ind.fmt(v)}</span>
+                    </div>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <div className="flex-1"><DotStrip ind={ind} highlights={[{ name, color: '#14213D' }]} height={14} /></div>
+                      {r && (
+                        <span className="text-[10.5px] font-semibold tnum shrink-0" style={{ color: rankTone(ind, r) }}>
+                          {r.rank}º/{r.of}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-[10px] text-[#6B7385] mt-0.5">
+                      {ind.vintage}
+                      {ind.national != null && !ind.nationalIsTotal ? ` · país ${ind.fmt(ind.national)}` : ''}
+                    </p>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
+
+      <p className="text-[10.5px] text-[#6B7385] leading-snug mt-3 pt-2 border-t border-[#E4E0D6]">
+        Verde: entre las 6 mejores · rojo: entre las 6 peores (en indicadores con lectura clara). Tocá un indicador para ver el ranking completo.
+      </p>
     </div>
   );
 }

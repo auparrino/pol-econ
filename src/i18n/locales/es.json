@@ -66,7 +66,7 @@
     "pop2m": "1M–2M",
     "pop5m": "2M–5M",
     "pop5mPlus": "> 5M",
-    "poverty": "Pobreza (EPH urbana, S2 2024)",
+    "poverty": "Pobreza (EPH urbana, S1 2026)",
     "povertyDesc": "Solo GBA + capitales provinciales — no cubre toda la provincia",
     "pov25": "< 25%",
     "pov35": "25–35%",
@@ -349,7 +349,7 @@
     "fUnemploymentEph": "aglomerado urbano · desocupados / PEA",
     "rankEmp": "#{{rank}}/{{total}} empleo",
     "censoLabel": "Censo {{year}}",
-    "ephLabel": "EPH Q3 2025",
+    "ephLabel": "EPH Q2 2026",
     "censoNote": "Actividad = PEA / pob. 14+. Empleo = ocupados / pob. 14+. Desocupación = desocupados / PEA.",
     "rankLabel": "#{{rank}} de {{total}}",
     "ppVsNational": "pp vs. nacional",
@@ -399,7 +399,7 @@
     "evolutionTitle": "Planta provincial cada 1.000 hab.",
     "evolutionNote": "Línea punteada = promedio nacional 2024 ({{avg}} / 1.000). Fuente: DNAP, serie anual 1987–2024.",
     "ratioShort": "cada 1.000",
-    "footer": "EPH Q3-25 (INDEC, urbano). SIPA per-departamento Nov-23 (CEP-XXI, puestos formales por residencia — descontinuado). DNAP (cargos provinciales en AC + descentralizados + cuentas especiales). SIPA y DNAP usan metodologías distintas (puestos vs cargos) y se solapan de modo desigual — se muestran como hechos separados, no se suman."
+    "footer": "EPH Q2-26 (INDEC, urbano). SIPA per-departamento Nov-23 (CEP-XXI, puestos formales por residencia — descontinuado). DNAP (cargos provinciales en AC + descentralizados + cuentas especiales). SIPA y DNAP usan metodologías distintas (puestos vs cargos) y se solapan de modo desigual — se muestran como hechos separados, no se suman."
   },
   "exportsSec": {
     "desc": "Exportaciones provinciales en USD millones. PP: productos primarios, MOA: manufacturas de origen agropecuario, MOI: manufacturas de origen industrial, CyE: combustibles y energía. Fuente: INDEC.",

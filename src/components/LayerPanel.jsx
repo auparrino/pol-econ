@@ -21,8 +21,8 @@ function Pill({ active, onClick, children, icon, color }) {
       onClick={onClick}
       className="inline-flex items-center gap-1.5 text-[15px] rounded-full transition-all font-medium whitespace-nowrap"
       style={active
-        ? { background: '#003049', color: '#FDF0D5', border: '1px solid #003049', padding: '8px 20px' }
-        : { background: 'transparent', color: '#003049', border: '1px solid rgba(0,48,73,0.18)', padding: '8px 20px' }
+        ? { background: '#14213D', color: '#F5F3EE', border: '1px solid #14213D', padding: '8px 20px' }
+        : { background: 'transparent', color: '#14213D', border: '1px solid rgba(20,33,61,0.18)', padding: '8px 20px' }
       }
     >
       {icon && <span className="text-[13px]">{icon}</span>}
@@ -54,16 +54,16 @@ export default function LayerPanel({
   return (
     <div
       className={mobile ? 'flex flex-col items-center justify-center gap-1.5 px-4 py-2' : 'fixed bottom-0 left-0 right-0 z-[999] flex flex-col items-center justify-center gap-1.5 px-4 py-2'}
-      style={mobile ? { background: '#FFF8EB' } : {
+      style={mobile ? { background: '#FFFFFF' } : {
         height: 100,
-        background: '#FFF8EB',
-        borderTop: '1px solid #d4c4a0',
+        background: '#FFFFFF',
+        borderTop: '1px solid #E4E0D6',
       }}
     >
       {/* Row 1: Choropleth */}
       <div className="flex items-center gap-2">
         <span className="text-[12px] font-semibold uppercase tracking-wider shrink-0 w-[65px]"
-          style={{ color: 'rgba(0,48,73,0.45)' }}>
+          style={{ color: 'rgba(20,33,61,0.45)' }}>
           Color by
         </span>
         <div className="flex items-center gap-1.5 flex-wrap">
@@ -82,7 +82,7 @@ export default function LayerPanel({
       {/* Row 2: Overlays */}
       <div className="flex items-center gap-2">
         <span className="text-[12px] font-semibold uppercase tracking-wider shrink-0 w-[65px]"
-          style={{ color: 'rgba(0,48,73,0.45)' }}>
+          style={{ color: 'rgba(20,33,61,0.45)' }}>
           Overlays
         </span>
         <div className="flex items-center gap-1.5 flex-wrap">
@@ -110,7 +110,7 @@ export default function LayerPanel({
           ))}
         </div>
         {/* Sources */}
-        <div className="ml-auto shrink-0 text-[9px]" style={{ color: 'rgba(0,48,73,0.35)' }}>
+        <div className="ml-auto shrink-0 text-[9px]" style={{ color: 'rgba(20,33,61,0.35)' }}>
           INDEC · BCRA · SIACAM · IGN · Mar 2026
         </div>
       </div>

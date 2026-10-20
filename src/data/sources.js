@@ -24,31 +24,32 @@ export const SOURCES = {
   census2022: {
     name: 'Censo Nacional 2022 (INDEC)',
     url: 'https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165',
-    updated: '2022',
-    notes: 'Resultados definitivos del Censo 2022 (INDEC).',
+    updated: '2022 (definitivos dic-2023/feb-2024)',
+    notes: 'Resultados definitivos del Censo 2022 (INDEC). El cuestionario 2022 no incluyó pregunta de alfabetismo e INDEC no publica años promedio de escolaridad: los campos escolaridad/alfabetismo de sociodemographic.js son estimaciones, no cifras censales.',
   },
   ephPoverty: {
     name: 'INDEC EPH — Pobreza e Indigencia',
     url: 'https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-46-152',
-    updated: 'H2 2024',
-    notes: 'Urban aggregates only (GBA + provincial capitals) — not province-wide.',
+    updated: 'S1 2026',
+    notes: 'Primer semestre 2026 (publ. 24-sep-2026; cuadros_informe_pobreza_09_26.xls, Cuadro 4.1). Total 31 aglomerados urbanos: 32,3 % de personas (S2 2025: 28,2 %). Urban aggregates only (GBA + provincial capitals + main cities) — not province-wide. Provincias con varios aglomerados: promedio ponderado por personas.',
   },
   ephUnemployment: {
     name: 'INDEC EPH — Mercado de trabajo (tasas)',
     url: 'https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-58',
-    updated: 'Q3 2025',
-    notes: 'Encuesta Permanente de Hogares — tasa de desocupación por aglomerado urbano (Q3 2025). Cobertura: 31 aglomerados urbanos (no es provincia-nivel). Valores provinciales mapean la provincia a la tasa de su(s) aglomerado(s) EPH; provincias con varios aglomerados usan promedio ponderado por población. Total urbano nacional Q3 2025: 6,3 %.',
+    updated: 'Q2 2026',
+    notes: 'Encuesta Permanente de Hogares — tasa de desocupación por aglomerado urbano (2º trimestre 2026; cuadros_eph_informe_09_26.xls, cuadros 1.2 y 1.3). Cobertura: 31 aglomerados urbanos (no es provincia-nivel). Valores provinciales mapean la provincia a la tasa de su(s) aglomerado(s) EPH; provincias con varios aglomerados usan promedio ponderado por PEA. Total 31 aglomerados Q2 2026: 7,9 % (Q3 2025: 6,6 %; el 6,3 % antes citado no correspondía a Q3 2025).',
   },
   fundarArgendata: {
     name: 'Fundar / Argendata — VAB provincial',
     url: 'https://argendata.fund.ar/graficos/valor-agregado-bruto-vab-por-provincia-y-region/',
-    updated: '2024',
+    updated: '2023',
+    notes: 'VAB a precios básicos, millones de pesos de 2004 (Argendata CRECIM/vab_por_provincia.csv, último año 2023; fuente primaria CEPAL-MECON, desagregación provincial base 2004). vab_provincial.json: vab_total = año 2023; participaciones sectoriales ≈ Argendata ESTPRO/vab_sectorial_provincia (último año publicado 2022).',
   },
   cepalProvincial: {
     name: 'CEPAL / Fundar — VAB per cápita provincial',
     url: 'https://argendata.fund.ar/graficos/vab-per-capita-por-provincia/',
     updated: '2022',
-    notes: 'PBG per cápita (PPA) provincial. Fuente primaria: CEPAL — Desagregación provincial del VAB (base 2004), replicado por Argendata.',
+    notes: 'PBG per cápita provincial 2022 en USD PPA (estudio Argendata/Fundar, Schteingart y Sonzogni): PBG per cápita relativo (CEPAL-MECON, base 2004) × PIB per cápita PPA nacional (Banco Mundial). Sin ajuste de precios entre provincias. Cifras verificadas vía reproducciones de prensa de la tabla Argendata; La Rioja sin verificar. Fundar republicó el ranking en jul-2026 con otra base (no mezclado).',
   },
 
   // ─── Employment ───────────────────────────────────────────────
@@ -56,44 +57,45 @@ export const SOURCES = {
     name: 'CEP XXI / SIPA — Puestos de trabajo por provincia y sector',
     url: 'https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-registrados-por-provincia-y-sector-de-actividad',
     updated: 'Nov 2023 (discontinuado)',
-    notes: 'Sistema Integrado Previsional Argentino — puestos asalariados registrados por provincia × CLAE2 (por ubicación del establecimiento). Dataset descontinuado en nov 2023.',
+    notes: 'Sistema Integrado Previsional Argentino — puestos asalariados registrados por provincia × CLAE2 (por ubicación del establecimiento). Sin actualizar: al oct-2026 el CDN de CEP XXI sigue cortando en nov 2023. Serie provincial más reciente de asalariados privados (personas, jul-2026): Secretaría de Trabajo, "Situación y evolución del trabajo registrado", cuadro A.5.1 (campo stLatest).',
   },
   sipaDeptoPubPriv: {
     name: 'CEP XXI / SIPA — Puestos por departamento (pub + priv)',
     url: 'https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-por-departamento-partido-y-sector-de-actividad',
     updated: 'Nov 2023 (discontinuado)',
-    notes: 'Puestos asalariados registrados (puestos, no personas), agregados por provincia desde archivos per-departamento (residencia del trabajador). Métrica distinta a la BIEP/CIPPEC — SIPA cuenta puestos vía registros AFIP del empleador; BIEP cuenta trabajadores.',
+    notes: 'Sin actualizar al oct-2026 (último mes en el CDN: nov 2023). Puestos asalariados registrados (puestos, no personas), agregados por provincia desde archivos per-departamento (residencia del trabajador). Métrica distinta a la BIEP/CIPPEC — SIPA cuenta puestos vía registros AFIP del empleador; BIEP cuenta trabajadores.',
   },
   biep: {
     name: 'BIEP / Sec. Gestión y Empleo Público — Empleo público total',
     url: 'https://www.argentina.gob.ar/jefatura/gestion-y-empleo-publico/empleo-publico/biep',
     updated: 'mid-2023',
-    notes: 'Base Integrada de Empleo Público y Salarios. Total empleo público en los 3 niveles de gobierno (3,39M en mid-2023): 711k nacional (incl. APN civil, FFAA/FFSS, universidades, empresas públicas, bancos), 2,2M provincial (DNAP), 441k municipal. Cuenta personas/cargos (no puestos como SIPA). Cifra citada por Chequeado, CIPPEC, INAP webinar "Mitos del empleo público" (jun-23).',
+    notes: 'Base Integrada de Empleo Público y Salarios. Total empleo público en los 3 niveles de gobierno (3.389.900 en mid-2023): 711.879 nacional (incl. APN [395 mil, 193 mil civiles], FFAA/FFSS, universidades, empresas públicas, bancos), 2.237.334 provincial, 440.687 municipal (SGyEP, 8-jun-2023). No hay apertura oficial por nivel más reciente; contexto: INDEC dotación APN + empresas = 269.025 (ago-2026), Sec. Trabajo asalariados públicos = 3,38M (jul-2026). Cuenta personas/cargos (no puestos como SIPA). Cifra citada por Chequeado, CIPPEC, INAP webinar "Mitos del empleo público" (jun-23).',
   },
   minTrabajo: {
     name: 'Min. Trabajo — OEDE provincial',
     url: 'https://www.argentina.gob.ar/trabajo/estadisticas/oede-estadisticas-provinciales',
     updated: '2024',
+    notes: 'Más reciente: "Situación y evolución del trabajo registrado" (trabajoregistrado_2607_estadisticas.xlsx), datos a jul-2026 — asalariados privados por provincia (A.5.1) y totales nacionales público/privado (T.2.1).',
   },
   dnapEmpleoProvincial: {
-    name: 'DNAP — Ocupación y salarios provinciales (AC+OD+CE)',
+    name: 'DNAP — Ocupación y salarios provinciales (APNF)',
     url: 'https://www.argentina.gob.ar/economia/sechacienda/coordinacion-fiscal-provincial/ejecucion-presupuestaria-provincial/ocupacion-y-salarios',
-    updated: '2024',
-    notes: 'Serie oficial 1987–2024 (xlsx "Provincias y CABA - AC+OD"). Cobertura: cargos ocupados en Administración Central + Organismos Descentralizados + Cuentas Especiales de las 24 jurisdicciones al mes de diciembre. Cuenta cargos, no personas. Excluye Instituciones de Seguridad Social (cajas), Fondos Fiduciarios y organismos públicos con carácter empresarial, así como contratos/becas/pasantías imputados a otras partidas (metodología: DAIPEF-DNCFP, "El Empleo Público en las Provincias Argentinas", 2014). Denominador poblacional: proyección INDEC 2022-2040.',
+    updated: '2025',
+    notes: 'Serie oficial 1987–2025: 2017–2025 desde ocupacion_salarios_2017_2025.xlsx (revisado; rótulo APNF; total 2025 = 2.308.763 cargos, 49,8 c/1000 hab.), 1987–2016 desde el xlsx anterior. La Pampa y San Luis: planta según presupuesto. Cobertura: cargos ocupados en Administración Central + Organismos Descentralizados + Cuentas Especiales de las 24 jurisdicciones al mes de diciembre. Cuenta cargos, no personas. Excluye Instituciones de Seguridad Social (cajas), Fondos Fiduciarios y organismos públicos con carácter empresarial, así como contratos/becas/pasantías imputados a otras partidas (metodología: DAIPEF-DNCFP, "El Empleo Público en las Provincias Argentinas", 2014). Denominador poblacional: proyección INDEC 2022-2040.',
   },
   censo2022Empleo: {
     name: 'INDEC — Censo Nacional de Población 2022 (características económicas)',
     url: 'https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165',
     updated: '2022',
-    notes: 'Censo nacional (conteo total, no muestra) al 18 de mayo de 2022. Universo: población de 14 años y más en viviendas particulares. Tasa de actividad = PEA / pob. 14+; tasa de empleo = ocupados / pob. 14+; tasa de desocupación = desocupados / PEA. Cubre todo el mercado laboral (formal + informal + público + privado + no remunerado no registrado). Los tres indicadores son internamente consistentes: comparten universo y definiciones. Fuente: "Características económicas de la población — Resultados definitivos", cuadros 4.1 y 4.2 (pp. 46-47), feb. 2024.',
+    notes: 'Censo nacional (conteo total, no muestra) al 18 de mayo de 2022. Universo: población de 14 años y más en viviendas particulares. Tasa de actividad = PEA / pob. 14+; tasa de empleo = ocupados / pob. 14+; tasa de desocupación = desocupados / PEA. Cubre todo el mercado laboral (formal + informal + público + privado + no remunerado no registrado). Los tres indicadores son internamente consistentes: comparten universo y definiciones. Fuente: "Características económicas de la población — Resultados definitivos", cuadros 1 y 3 del total del país según jurisdicción (pp. 46-48), y c2022_tp_actividad_economica_c1/c3.xlsx. Verificado oct-2026: las 24 jurisdicciones coinciden; en censo2022_categoria_ocupacional.json se corrigió la rotación de columnas patrón / trabajador familiar / servicio doméstico.',
   },
 
   // ─── Fiscal ───────────────────────────────────────────────────
   meconDnap: {
     name: 'Mecon DNAP — APNF',
-    url: 'https://www.argentina.gob.ar/economia/sechacienda/asuntosprovinciales',
-    updated: '2024',
-    notes: 'Administración Pública No Financiera — ejecuciones provinciales. El xlsx "Ejecución trimestral APNF" está en la página de Asuntos Provinciales.',
+    url: 'https://www.argentina.gob.ar/economia/sechacienda/coordinacion-fiscal-provincial/ejecucion-presupuestaria-provincial/ejecuciones',
+    updated: '2025 (IV trim. provisorio; La Pampa 2024)',
+    notes: 'Administración Pública No Financiera — serie_aif-apnf-2025.xlsx (2005-2025, millones de $ corrientes). Dependencia = recursos de origen nacional (Trib. de Origen Nacional + Transf. corrientes + de capital) / Ingresos Totales = 100 − "Autonomía Fiscal" de DNAP (Indicadores AIF cierre 2025). Ejecuciones trimestrales 2026 (I y II trim.) ya publicadas.',
   },
   meconDnapDeuda: {
     name: 'Mecon DNAP — Stock de Deuda Provincial',
@@ -232,14 +234,15 @@ export const SOURCES = {
     name: 'HCDN / HCSN — Registros de votación',
     url: 'https://votaciones.hcdn.gob.ar',
     updated: '2024–2026',
+    notes: 'Bloc composition and rosters verified 2026-10-20 against https://www.diputados.gob.ar/diputados/ and https://www.senado.gob.ar/senadores/listados/agrupados-por-bloques.',
   },
 
   // ─── Governors / Cabinet ──────────────────────────────────────
   govOfficial: {
     name: 'Sitios oficiales provinciales + medios',
     url: null,
-    updated: 'Mar 2026',
-    notes: 'Cross-checked with Wikipedia and press reporting.',
+    updated: 'Oct 2026',
+    notes: 'Cross-checked with Wikipedia and press reporting. Governors/vicegobernadores reviewed 2026-10-20.',
   },
 
   // ─── RIGI ─────────────────────────────────────────────────────

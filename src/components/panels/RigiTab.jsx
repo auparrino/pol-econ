@@ -42,7 +42,7 @@ function parseAdhesion(value) {
     color = '#b58500'; bg = 'rgba(212,168,0,0.18)';
   } else if (head.startsWith('no')) {
     status = 'not_adhered'; label = 'Not adhered';
-    color = '#C1121F'; bg = 'rgba(193,18,31,0.15)';
+    color = '#C0392B'; bg = 'rgba(193,18,31,0.15)';
   } else {
     status = 'unknown'; label = 'Unknown';
     color = '#7f8c8d'; bg = 'rgba(127,140,141,0.15)';
@@ -74,17 +74,17 @@ function parseAdhesion(value) {
 function NationalRigi() {
   return (
     <div>
-      <div className="pb-2 border-b mb-3" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
-        <h2 className="text-[16px] font-black text-[#003049] tracking-tight leading-tight">
+      <div className="pb-2 border-b mb-3" style={{ borderColor: 'rgba(20,33,61,0.10)' }}>
+        <h2 className="text-[16px] font-black text-[#14213D] tracking-tight leading-tight">
           RIGI · National overview
         </h2>
-        <p className="text-[11px] text-[#003049]/60 mt-0.5 leading-snug">
+        <p className="text-[11px] text-[#14213D]/60 mt-0.5 leading-snug">
           Régimen de Incentivo para Grandes Inversiones — national tax / FX
           benefits for large projects, optionally layered with provincial benefits.
         </p>
       </div>
       <RigiNationalOverview />
-      <p className="text-[9px] text-[#003049]/45 italic mt-3 leading-snug">
+      <p className="text-[9px] text-[#14213D]/45 italic mt-3 leading-snug">
         Click a province on the map to see its RIGI adhesion status and the
         projects filed in that jurisdiction.
       </p>
@@ -101,11 +101,11 @@ export default function RigiTab({ selectedProvince }) {
   return (
     <div>
       {/* Hero */}
-      <div className="pb-2 border-b mb-4" style={{ borderColor: 'rgba(0,48,73,0.10)' }}>
-        <h2 className="text-[16px] font-black text-[#003049] tracking-tight leading-tight">
+      <div className="pb-2 border-b mb-4" style={{ borderColor: 'rgba(20,33,61,0.10)' }}>
+        <h2 className="text-[16px] font-black text-[#14213D] tracking-tight leading-tight">
           {selectedProvince} · RIGI
         </h2>
-        <p className="text-[11px] text-[#003049]/60 mt-0.5 leading-snug">
+        <p className="text-[11px] text-[#14213D]/60 mt-0.5 leading-snug">
           Régimen de Incentivo para Grandes Inversiones — national tax / FX
           benefits for large projects, optionally layered with provincial benefits.
         </p>
@@ -113,20 +113,20 @@ export default function RigiTab({ selectedProvince }) {
 
       {/* Provincial adhesion law */}
       <div className="mb-4">
-        <div className="text-[10px] uppercase tracking-wider text-[#003049]/55 font-semibold mb-1.5">
+        <div className="text-[10px] uppercase tracking-wider text-[#14213D]/55 font-semibold mb-1.5">
           Provincial adhesion law
         </div>
         <div
           className="rounded-md px-3 py-2.5 border flex items-center justify-between gap-3"
-          style={{ background: 'rgba(0,48,73,0.04)', borderColor: 'rgba(0,48,73,0.10)' }}
+          style={{ background: 'rgba(20,33,61,0.04)', borderColor: 'rgba(20,33,61,0.10)' }}
         >
           <div className="min-w-0 flex-1">
             {adhesion.detail ? (
-              <p className="text-[12px] text-[#003049] leading-snug">{adhesion.detail}</p>
+              <p className="text-[12px] text-[#14213D] leading-snug">{adhesion.detail}</p>
             ) : adhesion.status === 'unknown' ? (
-              <p className="text-[11px] text-[#003049]/55 italic">No record on provincial adhesion.</p>
+              <p className="text-[11px] text-[#14213D]/55 italic">No record on provincial adhesion.</p>
             ) : (
-              <p className="text-[11px] text-[#003049]/55 italic">No additional detail.</p>
+              <p className="text-[11px] text-[#14213D]/55 italic">No additional detail.</p>
             )}
           </div>
           <span
@@ -136,7 +136,7 @@ export default function RigiTab({ selectedProvince }) {
             {adhesion.label}
           </span>
         </div>
-        <p className="text-[9px] text-[#003049]/45 italic mt-1.5 leading-snug">
+        <p className="text-[9px] text-[#14213D]/45 italic mt-1.5 leading-snug">
           Whether the province has passed its own RIGI adhesion law, which adds
           provincial-level tax benefits on top of the national regime. Independent
           from national project approval — a province without an adhesion law can
@@ -146,7 +146,7 @@ export default function RigiTab({ selectedProvince }) {
 
       {/* Curated projects in this province */}
       <div>
-        <div className="text-[10px] uppercase tracking-wider text-[#003049]/55 font-semibold mb-1.5">
+        <div className="text-[10px] uppercase tracking-wider text-[#14213D]/55 font-semibold mb-1.5">
           National RIGI projects in {selectedProvince}
         </div>
         <RigiPanel provinceName={selectedProvince} />

@@ -109,11 +109,11 @@ export default function SourceInfo({ src, inline = true, size = 11 }) {
         zIndex: 10000,
         minWidth: 260,
         maxWidth: Math.min(340, window.innerWidth - 16),
-        background: '#FFF8EB',
-        border: '1px solid #003049',
+        background: '#FFFFFF',
+        border: '1px solid #14213D',
         padding: '10px 12px',
         fontSize: 11,
-        color: '#003049',
+        color: '#14213D',
       }}
     >
       <div className="font-semibold uppercase tracking-wider mb-1.5" style={{ fontSize: 9, opacity: 0.6 }}>
@@ -128,7 +128,7 @@ export default function SourceInfo({ src, inline = true, size = 11 }) {
                 href={e.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: '#669bbc', textDecoration: 'underline', fontSize: 10, wordBreak: 'break-all' }}
+                style={{ color: '#4F86B5', textDecoration: 'underline', fontSize: 10, wordBreak: 'break-all' }}
               >
                 {e.url}
               </a>
@@ -163,9 +163,9 @@ export default function SourceInfo({ src, inline = true, size = 11 }) {
           marginRight: 2,
           verticalAlign: 'middle',
           cursor: 'pointer',
-          color: 'rgba(0,48,73,0.55)',
-          border: '1px solid rgba(0,48,73,0.25)',
-          background: 'rgba(0,48,73,0.05)',
+          color: 'rgba(20,33,61,0.55)',
+          border: '1px solid rgba(20,33,61,0.25)',
+          background: 'rgba(20,33,61,0.05)',
           fontSize: size - 2,
           fontFamily: 'Georgia, serif',
           fontStyle: 'italic',

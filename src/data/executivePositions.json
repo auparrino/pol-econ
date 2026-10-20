@@ -1,5 +1,5 @@
 {
-  "version": "2026-04-06",
+  "version": "2026-10-20",
   "methodology": "Executive positions are the vote the national Executive publicly requested on each topic. Vote IDs match keys inside src/data/votaciones.json. Vote coding: A = affirmative, N = negative, ABS = abstention, undefined/null = absent.",
   "source": "Public record — presidential vetoes, official communications, ministerial statements, Casa Rosada press releases.",
   "positions": [
@@ -7,33 +7,33 @@
       "vote_id": "presupuesto_2026",
       "topic": "Budget 2026",
       "chamber": "both",
-      "date": "2025-11",
+      "date": "2025-12",
       "executive_position": "A",
-      "note": "Official project sent by Executive."
+      "note": "Official project sent by Executive. Diputados 17-Dec-2025; Senado 26-Dec-2025 (46-25-1)."
     },
     {
       "vote_id": "inocencia_fiscal",
       "topic": "Tax Innocence",
-      "chamber": "deputies",
-      "date": "2025-09",
+      "chamber": "both",
+      "date": "2025-12",
       "executive_position": "A",
-      "note": "Executive-backed reform."
+      "note": "Executive-backed reform. Diputados 17-Dec-2025 (130-107-2); Senado 26-Dec-2025 (43-26)."
     },
     {
       "vote_id": "modernizacion_laboral",
       "topic": "Labor Modernization",
       "chamber": "both",
-      "date": "2025-12",
+      "date": "2026-02",
       "executive_position": "A",
-      "note": "Core Executive agenda."
+      "note": "Core Executive agenda. Senado Feb-2026; Diputados 20-Feb-2026 (135-115); Senate final ratification 27-Feb-2026."
     },
     {
       "vote_id": "regimen_penal_juv",
       "topic": "Juvenile Penal Regime",
-      "chamber": "deputies",
-      "date": "2025-10",
+      "chamber": "both",
+      "date": "2026-02",
       "executive_position": "A",
-      "note": "Executive-backed bill."
+      "note": "Executive-backed bill. Diputados 12-Feb-2026 (149-100); Senado 27-Feb-2026 (44-27-1); Ley 27.801."
     },
     {
       "vote_id": "mercosur_ue",
@@ -41,15 +41,15 @@
       "chamber": "both",
       "date": "2026-02",
       "executive_position": "A",
-      "note": "Executive ratification ask."
+      "note": "Executive ratification ask. Diputados 12-Feb-2026 (203-42-4); Senado 26-Feb-2026 (69-3)."
     },
     {
       "vote_id": "ley_glaciares",
       "topic": "Glacier Law Reform",
       "chamber": "both",
-      "date": "2025-08",
+      "date": "2026-02",
       "executive_position": "A",
-      "note": "Executive-backed modification."
+      "note": "Executive-backed modification. Senado 26-Feb-2026 (40-31-1); Diputados final 9-Apr-2026 (137-111-3, deputies roll call not yet in votaciones.json)."
     }
   ]
 }

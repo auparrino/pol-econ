@@ -1,5 +1,5 @@
 {
-  "source": "INAP — \"Mitos del empleo público\" (8 jun 2023) · BIEP / Sec. Gestión y Empleo Público",
+  "source": "Sec. de Gestión y Empleo Público / INAP — conferencia \"Mito y realidad sobre el empleo público\" (8 jun 2023) y presentación \"Datos para derribar mitos\" (25 sep 2023)",
   "sourceUrl": "https://www.argentina.gob.ar/jefatura/gestion-y-empleo-publico/empleo-publico/biep",
   "vintage": "mid-2023",
   "scope": "Trabajadores en el sector público — Base Integrada de Empleo Público y Salarios (BIEP). Cuenta personas/cargos, no puestos.",
@@ -8,30 +8,31 @@
     {
       "key": "national",
       "label": "Nacional",
-      "value": 711000,
+      "value": 711879,
       "pct": 21.0,
       "detail": [
         { "label": "Adm. Pública Nacional civil", "value": 193346 },
         { "label": "FFAA + FFSS", "value": 201857 },
-        { "label": "Univ. nacionales + empresas públicas + bancos + otros organismos", "value": 315797 }
-      ]
+        { "label": "Univ. nacionales + empresas públicas + bancos + otros organismos", "value": 316676 }
+      ],
+      "detailNote": "Oficial: de los 711 mil, 395 mil integran la APN y de ésos 193 mil son civiles (presentación SGyEP 25-sep-2023). La cifra exacta 193.346 / 201.857 no figura en esa fuente; la tercera fila es residuo (711.879 − APN)."
     },
     {
       "key": "provincial",
       "label": "Provincial",
-      "value": 2237900,
+      "value": 2237334,
       "pct": 66.0,
       "detail": [
-        { "label": "AC + Organismos Descentralizados (DNAP, 24 provincias)", "value": 2237900 }
+        { "label": "Empleo público provincial, 24 jurisdicciones (cifra SGyEP; no coincide exactamente con DNAP: 2.275.751 cargos en 2022)", "value": 2237334 }
       ]
     },
     {
       "key": "municipal",
       "label": "Municipal",
-      "value": 441000,
+      "value": 440687,
       "pct": 13.0,
       "detail": [
-        { "label": "Empleados municipales (todos los municipios)", "value": 441000 }
+        { "label": "Empleados municipales (todos los municipios)", "value": 440687 }
       ]
     }
   ],
@@ -40,5 +41,29 @@
     "sipaTotal": 3966336,
     "sipaVintage": "Nov 2023",
     "note": "SIPA cuenta puestos asalariados registrados (un trabajador con doble cargo cuenta 2 veces) e incluye empresas públicas y monotributo público que BIEP puede no captar. SIPA y BIEP no son comparables 1:1."
+  },
+  "sourceUrls": [
+    "https://www.argentina.gob.ar/noticias/se-realizo-la-conferencia-magistral-mito-y-realidad-sobre-el-empleo-publico",
+    "https://argentina.gob.ar/sites/default/files/2023/09/presentacion_empleo_publico_25-09-23_vf_1.pdf"
+  ],
+  "newerContext": {
+    "label": "Datos más recientes (no comparables 1:1)",
+    "indecDotacionAPN": {
+      "value": 269025,
+      "vintage": "Ago 2026",
+      "scope": "Dotación de la Administración Pública Nacional (181.880) + Empresas y sociedades del Estado (87.145); excluye universidades y personal militar/de seguridad",
+      "sourceUrl": "https://www.indec.gob.ar/uploads/informesdeprensa/dotacion_personal_apn_09_2679845EB044.pdf"
+    },
+    "dnapProvincial2025": {
+      "value": 2308763,
+      "scope": "Planta ocupada APNF provincial, dic-2025 (ver dnap_empleo_provincial.json)"
+    },
+    "stPublicSalaried": {
+      "value": 3384789,
+      "vintage": "Jul 2026 (provisorio)",
+      "scope": "Personas asalariadas del sector público, total país (SIPA + cajas no transferidas). Secretaría de Trabajo, cuadro T.2.1",
+      "sourceUrl": "https://www.argentina.gob.ar/sites/default/files/trabajoregistrado_2607_estadisticas.xlsx"
+    },
+    "note": "No se publicó una nueva apertura oficial nacional/provincial/municipal posterior a 2023."
   }
 }

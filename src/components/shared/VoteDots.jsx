@@ -4,7 +4,7 @@ import votacionesRaw from '../../data/votaciones.json';
 const SEN_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
 const DIP_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
 // Vote codes used in votaciones.json: A=Afirmativo, N=Negativo, X=Abstención, U=Ausente.
-const VOTE_COLOR_BB = { A: '#27ae60', N: '#C1121F', X: '#d4a800' };
+const VOTE_COLOR_BB = { A: '#27ae60', N: '#C0392B', X: '#d4a800' };
 const VOTE_LBL  = { A: 'A', N: 'N', X: '~' };
 const VOTE_NAME = { A: 'Affirmative', N: 'Negative', X: 'Abstention' };
 
@@ -41,8 +41,8 @@ function VoteDotsRaw({ name, chamber }) {
             className="w-[10px] h-[10px] rounded-sm flex items-center justify-center text-[6px] font-bold"
             style={{
               background: 'transparent',
-              color: 'rgba(0,48,73,0.35)',
-              border: '1px dashed rgba(0,48,73,0.35)',
+              color: 'rgba(20,33,61,0.35)',
+              border: '1px dashed rgba(20,33,61,0.35)',
             }}
             title={`${t}: Absent`}
           ></span>

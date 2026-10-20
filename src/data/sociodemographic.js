@@ -1,23 +1,57 @@
 // Sociodemographic data by province
-// Sources:
-//   Poverty: INDEC EPH H2 2024 (% persons) — values map each province to the
-//     poverty rate of its EPH urban agglomerate(s). Provinces with multiple
-//     agglomerates use a population-weighted average. National aglomerado
-//     urbano total: 38.1%. Caveat: INDEC does NOT publish province-wide
-//     poverty — rural populations are not covered. Cross-checked against the
-//     INDEC press release "Incidencia de la pobreza y la indigencia en 31
-//     aglomerados urbanos" (marzo 2025, Segundo semestre 2024).
-//   Unemployment: INDEC EPH Q3 2025 (total urbano, %). National: 6.3%
-//   PBG per capita: Fundar/Argendata 2022, USD PPP (base 2021)
-//   Schooling: INDEC Censo 2022 (average years, population 25+)
-//   Literacy: INDEC Censo 2022 (population 10+)
-//   Sectors: Min. de Economía informes productivos
+// Sources (audited 2026-10-20 against INDEC xls cuadros):
+//   Poverty (pobreza, % persons): INDEC EPH, PRIMER SEMESTRE 2026 (informe
+//     "Incidencia de la pobreza y la indigencia en 31 aglomerados urbanos",
+//     publ. 24-sep-2026; cuadros_informe_pobreza_09_26.xls, Cuadro 4.1).
+//     National total 31 aglomerados: 32.3% (H2 2025: 28.2%; H1 2025: 31.6%).
+//     Values = poverty rate of the province's EPH urban agglomerate(s), NOT
+//     province-wide (rural population not covered). Multi-agglomerate
+//     provinces = weighted by persons (Cuadro "Poblaciones"):
+//       Buenos Aires = Partidos del GBA + Gran La Plata + Bahía Blanca-Cerri
+//         + Mar del Plata + San Nicolás-Villa Constitución (the latter spans
+//         BA/SF; assigned to BA, where most of its population lives).
+//       Santa Fe = Gran Rosario + Gran Santa Fe. Córdoba = Gran Córdoba +
+//         Río Cuarto. Entre Ríos = Gran Paraná + Concordia. Chubut = Comodoro
+//         Rivadavia-Rada Tilly + Rawson-Trelew.
+//       Río Negro = Viedma-Carmen de Patagones only (Alto Valle/Bariloche not
+//         in EPH). Neuquén = Neuquén-Plottier. Santa Cruz = Río Gallegos.
+//       TdF = Ushuaia-Río Grande. Others: single agglomerate (capital).
+//     Small agglomerates have CV > 16% (INDEC: "considerar con cuidado").
+//   Unemployment (desempleo, % PEA): INDEC EPH, SEGUNDO TRIMESTRE 2026
+//     (informe "Mercado de trabajo. Tasas e indicadores socioeconómicos",
+//     publ. sep-2026; cuadros_eph_informe_09_26.xls, Cuadros 1.2 y 1.3).
+//     National total 31 aglomerados: 7.9%. Same agglomerate mapping as
+//     poverty; multi-agglomerate provinces weighted by PEA (Cuadro 1.3).
+//     Very small samples: Viedma (0.7%) and Santiago del Estero-La Banda
+//     (0.9%) are statistically fragile — read as "low", not exact.
+//   PBG per capita (USD PPA): Fundar/Argendata study (Schteingart & Sonzogni)
+//     "PBI per cápita provincial 2022" — USD adjusted for Argentina-vs-world
+//     cost of living (no inter-provincial price adjustment); built from
+//     CEPAL-MECON VAB base 2004 relative per-capita + World Bank PPP.
+//     Values verified via press reproductions of the Argendata table
+//     (Diario Jornada, Diario Norte, Encuestas Argentinas). La Rioja could not
+//     be verified (pbg_estimado: true). NOTE: Fundar republished the ranking in
+//     jul-2026 with a different vintage/PPP base (e.g. Neuquén US$77,608) —
+//     not mixed here.
+//   Schooling (escolaridad) and literacy (alfabetismo): NOT official INDEC
+//     figures. The Censo 2022 questionnaire had no literacy question and INDEC
+//     publishes no average-years-of-schooling indicator (only asistencia and
+//     máximo nivel educativo alcanzado). Treat both as ESTIMATES (see
+//     sociodemographicMeta.estimates).
+//   Sectors: Min. de Economía informes productivos (qualitative)
+
+export const sociodemographicMeta = {
+  pobreza: { vintage: 'EPH 1er semestre 2026', national: 32.3, unit: '% personas, 31 aglomerados urbanos' },
+  desempleo: { vintage: 'EPH 2º trimestre 2026', national: 7.9, unit: '% PEA, 31 aglomerados urbanos' },
+  pbg_per_capita_usd: { vintage: 'Fundar/Argendata 2022 (USD PPA)', national: null },
+  estimates: ['escolaridad', 'alfabetismo'],
+};
 
 export const sociodemographic = [
   {
     provincia: 'Buenos Aires',
-    pobreza: 40.6,
-    desempleo: 7.7,
+    pobreza: 36.0,
+    desempleo: 8.9,
     pbg_per_capita_usd: 23517,
     escolaridad: 11.0,
     alfabetismo: 98.2,
@@ -25,8 +59,8 @@ export const sociodemographic = [
   },
   {
     provincia: 'Ciudad de Buenos Aires',
-    pobreza: 16.7,
-    desempleo: 3.9,
+    pobreza: 11.1,
+    desempleo: 5.6,
     pbg_per_capita_usd: 79898,
     escolaridad: 13.6,
     alfabetismo: 99.5,
@@ -34,26 +68,26 @@ export const sociodemographic = [
   },
   {
     provincia: 'Catamarca',
-    pobreza: 45.8,
-    desempleo: 4.6,
-    pbg_per_capita_usd: 18600,
+    pobreza: 37.3,
+    desempleo: 6.4,
+    pbg_per_capita_usd: 18601,
     escolaridad: 10.8,
     alfabetismo: 97.8,
     sector_clave: 'Minería (litio, cobre), agricultura',
   },
   {
     provincia: 'Chaco',
-    pobreza: 60.8,
-    desempleo: 7.4,
-    pbg_per_capita_usd: 13500,
+    pobreza: 48.6,
+    desempleo: 7.5,
+    pbg_per_capita_usd: 18313,
     escolaridad: 10.3,
     alfabetismo: 96.5,
     sector_clave: 'Agricultura (algodón, soja), ganadería, forestal',
   },
   {
     provincia: 'Chubut',
-    pobreza: 35.5,
-    desempleo: 4.8,
+    pobreza: 36.4,
+    desempleo: 8.7,
     pbg_per_capita_usd: 40783,
     escolaridad: 11.3,
     alfabetismo: 98.5,
@@ -61,8 +95,8 @@ export const sociodemographic = [
   },
   {
     provincia: 'Córdoba',
-    pobreza: 35.5,
-    desempleo: 5.0,
+    pobreza: 30.3,
+    desempleo: 10.1,
     pbg_per_capita_usd: 28137,
     escolaridad: 11.5,
     alfabetismo: 98.6,
@@ -70,8 +104,8 @@ export const sociodemographic = [
   },
   {
     provincia: 'Corrientes',
-    pobreza: 36.0,
-    desempleo: 4.6,
+    pobreza: 41.0,
+    desempleo: 9.1,
     pbg_per_capita_usd: 13291,
     escolaridad: 10.4,
     alfabetismo: 97.0,
@@ -79,17 +113,17 @@ export const sociodemographic = [
   },
   {
     provincia: 'Entre Ríos',
-    pobreza: 45.1,
-    desempleo: 4.1,
-    pbg_per_capita_usd: 22000,
+    pobreza: 42.3,
+    desempleo: 6.5,
+    pbg_per_capita_usd: 24753,
     escolaridad: 10.8,
     alfabetismo: 98.0,
     sector_clave: 'Agroindustria (avicultura, soja, arroz), turismo',
   },
   {
     provincia: 'Formosa',
-    pobreza: 46.2,
-    desempleo: 4.5,
+    pobreza: 29.9,
+    desempleo: 4.8,
     pbg_per_capita_usd: 13377,
     escolaridad: 10.2,
     alfabetismo: 96.3,
@@ -97,17 +131,17 @@ export const sociodemographic = [
   },
   {
     provincia: 'Jujuy',
-    pobreza: 40.0,
-    desempleo: 3.9,
-    pbg_per_capita_usd: 16500,
+    pobreza: 27.6,
+    desempleo: 3.4,
+    pbg_per_capita_usd: 17054,
     escolaridad: 10.6,
     alfabetismo: 97.3,
     sector_clave: 'Minería (litio, boratos), tabaco, azúcar, turismo',
   },
   {
     provincia: 'La Pampa',
-    pobreza: 33.0,
-    desempleo: 7.8,
+    pobreza: 25.4,
+    desempleo: 6.7,
     pbg_per_capita_usd: 37186,
     escolaridad: 11.4,
     alfabetismo: 98.7,
@@ -115,26 +149,27 @@ export const sociodemographic = [
   },
   {
     provincia: 'La Rioja',
-    pobreza: 46.0,
-    desempleo: 3.8,
+    pobreza: 38.4,
+    desempleo: 4.5,
     pbg_per_capita_usd: 18959,
+    pbg_estimado: true,
     escolaridad: 11.3,
     alfabetismo: 98.0,
     sector_clave: 'Admin. pública, olivicultura, vitivinicultura, minería',
   },
   {
     provincia: 'Mendoza',
-    pobreza: 42.2,
-    desempleo: 5.4,
-    pbg_per_capita_usd: 24000,
+    pobreza: 36.9,
+    desempleo: 8.1,
+    pbg_per_capita_usd: 20240,
     escolaridad: 11.1,
     alfabetismo: 98.3,
     sector_clave: 'Vitivinicultura, petróleo y gas, fruticultura, turismo',
   },
   {
     provincia: 'Misiones',
-    pobreza: 43.0,
-    desempleo: 4.8,
+    pobreza: 42.2,
+    desempleo: 5.9,
     pbg_per_capita_usd: 12930,
     escolaridad: 9.9,
     alfabetismo: 96.6,
@@ -142,8 +177,8 @@ export const sociodemographic = [
   },
   {
     provincia: 'Neuquén',
-    pobreza: 32.0,
-    desempleo: 4.3,
+    pobreza: 19.6,
+    desempleo: 3.2,
     pbg_per_capita_usd: 61128,
     escolaridad: 11.2,
     alfabetismo: 98.4,
@@ -151,44 +186,44 @@ export const sociodemographic = [
   },
   {
     provincia: 'Río Negro',
-    pobreza: 39.4,
-    desempleo: 3.0,
-    pbg_per_capita_usd: 26000,
+    pobreza: 33.2,
+    desempleo: 0.7,
+    pbg_per_capita_usd: 23745,
     escolaridad: 11.1,
     alfabetismo: 98.3,
     sector_clave: 'Fruticultura (peras, manzanas), turismo, petróleo',
   },
   {
     provincia: 'Salta',
-    pobreza: 41.2,
-    desempleo: 5.4,
-    pbg_per_capita_usd: 15500,
+    pobreza: 29.7,
+    desempleo: 4.3,
+    pbg_per_capita_usd: 16261,
     escolaridad: 10.5,
     alfabetismo: 97.4,
     sector_clave: 'Agricultura (tabaco, soja), petróleo y gas, minería, turismo',
   },
   {
     provincia: 'San Juan',
-    pobreza: 41.0,
+    pobreza: 36.8,
     desempleo: 3.2,
-    pbg_per_capita_usd: 18000,
+    pbg_per_capita_usd: 19961,
     escolaridad: 10.7,
     alfabetismo: 97.8,
     sector_clave: 'Minería (oro, plata), vitivinicultura, agricultura',
   },
   {
     provincia: 'San Luis',
-    pobreza: 39.0,
-    desempleo: 2.5,
-    pbg_per_capita_usd: 22500,
+    pobreza: 35.7,
+    desempleo: 2.6,
+    pbg_per_capita_usd: 24079,
     escolaridad: 10.8,
     alfabetismo: 98.0,
     sector_clave: 'Industria manufacturera, turismo, ganadería',
   },
   {
     provincia: 'Santa Cruz',
-    pobreza: 30.0,
-    desempleo: 10.7,
+    pobreza: 25.6,
+    desempleo: 8.8,
     pbg_per_capita_usd: 52400,
     escolaridad: 11.2,
     alfabetismo: 98.5,
@@ -196,8 +231,8 @@ export const sociodemographic = [
   },
   {
     provincia: 'Santa Fe',
-    pobreza: 36.0,
-    desempleo: 7.2,
+    pobreza: 27.6,
+    desempleo: 10.8,
     pbg_per_capita_usd: 28307,
     escolaridad: 11.3,
     alfabetismo: 98.5,
@@ -205,17 +240,17 @@ export const sociodemographic = [
   },
   {
     provincia: 'Santiago del Estero',
-    pobreza: 48.6,
-    desempleo: 3.7,
-    pbg_per_capita_usd: 15000,
+    pobreza: 38.5,
+    desempleo: 0.9,
+    pbg_per_capita_usd: 21719,
     escolaridad: 9.7,
     alfabetismo: 96.5,
     sector_clave: 'Agricultura (algodón, soja), ganadería, forestal',
   },
   {
     provincia: 'Tierra del Fuego',
-    pobreza: 31.8,
-    desempleo: 6.8,
+    pobreza: 25.9,
+    desempleo: 8.1,
     pbg_per_capita_usd: 65967,
     escolaridad: 12.0,
     alfabetismo: 99.0,
@@ -223,9 +258,9 @@ export const sociodemographic = [
   },
   {
     provincia: 'Tucumán',
-    pobreza: 40.8,
-    desempleo: 6.6,
-    pbg_per_capita_usd: 14400,
+    pobreza: 27.9,
+    desempleo: 5.5,
+    pbg_per_capita_usd: 14437,
     escolaridad: 10.6,
     alfabetismo: 97.5,
     sector_clave: 'Agroindustria (azúcar, limón, soja), industria, comercio',

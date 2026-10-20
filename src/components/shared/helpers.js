@@ -39,7 +39,7 @@ export function getAlignColor(alignment) {
   if (a.includes('oficialismo')) return '#7d3c98';
   if (a.includes('aliado')) return '#17a589';
   if (a.includes('negociador')) return '#d4a800';
-  if (a.includes('oposición dura') || a.includes('oposicion dura')) return '#780000';
-  if (a.includes('oposición') || a.includes('oposicion')) return '#C1121F';
-  return '#669BBC';
+  if (a.includes('oposición dura') || a.includes('oposicion dura')) return '#7B1E14';
+  if (a.includes('oposición') || a.includes('oposicion')) return '#C0392B';
+  return '#4F86B5';
 }

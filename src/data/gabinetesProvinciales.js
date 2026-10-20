@@ -1,4 +1,7 @@
 // Provincial cabinets — sources: official provincial government sites, media (Mar 2026)
+// Spot-checked 2026-10-20 (BA, CABA, Córdoba, Santa Fe, Mendoza, Tucumán, Entre Ríos, Salta + all vicegobernadores):
+//   BA DGCyE Terigi (gba.gob.ar, 24-nov-2025); Córdoba Jefatura de Gabinete Calvo (Perfil, 17-jul-2026);
+//   vicegobernadores aligned with governors.js. Other ministers not individually re-verified.
 // Each entry: { provincia, gabinete: [{ role, name, tier }] }
 // tier: 'exec' (governor/vice), 'key' (jefe gabinete, economía), 'min' (minister), 'sec' (secretary)
 export const gabinetesProvinciales = [
@@ -13,7 +16,7 @@ export const gabinetesProvinciales = [
       { role: 'Infraestructura', name: 'Gabriel Katopodis', tier: 'min' },
       { role: 'Producción', name: 'Augusto Costa', tier: 'min' },
       { role: 'Salud', name: 'Nicolás Kreplak', tier: 'min' },
-      { role: 'Educación', name: 'Claudia Bracchi', tier: 'min' },
+      { role: 'Cultura y Educación (DGCyE)', name: 'Flavia Terigi', tier: 'min' },
       { role: 'Seguridad', name: 'Javier Alonso', tier: 'min' },
       { role: 'Justicia y DDHH', name: 'Juan Martín Mena', tier: 'min' },
       { role: 'Desarrollo Social', name: 'Andrés Larroque', tier: 'min' },
@@ -46,7 +49,7 @@ export const gabinetesProvinciales = [
     gabinete: [
       { role: 'Gobernador', name: 'Martín Llaryora', tier: 'exec' },
       { role: 'Vicegobernadora', name: 'Myrian Prunotto', tier: 'exec' },
-      { role: 'Gobierno', name: 'Manuel Calvo', tier: 'key' },
+      { role: 'Jefe de Gabinete', name: 'Manuel Calvo', tier: 'key' },
       { role: 'Economía', name: 'Guillermo Acosta', tier: 'min' },
       { role: 'Seguridad', name: 'Juan Pablo Quinteros', tier: 'min' },
       { role: 'Educación', name: 'Horacio Ferreyra', tier: 'min' },
@@ -79,7 +82,7 @@ export const gabinetesProvinciales = [
     provincia: 'Entre Ríos',
     gabinete: [
       { role: 'Gobernador', name: 'Rogelio Frigerio', tier: 'exec' },
-      { role: 'Vicegobernador', name: 'Pedro Galimberti', tier: 'exec' },
+      { role: 'Vicegobernadora', name: 'Alicia Aluani', tier: 'exec' },
       { role: 'Sec. General', name: 'Mauricio Colello', tier: 'key' },
       { role: 'Gobierno y Trabajo', name: 'Manuel Troncoso', tier: 'min' },
       { role: 'Infraestructura', name: 'Hernán Jacob', tier: 'min' },
@@ -110,7 +113,7 @@ export const gabinetesProvinciales = [
     provincia: 'Misiones',
     gabinete: [
       { role: 'Gobernador', name: 'Hugo Passalacqua', tier: 'exec' },
-      { role: 'Vicegobernador', name: 'Lucas Romero', tier: 'exec' },
+      { role: 'Vicegobernador', name: 'Lucas Romero Spinelli', tier: 'exec' },
       { role: 'Coord. Gabinete', name: 'Carlos Sartori', tier: 'key' },
       { role: 'Hacienda e Infraest.', name: 'Adolfo Safrán', tier: 'min' },
       { role: 'Gobierno', name: 'Marcelo Pérez', tier: 'min' },
@@ -127,7 +130,7 @@ export const gabinetesProvinciales = [
     provincia: 'Chaco',
     gabinete: [
       { role: 'Gobernador', name: 'Leandro Zdero', tier: 'exec' },
-      { role: 'Vicegobernadora', name: 'Silvana Romero', tier: 'exec' },
+      { role: 'Vicegobernación', name: 'Vacante (Schneider, senadora nacional desde 10-12-2025)', tier: 'exec' },
       { role: 'Coord. Gabinete', name: 'Livio Gutiérrez', tier: 'key' },
       { role: 'Gobierno y Justicia', name: 'Julio César Ferro', tier: 'min' },
       { role: 'Seguridad', name: 'Hugo Matkovich', tier: 'min' },
@@ -368,7 +371,7 @@ export const gabinetesProvinciales = [
     provincia: 'La Rioja',
     gabinete: [
       { role: 'Gobernador', name: 'Ricardo Quintela', tier: 'exec' },
-      { role: 'Vicegobernadora', name: 'Florencia López', tier: 'exec' },
+      { role: 'Vicegobernadora', name: 'Teresita Madera', tier: 'exec' },
       { role: 'Jefe Gabinete', name: 'Juan Luna Corzo', tier: 'key' },
       { role: 'Hacienda y Finanzas', name: 'Fabián Blanco', tier: 'min' },
       { role: 'Seguridad y Justicia', name: 'Miguel Zárate', tier: 'min' },

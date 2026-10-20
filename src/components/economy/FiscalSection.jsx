@@ -9,18 +9,18 @@ import { fmtMoney } from '../../utils/formatNumber';
 
 function DependencyBar({ dependency, year }) {
   if (dependency == null) return null;
-  const color = dependency <= 30 ? '#27ae60' : dependency <= 50 ? '#2ecc71' : dependency <= 70 ? '#d4a800' : dependency <= 85 ? '#f97316' : '#C1121F';
+  const color = dependency <= 30 ? '#27ae60' : dependency <= 50 ? '#2ecc71' : dependency <= 70 ? '#d4a800' : dependency <= 85 ? '#f97316' : '#C0392B';
   const label = dependency <= 30 ? 'Low dependency' : dependency <= 50 ? 'Moderate' : dependency <= 70 ? 'High' : 'Very high dependency';
   return (
-    <div className="bg-[#003049]/6 rounded-lg p-2.5 border border-[#003049]/10">
+    <div className="bg-[#14213D]/6 rounded-lg p-2.5 border border-[#14213D]/10">
       <div className="flex justify-between items-center mb-1">
-        <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider">Federal dependency</p>
+        <p className="text-[11px] text-[#14213D]/50 uppercase tracking-wider">Federal dependency</p>
         <p className="text-[14px] font-bold font-mono" style={{ color }}>{dependency.toFixed(1)}%</p>
       </div>
-      <div className="h-[8px] bg-[#003049]/10 rounded-full overflow-hidden">
+      <div className="h-[8px] bg-[#14213D]/10 rounded-full overflow-hidden">
         <div className="h-full rounded-full" style={{ width: `${Math.min(dependency, 100)}%`, backgroundColor: color }} />
       </div>
-      <p className="text-[11px] text-[#003049]/40 mt-1">
+      <p className="text-[11px] text-[#14213D]/40 mt-1">
         {label} — national transfers / total revenues ({year})
       </p>
     </div>
@@ -43,8 +43,8 @@ function TaxStructure({ taxDetail }) {
 
   return (
     <div>
-      <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Own tax structure</p>
-      <div className="h-[10px] bg-[#003049]/10 rounded-full overflow-hidden flex mb-1.5">
+      <p className="text-[11px] text-[#14213D]/50 uppercase tracking-wider mb-1">Own tax structure</p>
+      <div className="h-[10px] bg-[#14213D]/10 rounded-full overflow-hidden flex mb-1.5">
         {data.map(d => (
           <div
             key={d.name}
@@ -56,7 +56,7 @@ function TaxStructure({ taxDetail }) {
       </div>
       <div className="flex flex-wrap gap-x-3 gap-y-0.5">
         {data.map(d => (
-          <span key={d.name} className="text-[11px] text-[#003049]/60 flex items-center gap-1">
+          <span key={d.name} className="text-[11px] text-[#14213D]/60 flex items-center gap-1">
             <span className="w-2 h-2 rounded-full inline-block" style={{ backgroundColor: d.color }} />
             {d.name} {(d.value / total * 100).toFixed(0)}%
           </span>
@@ -90,21 +90,21 @@ function DependencyRanking({ currentProvince }) {
 
   return (
     <div>
-      <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider mb-1">Dependency ranking (lowest → highest)</p>
+      <p className="text-[11px] text-[#14213D]/50 uppercase tracking-wider mb-1">Dependency ranking (lowest → highest)</p>
       <div className="space-y-0.5">
         {shown.map(p => {
           const isCurrent = p.province.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') === cn;
-          const color = p.dependency <= 30 ? '#27ae60' : p.dependency <= 50 ? '#2ecc71' : p.dependency <= 70 ? '#d4a800' : '#C1121F';
+          const color = p.dependency <= 30 ? '#27ae60' : p.dependency <= 50 ? '#2ecc71' : p.dependency <= 70 ? '#d4a800' : '#C0392B';
           return (
             <div key={p.province} className="flex items-center gap-1.5">
-              <span className="text-[11px] text-[#003049]/40 w-[18px] text-right font-mono">{p.rank}.</span>
-              <span className={`text-[12px] flex-1 truncate ${isCurrent ? 'font-bold text-[#003049]' : 'text-[#003049]/70'}`}>
+              <span className="text-[11px] text-[#14213D]/40 w-[18px] text-right font-mono">{p.rank}.</span>
+              <span className={`text-[12px] flex-1 truncate ${isCurrent ? 'font-bold text-[#14213D]' : 'text-[#14213D]/70'}`}>
                 {p.province}
               </span>
-              <div className="w-[60px] h-[5px] bg-[#003049]/10 rounded-full overflow-hidden">
+              <div className="w-[60px] h-[5px] bg-[#14213D]/10 rounded-full overflow-hidden">
                 <div className="h-full rounded-full" style={{ width: `${Math.min(p.dependency, 100)}%`, backgroundColor: color }} />
               </div>
-              <span className="text-[11px] font-mono text-[#003049]/50 w-[35px] text-right">{p.dependency.toFixed(0)}%</span>
+              <span className="text-[11px] font-mono text-[#14213D]/50 w-[35px] text-right">{p.dependency.toFixed(0)}%</span>
             </div>
           );
         })}
@@ -135,7 +135,7 @@ export default function FiscalSection({ fiscal, provinceName, mobile }) {
     <div className="space-y-3">
       {/* Royalties callout (only when material) */}
       {fiscal.royalties > 0 && (
-        <p className="text-[11px] text-[#003049]/60">
+        <p className="text-[11px] text-[#14213D]/60">
           Includes <strong>royalties: {fmtMoney(fiscal.royalties)}</strong> (oil, gas, mining)
         </p>
       )}

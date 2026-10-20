@@ -3,7 +3,7 @@
   "sourceUrl": "https://datos.produccion.gob.ar/dataset/puestos-de-trabajo-por-departamento-partido-y-sector-de-actividad",
   "vintage": "2023-11",
   "scope": "Puestos asalariados registrados (SIPA), agregado por provincia desde archivos per-departamento (residencia del trabajador). Universo: trabajo formal registrado.",
-  "discontinuedNote": "El dataset CEP-XXI fue discontinuado en nov 2023. Nov 2023 es el último mes publicado.",
+  "discontinuedNote": "El dataset CEP-XXI por departamento sigue sin actualizarse: al 20-oct-2026 el último mes publicado en el CDN (puestos_depto_pub.csv / puestos_depto_priv.csv) es nov 2023. Para series nacionales/provinciales posteriores usar Secretaría de Trabajo (bloque stNational).",
   "cajaPropiaNote": "En las 13 provincias con caja previsional propia (BA, Cba, Chaco, Chubut, Corrientes, Entre Ríos, Formosa, La Pampa, Misiones, Neuquén, Santa Cruz, Santa Fe, Tierra del Fuego), SIPA-público excluye los empleados provinciales (cotizan en la caja provincial, no en ANSES). El dataset DNAP complementa esos números.",
   "national": {
     "private": 6612937,
@@ -243,5 +243,21 @@
       "publicPct": 29.1,
       "cajaPropia": false
     }
-  ]
+  ],
+  "nationalNote": "El bloque national excluye puestos sin departamento asignado (26.062 públicos y 38.960 privados en nov 2023); con ellos el total público es 3.966.336.",
+  "stNational": {
+    "source": "Secretaría de Trabajo — Situación y evolución del trabajo registrado, cuadro T.2.1 (SIPA/ARCA + cajas previsionales provinciales no transferidas)",
+    "sourceUrl": "https://www.argentina.gob.ar/sites/default/files/trabajoregistrado_2607_estadisticas.xlsx",
+    "unit": "Personas (ocupación principal), con estacionalidad",
+    "nov2023": {
+      "private": 6385764,
+      "public": 3484305
+    },
+    "jul2026": {
+      "private": 6082314,
+      "public": 3384789,
+      "provisional": true
+    },
+    "note": "La serie nacional de la Secretaría de Trabajo sí incluye a asalariados públicos de provincias con caja no transferida (según su nota metodológica). No hay apertura público/privado por provincia en esa publicación."
+  }
 }

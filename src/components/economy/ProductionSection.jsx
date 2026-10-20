@@ -37,12 +37,12 @@ const OILGAS_GAS = '#3b82f6';
 
 function SectionCard({ title, subtitle, color, children }) {
   return (
-    <div className="bg-[#003049]/6 rounded-lg p-2.5 border border-[#003049]/10">
+    <div className="bg-[#14213D]/6 rounded-lg p-2.5 border border-[#14213D]/10">
       <div className="flex items-baseline gap-2 mb-1.5">
         <span className="w-2 h-2 rounded-full shrink-0 mt-0.5" style={{ backgroundColor: color }} />
-        <p className="text-[12px] font-semibold text-[#003049]">{title}</p>
+        <p className="text-[12px] font-semibold text-[#14213D]">{title}</p>
         {subtitle && (
-          <span className="text-[10px] text-[#003049]/40 ml-auto">{subtitle}</span>
+          <span className="text-[10px] text-[#14213D]/40 ml-auto">{subtitle}</span>
         )}
       </div>
       {children}
@@ -55,15 +55,15 @@ function CropBar({ name, tons, yieldKg, color, maxTons }) {
   return (
     <div className="py-[2px]">
       <div className="flex items-center justify-between mb-[1px]">
-        <span className="text-[11px] text-[#003049]/70">{name}</span>
-        <span className="text-[11px] font-mono text-[#003049]/60">
+        <span className="text-[11px] text-[#14213D]/70">{name}</span>
+        <span className="text-[11px] font-mono text-[#14213D]/60">
           {fmtNum(tons)} t
           {yieldKg > 0 && (
-            <span className="text-[#003049]/35 ml-1">({fmtNum(yieldKg)} kg/ha)</span>
+            <span className="text-[#14213D]/35 ml-1">({fmtNum(yieldKg)} kg/ha)</span>
           )}
         </span>
       </div>
-      <div className="h-[5px] bg-[#003049]/8 rounded-full overflow-hidden">
+      <div className="h-[5px] bg-[#14213D]/8 rounded-full overflow-hidden">
         <div
           className="h-full rounded-full"
           style={{ width: `${barW}%`, backgroundColor: color }}
@@ -77,9 +77,9 @@ function StatChip({ label, value, unit, color }) {
   return (
     <div className="flex items-center gap-1.5">
       {color && <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: color }} />}
-      <span className="text-[11px] text-[#003049]/50">{label}</span>
-      <span className="text-[13px] font-semibold text-[#003049] ml-auto font-mono">{value}</span>
-      {unit && <span className="text-[10px] text-[#003049]/40">{unit}</span>}
+      <span className="text-[11px] text-[#14213D]/50">{label}</span>
+      <span className="text-[13px] font-semibold text-[#14213D] ml-auto font-mono">{value}</span>
+      {unit && <span className="text-[10px] text-[#14213D]/40">{unit}</span>}
     </div>
   );
 }
@@ -130,7 +130,7 @@ export default function ProductionSection({ provinceName }) {
 
   if (!hasData) {
     return (
-      <p className="text-[12px] text-[#003049]/50 py-4 text-center">
+      <p className="text-[12px] text-[#14213D]/50 py-4 text-center">
         No production data available for this province.
       </p>
     );
@@ -138,7 +138,7 @@ export default function ProductionSection({ provinceName }) {
 
   return (
     <div className="space-y-3">
-      <p className="text-[11px] text-[#003049]/40 leading-relaxed">
+      <p className="text-[11px] text-[#14213D]/40 leading-relaxed">
         Physical production indicators from national sources.
       </p>
 
@@ -188,12 +188,12 @@ function AgricultureCard({ data, campaign }) {
     <SectionCard title="Cereals & oilseeds" subtitle={campaign} color="#16a34a">
       <div className="flex gap-4 mb-2">
         <div>
-          <p className="text-[10px] text-[#003049]/40 uppercase">Total harvest</p>
-          <p className="text-[13px] font-bold text-[#003049] font-mono">{fmtNum(data.total_tons)} t</p>
+          <p className="text-[10px] text-[#14213D]/40 uppercase">Total harvest</p>
+          <p className="text-[13px] font-bold text-[#14213D] font-mono">{fmtNum(data.total_tons)} t</p>
         </div>
         <div>
-          <p className="text-[10px] text-[#003049]/40 uppercase">Area harvested</p>
-          <p className="text-[13px] font-bold text-[#003049] font-mono">{fmtNum(data.total_area_ha)} ha</p>
+          <p className="text-[10px] text-[#14213D]/40 uppercase">Area harvested</p>
+          <p className="text-[13px] font-bold text-[#14213D] font-mono">{fmtNum(data.total_area_ha)} ha</p>
         </div>
       </div>
       <div className="space-y-[1px]">
@@ -208,7 +208,7 @@ function AgricultureCard({ data, campaign }) {
           />
         ))}
       </div>
-      <p className="text-[9px] text-[#003049]/30 mt-1.5">
+      <p className="text-[9px] text-[#14213D]/30 mt-1.5">
         Sources: MAGyP estimates 2024/25, IPAAT (sugar), INV (grapes).
       </p>
     </SectionCard>
@@ -228,24 +228,24 @@ function SpecialtiesCard({ specialties }) {
       <div className="space-y-1">
         {fruits.length > 0 && (
           <div className="flex gap-2">
-            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">Fruits</span>
-            <span className="text-[11px] text-[#003049]/80 leading-tight">{fruits.join(', ')}</span>
+            <span className="text-[10px] text-[#14213D]/40 uppercase shrink-0 w-[70px]">Fruits</span>
+            <span className="text-[11px] text-[#14213D]/80 leading-tight">{fruits.join(', ')}</span>
           </div>
         )}
         {vegetables.length > 0 && (
           <div className="flex gap-2">
-            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">Vegetables</span>
-            <span className="text-[11px] text-[#003049]/80 leading-tight">{vegetables.join(', ')}</span>
+            <span className="text-[10px] text-[#14213D]/40 uppercase shrink-0 w-[70px]">Vegetables</span>
+            <span className="text-[11px] text-[#14213D]/80 leading-tight">{vegetables.join(', ')}</span>
           </div>
         )}
         {industrial.length > 0 && (
           <div className="flex gap-2">
-            <span className="text-[10px] text-[#003049]/40 uppercase shrink-0 w-[70px]">Industrial</span>
-            <span className="text-[11px] text-[#003049]/80 leading-tight">{industrial.join(', ')}</span>
+            <span className="text-[10px] text-[#14213D]/40 uppercase shrink-0 w-[70px]">Industrial</span>
+            <span className="text-[11px] text-[#14213D]/80 leading-tight">{industrial.join(', ')}</span>
           </div>
         )}
       </div>
-      <p className="text-[9px] text-[#003049]/30 mt-1.5">
+      <p className="text-[9px] text-[#14213D]/30 mt-1.5">
         Sources: CNA 2018, sector reports. Qualitative — no tonnage available.
       </p>
     </SectionCard>
@@ -258,8 +258,8 @@ function MotorcyclesCard({ companies }) {
   if (!companies || companies.length === 0) return null;
   return (
     <SectionCard title="Motorcycle plants" subtitle="2024" color="#f59e0b">
-      <p className="text-[11px] text-[#003049]/70 leading-tight">{companies.join(', ')}</p>
-      <p className="text-[9px] text-[#003049]/30 mt-1.5">
+      <p className="text-[11px] text-[#14213D]/70 leading-tight">{companies.join(', ')}</p>
+      <p className="text-[9px] text-[#14213D]/30 mt-1.5">
         Source: CAFAM / press. ~12 plants nationally produce 491K motorcycles/year.
       </p>
     </SectionCard>
@@ -281,7 +281,7 @@ function OilGasCard({ data, year, national }) {
       <div className="space-y-1">
         <StatChip label="Oil" value={fmtNum(Math.round(data.oil_bbl_day))} unit="bbl/day" color={OILGAS_OIL} />
         {oilPct && (
-          <p className="text-[10px] text-[#003049]/35 ml-[14px]">{oilPct}% of national output</p>
+          <p className="text-[10px] text-[#14213D]/35 ml-[14px]">{oilPct}% of national output</p>
         )}
         <StatChip
           label="Gas"
@@ -290,16 +290,16 @@ function OilGasCard({ data, year, national }) {
           color={OILGAS_GAS}
         />
         {gasPct && (
-          <p className="text-[10px] text-[#003049]/35 ml-[14px]">{gasPct}% of national output</p>
+          <p className="text-[10px] text-[#14213D]/35 ml-[14px]">{gasPct}% of national output</p>
         )}
         <StatChip label="Wells" value={fmtNum(data.wells)} />
       </div>
 
       {data.basins && data.basins.length > 1 && (
-        <div className="mt-2 pt-1.5 border-t border-[#003049]/8">
-          <p className="text-[10px] text-[#003049]/40 uppercase mb-1">Basin breakdown</p>
+        <div className="mt-2 pt-1.5 border-t border-[#14213D]/8">
+          <p className="text-[10px] text-[#14213D]/40 uppercase mb-1">Basin breakdown</p>
           {data.basins.map((b) => (
-            <div key={b.basin} className="flex items-center justify-between text-[11px] text-[#003049]/60 py-[1px]">
+            <div key={b.basin} className="flex items-center justify-between text-[11px] text-[#14213D]/60 py-[1px]">
               <span>{b.basin.charAt(0) + b.basin.slice(1).toLowerCase()}</span>
               <span className="font-mono text-[10px]">
                 Oil {b.oil_pct}% &middot; Gas {b.gas_pct}%
@@ -328,28 +328,28 @@ function LivestockCard({ species }) {
               <div className="flex items-center justify-between mb-1">
                 <div className="flex items-center gap-1.5">
                   <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: color }} />
-                  <span className="text-[13px] font-semibold text-[#003049]">{sp.name_en}</span>
-                  {sp.year < 2024 && <span className="text-[10px] text-[#003049]/40">({sp.year})</span>}
+                  <span className="text-[13px] font-semibold text-[#14213D]">{sp.name_en}</span>
+                  {sp.year < 2024 && <span className="text-[10px] text-[#14213D]/40">({sp.year})</span>}
                 </div>
-                <span className="text-[12px] font-mono text-[#003049]">
+                <span className="text-[12px] font-mono text-[#14213D]">
                   {fmtNum(sp.data.heads)}
-                  <span className="text-[#003049]/40 ml-1">heads</span>
+                  <span className="text-[#14213D]/40 ml-1">heads</span>
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="flex-1 h-[10px] bg-[#003049]/6 rounded-full overflow-hidden">
+                <div className="flex-1 h-[10px] bg-[#14213D]/6 rounded-full overflow-hidden">
                   <div className="h-full rounded-full" style={{ width: `${barW}%`, backgroundColor: color }} />
                 </div>
                 <span className="text-[11px] font-mono font-bold w-[44px] text-right" style={{ color }}>{sp.pct.toFixed(1)}%</span>
               </div>
-              <p className="text-[9px] text-[#003049]/35 mt-0.5">
+              <p className="text-[9px] text-[#14213D]/35 mt-0.5">
                 of {fmtNum(sp.total)} heads nationally
               </p>
             </div>
           );
         })}
       </div>
-      <p className="text-[10px] text-[#003049]/30 mt-2 pt-1.5 border-t border-[#003049]/8">
+      <p className="text-[10px] text-[#14213D]/30 mt-2 pt-1.5 border-t border-[#14213D]/8">
         Bars show province share of Argentina's national stock per species. Sources: MAGyP, SENASA.
       </p>
     </SectionCard>
@@ -365,32 +365,32 @@ function VehicleCard({ plants, year, totalNational }) {
     <SectionCard title="Vehicle Manufacturing" subtitle={String(year)} color="#9333ea">
       <div className="flex gap-4 mb-2">
         <div>
-          <p className="text-[10px] text-[#003049]/40 uppercase">Province total</p>
-          <p className="text-[13px] font-bold text-[#003049] font-mono">{fmtNum(totalProv)} units</p>
+          <p className="text-[10px] text-[#14213D]/40 uppercase">Province total</p>
+          <p className="text-[13px] font-bold text-[#14213D] font-mono">{fmtNum(totalProv)} units</p>
         </div>
         <div>
-          <p className="text-[10px] text-[#003049]/40 uppercase">Plants</p>
-          <p className="text-[13px] font-bold text-[#003049] font-mono">{plants.length}</p>
+          <p className="text-[10px] text-[#14213D]/40 uppercase">Plants</p>
+          <p className="text-[13px] font-bold text-[#14213D] font-mono">{plants.length}</p>
         </div>
       </div>
 
       <div className="space-y-1.5">
         {plants.map((p) => (
-          <div key={p.plant + p.company} className="border-t border-[#003049]/6 pt-1">
+          <div key={p.plant + p.company} className="border-t border-[#14213D]/6 pt-1">
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-medium text-[#003049]">{p.company}</span>
-              <span className="text-[11px] font-mono text-[#003049]/60">
+              <span className="text-[11px] font-medium text-[#14213D]">{p.company}</span>
+              <span className="text-[11px] font-mono text-[#14213D]/60">
                 {fmtNum(p.production)} units
               </span>
             </div>
-            <p className="text-[10px] text-[#003049]/40">
+            <p className="text-[10px] text-[#14213D]/40">
               {p.plant} &middot; {p.vehicles.length > 0 ? p.vehicles.join(', ') : p.type}
             </p>
           </div>
         ))}
       </div>
 
-      <p className="text-[10px] text-[#003049]/30 mt-1.5">
+      <p className="text-[10px] text-[#14213D]/30 mt-1.5">
         National total: {fmtNum(totalNational)} vehicles (ADEFA {year})
       </p>
     </SectionCard>

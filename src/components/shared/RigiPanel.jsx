@@ -21,9 +21,9 @@ const ESTADO_LABEL = {
 const ESTADO_COLOR = {
   aprobado:     { bg: '#17a58922', text: '#0f766e' },
   en_revision:  { bg: '#d4a80022', text: '#b58500' },
-  presentado:   { bg: '#669BBC22', text: '#003049' },
+  presentado:   { bg: '#4F86B522', text: '#14213D' },
   ejecucion:    { bg: '#7d3c9822', text: '#7d3c98' },
-  rechazado:    { bg: '#C1121F22', text: '#C1121F' },
+  rechazado:    { bg: '#C0392B22', text: '#C0392B' },
 };
 
 function normKey(s) {
@@ -49,7 +49,7 @@ export function RigiPanel({ provinceName }) {
   const projects = rigi.projects.filter(p => matchProvince(p.provincia, provinceName));
   if (projects.length === 0) {
     return (
-      <div className="text-[11px] text-[#003049]/50 italic">
+      <div className="text-[11px] text-[#14213D]/50 italic">
         No RIGI projects recorded for this province.
       </div>
     );
@@ -63,16 +63,16 @@ export function RigiPanel({ provinceName }) {
   return (
     <div>
       <div className="flex items-baseline justify-between mb-1.5 gap-2 flex-wrap">
-        <div className="text-[11px] text-[#003049]/60">
+        <div className="text-[11px] text-[#14213D]/60">
           {projects.length} project{projects.length !== 1 ? 's' : ''}
         </div>
-        <div className="text-[11px] font-mono text-[#003049]/75">
+        <div className="text-[11px] font-mono text-[#14213D]/75">
           {approved.length > 0 && (
             <span style={{ color: '#0f766e' }}>
               Approved {fmtUSD(approvedTotal)}
             </span>
           )}
-          {approved.length > 0 && review.length > 0 && <span className="mx-1 text-[#003049]/30">·</span>}
+          {approved.length > 0 && review.length > 0 && <span className="mx-1 text-[#14213D]/30">·</span>}
           {review.length > 0 && (
             <span style={{ color: '#b58500' }}>
               Under review {fmtUSD(reviewTotal)}
@@ -82,7 +82,7 @@ export function RigiPanel({ provinceName }) {
       </div>
       <div className="flex flex-col gap-1">
         {projects.map(p => {
-          const estadoColor = ESTADO_COLOR[p.estado] || { bg: 'rgba(0,48,73,0.08)', text: '#003049' };
+          const estadoColor = ESTADO_COLOR[p.estado] || { bg: 'rgba(20,33,61,0.08)', text: '#14213D' };
           const clickable = !!p.source_url;
           const Tag = clickable ? 'a' : 'div';
           const props = clickable
@@ -93,7 +93,7 @@ export function RigiPanel({ provinceName }) {
               key={p.id}
               {...props}
               className="flex items-center justify-between gap-2 px-2 py-1.5 rounded"
-              style={{ background: 'rgba(0,48,73,0.05)', border: '1px solid rgba(0,48,73,0.08)' }}
+              style={{ background: 'rgba(20,33,61,0.05)', border: '1px solid rgba(20,33,61,0.08)' }}
             >
               <div className="flex items-center gap-2 min-w-0">
                 <span
@@ -101,18 +101,18 @@ export function RigiPanel({ provinceName }) {
                   style={{ backgroundColor: SECTOR_COLOR[p.sector] || '#7f8c8d' }}
                 />
                 <div className="min-w-0">
-                  <div className="text-[12px] text-[#003049] truncate leading-tight">
+                  <div className="text-[12px] text-[#14213D] truncate leading-tight">
                     {p.nombre}
                   </div>
                   {p.empresa && (
-                    <div className="text-[9px] text-[#003049]/55 truncate leading-tight">
+                    <div className="text-[9px] text-[#14213D]/55 truncate leading-tight">
                       {p.empresa}
                     </div>
                   )}
                 </div>
               </div>
               <div className="flex items-center gap-2 flex-shrink-0">
-                <span className="text-[11px] text-[#003049]/80 font-mono font-bold">
+                <span className="text-[11px] text-[#14213D]/80 font-mono font-bold">
                   {fmtUSD(p.monto_usd_millones)}
                 </span>
                 <span
@@ -134,11 +134,11 @@ function StackedBarRow({ label, value, max, color }) {
   const pct = max > 0 ? (value / max) * 100 : 0;
   return (
     <div className="flex items-center gap-2 text-[10px] py-[3px]">
-      <span className="w-[78px] text-[#003049]/70 truncate capitalize">{label}</span>
-      <div className="flex-1 h-[6px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
+      <span className="w-[78px] text-[#14213D]/70 truncate capitalize">{label}</span>
+      <div className="flex-1 h-[6px] rounded-sm overflow-hidden" style={{ background: 'rgba(20,33,61,0.08)' }}>
         <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: color }} />
       </div>
-      <span className="font-mono text-[#003049]/80 text-right min-w-[52px] tabular-nums">
+      <span className="font-mono text-[#14213D]/80 text-right min-w-[52px] tabular-nums">
         {fmtUSD(value)}
       </span>
     </div>
@@ -171,20 +171,20 @@ export function RigiNationalOverview() {
       {/* Hero total */}
       <div
         className="rounded-md p-3 border mb-3"
-        style={{ background: 'rgba(0,48,73,0.04)', borderColor: 'rgba(0,48,73,0.10)' }}
+        style={{ background: 'rgba(20,33,61,0.04)', borderColor: 'rgba(20,33,61,0.10)' }}
       >
         <div className="flex items-baseline justify-between gap-2 mb-2">
           <div>
-            <div className="text-[20px] font-extrabold font-mono text-[#003049] leading-none">
+            <div className="text-[20px] font-extrabold font-mono text-[#14213D] leading-none">
               {fmtUSD(grandTotal)}
             </div>
-            <div className="text-[10px] text-[#003049]/55 mt-0.5">
+            <div className="text-[10px] text-[#14213D]/55 mt-0.5">
               across {projects.length} projects
             </div>
           </div>
         </div>
         {/* Approved vs review split bar */}
-        <div className="flex h-[8px] rounded-sm overflow-hidden mb-1.5" style={{ background: 'rgba(0,48,73,0.08)' }}>
+        <div className="flex h-[8px] rounded-sm overflow-hidden mb-1.5" style={{ background: 'rgba(20,33,61,0.08)' }}>
           <div style={{ width: `${(totalApproved / grandTotal) * 100}%`, background: '#17a589' }} />
           <div style={{ width: `${(totalReview / grandTotal) * 100}%`, background: '#d4a800' }} />
         </div>
@@ -200,7 +200,7 @@ export function RigiNationalOverview() {
 
       {/* By sector */}
       <div className="mb-3">
-        <div className="text-[9px] uppercase tracking-wider text-[#003049]/55 font-semibold mb-1">
+        <div className="text-[9px] uppercase tracking-wider text-[#14213D]/55 font-semibold mb-1">
           By sector
         </div>
         <div>
@@ -210,7 +210,7 @@ export function RigiNationalOverview() {
               label={k}
               value={v}
               max={maxSector}
-              color={SECTOR_COLOR[k] || '#669BBC'}
+              color={SECTOR_COLOR[k] || '#4F86B5'}
             />
           ))}
         </div>
@@ -218,7 +218,7 @@ export function RigiNationalOverview() {
 
       {/* By province */}
       <div>
-        <div className="text-[9px] uppercase tracking-wider text-[#003049]/55 font-semibold mb-1">
+        <div className="text-[9px] uppercase tracking-wider text-[#14213D]/55 font-semibold mb-1">
           By province
         </div>
         <div>
@@ -228,7 +228,7 @@ export function RigiNationalOverview() {
               label={k}
               value={v}
               max={maxProvince}
-              color="#669BBC"
+              color="#4F86B5"
             />
           ))}
         </div>

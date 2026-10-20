@@ -7,7 +7,7 @@
   ],
   "publicSource": "derived",
   "limitations": [
-    "No incluye empleados provinciales de 13 provincias con caja previsional propia (BA, CABA, Córdoba, Santa Fe, Chaco, Entre Ríos, Misiones, Formosa, Neuquén, Chubut, Santa Cruz, TdF, Corrientes).",
+    "No incluye empleados provinciales de las 13 provincias con caja previsional propia no transferida (Buenos Aires, Córdoba, Santa Fe, Chaco, Chubut, Corrientes, Entre Ríos, Formosa, La Pampa, Misiones, Neuquén, Santa Cruz, Tierra del Fuego). CABA transfirió su caja: sus empleados sí están en SIPA.",
     "No incluye trabajo informal (EPH estima ~30-40% del empleo urbano)."
   ],
   "provinces": [
@@ -5245,5 +5245,133 @@
     }
   ],
   "vintage": "2023-11",
-  "sourceNote": "CEP-XXI / SIPA-AFIP per-provincia (clae2). Por ubicación del establecimiento. Dataset discontinuado en nov 2023 (último mes disponible). Solo se conserva el campo `private` y los `sectors`. Para split público/privado real ver sipa_pub_priv.json."
+  "sourceNote": "CEP-XXI / SIPA-AFIP per-provincia (clae2). Por ubicación del establecimiento. Dataset discontinuado en nov 2023 (último mes disponible). Solo se conserva el campo `private` y los `sectors`. Para split público/privado real ver sipa_pub_priv.json.",
+  "stLatest": {
+    "source": "Secretaría de Trabajo, Empleo y Seguridad Social — Situación y evolución del trabajo registrado (SIPA/ARCA), cuadro A.5.1",
+    "sourceUrl": "https://www.argentina.gob.ar/sites/default/files/trabajoregistrado_2607_estadisticas.xlsx",
+    "vintage": "2026-07 (provisorio)",
+    "unit": "Personas con empleo asalariado registrado en el sector privado, por provincia (con estacionalidad). Personas, no puestos: no comparable 1:1 con el campo private (puestos CEP XXI).",
+    "provinces": {
+      "Buenos Aires": {
+        "nov2023": 2023221,
+        "jul2026": 1902951,
+        "varPct": -5.9
+      },
+      "Ciudad de Buenos Aires": {
+        "nov2023": 1535710,
+        "jul2026": 1482507,
+        "varPct": -3.5
+      },
+      "Catamarca": {
+        "nov2023": 39460,
+        "jul2026": 34975,
+        "varPct": -11.4
+      },
+      "Chaco": {
+        "nov2023": 77763,
+        "jul2026": 69562,
+        "varPct": -10.5
+      },
+      "Chubut": {
+        "nov2023": 96852,
+        "jul2026": 87890,
+        "varPct": -9.3
+      },
+      "Córdoba": {
+        "nov2023": 531908,
+        "jul2026": 509696,
+        "varPct": -4.2
+      },
+      "Corrientes": {
+        "nov2023": 80779,
+        "jul2026": 74968,
+        "varPct": -7.2
+      },
+      "Entre Ríos": {
+        "nov2023": 141611,
+        "jul2026": 134121,
+        "varPct": -5.3
+      },
+      "Formosa": {
+        "nov2023": 25078,
+        "jul2026": 21931,
+        "varPct": -12.5
+      },
+      "Jujuy": {
+        "nov2023": 61946,
+        "jul2026": 54625,
+        "varPct": -11.8
+      },
+      "La Pampa": {
+        "nov2023": 41204,
+        "jul2026": 38128,
+        "varPct": -7.5
+      },
+      "La Rioja": {
+        "nov2023": 30693,
+        "jul2026": 27868,
+        "varPct": -9.2
+      },
+      "Mendoza": {
+        "nov2023": 243094,
+        "jul2026": 230746,
+        "varPct": -5.1
+      },
+      "Misiones": {
+        "nov2023": 104719,
+        "jul2026": 100269,
+        "varPct": -4.2
+      },
+      "Neuquén": {
+        "nov2023": 143568,
+        "jul2026": 156361,
+        "varPct": 8.9
+      },
+      "Río Negro": {
+        "nov2023": 109574,
+        "jul2026": 112797,
+        "varPct": 2.9
+      },
+      "Salta": {
+        "nov2023": 129383,
+        "jul2026": 116579,
+        "varPct": -9.9
+      },
+      "San Juan": {
+        "nov2023": 81444,
+        "jul2026": 79408,
+        "varPct": -2.5
+      },
+      "San Luis": {
+        "nov2023": 55120,
+        "jul2026": 50243,
+        "varPct": -8.8
+      },
+      "Santa Cruz": {
+        "nov2023": 60867,
+        "jul2026": 49096,
+        "varPct": -19.3
+      },
+      "Santa Fe": {
+        "nov2023": 524317,
+        "jul2026": 502037,
+        "varPct": -4.2
+      },
+      "Santiago del Estero": {
+        "nov2023": 54384,
+        "jul2026": 48972,
+        "varPct": -10.0
+      },
+      "Tierra del Fuego": {
+        "nov2023": 39104,
+        "jul2026": 30719,
+        "varPct": -21.4
+      },
+      "Tucumán": {
+        "nov2023": 157487,
+        "jul2026": 168027,
+        "varPct": 6.7
+      }
+    }
+  }
 }

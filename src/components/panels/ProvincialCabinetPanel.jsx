@@ -37,37 +37,37 @@ function ProvincialCabinetPanelRaw({ selectedProvince, governors }) {
 
   const getBg = (tier) => {
     if (tier === 'exec') return `${alignColor}11`;
-    if (tier === 'key') return 'rgba(0,48,73,0.07)';
+    if (tier === 'key') return 'rgba(20,33,61,0.07)';
     if (tier === 'sec') return 'rgba(243,156,18,0.07)';
-    return 'rgba(0,48,73,0.03)';
+    return 'rgba(20,33,61,0.03)';
   };
   const getBorder = (tier) => {
     if (tier === 'exec') return `${alignColor}55`;
-    if (tier === 'key') return 'rgba(0,48,73,0.22)';
+    if (tier === 'key') return 'rgba(20,33,61,0.22)';
     if (tier === 'sec') return 'rgba(243,156,18,0.25)';
-    return 'rgba(0,48,73,0.10)';
+    return 'rgba(20,33,61,0.10)';
   };
 
   return (
     <div className="flex flex-wrap gap-1 content-start h-full overflow-y-auto pt-0.5">
-      <p className="w-full text-[14px] text-[#003049]/50 uppercase tracking-widest mb-0.5 text-center">Provincial Executive · {selectedProvince}</p>
+      <p className="w-full text-[14px] text-[#14213D]/50 uppercase tracking-widest mb-0.5 text-center">Provincial Executive · {selectedProvince}</p>
       {infoCards.map((p, i) => (
         <div key={`info-${i}`} className="flex-1 min-w-[120px] rounded px-3 py-2 border text-center"
           style={{ background: getBg(p.tier), borderColor: getBorder(p.tier) }}>
-          <p className="text-[10px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
-          <p className="text-[13px] font-bold text-[#003049] leading-snug">{p.name}</p>
-          {p.detail && <p className="text-[11px] leading-tight" style={{ color: p.color || '#669BBC' }}>{p.detail}</p>}
+          <p className="text-[10px] uppercase tracking-widest text-[#14213D]/50 leading-tight">{p.role}</p>
+          <p className="text-[13px] font-bold text-[#14213D] leading-snug">{p.name}</p>
+          {p.detail && <p className="text-[11px] leading-tight" style={{ color: p.color || '#4F86B5' }}>{p.detail}</p>}
         </div>
       ))}
       {ministers.length > 0 && (
         <>
-          <div className="w-full h-px bg-[#003049]/8 my-0.5" />
+          <div className="w-full h-px bg-[#14213D]/8 my-0.5" />
           <div className="w-full grid gap-1" style={{ gridTemplateColumns: `repeat(${Math.min(ministers.length, 2)}, 1fr)` }}>
             {ministers.map((m, i) => (
               <div key={`min-${i}`} className="rounded px-1.5 py-1 border text-center"
                 style={{ background: getBg(m.tier), borderColor: getBorder(m.tier) }}>
-                <p className="text-[9px] uppercase tracking-wider text-[#003049]/50 leading-tight truncate">{m.role}</p>
-                <p className="text-[12px] font-bold text-[#003049] leading-snug truncate" title={m.name}>{m.name}</p>
+                <p className="text-[9px] uppercase tracking-wider text-[#14213D]/50 leading-tight truncate">{m.role}</p>
+                <p className="text-[12px] font-bold text-[#14213D] leading-snug truncate" title={m.name}>{m.name}</p>
               </div>
             ))}
           </div>
@@ -76,8 +76,8 @@ function ProvincialCabinetPanelRaw({ selectedProvince, governors }) {
       {miningStance && (
         <div className="w-full rounded px-3 py-2 border mt-1 text-center"
           style={{ background: 'rgba(243,156,18,0.07)', borderColor: 'rgba(243,156,18,0.25)' }}>
-          <p className="text-[10px] uppercase tracking-widest text-[#003049]/50 leading-tight">Mining Stance</p>
-          <p className="text-[13px] font-semibold text-[#003049] leading-snug">{miningStance}</p>
+          <p className="text-[10px] uppercase tracking-widest text-[#14213D]/50 leading-tight">Mining Stance</p>
+          <p className="text-[13px] font-semibold text-[#14213D] leading-snug">{miningStance}</p>
         </div>
       )}
     </div>

@@ -1,5 +1,8 @@
 // Total: 257
 // Source: datos.hcdn.gob.ar (Composicion Actual de la Camara)
+// Verified against https://www.diputados.gob.ar/diputados/ as of 2026-10-20
+// (post 10-Dec-2025 renewal; includes Matzkin [La Pampa, jura 24/06/2026] and
+// Giordano [FIT rotation, jura 26/08/2026]; one CABA LLA seat listed as pending incorporation)
 // Buenos Aires: 70
 // Catamarca: 5
 // Chaco: 7
@@ -53,8 +56,8 @@ export const officialDeputies = [
   {
     "n": "Alí, Ernesto \"Pipi\"",
     "p": "San Luis",
-    "b": "UNIÓN POR LA PATRIA",
-    "co": "PJ",
+    "b": "PRIMERO SAN LUIS",
+    "co": "OTROS",
     "desde": "2023",
     "hasta": "2027"
   },
@@ -77,7 +80,7 @@ export const officialDeputies = [
   {
     "n": "Álvarez, Claudio",
     "p": "San Luis",
-    "b": "INNOVACIÓN FEDERAL",
+    "b": "ARGENTINA FEDERAL",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2027"
@@ -149,7 +152,7 @@ export const officialDeputies = [
   {
     "n": "Arrúa, Alberto",
     "p": "Misiones",
-    "b": "INNOVACIÓN FEDERAL",
+    "b": "ARGENTINA FEDERAL",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2027"
@@ -261,7 +264,7 @@ export const officialDeputies = [
   {
     "n": "Biella, Bernardo",
     "p": "Salta",
-    "b": "INNOVACIÓN FEDERAL",
+    "b": "ARGENTINA FEDERAL",
     "co": "OTROS",
     "desde": "2025",
     "hasta": "2029"
@@ -309,7 +312,7 @@ export const officialDeputies = [
   {
     "n": "Bregman, Myriam",
     "p": "Ciudad de Buenos Aires",
-    "b": "FRENTE DE IZQUIERDA Y DE TRABAJADORES UNIDAD",
+    "b": "PTS-FRENTE DE IZQUIERDA Y DE TRABAJADORES UNIDAD",
     "co": "OTROS",
     "desde": "2025",
     "hasta": "2029"
@@ -517,7 +520,7 @@ export const officialDeputies = [
   {
     "n": "del Caño, Nicolás",
     "p": "Buenos Aires",
-    "b": "FRENTE DE IZQUIERDA Y DE TRABAJADORES UNIDAD",
+    "b": "PTS-FRENTE DE IZQUIERDA Y DE TRABAJADORES UNIDAD",
     "co": "OTROS",
     "desde": "2025",
     "hasta": "2029"
@@ -525,7 +528,7 @@ export const officialDeputies = [
   {
     "n": "Del Plá, Romina",
     "p": "Buenos Aires",
-    "b": "FRENTE DE IZQUIERDA Y DE TRABAJADORES UNIDAD",
+    "b": "PARTIDO OBRERO EN EL FRENTE DE IZQUIERDA Y DE TRABAJADORES-UNIDAD",
     "co": "OTROS",
     "desde": "2025",
     "hasta": "2029"
@@ -771,6 +774,14 @@ export const officialDeputies = [
     "hasta": "2029"
   },
   {
+    "n": "Giordano, Juan Carlos",
+    "p": "Buenos Aires",
+    "b": "IZQUIERDA SOCIALISTA - FRENTE DE IZQUIERDA UNIDAD",
+    "co": "OTROS",
+    "desde": "2023",
+    "hasta": "2027"
+  },
+  {
     "n": "Giudici, Silvana",
     "p": "Ciudad de Buenos Aires",
     "b": "LA LIBERTAD AVANZA",
@@ -845,7 +856,7 @@ export const officialDeputies = [
   {
     "n": "González, Gerardo Gustavo",
     "p": "Formosa",
-    "b": "INNOVACIÓN FEDERAL",
+    "b": "ARGENTINA FEDERAL",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2027"
@@ -917,7 +928,7 @@ export const officialDeputies = [
   {
     "n": "Herrera, Oscar",
     "p": "Misiones",
-    "b": "INNOVACIÓN FEDERAL",
+    "b": "ARGENTINA FEDERAL",
     "co": "OTROS",
     "desde": "2025",
     "hasta": "2029"
@@ -1153,6 +1164,14 @@ export const officialDeputies = [
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2027"
+  },
+  {
+    "n": "Matzkin, Martín",
+    "p": "La Pampa",
+    "b": "LA LIBERTAD AVANZA",
+    "co": "LLA",
+    "desde": "2025",
+    "hasta": "2029"
   },
   {
     "n": "Maureira, Karina",
@@ -1397,7 +1416,7 @@ export const officialDeputies = [
   {
     "n": "Outes, Pablo",
     "p": "Salta",
-    "b": "INNOVACIÓN FEDERAL",
+    "b": "ARGENTINA FEDERAL",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2027"
@@ -1555,14 +1574,6 @@ export const officialDeputies = [
     "hasta": "2029"
   },
   {
-    "n": "Pitrola, Nestor",
-    "p": "Buenos Aires",
-    "b": "FRENTE DE IZQUIERDA Y DE TRABAJADORES UNIDAD",
-    "co": "OTROS",
-    "desde": "2023",
-    "hasta": "2027"
-  },
-  {
     "n": "Pokoik, Lorena",
     "p": "Ciudad de Buenos Aires",
     "b": "UNIÓN POR LA PATRIA",
@@ -1613,14 +1624,6 @@ export const officialDeputies = [
   {
     "n": "Ravera, Valentina",
     "p": "Santa Fe",
-    "b": "LA LIBERTAD AVANZA",
-    "co": "LLA",
-    "desde": "2025",
-    "hasta": "2029"
-  },
-  {
-    "n": "Ravier, Adrián",
-    "p": "La Pampa",
     "b": "LA LIBERTAD AVANZA",
     "co": "LLA",
     "desde": "2025",
@@ -1709,7 +1712,7 @@ export const officialDeputies = [
   {
     "n": "Ruíz, Yamila",
     "p": "Misiones",
-    "b": "INNOVACIÓN FEDERAL",
+    "b": "ARGENTINA FEDERAL",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2027"
@@ -1949,7 +1952,7 @@ export const officialDeputies = [
   {
     "n": "Vancsik, Daniel",
     "p": "Misiones",
-    "b": "INNOVACIÓN FEDERAL",
+    "b": "ARGENTINA FEDERAL",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2027"
@@ -1965,7 +1968,7 @@ export const officialDeputies = [
   {
     "n": "Vega, Yolanda",
     "p": "Salta",
-    "b": "INNOVACIÓN FEDERAL",
+    "b": "ARGENTINA FEDERAL",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2027"

@@ -28,14 +28,14 @@ function CompositionTooltip({ active, payload, label }) {
   return (
     <div
       className="rounded px-2 py-1 text-[10px]"
-      style={{ background: '#FFF8EB', border: '1px solid rgba(0,48,73,0.18)' }}
+      style={{ background: '#FFFFFF', border: '1px solid rgba(20,33,61,0.18)' }}
     >
-      <div className="font-bold text-[#003049] mb-0.5">{label}</div>
+      <div className="font-bold text-[#14213D] mb-0.5">{label}</div>
       {payload.slice().reverse().map(p => (
         <div key={p.dataKey} className="flex items-center gap-1.5">
           <span className="w-2 h-2 rounded-sm" style={{ background: p.color }} />
           <span style={{ color: p.color }}>{p.name}</span>
-          <span className="font-mono ml-1 text-[#003049]">{p.value.toFixed(1)}%</span>
+          <span className="font-mono ml-1 text-[#14213D]">{p.value.toFixed(1)}%</span>
         </div>
       ))}
     </div>
@@ -44,10 +44,10 @@ function CompositionTooltip({ active, payload, label }) {
 
 function Metric({ label, value, sub, color }) {
   return (
-    <div className="rounded-md px-3 py-3" style={{ background: 'rgba(0,48,73,0.06)', border: '1px solid rgba(0,48,73,0.10)' }}>
-      <div className="text-[9px] uppercase tracking-wider text-[#003049]/55">{label}</div>
-      <div className="text-[#003049] font-bold text-[15px] font-mono leading-tight" style={color ? { color } : undefined}>{value}</div>
-      <div className="text-[9px] text-[#003049]/45">{sub}</div>
+    <div className="rounded-md px-3 py-3" style={{ background: 'rgba(20,33,61,0.06)', border: '1px solid rgba(20,33,61,0.10)' }}>
+      <div className="text-[9px] uppercase tracking-wider text-[#14213D]/55">{label}</div>
+      <div className="text-[#14213D] font-bold text-[15px] font-mono leading-tight" style={color ? { color } : undefined}>{value}</div>
+      <div className="text-[9px] text-[#14213D]/45">{sub}</div>
     </div>
   );
 }
@@ -56,7 +56,7 @@ export function FiscalTriptych({ provinceName }) {
   const prov = lookupProvince(provinceName);
   if (!prov) {
     return (
-      <div className="text-[11px] text-[#003049]/50 italic mt-1">
+      <div className="text-[11px] text-[#14213D]/50 italic mt-1">
         Fiscal data unavailable for {provinceName}.
       </div>
     );
@@ -82,9 +82,9 @@ export function FiscalTriptych({ provinceName }) {
   const delta = (base?.dependency != null && depLatest != null) ? depLatest - base.dependency : null;
 
   // Display
-  const depColor = depLatest > 85 ? '#C1121F' : depLatest > 65 ? '#e67e22' : depLatest > 40 ? '#f39c12' : '#27ae60';
-  const discColor = discOfTotalPct == null ? '#003049'
-    : discOfTotalPct > 15 ? '#C1121F'
+  const depColor = depLatest > 85 ? '#C0392B' : depLatest > 65 ? '#e67e22' : depLatest > 40 ? '#f39c12' : '#27ae60';
+  const discColor = discOfTotalPct == null ? '#14213D'
+    : discOfTotalPct > 15 ? '#C0392B'
     : discOfTotalPct > 8 ? '#e67e22'
     : discOfTotalPct > 3 ? '#d4a800'
     : '#17a589';
@@ -121,35 +121,35 @@ export function FiscalTriptych({ provinceName }) {
 
       {compositionData.length >= 2 && (
         <div className="mt-3">
-          <div className="text-[9px] uppercase tracking-wider text-[#003049]/50 mb-0.5">
+          <div className="text-[9px] uppercase tracking-wider text-[#14213D]/50 mb-0.5">
             Revenue composition — {compositionData[0].year}–{compositionData[compositionData.length - 1].year}
           </div>
           <div style={{ width: '100%', height: 130 }}>
             <ResponsiveContainer minWidth={0} minHeight={0}>
               <AreaChart data={compositionData} margin={{ top: 4, right: 4, bottom: 0, left: -10 }} stackOffset="expand">
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,48,73,0.08)" />
-                <XAxis dataKey="year" tick={{ fontSize: 10, fill: 'rgba(0,48,73,0.5)' }} />
+                <CartesianGrid strokeDasharray="3 3" stroke="rgba(20,33,61,0.08)" />
+                <XAxis dataKey="year" tick={{ fontSize: 10, fill: 'rgba(20,33,61,0.5)' }} />
                 <YAxis
-                  tick={{ fontSize: 10, fill: 'rgba(0,48,73,0.5)' }}
+                  tick={{ fontSize: 10, fill: 'rgba(20,33,61,0.5)' }}
                   tickFormatter={(v) => `${Math.round(v * 100)}%`}
                   domain={[0, 1]}
                 />
                 <Tooltip content={<CompositionTooltip />} />
-                <Area type="monotone" dataKey="ownPct"  stackId="1" name="Own"            fill="#003049" fillOpacity={0.85} stroke="#003049" />
+                <Area type="monotone" dataKey="ownPct"  stackId="1" name="Own"            fill="#14213D" fillOpacity={0.85} stroke="#14213D" />
                 <Area type="monotone" dataKey="autoPct" stackId="1" name="Automatic"      fill="#17a589" fillOpacity={0.85} stroke="#17a589" />
                 <Area type="monotone" dataKey="discPct" stackId="1" name="Non-automatic"  fill="#d4a800" fillOpacity={0.85} stroke="#d4a800" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
           <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-[9px]">
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#003049' }} /><span className="text-[#003049]/70">Own</span></span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#17a589' }} /><span className="text-[#003049]/70">Automatic (coparticipación)</span></span>
-            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#d4a800' }} /><span className="text-[#003049]/70">Non-automatic</span></span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#14213D' }} /><span className="text-[#14213D]/70">Own</span></span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#17a589' }} /><span className="text-[#14213D]/70">Automatic (coparticipación)</span></span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-sm" style={{ background: '#d4a800' }} /><span className="text-[#14213D]/70">Non-automatic</span></span>
           </div>
         </div>
       )}
 
-      <div className="text-[9px] text-[#003049]/40 mt-1.5 leading-snug">
+      <div className="text-[9px] text-[#14213D]/40 mt-1.5 leading-snug">
         Source: Mecon DNAP (APNF 2005–{prov.year}). Each year normalized to 100% — invariant to inflation.
         <br />
         <b>Non-automatic</b> = transfers outside the coparticipación law (ATN, convenios, fondos compensadores, obra pública nacional). Historical automatic/non-automatic split estimated using the latest year's ratio.

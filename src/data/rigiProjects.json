@@ -1,7 +1,7 @@
 {
-  "version": "2026-04-06",
-  "methodology": "Manually curated list of RIGI projects. Amounts in USD millions. 'aprobado' = officially approved under RIGI. 'en_revision' = filed and under review.",
-  "last_curation": "2026-04-06",
+  "version": "2026-10-20",
+  "methodology": "Manually curated list of RIGI projects. Amounts in USD millions (official amounts from MECON resolutions / communiqués where available). 'aprobado' = approved by the RIGI Evaluation Committee (most published in the Boletín Oficial; 'nota' flags those still pending publication). 'en_revision' = filed and under review. Official tally at 19-oct-2026: 25 projects approved and published in BO for USD 68,438M; plus MARA, Toyota and TGS (2) committee-approved pending BO.",
+  "last_curation": "2026-10-20",
   "projects": [
     {
       "id": "el-quemado-solar",
@@ -16,12 +16,13 @@
     {
       "id": "vmos-vaca-muerta-sur",
       "nombre": "Vaca Muerta Oleoducto Sur (VMOS)",
-      "empresa": "YPF / PAE / Vista / Pampa / Chevron / Shell",
+      "empresa": "YPF / PAE / Vista / Pampa / Pluspetrol / Chevron / Tecpetrol / Shell",
       "pais_origen": "AR+mix",
       "sector": "oilgas",
       "provincia": "Río Negro",
-      "monto_usd_millones": 2500,
-      "estado": "aprobado"
+      "monto_usd_millones": 2900,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
     },
     {
       "id": "southern-energy-gnl",
@@ -30,8 +31,9 @@
       "pais_origen": "AR/UK/NO",
       "sector": "oilgas",
       "provincia": "Río Negro",
-      "monto_usd_millones": 6900,
-      "estado": "aprobado"
+      "monto_usd_millones": 15156,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
     },
     {
       "id": "rincon-litio",
@@ -41,8 +43,9 @@
       "sector": "mining",
       "mineral": "Litio",
       "provincia": "Salta",
-      "monto_usd_millones": 2500,
-      "estado": "aprobado"
+      "monto_usd_millones": 2744,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
     },
     {
       "id": "sidersa",
@@ -51,8 +54,9 @@
       "pais_origen": "AR",
       "sector": "industry",
       "provincia": "Buenos Aires",
-      "monto_usd_millones": 296,
-      "estado": "aprobado"
+      "monto_usd_millones": 286,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
     },
     {
       "id": "hombre-muerto-oeste",
@@ -62,8 +66,9 @@
       "sector": "mining",
       "mineral": "Litio",
       "provincia": "Catamarca",
-      "monto_usd_millones": 217,
-      "estado": "aprobado"
+      "monto_usd_millones": 292,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
     },
     {
       "id": "olavarria-eolico",
@@ -72,8 +77,9 @@
       "pais_origen": "AR/LU",
       "sector": "energy",
       "provincia": "Buenos Aires",
-      "monto_usd_millones": 275,
-      "estado": "aprobado"
+      "monto_usd_millones": 276,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
     },
     {
       "id": "los-azules",
@@ -83,8 +89,9 @@
       "sector": "mining",
       "mineral": "Cobre",
       "provincia": "San Juan",
-      "monto_usd_millones": 2700,
-      "estado": "aprobado"
+      "monto_usd_millones": 2672,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
     },
     {
       "id": "terminal-timbues",
@@ -98,11 +105,11 @@
     },
     {
       "id": "gualcamayo",
-      "nombre": "Gualcamayo (Oro y Plata)",
-      "empresa": "Minas Argentinas / Mineros S.A.",
-      "pais_origen": "CO",
+      "nombre": "Gualcamayo – Carbonatos Profundos (Oro)",
+      "empresa": "Minas Argentinas S.A. (Aisa Group)",
+      "pais_origen": "AR",
       "sector": "mining",
-      "mineral": "Oro/Plata",
+      "mineral": "Oro",
       "provincia": "San Juan",
       "monto_usd_millones": 665,
       "estado": "aprobado"
@@ -115,8 +122,9 @@
       "sector": "mining",
       "mineral": "Oro",
       "provincia": "San Juan",
-      "monto_usd_millones": 380,
-      "estado": "aprobado"
+      "monto_usd_millones": 436,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
     },
     {
       "id": "diablillos",
@@ -126,19 +134,21 @@
       "sector": "mining",
       "mineral": "Oro/Plata",
       "provincia": "Salta",
-      "monto_usd_millones": 760,
-      "estado": "aprobado"
+      "monto_usd_millones": 764,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
     },
     {
       "id": "fenix-litio",
-      "nombre": "Fénix Expansión (Litio)",
+      "nombre": "Fénix Expansión Fase 1B (Litio)",
       "empresa": "Rio Tinto",
       "pais_origen": "UK/AU",
       "sector": "mining",
       "mineral": "Litio",
       "provincia": "Catamarca",
-      "monto_usd_millones": 530,
-      "estado": "aprobado"
+      "monto_usd_millones": 531,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
     },
     {
       "id": "vicuna-josemaria-filo",
@@ -148,8 +158,174 @@
       "sector": "mining",
       "mineral": "Cobre/Oro",
       "provincia": "San Juan",
-      "monto_usd_millones": 18000,
-      "estado": "en_revision"
+      "monto_usd_millones": 9737,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
+    },
+    {
+      "id": "agua-rica-mara",
+      "nombre": "Agua Rica / MARA (Cobre)",
+      "empresa": "Glencore",
+      "pais_origen": "CH",
+      "sector": "mining",
+      "mineral": "Cobre",
+      "provincia": "Catamarca",
+      "monto_usd_millones": 4000,
+      "estado": "aprobado",
+      "fuente": "https://www.glencore.com/media-and-insights/news/glencore-receives-rigi-approval-for-agua-rica--mara",
+      "nota": "Aprobado por el Comité Evaluador 2-oct-2026; pendiente de publicación en BO al 20-oct-2026"
+    },
+    {
+      "id": "san-matias-pipeline",
+      "nombre": "Gasoducto de exportación San Matías Pipeline",
+      "empresa": "San Matías Pipeline S.A. (consorcio liderado por PAE)",
+      "pais_origen": "AR+mix",
+      "sector": "oilgas",
+      "provincia": "Río Negro",
+      "monto_usd_millones": 1300,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
+    },
+    {
+      "id": "sal-de-oro-2",
+      "nombre": "Sal de Oro II (Litio)",
+      "empresa": "POSCO Argentina",
+      "pais_origen": "KR",
+      "sector": "mining",
+      "mineral": "Litio",
+      "provincia": "Salta",
+      "monto_usd_millones": 547,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
+    },
+    {
+      "id": "liex-3q",
+      "nombre": "Sucursal Dedicada Liex S.A. – Tres Quebradas (Litio)",
+      "empresa": "Liex S.A. (Zijin Mining)",
+      "pais_origen": "CN",
+      "sector": "mining",
+      "mineral": "Litio",
+      "provincia": "Catamarca",
+      "monto_usd_millones": 710,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
+    },
+    {
+      "id": "cauchari-olaroz-ampliacion",
+      "nombre": "Ampliación Cauchari-Olaroz (Litio)",
+      "empresa": "Minera Exar (Ganfeng / Lithium Argentina / JEMSE)",
+      "pais_origen": "CN/CA/AR",
+      "sector": "mining",
+      "mineral": "Litio",
+      "provincia": "Jujuy",
+      "monto_usd_millones": 1241,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
+    },
+    {
+      "id": "psj-cobre-mendocino",
+      "nombre": "PSJ Cobre Mendocino",
+      "empresa": "Zonda Metals / Alberdi Energy",
+      "pais_origen": "AR+mix",
+      "sector": "mining",
+      "mineral": "Cobre",
+      "provincia": "Mendoza",
+      "monto_usd_millones": 891,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
+    },
+    {
+      "id": "rincon-de-aranda",
+      "nombre": "Rincón de Aranda (Vaca Muerta)",
+      "empresa": "Pampa Energía",
+      "pais_origen": "AR",
+      "sector": "oilgas",
+      "provincia": "Neuquén",
+      "monto_usd_millones": 4522,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
+    },
+    {
+      "id": "perito-moreno-tramo1",
+      "nombre": "Ampliación Tramo I Gasoducto Perito F. P. Moreno",
+      "empresa": "TGS",
+      "pais_origen": "AR",
+      "sector": "oilgas",
+      "provincia": "La Pampa",
+      "monto_usd_millones": 550,
+      "estado": "aprobado",
+      "fuente": "https://www.cronista.com/economia-politica/el-rigi-suma-inversiones-por-mas-de-us-3000-millones-cuales-son-los-nuevos-proyectos/"
+    },
+    {
+      "id": "fertil-pampa-urea",
+      "nombre": "Fértil Pampa – Planta de urea granulada (Bahía Blanca)",
+      "empresa": "Pampa Energía",
+      "pais_origen": "AR",
+      "sector": "industry",
+      "provincia": "Buenos Aires",
+      "monto_usd_millones": 2693,
+      "estado": "aprobado",
+      "fuente": "https://www.iprofesional.com/negocios/466279-cuales-son-los-10-proyectos-mas-grandes-del-rigi-y-cuanto-dinero-invertiran"
+    },
+    {
+      "id": "ampliacion-mega",
+      "nombre": "Ampliación MEGA (+1.500 t/d líquidos del gas)",
+      "empresa": "Compañía MEGA (YPF / Petrobras / Dow)",
+      "pais_origen": "AR/BR/US",
+      "sector": "oilgas",
+      "provincia": "Neuquén",
+      "monto_usd_millones": 365,
+      "estado": "aprobado",
+      "fuente": "https://siap.blogdelcontador.com.ar/?p=88698",
+      "nota": "Res. MECON 1381/2026, BO 26-ago-2026"
+    },
+    {
+      "id": "los-toldos-2-este",
+      "nombre": "Los Toldos II Este (Vaca Muerta)",
+      "empresa": "Tecpetrol / Gas y Petróleo del Neuquén (UT RIGI Los Toldos)",
+      "pais_origen": "AR",
+      "sector": "oilgas",
+      "provincia": "Neuquén",
+      "monto_usd_millones": 6432,
+      "estado": "aprobado",
+      "fuente": "https://runrunenergetico.com/el-gobierno-aprobo-un-proyecto-rigi-de-tecpetrol-y-gyp-por-us6-432-millones-en-neuquen/",
+      "nota": "Res. MECON 1771/2026"
+    },
+    {
+      "id": "bajo-del-choique-la-invernada",
+      "nombre": "Bajo del Choique – La Invernada (Vaca Muerta)",
+      "empresa": "Pluspetrol / Gas y Petróleo del Neuquén",
+      "pais_origen": "AR",
+      "sector": "oilgas",
+      "provincia": "Neuquén",
+      "monto_usd_millones": 12240,
+      "estado": "aprobado",
+      "fuente": "https://www.infobae.com/economia/2026/10/19/el-gobierno-aprobo-un-proyecto-rigi-de-mas-de-usd-12200-millones-para-producir-petroleo-y-gas-en-vaca-muerta/",
+      "nota": "Publicado en BO 19-oct-2026"
+    },
+    {
+      "id": "toyota-zarate",
+      "nombre": "Toyota Zárate – nueva línea (vehículo electrificado)",
+      "empresa": "Toyota Argentina",
+      "pais_origen": "JP",
+      "sector": "industry",
+      "provincia": "Buenos Aires",
+      "monto_usd_millones": 1341,
+      "estado": "aprobado",
+      "fuente": "https://www.iprofesional.com/autos/465765-toyota-fue-aprobada-rigi-para-invertir-1341-millones-dolares-zarate",
+      "nota": "Aprobado por el Comité Evaluador oct-2026; pendiente de BO al 20-oct-2026"
+    },
+    {
+      "id": "tgs-ngl-tratayen-poliducto",
+      "nombre": "TGS – Planta de NGL Tratayén + poliducto a Bahía Blanca (2 proyectos: PGS y MGS)",
+      "empresa": "TGS (Procesadora de Gas del Sur / Midstream de Gas del Sur)",
+      "pais_origen": "AR",
+      "sector": "oilgas",
+      "provincia": "Neuquén",
+      "monto_usd_millones": 3200,
+      "estado": "aprobado",
+      "fuente": "https://www.iprofesional.com/energia/466978-aprobaron-proyectos-del-rigi-de-tgs-por-3200-millones-de-dolares",
+      "nota": "Aprobados por el Comité Evaluador 19-oct-2026 (monto conjunto >US$3.200M); pendiente de BO"
     },
     {
       "id": "el-pachon",
@@ -163,17 +339,6 @@
       "estado": "en_revision"
     },
     {
-      "id": "agua-rica-mara",
-      "nombre": "Agua Rica / MARA (Cobre)",
-      "empresa": "Glencore",
-      "pais_origen": "CH",
-      "sector": "mining",
-      "mineral": "Cobre",
-      "provincia": "Catamarca",
-      "monto_usd_millones": 4000,
-      "estado": "en_revision"
-    },
-    {
       "id": "argentina-lng-fase2",
       "nombre": "Argentina LNG (Fase 2)",
       "empresa": "YPF / Eni / XRG (ADNOC)",
@@ -182,6 +347,29 @@
       "provincia": "Río Negro",
       "monto_usd_millones": 16000,
       "estado": "en_revision"
+    },
+    {
+      "id": "pozuelos-pastos-grandes",
+      "nombre": "Pozuelos – Pastos Grandes (Litio)",
+      "empresa": "Lithea",
+      "pais_origen": "AR+mix",
+      "sector": "mining",
+      "mineral": "Litio",
+      "provincia": "Salta",
+      "monto_usd_millones": 4245,
+      "estado": "en_revision",
+      "fuente": "https://www.infobae.com/economia/2026/07/11/el-mapa-del-rigi-como-avanzan-las-20-iniciativas-que-comprometieron-usd-57000-millones-en-inversiones-y-prometen-100000-empleos/"
+    },
+    {
+      "id": "cerro-dragon",
+      "nombre": "Cerro Dragón (petróleo convencional)",
+      "empresa": "Pan American Energy",
+      "pais_origen": "AR",
+      "sector": "oilgas",
+      "provincia": "Chubut",
+      "monto_usd_millones": 1200,
+      "estado": "en_revision",
+      "fuente": "https://www.baenegocios.com/economia/rigi-aprobo-tres-proyectos-por-usd-17-581-millones-y-evalua-otro-por-usd-1-200-millones/"
     }
   ]
 }

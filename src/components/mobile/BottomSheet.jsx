@@ -21,28 +21,28 @@ export default function BottomSheet({ open, onClose, title, children, maxHeightP
       <div
         onClick={onClose}
         className="fixed inset-0 z-[2000]"
-        style={{ background: 'rgba(0,48,73,0.35)' }}
+        style={{ background: 'rgba(20,33,61,0.35)' }}
       />
       {/* Sheet */}
       <div
         className="fixed left-0 right-0 bottom-0 z-[2001] rounded-t-2xl flex flex-col"
         style={{
-          background: '#FFF8EB',
-          borderTop: '1px solid #d4c4a0',
+          background: '#FFFFFF',
+          borderTop: '1px solid #E4E0D6',
           maxHeight: `${maxHeightPct}vh`,
-          boxShadow: '0 -8px 24px rgba(0,48,73,0.18)',
+          boxShadow: '0 -8px 24px rgba(20,33,61,0.18)',
         }}
       >
         {/* Drag handle */}
         <div className="flex justify-center pt-2 pb-1 shrink-0">
-          <div className="w-10 h-1 rounded-full" style={{ background: 'rgba(0,48,73,0.18)' }} />
+          <div className="w-10 h-1 rounded-full" style={{ background: 'rgba(20,33,61,0.18)' }} />
         </div>
         {title && (
           <div className="flex items-center justify-between px-4 pb-2 shrink-0">
-            <h3 className="text-[15px] font-extrabold text-[#003049] tracking-tight">{title}</h3>
+            <h3 className="text-[15px] font-extrabold text-[#14213D] tracking-tight">{title}</h3>
             <button
               onClick={onClose}
-              className="text-[#003049]/40 hover:text-[#003049] text-2xl leading-none p-1"
+              className="text-[#14213D]/40 hover:text-[#14213D] text-2xl leading-none p-1"
               aria-label="Close"
             >
               ×
