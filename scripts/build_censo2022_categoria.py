@@ -3,17 +3,26 @@
 Source: INDEC Censo 2022 (caracteristicas economicas) — table "Población ocupada de 14
 años y más en viviendas particulares por categoría ocupacional, según jurisdicción".
 
-Columns in source table (after jurisdicción):
+Input PDF (35 MB, not committed):
+  https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_caracteristicas_economicas.pdf
+  expected at scripts/raw/censo2022_caracteristicas_economicas.pdf (or pass --pdf PATH).
+
+Columns in source table, in INDEC order (after jurisdicción) — verified against the PDF table and
+c2022_tp_actividad_economica_c3.xlsx / c6.xlsx (total país: servicio doméstico = 1,508,897):
   1. Total ocupados
-  2. Patrón(a) o empleador(a)
+  2. Servicio doméstico
   3. Empleada(o) u obrera(o)           <- public + private employees combined
   4. Cuenta propia
-  5. Trabajador(a) familiar
-  6. Servicio doméstico
+  5. Patrón(a) o empleador(a)
+  6. Trabajador(a) familiar
   7. Ignorado
+(Until oct-2026 this script assumed Patrón | Empleada | Cuenta propia | Trab. familiar | Serv.
+doméstico, which rotated patron / trabajadorFamiliar / servicioDomestico.)
+
+Usage: python scripts/build_censo2022_categoria.py [--pdf PATH] [--out PATH]
 """
 from __future__ import annotations
-import json, sys, io, re
+import argparse, json, sys, io, re
 from pathlib import Path
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
@@ -63,7 +72,11 @@ def parse_ints(text):
 
 
 def main():
-    reader = PdfReader(str(SRC))
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--pdf", type=Path, default=SRC)
+    ap.add_argument("--out", type=Path, default=OUT)
+    args = ap.parse_args()
+    reader = PdfReader(str(args.pdf))
     page = reader.pages[47].extract_text()  # 0-indexed → page 48
 
     nums = parse_ints(page)
@@ -73,7 +86,7 @@ def main():
     start = nums.index(anchor)
 
     n_rows = len(ROWS)
-    n_cols = 7  # total, patron, emp_obrera, cta_propia, trab_fam, serv_dom, ignorado
+    n_cols = 7  # total, serv_dom, emp_obrera, cta_propia, patron, trab_fam, ignorado (INDEC order)
 
     flat = nums[start:start + n_rows * n_cols]
     if len(flat) < n_rows * n_cols:
@@ -86,12 +99,12 @@ def main():
             grid[r][c] = flat[c * n_rows + r]
 
     # Sanity: national total = sum of categories (tolerance for rounding)
-    total, patron, empobr, ctaprop, trabfam, servdom, ignor = grid[0]
+    total, servdom, empobr, ctaprop, patron, trabfam, ignor = grid[0]
     s = patron + empobr + ctaprop + trabfam + servdom + ignor
     assert abs(s - total) < 1000, f"national sum mismatch: {s} vs {total}"
 
     def build(idx):
-        total, patron, empobr, ctaprop, trabfam, servdom, ignor = grid[idx]
+        total, servdom, empobr, ctaprop, patron, trabfam, ignor = grid[idx]
         return {
             "ocupados": total,
             "patron": patron,
@@ -131,14 +144,20 @@ def main():
         "sourceUrl": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165",
         "datasetUrl": "https://www.indec.gob.ar/ftp/cuadros/poblacion/censo2022_caracteristicas_economicas.pdf",
         "table": "Cuadro 4.2 — Población ocupada de 14 años y más por categoría ocupacional, según jurisdicción",
-        "note": "Empleada(o) u obrera(o) combina sector público y privado. Incluye trabajo informal (no solo registrado).",
+        "note": ("Empleada(o) u obrera(o) combina sector público y privado. Incluye trabajo informal (no solo registrado). "
+                 "Columnas verificadas contra el cuadro del PDF (orden INDEC: Servicio doméstico | Empleada(o) u obrera(o) | "
+                 "Cuenta propia | Patrón(a) o empleador(a) | Trabajador(a) familiar | Ignorado) y "
+                 "c2022_tp_actividad_economica_c3.xlsx (total país). Corregido oct-2026: patron, trabajadorFamiliar y "
+                 "servicioDomestico estaban rotados."),
         "year": 2022,
         "national": national,
         "provinces": out_provinces,
     }
 
-    OUT.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Wrote {OUT}")
+    # sanity: national servicio doméstico per c2022_tp_actividad_economica_c6.xlsx ("hogares como empleadores")
+    assert national["servicioDomestico"] == 1_508_897, national
+    args.out.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Wrote {args.out}")
     print(f"National: ocupados={national['ocupados']:,}, "
           f"empleada/obrera={national['empleadaObrera']:,} ({national['shares']['empleadaObrera']}%), "
           f"cuenta propia={national['cuentaPropia']:,} ({national['shares']['cuentaPropia']}%)")

@@ -1,12 +1,11 @@
 import { useEffect, useState, useRef, useCallback } from 'react';
-import { MapContainer, TileLayer, GeoJSON, CircleMarker, Tooltip, useMap } from 'react-leaflet';
+import { MapContainer, GeoJSON, CircleMarker, Tooltip, ZoomControl, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { miningProjects } from '../data/miningProjects';
 import EnergyLayers from './EnergyLayers';
-import { sociodemographic } from '../data/sociodemographic';
-import { getAllFiscal } from '../hooks/useEconomyData';
-import alignmentScores from '../data/alignmentScores.json';
+import { INDICATOR_BY_ID, colorFor } from '../lib/indicators';
+import { provinceKey } from '../lib/provinces';
 
 const PARTY_COLORS = {
   'PJ': '#1a6fa3',
@@ -24,8 +23,8 @@ const ALIGNMENT_COLORS = {
   'oficialismo': '#7d3c98',
   'aliado': '#17a589',
   'negociador': '#d4a800',
-  'oposición': '#C1121F',
-  'oposición dura': '#780000',
+  'oposición': '#C0392B',
+  'oposición dura': '#7B1E14',
   'default': '#7f8c8d',
 };
 
@@ -38,15 +37,6 @@ const REGION_COLORS = {
   'CABA': '#f1c40f',
 };
 
-const POPULATION_SCALE = [
-  { max: 100000, color: '#1a3a5c' },
-  { max: 500000, color: '#2a5a7c' },
-  { max: 1000000, color: '#3a7a9c' },
-  { max: 2000000, color: '#4a9abc' },
-  { max: 5000000, color: '#669BBC' },
-  { max: Infinity, color: '#FDF0D5' },
-];
-
 const MINERAL_COLORS = {
   'Litio':      '#00d4ff',
   'Oro':        '#ffd700',
@@ -57,7 +47,7 @@ const MINERAL_COLORS = {
   'Hierro':     '#a0522d',
   'Manganeso':  '#da70d6',
   'Zinc':       '#a8a8a8',
-  'default':    '#669BBC',
+  'default':    '#4F86B5',
 };
 
 const ESTADO_RADIUS = {
@@ -106,76 +96,8 @@ function getAlignmentColor(governor) {
   return ALIGNMENT_COLORS.default;
 }
 
-function getPopulationColor(governor) {
-  const pop = governor?.poblacion_censo_2022 || 0;
-  return POPULATION_SCALE.find(s => pop <= s.max)?.color || POPULATION_SCALE[POPULATION_SCALE.length - 1].color;
-}
-
 function getRegionColor(governor) {
-  return REGION_COLORS[governor?.region] || '#669BBC';
-}
-
-function getFiscalColor(provinceName) {
-  const pn = (provinceName || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  const isCABA = pn.includes('ciudad') || pn === 'caba';
-  const allFiscal = getAllFiscal();
-  const entry = allFiscal.find(d => {
-    const dn = d.province.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    if (isCABA) return dn.includes('ciudad') || dn === 'caba';
-    if (dn.includes('ciudad')) return false;
-    return dn === pn || dn.includes(pn) || pn.includes(dn);
-  });
-  const dep = entry?.dependency ?? 50;
-  // Lower dependency = greener
-  if (dep <= 30) return '#27ae60';
-  if (dep <= 50) return '#2ecc71';
-  if (dep <= 70) return '#669BBC';
-  if (dep <= 85) return '#d4a800';
-  return '#C1121F';
-}
-
-const POVERTY_SCALE = [
-  { max: 25, color: '#27ae60' },
-  { max: 35, color: '#f39c12' },
-  { max: 45, color: '#e67e22' },
-  { max: 55, color: '#C1121F' },
-  { max: Infinity, color: '#780000' },
-];
-
-function getAlignScoreColor(provinceName) {
-  const target = provinceName?.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
-  if (!target) return '#e5e5e5';
-  const isCABA = target.includes('ciudad') || target === 'caba';
-  let match = null;
-  for (const [key, val] of Object.entries(alignmentScores.per_province || {})) {
-    const k = key.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
-    if (isCABA) {
-      if (k.includes('ciudad') || k === 'caba') { match = val; break; }
-      continue;
-    }
-    if (k.includes('ciudad')) continue;
-    if (k === target || k.includes(target) || target.includes(k)) { match = val; break; }
-  }
-  const s = match?.score_executive;
-  if (s == null) return '#e5e5e5';
-  if (s < 0.2) return '#780000';
-  if (s < 0.4) return '#C1121F';
-  if (s < 0.6) return '#d4a800';
-  if (s < 0.8) return '#17a589';
-  return '#7d3c98';
-}
-
-function getPovertyColor(provinceName) {
-  const pn = provinceName?.toLowerCase();
-  const isCABA = pn?.includes('ciudad');
-  const data = sociodemographic.find(s => {
-    const sn = s.provincia?.toLowerCase();
-    if (isCABA) return sn === 'ciudad de buenos aires' || sn === 'caba';
-    if (sn === 'ciudad de buenos aires' || sn === 'caba') return false;
-    return sn === pn || sn?.includes(pn) || pn?.includes(sn);
-  });
-  const pov = data?.pobreza ?? 40;
-  return POVERTY_SCALE.find(s => pov <= s.max)?.color || '#669BBC';
+  return REGION_COLORS[governor?.region] || '#4F86B5';
 }
 
 
@@ -197,11 +119,6 @@ function CreatePanes() {
       mp.style.zIndex = 440;
     }
   }, [map]);
-  return null;
-}
-
-function MapEvents({ onProvinceClick }) {
-  // Empty — events handled via GeoJSON
   return null;
 }
 
@@ -265,7 +182,7 @@ function FlyToProvince({ geoData, selectedProvince }) {
       if (!feature) return;
       const bounds = L.geoJSON(feature).getBounds();
       if (bounds.isValid()) {
-        map.flyToBounds(bounds, { padding: [40, 40], maxZoom: 7, duration: 0.8 });
+        map.flyToBounds(bounds, { padding: [60, 60], maxZoom: 6, duration: 0.8 });
       }
     } else if (prevSelected.current) {
       // Deselected — fly back to full Argentina view.
@@ -321,15 +238,14 @@ export default function ArgentinaMap({
       });
 
     switch (choroplethMode) {
-      case 'none': return '#d6cfc0';
+      case 'none': return '#E9E5DB';
       case 'partido': return getPartyColor(gov);
       case 'alineamiento': return getAlignmentColor(gov);
-      case 'poblacion': return getPopulationColor(gov);
       case 'region': return getRegionColor(gov);
-      case 'pobreza': return getPovertyColor(provinceName);
-      case 'fiscal': return getFiscalColor(provinceName);
-      case 'score_executive': return getAlignScoreColor(provinceName);
-      default: return '#669BBC';
+      default: {
+        const ind = INDICATOR_BY_ID[choroplethMode];
+        return ind ? colorFor(ind, ind.values[provinceKey(provinceName)]) : '#4F86B5';
+      }
     }
   }, [governors, choroplethMode]);
 
@@ -340,16 +256,20 @@ export default function ArgentinaMap({
 
     return {
       fillColor,
-      weight: isSelected ? 2.5 : 1,
+      weight: isSelected ? 2.5 : 0.9,
       opacity: 1,
-      color: '#000',
-      fillOpacity: isSelected ? 0.85 : 0.6,
+      color: isSelected ? '#14213D' : '#FFFFFF',
+      fillOpacity: selectedProvince && !isSelected ? 0.55 : 0.92,
     };
   }, [getColor, selectedProvince]);
 
   // Store the latest callback in a ref so GeoJSON event handlers always call current version
   const onProvinceSelectRef = useRef(onProvinceSelect);
-  onProvinceSelectRef.current = onProvinceSelect;
+  const modeRef = useRef(choroplethMode);
+  useEffect(() => {
+    onProvinceSelectRef.current = onProvinceSelect;
+    modeRef.current = choroplethMode;
+  }, [onProvinceSelect, choroplethMode]);
 
   const onEachFeature = useCallback((feature, layer) => {
     const name = feature.properties.NAME_1;
@@ -359,9 +279,10 @@ export default function ArgentinaMap({
         const l = e.target;
         l.setStyle({
           weight: 2,
-          color: '#FDF0D5',
-          fillOpacity: 0.8,
+          color: '#14213D',
+          fillOpacity: 1,
         });
+        l.bringToFront();
       },
       mouseout: (e) => {
         if (geoRef.current) {
@@ -373,7 +294,12 @@ export default function ArgentinaMap({
       },
     });
 
-    layer.bindTooltip(name, {
+    layer.bindTooltip(() => {
+      const ind = INDICATOR_BY_ID[modeRef.current];
+      const v = ind?.values[provinceKey(name)];
+      if (!ind) return name;
+      return `<strong>${name}</strong><br/><span style="opacity:.75">${ind.label}:</span> ${v != null ? ind.fmt(v) : 's/d'}`;
+    }, {
       sticky: true,
       className: 'province-tooltip',
       direction: 'auto',
@@ -394,14 +320,11 @@ export default function ArgentinaMap({
       minZoom={3}
       maxZoom={12}
       className="w-full h-full"
-      zoomControl={true}
-      attributionControl={true}
+      zoomControl={false}
+      attributionControl={false}
+      zoomSnap={0.25}
     >
-      <TileLayer
-        attribution='&copy; <a href="https://carto.com">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png"
-      />
-
+      <ZoomControl position="bottomright" />
       <CreatePanes />
 
       {geoData && (

@@ -1,210 +1,210 @@
 {
   "source": "DNAP — Ocupación y gastos salariales provinciales",
   "sourceUrl": "https://www.argentina.gob.ar/economia/sechacienda/coordinacion-fiscal-provincial/ejecucion-presupuestaria-provincial/ocupacion-y-salarios",
-  "fileUrl": "https://www.argentina.gob.ar/sites/default/files/ejec-presupuestaria-ocupacion_salarios_1.xlsx",
-  "year": 2024,
-  "scope": "Cargos ocupados (no personas) en Administración Central + Organismos Descentralizados + Cuentas Especiales provinciales, al mes de diciembre. Incluye los 3 poderes (ejecutivo, legislativo, judicial). Excluye Instituciones de Seguridad Social (cajas), Fondos Fiduciarios, organismos públicos con carácter empresarial, contratos/becas/pasantías imputados a otras partidas, y por construcción no cubre empleo municipal ni nacional.",
+  "fileUrl": "https://www.argentina.gob.ar/sites/default/files/ocupacion_salarios_2017_2025.xlsx",
+  "year": 2025,
+  "scope": "Planta ocupada (cargos, no personas) de la Administración Pública No Financiera provincial (rótulo del archivo 2017-2025; el archivo anterior 1987-2024 rotulaba 'Administración Central, Organismos Descentralizados y Cuentas Especiales' — diferencias 2024 < 0,3%). Incluye los 3 poderes. No cubre empleo municipal ni nacional. La Pampa y San Luis: planta según Presupuesto provincial (nota DNAP).",
   "scopeDoc": "DAIPEF-DNCFP (2014) 'El Empleo Público en las Provincias Argentinas', nota al pie 2 y §1. https://www.argentina.gob.ar/sites/default/files/el_empleo_publico_en_las_provincias_argentinas.pdf",
-  "populationSource": "INDEC — Proyecciones por jurisdicción 2022-2040",
+  "populationSource": "INDEC — Proyecciones por jurisdicción 2010-2040 (nota del archivo DNAP)",
   "national": {
-    "employees": 2321510,
-    "ratioPer1000": 50.14,
-    "population": 46301743,
-    "personalSpendingThousandsARS": 38810684783,
-    "avgMonthlySalaryARS": 1285989
+    "employees": 2308763,
+    "ratioPer1000": 49.77,
+    "population": 46387098,
+    "personalSpendingThousandsARS": 59302995427,
+    "avgMonthlySalaryARS": 1975850
   },
   "provinces": [
     {
       "province": "Córdoba",
-      "employees": 131305,
-      "ratioPer1000": 33.27,
-      "population": 3946289,
-      "personalSpendingThousandsARS": 2562273138,
-      "avgMonthlySalaryARS": 1501070
+      "employees": 130135,
+      "ratioPer1000": 32.88,
+      "population": 3957565,
+      "personalSpendingThousandsARS": 4102424256,
+      "avgMonthlySalaryARS": 2424952
     },
     {
       "province": "Buenos Aires",
-      "employees": 657328,
-      "ratioPer1000": 37.71,
-      "population": 17431446,
-      "personalSpendingThousandsARS": 10387880359,
-      "avgMonthlySalaryARS": 1215630
+      "employees": 655614,
+      "ratioPer1000": 37.59,
+      "population": 17443372,
+      "personalSpendingThousandsARS": 14710351000,
+      "avgMonthlySalaryARS": 1725963
     },
     {
       "province": "Santa Fe",
-      "employees": 151850,
-      "ratioPer1000": 41.27,
-      "population": 3679597,
-      "personalSpendingThousandsARS": 3000810400,
-      "avgMonthlySalaryARS": 1520129
+      "employees": 152870,
+      "ratioPer1000": 41.49,
+      "population": 3684529,
+      "personalSpendingThousandsARS": 4517787450,
+      "avgMonthlySalaryARS": 2273318
     },
     {
       "province": "Mendoza",
-      "employees": 91784,
-      "ratioPer1000": 44.94,
-      "population": 2042241,
-      "personalSpendingThousandsARS": 1230010168,
-      "avgMonthlySalaryARS": 1030857
-    },
-    {
-      "province": "Misiones",
-      "employees": 68183,
-      "ratioPer1000": 51.13,
-      "population": 1333633,
-      "personalSpendingThousandsARS": 909402190,
-      "avgMonthlySalaryARS": 1025974
-    },
-    {
-      "province": "Corrientes",
-      "employees": 61755,
-      "ratioPer1000": 51.5,
-      "population": 1199120,
-      "personalSpendingThousandsARS": 867152280,
-      "avgMonthlySalaryARS": 1080140
-    },
-    {
-      "province": "Santiago del Estero",
-      "employees": 56198,
-      "ratioPer1000": 53.35,
-      "population": 1053409,
-      "personalSpendingThousandsARS": 695117450,
-      "avgMonthlySalaryARS": 951468
-    },
-    {
-      "province": "Tucumán",
-      "employees": 96671,
-      "ratioPer1000": 54.67,
-      "population": 1768368,
-      "personalSpendingThousandsARS": 1354805457,
-      "avgMonthlySalaryARS": 1078046
+      "employees": 89781,
+      "ratioPer1000": 43.86,
+      "population": 2047181,
+      "personalSpendingThousandsARS": 1989593061,
+      "avgMonthlySalaryARS": 1704655
     },
     {
       "province": "Salta",
-      "employees": 85940,
-      "ratioPer1000": 58.05,
-      "population": 1480327,
-      "personalSpendingThousandsARS": 1281178720,
-      "avgMonthlySalaryARS": 1146756
+      "employees": 72396,
+      "ratioPer1000": 48.7,
+      "population": 1486517,
+      "personalSpendingThousandsARS": 1828130953,
+      "avgMonthlySalaryARS": 1942448
     },
     {
-      "province": "Entre Ríos",
-      "employees": 84550,
-      "ratioPer1000": 58.07,
-      "population": 1456015,
-      "personalSpendingThousandsARS": 1521420324,
-      "avgMonthlySalaryARS": 1384179
+      "province": "Corrientes",
+      "employees": 60902,
+      "ratioPer1000": 50.59,
+      "population": 1203905,
+      "personalSpendingThousandsARS": 1478960670,
+      "avgMonthlySalaryARS": 1868021
+    },
+    {
+      "province": "Misiones",
+      "employees": 68308,
+      "ratioPer1000": 50.81,
+      "population": 1344368,
+      "personalSpendingThousandsARS": 1413239055,
+      "avgMonthlySalaryARS": 1591478
+    },
+    {
+      "province": "Santiago del Estero",
+      "employees": 54455,
+      "ratioPer1000": 51.53,
+      "population": 1056774,
+      "personalSpendingThousandsARS": 1111302000,
+      "avgMonthlySalaryARS": 1569824
+    },
+    {
+      "province": "Tucumán",
+      "employees": 93630,
+      "ratioPer1000": 52.79,
+      "population": 1773567,
+      "personalSpendingThousandsARS": 2252687536,
+      "avgMonthlySalaryARS": 1850728
     },
     {
       "province": "San Juan",
-      "employees": 49874,
-      "ratioPer1000": 59.01,
-      "population": 845201,
-      "personalSpendingThousandsARS": 842528539,
-      "avgMonthlySalaryARS": 1299472
+      "employees": 49037,
+      "ratioPer1000": 57.75,
+      "population": 849117,
+      "personalSpendingThousandsARS": 1292761801,
+      "avgMonthlySalaryARS": 2027922
+    },
+    {
+      "province": "Entre Ríos",
+      "employees": 87660,
+      "ratioPer1000": 60.07,
+      "population": 1459182,
+      "personalSpendingThousandsARS": 2241407459,
+      "avgMonthlySalaryARS": 1966872
     },
     {
       "province": "Ciudad de Buenos Aires",
-      "employees": 196898,
-      "ratioPer1000": 63.64,
-      "population": 3093735,
-      "personalSpendingThousandsARS": 4044771759,
-      "avgMonthlySalaryARS": 1580190
+      "employees": 195385,
+      "ratioPer1000": 63.44,
+      "population": 3079674,
+      "personalSpendingThousandsARS": 5827652946,
+      "avgMonthlySalaryARS": 2294347
     },
     {
       "province": "Formosa",
-      "employees": 41405,
-      "ratioPer1000": 66.31,
-      "population": 624461,
-      "personalSpendingThousandsARS": 579038140,
-      "avgMonthlySalaryARS": 1075749
+      "employees": 42050,
+      "ratioPer1000": 67.1,
+      "population": 626649,
+      "personalSpendingThousandsARS": 1104465553,
+      "avgMonthlySalaryARS": 2020425
     },
     {
       "province": "Chaco",
-      "employees": 81834,
-      "ratioPer1000": 68.15,
-      "population": 1200849,
-      "personalSpendingThousandsARS": 1383220088,
-      "avgMonthlySalaryARS": 1300212
+      "employees": 82012,
+      "ratioPer1000": 67.91,
+      "population": 1207608,
+      "personalSpendingThousandsARS": 2080866698,
+      "avgMonthlySalaryARS": 1951747
     },
     {
       "province": "San Luis",
-      "employees": 38541,
-      "ratioPer1000": 72.25,
-      "population": 533465,
-      "personalSpendingThousandsARS": 458744968,
-      "avgMonthlySalaryARS": 915598
+      "employees": 39278,
+      "ratioPer1000": 73.26,
+      "population": 536173,
+      "personalSpendingThousandsARS": 694653523,
+      "avgMonthlySalaryARS": 1360428
     },
     {
       "province": "Río Negro",
-      "employees": 56796,
-      "ratioPer1000": 72.39,
-      "population": 784591,
-      "personalSpendingThousandsARS": 1047237277,
-      "avgMonthlySalaryARS": 1418352
-    },
-    {
-      "province": "La Pampa",
-      "employees": 29027,
-      "ratioPer1000": 77.23,
-      "population": 375873,
-      "personalSpendingThousandsARS": 503257577,
-      "avgMonthlySalaryARS": 1333659
+      "employees": 60457,
+      "ratioPer1000": 76.66,
+      "population": 788658,
+      "personalSpendingThousandsARS": 1634967360,
+      "avgMonthlySalaryARS": 2080267
     },
     {
       "province": "Chubut",
-      "employees": 47533,
-      "ratioPer1000": 79.13,
-      "population": 600674,
-      "personalSpendingThousandsARS": 940752132,
-      "avgMonthlySalaryARS": 1522428
+      "employees": 47304,
+      "ratioPer1000": 78.53,
+      "population": 602348,
+      "personalSpendingThousandsARS": 1595360015,
+      "avgMonthlySalaryARS": 2594284
+    },
+    {
+      "province": "La Pampa",
+      "employees": 29855,
+      "ratioPer1000": 79.23,
+      "population": 376794,
+      "personalSpendingThousandsARS": 795722223,
+      "avgMonthlySalaryARS": 2050223
     },
     {
       "province": "Jujuy",
-      "employees": 66173,
-      "ratioPer1000": 82.85,
-      "population": 798673,
-      "personalSpendingThousandsARS": 735656797,
-      "avgMonthlySalaryARS": 855167
+      "employees": 67124,
+      "ratioPer1000": 83.83,
+      "population": 800744,
+      "personalSpendingThousandsARS": 1153734885,
+      "avgMonthlySalaryARS": 1322163
     },
     {
       "province": "Catamarca",
-      "employees": 43661,
-      "ratioPer1000": 99.79,
-      "population": 437508,
-      "personalSpendingThousandsARS": 620564127,
-      "avgMonthlySalaryARS": 1093326
+      "employees": 45088,
+      "ratioPer1000": 102.7,
+      "population": 439024,
+      "personalSpendingThousandsARS": 974630516,
+      "avgMonthlySalaryARS": 1662783
     },
     {
       "province": "Santa Cruz",
-      "employees": 36321,
-      "ratioPer1000": 108.5,
-      "population": 334752,
-      "personalSpendingThousandsARS": 758161063,
-      "avgMonthlySalaryARS": 1605685
-    },
-    {
-      "province": "Neuquén",
-      "employees": 77560,
-      "ratioPer1000": 111.05,
-      "population": 698410,
-      "personalSpendingThousandsARS": 2126184600,
-      "avgMonthlySalaryARS": 2108724
+      "employees": 35859,
+      "ratioPer1000": 107.06,
+      "population": 334953,
+      "personalSpendingThousandsARS": 1234375010,
+      "avgMonthlySalaryARS": 2647924
     },
     {
       "province": "La Rioja",
-      "employees": 44705,
-      "ratioPer1000": 111.25,
-      "population": 401843,
-      "personalSpendingThousandsARS": 449476249,
-      "avgMonthlySalaryARS": 773406
+      "employees": 44302,
+      "ratioPer1000": 109.77,
+      "population": 403577,
+      "personalSpendingThousandsARS": 705692524,
+      "avgMonthlySalaryARS": 1225318
+    },
+    {
+      "province": "Neuquén",
+      "employees": 79839,
+      "ratioPer1000": 113.6,
+      "population": 702816,
+      "personalSpendingThousandsARS": 3694018739,
+      "avgMonthlySalaryARS": 3559104
     },
     {
       "province": "Tierra del Fuego",
-      "employees": 25618,
-      "ratioPer1000": 141.33,
-      "population": 181263,
-      "personalSpendingThousandsARS": 511040980,
-      "avgMonthlySalaryARS": 1534501
+      "employees": 25422,
+      "ratioPer1000": 139.68,
+      "population": 182003,
+      "personalSpendingThousandsARS": 868210194,
+      "avgMonthlySalaryARS": 2627071
     }
   ],
   "timeSeries": {
@@ -361,43 +361,48 @@
       },
       {
         "year": 2017,
-        "employees": 2239065,
-        "ratio": 50.84
+        "employees": 2243039,
+        "ratio": 50.93
       },
       {
         "year": 2018,
-        "employees": 2200714,
-        "ratio": 49.46
+        "employees": 2193239,
+        "ratio": 49.29
       },
       {
         "year": 2019,
-        "employees": 2192852,
-        "ratio": 48.8
+        "employees": 2191148,
+        "ratio": 48.76
       },
       {
         "year": 2020,
-        "employees": 2171343,
-        "ratio": 47.85
+        "employees": 2169517,
+        "ratio": 47.81
       },
       {
         "year": 2021,
-        "employees": 2261584,
-        "ratio": 49.37
+        "employees": 2259015,
+        "ratio": 49.31
       },
       {
         "year": 2022,
-        "employees": 2275751,
-        "ratio": 49.33
+        "employees": 2272287,
+        "ratio": 49.25
       },
       {
         "year": 2023,
-        "employees": 2315944,
-        "ratio": 50.11
+        "employees": 2311513,
+        "ratio": 50.02
       },
       {
         "year": 2024,
-        "employees": 2321510,
-        "ratio": 50.14
+        "employees": 2316387,
+        "ratio": 50.03
+      },
+      {
+        "year": 2025,
+        "employees": 2308763,
+        "ratio": 49.77
       }
     ],
     "provinces": {
@@ -544,43 +549,48 @@
         },
         {
           "year": 2017,
-          "employees": 127075,
-          "ratio": 34.86
+          "employees": 127381,
+          "ratio": 34.94
         },
         {
           "year": 2018,
-          "employees": 127727,
+          "employees": 128018,
           "ratio": 34.67
         },
         {
           "year": 2019,
-          "employees": 127758,
+          "employees": 128042,
           "ratio": 34.32
         },
         {
           "year": 2020,
-          "employees": 125329,
-          "ratio": 33.33
+          "employees": 125568,
+          "ratio": 33.39
         },
         {
           "year": 2021,
-          "employees": 127462,
-          "ratio": 33.56
+          "employees": 127679,
+          "ratio": 33.62
         },
         {
           "year": 2022,
-          "employees": 127608,
-          "ratio": 32.53
+          "employees": 127822,
+          "ratio": 32.58
         },
         {
           "year": 2023,
-          "employees": 132358,
-          "ratio": 33.64
+          "employees": 132561,
+          "ratio": 33.69
         },
         {
           "year": 2024,
-          "employees": 131305,
-          "ratio": 33.27
+          "employees": 131503,
+          "ratio": 33.32
+        },
+        {
+          "year": 2025,
+          "employees": 130135,
+          "ratio": 32.88
         }
       ],
       "Buenos Aires": [
@@ -736,43 +746,48 @@
         },
         {
           "year": 2017,
-          "employees": 691006,
-          "ratio": 40.6
+          "employees": 691149,
+          "ratio": 40.61
         },
         {
           "year": 2018,
-          "employees": 645573,
+          "employees": 645716,
           "ratio": 37.54
         },
         {
           "year": 2019,
-          "employees": 624685,
+          "employees": 624822,
           "ratio": 35.96
         },
         {
           "year": 2020,
-          "employees": 609498,
+          "employees": 609632,
           "ratio": 34.75
         },
         {
           "year": 2021,
-          "employees": 640702,
-          "ratio": 36.18
+          "employees": 640846,
+          "ratio": 36.19
         },
         {
           "year": 2022,
-          "employees": 642688,
+          "employees": 642828,
           "ratio": 36.92
         },
         {
           "year": 2023,
-          "employees": 635227,
-          "ratio": 36.47
+          "employees": 635370,
+          "ratio": 36.48
         },
         {
           "year": 2024,
-          "employees": 657328,
-          "ratio": 37.71
+          "employees": 657475,
+          "ratio": 37.72
+        },
+        {
+          "year": 2025,
+          "employees": 655614,
+          "ratio": 37.59
         }
       ],
       "Santa Fe": [
@@ -928,43 +943,48 @@
         },
         {
           "year": 2017,
-          "employees": 134618,
-          "ratio": 38.98
+          "employees": 142952,
+          "ratio": 41.39
         },
         {
           "year": 2018,
-          "employees": 134363,
+          "employees": 141473,
           "ratio": 38.59
         },
         {
           "year": 2019,
-          "employees": 140303,
+          "employees": 140515,
           "ratio": 39.98
         },
         {
           "year": 2020,
-          "employees": 138903,
-          "ratio": 39.28
+          "employees": 139111,
+          "ratio": 39.34
         },
         {
           "year": 2021,
-          "employees": 140937,
-          "ratio": 39.55
+          "employees": 141176,
+          "ratio": 39.62
         },
         {
           "year": 2022,
-          "employees": 142625,
-          "ratio": 38.86
+          "employees": 142838,
+          "ratio": 38.92
         },
         {
           "year": 2023,
-          "employees": 152860,
-          "ratio": 41.6
+          "employees": 153055,
+          "ratio": 41.65
         },
         {
           "year": 2024,
-          "employees": 151850,
-          "ratio": 41.27
+          "employees": 152031,
+          "ratio": 41.32
+        },
+        {
+          "year": 2025,
+          "employees": 152870,
+          "ratio": 41.49
         }
       ],
       "Mendoza": [
@@ -1105,12 +1125,12 @@
         },
         {
           "year": 2017,
-          "employees": 93951,
+          "employees": 93950,
           "ratio": 48.72
         },
         {
           "year": 2018,
-          "employees": 97796,
+          "employees": 91785,
           "ratio": 50.17
         },
         {
@@ -1125,23 +1145,28 @@
         },
         {
           "year": 2021,
-          "employees": 92210,
+          "employees": 92211,
           "ratio": 45.87
         },
         {
           "year": 2022,
-          "employees": 92584,
+          "employees": 92585,
           "ratio": 45.55
         },
         {
           "year": 2023,
-          "employees": 93834,
+          "employees": 93835,
           "ratio": 46.06
         },
         {
           "year": 2024,
-          "employees": 91784,
+          "employees": 91785,
           "ratio": 44.94
+        },
+        {
+          "year": 2025,
+          "employees": 89781,
+          "ratio": 43.86
         }
       ],
       "Misiones": [
@@ -1297,43 +1322,48 @@
         },
         {
           "year": 2017,
-          "employees": 61181,
-          "ratio": 50.2
+          "employees": 59065,
+          "ratio": 48.46
         },
         {
           "year": 2018,
-          "employees": 58374,
+          "employees": 58824,
           "ratio": 47.34
         },
         {
           "year": 2019,
-          "employees": 60124,
+          "employees": 60581,
           "ratio": 48.2
         },
         {
           "year": 2020,
-          "employees": 63276,
-          "ratio": 50.17
+          "employees": 63721,
+          "ratio": 50.52
         },
         {
           "year": 2021,
-          "employees": 69120,
-          "ratio": 54.21
+          "employees": 66719,
+          "ratio": 52.33
         },
         {
           "year": 2022,
-          "employees": 66455,
-          "ratio": 50.59
+          "employees": 66902,
+          "ratio": 50.93
         },
         {
           "year": 2023,
-          "employees": 67856,
-          "ratio": 51.29
+          "employees": 68315,
+          "ratio": 51.64
         },
         {
           "year": 2024,
-          "employees": 68183,
-          "ratio": 51.13
+          "employees": 68647,
+          "ratio": 51.47
+        },
+        {
+          "year": 2025,
+          "employees": 68308,
+          "ratio": 50.81
         }
       ],
       "Corrientes": [
@@ -1489,43 +1519,48 @@
         },
         {
           "year": 2017,
-          "employees": 62899,
-          "ratio": 57.66
+          "employees": 61514,
+          "ratio": 56.39
         },
         {
           "year": 2018,
-          "employees": 62972,
+          "employees": 61309,
           "ratio": 57.19
         },
         {
           "year": 2019,
-          "employees": 62852,
+          "employees": 60832,
           "ratio": 56.57
         },
         {
           "year": 2020,
-          "employees": 59386,
-          "ratio": 52.99
+          "employees": 58001,
+          "ratio": 51.75
         },
         {
           "year": 2021,
-          "employees": 61953,
-          "ratio": 54.81
+          "employees": 62035,
+          "ratio": 54.88
         },
         {
           "year": 2022,
-          "employees": 63962,
-          "ratio": 53.79
+          "employees": 61936,
+          "ratio": 52.09
         },
         {
           "year": 2023,
-          "employees": 68438,
-          "ratio": 57.32
+          "employees": 62537,
+          "ratio": 52.38
         },
         {
           "year": 2024,
-          "employees": 61755,
-          "ratio": 51.5
+          "employees": 61926,
+          "ratio": 51.64
+        },
+        {
+          "year": 2025,
+          "employees": 60902,
+          "ratio": 50.59
         }
       ],
       "Santiago del Estero": [
@@ -1681,7 +1716,7 @@
         },
         {
           "year": 2017,
-          "employees": 59150,
+          "employees": 59149,
           "ratio": 62.38
         },
         {
@@ -1691,7 +1726,7 @@
         },
         {
           "year": 2019,
-          "employees": 59238,
+          "employees": 59237,
           "ratio": 61.18
         },
         {
@@ -1701,12 +1736,12 @@
         },
         {
           "year": 2021,
-          "employees": 59024,
+          "employees": 59023,
           "ratio": 59.73
         },
         {
           "year": 2022,
-          "employees": 58561,
+          "employees": 58560,
           "ratio": 56.02
         },
         {
@@ -1718,6 +1753,11 @@
           "year": 2024,
           "employees": 56198,
           "ratio": 53.35
+        },
+        {
+          "year": 2025,
+          "employees": 54455,
+          "ratio": 51.53
         }
       ],
       "Tucumán": [
@@ -1873,12 +1913,12 @@
         },
         {
           "year": 2017,
-          "employees": 90150,
+          "employees": 90153,
           "ratio": 55.17
         },
         {
           "year": 2018,
-          "employees": 90365,
+          "employees": 90364,
           "ratio": 54.62
         },
         {
@@ -1888,7 +1928,7 @@
         },
         {
           "year": 2020,
-          "employees": 90516,
+          "employees": 90515,
           "ratio": 53.41
         },
         {
@@ -1910,6 +1950,11 @@
           "year": 2024,
           "employees": 96671,
           "ratio": 54.67
+        },
+        {
+          "year": 2025,
+          "employees": 93630,
+          "ratio": 52.79
         }
       ],
       "Salta": [
@@ -2065,12 +2110,12 @@
         },
         {
           "year": 2017,
-          "employees": 70807,
-          "ratio": 51.67
+          "employees": 72771,
+          "ratio": 53.11
         },
         {
           "year": 2018,
-          "employees": 70511,
+          "employees": 72024,
           "ratio": 50.78
         },
         {
@@ -2100,8 +2145,13 @@
         },
         {
           "year": 2024,
-          "employees": 85940,
-          "ratio": 58.05
+          "employees": 77814,
+          "ratio": 52.57
+        },
+        {
+          "year": 2025,
+          "employees": 72396,
+          "ratio": 48.7
         }
       ],
       "Entre Ríos": [
@@ -2257,43 +2307,48 @@
         },
         {
           "year": 2017,
-          "employees": 87452,
-          "ratio": 64.9
+          "employees": 87473,
+          "ratio": 64.91
         },
         {
           "year": 2018,
-          "employees": 86637,
+          "employees": 86671,
           "ratio": 63.68
         },
         {
           "year": 2019,
-          "employees": 86179,
+          "employees": 86216,
           "ratio": 62.75
         },
         {
           "year": 2020,
-          "employees": 86719,
-          "ratio": 62.57
+          "employees": 85916,
+          "ratio": 61.99
         },
         {
           "year": 2021,
-          "employees": 90780,
-          "ratio": 64.91
+          "employees": 89789,
+          "ratio": 64.2
         },
         {
           "year": 2022,
-          "employees": 85845,
-          "ratio": 59.21
+          "employees": 84789,
+          "ratio": 58.48
         },
         {
           "year": 2023,
-          "employees": 84812,
-          "ratio": 58.38
+          "employees": 84990,
+          "ratio": 58.5
         },
         {
           "year": 2024,
-          "employees": 84550,
-          "ratio": 58.07
+          "employees": 84729,
+          "ratio": 58.19
+        },
+        {
+          "year": 2025,
+          "employees": 87660,
+          "ratio": 60.07
         }
       ],
       "San Juan": [
@@ -2449,8 +2504,8 @@
         },
         {
           "year": 2017,
-          "employees": 40045,
-          "ratio": 52.97
+          "employees": 41504,
+          "ratio": 54.9
         },
         {
           "year": 2018,
@@ -2479,13 +2534,18 @@
         },
         {
           "year": 2023,
-          "employees": 49654,
+          "employees": 49655,
           "ratio": 59.03
         },
         {
           "year": 2024,
           "employees": 49874,
           "ratio": 59.01
+        },
+        {
+          "year": 2025,
+          "employees": 49037,
+          "ratio": 57.75
         }
       ],
       "Ciudad de Buenos Aires": [
@@ -2641,7 +2701,7 @@
         },
         {
           "year": 2017,
-          "employees": 176161,
+          "employees": 176160,
           "ratio": 57.5
         },
         {
@@ -2651,17 +2711,17 @@
         },
         {
           "year": 2019,
-          "employees": 178777,
+          "employees": 178780,
           "ratio": 63.58
         },
         {
           "year": 2020,
-          "employees": 183558,
+          "employees": 183557,
           "ratio": 59.68
         },
         {
           "year": 2021,
-          "employees": 197714,
+          "employees": 197715,
           "ratio": 64.22
         },
         {
@@ -2671,13 +2731,18 @@
         },
         {
           "year": 2023,
-          "employees": 198847,
+          "employees": 198848,
           "ratio": 63.98
         },
         {
           "year": 2024,
-          "employees": 196898,
+          "employees": 196900,
           "ratio": 63.64
+        },
+        {
+          "year": 2025,
+          "employees": 195385,
+          "ratio": 63.44
         }
       ],
       "Formosa": [
@@ -2833,43 +2898,48 @@
         },
         {
           "year": 2017,
-          "employees": 37935,
-          "ratio": 64.31
+          "employees": 38995,
+          "ratio": 66.1
         },
         {
           "year": 2018,
-          "employees": 37875,
+          "employees": 38230,
           "ratio": 63.64
         },
         {
           "year": 2019,
-          "employees": 37949,
+          "employees": 38294,
           "ratio": 63.22
         },
         {
           "year": 2020,
-          "employees": 38044,
-          "ratio": 62.86
+          "employees": 38386,
+          "ratio": 63.43
         },
         {
           "year": 2021,
-          "employees": 38906,
-          "ratio": 63.78
+          "employees": 39699,
+          "ratio": 65.08
         },
         {
           "year": 2022,
-          "employees": 40410,
-          "ratio": 65.12
+          "employees": 40706,
+          "ratio": 65.6
         },
         {
           "year": 2023,
-          "employees": 41770,
-          "ratio": 67.11
+          "employees": 42055,
+          "ratio": 67.57
         },
         {
           "year": 2024,
-          "employees": 41405,
-          "ratio": 66.31
+          "employees": 41677,
+          "ratio": 66.74
+        },
+        {
+          "year": 2025,
+          "employees": 42050,
+          "ratio": 67.1
         }
       ],
       "Chaco": [
@@ -3025,23 +3095,23 @@
         },
         {
           "year": 2017,
-          "employees": 85175,
-          "ratio": 72.91
+          "employees": 80732,
+          "ratio": 69.11
         },
         {
           "year": 2018,
-          "employees": 86611,
+          "employees": 81092,
           "ratio": 73.37
         },
         {
           "year": 2019,
-          "employees": 84917,
+          "employees": 84918,
           "ratio": 71.2
         },
         {
           "year": 2020,
-          "employees": 81093,
-          "ratio": 67.32
+          "employees": 80576,
+          "ratio": 66.89
         },
         {
           "year": 2021,
@@ -3060,8 +3130,13 @@
         },
         {
           "year": 2024,
-          "employees": 81834,
+          "employees": 81835,
           "ratio": 68.15
+        },
+        {
+          "year": 2025,
+          "employees": 82012,
+          "ratio": 67.91
         }
       ],
       "San Luis": [
@@ -3217,7 +3292,7 @@
         },
         {
           "year": 2018,
-          "employees": 28434,
+          "employees": 28849,
           "ratio": 57.37
         },
         {
@@ -3227,8 +3302,8 @@
         },
         {
           "year": 2020,
-          "employees": 34997,
-          "ratio": 68.85
+          "employees": 34633,
+          "ratio": 68.13
         },
         {
           "year": 2021,
@@ -3237,7 +3312,7 @@
         },
         {
           "year": 2022,
-          "employees": 37044,
+          "employees": 37043,
           "ratio": 70.22
         },
         {
@@ -3249,6 +3324,11 @@
           "year": 2024,
           "employees": 38541,
           "ratio": 72.25
+        },
+        {
+          "year": 2025,
+          "employees": 39278,
+          "ratio": 73.26
         }
       ],
       "Río Negro": [
@@ -3404,12 +3484,12 @@
         },
         {
           "year": 2017,
-          "employees": 58017,
-          "ratio": 80.73
+          "employees": 57032,
+          "ratio": 79.36
         },
         {
           "year": 2018,
-          "employees": 57889,
+          "employees": 57108,
           "ratio": 79.47
         },
         {
@@ -3419,28 +3499,33 @@
         },
         {
           "year": 2020,
-          "employees": 59535,
-          "ratio": 79.63
+          "employees": 58505,
+          "ratio": 78.26
         },
         {
           "year": 2021,
-          "employees": 63369,
-          "ratio": 83.7
+          "employees": 62065,
+          "ratio": 81.98
         },
         {
           "year": 2022,
-          "employees": 63516,
-          "ratio": 81.81
+          "employees": 61966,
+          "ratio": 79.81
         },
         {
           "year": 2023,
-          "employees": 63672,
-          "ratio": 81.58
+          "employees": 62229,
+          "ratio": 79.73
         },
         {
           "year": 2024,
           "employees": 56796,
           "ratio": 72.39
+        },
+        {
+          "year": 2025,
+          "employees": 60457,
+          "ratio": 76.66
         }
       ],
       "La Pampa": [
@@ -3591,43 +3676,48 @@
         },
         {
           "year": 2017,
-          "employees": 26107,
-          "ratio": 74.74
+          "employees": 26992,
+          "ratio": 77.27
         },
         {
           "year": 2018,
-          "employees": 26201,
+          "employees": 27241,
           "ratio": 74.35
         },
         {
           "year": 2019,
-          "employees": 26416,
+          "employees": 27319,
           "ratio": 74.32
         },
         {
           "year": 2020,
-          "employees": 26441,
-          "ratio": 73.77
+          "employees": 27345,
+          "ratio": 76.29
         },
         {
           "year": 2021,
-          "employees": 26570,
-          "ratio": 73.52
+          "employees": 27438,
+          "ratio": 75.92
         },
         {
           "year": 2022,
-          "employees": 26656,
-          "ratio": 71.28
+          "employees": 27525,
+          "ratio": 73.6
         },
         {
           "year": 2023,
-          "employees": 28861,
-          "ratio": 76.97
+          "employees": 29610,
+          "ratio": 78.97
         },
         {
           "year": 2024,
-          "employees": 29027,
-          "ratio": 77.23
+          "employees": 29745,
+          "ratio": 79.14
+        },
+        {
+          "year": 2025,
+          "employees": 29855,
+          "ratio": 79.23
         }
       ],
       "Chubut": [
@@ -3783,43 +3873,48 @@
         },
         {
           "year": 2017,
-          "employees": 44605,
-          "ratio": 75.86
+          "employees": 44923,
+          "ratio": 76.41
         },
         {
           "year": 2018,
-          "employees": 44429,
+          "employees": 44312,
           "ratio": 74.25
         },
         {
           "year": 2019,
-          "employees": 45985,
+          "employees": 45860,
           "ratio": 75.54
         },
         {
           "year": 2020,
-          "employees": 44671,
-          "ratio": 72.17
+          "employees": 44266,
+          "ratio": 71.51
         },
         {
           "year": 2021,
-          "employees": 45690,
-          "ratio": 72.62
+          "employees": 45587,
+          "ratio": 72.45
         },
         {
           "year": 2022,
-          "employees": 45386,
+          "employees": 45387,
           "ratio": 75.98
         },
         {
           "year": 2023,
-          "employees": 46963,
-          "ratio": 78.41
+          "employees": 47985,
+          "ratio": 80.12
         },
         {
           "year": 2024,
           "employees": 47533,
           "ratio": 79.13
+        },
+        {
+          "year": 2025,
+          "employees": 47304,
+          "ratio": 78.53
         }
       ],
       "Jujuy": [
@@ -3975,17 +4070,17 @@
         },
         {
           "year": 2017,
-          "employees": 64285,
-          "ratio": 86.26
+          "employees": 63892,
+          "ratio": 85.73
         },
         {
           "year": 2018,
-          "employees": 62484,
+          "employees": 62475,
           "ratio": 82.88
         },
         {
           "year": 2019,
-          "employees": 62328,
+          "employees": 61652,
           "ratio": 81.75
         },
         {
@@ -3995,23 +4090,28 @@
         },
         {
           "year": 2021,
-          "employees": 66377,
+          "employees": 66379,
           "ratio": 85.19
         },
         {
           "year": 2022,
-          "employees": 65363,
+          "employees": 65362,
           "ratio": 82.18
         },
         {
           "year": 2023,
-          "employees": 66133,
+          "employees": 66134,
           "ratio": 82.99
         },
         {
           "year": 2024,
-          "employees": 66173,
+          "employees": 66172,
           "ratio": 82.85
+        },
+        {
+          "year": 2025,
+          "employees": 67124,
+          "ratio": 83.83
         }
       ],
       "Catamarca": [
@@ -4167,8 +4267,8 @@
         },
         {
           "year": 2017,
-          "employees": 42145,
-          "ratio": 104.21
+          "employees": 43676,
+          "ratio": 107.99
         },
         {
           "year": 2018,
@@ -4202,8 +4302,13 @@
         },
         {
           "year": 2024,
-          "employees": 43661,
-          "ratio": 99.79
+          "employees": 43745,
+          "ratio": 99.99
+        },
+        {
+          "year": 2025,
+          "employees": 45088,
+          "ratio": 102.7
         }
       ],
       "Santa Cruz": [
@@ -4354,43 +4459,48 @@
         },
         {
           "year": 2017,
-          "employees": 34482,
-          "ratio": 101.85
+          "employees": 34843,
+          "ratio": 102.92
         },
         {
           "year": 2018,
-          "employees": 34287,
+          "employees": 34508,
           "ratio": 98.64
         },
         {
           "year": 2019,
-          "employees": 34669,
+          "employees": 34780,
           "ratio": 97.21
         },
         {
           "year": 2020,
-          "employees": 34548,
-          "ratio": 94.47
+          "employees": 34871,
+          "ratio": 95.35
         },
         {
           "year": 2021,
-          "employees": 35665,
-          "ratio": 95.17
+          "employees": 36070,
+          "ratio": 96.25
         },
         {
           "year": 2022,
-          "employees": 38126,
-          "ratio": 114.01
+          "employees": 37381,
+          "ratio": 111.79
         },
         {
           "year": 2023,
-          "employees": 38126,
-          "ratio": 113.97
+          "employees": 37423,
+          "ratio": 111.86
         },
         {
           "year": 2024,
-          "employees": 36321,
-          "ratio": 108.5
+          "employees": 36525,
+          "ratio": 109.11
+        },
+        {
+          "year": 2025,
+          "employees": 35859,
+          "ratio": 107.06
         }
       ],
       "Neuquén": [
@@ -4546,43 +4656,48 @@
         },
         {
           "year": 2017,
-          "employees": 66911,
-          "ratio": 104.89
+          "employees": 65087,
+          "ratio": 102.03
         },
         {
           "year": 2018,
-          "employees": 68004,
+          "employees": 64678,
           "ratio": 105.14
         },
         {
           "year": 2019,
-          "employees": 66601,
+          "employees": 66843,
           "ratio": 101.6
         },
         {
           "year": 2020,
-          "employees": 65615,
-          "ratio": 98.81
+          "employees": 65849,
+          "ratio": 99.16
         },
         {
           "year": 2021,
-          "employees": 71594,
-          "ratio": 106.47
+          "employees": 71835,
+          "ratio": 106.82
         },
         {
           "year": 2022,
-          "employees": 74545,
-          "ratio": 108.16
+          "employees": 74802,
+          "ratio": 108.53
         },
         {
           "year": 2023,
-          "employees": 77651,
-          "ratio": 111.9
+          "employees": 77915,
+          "ratio": 112.28
         },
         {
           "year": 2024,
-          "employees": 77560,
-          "ratio": 111.05
+          "employees": 77826,
+          "ratio": 111.43
+        },
+        {
+          "year": 2025,
+          "employees": 79839,
+          "ratio": 113.6
         }
       ],
       "La Rioja": [
@@ -4738,33 +4853,33 @@
         },
         {
           "year": 2017,
-          "employees": 39394,
-          "ratio": 104.2
+          "employees": 38029,
+          "ratio": 100.59
         },
         {
           "year": 2018,
-          "employees": 40083,
+          "employees": 38354,
           "ratio": 104.6
         },
         {
           "year": 2019,
-          "employees": 40834,
+          "employees": 39116,
           "ratio": 105.14
         },
         {
           "year": 2020,
-          "employees": 40015,
-          "ratio": 101.68
+          "employees": 39766,
+          "ratio": 101.05
         },
         {
           "year": 2021,
-          "employees": 43647,
-          "ratio": 109.49
+          "employees": 42785,
+          "ratio": 107.33
         },
         {
           "year": 2022,
-          "employees": 43947,
-          "ratio": 110.28
+          "employees": 43320,
+          "ratio": 108.7
         },
         {
           "year": 2023,
@@ -4775,6 +4890,11 @@
           "year": 2024,
           "employees": 44705,
           "ratio": 111.25
+        },
+        {
+          "year": 2025,
+          "employees": 44302,
+          "ratio": 109.77
         }
       ],
       "Tierra del Fuego": [
@@ -4930,45 +5050,51 @@
         },
         {
           "year": 2017,
-          "employees": 19371,
-          "ratio": 120.53
+          "employees": 19475,
+          "ratio": 121.17
         },
         {
           "year": 2018,
-          "employees": 18958,
+          "employees": 19066,
           "ratio": 114.94
         },
         {
           "year": 2019,
-          "employees": 19004,
+          "employees": 19109,
           "ratio": 112.33
         },
         {
           "year": 2020,
-          "employees": 19632,
-          "ratio": 113.2
+          "employees": 19732,
+          "ratio": 113.77
         },
         {
           "year": 2021,
-          "employees": 22223,
-          "ratio": 125.06
+          "employees": 22323,
+          "ratio": 125.62
         },
         {
           "year": 2022,
-          "employees": 24435,
-          "ratio": 136.02
+          "employees": 24539,
+          "ratio": 136.6
         },
         {
           "year": 2023,
-          "employees": 25134,
-          "ratio": 139.2
+          "employees": 25248,
+          "ratio": 139.84
         },
         {
           "year": 2024,
-          "employees": 25618,
-          "ratio": 141.33
+          "employees": 25734,
+          "ratio": 141.97
+        },
+        {
+          "year": 2025,
+          "employees": 25422,
+          "ratio": 139.68
         }
       ]
     }
-  }
+  },
+  "fileUrlHistoric": "https://www.argentina.gob.ar/sites/default/files/ejec-presupuestaria-ocupacion_salarios_1.xlsx (1987-2016; serie 2017-2025 reemplazada por la versión revisada)"
 }

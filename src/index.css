@@ -1,40 +1,49 @@
 @import "tailwindcss";
 
 @theme {
-  --color-maroon: #780000;
-  --color-crimson: #C1121F;
-  --color-cream: #FDF0D5;
-  --color-navy: #003049;
-  --color-steel: #669BBC;
-  --color-navy-deep: #001a2c;
-  --color-navy-darker: #00243a;
-  --color-navy-light: #004060;
-  --color-cream-dim: rgba(253, 240, 213, 0.8);
-  --color-cream-muted: rgba(253, 240, 213, 0.4);
-  --color-steel-light: #7db0cf;
-  --color-steel-dim: rgba(102, 155, 188, 0.53);
-  --color-crimson-dim: rgba(193, 18, 31, 0.27);
-  --color-maroon-dim: rgba(120, 0, 0, 0.2);
-  /* Light-panel semantic aliases */
-  --panel-bg: #FDF0D5;
-  --panel-border: rgba(0, 48, 73, 0.12);
-  --panel-text: #003049;
-  --panel-text-muted: rgba(0, 48, 73, 0.45);
-  --panel-text-dim: rgba(0, 48, 73, 0.30);
-  --panel-hover: rgba(0, 48, 73, 0.07);
-  --panel-active: rgba(0, 48, 73, 0.10);
-  --panel-card: rgba(0, 48, 73, 0.05);
-  --color-success: #2ecc71;
-  --color-warning: #f39c12;
-  --color-danger: #e74c3c;
-  --color-cream-warm: #FFF8EB;
-  --color-gold-border: #d4c4a0;
-  --font-display: 'Montserrat', 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  /* Editorial "atlas" palette — paper, ink and Argentine sky blue */
+  --color-maroon: #7B1E14;
+  --color-crimson: #C0392B;
+  --color-cream: #F5F3EE;
+  --color-navy: #14213D;
+  --color-steel: #4F86B5;
+  --color-navy-deep: #0B1426;
+  --color-navy-darker: #101B33;
+  --color-navy-light: #24365C;
+  --color-cream-dim: rgba(255, 255, 255, 0.8);
+  --color-cream-muted: rgba(255, 255, 255, 0.55);
+  --color-steel-light: #75AADB;
+  --color-steel-dim: rgba(79, 134, 181, 0.5);
+  --color-crimson-dim: rgba(192, 57, 43, 0.25);
+  --color-maroon-dim: rgba(123, 30, 20, 0.2);
+  --color-celeste: #75AADB;
+  --color-sol: #E0A526;
+  --color-paper: #F5F3EE;
+  --color-line: #E4E0D6;
+  --color-ink: #14213D;
+  --color-muted: #6B7385;
+  --panel-bg: #FFFFFF;
+  --panel-border: rgba(20, 33, 61, 0.10);
+  --panel-text: #14213D;
+  --panel-text-muted: rgba(20, 33, 61, 0.55);
+  --panel-text-dim: rgba(20, 33, 61, 0.35);
+  --panel-hover: rgba(20, 33, 61, 0.05);
+  --panel-active: rgba(20, 33, 61, 0.08);
+  --panel-card: rgba(20, 33, 61, 0.035);
+  --color-success: #1E8E5A;
+  --color-warning: #E0A526;
+  --color-danger: #C0392B;
+  --color-cream-warm: #FFFFFF;
+  --color-gold-border: #E4E0D6;
+  --font-display: 'Inter', 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', system-ui, sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
 }
 
 body {
   font-family: var(--font-display);
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
   background: var(--color-cream);
   color: var(--color-navy);
   overflow: hidden;
@@ -42,7 +51,7 @@ body {
 }
 
 .leaflet-container { background: var(--color-cream) !important; font-family: var(--font-display) !important; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
-.leaflet-tile-pane { opacity: 0.18; }
+.leaflet-tile-pane { opacity: 0.35; }
 .leaflet-container path:focus, .leaflet-container svg:focus, .leaflet-container path, .leaflet-container svg { outline: none !important; -webkit-tap-highlight-color: transparent; }
 .leaflet-container path::selection, .leaflet-container svg::selection { background: transparent; }
 .leaflet-popup-content-wrapper { background: var(--color-cream) !important; color: var(--color-navy) !important; border-radius: 6px !important; border: 1px solid rgba(0,48,73,0.15) !important; box-shadow: 0 4px 16px rgba(0,48,73,0.2) !important; }
@@ -63,6 +72,22 @@ body {
 }
 
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: var(--color-cream); }
-::-webkit-scrollbar-thumb { background: var(--color-steel); border-radius: 3px; opacity: 0.4; }
-::-webkit-scrollbar-thumb:hover { background: var(--color-steel); }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(20,33,61,0.18); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(20,33,61,0.35); }
+
+/* ── Shared atlas UI primitives ─────────────────────────────── */
+.font-serif { font-family: var(--font-serif); font-optical-sizing: auto; }
+.tnum { font-variant-numeric: tabular-nums; }
+.atlas-card { background: #fff; border: 1px solid var(--color-line); border-radius: 14px; box-shadow: 0 1px 2px rgba(20,33,61,0.04), 0 8px 24px -12px rgba(20,33,61,0.12); }
+.atlas-eyebrow { font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-muted); }
+.atlas-btn { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; font-weight: 600; font-size: 12.5px; padding: 7px 14px; border: 1px solid var(--color-line); background: #fff; color: var(--color-ink); transition: background .15s, border-color .15s, color .15s; white-space: nowrap; }
+.atlas-btn:hover { border-color: rgba(20,33,61,0.25); background: #FAF9F6; }
+.atlas-btn-primary { background: var(--color-ink); border-color: var(--color-ink); color: #fff; }
+.atlas-btn-primary:hover { background: #24365C; border-color: #24365C; }
+.atlas-seg { display: inline-flex; padding: 3px; gap: 2px; border-radius: 999px; background: rgba(20,33,61,0.05); }
+.atlas-seg > button { border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 600; color: var(--color-muted); transition: all .15s; white-space: nowrap; }
+.atlas-seg > button[aria-pressed="true"] { background: #fff; color: var(--color-ink); box-shadow: 0 1px 3px rgba(20,33,61,0.15); }
+.atlas-fade-in { animation: atlasFade .2s ease-out; }
+@keyframes atlasFade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.atlas-scroll { scrollbar-width: thin; scrollbar-color: rgba(20,33,61,0.2) transparent; }

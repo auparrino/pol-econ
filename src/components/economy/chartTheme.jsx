@@ -58,7 +58,7 @@ export function CustomTooltip({ active, payload, label, formatter }) {
   if (!active || !payload?.length) return null;
   return (
     <div style={{
-      background: '#003049', color: '#FDF0D5', padding: '8px 12px',
+      background: '#14213D', color: '#F5F3EE', padding: '8px 12px',
       borderRadius: 6, fontSize: 12, lineHeight: 1.5,
       boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
     }}>
@@ -74,13 +74,13 @@ export function CustomTooltip({ active, payload, label, formatter }) {
 }
 
 export const AXIS_STYLE = {
-  tick: { fontSize: 11, fill: 'rgba(0,48,73,0.5)' },
-  axisLine: { stroke: 'rgba(0,48,73,0.1)' },
+  tick: { fontSize: 11, fill: 'rgba(20,33,61,0.5)' },
+  axisLine: { stroke: 'rgba(20,33,61,0.1)' },
 };
 
 export const GRID_STYLE = {
   strokeDasharray: '3 3',
-  stroke: 'rgba(0,48,73,0.08)',
+  stroke: 'rgba(20,33,61,0.08)',
 };
 
 export function formatMillions(v) {

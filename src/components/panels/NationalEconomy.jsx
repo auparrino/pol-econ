@@ -27,7 +27,7 @@ function fmtUSD(m) { return m == null ? '—' : `US$${fmtN(m)}`; }
 
 function SectionTitle({ children }) {
   return (
-    <div className="text-[10px] uppercase tracking-wider text-[#003049]/55 font-semibold mb-1.5 mt-3">
+    <div className="text-[10px] uppercase tracking-wider text-[#14213D]/55 font-semibold mb-1.5 mt-3">
       {children}
     </div>
   );
@@ -35,12 +35,12 @@ function SectionTitle({ children }) {
 
 function HeroNumber({ label, value, sub, color }) {
   return (
-    <div className="rounded-md p-3 border" style={{ background: 'rgba(0,48,73,0.04)', borderColor: 'rgba(0,48,73,0.10)' }}>
-      <div className="text-[10px] uppercase tracking-wider text-[#003049]/55 font-semibold">{label}</div>
-      <div className="text-[20px] font-extrabold font-mono leading-tight mt-0.5" style={{ color: color || '#003049' }}>
+    <div className="rounded-md p-3 border" style={{ background: 'rgba(20,33,61,0.04)', borderColor: 'rgba(20,33,61,0.10)' }}>
+      <div className="text-[10px] uppercase tracking-wider text-[#14213D]/55 font-semibold">{label}</div>
+      <div className="text-[20px] font-extrabold font-mono leading-tight mt-0.5" style={{ color: color || '#14213D' }}>
         {value}
       </div>
-      {sub && <div className="text-[10px] text-[#003049]/55 mt-0.5">{sub}</div>}
+      {sub && <div className="text-[10px] text-[#14213D]/55 mt-0.5">{sub}</div>}
     </div>
   );
 }
@@ -54,11 +54,11 @@ function StatBars({ items, total, valueKey = 'value', maxItems = 6 }) {
         const pct = (v / max) * 100;
         return (
           <div key={item.name} className="flex items-center gap-1.5 text-[10px]">
-            <span className="w-[110px] text-[#003049]/65 truncate">{item.name}</span>
-            <div className="flex-1 h-[6px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
-              <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: item.color || '#669BBC' }} />
+            <span className="w-[110px] text-[#14213D]/65 truncate">{item.name}</span>
+            <div className="flex-1 h-[6px] rounded-sm overflow-hidden" style={{ background: 'rgba(20,33,61,0.08)' }}>
+              <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: item.color || '#4F86B5' }} />
             </div>
-            <span className="font-mono text-[#003049]/70 text-right min-w-[44px]">
+            <span className="font-mono text-[#14213D]/70 text-right min-w-[44px]">
               {item.display || (total ? `${Math.round((v / total) * 100)}%` : fmtN(v))}
             </span>
           </div>
@@ -94,7 +94,7 @@ function EmploymentNational() {
     const families = Object.entries(byFamily)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 8)
-      .map(([name, value]) => ({ name, value, color: '#669BBC' }));
+      .map(([name, value]) => ({ name, value, color: '#4F86B5' }));
 
     // Top provinces by total formal jobs (SIPA per-depto, residence-based)
     const topProv = (sipaPubPriv.provinces || [])
@@ -109,20 +109,20 @@ function EmploymentNational() {
   const totalWithIndep = stats.total + INDEPENDENT_WORKERS_REFERENCE_M * 1e6;
 
   // BIEP level colors (national / provincial / municipal)
-  const LEVEL_COLORS = { national: '#7d3c98', provincial: '#003049', municipal: '#669BBC' };
+  const LEVEL_COLORS = { national: '#7d3c98', provincial: '#14213D', municipal: '#4F86B5' };
 
   return (
     <div>
       <div className="grid grid-cols-3 gap-2 mb-2">
-        <HeroNumber label={t('national.dependentTotal')} value={fmtN(stats.total)} sub={t('national.jobsSipa')} color="#003049" />
+        <HeroNumber label={t('national.dependentTotal')} value={fmtN(stats.total)} sub={t('national.jobsSipa')} color="#14213D" />
         <HeroNumber label={t('national.private')} value={fmtN(stats.totalPriv)} sub={`${Math.round(stats.totalPriv / stats.total * 100)}%`} color="#0f766e" />
         <HeroNumber label={t('national.public')} value={fmtN(stats.totalPub)} sub={`${Math.round(stats.totalPub / stats.total * 100)}%`} color="#7d3c98" />
       </div>
       <div
         className="rounded-md px-3 py-2 mb-2 text-[10px] leading-snug"
-        style={{ background: 'rgba(0,48,73,0.04)', border: '1px solid rgba(0,48,73,0.10)' }}
+        style={{ background: 'rgba(20,33,61,0.04)', border: '1px solid rgba(20,33,61,0.10)' }}
       >
-        <div className="text-[#003049]/65">
+        <div className="text-[#14213D]/65">
           {t('national.monotributistasNote', { count: INDEPENDENT_WORKERS_REFERENCE_M.toFixed(1), total: (totalWithIndep / 1e6).toFixed(1) })}
         </div>
       </div>
@@ -136,10 +136,10 @@ function EmploymentNational() {
       </SectionTitle>
       <div className="rounded-md p-3 border" style={{ background: 'rgba(125,60,152,0.04)', borderColor: 'rgba(125,60,152,0.18)' }}>
         <div className="flex items-baseline justify-between mb-2">
-          <span className="text-[10px] uppercase tracking-wider text-[#003049]/60">{t('national.totalPublicSector')}</span>
-          <span className="text-[18px] font-extrabold font-mono text-[#003049]">{fmtN(biep.total)}</span>
+          <span className="text-[10px] uppercase tracking-wider text-[#14213D]/60">{t('national.totalPublicSector')}</span>
+          <span className="text-[18px] font-extrabold font-mono text-[#14213D]">{fmtN(biep.total)}</span>
         </div>
-        <div className="flex h-[10px] rounded-sm overflow-hidden mb-2" style={{ background: 'rgba(0,48,73,0.10)' }}>
+        <div className="flex h-[10px] rounded-sm overflow-hidden mb-2" style={{ background: 'rgba(20,33,61,0.10)' }}>
           {biep.levels.map(lvl => (
             <div
               key={lvl.key}
@@ -153,14 +153,14 @@ function EmploymentNational() {
             <div key={lvl.key}>
               <div className="flex items-baseline gap-2 text-[11px]">
                 <span className="w-2 h-2 rounded-full shrink-0" style={{ background: LEVEL_COLORS[lvl.key] }} />
-                <span className="text-[#003049]/70 uppercase tracking-wider text-[10px] flex-1">{t(`national.level_${lvl.key}`)}</span>
-                <span className="font-mono text-[#003049] font-bold">{fmtN(lvl.value)}</span>
-                <span className="font-mono text-[#003049]/55 w-[36px] text-right">{lvl.pct.toFixed(0)}%</span>
+                <span className="text-[#14213D]/70 uppercase tracking-wider text-[10px] flex-1">{t(`national.level_${lvl.key}`)}</span>
+                <span className="font-mono text-[#14213D] font-bold">{fmtN(lvl.value)}</span>
+                <span className="font-mono text-[#14213D]/55 w-[36px] text-right">{lvl.pct.toFixed(0)}%</span>
               </div>
               {lvl.detail && lvl.detail.length > 1 && (
                 <div className="ml-4 mt-0.5 mb-1 space-y-[1px]">
                   {lvl.detail.map(d => (
-                    <div key={d.label} className="flex items-baseline gap-1.5 text-[10px] text-[#003049]/55">
+                    <div key={d.label} className="flex items-baseline gap-1.5 text-[10px] text-[#14213D]/55">
                       <span className="flex-1 leading-tight">↳ {d.label}</span>
                       <span className="font-mono">{fmtN(d.value)}</span>
                     </div>
@@ -170,7 +170,7 @@ function EmploymentNational() {
             </div>
           ))}
         </div>
-        <p className="text-[9px] text-[#003049]/45 leading-snug mt-2 pt-2 border-t border-[#003049]/10">
+        <p className="text-[9px] text-[#14213D]/45 leading-snug mt-2 pt-2 border-t border-[#14213D]/10">
           {t('national.biepVsSipaNote', { sipa: fmtN(biep.sipaContext.sipaTotal), vintage: biep.sipaContext.sipaVintage })}
         </p>
       </div>
@@ -179,7 +179,7 @@ function EmploymentNational() {
       <StatBars items={stats.families} total={stats.families.reduce((s, x) => s + x.value, 0)} />
       <SectionTitle>{t('national.topProvinces')}</SectionTitle>
       <StatBars items={stats.topProv} />
-      <p className="text-[9px] text-[#003049]/40 italic mt-3 leading-snug inline-flex items-start gap-1">
+      <p className="text-[9px] text-[#14213D]/40 italic mt-3 leading-snug inline-flex items-start gap-1">
         {t('national.employmentSources', { vintage: sipaPubPriv.vintage || 'Nov 2023' })}
         <SourceInfo src={['cepxxiSipa', 'sipaDeptoPubPriv', 'biep']} size={10} />
       </p>
@@ -213,7 +213,7 @@ function FiscalNational() {
 
   return (
     <div>
-      <p className="text-[11px] text-[#003049]/55 leading-snug mb-2">
+      <p className="text-[11px] text-[#14213D]/55 leading-snug mb-2">
         {t('national.fiscalAggDesc')}
       </p>
       <div className="grid grid-cols-3 gap-2 mb-2">
@@ -221,17 +221,17 @@ function FiscalNational() {
           label={t('national.provincesNation')}
           value={`${stats.transferShare.toFixed(1)}%`}
           sub={t('national.ofConsolidatedRev')}
-          color={stats.transferShare > 65 ? '#C1121F' : stats.transferShare > 50 ? '#e67e22' : '#27ae60'}
+          color={stats.transferShare > 65 ? '#C0392B' : stats.transferShare > 50 ? '#e67e22' : '#27ae60'}
         />
         <HeroNumber label={t('national.ownRevenue')} value={fmtN(stats.own)} sub={t('national.ownRevDesc')} color="#0f766e" />
         <HeroNumber label={t('national.natTransfers')} value={fmtN(stats.transfers)} sub={t('national.natTransfersDesc')} color="#7d3c98" />
       </div>
       <SectionTitle>{t('national.howTransferSplits')}</SectionTitle>
-      <div className="flex h-[10px] rounded-sm overflow-hidden mb-1" style={{ background: 'rgba(0,48,73,0.10)' }}>
+      <div className="flex h-[10px] rounded-sm overflow-hidden mb-1" style={{ background: 'rgba(20,33,61,0.10)' }}>
         <div style={{ width: `${(stats.copart / stats.transfers) * 100}%`, background: '#17a589' }} />
         <div style={{ width: `${(stats.discrecional / stats.transfers) * 100}%`, background: '#d4a800' }} />
       </div>
-      <div className="flex justify-between text-[10px] text-[#003049]/65">
+      <div className="flex justify-between text-[10px] text-[#14213D]/65">
         <span style={{ color: '#0f766e' }}>{t('national.coparticipacion')} {Math.round((stats.copart / stats.transfers) * 100)}%</span>
         <span style={{ color: '#b58500' }}>{t('national.discrecionales')} {Math.round((stats.discrecional / stats.transfers) * 100)}%</span>
       </div>
@@ -239,11 +239,11 @@ function FiscalNational() {
       <div className="space-y-0.5">
         {stats.ranking.slice(0, 6).map(r => (
           <div key={r.province} className="flex items-center gap-1.5 text-[10px]">
-            <span className="w-[110px] text-[#003049]/65 truncate">{r.province}</span>
-            <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
+            <span className="w-[110px] text-[#14213D]/65 truncate">{r.province}</span>
+            <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(20,33,61,0.08)' }}>
               <div className="h-full rounded-sm" style={{ width: `${Math.min(r.dep, 100)}%`, background: '#4F6D7A' }} />
             </div>
-            <span className="font-mono text-[#003049]/70 text-right min-w-[40px]">{r.dep.toFixed(1)}%</span>
+            <span className="font-mono text-[#14213D]/70 text-right min-w-[40px]">{r.dep.toFixed(1)}%</span>
           </div>
         ))}
       </div>
@@ -251,15 +251,15 @@ function FiscalNational() {
       <div className="space-y-0.5">
         {stats.ranking.slice(-3).reverse().map(r => (
           <div key={r.province} className="flex items-center gap-1.5 text-[10px]">
-            <span className="w-[110px] text-[#003049]/65 truncate">{r.province}</span>
-            <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
+            <span className="w-[110px] text-[#14213D]/65 truncate">{r.province}</span>
+            <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(20,33,61,0.08)' }}>
               <div className="h-full rounded-sm" style={{ width: `${Math.min(r.dep, 100)}%`, background: '#4F6D7A' }} />
             </div>
-            <span className="font-mono text-[#003049]/70 text-right min-w-[40px]">{r.dep.toFixed(1)}%</span>
+            <span className="font-mono text-[#14213D]/70 text-right min-w-[40px]">{r.dep.toFixed(1)}%</span>
           </div>
         ))}
       </div>
-      <p className="text-[9px] text-[#003049]/40 italic mt-3 inline-flex items-center gap-1">
+      <p className="text-[9px] text-[#14213D]/40 italic mt-3 inline-flex items-center gap-1">
         {t('national.fiscalSources')}
         <SourceInfo src={['meconDnap']} size={10} />
       </p>
@@ -323,11 +323,11 @@ function ExportsNational() {
 
   return (
     <div>
-      <p className="text-[11px] text-[#003049]/55 leading-snug mb-2">
+      <p className="text-[11px] text-[#14213D]/55 leading-snug mb-2">
         {t('national.exportAggDesc', { year: stats.latestYear })}
       </p>
       <div className="grid grid-cols-2 gap-2 mb-2">
-        <HeroNumber label={`Total ${stats.latestYear}`} value={`US$${fmtN(stats.total)}M`} sub={t('national.goodsExports')} color="#003049" />
+        <HeroNumber label={`Total ${stats.latestYear}`} value={`US$${fmtN(stats.total)}M`} sub={t('national.goodsExports')} color="#14213D" />
         <HeroNumber label="MOA + PP" value={`${Math.round(((stats.pp + stats.moa) / stats.total) * 100)}%`} sub={t('national.primaryAgro')} color="#0f766e" />
       </div>
       <SectionTitle>{t('national.byProductCat')}</SectionTitle>
@@ -345,11 +345,11 @@ function ExportsNational() {
         target="_blank"
         rel="noopener noreferrer"
         className="block mt-3 px-3 py-2 rounded text-[11px] font-semibold text-center transition-colors"
-        style={{ background: '#003049', color: '#FDF0D5' }}
+        style={{ background: '#14213D', color: '#F5F3EE' }}
       >
         {t('national.moreTradeFdi')}
       </a>
-      <p className="text-[9px] text-[#003049]/40 italic mt-2 inline-flex items-center gap-1">
+      <p className="text-[9px] text-[#14213D]/40 italic mt-2 inline-flex items-center gap-1">
         Source: INDEC
         <SourceInfo src={['indecExports']} size={10} />
       </p>
@@ -398,7 +398,7 @@ function ProductionNational() {
 
   return (
     <div>
-      <p className="text-[11px] text-[#003049]/55 leading-snug mb-2">
+      <p className="text-[11px] text-[#14213D]/55 leading-snug mb-2">
         {t('national.prodNatDesc')}
       </p>
 
@@ -412,8 +412,8 @@ function ProductionNational() {
       <SectionTitle>{t('national.oilGas')}</SectionTitle>
       <div className="grid grid-cols-3 gap-2">
         <HeroNumber label={t('national.oil')} value={`${fmtN(stats.oilBblDay)}`} sub={t('production.bblDay')} color="#1a6fa3" />
-        <HeroNumber label={t('national.gas')} value={`${stats.gasMm3Day?.toFixed(0)}`} sub={t('production.mmm3Day')} color="#669BBC" />
-        <HeroNumber label={t('national.wells')} value={fmtN(stats.wells)} sub={t('common.active')} color="#003049" />
+        <HeroNumber label={t('national.gas')} value={`${stats.gasMm3Day?.toFixed(0)}`} sub={t('production.mmm3Day')} color="#4F86B5" />
+        <HeroNumber label={t('national.wells')} value={fmtN(stats.wells)} sub={t('common.active')} color="#14213D" />
       </div>
 
       <SectionTitle>{t('national.livestockHead')}</SectionTitle>
@@ -425,7 +425,7 @@ function ProductionNational() {
         <HeroNumber label={t('common.source')} value="ADEFA" sub={vehicles.year} />
       </div>
 
-      <p className="text-[9px] text-[#003049]/40 italic mt-3 inline-flex items-start gap-1">
+      <p className="text-[9px] text-[#14213D]/40 italic mt-3 inline-flex items-start gap-1">
         {t('national.productionSources')}
         <SourceInfo src={['magypEstimates', 'secEnergiaOilGas', 'senasaSigsa', 'adefa']} size={10} />
       </p>

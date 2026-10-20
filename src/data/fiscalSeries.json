@@ -1,78 +1,4630 @@
 {
-  "version": "2026-04-06",
-  "methodology": "Empty seed — no source CSVs found in scripts/raw/fiscal/. Add Mecon DNAP files and re-run to populate.",
+  "version": "2026-10-20",
+  "methodology": "Serie anual por jurisdicción 2005-2025 desde Mecon DNAP serie_aif-apnf-2025.xlsx (APNF, devengado; 2025 provisorio; La Pampa sin 2025). Millones de pesos corrientes (no deflactados). recursos_propios = Ingresos Totales − recursos de origen nacional; transferencias_automaticas = Tributarios de Origen Nacional (coparticipación + Fin. Educativo + leyes especiales); transferencias_discrecionales = Transferencias Corrientes + de Capital recibidas (no automáticas: ATN, convenios, obras, fondos compensadores); gasto_total = Gastos Totales (II+V); dependencia_pct = (automáticas + discrecionales) / Ingresos Totales × 100 (= 100 − Autonomía Fiscal DNAP).",
+  "source": "https://www.argentina.gob.ar/sites/default/files/serie_aif-apnf-2025.xlsx",
   "provinces": {
     "Buenos Aires": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 12158.0,
+          "transferencias_automaticas": 7206.5,
+          "transferencias_discrecionales": 2429.0,
+          "gasto_total": 22102.8,
+          "ingresos_totales": 21793.5,
+          "dependencia_pct": 44.2
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 15482.6,
+          "transferencias_automaticas": 8660.4,
+          "transferencias_discrecionales": 2588.5,
+          "gasto_total": 27569.2,
+          "ingresos_totales": 26731.5,
+          "dependencia_pct": 42.1
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 18651.2,
+          "transferencias_automaticas": 11119.2,
+          "transferencias_discrecionales": 3724.1,
+          "gasto_total": 34710.8,
+          "ingresos_totales": 33494.5,
+          "dependencia_pct": 44.3
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 26874.5,
+          "transferencias_automaticas": 13798.0,
+          "transferencias_discrecionales": 3873.9,
+          "gasto_total": 46940.3,
+          "ingresos_totales": 44546.4,
+          "dependencia_pct": 39.7
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 31867.2,
+          "transferencias_automaticas": 15090.8,
+          "transferencias_discrecionales": 6585.7,
+          "gasto_total": 59324.7,
+          "ingresos_totales": 53543.8,
+          "dependencia_pct": 40.5
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 38923.1,
+          "transferencias_automaticas": 19946.9,
+          "transferencias_discrecionales": 10683.0,
+          "gasto_total": 72348.7,
+          "ingresos_totales": 69553.1,
+          "dependencia_pct": 44.0
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 52348.0,
+          "transferencias_automaticas": 26016.3,
+          "transferencias_discrecionales": 11411.3,
+          "gasto_total": 98627.8,
+          "ingresos_totales": 89775.6,
+          "dependencia_pct": 41.7
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 69515.2,
+          "transferencias_automaticas": 32749.9,
+          "transferencias_discrecionales": 9006.4,
+          "gasto_total": 120847.8,
+          "ingresos_totales": 111271.4,
+          "dependencia_pct": 37.5
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 97721.7,
+          "transferencias_automaticas": 42348.4,
+          "transferencias_discrecionales": 10029.1,
+          "gasto_total": 151781.1,
+          "ingresos_totales": 150099.2,
+          "dependencia_pct": 34.9
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 127899.7,
+          "transferencias_automaticas": 57365.0,
+          "transferencias_discrecionales": 18427.0,
+          "gasto_total": 203920.9,
+          "ingresos_totales": 203691.6,
+          "dependencia_pct": 37.2
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 173853.9,
+          "transferencias_automaticas": 77569.1,
+          "transferencias_discrecionales": 25247.5,
+          "gasto_total": 299003.6,
+          "ingresos_totales": 276670.5,
+          "dependencia_pct": 37.2
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 237394.1,
+          "transferencias_automaticas": 101168.5,
+          "transferencias_discrecionales": 56938.5,
+          "gasto_total": 426859.9,
+          "ingresos_totales": 395501.1,
+          "dependencia_pct": 40.0
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 323234.1,
+          "transferencias_automaticas": 137287.2,
+          "transferencias_discrecionales": 72028.2,
+          "gasto_total": 550680.9,
+          "ingresos_totales": 532549.4,
+          "dependencia_pct": 39.3
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 418502.5,
+          "transferencias_automaticas": 215057.7,
+          "transferencias_discrecionales": 55524.2,
+          "gasto_total": 713548.4,
+          "ingresos_totales": 689084.4,
+          "dependencia_pct": 39.3
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 568762.4,
+          "transferencias_automaticas": 361993.3,
+          "transferencias_discrecionales": 58685.9,
+          "gasto_total": 1024200.6,
+          "ingresos_totales": 989441.6,
+          "dependencia_pct": 42.5
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 687321.7,
+          "transferencias_automaticas": 501534.0,
+          "transferencias_discrecionales": 161883.9,
+          "gasto_total": 1399838.4,
+          "ingresos_totales": 1350739.7,
+          "dependencia_pct": 49.1
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 1136064.3,
+          "transferencias_automaticas": 807271.0,
+          "transferencias_discrecionales": 189740.0,
+          "gasto_total": 2202489.7,
+          "ingresos_totales": 2133075.2,
+          "dependencia_pct": 46.7
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 2110429.0,
+          "transferencias_automaticas": 1471987.0,
+          "transferencias_discrecionales": 318535.2,
+          "gasto_total": 4046057.3,
+          "ingresos_totales": 3900951.2,
+          "dependencia_pct": 45.9
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 4780749.6,
+          "transferencias_automaticas": 3237189.4,
+          "transferencias_discrecionales": 847136.9,
+          "gasto_total": 9488177.0,
+          "ingresos_totales": 8865075.8,
+          "dependencia_pct": 46.1
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 14216683.6,
+          "transferencias_automaticas": 9368302.8,
+          "transferencias_discrecionales": 414297.2,
+          "gasto_total": 25382640.6,
+          "ingresos_totales": 23999283.5,
+          "dependencia_pct": 40.8
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 19917956.0,
+          "transferencias_automaticas": 13691853.9,
+          "transferencias_discrecionales": 913034.8,
+          "gasto_total": 36572407.4,
+          "ingresos_totales": 34522844.8,
+          "dependencia_pct": 42.3
+        }
+      ]
     },
     "Ciudad de Buenos Aires": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 5329.8,
+          "transferencias_automaticas": 646.2,
+          "transferencias_discrecionales": 262.1,
+          "gasto_total": 5890.1,
+          "ingresos_totales": 6238.1,
+          "dependencia_pct": 14.6
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 6590.5,
+          "transferencias_automaticas": 802.7,
+          "transferencias_discrecionales": 217.4,
+          "gasto_total": 8221.8,
+          "ingresos_totales": 7610.6,
+          "dependencia_pct": 13.4
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 8314.6,
+          "transferencias_automaticas": 1064.2,
+          "transferencias_discrecionales": 222.2,
+          "gasto_total": 9945.5,
+          "ingresos_totales": 9601.0,
+          "dependencia_pct": 13.4
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 11209.2,
+          "transferencias_automaticas": 1336.7,
+          "transferencias_discrecionales": 195.6,
+          "gasto_total": 13134.1,
+          "ingresos_totales": 12741.5,
+          "dependencia_pct": 12.0
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 13330.5,
+          "transferencias_automaticas": 1459.4,
+          "transferencias_discrecionales": 302.0,
+          "gasto_total": 15853.2,
+          "ingresos_totales": 15091.9,
+          "dependencia_pct": 11.7
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 17562.8,
+          "transferencias_automaticas": 1963.5,
+          "transferencias_discrecionales": 495.2,
+          "gasto_total": 19782.9,
+          "ingresos_totales": 20021.5,
+          "dependencia_pct": 12.3
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 23078.2,
+          "transferencias_automaticas": 2600.4,
+          "transferencias_discrecionales": 543.8,
+          "gasto_total": 27048.7,
+          "ingresos_totales": 26222.4,
+          "dependencia_pct": 12.0
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 29615.4,
+          "transferencias_automaticas": 3297.2,
+          "transferencias_discrecionales": 780.2,
+          "gasto_total": 35190.9,
+          "ingresos_totales": 33692.8,
+          "dependencia_pct": 12.1
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 42811.6,
+          "transferencias_automaticas": 4284.2,
+          "transferencias_discrecionales": 705.0,
+          "gasto_total": 50878.1,
+          "ingresos_totales": 47800.8,
+          "dependencia_pct": 10.4
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 57710.3,
+          "transferencias_automaticas": 5846.9,
+          "transferencias_discrecionales": 996.1,
+          "gasto_total": 67666.3,
+          "ingresos_totales": 64553.3,
+          "dependencia_pct": 10.6
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 72753.3,
+          "transferencias_automaticas": 7974.9,
+          "transferencias_discrecionales": 1047.9,
+          "gasto_total": 89283.0,
+          "ingresos_totales": 81776.1,
+          "dependencia_pct": 11.0
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 99741.3,
+          "transferencias_automaticas": 27881.8,
+          "transferencias_discrecionales": 2021.6,
+          "gasto_total": 143710.6,
+          "ingresos_totales": 129644.7,
+          "dependencia_pct": 23.1
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 139864.0,
+          "transferencias_automaticas": 38047.9,
+          "transferencias_discrecionales": 7170.3,
+          "gasto_total": 198661.8,
+          "ingresos_totales": 185082.3,
+          "dependencia_pct": 24.4
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 187486.8,
+          "transferencias_automaticas": 57470.0,
+          "transferencias_discrecionales": 9611.3,
+          "gasto_total": 256753.1,
+          "ingresos_totales": 254568.1,
+          "dependencia_pct": 26.4
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 265106.0,
+          "transferencias_automaticas": 84796.5,
+          "transferencias_discrecionales": 13119.4,
+          "gasto_total": 382397.3,
+          "ingresos_totales": 363021.8,
+          "dependencia_pct": 27.0
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 335194.1,
+          "transferencias_automaticas": 98140.5,
+          "transferencias_discrecionales": 8339.2,
+          "gasto_total": 482147.0,
+          "ingresos_totales": 441673.8,
+          "dependencia_pct": 24.1
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 562707.2,
+          "transferencias_automaticas": 75401.1,
+          "transferencias_discrecionales": 42532.9,
+          "gasto_total": 686524.4,
+          "ingresos_totales": 680641.2,
+          "dependencia_pct": 17.3
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 1110106.2,
+          "transferencias_automaticas": 141448.1,
+          "transferencias_discrecionales": 75441.6,
+          "gasto_total": 1188110.4,
+          "ingresos_totales": 1326995.9,
+          "dependencia_pct": 16.3
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 2969541.1,
+          "transferencias_automaticas": 312121.7,
+          "transferencias_discrecionales": 63261.1,
+          "gasto_total": 3067685.8,
+          "ingresos_totales": 3344923.9,
+          "dependencia_pct": 11.2
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 8017455.4,
+          "transferencias_automaticas": 926655.8,
+          "transferencias_discrecionales": 580004.1,
+          "gasto_total": 9228574.8,
+          "ingresos_totales": 9524115.3,
+          "dependencia_pct": 15.8
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 11101076.6,
+          "transferencias_automaticas": 1310197.9,
+          "transferencias_discrecionales": 1135315.5,
+          "gasto_total": 13751709.3,
+          "ingresos_totales": 13546590.0,
+          "dependencia_pct": 18.1
+        }
+      ]
     },
     "Catamarca": {
-      "series": []
-    },
-    "Chaco": {
-      "series": []
-    },
-    "Chubut": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 213.1,
+          "transferencias_automaticas": 898.0,
+          "transferencias_discrecionales": 97.5,
+          "gasto_total": 1128.9,
+          "ingresos_totales": 1208.6,
+          "dependencia_pct": 82.4
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 410.9,
+          "transferencias_automaticas": 1107.9,
+          "transferencias_discrecionales": 96.7,
+          "gasto_total": 1585.4,
+          "ingresos_totales": 1615.5,
+          "dependencia_pct": 74.6
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 750.9,
+          "transferencias_automaticas": 1454.1,
+          "transferencias_discrecionales": 116.3,
+          "gasto_total": 2243.9,
+          "ingresos_totales": 2321.3,
+          "dependencia_pct": 67.7
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 943.8,
+          "transferencias_automaticas": 1826.1,
+          "transferencias_discrecionales": 78.4,
+          "gasto_total": 2953.5,
+          "ingresos_totales": 2848.3,
+          "dependencia_pct": 66.9
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 593.9,
+          "transferencias_automaticas": 1996.8,
+          "transferencias_discrecionales": 158.9,
+          "gasto_total": 3016.2,
+          "ingresos_totales": 2749.6,
+          "dependencia_pct": 78.4
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 923.4,
+          "transferencias_automaticas": 2681.0,
+          "transferencias_discrecionales": 496.0,
+          "gasto_total": 3741.0,
+          "ingresos_totales": 4100.4,
+          "dependencia_pct": 77.5
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 1246.7,
+          "transferencias_automaticas": 3553.8,
+          "transferencias_discrecionales": 363.0,
+          "gasto_total": 5148.5,
+          "ingresos_totales": 5163.5,
+          "dependencia_pct": 75.9
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 1419.8,
+          "transferencias_automaticas": 4517.3,
+          "transferencias_discrecionales": 546.4,
+          "gasto_total": 6589.2,
+          "ingresos_totales": 6483.5,
+          "dependencia_pct": 78.1
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 1562.5,
+          "transferencias_automaticas": 5886.9,
+          "transferencias_discrecionales": 983.2,
+          "gasto_total": 8780.7,
+          "ingresos_totales": 8432.6,
+          "dependencia_pct": 81.5
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 2078.9,
+          "transferencias_automaticas": 8090.2,
+          "transferencias_discrecionales": 1508.7,
+          "gasto_total": 11576.2,
+          "ingresos_totales": 11677.7,
+          "dependencia_pct": 82.2
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 2540.5,
+          "transferencias_automaticas": 11039.3,
+          "transferencias_discrecionales": 2035.4,
+          "gasto_total": 15975.2,
+          "ingresos_totales": 15615.1,
+          "dependencia_pct": 83.7
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 3544.3,
+          "transferencias_automaticas": 14157.6,
+          "transferencias_discrecionales": 2074.7,
+          "gasto_total": 19850.9,
+          "ingresos_totales": 19776.6,
+          "dependencia_pct": 82.1
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 4749.3,
+          "transferencias_automaticas": 19081.2,
+          "transferencias_discrecionales": 3104.7,
+          "gasto_total": 26351.0,
+          "ingresos_totales": 26935.2,
+          "dependencia_pct": 82.4
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 7216.4,
+          "transferencias_automaticas": 26793.9,
+          "transferencias_discrecionales": 2804.7,
+          "gasto_total": 33180.4,
+          "ingresos_totales": 36814.9,
+          "dependencia_pct": 80.4
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 12247.1,
+          "transferencias_automaticas": 39722.5,
+          "transferencias_discrecionales": 1817.9,
+          "gasto_total": 49945.6,
+          "ingresos_totales": 53787.5,
+          "dependencia_pct": 77.2
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 10962.3,
+          "transferencias_automaticas": 55441.8,
+          "transferencias_discrecionales": 3791.7,
+          "gasto_total": 70355.6,
+          "ingresos_totales": 70195.8,
+          "dependencia_pct": 84.4
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 19658.2,
+          "transferencias_automaticas": 90390.1,
+          "transferencias_discrecionales": 7538.5,
+          "gasto_total": 119462.4,
+          "ingresos_totales": 117586.9,
+          "dependencia_pct": 83.3
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 42965.9,
+          "transferencias_automaticas": 166946.5,
+          "transferencias_discrecionales": 14769.0,
+          "gasto_total": 221649.2,
+          "ingresos_totales": 224681.5,
+          "dependencia_pct": 80.9
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 115851.6,
+          "transferencias_automaticas": 367782.9,
+          "transferencias_discrecionales": 43671.3,
+          "gasto_total": 540815.2,
+          "ingresos_totales": 527305.8,
+          "dependencia_pct": 78.0
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 244960.7,
+          "transferencias_automaticas": 1086044.9,
+          "transferencias_discrecionales": 28232.3,
+          "gasto_total": 1390648.7,
+          "ingresos_totales": 1359237.9,
+          "dependencia_pct": 82.0
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 349371.5,
+          "transferencias_automaticas": 1537681.2,
+          "transferencias_discrecionales": 49187.5,
+          "gasto_total": 1970121.7,
+          "ingresos_totales": 1936240.3,
+          "dependencia_pct": 82.0
+        }
+      ]
     },
     "Córdoba": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 2687.6,
+          "transferencias_automaticas": 2930.7,
+          "transferencias_discrecionales": 702.7,
+          "gasto_total": 6186.2,
+          "ingresos_totales": 6320.9,
+          "dependencia_pct": 57.5
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 3469.4,
+          "transferencias_automaticas": 3616.5,
+          "transferencias_discrecionales": 777.2,
+          "gasto_total": 7847.1,
+          "ingresos_totales": 7863.1,
+          "dependencia_pct": 55.9
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 4334.9,
+          "transferencias_automaticas": 4757.2,
+          "transferencias_discrecionales": 1043.4,
+          "gasto_total": 10126.0,
+          "ingresos_totales": 10135.5,
+          "dependencia_pct": 57.2
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 6293.5,
+          "transferencias_automaticas": 5996.6,
+          "transferencias_discrecionales": 1231.4,
+          "gasto_total": 13946.4,
+          "ingresos_totales": 13521.5,
+          "dependencia_pct": 53.5
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 7819.8,
+          "transferencias_automaticas": 6542.3,
+          "transferencias_discrecionales": 1679.9,
+          "gasto_total": 17140.9,
+          "ingresos_totales": 16042.0,
+          "dependencia_pct": 51.3
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 10521.4,
+          "transferencias_automaticas": 8820.8,
+          "transferencias_discrecionales": 4232.0,
+          "gasto_total": 22361.6,
+          "ingresos_totales": 23574.2,
+          "dependencia_pct": 55.4
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 14147.5,
+          "transferencias_automaticas": 11725.4,
+          "transferencias_discrecionales": 2149.0,
+          "gasto_total": 30055.0,
+          "ingresos_totales": 28022.0,
+          "dependencia_pct": 49.5
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 18153.6,
+          "transferencias_automaticas": 14902.2,
+          "transferencias_discrecionales": 2196.6,
+          "gasto_total": 35450.5,
+          "ingresos_totales": 35252.4,
+          "dependencia_pct": 48.5
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 25313.8,
+          "transferencias_automaticas": 19449.1,
+          "transferencias_discrecionales": 2615.2,
+          "gasto_total": 46487.3,
+          "ingresos_totales": 47378.1,
+          "dependencia_pct": 46.6
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 35096.3,
+          "transferencias_automaticas": 26756.8,
+          "transferencias_discrecionales": 3386.6,
+          "gasto_total": 64281.4,
+          "ingresos_totales": 65239.8,
+          "dependencia_pct": 46.2
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 46121.0,
+          "transferencias_automaticas": 36908.4,
+          "transferencias_discrecionales": 4284.1,
+          "gasto_total": 90019.0,
+          "ingresos_totales": 87313.5,
+          "dependencia_pct": 47.2
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 63820.4,
+          "transferencias_automaticas": 51826.9,
+          "transferencias_discrecionales": 12470.2,
+          "gasto_total": 121880.0,
+          "ingresos_totales": 128117.6,
+          "dependencia_pct": 50.2
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 83174.8,
+          "transferencias_automaticas": 67999.1,
+          "transferencias_discrecionales": 13406.5,
+          "gasto_total": 170607.6,
+          "ingresos_totales": 164580.5,
+          "dependencia_pct": 49.5
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 109955.5,
+          "transferencias_automaticas": 93018.8,
+          "transferencias_discrecionales": 13834.9,
+          "gasto_total": 236598.5,
+          "ingresos_totales": 216809.3,
+          "dependencia_pct": 49.3
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 153694.8,
+          "transferencias_automaticas": 133847.1,
+          "transferencias_discrecionales": 17470.8,
+          "gasto_total": 308980.1,
+          "ingresos_totales": 305012.8,
+          "dependencia_pct": 49.6
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 194569.7,
+          "transferencias_automaticas": 182817.3,
+          "transferencias_discrecionales": 24699.6,
+          "gasto_total": 380892.5,
+          "ingresos_totales": 402086.6,
+          "dependencia_pct": 51.6
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 315301.4,
+          "transferencias_automaticas": 297796.8,
+          "transferencias_discrecionales": 42127.3,
+          "gasto_total": 588930.8,
+          "ingresos_totales": 655225.6,
+          "dependencia_pct": 51.9
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 572663.8,
+          "transferencias_automaticas": 548828.2,
+          "transferencias_discrecionales": 47330.0,
+          "gasto_total": 1072390.5,
+          "ingresos_totales": 1168822.1,
+          "dependencia_pct": 51.0
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 1466963.6,
+          "transferencias_automaticas": 1211378.2,
+          "transferencias_discrecionales": 113690.6,
+          "gasto_total": 2717204.7,
+          "ingresos_totales": 2792032.4,
+          "dependencia_pct": 47.5
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 4242753.4,
+          "transferencias_automaticas": 3565932.9,
+          "transferencias_discrecionales": 169066.2,
+          "gasto_total": 7596553.7,
+          "ingresos_totales": 7977752.5,
+          "dependencia_pct": 46.8
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 6495632.0,
+          "transferencias_automaticas": 5021540.3,
+          "transferencias_discrecionales": 344750.0,
+          "gasto_total": 11801930.3,
+          "ingresos_totales": 11861922.4,
+          "dependencia_pct": 45.2
+        }
+      ]
     },
     "Corrientes": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 456.7,
+          "transferencias_automaticas": 1267.7,
+          "transferencias_discrecionales": 190.4,
+          "gasto_total": 1983.4,
+          "ingresos_totales": 1914.8,
+          "dependencia_pct": 76.1
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 549.9,
+          "transferencias_automaticas": 1567.0,
+          "transferencias_discrecionales": 177.4,
+          "gasto_total": 2192.4,
+          "ingresos_totales": 2294.3,
+          "dependencia_pct": 76.0
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 746.5,
+          "transferencias_automaticas": 2060.4,
+          "transferencias_discrecionales": 237.8,
+          "gasto_total": 2848.7,
+          "ingresos_totales": 3044.7,
+          "dependencia_pct": 75.5
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 936.0,
+          "transferencias_automaticas": 2595.2,
+          "transferencias_discrecionales": 218.5,
+          "gasto_total": 3687.1,
+          "ingresos_totales": 3749.6,
+          "dependencia_pct": 75.0
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 1038.3,
+          "transferencias_automaticas": 2838.6,
+          "transferencias_discrecionales": 295.4,
+          "gasto_total": 4101.2,
+          "ingresos_totales": 4172.3,
+          "dependencia_pct": 75.1
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 1450.6,
+          "transferencias_automaticas": 3821.5,
+          "transferencias_discrecionales": 956.6,
+          "gasto_total": 5192.8,
+          "ingresos_totales": 6228.7,
+          "dependencia_pct": 76.7
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 2121.2,
+          "transferencias_automaticas": 5077.6,
+          "transferencias_discrecionales": 764.5,
+          "gasto_total": 8257.3,
+          "ingresos_totales": 7963.4,
+          "dependencia_pct": 73.4
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 2811.8,
+          "transferencias_automaticas": 6462.2,
+          "transferencias_discrecionales": 833.2,
+          "gasto_total": 10349.5,
+          "ingresos_totales": 10107.2,
+          "dependencia_pct": 72.2
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 3538.0,
+          "transferencias_automaticas": 8435.8,
+          "transferencias_discrecionales": 1051.1,
+          "gasto_total": 13326.6,
+          "ingresos_totales": 13024.9,
+          "dependencia_pct": 72.8
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 5770.5,
+          "transferencias_automaticas": 11624.9,
+          "transferencias_discrecionales": 1649.6,
+          "gasto_total": 17853.0,
+          "ingresos_totales": 19044.9,
+          "dependencia_pct": 69.7
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 6582.1,
+          "transferencias_automaticas": 15851.5,
+          "transferencias_discrecionales": 2421.9,
+          "gasto_total": 23791.8,
+          "ingresos_totales": 24855.4,
+          "dependencia_pct": 73.5
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 8978.5,
+          "transferencias_automaticas": 20242.2,
+          "transferencias_discrecionales": 3487.0,
+          "gasto_total": 32269.1,
+          "ingresos_totales": 32707.7,
+          "dependencia_pct": 72.5
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 12802.5,
+          "transferencias_automaticas": 27236.5,
+          "transferencias_discrecionales": 4702.7,
+          "gasto_total": 46767.8,
+          "ingresos_totales": 44741.7,
+          "dependencia_pct": 71.4
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 16432.5,
+          "transferencias_automaticas": 37991.5,
+          "transferencias_discrecionales": 4145.5,
+          "gasto_total": 61286.3,
+          "ingresos_totales": 58569.6,
+          "dependencia_pct": 71.9
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 23752.0,
+          "transferencias_automaticas": 56353.0,
+          "transferencias_discrecionales": 3820.1,
+          "gasto_total": 86567.9,
+          "ingresos_totales": 83925.0,
+          "dependencia_pct": 71.7
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 29038.2,
+          "transferencias_automaticas": 78695.2,
+          "transferencias_discrecionales": 7347.1,
+          "gasto_total": 121749.4,
+          "ingresos_totales": 115080.5,
+          "dependencia_pct": 74.8
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 44683.2,
+          "transferencias_automaticas": 128055.4,
+          "transferencias_discrecionales": 10773.1,
+          "gasto_total": 178383.4,
+          "ingresos_totales": 183511.8,
+          "dependencia_pct": 75.7
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 77315.0,
+          "transferencias_automaticas": 234656.1,
+          "transferencias_discrecionales": 21064.8,
+          "gasto_total": 319098.4,
+          "ingresos_totales": 333035.8,
+          "dependencia_pct": 76.8
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 189439.8,
+          "transferencias_automaticas": 515662.0,
+          "transferencias_discrecionales": 42498.7,
+          "gasto_total": 754737.6,
+          "ingresos_totales": 747600.5,
+          "dependencia_pct": 74.7
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 572479.5,
+          "transferencias_automaticas": 1516097.4,
+          "transferencias_discrecionales": 25640.0,
+          "gasto_total": 2113385.7,
+          "ingresos_totales": 2114216.9,
+          "dependencia_pct": 72.9
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 885378.5,
+          "transferencias_automaticas": 2170004.1,
+          "transferencias_discrecionales": 44816.8,
+          "gasto_total": 3260020.8,
+          "ingresos_totales": 3100199.3,
+          "dependencia_pct": 71.4
+        }
+      ]
+    },
+    "Chaco": {
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 495.0,
+          "transferencias_automaticas": 1637.4,
+          "transferencias_discrecionales": 390.8,
+          "gasto_total": 2439.5,
+          "ingresos_totales": 2523.2,
+          "dependencia_pct": 80.4
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 649.0,
+          "transferencias_automaticas": 2027.6,
+          "transferencias_discrecionales": 368.1,
+          "gasto_total": 2960.2,
+          "ingresos_totales": 3044.6,
+          "dependencia_pct": 78.7
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 932.6,
+          "transferencias_automaticas": 2674.4,
+          "transferencias_discrecionales": 521.6,
+          "gasto_total": 4169.3,
+          "ingresos_totales": 4128.6,
+          "dependencia_pct": 77.4
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 1252.5,
+          "transferencias_automaticas": 3376.5,
+          "transferencias_discrecionales": 993.6,
+          "gasto_total": 5681.0,
+          "ingresos_totales": 5622.6,
+          "dependencia_pct": 77.7
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 1486.4,
+          "transferencias_automaticas": 3686.2,
+          "transferencias_discrecionales": 1494.5,
+          "gasto_total": 7148.2,
+          "ingresos_totales": 6667.0,
+          "dependencia_pct": 77.7
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 1744.1,
+          "transferencias_automaticas": 4979.7,
+          "transferencias_discrecionales": 2092.6,
+          "gasto_total": 8358.9,
+          "ingresos_totales": 8816.4,
+          "dependencia_pct": 80.2
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 2742.0,
+          "transferencias_automaticas": 6635.3,
+          "transferencias_discrecionales": 2326.3,
+          "gasto_total": 11745.8,
+          "ingresos_totales": 11703.6,
+          "dependencia_pct": 76.6
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 3354.3,
+          "transferencias_automaticas": 8451.3,
+          "transferencias_discrecionales": 2969.9,
+          "gasto_total": 14952.1,
+          "ingresos_totales": 14775.5,
+          "dependencia_pct": 77.3
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 4589.3,
+          "transferencias_automaticas": 11044.4,
+          "transferencias_discrecionales": 3777.9,
+          "gasto_total": 19391.2,
+          "ingresos_totales": 19411.6,
+          "dependencia_pct": 76.4
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 6354.0,
+          "transferencias_automaticas": 15227.4,
+          "transferencias_discrecionales": 6490.0,
+          "gasto_total": 27828.9,
+          "ingresos_totales": 28071.3,
+          "dependencia_pct": 77.4
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 8409.0,
+          "transferencias_automaticas": 20835.4,
+          "transferencias_discrecionales": 7845.3,
+          "gasto_total": 37671.4,
+          "ingresos_totales": 37089.7,
+          "dependencia_pct": 77.3
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 12189.5,
+          "transferencias_automaticas": 26652.7,
+          "transferencias_discrecionales": 7162.5,
+          "gasto_total": 51140.8,
+          "ingresos_totales": 46004.8,
+          "dependencia_pct": 73.5
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 16522.8,
+          "transferencias_automaticas": 35873.9,
+          "transferencias_discrecionales": 8127.7,
+          "gasto_total": 65754.2,
+          "ingresos_totales": 60524.5,
+          "dependencia_pct": 72.7
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 20051.0,
+          "transferencias_automaticas": 50171.6,
+          "transferencias_discrecionales": 8438.8,
+          "gasto_total": 81377.5,
+          "ingresos_totales": 78661.3,
+          "dependencia_pct": 74.5
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 26918.1,
+          "transferencias_automaticas": 74425.7,
+          "transferencias_discrecionales": 6412.4,
+          "gasto_total": 113074.2,
+          "ingresos_totales": 107756.2,
+          "dependencia_pct": 75.0
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 37589.2,
+          "transferencias_automaticas": 103859.2,
+          "transferencias_discrecionales": 11448.6,
+          "gasto_total": 144074.2,
+          "ingresos_totales": 152897.1,
+          "dependencia_pct": 75.4
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 60454.3,
+          "transferencias_automaticas": 168941.1,
+          "transferencias_discrecionales": 21007.5,
+          "gasto_total": 247521.3,
+          "ingresos_totales": 250403.0,
+          "dependencia_pct": 75.9
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 118152.0,
+          "transferencias_automaticas": 310889.1,
+          "transferencias_discrecionales": 31244.3,
+          "gasto_total": 457779.6,
+          "ingresos_totales": 460285.4,
+          "dependencia_pct": 74.3
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 266543.9,
+          "transferencias_automaticas": 684239.4,
+          "transferencias_discrecionales": 83938.8,
+          "gasto_total": 1082319.2,
+          "ingresos_totales": 1034722.2,
+          "dependencia_pct": 74.2
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 722413.3,
+          "transferencias_automaticas": 2010145.2,
+          "transferencias_discrecionales": 44521.8,
+          "gasto_total": 2991901.9,
+          "ingresos_totales": 2777080.3,
+          "dependencia_pct": 74.0
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 1114132.8,
+          "transferencias_automaticas": 2917372.1,
+          "transferencias_discrecionales": 142858.8,
+          "gasto_total": 4415868.2,
+          "ingresos_totales": 4174363.7,
+          "dependencia_pct": 73.3
+        }
+      ]
+    },
+    "Chubut": {
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 1394.6,
+          "transferencias_automaticas": 587.5,
+          "transferencias_discrecionales": 126.5,
+          "gasto_total": 2105.8,
+          "ingresos_totales": 2108.6,
+          "dependencia_pct": 33.9
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 1863.5,
+          "transferencias_automaticas": 714.7,
+          "transferencias_discrecionales": 187.1,
+          "gasto_total": 2504.8,
+          "ingresos_totales": 2765.3,
+          "dependencia_pct": 32.6
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 2154.4,
+          "transferencias_automaticas": 923.5,
+          "transferencias_discrecionales": 181.4,
+          "gasto_total": 3030.2,
+          "ingresos_totales": 3259.3,
+          "dependencia_pct": 33.9
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 2970.4,
+          "transferencias_automaticas": 1150.1,
+          "transferencias_discrecionales": 242.9,
+          "gasto_total": 4089.7,
+          "ingresos_totales": 4363.5,
+          "dependencia_pct": 31.9
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 3125.7,
+          "transferencias_automaticas": 1256.6,
+          "transferencias_discrecionales": 377.6,
+          "gasto_total": 4529.3,
+          "ingresos_totales": 4759.8,
+          "dependencia_pct": 34.3
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 4307.7,
+          "transferencias_automaticas": 1678.1,
+          "transferencias_discrecionales": 313.7,
+          "gasto_total": 6016.7,
+          "ingresos_totales": 6299.5,
+          "dependencia_pct": 31.6
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 4919.3,
+          "transferencias_automaticas": 2210.4,
+          "transferencias_discrecionales": 288.9,
+          "gasto_total": 7569.7,
+          "ingresos_totales": 7418.6,
+          "dependencia_pct": 33.7
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 5903.0,
+          "transferencias_automaticas": 2810.7,
+          "transferencias_discrecionales": 474.0,
+          "gasto_total": 9271.8,
+          "ingresos_totales": 9187.7,
+          "dependencia_pct": 35.8
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 7414.1,
+          "transferencias_automaticas": 3649.0,
+          "transferencias_discrecionales": 709.5,
+          "gasto_total": 12021.9,
+          "ingresos_totales": 11772.5,
+          "dependencia_pct": 37.0
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 11914.6,
+          "transferencias_automaticas": 5000.6,
+          "transferencias_discrecionales": 930.2,
+          "gasto_total": 18859.9,
+          "ingresos_totales": 17845.4,
+          "dependencia_pct": 33.2
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 13959.6,
+          "transferencias_automaticas": 6809.6,
+          "transferencias_discrecionales": 1194.8,
+          "gasto_total": 24417.7,
+          "ingresos_totales": 21963.9,
+          "dependencia_pct": 36.4
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 17670.3,
+          "transferencias_automaticas": 8706.8,
+          "transferencias_discrecionales": 1639.5,
+          "gasto_total": 33183.0,
+          "ingresos_totales": 28016.6,
+          "dependencia_pct": 36.9
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 22589.0,
+          "transferencias_automaticas": 11702.9,
+          "transferencias_discrecionales": 2393.6,
+          "gasto_total": 43898.4,
+          "ingresos_totales": 36685.5,
+          "dependencia_pct": 38.4
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 37331.0,
+          "transferencias_automaticas": 16258.2,
+          "transferencias_discrecionales": 2061.0,
+          "gasto_total": 53238.0,
+          "ingresos_totales": 55650.1,
+          "dependencia_pct": 32.9
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 57569.7,
+          "transferencias_automaticas": 24094.0,
+          "transferencias_discrecionales": 913.2,
+          "gasto_total": 90240.5,
+          "ingresos_totales": 82576.8,
+          "dependencia_pct": 30.3
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 67026.0,
+          "transferencias_automaticas": 33561.8,
+          "transferencias_discrecionales": 3189.3,
+          "gasto_total": 121487.6,
+          "ingresos_totales": 103777.1,
+          "dependencia_pct": 35.4
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 108564.7,
+          "transferencias_automaticas": 54713.8,
+          "transferencias_discrecionales": 4732.7,
+          "gasto_total": 158744.9,
+          "ingresos_totales": 168011.3,
+          "dependencia_pct": 35.4
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 182689.1,
+          "transferencias_automaticas": 99735.1,
+          "transferencias_discrecionales": 5345.8,
+          "gasto_total": 283631.5,
+          "ingresos_totales": 287770.0,
+          "dependencia_pct": 36.5
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 425846.0,
+          "transferencias_automaticas": 218237.5,
+          "transferencias_discrecionales": 14362.5,
+          "gasto_total": 615545.2,
+          "ingresos_totales": 658446.0,
+          "dependencia_pct": 35.3
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 1251942.2,
+          "transferencias_automaticas": 645727.6,
+          "transferencias_discrecionales": 12248.8,
+          "gasto_total": 1836447.6,
+          "ingresos_totales": 1909918.6,
+          "dependencia_pct": 34.5
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 1782107.7,
+          "transferencias_automaticas": 930533.9,
+          "transferencias_discrecionales": 31105.6,
+          "gasto_total": 2968221.9,
+          "ingresos_totales": 2743747.3,
+          "dependencia_pct": 35.0
+        }
+      ]
     },
     "Entre Ríos": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 1001.8,
+          "transferencias_automaticas": 1629.7,
+          "transferencias_discrecionales": 294.4,
+          "gasto_total": 2762.9,
+          "ingresos_totales": 2925.8,
+          "dependencia_pct": 65.8
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 1300.4,
+          "transferencias_automaticas": 2006.6,
+          "transferencias_discrecionales": 313.6,
+          "gasto_total": 3552.9,
+          "ingresos_totales": 3620.6,
+          "dependencia_pct": 64.1
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 1584.0,
+          "transferencias_automaticas": 2633.0,
+          "transferencias_discrecionales": 537.6,
+          "gasto_total": 4591.5,
+          "ingresos_totales": 4754.6,
+          "dependencia_pct": 66.7
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 2107.2,
+          "transferencias_automaticas": 3313.2,
+          "transferencias_discrecionales": 602.6,
+          "gasto_total": 6133.1,
+          "ingresos_totales": 6022.9,
+          "dependencia_pct": 65.0
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 2419.0,
+          "transferencias_automaticas": 3615.7,
+          "transferencias_discrecionales": 1061.0,
+          "gasto_total": 7513.9,
+          "ingresos_totales": 7095.7,
+          "dependencia_pct": 65.9
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 2984.9,
+          "transferencias_automaticas": 4865.7,
+          "transferencias_discrecionales": 1881.0,
+          "gasto_total": 9508.1,
+          "ingresos_totales": 9731.5,
+          "dependencia_pct": 69.3
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 4263.0,
+          "transferencias_automaticas": 6457.2,
+          "transferencias_discrecionales": 1863.7,
+          "gasto_total": 13408.3,
+          "ingresos_totales": 12583.9,
+          "dependencia_pct": 66.1
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 5739.4,
+          "transferencias_automaticas": 8202.4,
+          "transferencias_discrecionales": 2002.5,
+          "gasto_total": 16542.4,
+          "ingresos_totales": 15944.3,
+          "dependencia_pct": 64.0
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 7497.6,
+          "transferencias_automaticas": 10729.4,
+          "transferencias_discrecionales": 2474.6,
+          "gasto_total": 21890.3,
+          "ingresos_totales": 20701.6,
+          "dependencia_pct": 63.8
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 11289.7,
+          "transferencias_automaticas": 14756.3,
+          "transferencias_discrecionales": 3489.0,
+          "gasto_total": 31060.3,
+          "ingresos_totales": 29535.0,
+          "dependencia_pct": 61.8
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 14366.8,
+          "transferencias_automaticas": 20101.8,
+          "transferencias_discrecionales": 4055.3,
+          "gasto_total": 40686.2,
+          "ingresos_totales": 38524.0,
+          "dependencia_pct": 62.7
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 19583.4,
+          "transferencias_automaticas": 25744.8,
+          "transferencias_discrecionales": 5298.7,
+          "gasto_total": 55576.8,
+          "ingresos_totales": 50626.9,
+          "dependencia_pct": 61.3
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 27147.6,
+          "transferencias_automaticas": 34551.1,
+          "transferencias_discrecionales": 5861.7,
+          "gasto_total": 71611.8,
+          "ingresos_totales": 67560.3,
+          "dependencia_pct": 59.8
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 35215.3,
+          "transferencias_automaticas": 48465.9,
+          "transferencias_discrecionales": 8203.1,
+          "gasto_total": 92541.9,
+          "ingresos_totales": 91884.3,
+          "dependencia_pct": 61.7
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 51224.5,
+          "transferencias_automaticas": 71772.1,
+          "transferencias_discrecionales": 5461.9,
+          "gasto_total": 136720.1,
+          "ingresos_totales": 128458.4,
+          "dependencia_pct": 60.1
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 65150.7,
+          "transferencias_automaticas": 100679.2,
+          "transferencias_discrecionales": 15117.3,
+          "gasto_total": 176924.5,
+          "ingresos_totales": 180947.1,
+          "dependencia_pct": 64.0
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 114367.0,
+          "transferencias_automaticas": 164078.5,
+          "transferencias_discrecionales": 15288.4,
+          "gasto_total": 273490.3,
+          "ingresos_totales": 293733.9,
+          "dependencia_pct": 61.1
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 203950.2,
+          "transferencias_automaticas": 302145.1,
+          "transferencias_discrecionales": 26689.4,
+          "gasto_total": 515271.5,
+          "ingresos_totales": 532784.7,
+          "dependencia_pct": 61.7
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 455191.8,
+          "transferencias_automaticas": 665770.0,
+          "transferencias_discrecionales": 55441.4,
+          "gasto_total": 1246260.5,
+          "ingresos_totales": 1176403.1,
+          "dependencia_pct": 61.3
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 1253123.3,
+          "transferencias_automaticas": 1959381.0,
+          "transferencias_discrecionales": 35487.1,
+          "gasto_total": 3282783.7,
+          "ingresos_totales": 3247991.4,
+          "dependencia_pct": 61.4
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 1957102.2,
+          "transferencias_automaticas": 2790869.5,
+          "transferencias_discrecionales": 106314.6,
+          "gasto_total": 4988125.3,
+          "ingresos_totales": 4854286.3,
+          "dependencia_pct": 59.7
+        }
+      ]
     },
     "Formosa": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 239.3,
+          "transferencias_automaticas": 1197.5,
+          "transferencias_discrecionales": 160.1,
+          "gasto_total": 1591.1,
+          "ingresos_totales": 1596.9,
+          "dependencia_pct": 85.0
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 308.7,
+          "transferencias_automaticas": 1479.1,
+          "transferencias_discrecionales": 203.9,
+          "gasto_total": 1897.1,
+          "ingresos_totales": 1991.6,
+          "dependencia_pct": 84.5
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 403.9,
+          "transferencias_automaticas": 1944.8,
+          "transferencias_discrecionales": 275.0,
+          "gasto_total": 2568.5,
+          "ingresos_totales": 2623.7,
+          "dependencia_pct": 84.6
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 590.2,
+          "transferencias_automaticas": 2449.9,
+          "transferencias_discrecionales": 332.9,
+          "gasto_total": 3326.9,
+          "ingresos_totales": 3373.1,
+          "dependencia_pct": 82.5
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 662.1,
+          "transferencias_automaticas": 2680.5,
+          "transferencias_discrecionales": 544.5,
+          "gasto_total": 3862.6,
+          "ingresos_totales": 3887.1,
+          "dependencia_pct": 83.0
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 852.5,
+          "transferencias_automaticas": 3609.7,
+          "transferencias_discrecionales": 1302.9,
+          "gasto_total": 5666.1,
+          "ingresos_totales": 5765.1,
+          "dependencia_pct": 85.2
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 1278.6,
+          "transferencias_automaticas": 4795.5,
+          "transferencias_discrecionales": 1652.7,
+          "gasto_total": 7706.3,
+          "ingresos_totales": 7726.8,
+          "dependencia_pct": 83.5
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 1559.8,
+          "transferencias_automaticas": 6101.5,
+          "transferencias_discrecionales": 2181.1,
+          "gasto_total": 9784.8,
+          "ingresos_totales": 9842.4,
+          "dependencia_pct": 84.2
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 2181.2,
+          "transferencias_automaticas": 7969.0,
+          "transferencias_discrecionales": 2635.9,
+          "gasto_total": 12718.6,
+          "ingresos_totales": 12786.1,
+          "dependencia_pct": 82.9
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 3079.0,
+          "transferencias_automaticas": 10964.5,
+          "transferencias_discrecionales": 3120.6,
+          "gasto_total": 17095.6,
+          "ingresos_totales": 17164.1,
+          "dependencia_pct": 82.1
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 4348.1,
+          "transferencias_automaticas": 15025.4,
+          "transferencias_discrecionales": 4058.1,
+          "gasto_total": 23335.5,
+          "ingresos_totales": 23431.6,
+          "dependencia_pct": 81.4
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 6059.3,
+          "transferencias_automaticas": 19232.8,
+          "transferencias_discrecionales": 4610.0,
+          "gasto_total": 29745.0,
+          "ingresos_totales": 29902.2,
+          "dependencia_pct": 79.7
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 8259.8,
+          "transferencias_automaticas": 25917.8,
+          "transferencias_discrecionales": 4771.9,
+          "gasto_total": 38954.9,
+          "ingresos_totales": 38949.5,
+          "dependencia_pct": 78.8
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 10730.1,
+          "transferencias_automaticas": 36197.9,
+          "transferencias_discrecionales": 4233.4,
+          "gasto_total": 50914.5,
+          "ingresos_totales": 51161.3,
+          "dependencia_pct": 79.0
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 16205.4,
+          "transferencias_automaticas": 53773.4,
+          "transferencias_discrecionales": 2337.9,
+          "gasto_total": 71978.3,
+          "ingresos_totales": 72316.8,
+          "dependencia_pct": 77.6
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 17300.7,
+          "transferencias_automaticas": 75054.3,
+          "transferencias_discrecionales": 6545.8,
+          "gasto_total": 98011.7,
+          "ingresos_totales": 98900.8,
+          "dependencia_pct": 82.5
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 28372.5,
+          "transferencias_automaticas": 122152.5,
+          "transferencias_discrecionales": 13456.3,
+          "gasto_total": 162281.3,
+          "ingresos_totales": 163981.3,
+          "dependencia_pct": 82.7
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 56117.5,
+          "transferencias_automaticas": 224829.3,
+          "transferencias_discrecionales": 25064.0,
+          "gasto_total": 300319.1,
+          "ingresos_totales": 306010.8,
+          "dependencia_pct": 81.7
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 123597.9,
+          "transferencias_automaticas": 494631.4,
+          "transferencias_discrecionales": 56906.6,
+          "gasto_total": 667421.6,
+          "ingresos_totales": 675136.0,
+          "dependencia_pct": 81.7
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 273941.2,
+          "transferencias_automaticas": 1456963.3,
+          "transferencias_discrecionales": 11405.7,
+          "gasto_total": 1694242.7,
+          "ingresos_totales": 1742310.2,
+          "dependencia_pct": 84.3
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 697920.7,
+          "transferencias_automaticas": 2065122.9,
+          "transferencias_discrecionales": 17950.8,
+          "gasto_total": 2746686.2,
+          "ingresos_totales": 2780994.4,
+          "dependencia_pct": 74.9
+        }
+      ]
     },
     "Jujuy": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 156.9,
+          "transferencias_automaticas": 967.4,
+          "transferencias_discrecionales": 270.8,
+          "gasto_total": 1362.1,
+          "ingresos_totales": 1395.0,
+          "dependencia_pct": 88.8
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 190.4,
+          "transferencias_automaticas": 1190.4,
+          "transferencias_discrecionales": 340.0,
+          "gasto_total": 1688.4,
+          "ingresos_totales": 1720.7,
+          "dependencia_pct": 88.9
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 236.8,
+          "transferencias_automaticas": 1558.4,
+          "transferencias_discrecionales": 448.5,
+          "gasto_total": 2336.7,
+          "ingresos_totales": 2243.7,
+          "dependencia_pct": 89.4
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 285.0,
+          "transferencias_automaticas": 1956.7,
+          "transferencias_discrecionales": 537.2,
+          "gasto_total": 2959.3,
+          "ingresos_totales": 2779.0,
+          "dependencia_pct": 89.7
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 355.1,
+          "transferencias_automaticas": 2135.9,
+          "transferencias_discrecionales": 1091.4,
+          "gasto_total": 3717.4,
+          "ingresos_totales": 3582.5,
+          "dependencia_pct": 90.1
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 439.6,
+          "transferencias_automaticas": 2869.8,
+          "transferencias_discrecionales": 1578.5,
+          "gasto_total": 4607.5,
+          "ingresos_totales": 4888.0,
+          "dependencia_pct": 91.0
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 595.6,
+          "transferencias_automaticas": 3807.4,
+          "transferencias_discrecionales": 1568.8,
+          "gasto_total": 6259.5,
+          "ingresos_totales": 5971.8,
+          "dependencia_pct": 90.0
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 761.7,
+          "transferencias_automaticas": 4839.8,
+          "transferencias_discrecionales": 2103.6,
+          "gasto_total": 8188.9,
+          "ingresos_totales": 7705.1,
+          "dependencia_pct": 90.1
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 1104.6,
+          "transferencias_automaticas": 6299.3,
+          "transferencias_discrecionales": 2423.9,
+          "gasto_total": 11020.8,
+          "ingresos_totales": 9827.8,
+          "dependencia_pct": 88.8
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 1564.6,
+          "transferencias_automaticas": 8665.0,
+          "transferencias_discrecionales": 4072.9,
+          "gasto_total": 15434.8,
+          "ingresos_totales": 14302.5,
+          "dependencia_pct": 89.1
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 2159.2,
+          "transferencias_automaticas": 11786.3,
+          "transferencias_discrecionales": 5702.5,
+          "gasto_total": 21316.8,
+          "ingresos_totales": 19648.0,
+          "dependencia_pct": 89.0
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 3135.2,
+          "transferencias_automaticas": 15076.2,
+          "transferencias_discrecionales": 4732.7,
+          "gasto_total": 27934.8,
+          "ingresos_totales": 22944.0,
+          "dependencia_pct": 86.3
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 4425.0,
+          "transferencias_automaticas": 20296.6,
+          "transferencias_discrecionales": 7053.8,
+          "gasto_total": 37180.4,
+          "ingresos_totales": 31775.4,
+          "dependencia_pct": 86.1
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 5720.3,
+          "transferencias_automaticas": 28411.6,
+          "transferencias_discrecionales": 6993.5,
+          "gasto_total": 46966.9,
+          "ingresos_totales": 41125.4,
+          "dependencia_pct": 86.1
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 8610.2,
+          "transferencias_automaticas": 42113.4,
+          "transferencias_discrecionales": 5817.2,
+          "gasto_total": 61785.2,
+          "ingresos_totales": 56540.7,
+          "dependencia_pct": 84.8
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 9670.7,
+          "transferencias_automaticas": 58584.0,
+          "transferencias_discrecionales": 10059.7,
+          "gasto_total": 78625.8,
+          "ingresos_totales": 78314.4,
+          "dependencia_pct": 87.7
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 20586.6,
+          "transferencias_automaticas": 95404.4,
+          "transferencias_discrecionales": 12697.2,
+          "gasto_total": 123834.3,
+          "ingresos_totales": 128688.2,
+          "dependencia_pct": 84.0
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 33716.3,
+          "transferencias_automaticas": 175440.8,
+          "transferencias_discrecionales": 18518.3,
+          "gasto_total": 216240.2,
+          "ingresos_totales": 227675.5,
+          "dependencia_pct": 85.2
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 104682.3,
+          "transferencias_automaticas": 385564.8,
+          "transferencias_discrecionales": 48918.2,
+          "gasto_total": 546156.3,
+          "ingresos_totales": 539165.4,
+          "dependencia_pct": 80.6
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 406207.9,
+          "transferencias_automaticas": 1135512.9,
+          "transferencias_discrecionales": 89500.5,
+          "gasto_total": 1417693.5,
+          "ingresos_totales": 1631221.3,
+          "dependencia_pct": 75.1
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 556608.7,
+          "transferencias_automaticas": 1643293.7,
+          "transferencias_discrecionales": 144317.2,
+          "gasto_total": 2320293.2,
+          "ingresos_totales": 2344219.7,
+          "dependencia_pct": 76.3
+        }
+      ]
     },
     "La Pampa": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 578.8,
+          "transferencias_automaticas": 640.5,
+          "transferencias_discrecionales": 223.1,
+          "gasto_total": 1176.0,
+          "ingresos_totales": 1442.4,
+          "dependencia_pct": 59.9
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 778.8,
+          "transferencias_automaticas": 787.5,
+          "transferencias_discrecionales": 190.9,
+          "gasto_total": 1413.6,
+          "ingresos_totales": 1757.2,
+          "dependencia_pct": 55.7
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 967.5,
+          "transferencias_automaticas": 1023.5,
+          "transferencias_discrecionales": 200.6,
+          "gasto_total": 2074.6,
+          "ingresos_totales": 2191.5,
+          "dependencia_pct": 55.9
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 1190.1,
+          "transferencias_automaticas": 1279.7,
+          "transferencias_discrecionales": 268.2,
+          "gasto_total": 2306.0,
+          "ingresos_totales": 2738.0,
+          "dependencia_pct": 56.5
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 1393.0,
+          "transferencias_automaticas": 1397.6,
+          "transferencias_discrecionales": 283.2,
+          "gasto_total": 3089.3,
+          "ingresos_totales": 3073.8,
+          "dependencia_pct": 54.7
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 1906.1,
+          "transferencias_automaticas": 1874.8,
+          "transferencias_discrecionales": 718.8,
+          "gasto_total": 4844.8,
+          "ingresos_totales": 4499.8,
+          "dependencia_pct": 57.6
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 2417.2,
+          "transferencias_automaticas": 2472.2,
+          "transferencias_discrecionales": 468.1,
+          "gasto_total": 5716.0,
+          "ingresos_totales": 5357.5,
+          "dependencia_pct": 54.9
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 3167.5,
+          "transferencias_automaticas": 3139.4,
+          "transferencias_discrecionales": 502.9,
+          "gasto_total": 6455.5,
+          "ingresos_totales": 6809.7,
+          "dependencia_pct": 53.5
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 4170.5,
+          "transferencias_automaticas": 4077.3,
+          "transferencias_discrecionales": 886.6,
+          "gasto_total": 8285.2,
+          "ingresos_totales": 9134.4,
+          "dependencia_pct": 54.3
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 5679.5,
+          "transferencias_automaticas": 5594.6,
+          "transferencias_discrecionales": 834.8,
+          "gasto_total": 11639.7,
+          "ingresos_totales": 12108.8,
+          "dependencia_pct": 53.1
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 7047.1,
+          "transferencias_automaticas": 7598.5,
+          "transferencias_discrecionales": 632.7,
+          "gasto_total": 14805.2,
+          "ingresos_totales": 15278.3,
+          "dependencia_pct": 53.9
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 10060.3,
+          "transferencias_automaticas": 9760.1,
+          "transferencias_discrecionales": 2558.4,
+          "gasto_total": 22338.4,
+          "ingresos_totales": 22378.7,
+          "dependencia_pct": 55.0
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 14538.5,
+          "transferencias_automaticas": 13058.1,
+          "transferencias_discrecionales": 1987.9,
+          "gasto_total": 28742.6,
+          "ingresos_totales": 29584.5,
+          "dependencia_pct": 50.9
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 18244.0,
+          "transferencias_automaticas": 18368.6,
+          "transferencias_discrecionales": 1588.2,
+          "gasto_total": 37308.9,
+          "ingresos_totales": 38200.8,
+          "dependencia_pct": 52.2
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 30209.7,
+          "transferencias_automaticas": 27931.8,
+          "transferencias_discrecionales": 1392.9,
+          "gasto_total": 57190.7,
+          "ingresos_totales": 59534.4,
+          "dependencia_pct": 49.3
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 38973.4,
+          "transferencias_automaticas": 39015.5,
+          "transferencias_discrecionales": 4135.5,
+          "gasto_total": 79304.8,
+          "ingresos_totales": 82124.5,
+          "dependencia_pct": 52.5
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 58295.2,
+          "transferencias_automaticas": 63701.4,
+          "transferencias_discrecionales": 9102.6,
+          "gasto_total": 123529.0,
+          "ingresos_totales": 131099.1,
+          "dependencia_pct": 55.5
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 104423.2,
+          "transferencias_automaticas": 117179.2,
+          "transferencias_discrecionales": 7164.0,
+          "gasto_total": 231050.1,
+          "ingresos_totales": 228766.4,
+          "dependencia_pct": 54.4
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 229549.1,
+          "transferencias_automaticas": 257677.6,
+          "transferencias_discrecionales": 26677.7,
+          "gasto_total": 490427.0,
+          "ingresos_totales": 513904.3,
+          "dependencia_pct": 55.3
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 638985.4,
+          "transferencias_automaticas": 762167.6,
+          "transferencias_discrecionales": 4567.8,
+          "gasto_total": 1449774.2,
+          "ingresos_totales": 1405720.8,
+          "dependencia_pct": 54.5
+        }
+      ]
     },
     "La Rioja": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 110.4,
+          "transferencias_automaticas": 694.6,
+          "transferencias_discrecionales": 337.0,
+          "gasto_total": 1172.1,
+          "ingresos_totales": 1142.1,
+          "dependencia_pct": 90.3
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 144.7,
+          "transferencias_automaticas": 854.9,
+          "transferencias_discrecionales": 428.1,
+          "gasto_total": 1348.2,
+          "ingresos_totales": 1427.8,
+          "dependencia_pct": 89.9
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 161.9,
+          "transferencias_automaticas": 1117.1,
+          "transferencias_discrecionales": 451.0,
+          "gasto_total": 1579.1,
+          "ingresos_totales": 1729.9,
+          "dependencia_pct": 90.6
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 199.1,
+          "transferencias_automaticas": 1399.7,
+          "transferencias_discrecionales": 573.6,
+          "gasto_total": 2018.6,
+          "ingresos_totales": 2172.4,
+          "dependencia_pct": 90.8
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 231.0,
+          "transferencias_automaticas": 1529.0,
+          "transferencias_discrecionales": 826.1,
+          "gasto_total": 2641.3,
+          "ingresos_totales": 2586.2,
+          "dependencia_pct": 91.1
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 268.2,
+          "transferencias_automaticas": 2049.6,
+          "transferencias_discrecionales": 1114.5,
+          "gasto_total": 3312.6,
+          "ingresos_totales": 3432.3,
+          "dependencia_pct": 92.2
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 386.7,
+          "transferencias_automaticas": 2711.9,
+          "transferencias_discrecionales": 1261.7,
+          "gasto_total": 4351.4,
+          "ingresos_totales": 4360.3,
+          "dependencia_pct": 91.1
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 506.2,
+          "transferencias_automaticas": 3445.1,
+          "transferencias_discrecionales": 1217.7,
+          "gasto_total": 5453.0,
+          "ingresos_totales": 5169.0,
+          "dependencia_pct": 90.2
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 698.9,
+          "transferencias_automaticas": 4487.0,
+          "transferencias_discrecionales": 1702.7,
+          "gasto_total": 6985.8,
+          "ingresos_totales": 6888.7,
+          "dependencia_pct": 89.9
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 885.9,
+          "transferencias_automaticas": 6161.0,
+          "transferencias_discrecionales": 2614.4,
+          "gasto_total": 9561.5,
+          "ingresos_totales": 9661.3,
+          "dependencia_pct": 90.8
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 1173.4,
+          "transferencias_automaticas": 8434.1,
+          "transferencias_discrecionales": 2861.1,
+          "gasto_total": 12160.2,
+          "ingresos_totales": 12468.5,
+          "dependencia_pct": 90.6
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 1542.2,
+          "transferencias_automaticas": 10812.7,
+          "transferencias_discrecionales": 3265.3,
+          "gasto_total": 15434.5,
+          "ingresos_totales": 15620.2,
+          "dependencia_pct": 90.1
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 2299.5,
+          "transferencias_automaticas": 14563.2,
+          "transferencias_discrecionales": 4872.5,
+          "gasto_total": 23920.9,
+          "ingresos_totales": 21735.2,
+          "dependencia_pct": 89.4
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 3641.7,
+          "transferencias_automaticas": 20393.2,
+          "transferencias_discrecionales": 3506.7,
+          "gasto_total": 29847.6,
+          "ingresos_totales": 27541.6,
+          "dependencia_pct": 86.8
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 5398.5,
+          "transferencias_automaticas": 30161.1,
+          "transferencias_discrecionales": 4161.1,
+          "gasto_total": 41530.5,
+          "ingresos_totales": 39720.8,
+          "dependencia_pct": 86.4
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 5211.1,
+          "transferencias_automaticas": 42161.3,
+          "transferencias_discrecionales": 11567.4,
+          "gasto_total": 56887.1,
+          "ingresos_totales": 58939.8,
+          "dependencia_pct": 91.2
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 8618.6,
+          "transferencias_automaticas": 68804.4,
+          "transferencias_discrecionales": 21032.4,
+          "gasto_total": 99186.1,
+          "ingresos_totales": 98455.4,
+          "dependencia_pct": 91.2
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 19112.8,
+          "transferencias_automaticas": 126616.9,
+          "transferencias_discrecionales": 36166.3,
+          "gasto_total": 182284.9,
+          "ingresos_totales": 181896.0,
+          "dependencia_pct": 89.5
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 43949.9,
+          "transferencias_automaticas": 278344.3,
+          "transferencias_discrecionales": 73193.5,
+          "gasto_total": 401718.8,
+          "ingresos_totales": 395487.7,
+          "dependencia_pct": 88.9
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 122606.3,
+          "transferencias_automaticas": 822190.7,
+          "transferencias_discrecionales": 8871.4,
+          "gasto_total": 926507.5,
+          "ingresos_totales": 953668.4,
+          "dependencia_pct": 87.1
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 191095.5,
+          "transferencias_automaticas": 1163068.0,
+          "transferencias_discrecionales": 10619.7,
+          "gasto_total": 1403298.5,
+          "ingresos_totales": 1364783.1,
+          "dependencia_pct": 86.0
+        }
+      ]
     },
     "Mendoza": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 1434.5,
+          "transferencias_automaticas": 1413.9,
+          "transferencias_discrecionales": 138.3,
+          "gasto_total": 2798.3,
+          "ingresos_totales": 2986.7,
+          "dependencia_pct": 52.0
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 2059.3,
+          "transferencias_automaticas": 1738.5,
+          "transferencias_discrecionales": 220.1,
+          "gasto_total": 3741.6,
+          "ingresos_totales": 4017.9,
+          "dependencia_pct": 48.7
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 2121.8,
+          "transferencias_automaticas": 2265.4,
+          "transferencias_discrecionales": 344.0,
+          "gasto_total": 4770.8,
+          "ingresos_totales": 4731.2,
+          "dependencia_pct": 55.2
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 2911.1,
+          "transferencias_automaticas": 2847.8,
+          "transferencias_discrecionales": 381.3,
+          "gasto_total": 6039.8,
+          "ingresos_totales": 6140.2,
+          "dependencia_pct": 52.6
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 3081.7,
+          "transferencias_automaticas": 3107.3,
+          "transferencias_discrecionales": 706.9,
+          "gasto_total": 7359.0,
+          "ingresos_totales": 6896.0,
+          "dependencia_pct": 55.3
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 3773.4,
+          "transferencias_automaticas": 4180.0,
+          "transferencias_discrecionales": 1332.3,
+          "gasto_total": 9219.9,
+          "ingresos_totales": 9285.6,
+          "dependencia_pct": 59.4
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 5142.3,
+          "transferencias_automaticas": 5548.1,
+          "transferencias_discrecionales": 1169.2,
+          "gasto_total": 13146.2,
+          "ingresos_totales": 11859.6,
+          "dependencia_pct": 56.6
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 7595.6,
+          "transferencias_automaticas": 7059.6,
+          "transferencias_discrecionales": 1440.2,
+          "gasto_total": 16729.4,
+          "ingresos_totales": 16095.4,
+          "dependencia_pct": 52.8
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 10083.4,
+          "transferencias_automaticas": 9199.7,
+          "transferencias_discrecionales": 1807.8,
+          "gasto_total": 22267.1,
+          "ingresos_totales": 21090.9,
+          "dependencia_pct": 52.2
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 14083.0,
+          "transferencias_automaticas": 12671.4,
+          "transferencias_discrecionales": 2921.2,
+          "gasto_total": 30088.7,
+          "ingresos_totales": 29675.5,
+          "dependencia_pct": 52.5
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 17296.4,
+          "transferencias_automaticas": 17282.6,
+          "transferencias_discrecionales": 3842.0,
+          "gasto_total": 42186.1,
+          "ingresos_totales": 38420.9,
+          "dependencia_pct": 55.0
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 23959.4,
+          "transferencias_automaticas": 22097.2,
+          "transferencias_discrecionales": 4601.9,
+          "gasto_total": 53678.1,
+          "ingresos_totales": 50658.5,
+          "dependencia_pct": 52.7
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 33691.3,
+          "transferencias_automaticas": 29755.7,
+          "transferencias_discrecionales": 6285.7,
+          "gasto_total": 72886.0,
+          "ingresos_totales": 69732.7,
+          "dependencia_pct": 51.7
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 46122.2,
+          "transferencias_automaticas": 41605.8,
+          "transferencias_discrecionales": 5653.8,
+          "gasto_total": 95990.6,
+          "ingresos_totales": 93381.9,
+          "dependencia_pct": 50.6
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 67947.9,
+          "transferencias_automaticas": 61650.1,
+          "transferencias_discrecionales": 5283.4,
+          "gasto_total": 145756.7,
+          "ingresos_totales": 134881.3,
+          "dependencia_pct": 49.6
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 73694.5,
+          "transferencias_automaticas": 85848.1,
+          "transferencias_discrecionales": 14297.7,
+          "gasto_total": 174003.6,
+          "ingresos_totales": 173840.3,
+          "dependencia_pct": 57.6
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 111339.0,
+          "transferencias_automaticas": 139816.0,
+          "transferencias_discrecionales": 33014.5,
+          "gasto_total": 270470.2,
+          "ingresos_totales": 284169.5,
+          "dependencia_pct": 60.8
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 211662.7,
+          "transferencias_automaticas": 257029.9,
+          "transferencias_discrecionales": 42678.5,
+          "gasto_total": 482105.6,
+          "ingresos_totales": 511371.1,
+          "dependencia_pct": 58.6
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 514294.7,
+          "transferencias_automaticas": 565165.6,
+          "transferencias_discrecionales": 162708.2,
+          "gasto_total": 1220416.1,
+          "ingresos_totales": 1242168.4,
+          "dependencia_pct": 58.6
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 1465424.3,
+          "transferencias_automaticas": 1664045.6,
+          "transferencias_discrecionales": 72728.1,
+          "gasto_total": 3060619.7,
+          "ingresos_totales": 3202198.0,
+          "dependencia_pct": 54.2
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 2076971.3,
+          "transferencias_automaticas": 2377210.8,
+          "transferencias_discrecionales": 49520.3,
+          "gasto_total": 4759554.1,
+          "ingresos_totales": 4503702.3,
+          "dependencia_pct": 53.9
+        }
+      ]
     },
     "Misiones": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 510.3,
+          "transferencias_automaticas": 1150.9,
+          "transferencias_discrecionales": 296.3,
+          "gasto_total": 1924.1,
+          "ingresos_totales": 1957.5,
+          "dependencia_pct": 73.9
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 672.3,
+          "transferencias_automaticas": 1419.8,
+          "transferencias_discrecionales": 343.3,
+          "gasto_total": 2372.0,
+          "ingresos_totales": 2435.5,
+          "dependencia_pct": 72.4
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 869.0,
+          "transferencias_automaticas": 1857.7,
+          "transferencias_discrecionales": 435.4,
+          "gasto_total": 3204.8,
+          "ingresos_totales": 3162.1,
+          "dependencia_pct": 72.5
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 1179.5,
+          "transferencias_automaticas": 2339.1,
+          "transferencias_discrecionales": 514.5,
+          "gasto_total": 4000.0,
+          "ingresos_totales": 4033.1,
+          "dependencia_pct": 70.8
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 1308.0,
+          "transferencias_automaticas": 2552.9,
+          "transferencias_discrecionales": 882.1,
+          "gasto_total": 4791.7,
+          "ingresos_totales": 4743.0,
+          "dependencia_pct": 72.4
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 1663.7,
+          "transferencias_automaticas": 3431.7,
+          "transferencias_discrecionales": 1547.9,
+          "gasto_total": 6127.6,
+          "ingresos_totales": 6643.4,
+          "dependencia_pct": 75.0
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 2193.3,
+          "transferencias_automaticas": 4556.1,
+          "transferencias_discrecionales": 1607.3,
+          "gasto_total": 8487.2,
+          "ingresos_totales": 8356.7,
+          "dependencia_pct": 73.8
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 3118.8,
+          "transferencias_automaticas": 5800.2,
+          "transferencias_discrecionales": 1864.0,
+          "gasto_total": 11001.8,
+          "ingresos_totales": 10783.0,
+          "dependencia_pct": 71.1
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 4081.0,
+          "transferencias_automaticas": 7565.9,
+          "transferencias_discrecionales": 2806.6,
+          "gasto_total": 15925.8,
+          "ingresos_totales": 14453.5,
+          "dependencia_pct": 71.8
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 6630.9,
+          "transferencias_automaticas": 10422.7,
+          "transferencias_discrecionales": 4550.9,
+          "gasto_total": 21975.3,
+          "ingresos_totales": 21604.5,
+          "dependencia_pct": 69.3
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 9029.9,
+          "transferencias_automaticas": 14286.2,
+          "transferencias_discrecionales": 5585.5,
+          "gasto_total": 32804.2,
+          "ingresos_totales": 28901.5,
+          "dependencia_pct": 68.8
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 11825.6,
+          "transferencias_automaticas": 18229.2,
+          "transferencias_discrecionales": 4863.2,
+          "gasto_total": 39201.1,
+          "ingresos_totales": 34918.0,
+          "dependencia_pct": 66.1
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 16198.7,
+          "transferencias_automaticas": 24523.9,
+          "transferencias_discrecionales": 6545.8,
+          "gasto_total": 50163.7,
+          "ingresos_totales": 47268.4,
+          "dependencia_pct": 65.7
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 21819.0,
+          "transferencias_automaticas": 34092.7,
+          "transferencias_discrecionales": 8322.6,
+          "gasto_total": 63568.9,
+          "ingresos_totales": 64234.2,
+          "dependencia_pct": 66.0
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 33942.9,
+          "transferencias_automaticas": 50613.1,
+          "transferencias_discrecionales": 6499.9,
+          "gasto_total": 94418.5,
+          "ingresos_totales": 91055.9,
+          "dependencia_pct": 62.7
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 53841.9,
+          "transferencias_automaticas": 70315.7,
+          "transferencias_discrecionales": 13187.7,
+          "gasto_total": 136633.5,
+          "ingresos_totales": 137345.2,
+          "dependencia_pct": 60.8
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 94383.3,
+          "transferencias_automaticas": 114188.1,
+          "transferencias_discrecionales": 19082.1,
+          "gasto_total": 232115.0,
+          "ingresos_totales": 227653.5,
+          "dependencia_pct": 58.5
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 177199.4,
+          "transferencias_automaticas": 209013.3,
+          "transferencias_discrecionales": 28548.2,
+          "gasto_total": 407536.4,
+          "ingresos_totales": 414761.0,
+          "dependencia_pct": 57.3
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 397778.4,
+          "transferencias_automaticas": 458464.7,
+          "transferencias_discrecionales": 81039.0,
+          "gasto_total": 937234.4,
+          "ingresos_totales": 937282.1,
+          "dependencia_pct": 57.6
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 1219780.0,
+          "transferencias_automaticas": 1347643.2,
+          "transferencias_discrecionales": 68102.8,
+          "gasto_total": 2631059.1,
+          "ingresos_totales": 2635525.9,
+          "dependencia_pct": 53.7
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 1662659.1,
+          "transferencias_automaticas": 1984759.1,
+          "transferencias_discrecionales": 115949.2,
+          "gasto_total": 3815053.5,
+          "ingresos_totales": 3763367.3,
+          "dependencia_pct": 55.8
+        }
+      ]
     },
     "Neuquén": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 2484.8,
+          "transferencias_automaticas": 624.4,
+          "transferencias_discrecionales": 65.3,
+          "gasto_total": 3101.0,
+          "ingresos_totales": 3174.5,
+          "dependencia_pct": 21.7
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 2839.6,
+          "transferencias_automaticas": 761.1,
+          "transferencias_discrecionales": 100.1,
+          "gasto_total": 3614.2,
+          "ingresos_totales": 3700.8,
+          "dependencia_pct": 23.3
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 3166.1,
+          "transferencias_automaticas": 989.0,
+          "transferencias_discrecionales": 120.7,
+          "gasto_total": 4330.6,
+          "ingresos_totales": 4275.9,
+          "dependencia_pct": 26.0
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 4122.6,
+          "transferencias_automaticas": 1240.5,
+          "transferencias_discrecionales": 136.1,
+          "gasto_total": 5840.6,
+          "ingresos_totales": 5499.2,
+          "dependencia_pct": 25.0
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 5341.8,
+          "transferencias_automaticas": 1361.6,
+          "transferencias_discrecionales": 382.0,
+          "gasto_total": 6863.9,
+          "ingresos_totales": 7085.4,
+          "dependencia_pct": 24.6
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 5525.4,
+          "transferencias_automaticas": 1824.7,
+          "transferencias_discrecionales": 781.9,
+          "gasto_total": 7856.7,
+          "ingresos_totales": 8131.9,
+          "dependencia_pct": 32.1
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 6663.1,
+          "transferencias_automaticas": 2414.7,
+          "transferencias_discrecionales": 627.6,
+          "gasto_total": 10063.0,
+          "ingresos_totales": 9705.4,
+          "dependencia_pct": 31.3
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 8259.6,
+          "transferencias_automaticas": 3075.9,
+          "transferencias_discrecionales": 761.9,
+          "gasto_total": 13084.4,
+          "ingresos_totales": 12097.4,
+          "dependencia_pct": 31.7
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 10514.1,
+          "transferencias_automaticas": 4005.4,
+          "transferencias_discrecionales": 966.5,
+          "gasto_total": 16289.6,
+          "ingresos_totales": 15486.0,
+          "dependencia_pct": 32.1
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 17214.8,
+          "transferencias_automaticas": 5502.6,
+          "transferencias_discrecionales": 1617.4,
+          "gasto_total": 24773.9,
+          "ingresos_totales": 24334.8,
+          "dependencia_pct": 29.3
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 21936.3,
+          "transferencias_automaticas": 7506.1,
+          "transferencias_discrecionales": 2678.8,
+          "gasto_total": 36446.6,
+          "ingresos_totales": 32121.2,
+          "dependencia_pct": 31.7
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 32302.1,
+          "transferencias_automaticas": 9601.3,
+          "transferencias_discrecionales": 3159.3,
+          "gasto_total": 49355.4,
+          "ingresos_totales": 45062.7,
+          "dependencia_pct": 28.3
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 42075.3,
+          "transferencias_automaticas": 12942.1,
+          "transferencias_discrecionales": 4127.1,
+          "gasto_total": 66564.3,
+          "ingresos_totales": 59144.4,
+          "dependencia_pct": 28.9
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 72020.6,
+          "transferencias_automaticas": 17933.3,
+          "transferencias_discrecionales": 3525.9,
+          "gasto_total": 92854.0,
+          "ingresos_totales": 93479.9,
+          "dependencia_pct": 23.0
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 110305.3,
+          "transferencias_automaticas": 26556.5,
+          "transferencias_discrecionales": 2406.1,
+          "gasto_total": 147523.9,
+          "ingresos_totales": 139267.9,
+          "dependencia_pct": 20.8
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 130608.4,
+          "transferencias_automaticas": 36871.5,
+          "transferencias_discrecionales": 4575.3,
+          "gasto_total": 186443.6,
+          "ingresos_totales": 172055.1,
+          "dependencia_pct": 24.1
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 220556.4,
+          "transferencias_automaticas": 60206.9,
+          "transferencias_discrecionales": 6960.3,
+          "gasto_total": 277927.0,
+          "ingresos_totales": 287723.6,
+          "dependencia_pct": 23.3
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 428444.0,
+          "transferencias_automaticas": 109576.9,
+          "transferencias_discrecionales": 9408.5,
+          "gasto_total": 557445.1,
+          "ingresos_totales": 547429.3,
+          "dependencia_pct": 21.7
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 1114639.0,
+          "transferencias_automaticas": 239127.1,
+          "transferencias_discrecionales": 26933.2,
+          "gasto_total": 1377491.9,
+          "ingresos_totales": 1380699.3,
+          "dependencia_pct": 19.3
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 3989294.7,
+          "transferencias_automaticas": 709051.6,
+          "transferencias_discrecionales": 13948.4,
+          "gasto_total": 4355013.0,
+          "ingresos_totales": 4712294.6,
+          "dependencia_pct": 15.3
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 6328851.0,
+          "transferencias_automaticas": 1018357.6,
+          "transferencias_discrecionales": 55051.2,
+          "gasto_total": 7334907.8,
+          "ingresos_totales": 7402259.7,
+          "dependencia_pct": 14.5
+        }
+      ]
     },
     "Río Negro": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 598.3,
+          "transferencias_automaticas": 851.2,
+          "transferencias_discrecionales": 107.6,
+          "gasto_total": 1554.8,
+          "ingresos_totales": 1557.1,
+          "dependencia_pct": 61.6
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 789.6,
+          "transferencias_automaticas": 1046.8,
+          "transferencias_discrecionales": 152.3,
+          "gasto_total": 1960.4,
+          "ingresos_totales": 1988.7,
+          "dependencia_pct": 60.3
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 873.8,
+          "transferencias_automaticas": 1370.3,
+          "transferencias_discrecionales": 135.4,
+          "gasto_total": 2371.3,
+          "ingresos_totales": 2379.5,
+          "dependencia_pct": 63.3
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 1050.8,
+          "transferencias_automaticas": 1720.7,
+          "transferencias_discrecionales": 161.1,
+          "gasto_total": 3008.0,
+          "ingresos_totales": 2932.6,
+          "dependencia_pct": 64.2
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 1205.5,
+          "transferencias_automaticas": 1884.9,
+          "transferencias_discrecionales": 393.8,
+          "gasto_total": 3649.0,
+          "ingresos_totales": 3484.2,
+          "dependencia_pct": 65.4
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 1495.5,
+          "transferencias_automaticas": 2536.4,
+          "transferencias_discrecionales": 980.7,
+          "gasto_total": 4595.8,
+          "ingresos_totales": 5012.6,
+          "dependencia_pct": 70.2
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 1933.3,
+          "transferencias_automaticas": 3362.0,
+          "transferencias_discrecionales": 689.6,
+          "gasto_total": 6093.3,
+          "ingresos_totales": 5984.8,
+          "dependencia_pct": 67.7
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 2518.7,
+          "transferencias_automaticas": 4281.9,
+          "transferencias_discrecionales": 724.4,
+          "gasto_total": 7727.5,
+          "ingresos_totales": 7525.0,
+          "dependencia_pct": 66.5
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 3568.6,
+          "transferencias_automaticas": 5581.8,
+          "transferencias_discrecionales": 675.0,
+          "gasto_total": 10569.1,
+          "ingresos_totales": 9825.4,
+          "dependencia_pct": 63.7
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 5279.2,
+          "transferencias_automaticas": 7677.1,
+          "transferencias_discrecionales": 1501.9,
+          "gasto_total": 13774.4,
+          "ingresos_totales": 14458.3,
+          "dependencia_pct": 63.5
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 8311.5,
+          "transferencias_automaticas": 10458.0,
+          "transferencias_discrecionales": 1769.2,
+          "gasto_total": 20889.4,
+          "ingresos_totales": 20538.7,
+          "dependencia_pct": 59.5
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 9231.1,
+          "transferencias_automaticas": 13402.6,
+          "transferencias_discrecionales": 1720.2,
+          "gasto_total": 27674.6,
+          "ingresos_totales": 24353.9,
+          "dependencia_pct": 62.1
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 11952.4,
+          "transferencias_automaticas": 18086.3,
+          "transferencias_discrecionales": 2707.5,
+          "gasto_total": 36148.1,
+          "ingresos_totales": 32746.2,
+          "dependencia_pct": 63.5
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 19409.8,
+          "transferencias_automaticas": 25241.5,
+          "transferencias_discrecionales": 1996.4,
+          "gasto_total": 47989.1,
+          "ingresos_totales": 46647.7,
+          "dependencia_pct": 58.4
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 26749.2,
+          "transferencias_automaticas": 37356.3,
+          "transferencias_discrecionales": 1724.1,
+          "gasto_total": 73750.0,
+          "ingresos_totales": 65829.6,
+          "dependencia_pct": 59.4
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 27511.1,
+          "transferencias_automaticas": 51989.7,
+          "transferencias_discrecionales": 4089.7,
+          "gasto_total": 93294.0,
+          "ingresos_totales": 83590.5,
+          "dependencia_pct": 67.1
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 47290.4,
+          "transferencias_automaticas": 84845.6,
+          "transferencias_discrecionales": 5748.7,
+          "gasto_total": 142415.5,
+          "ingresos_totales": 137884.8,
+          "dependencia_pct": 65.7
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 78931.7,
+          "transferencias_automaticas": 155527.7,
+          "transferencias_discrecionales": 8905.2,
+          "gasto_total": 245871.1,
+          "ingresos_totales": 243364.7,
+          "dependencia_pct": 67.6
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 173581.9,
+          "transferencias_automaticas": 340776.6,
+          "transferencias_discrecionales": 26097.3,
+          "gasto_total": 562592.0,
+          "ingresos_totales": 540455.7,
+          "dependencia_pct": 67.9
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 571282.1,
+          "transferencias_automaticas": 1008317.7,
+          "transferencias_discrecionales": 8286.4,
+          "gasto_total": 1598238.3,
+          "ingresos_totales": 1587886.2,
+          "dependencia_pct": 64.0
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 994701.5,
+          "transferencias_automaticas": 1431118.1,
+          "transferencias_discrecionales": 18554.4,
+          "gasto_total": 2553644.9,
+          "ingresos_totales": 2444374.0,
+          "dependencia_pct": 59.3
+        }
+      ]
     },
     "Salta": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 426.6,
+          "transferencias_automaticas": 1309.0,
+          "transferencias_discrecionales": 124.2,
+          "gasto_total": 1817.3,
+          "ingresos_totales": 1859.8,
+          "dependencia_pct": 77.1
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 526.1,
+          "transferencias_automaticas": 1617.8,
+          "transferencias_discrecionales": 211.3,
+          "gasto_total": 2229.8,
+          "ingresos_totales": 2355.3,
+          "dependencia_pct": 77.7
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 808.0,
+          "transferencias_automaticas": 2125.8,
+          "transferencias_discrecionales": 328.3,
+          "gasto_total": 3164.1,
+          "ingresos_totales": 3262.2,
+          "dependencia_pct": 75.2
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 1014.4,
+          "transferencias_automaticas": 2672.6,
+          "transferencias_discrecionales": 312.7,
+          "gasto_total": 3752.9,
+          "ingresos_totales": 3999.7,
+          "dependencia_pct": 74.6
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 1321.4,
+          "transferencias_automaticas": 2916.5,
+          "transferencias_discrecionales": 656.5,
+          "gasto_total": 4792.7,
+          "ingresos_totales": 4894.5,
+          "dependencia_pct": 73.0
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 1508.0,
+          "transferencias_automaticas": 3931.6,
+          "transferencias_discrecionales": 980.3,
+          "gasto_total": 5724.0,
+          "ingresos_totales": 6419.9,
+          "dependencia_pct": 76.5
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 1897.4,
+          "transferencias_automaticas": 5223.9,
+          "transferencias_discrecionales": 1009.5,
+          "gasto_total": 7838.1,
+          "ingresos_totales": 8130.9,
+          "dependencia_pct": 76.7
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 2275.7,
+          "transferencias_automaticas": 6646.2,
+          "transferencias_discrecionales": 1228.7,
+          "gasto_total": 10110.0,
+          "ingresos_totales": 10150.5,
+          "dependencia_pct": 77.6
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 2944.8,
+          "transferencias_automaticas": 8674.7,
+          "transferencias_discrecionales": 1691.6,
+          "gasto_total": 13299.5,
+          "ingresos_totales": 13311.0,
+          "dependencia_pct": 77.9
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 4129.2,
+          "transferencias_automaticas": 11960.5,
+          "transferencias_discrecionales": 2366.5,
+          "gasto_total": 18091.5,
+          "ingresos_totales": 18456.3,
+          "dependencia_pct": 77.6
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 5435.7,
+          "transferencias_automaticas": 16499.3,
+          "transferencias_discrecionales": 3098.2,
+          "gasto_total": 26373.3,
+          "ingresos_totales": 25033.2,
+          "dependencia_pct": 78.3
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 7618.1,
+          "transferencias_automaticas": 21026.8,
+          "transferencias_discrecionales": 4740.2,
+          "gasto_total": 35805.8,
+          "ingresos_totales": 33385.0,
+          "dependencia_pct": 77.2
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 10897.1,
+          "transferencias_automaticas": 28235.6,
+          "transferencias_discrecionales": 5854.8,
+          "gasto_total": 49847.8,
+          "ingresos_totales": 44987.5,
+          "dependencia_pct": 75.8
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 17167.2,
+          "transferencias_automaticas": 39430.9,
+          "transferencias_discrecionales": 5990.9,
+          "gasto_total": 59418.0,
+          "ingresos_totales": 62589.1,
+          "dependencia_pct": 72.6
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 24501.5,
+          "transferencias_automaticas": 58496.8,
+          "transferencias_discrecionales": 3869.6,
+          "gasto_total": 87963.0,
+          "ingresos_totales": 86867.9,
+          "dependencia_pct": 71.8
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 28410.5,
+          "transferencias_automaticas": 81082.3,
+          "transferencias_discrecionales": 8609.2,
+          "gasto_total": 117643.2,
+          "ingresos_totales": 118102.0,
+          "dependencia_pct": 75.9
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 52653.5,
+          "transferencias_automaticas": 131661.6,
+          "transferencias_discrecionales": 13304.3,
+          "gasto_total": 188800.5,
+          "ingresos_totales": 197619.4,
+          "dependencia_pct": 73.4
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 104746.6,
+          "transferencias_automaticas": 241479.2,
+          "transferencias_discrecionales": 16586.0,
+          "gasto_total": 356415.6,
+          "ingresos_totales": 362811.8,
+          "dependencia_pct": 71.1
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 273254.2,
+          "transferencias_automaticas": 530319.4,
+          "transferencias_discrecionales": 66246.5,
+          "gasto_total": 863934.6,
+          "ingresos_totales": 869820.1,
+          "dependencia_pct": 68.6
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 740558.0,
+          "transferencias_automaticas": 1556021.4,
+          "transferencias_discrecionales": 33580.4,
+          "gasto_total": 2288045.0,
+          "ingresos_totales": 2330159.8,
+          "dependencia_pct": 68.2
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 957045.2,
+          "transferencias_automaticas": 2283771.6,
+          "transferencias_discrecionales": 53741.6,
+          "gasto_total": 3228163.2,
+          "ingresos_totales": 3294558.5,
+          "dependencia_pct": 71.0
+        }
+      ]
     },
     "San Juan": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 246.0,
+          "transferencias_automaticas": 1106.2,
+          "transferencias_discrecionales": 141.8,
+          "gasto_total": 1294.2,
+          "ingresos_totales": 1494.0,
+          "dependencia_pct": 83.5
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 356.3,
+          "transferencias_automaticas": 1365.8,
+          "transferencias_discrecionales": 343.1,
+          "gasto_total": 1942.3,
+          "ingresos_totales": 2065.1,
+          "dependencia_pct": 82.7
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 459.9,
+          "transferencias_automaticas": 1790.2,
+          "transferencias_discrecionales": 450.0,
+          "gasto_total": 2472.7,
+          "ingresos_totales": 2700.1,
+          "dependencia_pct": 83.0
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 602.3,
+          "transferencias_automaticas": 2253.9,
+          "transferencias_discrecionales": 551.2,
+          "gasto_total": 3310.5,
+          "ingresos_totales": 3407.4,
+          "dependencia_pct": 82.3
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 697.7,
+          "transferencias_automaticas": 2463.0,
+          "transferencias_discrecionales": 492.7,
+          "gasto_total": 3551.9,
+          "ingresos_totales": 3653.4,
+          "dependencia_pct": 80.9
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 1179.5,
+          "transferencias_automaticas": 3315.5,
+          "transferencias_discrecionales": 847.2,
+          "gasto_total": 4150.2,
+          "ingresos_totales": 5342.3,
+          "dependencia_pct": 77.9
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 1702.8,
+          "transferencias_automaticas": 4403.1,
+          "transferencias_discrecionales": 734.2,
+          "gasto_total": 5416.3,
+          "ingresos_totales": 6840.2,
+          "dependencia_pct": 75.1
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 2272.8,
+          "transferencias_automaticas": 5595.4,
+          "transferencias_discrecionales": 817.2,
+          "gasto_total": 7000.3,
+          "ingresos_totales": 8685.4,
+          "dependencia_pct": 73.8
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 3203.6,
+          "transferencias_automaticas": 7295.8,
+          "transferencias_discrecionales": 1008.2,
+          "gasto_total": 9963.7,
+          "ingresos_totales": 11507.6,
+          "dependencia_pct": 72.2
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 4272.1,
+          "transferencias_automaticas": 10044.1,
+          "transferencias_discrecionales": 1713.6,
+          "gasto_total": 13802.0,
+          "ingresos_totales": 16029.8,
+          "dependencia_pct": 73.3
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 5632.1,
+          "transferencias_automaticas": 13746.3,
+          "transferencias_discrecionales": 2449.1,
+          "gasto_total": 19199.8,
+          "ingresos_totales": 21827.5,
+          "dependencia_pct": 74.2
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 9342.1,
+          "transferencias_automaticas": 17626.0,
+          "transferencias_discrecionales": 3034.6,
+          "gasto_total": 26712.3,
+          "ingresos_totales": 30002.7,
+          "dependencia_pct": 68.9
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 11040.5,
+          "transferencias_automaticas": 23764.2,
+          "transferencias_discrecionales": 4313.8,
+          "gasto_total": 36618.1,
+          "ingresos_totales": 39118.5,
+          "dependencia_pct": 71.8
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 15147.0,
+          "transferencias_automaticas": 33303.3,
+          "transferencias_discrecionales": 3915.7,
+          "gasto_total": 51053.1,
+          "ingresos_totales": 52366.1,
+          "dependencia_pct": 71.1
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 23448.1,
+          "transferencias_automaticas": 49337.2,
+          "transferencias_discrecionales": 2923.9,
+          "gasto_total": 74563.8,
+          "ingresos_totales": 75709.3,
+          "dependencia_pct": 69.0
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 24337.1,
+          "transferencias_automaticas": 68789.8,
+          "transferencias_discrecionales": 4253.6,
+          "gasto_total": 97098.6,
+          "ingresos_totales": 97380.5,
+          "dependencia_pct": 75.0
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 34991.2,
+          "transferencias_automaticas": 112151.7,
+          "transferencias_discrecionales": 8459.1,
+          "gasto_total": 152826.6,
+          "ingresos_totales": 155602.0,
+          "dependencia_pct": 77.5
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 58004.5,
+          "transferencias_automaticas": 206560.5,
+          "transferencias_discrecionales": 11566.1,
+          "gasto_total": 269853.3,
+          "ingresos_totales": 276131.1,
+          "dependencia_pct": 79.0
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 179261.2,
+          "transferencias_automaticas": 454111.5,
+          "transferencias_discrecionales": 48063.6,
+          "gasto_total": 665211.7,
+          "ingresos_totales": 681436.3,
+          "dependencia_pct": 73.7
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 448753.9,
+          "transferencias_automaticas": 1339434.5,
+          "transferencias_discrecionales": 20876.0,
+          "gasto_total": 1588595.3,
+          "ingresos_totales": 1809064.4,
+          "dependencia_pct": 75.2
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 622181.2,
+          "transferencias_automaticas": 1902762.3,
+          "transferencias_discrecionales": 33956.6,
+          "gasto_total": 2521645.4,
+          "ingresos_totales": 2558900.1,
+          "dependencia_pct": 75.7
+        }
+      ]
     },
     "San Luis": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 288.0,
+          "transferencias_automaticas": 761.1,
+          "transferencias_discrecionales": 78.7,
+          "gasto_total": 1129.0,
+          "ingresos_totales": 1127.8,
+          "dependencia_pct": 74.5
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 402.5,
+          "transferencias_automaticas": 937.0,
+          "transferencias_discrecionales": 77.9,
+          "gasto_total": 1424.8,
+          "ingresos_totales": 1417.5,
+          "dependencia_pct": 71.6
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 496.3,
+          "transferencias_automaticas": 1228.0,
+          "transferencias_discrecionales": 87.1,
+          "gasto_total": 1837.5,
+          "ingresos_totales": 1811.4,
+          "dependencia_pct": 72.6
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 549.6,
+          "transferencias_automaticas": 1547.5,
+          "transferencias_discrecionales": 92.4,
+          "gasto_total": 2209.8,
+          "ingresos_totales": 2189.5,
+          "dependencia_pct": 74.9
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 540.2,
+          "transferencias_automaticas": 1692.0,
+          "transferencias_discrecionales": 166.5,
+          "gasto_total": 2732.5,
+          "ingresos_totales": 2398.7,
+          "dependencia_pct": 77.5
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 799.3,
+          "transferencias_automaticas": 2274.2,
+          "transferencias_discrecionales": 267.1,
+          "gasto_total": 3696.9,
+          "ingresos_totales": 3340.6,
+          "dependencia_pct": 76.1
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 1038.8,
+          "transferencias_automaticas": 3013.4,
+          "transferencias_discrecionales": 279.4,
+          "gasto_total": 4396.5,
+          "ingresos_totales": 4331.6,
+          "dependencia_pct": 76.0
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 1309.6,
+          "transferencias_automaticas": 3858.6,
+          "transferencias_discrecionales": 317.7,
+          "gasto_total": 5310.5,
+          "ingresos_totales": 5485.9,
+          "dependencia_pct": 76.1
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 1823.3,
+          "transferencias_automaticas": 5004.7,
+          "transferencias_discrecionales": 528.9,
+          "gasto_total": 6914.7,
+          "ingresos_totales": 7357.0,
+          "dependencia_pct": 75.2
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 2570.3,
+          "transferencias_automaticas": 6854.3,
+          "transferencias_discrecionales": 700.2,
+          "gasto_total": 9840.0,
+          "ingresos_totales": 10124.7,
+          "dependencia_pct": 74.6
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 3329.3,
+          "transferencias_automaticas": 9479.6,
+          "transferencias_discrecionales": 844.0,
+          "gasto_total": 14387.9,
+          "ingresos_totales": 13652.8,
+          "dependencia_pct": 75.6
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 4445.9,
+          "transferencias_automaticas": 13650.1,
+          "transferencias_discrecionales": 1159.1,
+          "gasto_total": 18252.5,
+          "ingresos_totales": 19255.1,
+          "dependencia_pct": 76.9
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 6331.7,
+          "transferencias_automaticas": 17592.4,
+          "transferencias_discrecionales": 1531.5,
+          "gasto_total": 26230.2,
+          "ingresos_totales": 25455.6,
+          "dependencia_pct": 75.1
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 8367.4,
+          "transferencias_automaticas": 23682.8,
+          "transferencias_discrecionales": 861.7,
+          "gasto_total": 32743.2,
+          "ingresos_totales": 32911.9,
+          "dependencia_pct": 74.6
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 10963.9,
+          "transferencias_automaticas": 34082.7,
+          "transferencias_discrecionales": 928.4,
+          "gasto_total": 51446.0,
+          "ingresos_totales": 45975.0,
+          "dependencia_pct": 76.2
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 13700.9,
+          "transferencias_automaticas": 46196.7,
+          "transferencias_discrecionales": 2359.9,
+          "gasto_total": 66182.4,
+          "ingresos_totales": 62257.5,
+          "dependencia_pct": 78.0
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 23654.6,
+          "transferencias_automaticas": 75506.2,
+          "transferencias_discrecionales": 5645.8,
+          "gasto_total": 99979.8,
+          "ingresos_totales": 104806.7,
+          "dependencia_pct": 77.4
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 54726.8,
+          "transferencias_automaticas": 138782.6,
+          "transferencias_discrecionales": 7865.9,
+          "gasto_total": 204929.3,
+          "ingresos_totales": 201375.3,
+          "dependencia_pct": 72.8
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 182720.2,
+          "transferencias_automaticas": 304525.0,
+          "transferencias_discrecionales": 25960.5,
+          "gasto_total": 552093.9,
+          "ingresos_totales": 513205.6,
+          "dependencia_pct": 64.4
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 299298.0,
+          "transferencias_automaticas": 902581.8,
+          "transferencias_discrecionales": 13191.3,
+          "gasto_total": 1063355.1,
+          "ingresos_totales": 1215071.1,
+          "dependencia_pct": 75.4
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 451020.1,
+          "transferencias_automaticas": 1272435.8,
+          "transferencias_discrecionales": 25450.4,
+          "gasto_total": 1711982.2,
+          "ingresos_totales": 1748906.3,
+          "dependencia_pct": 74.2
+        }
+      ]
     },
     "Santa Cruz": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 1096.9,
+          "transferencias_automaticas": 594.2,
+          "transferencias_discrecionales": 264.4,
+          "gasto_total": 1944.1,
+          "ingresos_totales": 1955.5,
+          "dependencia_pct": 43.9
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 1467.5,
+          "transferencias_automaticas": 718.6,
+          "transferencias_discrecionales": 534.2,
+          "gasto_total": 2682.9,
+          "ingresos_totales": 2720.3,
+          "dependencia_pct": 46.1
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 2060.5,
+          "transferencias_automaticas": 919.4,
+          "transferencias_discrecionales": 1194.2,
+          "gasto_total": 4162.2,
+          "ingresos_totales": 4174.0,
+          "dependencia_pct": 50.6
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 2276.7,
+          "transferencias_automaticas": 1138.7,
+          "transferencias_discrecionales": 1419.7,
+          "gasto_total": 5358.6,
+          "ingresos_totales": 4835.1,
+          "dependencia_pct": 52.9
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 3053.7,
+          "transferencias_automaticas": 1251.2,
+          "transferencias_discrecionales": 1313.4,
+          "gasto_total": 5643.7,
+          "ingresos_totales": 5618.3,
+          "dependencia_pct": 45.6
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 3565.2,
+          "transferencias_automaticas": 1653.8,
+          "transferencias_discrecionales": 1613.5,
+          "gasto_total": 6848.1,
+          "ingresos_totales": 6832.5,
+          "dependencia_pct": 47.8
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 3929.5,
+          "transferencias_automaticas": 2166.4,
+          "transferencias_discrecionales": 2282.3,
+          "gasto_total": 9148.0,
+          "ingresos_totales": 8378.2,
+          "dependencia_pct": 53.1
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 5232.9,
+          "transferencias_automaticas": 2748.4,
+          "transferencias_discrecionales": 910.1,
+          "gasto_total": 9590.5,
+          "ingresos_totales": 8891.4,
+          "dependencia_pct": 41.1
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 6820.6,
+          "transferencias_automaticas": 3564.1,
+          "transferencias_discrecionales": 1330.7,
+          "gasto_total": 11954.9,
+          "ingresos_totales": 11715.4,
+          "dependencia_pct": 41.8
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 9930.1,
+          "transferencias_automaticas": 4875.9,
+          "transferencias_discrecionales": 1257.0,
+          "gasto_total": 18263.3,
+          "ingresos_totales": 16063.0,
+          "dependencia_pct": 38.2
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 11133.1,
+          "transferencias_automaticas": 6668.0,
+          "transferencias_discrecionales": 2564.1,
+          "gasto_total": 25335.6,
+          "ingresos_totales": 20365.1,
+          "dependencia_pct": 45.3
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 15084.5,
+          "transferencias_automaticas": 8535.3,
+          "transferencias_discrecionales": 1374.3,
+          "gasto_total": 30202.9,
+          "ingresos_totales": 24994.1,
+          "dependencia_pct": 39.6
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 17245.0,
+          "transferencias_automaticas": 11472.3,
+          "transferencias_discrecionales": 2401.8,
+          "gasto_total": 34987.8,
+          "ingresos_totales": 31119.0,
+          "dependencia_pct": 44.6
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 26346.1,
+          "transferencias_automaticas": 15948.6,
+          "transferencias_discrecionales": 1438.0,
+          "gasto_total": 45873.7,
+          "ingresos_totales": 43732.7,
+          "dependencia_pct": 39.8
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 37789.1,
+          "transferencias_automaticas": 23714.1,
+          "transferencias_discrecionales": 1078.7,
+          "gasto_total": 63641.4,
+          "ingresos_totales": 62581.9,
+          "dependencia_pct": 39.6
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 44536.2,
+          "transferencias_automaticas": 33044.4,
+          "transferencias_discrecionales": 4967.3,
+          "gasto_total": 83048.6,
+          "ingresos_totales": 82547.9,
+          "dependencia_pct": 46.0
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 79215.7,
+          "transferencias_automaticas": 53894.2,
+          "transferencias_discrecionales": 9193.9,
+          "gasto_total": 130363.2,
+          "ingresos_totales": 142303.8,
+          "dependencia_pct": 44.3
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 136760.1,
+          "transferencias_automaticas": 98529.4,
+          "transferencias_discrecionales": 11766.4,
+          "gasto_total": 240698.8,
+          "ingresos_totales": 247055.9,
+          "dependencia_pct": 44.6
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 317122.1,
+          "transferencias_automaticas": 216090.7,
+          "transferencias_discrecionales": 30941.9,
+          "gasto_total": 584023.3,
+          "ingresos_totales": 564154.8,
+          "dependencia_pct": 43.8
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 964124.8,
+          "transferencias_automaticas": 640870.6,
+          "transferencias_discrecionales": 11034.0,
+          "gasto_total": 1585183.9,
+          "ingresos_totales": 1616029.4,
+          "dependencia_pct": 40.3
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 1406771.1,
+          "transferencias_automaticas": 907861.1,
+          "transferencias_discrecionales": 17014.1,
+          "gasto_total": 2479259.3,
+          "ingresos_totales": 2331646.4,
+          "dependencia_pct": 39.7
+        }
+      ]
     },
     "Santa Fe": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 2459.2,
+          "transferencias_automaticas": 3011.1,
+          "transferencias_discrecionales": 545.5,
+          "gasto_total": 5424.7,
+          "ingresos_totales": 6015.8,
+          "dependencia_pct": 59.1
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 3089.8,
+          "transferencias_automaticas": 3703.6,
+          "transferencias_discrecionales": 601.9,
+          "gasto_total": 7158.7,
+          "ingresos_totales": 7395.3,
+          "dependencia_pct": 58.2
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 3818.9,
+          "transferencias_automaticas": 4856.3,
+          "transferencias_discrecionales": 708.2,
+          "gasto_total": 9124.4,
+          "ingresos_totales": 9383.4,
+          "dependencia_pct": 59.3
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 5134.3,
+          "transferencias_automaticas": 6115.3,
+          "transferencias_discrecionales": 592.3,
+          "gasto_total": 11998.1,
+          "ingresos_totales": 11841.9,
+          "dependencia_pct": 56.6
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 5913.1,
+          "transferencias_automaticas": 6654.1,
+          "transferencias_discrecionales": 1176.5,
+          "gasto_total": 14691.7,
+          "ingresos_totales": 13743.7,
+          "dependencia_pct": 57.0
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 8067.8,
+          "transferencias_automaticas": 8968.0,
+          "transferencias_discrecionales": 1763.6,
+          "gasto_total": 18769.6,
+          "ingresos_totales": 18799.3,
+          "dependencia_pct": 57.1
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 10971.9,
+          "transferencias_automaticas": 11905.1,
+          "transferencias_discrecionales": 2133.4,
+          "gasto_total": 26959.5,
+          "ingresos_totales": 25010.4,
+          "dependencia_pct": 56.1
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 13719.3,
+          "transferencias_automaticas": 15100.2,
+          "transferencias_discrecionales": 2493.7,
+          "gasto_total": 31933.0,
+          "ingresos_totales": 31313.2,
+          "dependencia_pct": 56.2
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 18613.8,
+          "transferencias_automaticas": 19710.5,
+          "transferencias_discrecionales": 2797.9,
+          "gasto_total": 41853.8,
+          "ingresos_totales": 41122.2,
+          "dependencia_pct": 54.7
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 25339.5,
+          "transferencias_automaticas": 27097.2,
+          "transferencias_discrecionales": 4041.3,
+          "gasto_total": 58260.1,
+          "ingresos_totales": 56478.1,
+          "dependencia_pct": 55.1
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 33852.4,
+          "transferencias_automaticas": 37458.2,
+          "transferencias_discrecionales": 4810.4,
+          "gasto_total": 80806.3,
+          "ingresos_totales": 76120.9,
+          "dependencia_pct": 55.5
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 47968.9,
+          "transferencias_automaticas": 53864.5,
+          "transferencias_discrecionales": 8279.6,
+          "gasto_total": 110670.0,
+          "ingresos_totales": 110113.0,
+          "dependencia_pct": 56.4
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 63237.5,
+          "transferencias_automaticas": 70136.5,
+          "transferencias_discrecionales": 10529.1,
+          "gasto_total": 150814.9,
+          "ingresos_totales": 143903.1,
+          "dependencia_pct": 56.1
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 82701.0,
+          "transferencias_automaticas": 95550.6,
+          "transferencias_discrecionales": 14992.1,
+          "gasto_total": 192699.1,
+          "ingresos_totales": 193243.8,
+          "dependencia_pct": 57.2
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 119317.5,
+          "transferencias_automaticas": 137510.6,
+          "transferencias_discrecionales": 11058.5,
+          "gasto_total": 283855.6,
+          "ingresos_totales": 267886.7,
+          "dependencia_pct": 55.5
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 163703.9,
+          "transferencias_automaticas": 188006.5,
+          "transferencias_discrecionales": 26228.6,
+          "gasto_total": 360162.9,
+          "ingresos_totales": 377938.9,
+          "dependencia_pct": 56.7
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 256681.6,
+          "transferencias_automaticas": 306499.5,
+          "transferencias_discrecionales": 28581.5,
+          "gasto_total": 591149.1,
+          "ingresos_totales": 591762.6,
+          "dependencia_pct": 56.6
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 491866.3,
+          "transferencias_automaticas": 564255.3,
+          "transferencias_discrecionales": 54241.8,
+          "gasto_total": 1076840.2,
+          "ingresos_totales": 1110363.4,
+          "dependencia_pct": 55.7
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 1101337.5,
+          "transferencias_automaticas": 1245283.0,
+          "transferencias_discrecionales": 107364.7,
+          "gasto_total": 2592025.9,
+          "ingresos_totales": 2453985.2,
+          "dependencia_pct": 55.1
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 3401481.0,
+          "transferencias_automaticas": 3662405.6,
+          "transferencias_discrecionales": 85496.1,
+          "gasto_total": 7031231.0,
+          "ingresos_totales": 7149382.7,
+          "dependencia_pct": 52.4
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 5394993.0,
+          "transferencias_automaticas": 5155859.3,
+          "transferencias_discrecionales": 178093.0,
+          "gasto_total": 10748968.5,
+          "ingresos_totales": 10728945.3,
+          "dependencia_pct": 49.7
+        }
+      ]
     },
     "Santiago del Estero": {
-      "series": []
-    },
-    "Tierra del Fuego": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 227.7,
+          "transferencias_automaticas": 1367.0,
+          "transferencias_discrecionales": 225.1,
+          "gasto_total": 1652.2,
+          "ingresos_totales": 1819.7,
+          "dependencia_pct": 87.5
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 254.6,
+          "transferencias_automaticas": 1688.8,
+          "transferencias_discrecionales": 269.3,
+          "gasto_total": 2358.3,
+          "ingresos_totales": 2212.8,
+          "dependencia_pct": 88.5
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 352.0,
+          "transferencias_automaticas": 2224.4,
+          "transferencias_discrecionales": 276.0,
+          "gasto_total": 2920.9,
+          "ingresos_totales": 2852.4,
+          "dependencia_pct": 87.7
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 403.9,
+          "transferencias_automaticas": 2804.7,
+          "transferencias_discrecionales": 428.1,
+          "gasto_total": 3985.5,
+          "ingresos_totales": 3636.8,
+          "dependencia_pct": 88.9
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 454.5,
+          "transferencias_automaticas": 3066.3,
+          "transferencias_discrecionales": 925.1,
+          "gasto_total": 3997.3,
+          "ingresos_totales": 4445.9,
+          "dependencia_pct": 89.8
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 564.3,
+          "transferencias_automaticas": 4133.1,
+          "transferencias_discrecionales": 1491.7,
+          "gasto_total": 5745.3,
+          "ingresos_totales": 6189.2,
+          "dependencia_pct": 90.9
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 839.9,
+          "transferencias_automaticas": 5487.5,
+          "transferencias_discrecionales": 1550.4,
+          "gasto_total": 7911.5,
+          "ingresos_totales": 7877.9,
+          "dependencia_pct": 89.3
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 1043.1,
+          "transferencias_automaticas": 6987.8,
+          "transferencias_discrecionales": 1370.8,
+          "gasto_total": 8799.0,
+          "ingresos_totales": 9401.6,
+          "dependencia_pct": 88.9
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 1473.8,
+          "transferencias_automaticas": 9114.4,
+          "transferencias_discrecionales": 2433.2,
+          "gasto_total": 12824.8,
+          "ingresos_totales": 13021.4,
+          "dependencia_pct": 88.7
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 1944.7,
+          "transferencias_automaticas": 12571.6,
+          "transferencias_discrecionales": 3293.3,
+          "gasto_total": 17423.6,
+          "ingresos_totales": 17809.5,
+          "dependencia_pct": 89.1
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 2791.6,
+          "transferencias_automaticas": 17221.9,
+          "transferencias_discrecionales": 4274.8,
+          "gasto_total": 23025.9,
+          "ingresos_totales": 24288.3,
+          "dependencia_pct": 88.5
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 3733.5,
+          "transferencias_automaticas": 22017.7,
+          "transferencias_discrecionales": 5411.0,
+          "gasto_total": 27864.8,
+          "ingresos_totales": 31162.2,
+          "dependencia_pct": 88.0
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 5499.0,
+          "transferencias_automaticas": 29642.9,
+          "transferencias_discrecionales": 5299.5,
+          "gasto_total": 38337.9,
+          "ingresos_totales": 40441.4,
+          "dependencia_pct": 86.4
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 7050.9,
+          "transferencias_automaticas": 41426.4,
+          "transferencias_discrecionales": 4100.5,
+          "gasto_total": 46255.2,
+          "ingresos_totales": 52577.8,
+          "dependencia_pct": 86.6
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 12200.7,
+          "transferencias_automaticas": 61401.4,
+          "transferencias_discrecionales": 2625.7,
+          "gasto_total": 67079.1,
+          "ingresos_totales": 76227.9,
+          "dependencia_pct": 84.0
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 15712.1,
+          "transferencias_automaticas": 85401.7,
+          "transferencias_discrecionales": 6685.5,
+          "gasto_total": 87621.5,
+          "ingresos_totales": 107799.2,
+          "dependencia_pct": 85.4
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 27602.1,
+          "transferencias_automaticas": 139002.3,
+          "transferencias_discrecionales": 9645.1,
+          "gasto_total": 166505.5,
+          "ingresos_totales": 176249.6,
+          "dependencia_pct": 84.3
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 51283.5,
+          "transferencias_automaticas": 255750.3,
+          "transferencias_discrecionales": 31677.9,
+          "gasto_total": 306398.3,
+          "ingresos_totales": 338711.7,
+          "dependencia_pct": 84.9
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 101534.9,
+          "transferencias_automaticas": 561594.4,
+          "transferencias_discrecionales": 76915.2,
+          "gasto_total": 674556.7,
+          "ingresos_totales": 740044.4,
+          "dependencia_pct": 86.3
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 281329.9,
+          "transferencias_automaticas": 1653348.5,
+          "transferencias_discrecionales": 11794.4,
+          "gasto_total": 1634523.0,
+          "ingresos_totales": 1946472.9,
+          "dependencia_pct": 85.5
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 1230548.8,
+          "transferencias_automaticas": 2356060.8,
+          "transferencias_discrecionales": 30558.0,
+          "gasto_total": 2841396.6,
+          "ingresos_totales": 3617167.6,
+          "dependencia_pct": 66.0
+        }
+      ]
     },
     "Tucumán": {
-      "series": []
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 817.2,
+          "transferencias_automaticas": 1588.7,
+          "transferencias_discrecionales": 180.5,
+          "gasto_total": 2508.1,
+          "ingresos_totales": 2586.4,
+          "dependencia_pct": 68.4
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 909.9,
+          "transferencias_automaticas": 1958.6,
+          "transferencias_discrecionales": 308.0,
+          "gasto_total": 3217.6,
+          "ingresos_totales": 3176.6,
+          "dependencia_pct": 71.4
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 1125.6,
+          "transferencias_automaticas": 2573.9,
+          "transferencias_discrecionales": 593.1,
+          "gasto_total": 4330.2,
+          "ingresos_totales": 4292.6,
+          "dependencia_pct": 73.8
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 1652.4,
+          "transferencias_automaticas": 3239.8,
+          "transferencias_discrecionales": 768.7,
+          "gasto_total": 5688.5,
+          "ingresos_totales": 5660.9,
+          "dependencia_pct": 70.8
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 1553.9,
+          "transferencias_automaticas": 3532.1,
+          "transferencias_discrecionales": 1053.8,
+          "gasto_total": 6299.7,
+          "ingresos_totales": 6139.8,
+          "dependencia_pct": 74.7
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 2020.2,
+          "transferencias_automaticas": 4759.2,
+          "transferencias_discrecionales": 2133.0,
+          "gasto_total": 8210.6,
+          "ingresos_totales": 8912.3,
+          "dependencia_pct": 77.3
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 2703.9,
+          "transferencias_automaticas": 6325.4,
+          "transferencias_discrecionales": 2050.4,
+          "gasto_total": 11378.7,
+          "ingresos_totales": 11079.7,
+          "dependencia_pct": 75.6
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 3697.2,
+          "transferencias_automaticas": 8049.1,
+          "transferencias_discrecionales": 2281.8,
+          "gasto_total": 13737.1,
+          "ingresos_totales": 14028.1,
+          "dependencia_pct": 73.6
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 5216.9,
+          "transferencias_automaticas": 10503.2,
+          "transferencias_discrecionales": 2737.2,
+          "gasto_total": 18203.1,
+          "ingresos_totales": 18457.3,
+          "dependencia_pct": 71.7
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 6963.6,
+          "transferencias_automaticas": 14466.9,
+          "transferencias_discrecionales": 4337.9,
+          "gasto_total": 25115.1,
+          "ingresos_totales": 25768.4,
+          "dependencia_pct": 73.0
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 8977.5,
+          "transferencias_automaticas": 19756.6,
+          "transferencias_discrecionales": 4667.7,
+          "gasto_total": 32748.8,
+          "ingresos_totales": 33401.8,
+          "dependencia_pct": 73.1
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 12000.7,
+          "transferencias_automaticas": 25253.9,
+          "transferencias_discrecionales": 4132.6,
+          "gasto_total": 42846.5,
+          "ingresos_totales": 41387.1,
+          "dependencia_pct": 71.0
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 16445.1,
+          "transferencias_automaticas": 33992.4,
+          "transferencias_discrecionales": 5390.7,
+          "gasto_total": 56474.2,
+          "ingresos_totales": 55828.2,
+          "dependencia_pct": 70.5
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 22044.4,
+          "transferencias_automaticas": 47589.9,
+          "transferencias_discrecionales": 6232.6,
+          "gasto_total": 75250.0,
+          "ingresos_totales": 75866.9,
+          "dependencia_pct": 70.9
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 29879.7,
+          "transferencias_automaticas": 70539.1,
+          "transferencias_discrecionales": 2733.1,
+          "gasto_total": 116479.2,
+          "ingresos_totales": 103151.9,
+          "dependencia_pct": 71.0
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 40691.1,
+          "transferencias_automaticas": 98156.1,
+          "transferencias_discrecionales": 14506.9,
+          "gasto_total": 156867.5,
+          "ingresos_totales": 153354.0,
+          "dependencia_pct": 73.5
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 67602.8,
+          "transferencias_automaticas": 159750.1,
+          "transferencias_discrecionales": 13764.2,
+          "gasto_total": 239535.2,
+          "ingresos_totales": 241117.0,
+          "dependencia_pct": 72.0
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 112878.8,
+          "transferencias_automaticas": 294109.9,
+          "transferencias_discrecionales": 30890.3,
+          "gasto_total": 417739.4,
+          "ingresos_totales": 437879.1,
+          "dependencia_pct": 74.2
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 257202.6,
+          "transferencias_automaticas": 646792.3,
+          "transferencias_discrecionales": 67031.3,
+          "gasto_total": 1020871.4,
+          "ingresos_totales": 971026.2,
+          "dependencia_pct": 73.5
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 784212.8,
+          "transferencias_automaticas": 1901306.2,
+          "transferencias_discrecionales": 30721.4,
+          "gasto_total": 2462697.8,
+          "ingresos_totales": 2716240.4,
+          "dependencia_pct": 71.1
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 1260742.2,
+          "transferencias_automaticas": 2757995.8,
+          "transferencias_discrecionales": 74359.6,
+          "gasto_total": 4073636.4,
+          "ingresos_totales": 4093097.5,
+          "dependencia_pct": 69.2
+        }
+      ]
+    },
+    "Tierra del Fuego": {
+      "series": [
+        {
+          "year": 2005,
+          "recursos_propios": 516.6,
+          "transferencias_automaticas": 444.0,
+          "transferencias_discrecionales": 36.8,
+          "gasto_total": 935.9,
+          "ingresos_totales": 997.4,
+          "dependencia_pct": 48.2
+        },
+        {
+          "year": 2006,
+          "recursos_propios": 753.4,
+          "transferencias_automaticas": 540.0,
+          "transferencias_discrecionales": 84.1,
+          "gasto_total": 1294.2,
+          "ingresos_totales": 1377.5,
+          "dependencia_pct": 45.3
+        },
+        {
+          "year": 2007,
+          "recursos_propios": 717.7,
+          "transferencias_automaticas": 696.3,
+          "transferencias_discrecionales": 95.6,
+          "gasto_total": 1714.5,
+          "ingresos_totales": 1509.6,
+          "dependencia_pct": 52.5
+        },
+        {
+          "year": 2008,
+          "recursos_propios": 987.8,
+          "transferencias_automaticas": 868.3,
+          "transferencias_discrecionales": 92.9,
+          "gasto_total": 1993.4,
+          "ingresos_totales": 1949.0,
+          "dependencia_pct": 49.3
+        },
+        {
+          "year": 2009,
+          "recursos_propios": 988.0,
+          "transferencias_automaticas": 951.4,
+          "transferencias_discrecionales": 252.4,
+          "gasto_total": 2353.9,
+          "ingresos_totales": 2191.9,
+          "dependencia_pct": 54.9
+        },
+        {
+          "year": 2010,
+          "recursos_propios": 1476.7,
+          "transferencias_automaticas": 1266.2,
+          "transferencias_discrecionales": 319.2,
+          "gasto_total": 2907.5,
+          "ingresos_totales": 3062.0,
+          "dependencia_pct": 51.8
+        },
+        {
+          "year": 2011,
+          "recursos_propios": 1991.0,
+          "transferencias_automaticas": 1663.3,
+          "transferencias_discrecionales": 247.9,
+          "gasto_total": 4077.2,
+          "ingresos_totales": 3902.1,
+          "dependencia_pct": 49.0
+        },
+        {
+          "year": 2012,
+          "recursos_propios": 2405.6,
+          "transferencias_automaticas": 2112.7,
+          "transferencias_discrecionales": 322.2,
+          "gasto_total": 5340.2,
+          "ingresos_totales": 4840.5,
+          "dependencia_pct": 50.3
+        },
+        {
+          "year": 2013,
+          "recursos_propios": 3386.9,
+          "transferencias_automaticas": 2740.5,
+          "transferencias_discrecionales": 417.4,
+          "gasto_total": 6951.7,
+          "ingresos_totales": 6544.8,
+          "dependencia_pct": 48.3
+        },
+        {
+          "year": 2014,
+          "recursos_propios": 5004.9,
+          "transferencias_automaticas": 3753.7,
+          "transferencias_discrecionales": 692.6,
+          "gasto_total": 9964.2,
+          "ingresos_totales": 9451.2,
+          "dependencia_pct": 47.0
+        },
+        {
+          "year": 2015,
+          "recursos_propios": 6283.4,
+          "transferencias_automaticas": 5125.9,
+          "transferencias_discrecionales": 992.5,
+          "gasto_total": 13837.7,
+          "ingresos_totales": 12401.8,
+          "dependencia_pct": 49.3
+        },
+        {
+          "year": 2016,
+          "recursos_propios": 8583.2,
+          "transferencias_automaticas": 6571.7,
+          "transferencias_discrecionales": 1551.3,
+          "gasto_total": 18029.3,
+          "ingresos_totales": 16706.2,
+          "dependencia_pct": 48.6
+        },
+        {
+          "year": 2017,
+          "recursos_propios": 11980.8,
+          "transferencias_automaticas": 8865.3,
+          "transferencias_discrecionales": 1950.3,
+          "gasto_total": 23841.6,
+          "ingresos_totales": 22796.4,
+          "dependencia_pct": 47.4
+        },
+        {
+          "year": 2018,
+          "recursos_propios": 15711.6,
+          "transferencias_automaticas": 12344.1,
+          "transferencias_discrecionales": 1515.5,
+          "gasto_total": 30331.9,
+          "ingresos_totales": 29571.2,
+          "dependencia_pct": 46.9
+        },
+        {
+          "year": 2019,
+          "recursos_propios": 22099.3,
+          "transferencias_automaticas": 18274.1,
+          "transferencias_discrecionales": 1562.4,
+          "gasto_total": 42317.3,
+          "ingresos_totales": 41935.7,
+          "dependencia_pct": 47.3
+        },
+        {
+          "year": 2020,
+          "recursos_propios": 24773.0,
+          "transferencias_automaticas": 25412.1,
+          "transferencias_discrecionales": 1737.5,
+          "gasto_total": 51881.2,
+          "ingresos_totales": 51922.6,
+          "dependencia_pct": 52.3
+        },
+        {
+          "year": 2021,
+          "recursos_propios": 43444.1,
+          "transferencias_automaticas": 41508.0,
+          "transferencias_discrecionales": 2243.8,
+          "gasto_total": 87721.2,
+          "ingresos_totales": 87196.0,
+          "dependencia_pct": 50.2
+        },
+        {
+          "year": 2022,
+          "recursos_propios": 86687.1,
+          "transferencias_automaticas": 75925.2,
+          "transferencias_discrecionales": 5138.9,
+          "gasto_total": 167214.8,
+          "ingresos_totales": 167751.2,
+          "dependencia_pct": 48.3
+        },
+        {
+          "year": 2023,
+          "recursos_propios": 186489.1,
+          "transferencias_automaticas": 165995.4,
+          "transferencias_discrecionales": 20665.1,
+          "gasto_total": 390757.8,
+          "ingresos_totales": 373149.6,
+          "dependencia_pct": 50.0
+        },
+        {
+          "year": 2024,
+          "recursos_propios": 503218.2,
+          "transferencias_automaticas": 493309.6,
+          "transferencias_discrecionales": 28076.4,
+          "gasto_total": 1016296.8,
+          "ingresos_totales": 1024604.2,
+          "dependencia_pct": 50.9
+        },
+        {
+          "year": 2025,
+          "recursos_propios": 683583.4,
+          "transferencias_automaticas": 698622.7,
+          "transferencias_discrecionales": 30543.9,
+          "gasto_total": 1643327.9,
+          "ingresos_totales": 1412749.9,
+          "dependencia_pct": 51.6
+        }
+      ]
     }
   }
 }

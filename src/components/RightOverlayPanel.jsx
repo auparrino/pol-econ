@@ -9,6 +9,7 @@ import centralesData from '../data/energy/centrales.json';
 import refineriasData from '../data/energy/refinerias.json';
 import cammesaRegions from '../data/energy/cammesa-por-region.json';
 import cammesaProvData from '../data/energy/cammesa-por-provincia.json';
+import { POWER_BY_FUEL as POWER_BY_FUEL_EN, POWER_TOTAL_GW, POWER_NUCLEAR_PLANTS } from '../data/energy/powerConstants';
 
 const OverlayPanel = lazy(() => import('./panels/OverlayPanel'));
 
@@ -72,27 +73,15 @@ const MINING_TOP_PROVINCES = [
   { name: 'Santa Cruz', count: 26 },
 ];
 const MINING_BY_STAGE = [
-  { name: 'Initial exploration', count: 131, color: '#94a3b8' },
-  { name: 'Advanced exploration', count: 73, color: '#669BBC' },
-  { name: 'Prospection',         count: 61, color: '#cbd5e1' },
-  { name: 'Production',          count: 26, color: '#17a589' },
-  { name: 'Pre-feasibility/Eval', count: 21, color: '#f59e0b' },
+  { name: 'Exploración inicial', count: 131, color: '#94a3b8' },
+  { name: 'Exploración avanzada', count: 73, color: '#4F86B5' },
+  { name: 'Prospección',         count: 61, color: '#cbd5e1' },
+  { name: 'Producción',          count: 26, color: '#17a589' },
+  { name: 'Prefactibilidad / eval.', count: 21, color: '#f59e0b' },
 ];
 
-// CAMMESA installed capacity end-2024 (validated; centrales.json carries
-// only a partial sample so we use the canonical totals here).
-const POWER_BY_FUEL = [
-  { name: 'Thermal',     gw: 25.5, color: '#EF4444' },
-  { name: 'Hydro',       gw: 10.1, color: '#3B82F6' },
-  { name: 'Renewables',  gw: 6.8,  color: '#10B981' },
-  { name: 'Nuclear',     gw: 1.8,  color: '#A855F7' },
-];
-const POWER_TOTAL_GW = POWER_BY_FUEL.reduce((s, x) => s + x.gw, 0);
-const POWER_NUCLEAR_PLANTS = [
-  { name: 'Atucha I',  mw: 362 },
-  { name: 'Atucha II', mw: 745 },
-  { name: 'Embalse',   mw: 656 },
-];
+const FUEL_ES = { Thermal: 'Térmica', Hydro: 'Hidráulica', Renewables: 'Renovables', Nuclear: 'Nuclear' };
+const POWER_BY_FUEL = POWER_BY_FUEL_EN.map(f => ({ ...f, name: FUEL_ES[f.name] || f.name }));
 
 // Pre-built normed lookup for per-province CAMMESA data (real plant assignments).
 // Keys are normProv(provinceName) so they match normProv(selectedProvince).
@@ -136,9 +125,9 @@ const FUENTE_COLOR = {
   'Nuclear':    '#A855F7',
 };
 const FUENTE_EN = {
-  'Térmica':   'Thermal',
-  'Hidráulica': 'Hydro',
-  'Renovable':  'Renewable',
+  'Térmica':   'Térmica',
+  'Hidráulica': 'Hidráulica',
+  'Renovable':  'Renovable',
   'Nuclear':    'Nuclear',
 };
 
@@ -150,11 +139,11 @@ const REFINERY_OPERATORS = [
 ];
 
 const HC_BASIN_NOTES = [
-  { name: 'Neuquina',  blurb: 'Vaca Muerta unconventional core. ~70% of national gas, growing oil share.' },
-  { name: 'Golfo San Jorge', blurb: 'Mature conventional crude. Chubut + Santa Cruz.' },
-  { name: 'Austral',   blurb: 'Offshore + onshore Tierra del Fuego / Santa Cruz, mostly gas.' },
-  { name: 'Cuyana',    blurb: 'Mendoza conventional, declining.' },
-  { name: 'Noroeste',  blurb: 'Salta + Jujuy + Formosa, mostly gas, declining.' },
+  { name: 'Neuquina',  blurb: 'Núcleo no convencional de Vaca Muerta: la mayor parte del gas y el petróleo del país.' },
+  { name: 'Golfo San Jorge', blurb: 'Crudo convencional maduro. Chubut y Santa Cruz.' },
+  { name: 'Austral',   blurb: 'Costa afuera y en tierra, TDF y Santa Cruz; sobre todo gas.' },
+  { name: 'Cuyana',    blurb: 'Convencional mendocina, en declino.' },
+  { name: 'Noroeste',  blurb: 'Salta, Jujuy y Formosa; sobre todo gas, en declino.' },
 ];
 
 function isLayerActive(id, overlays, energyLayers) {
@@ -184,11 +173,11 @@ function CardHeader({ id, label, icon, color, count, countLabel, active, onToggl
           {icon}
         </span>
         <div className="min-w-0">
-          <div className="text-[11px] font-bold text-[#003049] uppercase tracking-wider leading-tight">
+          <div className="text-[11px] font-bold text-[#14213D] uppercase tracking-wider leading-tight">
             {label}
           </div>
-          <div className="text-[10px] text-[#003049]/60 leading-tight">
-            <b className="font-mono text-[#003049]">{count.toLocaleString('en-US')}</b> {countLabel}
+          <div className="text-[10px] text-[#14213D]/60 leading-tight">
+            <b className="font-mono text-[#14213D]">{count.toLocaleString('es-AR')}</b> {countLabel}
           </div>
         </div>
       </div>
@@ -196,11 +185,11 @@ function CardHeader({ id, label, icon, color, count, countLabel, active, onToggl
         onClick={(e) => { e.stopPropagation(); onToggle(); }}
         className="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded shrink-0"
         style={active
-          ? { background: '#003049', color: '#FDF0D5' }
-          : { background: 'rgba(0,48,73,0.08)', color: 'rgba(0,48,73,0.55)' }
+          ? { background: '#14213D', color: '#F5F3EE' }
+          : { background: 'rgba(20,33,61,0.08)', color: 'rgba(20,33,61,0.55)' }
         }
       >
-        {active ? '● ON' : 'Show'}
+        {active ? '● Activa' : 'Ver'}
       </button>
     </div>
   );
@@ -215,11 +204,11 @@ function StatBars({ items, total, valueKey = 'count', maxItems = 6 }) {
         const pct = (v / max) * 100;
         return (
           <div key={item.name} className="flex items-center gap-1.5 text-[10px]">
-            <span className="w-[60px] text-[#003049]/65 truncate">{item.name}</span>
-            <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
-              <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: item.color || '#669BBC' }} />
+            <span className="w-[60px] text-[#14213D]/65 truncate">{item.name}</span>
+            <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(20,33,61,0.08)' }}>
+              <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: item.color || '#4F86B5' }} />
             </div>
-            <span className="font-mono text-[#003049]/70 text-right min-w-[28px]">
+            <span className="font-mono text-[#14213D]/70 text-right min-w-[28px]">
               {total ? `${Math.round((v / total) * 100)}%` : v}
             </span>
           </div>
@@ -232,7 +221,7 @@ function StatBars({ items, total, valueKey = 'count', maxItems = 6 }) {
 function MiniSection({ title, children }) {
   return (
     <div className="mt-2">
-      <div className="text-[8px] uppercase tracking-wider text-[#003049]/45 font-semibold mb-0.5">
+      <div className="text-[8px] uppercase tracking-wider text-[#14213D]/45 font-semibold mb-0.5">
         {title}
       </div>
       {children}
@@ -257,15 +246,15 @@ function MiningCard({ active, onToggle, selectedProvince }) {
       if (p.estado)    stages[p.estado]      = (stages[p.estado]      || 0) + 1;
       if (p.provincia) provinces[p.provincia]= (provinces[p.provincia]|| 0) + 1;
       // 37% of SIACAM projects have no operator origin recorded; surface them
-      // as 'Not disclosed' rather than dropping them silently.
+      // as 'Sin informar' rather than dropping them silently.
       if (p.pais) countries[p.pais] = (countries[p.pais] || 0) + 1;
       else unknownCountry += 1;
     }
-    if (unknownCountry > 0) countries['Not disclosed'] = unknownCountry;
+    if (unknownCountry > 0) countries['Sin informar'] = unknownCountry;
     const top = (o, n) => Object.entries(o)
       .sort((a, b) => b[1] - a[1])
       .slice(0, n)
-      .map(([name, count]) => ({ name, count, color: MINERAL_COLOR[name] || '#669BBC' }));
+      .map(([name, count]) => ({ name, count, color: MINERAL_COLOR[name] || '#4F86B5' }));
     return {
       total: list.length,
       topMinerals: top(minerals, 6),
@@ -278,47 +267,47 @@ function MiningCard({ active, onToggle, selectedProvince }) {
   return (
     <div className="rounded-md p-2.5"
       style={{
-        background: active ? 'rgba(0,48,73,0.10)' : 'rgba(0,48,73,0.04)',
-        border: `1px solid ${active ? '#003049' : 'rgba(0,48,73,0.10)'}`,
+        background: active ? 'rgba(20,33,61,0.10)' : 'rgba(20,33,61,0.04)',
+        border: `1px solid ${active ? '#14213D' : 'rgba(20,33,61,0.10)'}`,
       }}
     >
       <CardHeader
-        id="mining" label="Mining" icon="⛏" color="#ffd700"
+        id="mining" label="Minería" icon="⛏" color="#ffd700"
         count={stats.total}
-        countLabel={selectedProvince ? `projects in ${selectedProvince}` : 'metalliferous & lithium projects (SIACAM)'}
+        countLabel={selectedProvince ? `proyectos en ${selectedProvince}` : 'proyectos metalíferos y de litio (SIACAM)'}
         active={active} onToggle={onToggle}
       />
       {stats.total === 0 ? (
-        <p className="text-[10px] text-[#003049]/50 italic">No SIACAM projects in this province.</p>
+        <p className="text-[10px] text-[#14213D]/50 italic">Sin proyectos SIACAM en esta provincia.</p>
       ) : (
         <>
-          <MiniSection title="Top minerals">
+          <MiniSection title="Minerales principales">
             <StatBars items={stats.topMinerals} total={stats.total} />
           </MiniSection>
-          <MiniSection title="By stage">
+          <MiniSection title="Por etapa">
             <StatBars
-              items={stats.topStages.map((s, i) => ({ ...s, color: ['#94a3b8','#669BBC','#cbd5e1','#17a589','#f59e0b'][i] || '#94a3b8' }))}
+              items={stats.topStages.map((s, i) => ({ ...s, color: ['#94a3b8','#4F86B5','#cbd5e1','#17a589','#f59e0b'][i] || '#94a3b8' }))}
               total={stats.total}
               maxItems={5}
             />
           </MiniSection>
           <div className="grid grid-cols-2 gap-2 mt-2">
-            <MiniSection title="Operators (origin)">
-              <ul className="text-[10px] text-[#003049]/70 space-y-0.5">
+            <MiniSection title="Origen del operador">
+              <ul className="text-[10px] text-[#14213D]/70 space-y-0.5">
                 {stats.topCountries.map(([name, count]) => (
                   <li key={name} className="flex justify-between gap-1">
                     <span className="truncate">{name}</span>
-                    <span className="font-mono text-[#003049]/55">{count}</span>
+                    <span className="font-mono text-[#14213D]/55">{count}</span>
                   </li>
                 ))}
               </ul>
             </MiniSection>
-            <MiniSection title={selectedProvince ? 'In this province' : 'Top provinces'}>
-              <ul className="text-[10px] text-[#003049]/70 space-y-0.5">
+            <MiniSection title={selectedProvince ? 'En esta provincia' : 'Provincias con más proyectos'}>
+              <ul className="text-[10px] text-[#14213D]/70 space-y-0.5">
                 {stats.topProvinces.map(([name, count]) => (
                   <li key={name} className="flex justify-between gap-1">
                     <span className="truncate">{name}</span>
-                    <span className="font-mono text-[#003049]/55">{count}</span>
+                    <span className="font-mono text-[#14213D]/55">{count}</span>
                   </li>
                 ))}
               </ul>
@@ -358,32 +347,32 @@ function HcFieldsCard({ active, onToggle, selectedProvince }) {
   return (
     <div className="rounded-md p-2.5"
       style={{
-        background: active ? 'rgba(0,48,73,0.10)' : 'rgba(0,48,73,0.04)',
-        border: `1px solid ${active ? '#003049' : 'rgba(0,48,73,0.10)'}`,
+        background: active ? 'rgba(20,33,61,0.10)' : 'rgba(20,33,61,0.04)',
+        border: `1px solid ${active ? '#14213D' : 'rgba(20,33,61,0.10)'}`,
       }}
     >
       <CardHeader
-        id="yacimientos" label="HC Fields" icon="🛢" color="#10B981"
+        id="yacimientos" label="Hidrocarburos" icon="🛢" color="#10B981"
         count={879}
-        countLabel={selectedProvince ? `national areas · click to filter map` : 'hydrocarbon concession areas'}
+        countLabel={selectedProvince ? `áreas en el país` : 'áreas de concesión hidrocarburífera'}
         active={active} onToggle={onToggle}
       />
       {selectedProvince && !basinsForProv && (
-        <p className="text-[10px] text-[#003049]/55 italic mb-1">
-          {selectedProvince} is not a hydrocarbon-producing province.
+        <p className="text-[10px] text-[#14213D]/55 italic mb-1">
+          {selectedProvince} no es una provincia productora de hidrocarburos.
         </p>
       )}
-      <p className="text-[10px] text-[#003049]/65 leading-snug">
-        Concession blocks granted to operators by the federal government and provinces.
-        {!selectedProvince && ' Geometry covers all 5 productive sedimentary basins.'}
+      <p className="text-[10px] text-[#14213D]/65 leading-snug">
+        Bloques concesionados a operadoras por Nación y las provincias.
+        {!selectedProvince && ' Cubre las 5 cuencas sedimentarias productivas.'}
       </p>
       {basinsToShow.length > 0 && (
-        <MiniSection title={selectedProvince ? `Basins in ${selectedProvince}` : 'Basins (West → South)'}>
+        <MiniSection title={selectedProvince ? `Cuencas en ${selectedProvince}` : 'Cuencas (de norte a sur)'}>
           <ul className="space-y-0.5">
             {basinsToShow.map(b => (
               <li key={b.name} className="text-[10px] leading-snug">
-                <span className="font-bold text-[#003049]">{b.name}</span>
-                <span className="text-[#003049]/55"> · {b.blurb}</span>
+                <span className="font-bold text-[#14213D]">{b.name}</span>
+                <span className="text-[#14213D]/55"> · {b.blurb}</span>
               </li>
             ))}
           </ul>
@@ -404,28 +393,28 @@ function RefineriesCard({ active, onToggle, selectedProvince }) {
   return (
     <div className="rounded-md p-2.5"
       style={{
-        background: active ? 'rgba(0,48,73,0.10)' : 'rgba(0,48,73,0.04)',
-        border: `1px solid ${active ? '#003049' : 'rgba(0,48,73,0.10)'}`,
+        background: active ? 'rgba(20,33,61,0.10)' : 'rgba(20,33,61,0.04)',
+        border: `1px solid ${active ? '#14213D' : 'rgba(20,33,61,0.10)'}`,
       }}
     >
       <CardHeader
-        id="refinerias" label="Refineries" icon="🏭" color="#F97316"
+        id="refinerias" label="Refinerías" icon="🏭" color="#F97316"
         count={selectedProvince ? list.length : total}
-        countLabel={selectedProvince ? `plants in ${selectedProvince}` : 'crude refining plants'}
+        countLabel={selectedProvince ? `plantas en ${selectedProvince}` : 'plantas de refinación de crudo'}
         active={active} onToggle={onToggle}
       />
       {!selectedProvince && (
         <>
-          <p className="text-[10px] text-[#003049]/65 leading-snug">
-            ~640 kbpd installed capacity. Highly concentrated: top 3 operators
-            run more than 85%. La Plata + Luján de Cuyo + San Lorenzo dominate.
+          <p className="text-[10px] text-[#14213D]/65 leading-snug">
+            Capacidad muy concentrada: tres operadoras procesan la gran mayoría
+            del crudo; La Plata y Luján de Cuyo son las mayores.
           </p>
-          <MiniSection title="By operator">
+          <MiniSection title="Por operadora">
             <ul className="text-[10px] space-y-0.5">
               {REFINERY_OPERATORS.map(op => (
-                <li key={op.name} className="flex justify-between text-[#003049]/70">
+                <li key={op.name} className="flex justify-between text-[#14213D]/70">
                   <span>{op.name}</span>
-                  <span className="font-mono text-[#003049]/55">{op.share} · {op.plants}</span>
+                  <span className="font-mono text-[#14213D]/55">{op.share} · {op.plants}</span>
                 </li>
               ))}
             </ul>
@@ -433,10 +422,10 @@ function RefineriesCard({ active, onToggle, selectedProvince }) {
         </>
       )}
       {selectedProvince && list.length === 0 && (
-        <p className="text-[10px] text-[#003049]/50 italic">No refineries in {selectedProvince}.</p>
+        <p className="text-[10px] text-[#14213D]/50 italic">Sin refinerías en {selectedProvince}.</p>
       )}
       {selectedProvince && list.length > 0 && (
-        <MiniSection title={`Plants in ${selectedProvince}`}>
+        <MiniSection title={`Plantas en ${selectedProvince}`}>
           <ul className="text-[10px] space-y-0.5">
             {list.map((f, i) => {
               const p = f.properties || {};
@@ -448,9 +437,9 @@ function RefineriesCard({ active, onToggle, selectedProvince }) {
                 ? toTitleCase(p.planta)
                 : null;
               return (
-                <li key={i} className="flex justify-between gap-2 text-[#003049]/70">
+                <li key={i} className="flex justify-between gap-2 text-[#14213D]/70">
                   <span className="truncate">{primary}</span>
-                  {secondary && <span className="text-[#003049]/45 truncate text-right shrink-0">{secondary}</span>}
+                  {secondary && <span className="text-[#14213D]/45 truncate text-right shrink-0">{secondary}</span>}
                 </li>
               );
             })}
@@ -536,53 +525,53 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
   const headerLabel = selectedProvince
     ? stats.capacityData
       ? stats.isAssigned
-        ? `GW installed · provincial data (2020)`
-        : `GW in CAMMESA region (2020)`
-      : `no capacity data`
-    : `GW installed nationwide (CAMMESA, end-2024)`;
+        ? `GW instalados · dato provincial (sep. 2026)`
+        : `GW en la región CAMMESA (sep. 2026)`
+      : `sin datos de potencia`
+    : `GW instalados en el país (CAMMESA, sep. 2026)`;
 
   return (
     <div className="rounded-md p-2.5"
       style={{
-        background: active ? 'rgba(0,48,73,0.10)' : 'rgba(0,48,73,0.04)',
-        border: `1px solid ${active ? '#003049' : 'rgba(0,48,73,0.10)'}`,
+        background: active ? 'rgba(20,33,61,0.10)' : 'rgba(20,33,61,0.04)',
+        border: `1px solid ${active ? '#14213D' : 'rgba(20,33,61,0.10)'}`,
       }}
     >
       <CardHeader
-        id="centrales" label="Power Plants" icon="⚡" color="#A855F7"
+        id="centrales" label="Centrales eléctricas" icon="⚡" color="#A855F7"
         count={headerCount}
         countLabel={headerLabel}
         active={active} onToggle={onToggle}
       />
       {!selectedProvince && (
         <>
-          <MiniSection title="By fuel (GW installed)">
+          <MiniSection title="Por fuente (GW instalados)">
             <div className="space-y-0.5">
               {POWER_BY_FUEL.map(f => {
                 const pct = (f.gw / POWER_TOTAL_GW) * 100;
                 return (
                   <div key={f.name} className="flex items-center gap-1.5 text-[10px]">
-                    <span className="w-[60px] text-[#003049]/65">{f.name}</span>
-                    <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
+                    <span className="w-[60px] text-[#14213D]/65">{f.name}</span>
+                    <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(20,33,61,0.08)' }}>
                       <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: f.color }} />
                     </div>
-                    <span className="font-mono text-[#003049]/70 text-right min-w-[36px]">{f.gw} GW</span>
+                    <span className="font-mono text-[#14213D]/70 text-right min-w-[36px]">{f.gw} GW</span>
                   </div>
                 );
               })}
             </div>
           </MiniSection>
-          <MiniSection title="Nuclear plants">
+          <MiniSection title="Centrales nucleares">
             <ul className="text-[10px] space-y-0.5">
               {POWER_NUCLEAR_PLANTS.map(p => (
-                <li key={p.name} className="flex justify-between text-[#003049]/70">
+                <li key={p.name} className="flex justify-between text-[#14213D]/70">
                   <span>{p.name}</span>
-                  <span className="font-mono text-[#003049]/55">{p.mw} MW</span>
+                  <span className="font-mono text-[#14213D]/55">{p.mw} MW</span>
                 </li>
               ))}
             </ul>
           </MiniSection>
-          <p className="text-[10px] text-[#003049]/55 leading-snug mt-2">
+          <p className="text-[10px] text-[#14213D]/55 leading-snug mt-2">
             Thermal still dominates (~59% of capacity, gas the main fuel).
             Renewables passed nuclear in 2018 and now triple it.
           </p>
@@ -592,8 +581,8 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
         <>
           <MiniSection title={
             stats.isAssigned
-              ? `Grid capacity · assigned (${stats.capacityData.plantCount} plants)`
-              : `Grid region · estimated: ${stats.capacityData.label}`
+              ? `Potencia instalada · ${stats.capacityData.plantCount} centrales`
+              : `Región eléctrica · estimado: ${stats.capacityData.label}`
           }>
             <div className="space-y-0.5">
               {stats.capacityData.fuentes.map(({ fuente, mw }) => {
@@ -601,11 +590,11 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
                 const color = FUENTE_COLOR[fuente] || '#6B7280';
                 return (
                   <div key={fuente} className="flex items-center gap-1.5 text-[10px]">
-                    <span className="w-[62px] text-[#003049]/65">{FUENTE_EN[fuente] || fuente}</span>
-                    <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(0,48,73,0.08)' }}>
+                    <span className="w-[62px] text-[#14213D]/65">{FUENTE_EN[fuente] || fuente}</span>
+                    <div className="flex-1 h-[5px] rounded-sm overflow-hidden" style={{ background: 'rgba(20,33,61,0.08)' }}>
                       <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: color }} />
                     </div>
-                    <span className="font-mono text-[#003049]/70 text-right min-w-[42px]">
+                    <span className="font-mono text-[#14213D]/70 text-right min-w-[42px]">
                       {mw >= 1000 ? `${(mw / 1000).toFixed(1)} GW` : `${Math.round(mw)} MW`}
                     </span>
                   </div>
@@ -614,12 +603,12 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
             </div>
           </MiniSection>
           {stats.topPlants.length > 0 && (
-            <MiniSection title={stats.isAssigned ? 'Top plants by capacity' : 'Notable plants (mapped)'}>
+            <MiniSection title={stats.isAssigned ? 'Mayores centrales por potencia' : 'Centrales destacadas (mapeadas)'}>
               <ul className="text-[10px] space-y-0.5">
                 {stats.topPlants.map((p, i) => (
-                  <li key={`${p.name}_${i}`} className="flex justify-between gap-1 text-[#003049]/70">
+                  <li key={`${p.name}_${i}`} className="flex justify-between gap-1 text-[#14213D]/70">
                     <span className="truncate">{toTitleCase(p.name)}</span>
-                    <span className="font-mono text-[#003049]/55 shrink-0">
+                    <span className="font-mono text-[#14213D]/55 shrink-0">
                       {p.tech} · {p.mw >= 1000 ? `${(p.mw / 1000).toFixed(1)} GW` : `${p.mw.toFixed(0)} MW`}
                     </span>
                   </li>
@@ -627,10 +616,10 @@ function PowerPlantsCard({ active, onToggle, selectedProvince }) {
               </ul>
             </MiniSection>
           )}
-          <p className="text-[9px] text-[#003049]/45 leading-snug mt-2">
+          <p className="text-[9px] text-[#14213D]/45 leading-snug mt-2">
             {stats.isAssigned
-              ? `Per-province plant assignment. Source: datos.energia.gob.ar, Feb 2020.`
-              : `CAMMESA grid regions span multiple provinces; capacity shown is for the full region. Source: datos.energia.gob.ar, Feb 2020.`
+              ? `Asignación de centrales por provincia. Fuente: CAMMESA, sep. 2026.`
+              : `Las regiones de CAMMESA abarcan varias provincias; la potencia es la de toda la región. Fuente: CAMMESA, sep. 2026.`
             }
           </p>
         </>
@@ -659,28 +648,28 @@ export default function RightOverlayPanel({
         top: topOffset,
         bottom: bottomOffset,
         width,
-        background: '#FFF8EB',
-        borderColor: '#d4c4a0',
+        background: '#FFFFFF',
+        borderColor: '#E4E0D6',
       }}
     >
       <div
         className="sticky top-0 z-10 px-4 py-2 border-b"
-        style={{ background: '#FFF8EB', borderColor: 'rgba(0,48,73,0.10)' }}
+        style={{ background: '#FFFFFF', borderColor: 'rgba(20,33,61,0.10)' }}
       >
-        <h2 className="text-[11px] font-bold uppercase tracking-[1.5px] text-[#003049]/55">
-          {hasOverlay ? 'Active Overlays' : 'Map Overlays'}
+        <h2 className="text-[11px] font-bold uppercase tracking-[1.5px] text-[#14213D]/55">
+          {hasOverlay ? 'Capas activas' : 'Capas del mapa'}
         </h2>
         {hasOverlay && selectedProvince && (
-          <p className="text-[10px] text-[#003049]/55 mt-0.5">Filtered to {selectedProvince}</p>
+          <p className="text-[10px] text-[#14213D]/55 mt-0.5">Filtrado a {selectedProvince}</p>
         )}
         {!hasOverlay && (
-          <p className="text-[10px] text-[#003049]/55 mt-0.5">Click any layer to plot it on the map.</p>
+          <p className="text-[10px] text-[#14213D]/55 mt-0.5">Activá una capa para verla en el mapa.</p>
         )}
       </div>
 
       <div style={{ padding: '12px 14px' }}>
         {hasOverlay ? (
-          <Suspense fallback={<div className="text-[11px] text-[#003049]/50">Loading…</div>}>
+          <Suspense fallback={<div className="text-[11px] text-[#14213D]/50">Cargando…</div>}>
             <OverlayPanel
               overlays={overlays}
               energyLayers={energyLayers}
@@ -690,8 +679,8 @@ export default function RightOverlayPanel({
         ) : (
           <div className="flex flex-col gap-2.5">
             {selectedProvince && (
-              <p className="text-[10px] text-[#003049]/60 -mt-1 mb-0.5">
-                Showing overlays filtered to <b className="text-[#003049]">{selectedProvince}</b>.
+              <p className="text-[10px] text-[#14213D]/60 -mt-1 mb-0.5">
+                Capas filtradas a <b className="text-[#14213D]">{selectedProvince}</b>.
               </p>
             )}
             <MiningCard
@@ -714,9 +703,9 @@ export default function RightOverlayPanel({
               onToggle={() => toggleLayer('centrales', handlers)}
               selectedProvince={selectedProvince}
             />
-            <p className="text-[9px] text-[#003049]/40 italic mt-2 leading-snug">
-              Sources: SIACAM (mining), datos.energia.gob.ar (HC fields, refineries),
-              CAMMESA end-2024 + manual additions (power plants).
+            <p className="text-[9px] text-[#14213D]/40 italic mt-2 leading-snug">
+              Fuentes: SIACAM (minería), datos.energia.gob.ar (hidrocarburos, refinerías),
+              CAMMESA sep. 2026 (centrales).
             </p>
           </div>
         )}

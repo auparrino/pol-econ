@@ -222,9 +222,9 @@ function CentralesLayer() {
 
 /* ─── Layer config (exported for LayerPanel) ─── */
 export const ENERGY_LAYER_CONFIGS = [
-  { id: 'yacimientos', label: 'HC Fields', icon: '🗺️', color: '#10B981' },
-  { id: 'refinerias', label: 'Refineries', icon: '🏭', color: '#F97316' },
-  { id: 'centrales', label: 'Power Plants', icon: '⚡', color: '#A855F7' },
+  { id: 'yacimientos', label: 'Hidrocarburos', icon: '🗺️', color: '#10B981' },
+  { id: 'refinerias', label: 'Refinerías', icon: '🏭', color: '#F97316' },
+  { id: 'centrales', label: 'Centrales', icon: '⚡', color: '#A855F7' },
 ];
 
 /* ─── Main export ─── */

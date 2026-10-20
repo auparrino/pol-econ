@@ -1,4 +1,5 @@
 // Total: 72
+// Verified against https://www.senado.gob.ar/senadores/listados/agrupados-por-bloques as of 2026-10-20 (post 10-Dec-2025 renewal)
 // Buenos Aires: 3
 // Catamarca: 3
 // Chaco: 3
@@ -68,7 +69,7 @@ export const officialSenators = [
   {
     "n": "Arce, Carlos Omar",
     "p": "Misiones",
-    "b": "FRENTE RENOVADOR DE LA CONCORDIA SOCIAL",
+    "b": "MOVIMIENTO POR MISIONES",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2029"
@@ -148,7 +149,7 @@ export const officialSenators = [
   {
     "n": "Carambia, José María",
     "p": "Santa Cruz",
-    "b": "MOVERE POR SANTA CRUZ",
+    "b": "MOVERE SANTA CRUZ",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2029"
@@ -244,7 +245,7 @@ export const officialSenators = [
   {
     "n": "Gadano, Natalia Elena",
     "p": "Santa Cruz",
-    "b": "MOVERE POR SANTA CRUZ",
+    "b": "MOVERE SANTA CRUZ",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2029"
@@ -508,7 +509,7 @@ export const officialSenators = [
   {
     "n": "Rojas Decut, Sonia Elizabeth",
     "p": "Misiones",
-    "b": "FRENTE RENOVADOR DE LA CONCORDIA SOCIAL",
+    "b": "MOVIMIENTO POR MISIONES",
     "co": "OTROS",
     "desde": "2023",
     "hasta": "2029"

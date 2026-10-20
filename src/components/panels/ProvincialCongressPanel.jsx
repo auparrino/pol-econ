@@ -9,10 +9,10 @@ import { matchProvince, blocColor } from '../shared/helpers';
 // Convert votaciones.json (object or array) to array
 const votacionesList = Array.isArray(votacionesRaw) ? votacionesRaw : Object.values(votacionesRaw);
 
-// Topics per chamber (must match scrape-votes.mjs output)
+// Topics per chamber (vote ids in votaciones.json / executivePositions.json)
 const OFICIALISMO_BLOCS = ['la libertad avanza'];
-const SENATE_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv'];
-const DEPUTY_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue'];
+const SENATE_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'mercosur_ue', 'ley_glaciares', 'regimen_penal_juv', 'inocencia_fiscal_2'];
+const DEPUTY_TOPICS = ['presupuesto_2026', 'inocencia_fiscal', 'modernizacion_laboral', 'regimen_penal_juv', 'mercosur_ue', 'ley_glaciares', 'inocencia_fiscal_2'];
 
 // Pre-compute LLA bloc majority position per topic
 function computeBlocPosition(chamber, topics) {
@@ -137,13 +137,13 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
   const LegRow = ({ l }) => {
     const alla = l.alla;
     const alignColor = alla != null
-      ? (alla >= 75 ? '#7d3c98' : alla >= 50 ? '#17a589' : alla >= 25 ? '#d4a800' : '#780000')
+      ? (alla >= 75 ? '#7d3c98' : alla >= 50 ? '#17a589' : alla >= 25 ? '#d4a800' : '#7B1E14')
       : null;
     return (
       <div className="flex items-center gap-1 py-0.5">
-        <span className="text-[12px] font-semibold text-[#003049] truncate flex-1 min-w-0">{l.n}</span>
+        <span className="text-[12px] font-semibold text-[#14213D] truncate flex-1 min-w-0">{l.n}</span>
         <VoteDots name={l.n} chamber={l.c} />
-        <span className="text-[11px] font-mono font-bold w-[28px] text-right shrink-0" style={{ color: alignColor || '#003049' }}>
+        <span className="text-[11px] font-mono font-bold w-[28px] text-right shrink-0" style={{ color: alignColor || '#14213D' }}>
           {alla != null ? `${alla}%` : '—'}
         </span>
       </div>
@@ -154,17 +154,17 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
     <div className="flex flex-col gap-3 pt-0.5">
       {/* Senators */}
       <div>
-        <p className="text-[11px] uppercase tracking-widest text-[#003049]/50 mb-1 font-semibold">Senators ({senators.length})</p>
+        <p className="text-[11px] uppercase tracking-widest text-[#14213D]/50 mb-1 font-semibold">Senators ({senators.length})</p>
         <div className="space-y-0">
           {senators.length > 0 ? senators.map((l, i) => (
             <LegRow key={i} l={l} />
-          )) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
+          )) : <p className="text-[11px] text-[#14213D]/40 italic">No data</p>}
         </div>
       </div>
 
       {/* Deputies */}
       <div>
-        <p className="text-[11px] uppercase tracking-widest text-[#003049]/50 mb-1 font-semibold">Deputies ({deputies.length})</p>
+        <p className="text-[11px] uppercase tracking-widest text-[#14213D]/50 mb-1 font-semibold">Deputies ({deputies.length})</p>
         {deputies.length > 0 ? (
           <>
             {(() => {
@@ -187,16 +187,16 @@ function ProvincialCongressPanelRaw({ selectedProvince, congress }) {
             <div className="space-y-0">
               {deputies.map((l, i) => (
                 <div key={i} className="flex items-center gap-1 py-px">
-                  <span className="text-[11px] font-semibold text-[#003049] truncate flex-1 min-w-0">{l.n}</span>
+                  <span className="text-[11px] font-semibold text-[#14213D] truncate flex-1 min-w-0">{l.n}</span>
                   <VoteDots name={l.n} chamber={l.c} />
                   <span className="text-[10px] font-mono shrink-0 w-[28px] text-right" style={{
-                    color: l.alla != null ? (l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#780000') : '#003049'
+                    color: l.alla != null ? (l.alla >= 75 ? '#7d3c98' : l.alla >= 50 ? '#17a589' : l.alla >= 25 ? '#d4a800' : '#7B1E14') : '#14213D'
                   }}>{l.alla != null ? `${l.alla}%` : ''}</span>
                 </div>
               ))}
             </div>
           </>
-        ) : <p className="text-[11px] text-[#003049]/40 italic">No data</p>}
+        ) : <p className="text-[11px] text-[#14213D]/40 italic">No data</p>}
       </div>
     </div>
   );

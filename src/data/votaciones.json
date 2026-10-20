@@ -9,7 +9,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "1": {
@@ -22,7 +24,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "2": {
@@ -35,7 +39,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "3": {
@@ -48,7 +54,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "4": {
@@ -61,7 +69,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "5": {
@@ -74,7 +84,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "6": {
@@ -87,7 +99,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "7": {
@@ -100,7 +114,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "N"
     }
   },
   "8": {
@@ -113,7 +129,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "9": {
@@ -126,7 +144,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "10": {
@@ -139,7 +159,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "11": {
@@ -152,7 +174,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "12": {
@@ -165,7 +189,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "13": {
@@ -178,7 +204,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "14": {
@@ -191,7 +219,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "X"
     }
   },
   "15": {
@@ -204,7 +234,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "16": {
@@ -217,7 +249,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "17": {
@@ -230,7 +264,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "18": {
@@ -243,7 +279,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "19": {
@@ -256,7 +294,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "N"
     }
   },
   "20": {
@@ -269,7 +309,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "21": {
@@ -282,7 +324,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "22": {
@@ -295,7 +339,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "23": {
@@ -308,7 +354,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "24": {
@@ -321,7 +369,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "25": {
@@ -334,7 +384,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "26": {
@@ -347,7 +399,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "27": {
@@ -360,7 +414,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "28": {
@@ -373,7 +429,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "29": {
@@ -386,7 +444,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "30": {
@@ -399,7 +459,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "U",
+      "inocencia_fiscal_2": "A"
     }
   },
   "31": {
@@ -412,7 +474,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "32": {
@@ -425,7 +489,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "33": {
@@ -438,7 +504,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "34": {
@@ -451,7 +519,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "35": {
@@ -464,7 +534,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "36": {
@@ -477,7 +549,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "37": {
@@ -490,7 +564,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "38": {
@@ -503,7 +579,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "39": {
@@ -516,7 +594,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "40": {
@@ -529,7 +609,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "41": {
@@ -542,7 +624,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "42": {
@@ -555,7 +639,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "43": {
@@ -568,7 +654,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "44": {
@@ -581,7 +669,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "45": {
@@ -594,7 +684,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "46": {
@@ -607,7 +699,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "47": {
@@ -620,7 +714,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "U"
+      "modernizacion_laboral": "U",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "48": {
@@ -633,7 +729,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "49": {
@@ -646,7 +744,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "50": {
@@ -659,7 +759,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "N"
     }
   },
   "51": {
@@ -672,7 +774,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "52": {
@@ -685,7 +789,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "53": {
@@ -698,7 +804,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "U",
       "mercosur_ue": "U",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "54": {
@@ -711,7 +819,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "55": {
@@ -724,7 +834,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "56": {
@@ -737,7 +849,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "57": {
@@ -750,7 +864,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "58": {
@@ -763,7 +879,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "59": {
@@ -776,7 +894,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "60": {
@@ -789,7 +909,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "61": {
@@ -802,7 +924,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "62": {
@@ -815,7 +939,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "63": {
@@ -828,7 +954,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "64": {
@@ -841,7 +969,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "65": {
@@ -854,7 +984,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "66": {
@@ -867,7 +999,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "67": {
@@ -880,7 +1014,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "68": {
@@ -893,7 +1029,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "X",
+      "inocencia_fiscal_2": "A"
     }
   },
   "69": {
@@ -906,7 +1044,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "70": {
@@ -919,7 +1059,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "U"
     }
   },
   "71": {
@@ -932,7 +1074,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "72": {
@@ -945,7 +1089,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "73": {
@@ -958,7 +1104,9 @@
       "inocencia_fiscal": "X",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "74": {
@@ -971,7 +1119,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "U",
       "mercosur_ue": "U",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "75": {
@@ -984,7 +1134,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "76": {
@@ -997,7 +1149,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "77": {
@@ -1010,7 +1164,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "78": {
@@ -1023,7 +1179,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "79": {
@@ -1036,7 +1194,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "U",
+      "inocencia_fiscal_2": "A"
     }
   },
   "80": {
@@ -1049,7 +1209,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "81": {
@@ -1062,7 +1224,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "U",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "U"
     }
   },
   "82": {
@@ -1075,7 +1239,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "83": {
@@ -1088,7 +1254,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "84": {
@@ -1101,7 +1269,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "85": {
@@ -1114,7 +1284,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "86": {
@@ -1127,7 +1299,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "87": {
@@ -1140,7 +1314,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "88": {
@@ -1153,7 +1329,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "89": {
@@ -1166,7 +1344,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "90": {
@@ -1179,7 +1359,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "U"
+      "modernizacion_laboral": "U",
+      "ley_glaciares": "U",
+      "inocencia_fiscal_2": "N"
     }
   },
   "91": {
@@ -1192,7 +1374,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "92": {
@@ -1205,7 +1389,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "93": {
@@ -1218,7 +1404,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "94": {
@@ -1231,7 +1419,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "95": {
@@ -1244,7 +1434,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "96": {
@@ -1257,7 +1449,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "97": {
@@ -1270,7 +1464,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "U"
     }
   },
   "98": {
@@ -1283,7 +1479,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "99": {
@@ -1296,7 +1494,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "100": {
@@ -1309,7 +1509,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "U",
+      "inocencia_fiscal_2": "A"
     }
   },
   "101": {
@@ -1322,7 +1524,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "102": {
@@ -1335,7 +1539,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "103": {
@@ -1348,7 +1554,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "104": {
@@ -1361,7 +1569,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "105": {
@@ -1374,7 +1584,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "106": {
@@ -1387,7 +1599,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "107": {
@@ -1400,7 +1614,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "108": {
@@ -1413,7 +1629,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "X",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "109": {
@@ -1426,7 +1644,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "110": {
@@ -1439,7 +1659,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "111": {
@@ -1452,7 +1674,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "112": {
@@ -1465,7 +1689,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "113": {
@@ -1478,7 +1704,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "114": {
@@ -1491,7 +1719,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "115": {
@@ -1504,7 +1734,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "116": {
@@ -1517,7 +1749,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "117": {
@@ -1530,7 +1764,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "118": {
@@ -1543,7 +1779,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "119": {
@@ -1556,7 +1794,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "120": {
@@ -1569,7 +1809,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "U"
     }
   },
   "121": {
@@ -1582,7 +1824,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "122": {
@@ -1595,7 +1839,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "123": {
@@ -1608,7 +1854,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "124": {
@@ -1621,7 +1869,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "125": {
@@ -1634,7 +1884,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "126": {
@@ -1647,7 +1899,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "127": {
@@ -1660,7 +1914,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "128": {
@@ -1673,7 +1929,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "129": {
@@ -1686,7 +1944,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "130": {
@@ -1699,7 +1959,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "131": {
@@ -1712,7 +1974,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "132": {
@@ -1725,7 +1989,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "133": {
@@ -1738,7 +2004,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "134": {
@@ -1751,7 +2019,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "U",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "135": {
@@ -1764,7 +2034,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "136": {
@@ -1777,7 +2049,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "137": {
@@ -1790,7 +2064,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "138": {
@@ -1803,7 +2079,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "139": {
@@ -1816,7 +2094,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "140": {
@@ -1829,7 +2109,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "U",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "N"
     }
   },
   "141": {
@@ -1842,7 +2124,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "X",
+      "inocencia_fiscal_2": "A"
     }
   },
   "142": {
@@ -1855,7 +2139,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "143": {
@@ -1868,7 +2154,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "144": {
@@ -1881,7 +2169,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "145": {
@@ -1894,7 +2184,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "146": {
@@ -1907,7 +2199,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "147": {
@@ -1920,7 +2214,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "148": {
@@ -1933,7 +2229,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "149": {
@@ -1946,7 +2244,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "150": {
@@ -1959,7 +2259,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "151": {
@@ -1972,7 +2274,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "152": {
@@ -1985,7 +2289,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "153": {
@@ -1998,7 +2304,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "154": {
@@ -2011,7 +2319,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "U",
       "mercosur_ue": "U",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "155": {
@@ -2024,7 +2334,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "156": {
@@ -2037,7 +2349,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "157": {
@@ -2050,7 +2364,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "158": {
@@ -2063,7 +2379,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "159": {
@@ -2076,7 +2394,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "160": {
@@ -2089,7 +2409,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "161": {
@@ -2102,7 +2424,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "162": {
@@ -2115,7 +2439,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "163": {
@@ -2128,7 +2454,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "164": {
@@ -2141,7 +2469,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "165": {
@@ -2154,7 +2484,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "U"
+      "modernizacion_laboral": "U",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "166": {
@@ -2167,7 +2499,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "167": {
@@ -2180,7 +2514,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "168": {
@@ -2193,7 +2529,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "169": {
@@ -2206,7 +2544,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "170": {
@@ -2219,7 +2559,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "171": {
@@ -2232,7 +2574,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "U",
       "mercosur_ue": "U",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "172": {
@@ -2245,7 +2589,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "173": {
@@ -2258,7 +2604,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "174": {
@@ -2271,7 +2619,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "175": {
@@ -2284,7 +2634,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "176": {
@@ -2297,7 +2649,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "177": {
@@ -2310,7 +2664,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "178": {
@@ -2323,7 +2679,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "179": {
@@ -2336,7 +2694,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "180": {
@@ -2349,7 +2709,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "181": {
@@ -2362,7 +2724,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "182": {
@@ -2375,7 +2739,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "183": {
@@ -2388,7 +2754,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "184": {
@@ -2401,7 +2769,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "185": {
@@ -2414,7 +2784,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "186": {
@@ -2427,7 +2799,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "187": {
@@ -2440,7 +2814,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "U"
     }
   },
   "188": {
@@ -2453,7 +2829,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "189": {
@@ -2466,7 +2844,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "190": {
@@ -2479,7 +2859,8 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N"
     }
   },
   "191": {
@@ -2492,7 +2873,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "192": {
@@ -2505,7 +2888,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "193": {
@@ -2518,7 +2903,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "194": {
@@ -2531,7 +2918,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "195": {
@@ -2544,7 +2933,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "196": {
@@ -2557,7 +2948,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "197": {
@@ -2570,7 +2963,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "198": {
@@ -2583,7 +2978,8 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A"
     }
   },
   "199": {
@@ -2596,7 +2992,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "200": {
@@ -2609,7 +3007,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "201": {
@@ -2622,7 +3022,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "202": {
@@ -2635,7 +3037,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "203": {
@@ -2648,7 +3052,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "U",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "204": {
@@ -2661,7 +3067,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "205": {
@@ -2674,7 +3082,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "206": {
@@ -2687,7 +3097,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "207": {
@@ -2700,7 +3112,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "208": {
@@ -2713,7 +3127,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "209": {
@@ -2726,7 +3142,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "210": {
@@ -2739,7 +3157,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "211": {
@@ -2752,7 +3172,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "212": {
@@ -2765,7 +3187,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "X",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "213": {
@@ -2778,7 +3202,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "214": {
@@ -2791,7 +3217,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "215": {
@@ -2804,7 +3232,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "216": {
@@ -2817,7 +3247,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "217": {
@@ -2830,7 +3262,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "218": {
@@ -2843,7 +3277,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "219": {
@@ -2856,7 +3292,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "220": {
@@ -2869,7 +3307,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "221": {
@@ -2882,7 +3322,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "222": {
@@ -2895,7 +3337,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "X",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "223": {
@@ -2908,7 +3352,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "224": {
@@ -2921,7 +3367,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "225": {
@@ -2934,7 +3382,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "226": {
@@ -2947,7 +3397,9 @@
       "inocencia_fiscal": "U",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "U"
+      "modernizacion_laboral": "U",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "227": {
@@ -2960,7 +3412,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "228": {
@@ -2973,7 +3427,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "229": {
@@ -2986,7 +3442,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "230": {
@@ -2999,7 +3457,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "231": {
@@ -3012,7 +3472,9 @@
       "inocencia_fiscal": "X",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "U"
+      "modernizacion_laboral": "U",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "X"
     }
   },
   "232": {
@@ -3025,7 +3487,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "233": {
@@ -3038,7 +3502,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "234": {
@@ -3051,7 +3517,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "235": {
@@ -3064,7 +3532,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "236": {
@@ -3077,7 +3547,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "237": {
@@ -3090,7 +3562,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "238": {
@@ -3103,7 +3577,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "239": {
@@ -3116,7 +3592,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "240": {
@@ -3129,7 +3607,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "241": {
@@ -3142,7 +3622,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "U",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "242": {
@@ -3155,7 +3637,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "243": {
@@ -3168,7 +3652,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "244": {
@@ -3181,7 +3667,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "245": {
@@ -3194,7 +3682,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "246": {
@@ -3207,7 +3697,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "247": {
@@ -3220,7 +3712,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "248": {
@@ -3233,7 +3727,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "U",
+      "inocencia_fiscal_2": "N"
     }
   },
   "249": {
@@ -3246,7 +3742,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "250": {
@@ -3259,7 +3757,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "X",
+      "inocencia_fiscal_2": "A"
     }
   },
   "251": {
@@ -3272,7 +3772,9 @@
       "inocencia_fiscal": "A",
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "A"
+      "modernizacion_laboral": "A",
+      "ley_glaciares": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "252": {
@@ -3285,7 +3787,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "N",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "253": {
@@ -3298,7 +3802,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "U",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "A"
     }
   },
   "254": {
@@ -3311,7 +3817,9 @@
       "inocencia_fiscal": "N",
       "regimen_penal_juv": "N",
       "mercosur_ue": "X",
-      "modernizacion_laboral": "N"
+      "modernizacion_laboral": "N",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "255": {
@@ -3322,7 +3830,9 @@
     "v": {
       "regimen_penal_juv": "A",
       "mercosur_ue": "A",
-      "modernizacion_laboral": "U"
+      "modernizacion_laboral": "U",
+      "ley_glaciares": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "256": {
@@ -3338,7 +3848,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "A"
     }
   },
   "257": {
@@ -3354,7 +3865,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "A"
     }
   },
   "258": {
@@ -3370,7 +3882,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "A"
     }
   },
   "259": {
@@ -3386,7 +3899,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "260": {
@@ -3402,7 +3916,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "261": {
@@ -3418,7 +3933,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "262": {
@@ -3434,7 +3950,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "263": {
@@ -3450,7 +3967,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "264": {
@@ -3466,7 +3984,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "265": {
@@ -3482,7 +4001,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "266": {
@@ -3498,7 +4018,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "267": {
@@ -3514,7 +4035,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "268": {
@@ -3530,7 +4052,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "269": {
@@ -3546,7 +4069,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "270": {
@@ -3562,7 +4086,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "271": {
@@ -3578,7 +4103,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "272": {
@@ -3594,7 +4120,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "U"
     }
   },
   "273": {
@@ -3610,7 +4137,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "274": {
@@ -3626,7 +4154,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "275": {
@@ -3642,7 +4171,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "276": {
@@ -3658,7 +4188,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "277": {
@@ -3674,7 +4205,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "278": {
@@ -3690,7 +4222,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "279": {
@@ -3706,7 +4239,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "280": {
@@ -3722,7 +4256,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "281": {
@@ -3738,7 +4273,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "282": {
@@ -3754,7 +4290,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "283": {
@@ -3770,7 +4307,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "284": {
@@ -3786,7 +4324,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "285": {
@@ -3802,7 +4341,8 @@
       "mercosur_ue": "N",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "286": {
@@ -3818,7 +4358,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "287": {
@@ -3834,7 +4375,8 @@
       "mercosur_ue": "N",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "288": {
@@ -3850,7 +4392,8 @@
       "mercosur_ue": "N",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "289": {
@@ -3866,7 +4409,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "N"
     }
   },
   "290": {
@@ -3882,7 +4426,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "N",
-      "modernizacion_laboral_dip": "N"
+      "modernizacion_laboral_dip": "N",
+      "inocencia_fiscal_2": "U"
     }
   },
   "291": {
@@ -3898,7 +4443,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "292": {
@@ -3914,7 +4460,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "293": {
@@ -3930,7 +4477,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "294": {
@@ -3946,7 +4494,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "295": {
@@ -3962,7 +4511,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "296": {
@@ -3978,7 +4528,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "297": {
@@ -3994,7 +4545,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "298": {
@@ -4010,7 +4562,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "299": {
@@ -4026,7 +4579,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "300": {
@@ -4042,7 +4596,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "301": {
@@ -4058,7 +4613,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "302": {
@@ -4074,7 +4630,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "303": {
@@ -4090,7 +4647,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "304": {
@@ -4106,7 +4664,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "U"
     }
   },
   "305": {
@@ -4122,7 +4681,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "306": {
@@ -4138,7 +4698,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "307": {
@@ -4154,7 +4715,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "308": {
@@ -4170,7 +4732,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "309": {
@@ -4186,7 +4749,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "310": {
@@ -4202,7 +4766,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "311": {
@@ -4218,7 +4783,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "312": {
@@ -4234,7 +4800,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "X",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "313": {
@@ -4250,7 +4817,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "X"
+      "modernizacion_laboral_dip": "X",
+      "inocencia_fiscal_2": "A"
     }
   },
   "314": {
@@ -4266,7 +4834,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "X"
+      "modernizacion_laboral_dip": "X",
+      "inocencia_fiscal_2": "A"
     }
   },
   "315": {
@@ -4282,7 +4851,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "316": {
@@ -4298,7 +4868,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "X",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "U"
     }
   },
   "317": {
@@ -4314,7 +4885,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "318": {
@@ -4330,7 +4902,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "319": {
@@ -4346,7 +4919,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "320": {
@@ -4362,7 +4936,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "321": {
@@ -4378,7 +4953,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "322": {
@@ -4394,7 +4970,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "U"
     }
   },
   "323": {
@@ -4410,7 +4987,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "324": {
@@ -4426,7 +5004,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "325": {
@@ -4442,7 +5021,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "N",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "326": {
@@ -4458,7 +5038,8 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
     }
   },
   "327": {
@@ -4474,7 +5055,26 @@
       "mercosur_ue": "A",
       "ley_glaciares": "A",
       "regimen_penal_juv": "A",
-      "modernizacion_laboral_dip": "A"
+      "modernizacion_laboral_dip": "A",
+      "inocencia_fiscal_2": "A"
+    }
+  },
+  "328": {
+    "n": "MATZKIN, MARTIN",
+    "b": "La Libertad Avanza",
+    "p": "La Pampa",
+    "c": "D",
+    "v": {
+      "inocencia_fiscal_2": "A"
+    }
+  },
+  "329": {
+    "n": "GIORDANO, JUAN CARLOS",
+    "b": "Frente De Izquierda Y De Trabajadores Unidad",
+    "p": "Buenos Aires",
+    "c": "D",
+    "v": {
+      "inocencia_fiscal_2": "N"
     }
   }
 }

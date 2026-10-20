@@ -1,9 +1,9 @@
 const ALIGNMENT_LABEL = {
-  oficialismo: 'Ruling Coalition',
-  aliado: 'Allied',
-  negociador: 'Pragmatic',
-  'oposición dura': 'Hard Opposition',
-  'oposición': 'Opposition',
+  oficialismo: 'Oficialismo',
+  aliado: 'Aliado',
+  negociador: 'Negociador',
+  'oposición dura': 'Oposición dura',
+  'oposición': 'Oposición',
 };
 
 export function alignColor(a) {
@@ -11,9 +11,9 @@ export function alignColor(a) {
   if (s.includes('oficialismo')) return '#7d3c98';
   if (s.includes('aliado')) return '#17a589';
   if (s.includes('negociador') || s.includes('pragmát')) return '#d4a800';
-  if (s.includes('oposición dura')) return '#780000';
-  if (s.includes('oposición')) return '#C1121F';
-  return '#669BBC';
+  if (s.includes('oposición dura')) return '#7B1E14';
+  if (s.includes('oposición')) return '#C0392B';
+  return '#4F86B5';
 }
 
 export function alignLabel(a) {

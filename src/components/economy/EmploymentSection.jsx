@@ -11,9 +11,9 @@ import { translateSector } from '../../utils/sectorTranslations';
 import SourceInfo from '../shared/SourceInfo';
 import sipaPubPriv from '../../data/sipa_pub_priv.json';
 import dnapEmpleo from '../../data/dnap_empleo_provincial.json';
-import { sociodemographic } from '../../data/sociodemographic';
+import { sociodemographic, sociodemographicMeta } from '../../data/sociodemographic';
 
-const EPH_NATIONAL_UNEMPLOYMENT = 6.3;
+const EPH_NATIONAL_UNEMPLOYMENT = sociodemographicMeta.desempleo.national;
 
 const normalize = (s) =>
   (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
@@ -51,18 +51,18 @@ function SnapshotStrip({ provinceName, t }) {
     .findIndex(p => p.provincia === record.provincia) + 1;
 
   return (
-    <div className="flex items-baseline justify-between gap-2 px-2.5 py-1.5 bg-[#003049]/6 rounded-lg border border-[#003049]/10">
+    <div className="flex items-baseline justify-between gap-2 px-2.5 py-1.5 bg-[#14213D]/6 rounded-lg border border-[#14213D]/10">
       <div className="flex items-baseline gap-2">
-        <span className="text-[18px] font-bold text-[#003049] font-mono leading-none">
-          {rate.toFixed(1)}<span className="text-[10px] text-[#003049]/55">%</span>
+        <span className="text-[18px] font-bold text-[#14213D] font-mono leading-none">
+          {rate.toFixed(1)}<span className="text-[10px] text-[#14213D]/55">%</span>
         </span>
-        <span className="text-[10px] text-[#003049]/55 uppercase tracking-wider inline-flex items-center gap-1">
+        <span className="text-[10px] text-[#14213D]/55 uppercase tracking-wider inline-flex items-center gap-1">
           {t('employment.unemploymentRate')}
           <SourceInfo src={['ephUnemployment']} size={9} />
         </span>
       </div>
-      <span className={`text-[10px] font-mono ${delta <= 0 ? 'text-[#17a589]' : 'text-[#C1121F]/70'}`}>
-        {delta > 0 ? '+' : ''}{delta.toFixed(1)} · #{rank}/{ranked.length} · Q3-25
+      <span className={`text-[10px] font-mono ${delta <= 0 ? 'text-[#17a589]' : 'text-[#C0392B]/70'}`}>
+        {delta > 0 ? '+' : ''}{delta.toFixed(1)} · #{rank}/{ranked.length} · T2-26
       </span>
     </div>
   );
@@ -85,18 +85,18 @@ function PublicCompositeBlock({ provinceName, t }) {
   // them as two separate facts and let the reader draw their own conclusions.
 
   return (
-    <div className="bg-[#003049]/6 rounded-lg p-2.5 border border-[#003049]/10">
+    <div className="bg-[#14213D]/6 rounded-lg p-2.5 border border-[#14213D]/10">
       <div className="flex items-start justify-between mb-1.5">
-        <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider inline-flex items-center gap-1">
+        <p className="text-[11px] text-[#14213D]/50 uppercase tracking-wider inline-flex items-center gap-1">
           {t('employment.formalSplitTitle')}
           <SourceInfo src={['sipaDeptoPubPriv']} size={10} />
         </p>
-        <span className="text-[10px] font-mono text-[#003049]/50">
+        <span className="text-[10px] font-mono text-[#14213D]/50">
           #{pubRank}/{ranked.length} pub · SIPA {sipaPubPriv.vintage}
         </span>
       </div>
 
-      <div className="flex h-[12px] rounded-sm overflow-hidden mb-2" style={{ background: 'rgba(0,48,73,0.10)' }}>
+      <div className="flex h-[12px] rounded-sm overflow-hidden mb-2" style={{ background: 'rgba(20,33,61,0.10)' }}>
         <div style={{ width: `${privPct}%`, background: '#0f766e' }} title={`${t('employment.formalPrivate')}: ${privPct.toFixed(1)}%`} />
         <div style={{ width: `${publicPct}%`, background: '#7d3c98' }} title={`${t('employment.formalPublic')}: ${publicPct.toFixed(1)}%`} />
       </div>
@@ -105,26 +105,26 @@ function PublicCompositeBlock({ provinceName, t }) {
         <div>
           <div className="flex items-center gap-1.5">
             <span className="w-2 h-2 rounded-full shrink-0" style={{ background: '#0f766e' }} />
-            <span className="text-[10px] text-[#003049]/60 uppercase tracking-wider">{t('employment.formalPrivate')}</span>
+            <span className="text-[10px] text-[#14213D]/60 uppercase tracking-wider">{t('employment.formalPrivate')}</span>
           </div>
-          <p className="text-[16px] font-bold text-[#003049] font-mono leading-tight mt-0.5">
-            {fmtNum(priv)} <span className="text-[10px] text-[#003049]/50 font-normal">· {privPct.toFixed(1)}%</span>
+          <p className="text-[16px] font-bold text-[#14213D] font-mono leading-tight mt-0.5">
+            {fmtNum(priv)} <span className="text-[10px] text-[#14213D]/50 font-normal">· {privPct.toFixed(1)}%</span>
           </p>
         </div>
         <div>
           <div className="flex items-center gap-1.5">
             <span className="w-2 h-2 rounded-full shrink-0" style={{ background: '#7d3c98' }} />
-            <span className="text-[10px] text-[#003049]/60 uppercase tracking-wider">
+            <span className="text-[10px] text-[#14213D]/60 uppercase tracking-wider">
               {t('employment.formalPublic')}
             </span>
           </div>
-          <p className="text-[16px] font-bold text-[#003049] font-mono leading-tight mt-0.5">
-            {fmtNum(pub)} <span className="text-[10px] text-[#003049]/50 font-normal">· {publicPct.toFixed(1)}%</span>
+          <p className="text-[16px] font-bold text-[#14213D] font-mono leading-tight mt-0.5">
+            {fmtNum(pub)} <span className="text-[10px] text-[#14213D]/50 font-normal">· {publicPct.toFixed(1)}%</span>
           </p>
         </div>
       </div>
 
-      <div className="flex items-baseline justify-between text-[10px] text-[#003049]/55 pb-2 border-b border-[#003049]/10">
+      <div className="flex items-baseline justify-between text-[10px] text-[#14213D]/55 pb-2 border-b border-[#14213D]/10">
         <span>{t('employment.formalTotal')}</span>
         <span className="font-mono">{fmtNum(total)}</span>
       </div>
@@ -133,27 +133,27 @@ function PublicCompositeBlock({ provinceName, t }) {
       {dnapRec && (
         <div className="pt-2">
           <div className="flex items-baseline justify-between mb-1">
-            <span className="text-[10px] text-[#003049]/55 uppercase tracking-wider inline-flex items-center gap-1">
+            <span className="text-[10px] text-[#14213D]/55 uppercase tracking-wider inline-flex items-center gap-1">
               {t('employment.provincialCabinet')}
               <SourceInfo src={['dnapEmpleoProvincial']} size={9} />
             </span>
-            <span className="text-[9px] font-mono text-[#003049]/45">DNAP {dnapEmpleo.year}</span>
+            <span className="text-[9px] font-mono text-[#14213D]/45">DNAP {dnapEmpleo.year}</span>
           </div>
 
           <div className="grid grid-cols-2 gap-2 text-[11px]">
             <div>
-              <p className="text-[14px] font-bold text-[#003049] font-mono leading-none">
+              <p className="text-[14px] font-bold text-[#14213D] font-mono leading-none">
                 {fmtNum(dnapRec.employees)}
               </p>
-              <p className="text-[9px] text-[#003049]/50 mt-0.5">{t('employment.cabinetPosts')}</p>
+              <p className="text-[9px] text-[#14213D]/50 mt-0.5">{t('employment.cabinetPosts')}</p>
             </div>
             <div>
-              <p className="text-[14px] font-bold text-[#003049] font-mono leading-none">
+              <p className="text-[14px] font-bold text-[#14213D] font-mono leading-none">
                 {dnapRec.ratioPer1000.toFixed(0)}
-                <span className="text-[10px] text-[#003049]/55 font-normal">{t('employment.per1000Short')}</span>
+                <span className="text-[10px] text-[#14213D]/55 font-normal">{t('employment.per1000Short')}</span>
               </p>
-              <p className="text-[9px] text-[#003049]/50 mt-0.5">
-                {t('employment.density')} <span className="text-[#003049]/40">· nac. {dnapEmpleo.national.ratioPer1000.toFixed(0)}</span>
+              <p className="text-[9px] text-[#14213D]/50 mt-0.5">
+                {t('employment.density')} <span className="text-[#14213D]/40">· nac. {dnapEmpleo.national.ratioPer1000.toFixed(0)}</span>
               </p>
             </div>
           </div>
@@ -184,10 +184,10 @@ function EvolutionBlock({ provinceName, t }) {
   return (
     <div>
       <div className="flex items-baseline justify-between mb-0.5">
-        <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider">
+        <p className="text-[11px] text-[#14213D]/50 uppercase tracking-wider">
           {t('employment.evolutionTitle')}
         </p>
-        <span className="text-[10px] font-mono text-[#003049]/50">
+        <span className="text-[10px] font-mono text-[#14213D]/50">
           {firstYear}–{lastYear} · {deltaPct >= 0 ? '+' : ''}{deltaPct.toFixed(0)}%
         </span>
       </div>
@@ -198,11 +198,11 @@ function EvolutionBlock({ provinceName, t }) {
             <XAxis dataKey="year" {...AXIS_STYLE} interval="preserveStartEnd" minTickGap={30} />
             <YAxis {...AXIS_STYLE} width={28} />
             <Tooltip content={<CustomTooltip formatter={v => `${v?.toFixed(1)} / 1000`} />} />
-            <ReferenceLine y={nationalRef} stroke="#003049" strokeDasharray="3 3" strokeOpacity={0.35} />
+            <ReferenceLine y={nationalRef} stroke="#14213D" strokeDasharray="3 3" strokeOpacity={0.35} />
             <Line
               type="monotone"
               dataKey="ratio"
-              stroke="#003049"
+              stroke="#14213D"
               strokeWidth={1.75}
               dot={false}
               activeDot={{ r: 3 }}
@@ -223,9 +223,9 @@ function SectorBar({ name, employees, share_pct, family, clae2 }) {
   return (
     <div className="flex items-center gap-1.5 py-[3px]" title={`${label}: ${fmtNum(employees)} (${share_pct}%)`}>
       <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: color }} />
-      <span className="text-[12px] text-[#003049]/70 flex-1 min-w-0 break-words leading-tight">{label}</span>
-      <span className="text-[11px] font-mono text-[#003049]/50 shrink-0">{fmtK(employees)}</span>
-      <span className="text-[11px] font-mono text-[#003049]/40 w-[38px] text-right shrink-0">
+      <span className="text-[12px] text-[#14213D]/70 flex-1 min-w-0 break-words leading-tight">{label}</span>
+      <span className="text-[11px] font-mono text-[#14213D]/50 shrink-0">{fmtK(employees)}</span>
+      <span className="text-[11px] font-mono text-[#14213D]/40 w-[38px] text-right shrink-0">
         {share_pct.toFixed(1)}%
       </span>
     </div>
@@ -241,18 +241,18 @@ function PrivateSectorsBlock({ sipa, t }) {
   const otherEmp = Math.max(0, sipa.private - shownEmp);
 
   return (
-    <div className="bg-[#003049]/6 rounded-lg p-2.5 border border-[#003049]/10">
+    <div className="bg-[#14213D]/6 rounded-lg p-2.5 border border-[#14213D]/10">
       <div className="flex items-start justify-between mb-1.5">
-        <p className="text-[11px] text-[#003049]/50 uppercase tracking-wider inline-flex items-center gap-1">
+        <p className="text-[11px] text-[#14213D]/50 uppercase tracking-wider inline-flex items-center gap-1">
           {t('employment.privateSectorsTitle')}
           <SourceInfo src={['cepxxiSipa']} size={10} />
         </p>
-        <span className="text-[10px] font-mono text-[#003049]/50">
+        <span className="text-[10px] font-mono text-[#14213D]/50">
           {fmtNum(sipa.private)} {t('employment.jobsShort')}
         </span>
       </div>
 
-      <div className="h-[8px] bg-[#003049]/10 rounded-full overflow-hidden flex mb-2">
+      <div className="h-[8px] bg-[#14213D]/10 rounded-full overflow-hidden flex mb-2">
         {topSectors.map(s => (
           <div
             key={s.clae2}
@@ -273,7 +273,7 @@ function PrivateSectorsBlock({ sipa, t }) {
       {topSectors.map(s => <SectorBar key={s.clae2} {...s} />)}
 
       {otherPct > 0.5 && (
-        <div className="flex items-center gap-1.5 py-[3px] text-[#003049]/40">
+        <div className="flex items-center gap-1.5 py-[3px] text-[#14213D]/40">
           <span className="w-2 h-2 rounded-full shrink-0" style={{ background: '#d4d4d8' }} />
           <span className="text-[12px] flex-1 italic">{t('employment.otherSectors')}</span>
           <span className="text-[11px] font-mono shrink-0">{fmtK(otherEmp)}</span>
@@ -297,7 +297,7 @@ export default function EmploymentSection({ sipa, provinceName }) {
       <PublicCompositeBlock provinceName={name} t={t} />
       <EvolutionBlock provinceName={name} t={t} />
       {sipa && <PrivateSectorsBlock sipa={sipa} t={t} />}
-      <p className="text-[10px] text-[#003049]/45 leading-snug pt-1">
+      <p className="text-[10px] text-[#14213D]/45 leading-snug pt-1">
         {t('employment.footer')}
       </p>
     </div>

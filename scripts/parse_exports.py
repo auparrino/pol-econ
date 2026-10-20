@@ -86,13 +86,16 @@ def parse_destinations():
 
     # Build mapping: prefix → list of (country_slug, col_name)
     prov_countries = {}
+    # The destinations CSV abbreviates two provinces (pba_*, caba_*).
+    dest_prefixes = {p: p for p in PROVINCE_MAP}
+    dest_prefixes.update({"pba": "buenos_aires", "caba": "ciudad_de_buenos_aires"})
     for col in cols:
-        for prefix in sorted(PROVINCE_MAP.keys(), key=len, reverse=True):
+        for prefix in sorted(dest_prefixes, key=len, reverse=True):
             if col.startswith(prefix + "_"):
                 rest = col[len(prefix) + 1:]
                 if rest.startswith("total_"):
                     break
-                prov_countries.setdefault(prefix, []).append((rest, col))
+                prov_countries.setdefault(dest_prefixes[prefix], []).append((rest, col))
                 break
 
     # Country slug prettifier

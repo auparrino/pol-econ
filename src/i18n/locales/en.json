@@ -66,7 +66,7 @@
     "pop2m": "1M–2M",
     "pop5m": "2M–5M",
     "pop5mPlus": "> 5M",
-    "poverty": "Poverty (EPH urban, H2 2024)",
+    "poverty": "Poverty (EPH urban, H1 2026)",
     "povertyDesc": "GBA + provincial capitals only — not province-wide",
     "pov25": "< 25%",
     "pov35": "25–35%",
@@ -349,7 +349,7 @@
     "fUnemploymentEph": "urban agglomerate · unemployed / active",
     "rankEmp": "#{{rank}}/{{total}} employment",
     "censoLabel": "Census {{year}}",
-    "ephLabel": "EPH Q3 2025",
+    "ephLabel": "EPH Q2 2026",
     "censoNote": "Activity = active / pop. 14+. Employment = employed / pop. 14+. Unemployment = unemployed / active pop.",
     "rankLabel": "#{{rank}} of {{total}}",
     "ppVsNational": "pp vs national",
@@ -399,7 +399,7 @@
     "evolutionTitle": "Provincial public headcount, per 1,000 hab.",
     "evolutionNote": "Dashed line = 2024 national average ({{avg}} / 1,000). Source: DNAP annual series 1987–2024.",
     "ratioShort": "per 1,000",
-    "footer": "EPH Q3-25 (INDEC, urban). SIPA per-departamento Nov-23 (CEP-XXI, formal jobs by residence — discontinued). DNAP (provincial-cabinet posts, AC + decentralized + special accounts). SIPA and DNAP use different methodologies (jobs vs filled posts) and overlap unevenly — they're shown as two separate facts, not added together."
+    "footer": "EPH Q2-26 (INDEC, urban). SIPA per-departamento Nov-23 (CEP-XXI, formal jobs by residence — discontinued). DNAP (provincial-cabinet posts, AC + decentralized + special accounts). SIPA and DNAP use different methodologies (jobs vs filled posts) and overlap unevenly — they're shown as two separate facts, not added together."
   },
   "exportsSec": {
     "desc": "Provincial exports in USD millions. PP: primary products, MOA: agricultural manufactures, MOI: industrial manufactures, F&E: fuels & energy. Source: INDEC.",

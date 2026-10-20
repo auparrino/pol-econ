@@ -1,4 +1,18 @@
 // Provincial cabinets — sources: official provincial government sites, media (Mar 2026)
+// Spot-checked 2026-10-20 (BA, CABA, Córdoba, Santa Fe, Mendoza, Tucumán, Entre Ríos, Salta + all vicegobernadores):
+//   BA DGCyE Terigi (gba.gob.ar, 24-nov-2025); Córdoba Jefatura de Gabinete Calvo (Perfil, 17-jul-2026);
+//   vicegobernadores aligned with governors.js.
+// Second pass 2026-10-20 (remaining provinces):
+//   Verified against official rosters: Neuquén (neuquen.gob.ar/organigrama-de-autoridades), Río Negro
+//   (rionegro.gov.ar/autoridades), Santa Cruz (santacruz.gob.ar/gobierno/autoridades), Tierra del Fuego
+//   (tierradelfuego.gob.ar/ministerios), La Rioja (larioja.gob.ar/institucional/autoridades.php).
+//   Fixed from official press / 2025-26 media: Mendoza (Nieri -> diputado nacional), Misiones, Chaco,
+//   Chubut, La Pampa, Catamarca, Jujuy, San Luis, Santiago del Estero (audit 2026-10-20).
+//   NOT individually verified (no official roster reachable; no 2026 change found in press): Corrientes
+//   (cabinet as sworn 10-12-2025), Formosa, San Juan (Sec. Gral. Achem: no changes, feb-2026), remaining
+//   names in Misiones/Chaco/Chubut/La Pampa/Jujuy/San Luis/Santiago del Estero. San Luis: Poggi requested
+//   all resignations (4-5-2026) and a new Ley de Ministerios (SG + 8 ministries) was sanctioned 20-5-2026;
+//   current holders of each portfolio not confirmed except Educación (Araujo, ANSL oct-2026).
 // Each entry: { provincia, gabinete: [{ role, name, tier }] }
 // tier: 'exec' (governor/vice), 'key' (jefe gabinete, economía), 'min' (minister), 'sec' (secretary)
 export const gabinetesProvinciales = [
@@ -13,7 +27,7 @@ export const gabinetesProvinciales = [
       { role: 'Infraestructura', name: 'Gabriel Katopodis', tier: 'min' },
       { role: 'Producción', name: 'Augusto Costa', tier: 'min' },
       { role: 'Salud', name: 'Nicolás Kreplak', tier: 'min' },
-      { role: 'Educación', name: 'Claudia Bracchi', tier: 'min' },
+      { role: 'Cultura y Educación (DGCyE)', name: 'Flavia Terigi', tier: 'min' },
       { role: 'Seguridad', name: 'Javier Alonso', tier: 'min' },
       { role: 'Justicia y DDHH', name: 'Juan Martín Mena', tier: 'min' },
       { role: 'Desarrollo Social', name: 'Andrés Larroque', tier: 'min' },
@@ -46,7 +60,7 @@ export const gabinetesProvinciales = [
     gabinete: [
       { role: 'Gobernador', name: 'Martín Llaryora', tier: 'exec' },
       { role: 'Vicegobernadora', name: 'Myrian Prunotto', tier: 'exec' },
-      { role: 'Gobierno', name: 'Manuel Calvo', tier: 'key' },
+      { role: 'Jefe de Gabinete', name: 'Manuel Calvo', tier: 'key' },
       { role: 'Economía', name: 'Guillermo Acosta', tier: 'min' },
       { role: 'Seguridad', name: 'Juan Pablo Quinteros', tier: 'min' },
       { role: 'Educación', name: 'Horacio Ferreyra', tier: 'min' },
@@ -79,7 +93,7 @@ export const gabinetesProvinciales = [
     provincia: 'Entre Ríos',
     gabinete: [
       { role: 'Gobernador', name: 'Rogelio Frigerio', tier: 'exec' },
-      { role: 'Vicegobernador', name: 'Pedro Galimberti', tier: 'exec' },
+      { role: 'Vicegobernadora', name: 'Alicia Aluani', tier: 'exec' },
       { role: 'Sec. General', name: 'Mauricio Colello', tier: 'key' },
       { role: 'Gobierno y Trabajo', name: 'Manuel Troncoso', tier: 'min' },
       { role: 'Infraestructura', name: 'Hernán Jacob', tier: 'min' },
@@ -110,29 +124,30 @@ export const gabinetesProvinciales = [
     provincia: 'Misiones',
     gabinete: [
       { role: 'Gobernador', name: 'Hugo Passalacqua', tier: 'exec' },
-      { role: 'Vicegobernador', name: 'Lucas Romero', tier: 'exec' },
+      { role: 'Vicegobernador', name: 'Lucas Romero Spinelli', tier: 'exec' },
       { role: 'Coord. Gabinete', name: 'Carlos Sartori', tier: 'key' },
       { role: 'Hacienda e Infraest.', name: 'Adolfo Safrán', tier: 'min' },
       { role: 'Gobierno', name: 'Marcelo Pérez', tier: 'min' },
       { role: 'Salud', name: 'Héctor González', tier: 'min' },
-      { role: 'Educación', name: 'Miguel Sedoff', tier: 'min' },
+      { role: 'Educación, Ciencia y Tecnología', name: 'Ramiro Aranda', tier: 'min' },
       { role: 'Agro y Producción', name: 'Facundo López Sartori', tier: 'min' },
       { role: 'Ecología', name: 'Martín Recamán', tier: 'min' },
       { role: 'Industria', name: 'Federico Fachinello', tier: 'min' },
       { role: 'Turismo', name: 'José María Arrúa', tier: 'min' },
-      { role: 'Sec. Energía', name: 'Paolo Quintana', tier: 'sec' },
+      // Dec. 1317/2026: Sec. de Estado de Energía pasa a Subsecretaría de Hacienda desde 1-8-2026; titular no verificado.
+      { role: 'Acción Cooperativa, Mutual, Comercio e Integración', name: 'Matías Vilchez', tier: 'min' },
     ],
   },
   {
     provincia: 'Chaco',
     gabinete: [
       { role: 'Gobernador', name: 'Leandro Zdero', tier: 'exec' },
-      { role: 'Vicegobernadora', name: 'Silvana Romero', tier: 'exec' },
+      { role: 'Vicegobernación', name: 'Vacante (Schneider, senadora nacional desde 10-12-2025)', tier: 'exec' },
       { role: 'Coord. Gabinete', name: 'Livio Gutiérrez', tier: 'key' },
       { role: 'Gobierno y Justicia', name: 'Julio César Ferro', tier: 'min' },
       { role: 'Seguridad', name: 'Hugo Matkovich', tier: 'min' },
       { role: 'Economía e Infraest.', name: 'Alejandro Abraam', tier: 'min' },
-      { role: 'Producción', name: 'Víctor Zimmerman', tier: 'min' },
+      { role: 'Producción', name: 'Oscar Dudik', tier: 'min' },
       { role: 'Educación', name: 'Sofía Naidenoff', tier: 'min' },
       { role: 'Salud', name: 'Sergio Rodríguez', tier: 'min' },
       { role: 'Infraestructura', name: 'Hugo Domínguez', tier: 'min' },
@@ -192,9 +207,9 @@ export const gabinetesProvinciales = [
     gabinete: [
       { role: 'Gobernador', name: 'Ignacio Torres', tier: 'exec' },
       { role: 'Vicegobernador', name: 'Gustavo Menna', tier: 'exec' },
-      { role: 'Coord. Gabinete', name: 'Jennifer Contardi', tier: 'key' },
+      { role: 'Sec. Coord. Gabinete', name: 'Andrés Arbeletche', tier: 'key' },
       { role: 'Gobierno', name: 'Victoriano Eraso Parodi', tier: 'min' },
-      { role: 'Economía', name: 'Miguel Arnaudo', tier: 'min' },
+      { role: 'Economía', name: 'Gustavo Martín Paz', tier: 'min' },
       { role: 'Energía e HC', name: 'Federico Ponce', tier: 'min' },
       { role: 'Seguridad', name: 'Héctor Iturrioz', tier: 'min' },
       { role: 'Producción', name: 'Juan Manuel Pavón', tier: 'min' },
@@ -213,9 +228,9 @@ export const gabinetesProvinciales = [
       { role: 'Gobierno', name: 'María Belén Elmiger', tier: 'min' },
       { role: 'Seguridad', name: 'Javier Prodromos', tier: 'min' },
       { role: 'Salud y Ambiente', name: 'María Lorena Ross', tier: 'min' },
-      { role: 'Des. Social', name: 'Luisa Cárdenas', tier: 'min' },
+      { role: 'Des. Social', name: 'Sebastián Georgion', tier: 'min' },
       { role: 'Producción', name: 'Nadia Ricci', tier: 'min' },
-      { role: 'Trabajo', name: 'Juan Eduardo Mata', tier: 'min' },
+      { role: 'Trabajo', name: 'Vacante (sin titular en santacruz.gob.ar, oct-2026)', tier: 'min' },
       { role: 'Educación', name: 'Iris Rasgido', tier: 'min' },
     ],
   },
@@ -228,7 +243,7 @@ export const gabinetesProvinciales = [
       { role: 'Economía', name: 'Alejandro Barrozo', tier: 'min' },
       { role: 'Energía', name: 'Gabriela Castillo', tier: 'min' },
       { role: 'Obras Públicas', name: 'Martín Moreyra', tier: 'min' },
-      { role: 'Producción y Ambiente', name: 'Karina Fernández', tier: 'min' },
+      { role: 'Producción y Ambiente', name: 'Francisco Devita', tier: 'min' },
       { role: 'Salud', name: 'Judit Di Giglio', tier: 'min' },
       { role: 'Bienestar y Justicia', name: 'Lucía Rossi', tier: 'min' },
       { role: 'Educación', name: 'Pablo López Silva', tier: 'min' },
@@ -246,7 +261,7 @@ export const gabinetesProvinciales = [
       { role: 'Salud', name: 'Mario Kohan', tier: 'min' },
       { role: 'Educación', name: 'Marcela Feuerschvenger', tier: 'min' },
       { role: 'Des. Social', name: 'Diego Álvarez', tier: 'min' },
-      { role: 'Obras Públicas', name: 'Julio Rojo', tier: 'min' },
+      { role: 'Obras Públicas', name: 'Alfredo Intronati', tier: 'min' },
       { role: 'Sec. Energía y Minería', name: 'Matías Toso', tier: 'sec' },
     ],
   },
@@ -290,15 +305,14 @@ export const gabinetesProvinciales = [
     gabinete: [
       { role: 'Gobernador', name: 'Raúl Jalil', tier: 'exec' },
       { role: 'Vicegobernador', name: 'Rubén Dusso', tier: 'exec' },
-      { role: 'Gobierno y Seguridad', name: 'Fernando Monguillot', tier: 'key' },
+      { role: 'Gobierno, Seguridad y Justicia', name: 'Alberto Natella', tier: 'key' },
       { role: 'Economía', name: 'Alejandra Nazareno', tier: 'min' },
       { role: 'Minería', name: 'Marcelo Murúa Palacio', tier: 'min' },
       { role: 'Agua, Energía y Ambiente', name: 'Eduardo Niedelei', tier: 'min' },
       { role: 'Des. Productivo', name: 'Leonardo Zeballos', tier: 'min' },
       { role: 'Salud', name: 'Lucas Sampieri', tier: 'min' },
-      { role: 'Educación', name: 'Nicolás Rosales Matienzo', tier: 'min' },
+      { role: 'Educación, Ciencia y Tecnología (+Trabajo)', name: 'Verónica Soria', tier: 'min' },
       { role: 'Infraestructura', name: 'Juan Carlos Marqueti', tier: 'min' },
-      { role: 'Trabajo y Planificación', name: 'Verónica Soria', tier: 'min' },
     ],
   },
   {
@@ -309,7 +323,7 @@ export const gabinetesProvinciales = [
       { role: 'Jefe Gabinete', name: 'Freddy Morales', tier: 'key' },
       { role: 'Gobierno y Justicia', name: 'Normando Álvarez García', tier: 'min' },
       { role: 'Hacienda y Finanzas', name: 'Federico Cardozo', tier: 'min' },
-      { role: 'Seguridad', name: 'Guillermo Corro', tier: 'min' },
+      { role: 'Seguridad', name: 'Sin confirmar (Pulleiro, sec. a cargo, renunció 11-03-2026)', tier: 'min' },
       { role: 'Producción', name: 'Juan Carlos Abud Robles', tier: 'min' },
       { role: 'Infraestructura', name: 'Carlos Stanic', tier: 'min' },
       { role: 'Salud', name: 'José María Manzur', tier: 'min' },
@@ -339,7 +353,8 @@ export const gabinetesProvinciales = [
     gabinete: [
       { role: 'Gobernador', name: 'Alfredo Cornejo', tier: 'exec' },
       { role: 'Vicegobernadora', name: 'Hebe Casado', tier: 'exec' },
-      { role: 'Gobierno y Trabajo', name: 'Lisandro Nieri', tier: 'key' },
+      // Nieri dejó Gobierno al asumir como diputado nacional (10-12-2025; HCDN). Sucesor no verificado.
+      { role: 'Gobierno, Trabajo y Justicia', name: 'Sin confirmar (Nieri, diputado nacional desde 10-12-2025)', tier: 'key' },
       { role: 'Hacienda y Finanzas', name: 'María Paula Allasino', tier: 'min' },
       { role: 'Energía y Ambiente', name: 'Jimena Latorre', tier: 'min' },
       { role: 'Producción', name: 'Rodolfo Vargas Arizu', tier: 'min' },
@@ -361,14 +376,14 @@ export const gabinetesProvinciales = [
       { role: 'Educación', name: 'Guillermo Araujo', tier: 'min' },
       { role: 'Des. Humano', name: 'Gustavo Bertolini', tier: 'min' },
       { role: 'Turismo y Cultura', name: 'Juan José Álvarez Pinto', tier: 'min' },
-      { role: 'Ciencia e Innovación', name: 'Pedro Canali', tier: 'min' },
+      // Ministerio de Ciencia e Innovación eliminado por la nueva Ley de Ministerios (sanción 20-05-2026, ANSL).
     ],
   },
   {
     provincia: 'La Rioja',
     gabinete: [
       { role: 'Gobernador', name: 'Ricardo Quintela', tier: 'exec' },
-      { role: 'Vicegobernadora', name: 'Florencia López', tier: 'exec' },
+      { role: 'Vicegobernadora', name: 'Teresita Madera', tier: 'exec' },
       { role: 'Jefe Gabinete', name: 'Juan Luna Corzo', tier: 'key' },
       { role: 'Hacienda y Finanzas', name: 'Fabián Blanco', tier: 'min' },
       { role: 'Seguridad y Justicia', name: 'Miguel Zárate', tier: 'min' },
@@ -387,7 +402,7 @@ export const gabinetesProvinciales = [
       { role: 'Gobernador', name: 'Elías Suárez', tier: 'exec' },
       { role: 'Vicegobernador', name: 'Carlos Silva Neder', tier: 'exec' },
       { role: 'Jefe Gabinete', name: 'Víctor Araujo', tier: 'key' },
-      { role: 'Economía', name: 'Atilio Chara', tier: 'min' },
+      { role: 'Economía', name: 'Jorge Gustavo Murad', tier: 'min' },
       { role: 'Gobierno y Seguridad', name: 'Bernardo Herrera', tier: 'min' },
       { role: 'Obras Públicas y Agua', name: 'Aldo Hid', tier: 'min' },
       { role: 'Producción y Ambiente', name: 'Néstor Machado', tier: 'min' },

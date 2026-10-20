@@ -21,21 +21,21 @@ const ALL_CARDS = [
 
 const getBg = (tier) => {
   if (tier === 'exec') return 'rgba(142,68,173,0.08)';
-  if (tier === 'key')  return 'rgba(0,48,73,0.07)';
+  if (tier === 'key')  return 'rgba(20,33,61,0.07)';
   if (tier === 'sec')  return 'rgba(243,156,18,0.07)';
-  return 'rgba(0,48,73,0.03)';
+  return 'rgba(20,33,61,0.03)';
 };
 const getBorder = (tier) => {
   if (tier === 'exec') return 'rgba(142,68,173,0.35)';
-  if (tier === 'key')  return 'rgba(0,48,73,0.22)';
+  if (tier === 'key')  return 'rgba(20,33,61,0.22)';
   if (tier === 'sec')  return 'rgba(243,156,18,0.25)';
-  return 'rgba(0,48,73,0.10)';
+  return 'rgba(20,33,61,0.10)';
 };
 const getPartyColor = (party) => {
-  if (!party) return 'rgba(0,48,73,0.40)';
+  if (!party) return 'rgba(20,33,61,0.40)';
   if (party.includes('LLA')) return '#8e44ad';
   if (party.includes('PRO')) return '#d4a800';
-  return '#669BBC';
+  return '#4F86B5';
 };
 
 function CabinetPanelRaw() {
@@ -47,8 +47,8 @@ function CabinetPanelRaw() {
           className="flex-1 min-w-[100px] rounded px-3 py-2 border text-center"
           style={{ background: getBg(p.tier), borderColor: getBorder(p.tier) }}
         >
-          <p className="text-[9px] uppercase tracking-widest text-[#003049]/50 leading-tight">{p.role}</p>
-          <p className="text-[13px] font-bold text-[#003049] leading-tight">{p.name}</p>
+          <p className="text-[9px] uppercase tracking-widest text-[#14213D]/50 leading-tight">{p.role}</p>
+          <p className="text-[13px] font-bold text-[#14213D] leading-tight">{p.name}</p>
           {p.party && (
             <p className="text-[13px] leading-tight" style={{ color: getPartyColor(p.party) }}>{p.party}</p>
           )}

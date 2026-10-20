@@ -17,7 +17,7 @@ export const renovablesProjects = [
   {"nombre": "HI PRESIDENTE NESTOR KIRCHNER", "provincia": "Santa Cruz", "tecnologia": "Hidro", "potencia_mw": 950.0, "lat": -50.21145627991, "lon": -70.7855177424, "estado": "En Construcción"},
   {"nombre": "P.A.H. LAS TUNAS", "provincia": "Mendoza", "tecnologia": "PAH", "potencia_mw": 10.0, "lat": -33.37534167, "lon": -69.37278333, "estado": "En Construcción"},
   {"nombre": "P.S. LOS ZORRITOS", "provincia": "Catamarca", "tecnologia": "Solar", "potencia_mw": 49.5, "lat": -28.81096288, "lon": -65.79111201, "estado": "En Construcción"},
-  {"nombre": "P.S. ALGARROBO", "provincia": "San Juan", "tecnologia": "Solar", "potencia_mw": 5.5, "lat": -31.7539, "lon": -68.2548, "estado": "En Construcción"},
+  {"nombre": "P.S. ALGARROBO", "provincia": "San Juan", "tecnologia": "Solar", "potencia_mw": 5.5, "lat": -31.7539, "lon": -68.2548, "estado": "Finalizado"},
   {"nombre": "HI EL TAMBOLAR", "provincia": "San Juan", "tecnologia": "Hidro", "potencia_mw": 70.0, "lat": -31.3611671538746, "lon": -69.0106748104824, "estado": "En Construcción"},
   {"nombre": "P.S. LA CUMBRE III", "provincia": "San Luis", "tecnologia": "Solar", "potencia_mw": 10.0, "lat": -33.347886, "lon": -66.1206, "estado": "Finalizado"},
   {"nombre": "P.E. ACHIRAS II-A", "provincia": "Córdoba", "tecnologia": "Eolica", "potencia_mw": 49.4, "lat": -33.23111111, "lon": -65.0725, "estado": "Finalizado"},
